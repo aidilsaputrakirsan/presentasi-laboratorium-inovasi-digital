@@ -26,7 +26,7 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4">Proyek MBKM</h3>
+              <h3 className="text-lg font-semibold mb-4">Proyek Kampus Berdampak</h3>
               <div className="space-y-3">
                 {(filteredProjects || []).slice(0, 3).map((project) => (
                   <div key={project.id} className="flex items-center p-3 border border-gray-200 rounded-lg">
@@ -34,8 +34,21 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
                     <div className="flex-1">
                       <p className="font-medium text-sm">{project.title}</p>
                       <p className="text-xs text-gray-500">{project.tech.join(', ')}</p>
+                      <p className="text-xs text-blue-600">{project.url}</p>
                     </div>
                   </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Fokus Industri</h3>
+              <div className="grid grid-cols-2 gap-2">
+                {['Kelapa Sawit', 'Teknologi Maritim', 'Smart City', 'Fintech', 'E-Commerce', 'IoT Industry'].map((industry) => (
+                  <label key={industry} className="flex items-center">
+                    <input type="checkbox" className="mr-2" />
+                    <span className="text-sm">{industry}</span>
+                  </label>
                 ))}
               </div>
             </div>
@@ -59,8 +72,8 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
                 <div className="w-16 h-16 bg-blue-100 rounded-full mx-auto mb-3 flex items-center justify-center">
                   <User className="h-8 w-8 text-blue-600" />
                 </div>
-                <h4 className="text-xl font-bold">Nama Mahasiswa</h4>
-                <p className="text-gray-600">Full Stack Developer</p>
+                <h4 className="text-xl font-bold">Nama Mahasiswa FSTI</h4>
+                <p className="text-gray-600">Full Stack Developer | Kampus Berdampak Alumni</p>
                 <div className="flex justify-center space-x-4 mt-2">
                   <Mail className="h-4 w-4 text-gray-500" />
                   <Phone className="h-4 w-4 text-gray-500" />
@@ -75,18 +88,35 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
                     <div key={project.id} className="border border-gray-200 rounded p-2">
                       <p className="font-medium text-sm">{project.title}</p>
                       <p className="text-xs text-gray-500">{project.tech.slice(0, 3).join(', ')}</p>
+                      <p className="text-xs text-blue-500">{project.url}</p>
                     </div>
                   ))}
                 </div>
               </div>
 
               <div>
-                <h5 className="font-semibold mb-2">Keahlian</h5>
+                <h5 className="font-semibold mb-2">Fokus Industri</h5>
                 <div className="flex flex-wrap gap-1">
-                  {['React', 'Node.js', 'Python', 'Laravel'].map((skill) => (
+                  {['Kelapa Sawit', 'IoT', 'Smart City', 'Fintech'].map((focus) => (
+                    <span key={focus} className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">{focus}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h5 className="font-semibold mb-2">Keahlian Teknis</h5>
+                <div className="flex flex-wrap gap-1">
+                  {['React', 'Node.js', 'Python', 'IoT', 'AI'].map((skill) => (
                     <span key={skill} className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">{skill}</span>
                   ))}
                 </div>
+              </div>
+
+              <div className="bg-blue-50 p-3 rounded">
+                <p className="text-xs text-blue-700">
+                  <strong>Program Kampus Berdampak FSTI ITK</strong><br/>
+                  Lulusan program magang 6 bulan dengan deployment aplikasi nyata untuk industri Kalimantan
+                </p>
               </div>
             </div>
           </div>

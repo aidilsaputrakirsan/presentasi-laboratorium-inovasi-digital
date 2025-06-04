@@ -1,4 +1,4 @@
-// src/components/platforms/MBKMPlatform.js
+// src/components/platforms/KampusBerdampakPlatform.js
 import React from 'react';
 import { 
   Users, FileText, Award, TrendingUp, Plus, Search, ArrowRight, 
@@ -8,7 +8,7 @@ import { PieChart, Pie, Cell, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tool
 import StatCard from '../shared/StatCard';
 import ProjectCard from '../cards/ProjectCard';
 
-const MBKMPlatform = ({ 
+const KampusBerdampakPlatform = ({ 
   searchQuery, 
   setSearchQuery, 
   filterProdi, 
@@ -16,7 +16,7 @@ const MBKMPlatform = ({
   filterStatus, 
   setFilterStatus,
   filteredProjects,
-  mbkmProjectsData,
+  kampusBerdampakProjectsData,
   setSelectedProject,
   setShowApplicationForm,
   setShowPortfolioGenerator
@@ -24,10 +24,10 @@ const MBKMPlatform = ({
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <StatCard icon={Users} title="Mahasiswa Aktif" value="85" subtitle="Peserta MBKM" color="text-blue-600" trend="12" />
-        <StatCard icon={FileText} title="Proyek Deployed" value="30+" subtitle="Aplikasi Live" color="text-green-600" trend="25" />
-        <StatCard icon={Award} title="Sertifikat Diterbitkan" value="15" subtitle="Digital Blockchain" color="text-purple-600" trend="8" />
-        <StatCard icon={TrendingUp} title="Tingkat Keberhasilan" value="78%" subtitle="Job Interview Rate" color="text-orange-600" trend="15" />
+        <StatCard icon={Users} title="Mahasiswa Aktif" value="45" subtitle="Peserta Kampus Berdampak" color="text-blue-600" trend="12" />
+        <StatCard icon={FileText} title="Proyek Deployed" value="20+" subtitle="Aplikasi Live" color="text-green-600" trend="25" />
+        <StatCard icon={Award} title="Sertifikat Diterbitkan" value="12" subtitle="Digital Blockchain" color="text-purple-600" trend="8" />
+        <StatCard icon={TrendingUp} title="Tingkat Keberhasilan" value="85%" subtitle="Job Interview Rate" color="text-orange-600" trend="15" />
       </div>
 
       <div className="bg-white rounded-xl shadow-lg p-6">
@@ -48,6 +48,7 @@ const MBKMPlatform = ({
               <option value="Sistem Informasi">Sistem Informasi</option>
               <option value="Informatika">Informatika</option>
               <option value="Teknik Elektro">Teknik Elektro</option>
+              <option value="Bisnis Digital">Bisnis Digital</option>
             </select>
             <select className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" value={filterStatus} onChange={(e) => setFilterStatus(e.target.value)}>
               <option value="all">Semua Status</option>
@@ -62,7 +63,7 @@ const MBKMPlatform = ({
         <div className="flex flex-wrap gap-3 mb-6">
           <button onClick={() => setShowApplicationForm(true)} className="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center">
             <Plus className="h-4 w-4 mr-2" />
-            Daftar MBKM
+            Daftar Kampus Berdampak
           </button>
           <button onClick={() => setShowPortfolioGenerator(true)} className="bg-green-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-green-700 transition-colors flex items-center">
             <FileText className="h-4 w-4 mr-2" />
@@ -85,7 +86,7 @@ const MBKMPlatform = ({
         <div className="bg-white rounded-xl shadow-lg p-6">
           <h3 className="text-lg font-semibold text-gray-800 mb-4">Pertumbuhan Proyek & Aplikasi</h3>
           <ResponsiveContainer width="100%" height={250}>
-            <AreaChart data={mbkmProjectsData}>
+            <AreaChart data={kampusBerdampakProjectsData}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="month" />
               <YAxis />
@@ -102,10 +103,10 @@ const MBKMPlatform = ({
             <PieChart>
               <Pie
                 data={[
-                  { name: 'Web Development', value: 12, color: '#3B82F6' },
-                  { name: 'Mobile Development', value: 8, color: '#10B981' },
-                  { name: 'IoT & Hardware', value: 6, color: '#F59E0B' },
-                  { name: 'AI & Machine Learning', value: 4, color: '#8B5CF6' }
+                  { name: 'Web Development', value: 8, color: '#3B82F6' },
+                  { name: 'Mobile Development', value: 5, color: '#10B981' },
+                  { name: 'IoT & Hardware', value: 4, color: '#F59E0B' },
+                  { name: 'AI & Machine Learning', value: 3, color: '#8B5CF6' }
                 ]}
                 cx="50%"
                 cy="50%"
@@ -115,10 +116,10 @@ const MBKMPlatform = ({
                 label={({ name, value }) => `${name}: ${value}`}
               >
                 {[
-                  { name: 'Web Development', value: 12, color: '#3B82F6' },
-                  { name: 'Mobile Development', value: 8, color: '#10B981' },
-                  { name: 'IoT & Hardware', value: 6, color: '#F59E0B' },
-                  { name: 'AI & Machine Learning', value: 4, color: '#8B5CF6' }
+                  { name: 'Web Development', value: 8, color: '#3B82F6' },
+                  { name: 'Mobile Development', value: 5, color: '#10B981' },
+                  { name: 'IoT & Hardware', value: 4, color: '#F59E0B' },
+                  { name: 'AI & Machine Learning', value: 3, color: '#8B5CF6' }
                 ].map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={entry.color} />
                 ))}
@@ -132,23 +133,23 @@ const MBKMPlatform = ({
       <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl shadow-lg p-6 text-white">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="mb-4 lg:mb-0">
-            <h3 className="text-xl font-bold mb-2">Program MBKM Internal Lab</h3>
-            <p className="text-blue-100 mb-4">Magang 3-6 bulan dengan proyek industri nyata dan mentoring intensif</p>
+            <h3 className="text-xl font-bold mb-2">Program Kampus Berdampak FSTI</h3>
+            <p className="text-blue-100 mb-4">Magang 3-6 bulan dengan proyek industri Kalimantan dan mentoring intensif</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="text-center">
-                <div className="text-2xl font-bold">15</div>
+                <div className="text-2xl font-bold">10</div>
                 <div className="text-sm text-blue-100">Slot Tersedia</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">8</div>
-                <div className="text-sm text-blue-100">Mentor</div>
+                <div className="text-2xl font-bold">5</div>
+                <div className="text-sm text-blue-100">Mentor Aktif</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">100%</div>
+                <div className="text-2xl font-bold">90%</div>
                 <div className="text-sm text-blue-100">Job Placement</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">4.8/5</div>
+                <div className="text-2xl font-bold">4.7/5</div>
                 <div className="text-sm text-blue-100">Rating Alumni</div>
               </div>
             </div>
@@ -163,4 +164,4 @@ const MBKMPlatform = ({
   );
 };
 
-export default MBKMPlatform;
+export default KampusBerdampakPlatform;

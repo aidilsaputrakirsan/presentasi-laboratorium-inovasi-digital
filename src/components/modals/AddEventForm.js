@@ -6,7 +6,7 @@ const AddEventForm = ({ onClose }) => (
   <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
     <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
       <div className="sticky top-0 bg-white border-b p-6 flex justify-between items-center">
-        <h2 className="text-2xl font-bold text-gray-900">Tambah Event Baru</h2>
+        <h2 className="text-2xl font-bold text-gray-900">Tambah Event FSTI Baru</h2>
         <button onClick={onClose} className="p-2 hover:bg-gray-100 rounded-full">
           <X className="h-5 w-5" />
         </button>
@@ -25,10 +25,11 @@ const AddEventForm = ({ onClose }) => (
               <select className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500">
                 <option>Seminar</option>
                 <option>Workshop</option>
+                <option>Tech Talk</option>
                 <option>Kompetisi</option>
                 <option>Networking</option>
-                <option>Tech Talk</option>
                 <option>Training</option>
+                <option>Industry Visit</option>
               </select>
             </div>
             <div>
@@ -56,7 +57,14 @@ const AddEventForm = ({ onClose }) => (
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">Venue</label>
-              <input type="text" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500" placeholder="Lokasi event" />
+              <select className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500">
+                <option>Auditorium FSTI ITK</option>
+                <option>Ruang Serbaguna FSTI</option>
+                <option>Lab IoT FSTI ITK</option>
+                <option>Lab Komputer FSTI</option>
+                <option>Online (Zoom/Teams)</option>
+                <option>Hybrid</option>
+              </select>
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">Kapasitas</label>
@@ -71,12 +79,35 @@ const AddEventForm = ({ onClose }) => (
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">Deskripsi Event</label>
-            <textarea rows="4" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500" placeholder="Deskripsi lengkap tentang event..."></textarea>
+            <textarea rows="4" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500" placeholder="Deskripsi lengkap tentang event yang relevan dengan industri Kalimantan..."></textarea>
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Topics/Keywords</label>
-            <input type="text" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500" placeholder="AI, Machine Learning, Technology (pisahkan dengan koma)" />
+            <label className="block text-sm font-medium text-gray-700 mb-2">Topics/Keywords (fokus industri Kalimantan)</label>
+            <input type="text" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-pink-500" placeholder="Kelapa Sawit, IoT, Smart Manufacturing, Fintech (pisahkan dengan koma)" />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Target Peserta</label>
+            <div className="grid grid-cols-2 gap-2">
+              {['Mahasiswa FSTI', 'Dosen FSTI', 'Industri Kalimantan', 'Alumni FSTI', 'Startup Local', 'Government'].map((target) => (
+                <label key={target} className="flex items-center">
+                  <input type="checkbox" className="mr-2" />
+                  <span className="text-sm">{target}</span>
+                </label>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-pink-50 p-4 rounded-lg">
+            <h4 className="font-medium text-pink-800 mb-2">Event FSTI ITK</h4>
+            <p className="text-sm text-pink-700 mb-2">Event yang mendukung ekosistem inovasi FSTI dengan fokus:</p>
+            <ul className="text-sm text-pink-600 space-y-1">
+              <li>• Kolaborasi dengan industri Kalimantan</li>
+              <li>• Pengembangan skill mahasiswa FSTI</li>
+              <li>• Knowledge sharing dengan praktisi</li>
+              <li>• Networking akademik-industri</li>
+            </ul>
           </div>
 
           <div className="flex space-x-4">

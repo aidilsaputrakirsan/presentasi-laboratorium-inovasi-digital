@@ -19,7 +19,7 @@ import {
   eventsData, 
   achievementsData, 
   newsArticlesData,
-  mbkmProjectsData,
+  kampusBerdampakProjectsData,
   facultyActivitiesData,
   researchMetricsData,
   showcaseMetricsData,
@@ -35,7 +35,7 @@ import ProjectCard from './components/cards/ProjectCard';
 import FacultyCard from './components/cards/FacultyCard';
 
 // Import platform components
-import MBKMPlatform from './components/platforms/MBKMPlatform';
+import KampusBerdampakPlatform from './components/platforms/KampusBerdampakPlatform';
 import FacultyPortal from './components/platforms/FacultyPortal';
 import ResearchRepository from './components/platforms/ResearchRepository';
 import IndustryCollaboration from './components/platforms/IndustryCollaboration';
@@ -54,7 +54,7 @@ import AddAchievementForm from './components/modals/AddAchievementForm';
 
 const App = () => {
   // Main app states
-  const [activeTab, setActiveTab] = useState('mbkm');
+  const [activeTab, setActiveTab] = useState('kampus-berdampak');
   const [activeView, setActiveView] = useState('dashboard');
   
   // Selected items states
@@ -157,7 +157,7 @@ const App = () => {
           <div className="flex items-center space-x-2">
             <Globe className="h-4 w-4 text-gray-400" />
             <span className="text-sm">
-              https://aidilsaputrakirsan.github.io/presentasi-laboratorium-inovasi-digital{tabs.find(tab => tab.id === activeTab)?.url}
+              https://{tabs.find(tab => tab.id === activeTab)?.url}
             </span>
             <div className="flex items-center space-x-1 ml-4">
               <Shield className="h-4 w-4 text-green-400" />
@@ -174,17 +174,17 @@ const App = () => {
             {tabs.find(tab => tab.id === activeTab)?.label}
           </h2>
           <p className="text-gray-600 mt-1">
-            {activeTab === 'mbkm' && 'Memberdayakan mahasiswa dengan pengalaman deployment aplikasi nyata (IKU 2)'}
-            {activeTab === 'faculty' && 'Mengelola dosen praktisi dengan pengalaman industri untuk pembelajaran berkualitas (IKU 3)'}
-            {activeTab === 'research' && 'Membuat riset FSTI dapat diakses secara global dan berdampak (IKU 5)'}
-            {activeTab === 'industry' && 'Memfasilitasi kerjasama akademik-industri yang berkelanjutan dan saling menguntungkan (IKU 3)'}
+            {activeTab === 'kampus-berdampak' && 'Memberdayakan mahasiswa FSTI dengan pengalaman deployment aplikasi untuk industri Kalimantan (IKU 2)'}
+            {activeTab === 'faculty' && 'Mengelola dosen praktisi dengan pengalaman industri untuk pembelajaran berkualitas di FSTI (IKU 3)'}
+            {activeTab === 'research' && 'Membuat riset FSTI dapat diakses secara global dan berdampak untuk Kalimantan (IKU 5)'}
+            {activeTab === 'industry' && 'Memfasilitasi kerjasama FSTI-industri Kalimantan yang berkelanjutan dan saling menguntungkan (IKU 3)'}
             {activeTab === 'showcase' && 'Memamerkan pencapaian dan inovasi FSTI untuk visibility dan recognition (IKU 2, 5)'}
           </p>
         </div>
 
         {/* Platform Content */}
-        {activeTab === 'mbkm' && (
-          <MBKMPlatform 
+        {activeTab === 'kampus-berdampak' && (
+          <KampusBerdampakPlatform 
             searchQuery={searchQuery}
             setSearchQuery={setSearchQuery}
             filterProdi={filterProdi}
@@ -192,7 +192,7 @@ const App = () => {
             filterStatus={filterStatus}
             setFilterStatus={setFilterStatus}
             filteredProjects={filteredProjects}
-            mbkmProjectsData={mbkmProjectsData}
+            kampusBerdampakProjectsData={kampusBerdampakProjectsData}
             setSelectedProject={setSelectedProject}
             setShowApplicationForm={setShowApplicationForm}
             setShowPortfolioGenerator={setShowPortfolioGenerator}

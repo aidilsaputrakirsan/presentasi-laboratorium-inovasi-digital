@@ -16,10 +16,10 @@ const ResearchRepository = ({
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <StatCard icon={FileText} title="Karya Ilmiah" value="15" subtitle="Publikasi & Laporan" color="text-green-600" trend="20" />
-        <StatCard icon={Award} title="HKI Diproses" value="3" subtitle="Via DJKI" color="text-blue-600" trend="15" />
-        <StatCard icon={Target} title="Program PkM" value="8" subtitle="Community Impact" color="text-purple-600" trend="30" />
-        <StatCard icon={TrendingUp} title="SINTA Score" value="S2" subtitle="ITK Ranking" color="text-orange-600" trend="5" />
+        <StatCard icon={FileText} title="Karya Ilmiah" value="8" subtitle="Publikasi & Laporan" color="text-green-600" trend="20" />
+        <StatCard icon={Award} title="HKI Diproses" value="2" subtitle="Via DJKI" color="text-blue-600" trend="15" />
+        <StatCard icon={Target} title="Program PkM" value="5" subtitle="Community Impact" color="text-purple-600" trend="30" />
+        <StatCard icon={TrendingUp} title="SINTA Score" value="S2" subtitle="FSTI ITK Ranking" color="text-orange-600" trend="5" />
       </div>
 
       <div className="bg-white rounded-xl shadow-lg p-6">
@@ -66,10 +66,10 @@ const ResearchRepository = ({
             <PieChart>
               <Pie
                 data={[
-                  { name: 'Publikasi Jurnal', value: 8, color: '#10B981' },
-                  { name: 'HKI & Paten', value: 3, color: '#3B82F6' },
-                  { name: 'Laporan PkM', value: 8, color: '#8B5CF6' },
-                  { name: 'Penghargaan', value: 2, color: '#F59E0B' }
+                  { name: 'Publikasi Jurnal', value: 5, color: '#10B981' },
+                  { name: 'HKI & Paten', value: 2, color: '#3B82F6' },
+                  { name: 'Laporan PkM', value: 3, color: '#8B5CF6' },
+                  { name: 'Penghargaan', value: 1, color: '#F59E0B' }
                 ]}
                 cx="50%"
                 cy="50%"
@@ -79,10 +79,10 @@ const ResearchRepository = ({
                 label={({ name, value }) => `${name}: ${value}`}
               >
                 {[
-                  { name: 'Publikasi Jurnal', value: 8, color: '#10B981' },
-                  { name: 'HKI & Paten', value: 3, color: '#3B82F6' },
-                  { name: 'Laporan PkM', value: 8, color: '#8B5CF6' },
-                  { name: 'Penghargaan', value: 2, color: '#F59E0B' }
+                  { name: 'Publikasi Jurnal', value: 5, color: '#10B981' },
+                  { name: 'HKI & Paten', value: 2, color: '#3B82F6' },
+                  { name: 'Laporan PkM', value: 3, color: '#8B5CF6' },
+                  { name: 'Penghargaan', value: 1, color: '#F59E0B' }
                 ].map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={entry.color} />
                 ))}
@@ -97,7 +97,7 @@ const ResearchRepository = ({
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="mb-4 lg:mb-0">
             <h3 className="text-xl font-bold mb-2">Sistem Dokumentasi Riset FSTI</h3>
-            <p className="text-green-100 mb-4">Terintegrasi dengan SINTA, SISTER, dan DJKI untuk compliance nasional</p>
+            <p className="text-green-100 mb-4">Terintegrasi dengan SINTA, SISTER, dan DJKI untuk compliance nasional dengan fokus industri Kalimantan</p>
             <div className="grid grid-cols-4 gap-4">
               <div className="text-center">
                 <div className="text-2xl font-bold">SISTER</div>

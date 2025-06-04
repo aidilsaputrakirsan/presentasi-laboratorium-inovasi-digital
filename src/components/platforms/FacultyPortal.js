@@ -16,15 +16,15 @@ const FacultyPortal = ({
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <StatCard icon={Users} title="Dosen Praktisi" value="12" subtitle="Active Consultants" color="text-purple-600" trend="15" />
-        <StatCard icon={Building} title="Mitra Industri" value="7" subtitle="Active Partnerships" color="text-blue-600" trend="20" />
-        <StatCard icon={DollarSign} title="Total Honorarium" value="Rp22 Juta" subtitle="Semester ini" color="text-green-600" trend="15" />
-        <StatCard icon={CalendarIcon} title="Total SKS" value="29" subtitle="Semester ini" color="text-orange-600" trend="8" />
+        <StatCard icon={Users} title="Dosen Praktisi" value="4" subtitle="Active Consultants" color="text-purple-600" trend="15" />
+        <StatCard icon={Building} title="Mitra Industri" value="3" subtitle="Active Partnerships" color="text-blue-600" trend="20" />
+        <StatCard icon={DollarSign} title="Total Honorarium" value="Rp16 Juta" subtitle="Semester ini" color="text-green-600" trend="15" />
+        <StatCard icon={CalendarIcon} title="Total SKS" value="24" subtitle="Semester ini" color="text-orange-600" trend="8" />
       </div>
 
       <div className="bg-white rounded-xl shadow-lg p-6">
         <div className="flex justify-between items-center mb-6">
-          <h3 className="text-lg font-semibold text-gray-800">Dosen Praktisi Aktif</h3>
+          <h3 className="text-lg font-semibold text-gray-800">Dosen Praktisi FSTI Aktif</h3>
           <div className="flex space-x-2">
             <button className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors flex items-center">
               <Plus className="h-4 w-4 mr-2" />
@@ -102,23 +102,23 @@ const FacultyPortal = ({
       <div className="bg-gradient-to-r from-purple-500 to-pink-600 rounded-xl shadow-lg p-6 text-white">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="mb-4 lg:mb-0">
-            <h3 className="text-xl font-bold mb-2">Program Praktisi Mengajar</h3>
-            <p className="text-purple-100 mb-4">Dosen berpengalaman industri untuk pembelajaran yang relevan</p>
+            <h3 className="text-xl font-bold mb-2">Program Praktisi Mengajar FSTI</h3>
+            <p className="text-purple-100 mb-4">Dosen berpengalaman industri Kalimantan untuk pembelajaran yang relevan</p>
             <div className="grid grid-cols-4 gap-4">
               <div className="text-center">
-                <div className="text-2xl font-bold">29</div>
+                <div className="text-2xl font-bold">24</div>
                 <div className="text-sm text-purple-100">Total SKS</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">10</div>
+                <div className="text-2xl font-bold">8</div>
                 <div className="text-sm text-purple-100">Mata Kuliah</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">95%</div>
+                <div className="text-2xl font-bold">92%</div>
                 <div className="text-sm text-purple-100">Student Satisfaction</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">Rp22 Juta</div>
+                <div className="text-2xl font-bold">Rp16 Juta</div>
                 <div className="text-sm text-purple-100">Honorarium Semester</div>
               </div>
             </div>

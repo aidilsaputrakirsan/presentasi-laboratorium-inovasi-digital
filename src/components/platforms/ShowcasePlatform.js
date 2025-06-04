@@ -26,10 +26,10 @@ const ShowcasePlatform = ({
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <StatCard icon={CalendarIcon} title="Events Completed" value="12" subtitle="Tech Talks & Workshops" color="text-pink-600" trend="20" />
-        <StatCard icon={Award} title="Prestasi Documented" value="25" subtitle="Achievements Recorded" color="text-purple-600" trend="15" />
-        <StatCard icon={Users} title="Total Participants" value="540" subtitle="Event Attendees" color="text-blue-600" trend="25" />
-        <StatCard icon={FileText} title="News Published" value="18" subtitle="Lab Activities" color="text-green-600" trend="30" />
+        <StatCard icon={CalendarIcon} title="Events Completed" value="8" subtitle="Tech Talks & Workshops" color="text-pink-600" trend="20" />
+        <StatCard icon={Award} title="Prestasi Documented" value="15" subtitle="Achievements Recorded" color="text-purple-600" trend="15" />
+        <StatCard icon={Users} title="Total Participants" value="280" subtitle="Event Attendees" color="text-blue-600" trend="25" />
+        <StatCard icon={FileText} title="News Published" value="12" subtitle="FSTI Activities" color="text-green-600" trend="30" />
       </div>
 
       {/* Tab Navigation for Showcase Views */}
@@ -83,10 +83,10 @@ const ShowcasePlatform = ({
                 <PieChart>
                   <Pie
                     data={[
-                      { name: 'Mahasiswa', value: 12, color: '#EC4899' },
-                      { name: 'Dosen', value: 8, color: '#8B5CF6' },
-                      { name: 'Alumni', value: 3, color: '#10B981' },
-                      { name: 'Tim', value: 2, color: '#F59E0B' }
+                      { name: 'Mahasiswa', value: 8, color: '#EC4899' },
+                      { name: 'Dosen', value: 4, color: '#8B5CF6' },
+                      { name: 'Alumni', value: 2, color: '#10B981' },
+                      { name: 'Tim', value: 1, color: '#F59E0B' }
                     ]}
                     cx="50%"
                     cy="50%"
@@ -96,10 +96,10 @@ const ShowcasePlatform = ({
                     label={({ name, value }) => `${name}: ${value}`}
                   >
                     {[
-                      { name: 'Mahasiswa', value: 12, color: '#EC4899' },
-                      { name: 'Dosen', value: 8, color: '#8B5CF6' },
-                      { name: 'Alumni', value: 3, color: '#10B981' },
-                      { name: 'Tim', value: 2, color: '#F59E0B' }
+                      { name: 'Mahasiswa', value: 8, color: '#EC4899' },
+                      { name: 'Dosen', value: 4, color: '#8B5CF6' },
+                      { name: 'Alumni', value: 2, color: '#10B981' },
+                      { name: 'Tim', value: 1, color: '#F59E0B' }
                     ].map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.color} />
                     ))}
@@ -114,7 +114,7 @@ const ShowcasePlatform = ({
         {activeView === 'events' && (
           <div>
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-lg font-semibold text-gray-800">Event Management</h3>
+              <h3 className="text-lg font-semibold text-gray-800">Event Management FSTI</h3>
               <div className="flex space-x-2">
                 <button 
                   onClick={() => setShowEventForm(true)}
@@ -140,7 +140,7 @@ const ShowcasePlatform = ({
         {activeView === 'achievements' && (
           <div>
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-lg font-semibold text-gray-800">Documentation Prestasi</h3>
+              <h3 className="text-lg font-semibold text-gray-800">Documentation Prestasi FSTI</h3>
               <div className="flex space-x-2">
                 <button 
                   onClick={() => setShowAchievementForm(true)}
@@ -166,7 +166,7 @@ const ShowcasePlatform = ({
         {activeView === 'news' && (
           <div>
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-lg font-semibold text-gray-800">Lab News & Updates</h3>
+              <h3 className="text-lg font-semibold text-gray-800">FSTI News & Updates</h3>
               <div className="flex space-x-2">
                 <button className="bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-pink-700 transition-colors flex items-center">
                   <Plus className="h-4 w-4 mr-2" />
@@ -189,7 +189,7 @@ const ShowcasePlatform = ({
         {activeView === 'gallery' && (
           <div>
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-lg font-semibold text-gray-800">Photo & Video Gallery</h3>
+              <h3 className="text-lg font-semibold text-gray-800">Photo & Video Gallery FSTI</h3>
               <div className="flex space-x-2">
                 <button className="bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-pink-700 transition-colors flex items-center">
                   <Upload className="h-4 w-4 mr-2" />
@@ -202,7 +202,7 @@ const ShowcasePlatform = ({
               </div>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {[...Array(12)].map((_, i) => (
+              {[...Array(8)].map((_, i) => (
                 <div key={i} className="bg-gray-200 rounded-lg aspect-square flex items-center justify-center hover:bg-gray-300 transition-colors cursor-pointer">
                   <Video className="h-8 w-8 text-gray-500" />
                 </div>
@@ -215,23 +215,23 @@ const ShowcasePlatform = ({
       <div className="bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl shadow-lg p-6 text-white">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="mb-4 lg:mb-0">
-            <h3 className="text-xl font-bold mb-2">Platform Pameran Inovasi & Dokumentasi Prestasi</h3>
-            <p className="text-pink-100 mb-4">Memamerkan pencapaian dan inovasi FSTI untuk visibility dan recognition</p>
+            <h3 className="text-xl font-bold mb-2">Platform Pameran Inovasi & Dokumentasi Prestasi FSTI</h3>
+            <p className="text-pink-100 mb-4">Memamerkan pencapaian dan inovasi FSTI untuk visibility dan recognition industri Kalimantan</p>
             <div className="grid grid-cols-4 gap-4">
               <div className="text-center">
-                <div className="text-2xl font-bold">540+</div>
+                <div className="text-2xl font-bold">280+</div>
                 <div className="text-sm text-pink-100">Total Participants</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">25</div>
+                <div className="text-2xl font-bold">15</div>
                 <div className="text-sm text-pink-100">Achievements</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">12</div>
+                <div className="text-2xl font-bold">8</div>
                 <div className="text-sm text-pink-100">Events</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">95%</div>
+                <div className="text-2xl font-bold">90%</div>
                 <div className="text-sm text-pink-100">Satisfaction Rate</div>
               </div>
             </div>
