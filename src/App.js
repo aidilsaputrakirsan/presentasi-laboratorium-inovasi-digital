@@ -37,16 +37,14 @@ import FacultyCard from './components/cards/FacultyCard';
 // Import platform components
 import KampusBerdampakPlatform from './components/platforms/KampusBerdampakPlatform';
 import FacultyPortal from './components/platforms/FacultyPortal';
-import ResearchRepository from './components/platforms/ResearchRepository';
+import ResearchAnalytics from './components/platforms/ResearchAnalytics';
 import IndustryCollaboration from './components/platforms/IndustryCollaboration';
-import ShowcasePlatform from './components/platforms/ShowcasePlatform';
 
 // Import modal components
 import ApplicationForm from './components/modals/ApplicationForm';
 import PortfolioGenerator from './components/modals/PortfolioGenerator';
 import ProjectDetailModal from './components/modals/ProjectDetailModal';
 import CourseInfoForm from './components/modals/CourseInfoForm';
-import SubmissionForm from './components/modals/SubmissionForm';
 import PartnershipForm from './components/modals/PartnershipForm';
 import FacultyDetailModal from './components/modals/FacultyDetailModal';
 import AddEventForm from './components/modals/AddEventForm';
@@ -55,7 +53,7 @@ import AddAchievementForm from './components/modals/AddAchievementForm';
 const App = () => {
   // Main app states
   const [activeTab, setActiveTab] = useState('kampus-berdampak');
-  const [activeView, setActiveView] = useState('dashboard');
+  const [activeView, setActiveView] = useState('overview');
   
   // Selected items states
   const [selectedProject, setSelectedProject] = useState(null);
@@ -70,7 +68,6 @@ const App = () => {
   const [showApplicationForm, setShowApplicationForm] = useState(false);
   const [showPortfolioGenerator, setShowPortfolioGenerator] = useState(false);
   const [showBookingForm, setShowBookingForm] = useState(false);
-  const [showSubmissionForm, setShowSubmissionForm] = useState(false);
   const [showEventForm, setShowEventForm] = useState(false);
   const [showAchievementForm, setShowAchievementForm] = useState(false);
   const [showPartnershipForm, setShowPartnershipForm] = useState(false);
@@ -113,8 +110,8 @@ const App = () => {
                 <span className="text-sm text-green-700 font-medium">Sistem Online</span>
               </div>
               <div className="text-right">
-                <p className="text-sm text-gray-600">Uptime</p>
-                <p className="text-lg font-bold text-green-600">99.8%</p>
+                <p className="text-sm text-gray-600">API Status</p>
+                <p className="text-lg font-bold text-green-600">Active</p>
               </div>
             </div>
           </div>
@@ -127,7 +124,7 @@ const App = () => {
           <div className="flex space-x-1 py-4">
             {tabs.map((tab) => {
               const iconMap = {
-                Users, BookOpen, Award, Building, Star
+                Users, BookOpen, BarChart3, Building, Star
               };
               const Icon = iconMap[tab.icon] || Users;
               
@@ -161,7 +158,7 @@ const App = () => {
             </span>
             <div className="flex items-center space-x-1 ml-4">
               <Shield className="h-4 w-4 text-green-400" />
-              <span className="text-xs text-green-400">Secure</span>
+              <span className="text-xs text-green-400">Secure API</span>
             </div>
           </div>
         </div>
@@ -175,10 +172,9 @@ const App = () => {
           </h2>
           <p className="text-gray-600 mt-1">
             {activeTab === 'kampus-berdampak' && 'Memberdayakan mahasiswa FSTI dengan pengalaman deployment aplikasi untuk industri Kalimantan (IKU 2)'}
-            {activeTab === 'faculty' && 'Mengelola dosen praktisi dengan pengalaman industri untuk pembelajaran berkualitas di FSTI (IKU 3)'}
-            {activeTab === 'research' && 'Membuat riset FSTI dapat diakses secara global dan berdampak untuk Kalimantan (IKU 5)'}
+            {activeTab === 'faculty' && 'Portal dosen praktisi FSTI dengan data real-time dari sistem institusi (IKU 3)'}
+            {activeTab === 'research-analytics' && 'Analytics dashboard terintegrasi dengan SISTER, SINTA, dan DJKI untuk research excellence (IKU 5)'}
             {activeTab === 'industry' && 'Memfasilitasi kerjasama FSTI-industri Kalimantan yang berkelanjutan dan saling menguntungkan (IKU 3)'}
-            {activeTab === 'showcase' && 'Memamerkan pencapaian dan inovasi FSTI untuk visibility dan recognition (IKU 2, 5)'}
           </p>
         </div>
 
@@ -206,12 +202,22 @@ const App = () => {
             setShowBookingForm={setShowBookingForm}
           />
         )}
-        {activeTab === 'research' && (
-          <ResearchRepository 
+        {activeTab === 'research-analytics' && (
+          <ResearchAnalytics 
+            activeView={activeView}
+            setActiveView={setActiveView}
             researchData={researchData}
             researchMetricsData={researchMetricsData}
+            showcaseMetricsData={showcaseMetricsData}
+            eventsData={eventsData}
+            achievementsData={achievementsData}
+            newsArticlesData={newsArticlesData}
             setSelectedResearch={setSelectedResearch}
-            setShowSubmissionForm={setShowSubmissionForm}
+            setSelectedEvent={setSelectedEvent}
+            setSelectedAchievement={setSelectedAchievement}
+            setSelectedNews={setSelectedNews}
+            setShowEventForm={setShowEventForm}
+            setShowAchievementForm={setShowAchievementForm}
           />
         )}
         {activeTab === 'industry' && (
@@ -222,21 +228,6 @@ const App = () => {
             setShowPartnershipForm={setShowPartnershipForm}
           />
         )}
-        {activeTab === 'showcase' && (
-          <ShowcasePlatform 
-            activeView={activeView}
-            setActiveView={setActiveView}
-            showcaseMetricsData={showcaseMetricsData}
-            eventsData={eventsData}
-            achievementsData={achievementsData}
-            newsArticlesData={newsArticlesData}
-            setSelectedEvent={setSelectedEvent}
-            setSelectedAchievement={setSelectedAchievement}
-            setSelectedNews={setSelectedNews}
-            setShowEventForm={setShowEventForm}
-            setShowAchievementForm={setShowAchievementForm}
-          />
-        )}
       </div>
 
       {/* Footer */}
@@ -245,14 +236,14 @@ const App = () => {
           <div className="flex justify-between items-center">
             <div>
               <p className="text-sm text-gray-400">
-                © 2025 Lab Inovasi Digital FSTI ITK. Mendukung pencapaian IKU 2, 3, dan 5.
+                © 2025 Lab Inovasi Digital FSTI ITK. Integrated with SISTER, SINTA & DJKI.
               </p>
             </div>
             <div className="flex items-center space-x-4">
               <span className="text-sm text-gray-400">Powered by:</span>
-              <span className="text-sm bg-blue-600 px-2 py-1 rounded">Biznet VPS</span>
+              <span className="text-sm bg-blue-600 px-2 py-1 rounded">API Integration</span>
               <span className="text-sm bg-purple-600 px-2 py-1 rounded">React</span>
-              <span className="text-sm bg-green-600 px-2 py-1 rounded">Node.js</span>
+              <span className="text-sm bg-green-600 px-2 py-1 rounded">Real-time Sync</span>
             </div>
           </div>
         </div>
@@ -282,11 +273,6 @@ const App = () => {
         <CourseInfoForm 
           faculty={selectedFaculty} 
           onClose={() => setShowBookingForm(false)} 
-        />
-      )}
-      {showSubmissionForm && (
-        <SubmissionForm 
-          onClose={() => setShowSubmissionForm(false)} 
         />
       )}
       {showPartnershipForm && (

@@ -630,9 +630,8 @@ export const newsArticlesData = [
 ];
 
 export const tabs = [
-  { id: 'kampus-berdampak', label: 'Kampus Berdampak', icon: 'Users', color: 'bg-blue-500', url: 'kampus-berdampak.fsti-itk.ac.id' },
+  { id: 'kampus-berdampak', label: 'Platform Kampus Berdampak', icon: 'Users', color: 'bg-blue-500', url: 'kampus-berdampak.fsti-itk.ac.id' },
   { id: 'faculty', label: 'Portal Dosen', icon: 'BookOpen', color: 'bg-purple-500', url: 'faculty.fsti-itk.ac.id' },
-  { id: 'research', label: 'Repositori Riset', icon: 'Award', color: 'bg-green-500', url: 'research.fsti-itk.ac.id' },
-  { id: 'industry', label: 'Kolaborasi Industri', icon: 'Building', color: 'bg-orange-500', url: 'industry.fsti-itk.ac.id' },
-  { id: 'showcase', label: 'Pameran & Prestasi', icon: 'Star', color: 'bg-pink-500', url: 'showcase.fsti-itk.ac.id' }
+  { id: 'research-analytics', label: 'Research Analytics', icon: 'BarChart3', color: 'bg-green-500', url: 'research.fsti-itk.ac.id' },
+  { id: 'industry', label: 'Kolaborasi Industri', icon: 'Building', color: 'bg-orange-500', url: 'industry.fsti-itk.ac.id' }
 ];
