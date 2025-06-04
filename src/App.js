@@ -157,7 +157,7 @@ const App = () => {
           <div className="flex items-center space-x-2">
             <Globe className="h-4 w-4 text-gray-400" />
             <span className="text-sm">
-              https://{tabs.find(tab => tab.id === activeTab)?.url}
+              https://aidilsaputrakirsan.github.io/presentasi-laboratorium-inovasi-digital{tabs.find(tab => tab.id === activeTab)?.url}
             </span>
             <div className="flex items-center space-x-1 ml-4">
               <Shield className="h-4 w-4 text-green-400" />
