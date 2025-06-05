@@ -1,56 +1,30 @@
-import React from 'react';
+// src/components/platforms/FacultyPortal.js - UPDATED with IKU 3 Features
+import React, { useState } from 'react';
 import { 
   Users, Building, DollarSign, Calendar, Plus, Download, Star,
   RefreshCw, ExternalLink, CheckCircle, Clock, AlertCircle, Database, Linkedin,
-  UserCheck, FileText, Award, Briefcase, GraduationCap
+  UserCheck, FileText, Award, Briefcase, GraduationCap, School, Target, TrendingUp
 } from 'lucide-react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts';
 
-// Sample data
-const facultyData = [
-  {
-    id: 1,
-    name: "Aidil Saputra Kirsan, M.Tr.Kom",
-    role: "Dosen Praktisi - Cloud Computing",
-    expertise: ["Cloud Computing", "Wireless Sensor Networks", "Mobile Applications"],
-    industryExp: "Dosen Tamu di Kanagawa Institute of Technology, Jepang (2022-2023)",
-    rating: 4.9,
-    honorariumPerSKS: 650000,
-    totalSKS: 6,
-    totalHonorarium: 3900000,
-    activeCourses: 2,
-    certifications: ["AWS Certified Solutions Architect", "Cisco CCNA"],
-    linkedinProfile: "linkedin.com/in/aidil-saputra",
-    industryAffiliation: "Cloud Technology Consultant",
-    yearsExperience: 8
-  },
-  {
-    id: 2,
-    name: "Dr. Rina Marwanti",
-    role: "Dosen Praktisi - Industrial IoT",
-    expertise: ["Industrial IoT", "Smart Manufacturing", "Automation Systems"],
-    industryExp: "Konsultan Teknologi di PT Pupuk Kalimantan Timur (2019-2022)",
-    rating: 4.8,
-    honorariumPerSKS: 700000,
-    totalSKS: 6,
-    totalHonorarium: 4200000,
-    activeCourses: 2,
-    certifications: ["Certified IoT Professional", "Industrial Automation Expert"],
-    linkedinProfile: "linkedin.com/in/rina-marwanti",
-    industryAffiliation: "PT Pupuk Kalimantan Timur",
-    yearsExperience: 12
-  }
-];
+// Import new IKU 3 components
+import ExternalTeachingCard from '../cards/ExternalTeachingCard';
+import ResearchCollaborationCard from '../cards/ResearchCollaborationCard';
+import IndustryConsultationCard from '../cards/IndustryConsultationCard';
+import IKU3Calculator from '../shared/IKU3Calculator';
+import PercentageDisplay from '../shared/PercentageDisplay';
+import AddExternalTeachingForm from '../modals/AddExternalTeachingForm';
+import AddConsultationForm from '../modals/AddConsultationForm';
 
-const facultyActivitiesData = [
-  { month: 'Jul', courses: 2, sks: 6, honorarium: 4.5 },
-  { month: 'Agu', courses: 5, sks: 15, honorarium: 11.2 },
-  { month: 'Sep', courses: 8, sks: 24, honorarium: 16.8 },
-  { month: 'Okt', courses: 10, sks: 29, honorarium: 20.3 },
-  { month: 'Nov', courses: 12, sks: 32, honorarium: 22.1 },
-  { month: 'Des', courses: 14, sks: 36, honorarium: 25.2 },
-  { month: 'Jan', courses: 15, sks: 40, honorarium: 28.0 }
-];
+// Import data
+import { 
+  facultyData, 
+  facultyActivitiesData, 
+  externalTeachingData, 
+  researchCollaborationData, 
+  industryConsultationData,
+  iku3MetricsData 
+} from '../../data/sampleData';
 
 const StatCard = ({ icon: Icon, title, value, subtitle, color, trend }) => (
   <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
@@ -92,7 +66,6 @@ const FacultyCard = ({ faculty }) => (
           ))}
           <span className="text-sm text-gray-600 ml-2">({faculty.rating}/5)</span>
         </div>
-        {/* LinkedIn Integration Indicator */}
         <div className="flex items-center text-xs text-blue-600">
           <Linkedin className="h-3 w-3 mr-1" />
           <span>LinkedIn Verified</span>
@@ -112,7 +85,7 @@ const FacultyCard = ({ faculty }) => (
     <div className="mb-4">
       <p className="text-sm text-gray-700 mb-1"><strong>Pengalaman Industri:</strong></p>
       <p className="text-xs text-gray-600">{faculty.industryExp}</p>
-      <p className="text-xs text-blue-600">{faculty.yearsExperience} tahun pengalaman</p>
+      <p className="text-xs text-blue-600">{faculty.yearsExperience || 8} tahun pengalaman</p>
     </div>
 
     <div className="grid grid-cols-2 gap-4 mb-4 text-center">
@@ -138,15 +111,19 @@ const FacultyCard = ({ faculty }) => (
 );
 
 const FacultyPortal = () => {
-  const [lastSync, setLastSync] = React.useState(new Date());
-  const [syncStatus, setSyncStatus] = React.useState('success');
-  const [syncType, setSyncType] = React.useState('siakad'); // siakad, linkedin, manual
+  const [lastSync, setLastSync] = useState(new Date());
+  const [syncStatus, setSyncStatus] = useState('success');
+  const [syncType, setSyncType] = useState('siakad');
+  const [activeTab, setActiveTab] = useState('overview'); // NEW: Tab state for IKU 3 features
+  
+  // NEW: Modal states for IKU 3 forms
+  const [showExternalTeachingForm, setShowExternalTeachingForm] = useState(false);
+  const [showConsultationForm, setShowConsultationForm] = useState(false);
 
   const handleSync = async (type) => {
     setSyncStatus('loading');
     setSyncType(type);
     
-    // Simulate API call
     setTimeout(() => {
       setLastSync(new Date());
       setSyncStatus('success');
@@ -160,7 +137,6 @@ const FacultyPortal = () => {
       
       console.log(`🔄 ${type.toUpperCase()} SYNC:`, messages[type]);
       
-      // Simulate occasional error
       if (Math.random() < 0.05) {
         setSyncStatus('error');
         console.log(`❌ ${type.toUpperCase()} ERROR: Connection timeout (simulated)`);
@@ -179,7 +155,7 @@ const FacultyPortal = () => {
 
   return (
     <div className="space-y-6 p-6">
-      {/* Realistic Sync Status */}
+      {/* Sync Status */}
       <div className="bg-white rounded-xl shadow-lg p-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
@@ -245,7 +221,6 @@ const FacultyPortal = () => {
           </div>
         </div>
         
-        {/* Realistic Demo Mode Warning */}
         <div className="mt-3 p-2 bg-blue-50 rounded border-l-4 border-blue-400">
           <p className="text-xs text-blue-800">
             💡 <strong>Integrasi Realistis:</strong> SIAKAD (jadwal mengajar) • LinkedIn (profil industri) • Kemendikbud (data praktisi mengajar) • Manual verification
@@ -253,6 +228,7 @@ const FacultyPortal = () => {
         </div>
       </div>
 
+      {/* Main Stats */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <StatCard icon={Users} title="Dosen Praktisi" value="4" subtitle="Active Consultants" color="text-purple-600" trend="15" />
         <StatCard icon={Building} title="Mitra Industri" value="3" subtitle="Active Partnerships" color="text-blue-600" trend="20" />
@@ -260,106 +236,187 @@ const FacultyPortal = () => {
         <StatCard icon={Calendar} title="Total SKS" value="24" subtitle="Semester ini" color="text-orange-600" trend="8" />
       </div>
 
+      {/* NEW: Tab Navigation for IKU 3 Features */}
       <div className="bg-white rounded-xl shadow-lg p-6">
-        <div className="flex justify-between items-center mb-6">
-          <div>
-            <h3 className="text-lg font-semibold text-gray-800">Dosen Praktisi FSTI</h3>
-            <p className="text-sm text-gray-600">Data real-time dari SIAKAD, LinkedIn, dan sistem Praktisi Mengajar</p>
-          </div>
-          <div className="flex space-x-2">
-            <button className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors flex items-center">
-              <Plus className="h-4 w-4 mr-2" />
-              Tambah Dosen
-            </button>
-            <button className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors flex items-center">
-              <Download className="h-4 w-4 mr-2" />
-              Export Laporan
-            </button>
-          </div>
+        <div className="flex space-x-1 mb-6">
+          {[
+            { id: 'overview', label: 'Ringkasan Dosen', icon: Users },
+            { id: 'iku3-calculator', label: 'Kalkulator IKU 3', icon: Target },
+            { id: 'external-teaching', label: 'Mengajar Eksternal', icon: School },
+            { id: 'research-collaboration', label: 'Kolaborasi Riset', icon: Award },
+            { id: 'industry-consultation', label: 'Konsultasi Industri', icon: Building }
+          ].map((tab) => {
+            const Icon = tab.icon;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+                  activeTab === tab.id
+                    ? 'bg-purple-600 text-white shadow-lg'
+                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                }`}
+              >
+                <Icon className="h-4 w-4" />
+                <span className="hidden sm:block">{tab.label}</span>
+              </button>
+            );
+          })}
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {facultyData.map((faculty) => (
-            <div key={faculty.id} className="relative">
-              <FacultyCard faculty={faculty} />
-              {/* Integration Badges */}
-              <div className="absolute top-2 right-2 flex flex-col space-y-1">
-                <div className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium flex items-center">
-                  <Database className="h-3 w-3 mr-1" />
-                  SIAKAD
-                </div>
-                <div className="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-xs font-medium flex items-center">
-                  <Linkedin className="h-3 w-3 mr-1" />
-                  LinkedIn
-                </div>
+        {/* Tab Content */}
+        {activeTab === 'overview' && (
+          <div className="space-y-6">
+            <div className="flex justify-between items-center">
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800">Dosen Praktisi FSTI</h3>
+                <p className="text-sm text-gray-600">Data real-time dari SIAKAD, LinkedIn, dan sistem Praktisi Mengajar</p>
+              </div>
+              <div className="flex space-x-2">
+                <button className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors flex items-center">
+                  <Plus className="h-4 w-4 mr-2" />
+                  Tambah Dosen
+                </button>
+                <button className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors flex items-center">
+                  <Download className="h-4 w-4 mr-2" />
+                  Export Laporan
+                </button>
               </div>
             </div>
-          ))}
-        </div>
-      </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="bg-white rounded-xl shadow-lg p-6">
-          <h3 className="text-lg font-semibold text-gray-800 mb-4">Pertumbuhan SKS & Honorarium</h3>
-          <ResponsiveContainer width="100%" height={250}>
-            <AreaChart data={facultyActivitiesData}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="month" />
-              <YAxis />
-              <Tooltip />
-              <Area type="monotone" dataKey="sks" stackId="1" stroke="#8B5CF6" fill="#8B5CF6" fillOpacity={0.6} />
-              <Area type="monotone" dataKey="honorarium" stackId="2" stroke="#10B981" fill="#10B981" fillOpacity={0.6} />
-            </AreaChart>
-          </ResponsiveContainer>
-        </div>
-
-        <div className="bg-white rounded-xl shadow-lg p-6">
-          <h3 className="text-lg font-semibold text-gray-800 mb-4">Top Industry Experts</h3>
-          <div className="space-y-4">
-            {facultyData.slice(0, 3).map((faculty, index) => (
-              <div key={faculty.id} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                <div className="flex items-center">
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${
-                    index === 0 ? 'bg-yellow-100 text-yellow-800' :
-                    index === 1 ? 'bg-gray-100 text-gray-800' :
-                    'bg-orange-100 text-orange-800'
-                  }`}>
-                    {index + 1}
-                  </div>
-                  <div>
-                    <p className="font-medium text-sm">{faculty.name}</p>
-                    <p className="text-xs text-gray-500">{faculty.industryAffiliation}</p>
-                    <div className="flex items-center text-xs text-blue-600">
-                      <Briefcase className="h-3 w-3 mr-1" />
-                      <span>{faculty.yearsExperience} tahun</span>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {facultyData.map((faculty) => (
+                <div key={faculty.id} className="relative">
+                  <FacultyCard faculty={faculty} />
+                  <div className="absolute top-2 right-2 flex flex-col space-y-1">
+                    <div className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium flex items-center">
+                      <Database className="h-3 w-3 mr-1" />
+                      SIAKAD
+                    </div>
+                    <div className="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-xs font-medium flex items-center">
+                      <Linkedin className="h-3 w-3 mr-1" />
+                      LinkedIn
                     </div>
                   </div>
                 </div>
-                <div className="text-right">
-                  <p className="text-sm font-semibold text-green-600">Rp{(faculty.totalHonorarium/1000000).toFixed(1)} Juta</p>
-                  <div className="flex items-center">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className={`h-3 w-3 ${i < faculty.rating ? 'text-yellow-400 fill-current' : 'text-gray-300'}`} />
-                    ))}
-                    <Linkedin className="h-3 w-3 text-blue-500 ml-1" />
-                  </div>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
+
+            {/* Faculty Growth Chart */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Pertumbuhan SKS & Honorarium</h3>
+              <ResponsiveContainer width="100%" height={250}>
+                <AreaChart data={facultyActivitiesData}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="month" />
+                  <YAxis />
+                  <Tooltip />
+                  <Area type="monotone" dataKey="sks" stackId="1" stroke="#8B5CF6" fill="#8B5CF6" fillOpacity={0.6} />
+                  <Area type="monotone" dataKey="honorarium" stackId="2" stroke="#10B981" fill="#10B981" fillOpacity={0.6} />
+                </AreaChart>
+              </ResponsiveContainer>
+            </div>
           </div>
-          <div className="mt-4 p-3 bg-green-50 rounded-lg">
-            <p className="text-xs text-green-700">
-              🤝 <strong>Industry Integration:</strong> LinkedIn profiles verified, SIAKAD schedules synced, Praktisi Mengajar status updated
-            </p>
+        )}
+
+        {/* NEW: IKU 3 Calculator Tab */}
+        {activeTab === 'iku3-calculator' && (
+          <div className="space-y-6">
+            <IKU3Calculator 
+              externalTeachingData={externalTeachingData}
+              researchCollaborationData={researchCollaborationData}
+              industryConsultationData={industryConsultationData}
+              facultyData={facultyData}
+            />
+            
+            {/* IKU 3 Trends */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">IKU 3 Progress Trends</h3>
+              <ResponsiveContainer width="100%" height={250}>
+                <LineChart data={iku3MetricsData}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="month" />
+                  <YAxis />
+                  <Tooltip />
+                  <Line type="monotone" dataKey="external" stroke="#8B5CF6" strokeWidth={3} name="External Teaching" />
+                  <Line type="monotone" dataKey="collaboration" stroke="#10B981" strokeWidth={3} name="Research Collaboration" />
+                  <Line type="monotone" dataKey="consultation" stroke="#F59E0B" strokeWidth={3} name="Industry Consultation" />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
           </div>
-        </div>
+        )}
+
+        {/* NEW: External Teaching Tab */}
+        {activeTab === 'external-teaching' && (
+          <div className="space-y-6">
+            <div className="flex justify-between items-center">
+              <h3 className="text-lg font-semibold text-gray-800">Aktivitas Mengajar Eksternal - IKU 3</h3>
+              <button 
+                onClick={() => setShowExternalTeachingForm(true)}
+                className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors flex items-center"
+              >
+                <Plus className="h-4 w-4 mr-2" />
+                Tambah Mengajar Eksternal
+              </button>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {externalTeachingData.map((teaching) => (
+                <ExternalTeachingCard key={teaching.id} teaching={teaching} onClick={(t) => console.log('View external teaching:', t)} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* NEW: Research Collaboration Tab */}
+        {activeTab === 'research-collaboration' && (
+          <div className="space-y-6">
+            <div className="flex justify-between items-center">
+              <h3 className="text-lg font-semibold text-gray-800">Kolaborasi Riset - IKU 3</h3>
+              <button className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors flex items-center">
+                <Plus className="h-4 w-4 mr-2" />
+                Tambah Kolaborasi
+              </button>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {researchCollaborationData.map((collaboration) => (
+                <ResearchCollaborationCard key={collaboration.id} collaboration={collaboration} onClick={(c) => console.log('View collaboration:', c)} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* NEW: Industry Consultation Tab */}
+        {activeTab === 'industry-consultation' && (
+          <div className="space-y-6">
+            <div className="flex justify-between items-center">
+              <h3 className="text-lg font-semibold text-gray-800">Konsultasi Industri - IKU 3</h3>
+              <button 
+                onClick={() => setShowConsultationForm(true)}
+                className="bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-700 transition-colors flex items-center"
+              >
+                <Plus className="h-4 w-4 mr-2" />
+                Tambah Konsultasi
+              </button>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {industryConsultationData.map((consultation) => (
+                <IndustryConsultationCard key={consultation.id} consultation={consultation} onClick={(c) => console.log('View consultation:', c)} />
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
+      {/* CTA Section */}
       <div className="bg-gradient-to-r from-purple-500 to-pink-600 rounded-xl shadow-lg p-6 text-white">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="mb-4 lg:mb-0">
-            <h3 className="text-xl font-bold mb-2">Portal Dosen Praktisi FSTI</h3>
-            <p className="text-purple-100 mb-4">Integrasi realistis dengan SIAKAD, LinkedIn, dan sistem Praktisi Mengajar</p>
+            <h3 className="text-xl font-bold mb-2">Portal Dosen Praktisi FSTI - IKU 3 Tracker</h3>
+            <p className="text-purple-100 mb-4">Integrasi realistis dengan SIAKAD, LinkedIn, dan sistem Praktisi Mengajar untuk monitoring IKU 3</p>
             <div className="grid grid-cols-4 gap-4">
               <div className="text-center">
                 <div className="text-2xl font-bold">SIAKAD</div>
@@ -370,12 +427,12 @@ const FacultyPortal = () => {
                 <div className="text-sm text-purple-100">Profil Industri</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">Kemendikbud</div>
-                <div className="text-sm text-purple-100">Praktisi Mengajar</div>
+                <div className="text-2xl font-bold">IKU 3</div>
+                <div className="text-sm text-purple-100">Auto Calculator</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">Manual</div>
-                <div className="text-sm text-purple-100">Verification</div>
+                <div className="text-2xl font-bold">75%</div>
+                <div className="text-sm text-purple-100">Compliance Target</div>
               </div>
             </div>
           </div>
@@ -388,6 +445,21 @@ const FacultyPortal = () => {
           </button>
         </div>
       </div>
+
+      {/* NEW: Modal Forms */}
+      {showExternalTeachingForm && (
+        <AddExternalTeachingForm 
+          facultyData={facultyData}
+          onClose={() => setShowExternalTeachingForm(false)} 
+        />
+      )}
+      
+      {showConsultationForm && (
+        <AddConsultationForm 
+          facultyData={facultyData}
+          onClose={() => setShowConsultationForm(false)} 
+        />
+      )}
     </div>
   );
 };

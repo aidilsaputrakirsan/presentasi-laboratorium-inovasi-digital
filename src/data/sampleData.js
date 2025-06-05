@@ -1,3 +1,6 @@
+// src/data/sampleData.js - UPDATED dengan data IKU 3 & 5
+
+// Existing data...
 export const kampusBerdampakProjectsData = [
   { month: 'Jul', projects: 3, applications: 8 },
   { month: 'Agu', projects: 6, applications: 15 },
@@ -48,7 +51,6 @@ export const industryRevenueData = [
   { month: 'Jan', collaboration: 5, programs: 15 }
 ];
 
-// Add new dataset for deployment stats
 export const deploymentStatsData = [
   { month: 'Jul', deployed: 1, pending: 2, failed: 0 },
   { month: 'Agu', deployed: 2, pending: 3, failed: 1 },
@@ -59,7 +61,6 @@ export const deploymentStatsData = [
   { month: 'Jan', deployed: 10, pending: 1, failed: 0 }
 ];
 
-// Add new dataset for server resources
 export const serverResourcesData = [
   { name: 'CPU Usage', value: 28, color: '#3B82F6' },
   { name: 'Memory', value: 52, color: '#10B981' },
@@ -67,7 +68,6 @@ export const serverResourcesData = [
   { name: 'Bandwidth', value: 41, color: '#8B5CF6' }
 ];
 
-// Add server info
 export const serverInfoData = {
   storage: "500GB SSD",
   ram: "8GB DDR4",
@@ -82,6 +82,471 @@ export const serverInfoData = {
   ]
 };
 
+// ======= 🆕 IKU 3 DATA - Faculty Activity Tracker =======
+
+export const externalTeachingData = [
+  {
+    id: 1,
+    facultyId: 1,
+    facultyName: "Aidil Saputra Kirsan, M.Tr.Kom",
+    institution: "Universitas Mulawarman",
+    course: "Arsitektur Komputasi Awan",
+    type: "Dosen Tamu", // Dosen Tamu, Profesor Tamu, Koordinator Mata Kuliah
+    semester: "Ganjil 2024",
+    sks: 2,
+    students: 45,
+    startDate: "2024-08-15",
+    endDate: "2024-12-15",
+    status: "Aktif",
+    location: "Samarinda, Kaltim",
+    honorarium: 8000000,
+    evaluation: 4.8,
+    certificateUrl: "external-teaching.fsti-itk.ac.id/aidil-unmul-2024.pdf"
+  },
+  {
+    id: 2,
+    facultyId: 2,
+    facultyName: "Dr. Rina Marwanti",
+    institution: "Politeknik Negeri Balikpapan",
+    course: "Sistem IoT Industri",
+    type: "Profesor Tamu",
+    semester: "Ganjil 2024",
+    sks: 3,
+    students: 35,
+    startDate: "2024-09-01",
+    endDate: "2024-12-20",
+    status: "Aktif",
+    location: "Balikpapan, Kaltim",
+    honorarium: 12000000,
+    evaluation: 4.9,
+    certificateUrl: "external-teaching.fsti-itk.ac.id/rina-polnep-2024.pdf"
+  },
+  {
+    id: 3,
+    facultyId: 3,
+    facultyName: "Dr. Yohanes Khoirul",
+    institution: "STMIK Widya Cipta Dharma",
+    course: "Aplikasi Pembelajaran Mesin",
+    type: "Dosen Tamu",
+    semester: "Genap 2024",
+    sks: 2,
+    students: 28,
+    startDate: "2024-02-01",
+    endDate: "2024-06-15",
+    status: "Selesai",
+    location: "Samarinda, Kaltim",
+    honorarium: 6000000,
+    evaluation: 4.7,
+    certificateUrl: "external-teaching.fsti-itk.ac.id/yohanes-stmik-2024.pdf"
+  }
+];
+
+export const researchCollaborationData = [
+  {
+    id: 1,
+    title: "Platform Pertanian Cerdas untuk Perkebunan Kelapa Sawit",
+    leadFaculty: "Aidil Saputra Kirsan, M.Tr.Kom",
+    collaborators: ["Dr. Ahmad Fauzi (Unmul)", "Dr. Sarah (IPB)", "Ir. Budi (PT SMART)"],
+    institutions: ["ITK", "Universitas Mulawarman", "IPB University", "PT SMART Tbk"],
+    type: "Riset Multi-Institusi", // Riset Multi-Institusi, Industri-Akademik, Internasional
+    startDate: "2024-01-15",
+    endDate: "2024-12-31",
+    status: "Aktif",
+    funding: 150000000,
+    fundingSource: "Hibah Penelitian Kolaborasi Indonesia (HPKI)",
+    targetOutcome: "Publikasi Q2 Internasional + HKI",
+    currentProgress: 65,
+    siskaRisetId: "HPKI-2024-ITK-001",
+    publications: [
+      { title: "Sistem Monitoring Berbasis IoT", status: "Dalam Review", journal: "Journal of Agricultural Technology" }
+    ]
+  },
+  {
+    id: 2,
+    title: "Pengembangan Ekosistem Fintek untuk Indonesia Timur",
+    leadFaculty: "Dr. Linda Permata",
+    collaborators: ["Dr. Indra (Unhas)", "Dr. Maya (Bank Indonesia)", "Tim Developer Bank Kalsel"],
+    institutions: ["ITK", "Universitas Hasanuddin", "Bank Indonesia", "Bank Kalsel"],
+    type: "Industri-Akademik",
+    startDate: "2024-03-01",
+    endDate: "2025-02-28",
+    status: "Aktif",
+    funding: 200000000,
+    fundingSource: "Bank Indonesia Institute + Matching Fund ITK",
+    targetOutcome: "Prototype Aplikasi + Model Bisnis",
+    currentProgress: 45,
+    siskaRisetId: "PKBI-2024-ITK-003",
+    publications: [
+      { title: "Adopsi Fintek di Indonesia Timur", status: "Terbit", journal: "Indonesian Journal of Economics" }
+    ]
+  },
+  {
+    id: 3,
+    title: "IoT Industri untuk Optimasi Manufaktur Kimia",
+    leadFaculty: "Dr. Rina Marwanti",
+    collaborators: ["Dr. Teguh (ITS)", "Tim Engineering PKT", "Dr. Hans (TU Delft)"],
+    institutions: ["ITK", "ITS Surabaya", "PT Pupuk Kalimantan Timur", "TU Delft Netherlands"],
+    type: "Internasional",
+    startDate: "2024-06-01",
+    endDate: "2025-05-31",
+    status: "Aktif",
+    funding: 350000000,
+    fundingSource: "World Class Research (WCR) + EU Horizon Europe",
+    targetOutcome: "Paten + Implementasi di 3 Pabrik",
+    currentProgress: 30,
+    siskaRisetId: "WCR-2024-ITK-005",
+    publications: [
+      { title: "Arsitektur IoT Industri", status: "Dalam Persiapan", journal: "IEEE Transactions on Industrial Informatics" }
+    ]
+  }
+];
+
+export const industryConsultationData = [
+  {
+    id: 1,
+    consultantId: 1,
+    consultantName: "Aidil Saputra Kirsan, M.Tr.Kom",
+    clientCompany: "PT Astra Agro Lestari",
+    projectTitle: "Migrasi Infrastruktur Cloud untuk Manajemen Perkebunan",
+    industry: "Pertanian",
+    type: "Konsultasi Teknologi", // Konsultasi Teknologi, Konsultasi Strategis, Konsultasi Implementasi
+    startDate: "2024-07-01",
+    endDate: "2024-09-30",
+    status: "Selesai",
+    duration: "3 bulan",
+    totalValue: 45000000,
+    expertise: ["Komputasi Awan", "Arsitektur Sistem", "Migrasi Data"],
+    deliverables: [
+      "Blueprint arsitektur cloud",
+      "Roadmap migrasi", 
+      "Framework keamanan",
+      "Program pelatihan staf"
+    ],
+    outcomes: "Sukses migrasi 85% sistem ke cloud dengan efisiensi biaya 40%",
+    clientSatisfaction: 4.8,
+    contractNumber: "KONSUL-ITK-2024-001"
+  },
+  {
+    id: 2,
+    consultantId: 2,
+    consultantName: "Dr. Rina Marwanti",
+    clientCompany: "PT Badak NGL",
+    projectTitle: "Implementasi Industri 4.0 untuk Pabrik Pengolahan Gas",
+    industry: "Minyak & Gas",
+    type: "Konsultasi Implementasi",
+    startDate: "2024-08-15",
+    endDate: "2024-11-15",
+    status: "Aktif",
+    duration: "3 bulan",
+    totalValue: 60000000,
+    expertise: ["IoT Industri", "Otomasi Proses", "Analitik Data"],
+    deliverables: [
+      "Rencana deployment sensor IoT",
+      "Dashboard monitoring real-time",
+      "Sistem maintenance prediktif",
+      "Kurikulum pelatihan operator"
+    ],
+    outcomes: "Fase 1: Peningkatan 15% dalam efisiensi monitoring",
+    clientSatisfaction: 4.9,
+    contractNumber: "KONSUL-ITK-2024-002"
+  },
+  {
+    id: 3,
+    consultantId: 4,
+    consultantName: "Dr. Linda Permata",
+    clientCompany: "Bank Kalimantan Timur",
+    projectTitle: "Strategi Transformasi Digital Banking",
+    industry: "Perbankan",
+    type: "Konsultasi Strategis",
+    startDate: "2024-05-01",
+    endDate: "2024-08-31",
+    status: "Selesai",
+    duration: "4 bulan",
+    totalValue: 55000000,
+    expertise: ["Transformasi Digital", "Strategi Fintek", "Pengalaman Pelanggan"],
+    deliverables: [
+      "Roadmap strategi digital",
+      "Rekomendasi technology stack",
+      "Optimasi customer journey",
+      "Framework manajemen risiko"
+    ],
+    outcomes: "Peningkatan 25% adopsi digital, pengurangan 40% waktu pemrosesan transaksi",
+    clientSatisfaction: 4.7,
+    contractNumber: "KONSUL-ITK-2024-003"
+  }
+];
+
+// ======= 🆕 IKU 5 DATA - Research Impact Tracker =======
+
+export const publicationImpactData = [
+  {
+    id: 1,
+    facultyId: 1,
+    facultyName: "Aidil Saputra Kirsan, M.Tr.Kom",
+    totalPublications: 12,
+    totalCitations: 145,
+    hIndex: 8,
+    i10Index: 6,
+    recentPublications: [
+      {
+        title: "Wireless Sensor Networks for Palm Oil Monitoring",
+        journal: "Journal of Wireless Sensor Networks",
+        year: 2024,
+        citations: 12,
+        quartile: "Q2",
+        impactFactor: 2.8,
+        scopusId: "SCOPUS_ID_12345"
+      },
+      {
+        title: "Cloud Computing in Agricultural IoT",
+        journal: "IEEE Internet of Things Journal", 
+        year: 2024,
+        citations: 18,
+        quartile: "Q1",
+        impactFactor: 5.6,
+        scopusId: "SCOPUS_ID_12346"
+      }
+    ],
+    googleScholarId: "lzQbWuEAAAAJ",
+    scopusId: "57123456789",
+    sintaId: "SINTA_12345",
+    orcidId: "0000-0002-1234-5678",
+    lastUpdated: "2024-11-15"
+  },
+  {
+    id: 2,
+    facultyId: 2,
+    facultyName: "Dr. Rina Marwanti",
+    totalPublications: 15,
+    totalCitations: 210,
+    hIndex: 10,
+    i10Index: 9,
+    recentPublications: [
+      {
+        title: "Industrial IoT Implementation in Chemical Manufacturing",
+        journal: "Journal of Manufacturing Systems",
+        year: 2024,
+        citations: 25,
+        quartile: "Q1",
+        impactFactor: 4.2,
+        scopusId: "SCOPUS_ID_22345"
+      },
+      {
+        title: "Smart Manufacturing for Sustainable Production",
+        journal: "Sustainability",
+        year: 2024,
+        citations: 15,
+        quartile: "Q2",
+        impactFactor: 3.1,
+        scopusId: "SCOPUS_ID_22346"
+      }
+    ],
+    googleScholarId: "abc123AAAAJ",
+    scopusId: "57223456789",
+    sintaId: "SINTA_22345",
+    orcidId: "0000-0002-2234-5678",
+    lastUpdated: "2024-11-15"
+  }
+];
+
+export const patentCommercializationData = [
+  {
+    id: 1,
+    patentTitle: "Smart Irrigation System for Palm Oil Plantation",
+    inventors: ["Dr. Rina Marwanti", "Sari Lestari"],
+    patentNumber: "IDP000087654",
+    grantDate: "2024-03-15",
+    patentType: "Invention Patent", // Invention, Utility Model, Industrial Design
+    technology: "IoT Hardware + Software",
+    industry: "Agriculture Technology",
+    commercializationStatus: "Licensed",
+    licensee: "PT Smart Agriculture Technology",
+    licenseType: "Exclusive License", // Exclusive, Non-Exclusive, Royalty-Free
+    contractDate: "2024-05-20",
+    licenseDuration: "5 tahun",
+    initialPayment: 50000000,
+    royaltyRate: 5, // percentage
+    totalRevenue: 75000000, // initial + royalty accumulated
+    projectedRevenue: 200000000, // 5-year projection
+    implementationStatus: "Deployed in 3 plantations",
+    marketPotential: "500+ palm oil plantations in Kalimantan",
+    technologyReadinessLevel: 9,
+    commercializationTeam: "Unit Inovasi ITK + PT Smart Agri Tech"
+  },
+  {
+    id: 2,
+    patentTitle: "Blockchain-Based Fintech Platform for SMEs",
+    inventors: ["Dr. Linda Permata", "Lina Permatasari"],
+    patentNumber: "IDP000087655",
+    grantDate: "2024-06-20",
+    patentType: "Invention Patent",
+    technology: "Blockchain Software Platform",
+    industry: "Financial Technology",
+    commercializationStatus: "In Negotiation",
+    licensee: "Bank Kalimantan Digital (under negotiation)",
+    licenseType: "Non-Exclusive License",
+    contractDate: null,
+    licenseDuration: "7 tahun (proposed)",
+    initialPayment: 0,
+    royaltyRate: 3, // percentage (proposed)
+    totalRevenue: 0,
+    projectedRevenue: 150000000, // 7-year projection
+    implementationStatus: "Pilot testing with 15 SMEs",
+    marketPotential: "10,000+ SMEs in Eastern Indonesia",
+    technologyReadinessLevel: 8,
+    commercializationTeam: "Unit Inovasi ITK + Bank Kalsel"
+  },
+  {
+    id: 3,
+    patentTitle: "AI-Based Traffic Management System",
+    inventors: ["Dr. Yohanes Khoirul", "Rina Kartika"],
+    patentNumber: "Pending (Filed: P00202400890)",
+    grantDate: null,
+    patentType: "Invention Patent",
+    technology: "AI Software + Computer Vision",
+    industry: "Smart City Technology",
+    commercializationStatus: "Pre-Commercial",
+    licensee: null,
+    licenseType: null,
+    contractDate: null,
+    licenseDuration: null,
+    initialPayment: 0,
+    royaltyRate: 0,
+    totalRevenue: 0,
+    projectedRevenue: 300000000, // potential if commercialized
+    implementationStatus: "Proof of concept completed",
+    marketPotential: "50+ cities in Indonesia with traffic issues",
+    technologyReadinessLevel: 6,
+    commercializationTeam: "Unit Inovasi ITK + Interested Cities"
+  }
+];
+
+export const researchAdoptionData = [
+  {
+    id: 1,
+    researchTitle: "IoT-Based Plantation Monitoring System",
+    researchers: ["Aidil Saputra Kirsan, M.Tr.Kom", "Tim Mahasiswa"],
+    adoptingOrganizations: [
+      {
+        name: "PT Astra Agro Lestari",
+        type: "Private Company",
+        sector: "Agriculture",
+        adoptionDate: "2024-04-15",
+        implementationScale: "3 plantations, 1,500 hectares",
+        adaptationType: "Direct Implementation", // Direct, Modified, Inspired
+        outcomes: "20% increase in monitoring efficiency, 15% cost reduction",
+        feedback: "Sangat membantu monitoring real-time kondisi perkebunan",
+        satisfaction: 4.8,
+        continuedUsage: true,
+        contactPerson: "Ir. Bambang Sutrisno"
+      },
+      {
+        name: "PT SMART Tbk",
+        type: "Private Company", 
+        sector: "Agriculture",
+        adoptionDate: "2024-06-20",
+        implementationScale: "5 plantations, 2,800 hectares",
+        adaptationType: "Modified Implementation",
+        outcomes: "25% improvement in yield prediction accuracy",
+        feedback: "Teknologi mudah diimplementasi dengan modifikasi minor",
+        satisfaction: 4.6,
+        continuedUsage: true,
+        contactPerson: "Dr. Sari Indrawati"
+      }
+    ],
+    totalAdoptions: 2,
+    totalBeneficiaries: "4,300 hectares plantation area",
+    adoptionRate: "60% of contacted organizations",
+    economicImpact: "Estimated Rp2.5 billion efficiency gain per year",
+    socialImpact: "Improved livelihood for 150+ plantation workers"
+  },
+  {
+    id: 2,
+    researchTitle: "Digital Banking Platform for Rural Areas",
+    researchers: ["Dr. Linda Permata", "Tim Fintech"],
+    adoptingOrganizations: [
+      {
+        name: "Bank Kalimantan Selatan",
+        type: "Regional Bank",
+        sector: "Banking",
+        adoptionDate: "2024-08-01",
+        implementationScale: "10 rural branches, 5,000 customers",
+        adaptationType: "Direct Implementation",
+        outcomes: "40% increase in digital transaction adoption",
+        feedback: "Platform sangat user-friendly untuk nasabah pedesaan",
+        satisfaction: 4.7,
+        continuedUsage: true,
+        contactPerson: "Drs. Ahmad Fauzi"
+      },
+      {
+        name: "Koperasi Simpan Pinjam Borneo",
+        type: "Cooperative",
+        sector: "Financial Services",
+        adoptionDate: "2024-09-15",
+        implementationScale: "3 branches, 1,200 members",
+        adaptationType: "Modified Implementation",
+        outcomes: "50% reduction in transaction processing time",
+        feedback: "Memudahkan anggota koperasi mengakses layanan keuangan",
+        satisfaction: 4.5,
+        continuedUsage: true,
+        contactPerson: "Ibu Ratna Dewi"
+      }
+    ],
+    totalAdoptions: 2,
+    totalBeneficiaries: "6,200 customers/members",
+    adoptionRate: "40% of contacted financial institutions",
+    economicImpact: "Rp1.8 billion in improved financial inclusion",
+    socialImpact: "Enhanced financial access for rural communities"
+  },
+  {
+    id: 3,
+    researchTitle: "Smart Manufacturing Optimization System",
+    researchers: ["Dr. Rina Marwanti", "Tim Industry 4.0"],
+    adoptingOrganizations: [
+      {
+        name: "PT Pupuk Kalimantan Timur",
+        type: "State-Owned Enterprise",
+        sector: "Chemical Manufacturing",
+        adoptionDate: "2024-05-10",
+        implementationScale: "2 production lines",
+        adaptationType: "Pilot Implementation",
+        outcomes: "12% improvement in production efficiency",
+        feedback: "Sistem monitoring real-time sangat membantu optimasi produksi",
+        satisfaction: 4.9,
+        continuedUsage: true,
+        contactPerson: "Ir. Hendra Kusuma"
+      }
+    ],
+    totalAdoptions: 1,
+    totalBeneficiaries: "500+ factory workers",
+    adoptionRate: "100% of pilot participants",
+    economicImpact: "Rp5.2 billion annual production optimization",
+    socialImpact: "Improved working conditions and safety monitoring"
+  }
+];
+
+// IKU 3 & 5 Calculation Data
+export const iku3MetricsData = [
+  { month: 'Jul', external: 1, collaboration: 2, consultation: 1 },
+  { month: 'Agu', external: 2, collaboration: 2, consultation: 2 },
+  { month: 'Sep', external: 2, collaboration: 3, consultation: 2 },
+  { month: 'Okt', external: 3, collaboration: 3, consultation: 3 },
+  { month: 'Nov', external: 3, collaboration: 3, consultation: 3 },
+  { month: 'Des', external: 3, collaboration: 3, consultation: 3 },
+  { month: 'Jan', external: 3, collaboration: 3, consultation: 3 }
+];
+
+export const iku5MetricsData = [
+  { month: 'Jul', citations: 120, patents: 0, adoptions: 0 },
+  { month: 'Agu', citations: 135, patents: 1, adoptions: 1 },
+  { month: 'Sep', citations: 150, patents: 1, adoptions: 2 },
+  { month: 'Okt', citations: 165, patents: 2, adoptions: 3 },
+  { month: 'Nov', citations: 180, patents: 2, adoptions: 4 },
+  { month: 'Des', citations: 195, patents: 2, adoptions: 5 },
+  { month: 'Jan', citations: 210, patents: 3, adoptions: 6 }
+];
+
+// Existing data exports remain the same...
 export const projectsData = [
   {
     id: 1,
@@ -100,8 +565,8 @@ export const projectsData = [
     demo: "https://andika-ecommerce.kampus-berdampak.fsti-itk.ac.id",
     progress: 100,
     category: "Web Development",
-    serverStatus: "Online", // Added
-    resourceUsage: { cpu: 15, memory: 45, storage: 1.2, bandwidth: 89 } // Added
+    serverStatus: "Online",
+    resourceUsage: { cpu: 15, memory: 45, storage: 1.2, bandwidth: 89 }
   },
   {
     id: 2,
@@ -120,8 +585,8 @@ export const projectsData = [
     demo: "https://sari-irrigation.kampus-berdampak.fsti-itk.ac.id",
     progress: 80,
     category: "IoT & Hardware",
-    serverStatus: "Not Deployed", // Added
-    resourceUsage: null // Added
+    serverStatus: "Not Deployed",
+    resourceUsage: null
   },
   {
     id: 3,
@@ -140,8 +605,8 @@ export const projectsData = [
     demo: "https://joko-elearning.kampus-berdampak.fsti-itk.ac.id",
     progress: 85,
     category: "Education Technology",
-    serverStatus: "Not Deployed", // Added
-    resourceUsage: null // Added
+    serverStatus: "Not Deployed",
+    resourceUsage: null
   },
   {
     id: 4,
@@ -160,8 +625,8 @@ export const projectsData = [
     demo: "https://rina-traffic.kampus-berdampak.fsti-itk.ac.id",
     progress: 70,
     category: "AI & Machine Learning",
-    serverStatus: "Not Deployed", // Added
-    resourceUsage: null // Added
+    serverStatus: "Not Deployed",
+    resourceUsage: null
   },
   {
     id: 5,
@@ -180,8 +645,8 @@ export const projectsData = [
     demo: "https://budi-digitaltwin.kampus-berdampak.fsti-itk.ac.id",
     progress: 100,
     category: "Industrial Technology",
-    serverStatus: "Online", // Added
-    resourceUsage: { cpu: 20, memory: 50, storage: 2.5, bandwidth: 75 } // Added
+    serverStatus: "Online",
+    resourceUsage: { cpu: 20, memory: 50, storage: 2.5, bandwidth: 75 }
   },
   {
     id: 6,
@@ -200,8 +665,8 @@ export const projectsData = [
     demo: "https://lina-fintech.kampus-berdampak.fsti-itk.ac.id",
     progress: 90,
     category: "Fintech",
-    serverStatus: "Not Deployed", // Added
-    resourceUsage: null // Added
+    serverStatus: "Not Deployed",
+    resourceUsage: null
   },
   {
     id: 7,
@@ -220,8 +685,8 @@ export const projectsData = [
     demo: "https://dewi-tourism.kampus-berdampak.fsti-itk.ac.id",
     progress: 60,
     category: "Mobile Development",
-    serverStatus: "Not Deployed", // Added
-    resourceUsage: null // Added
+    serverStatus: "Not Deployed",
+    resourceUsage: null
   }
 ];
 
