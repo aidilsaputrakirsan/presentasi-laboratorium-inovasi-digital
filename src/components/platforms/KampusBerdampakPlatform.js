@@ -8,55 +8,8 @@ import {
   Wifi, CreditCard, FileCode, Package, Layers, Activity, X
 } from 'lucide-react';
 import { PieChart, Pie, Cell, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from 'recharts';
-
-// Sample Data
-const projectsData = [
-  {
-    id: 1,
-    title: "E-Commerce UMKM Kalimantan",
-    student: "Andika Pratama",
-    prodi: "Sistem Informasi",
-    angkatan: "2021",
-    status: "Live",
-    deployStatus: "Deployed",
-    subdomain: "andika-ecommerce",
-    url: "andika-ecommerce.kampus-berdampak.fsti-itk.ac.id",
-    tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-    progress: 100,
-    cpanelStats: { cpu: 15, memory: 45, storage: 1.2, bandwidth: 89 },
-    deployDate: "2024-11-15",
-    lastUpdate: "2024-12-01"
-  },
-  {
-    id: 2,
-    title: "Smart Irrigation System",
-    student: "Sari Lestari", 
-    prodi: "Teknik Elektro",
-    angkatan: "2022",
-    status: "Development",
-    deployStatus: "Pending",
-    subdomain: "sari-irrigation",
-    url: "sari-irrigation.kampus-berdampak.fsti-itk.ac.id",
-    tech: ['Arduino', 'Python', 'MQTT', 'InfluxDB'],
-    progress: 80,
-    deployDate: null,
-    lastUpdate: "2024-12-02"
-  }
-];
-
-const deploymentStats = [
-  { month: 'Sep', deployed: 3, pending: 2, failed: 0 },
-  { month: 'Okt', deployed: 6, pending: 1, failed: 1 },
-  { month: 'Nov', deployed: 12, pending: 3, failed: 1 },
-  { month: 'Des', deployed: 18, pending: 2, failed: 0 }
-];
-
-const serverResources = [
-  { name: 'CPU Usage', value: 23, color: '#3B82F6' },
-  { name: 'Memory', value: 45, color: '#10B981' },
-  { name: 'Storage', value: 67, color: '#F59E0B' },
-  { name: 'Bandwidth', value: 34, color: '#8B5CF6' }
-];
+import PortfolioGenerator from '../modals/PortfolioGenerator';
+import { projectsData as importedProjectsData, deploymentStatsData, serverResourcesData, serverInfoData, kampusBerdampakProjectsData } from '../../data/sampleData';
 
 // Components
 const StatCard = ({ icon: Icon, title, value, subtitle, color, trend, onClick }) => (
@@ -89,6 +42,7 @@ const ProjectCard = ({ project, onClick, onDeploy }) => {
       case 'Live': return 'bg-green-100 text-green-800';
       case 'Development': return 'bg-blue-100 text-blue-800';
       case 'Testing': return 'bg-yellow-100 text-yellow-800';
+      case 'Research': return 'bg-purple-100 text-purple-800';
       default: return 'bg-gray-100 text-gray-800';
     }
   };
@@ -111,8 +65,8 @@ const ProjectCard = ({ project, onClick, onDeploy }) => {
             {project.status}
           </span>
           <div className="flex items-center">
-            <div className={`w-2 h-2 rounded-full ${getDeployStatusColor(project.deployStatus)} mr-1`}></div>
-            <span className="text-xs text-gray-600">{project.deployStatus}</span>
+            <div className={`w-2 h-2 rounded-full ${getDeployStatusColor(project.status === 'Live' ? 'Deployed' : 'Pending')} mr-1`}></div>
+            <span className="text-xs text-gray-600">{project.status === 'Live' ? 'Deployed' : 'Pending'}</span>
           </div>
         </div>
       </div>
@@ -136,24 +90,23 @@ const ProjectCard = ({ project, onClick, onDeploy }) => {
         )}
       </div>
 
-      {/* Deployment Info */}
-      {project.deployStatus === 'Deployed' && project.cpanelStats && (
+      {project.status === 'Live' && project.resourceUsage && (
         <div className="bg-gray-50 rounded p-2 mb-3">
           <div className="grid grid-cols-4 gap-2 text-xs">
             <div className="text-center">
-              <div className="font-medium text-blue-600">{project.cpanelStats.cpu}%</div>
+              <div className="font-medium text-blue-600">{project.resourceUsage.cpu}%</div>
               <div className="text-gray-500">CPU</div>
             </div>
             <div className="text-center">
-              <div className="font-medium text-green-600">{project.cpanelStats.memory}%</div>
+              <div className="font-medium text-green-600">{project.resourceUsage.memory}%</div>
               <div className="text-gray-500">RAM</div>
             </div>
             <div className="text-center">
-              <div className="font-medium text-orange-600">{project.cpanelStats.storage}GB</div>
+              <div className="font-medium text-orange-600">{project.resourceUsage.storage}GB</div>
               <div className="text-gray-500">Storage</div>
             </div>
             <div className="text-center">
-              <div className="font-medium text-purple-600">{project.cpanelStats.bandwidth}%</div>
+              <div className="font-medium text-purple-600">{project.resourceUsage.bandwidth}%</div>
               <div className="text-gray-500">Traffic</div>
             </div>
           </div>
@@ -161,7 +114,7 @@ const ProjectCard = ({ project, onClick, onDeploy }) => {
       )}
 
       <div className="flex space-x-2">
-        {project.deployStatus === 'Deployed' ? (
+        {project.status === 'Live' ? (
           <>
             <button 
               onClick={() => window.open(`https://${project.url}`, '_blank')}
@@ -222,7 +175,6 @@ const DeploymentModal = ({ project, onClose }) => {
         </div>
 
         <div className="p-6">
-          {/* Steps */}
           <div className="flex items-center mb-8">
             {[1,2,3,4].map((step) => (
               <div key={step} className="flex items-center">
@@ -236,7 +188,6 @@ const DeploymentModal = ({ project, onClose }) => {
             ))}
           </div>
 
-          {/* Step Content */}
           {deployStep === 1 && (
             <div className="space-y-6">
               <h3 className="text-lg font-semibold">1. Persiapan Aplikasi</h3>
@@ -262,7 +213,7 @@ const DeploymentModal = ({ project, onClose }) => {
 
               <div className="bg-blue-50 p-4 rounded-lg">
                 <h4 className="font-medium text-blue-800 mb-2">Subdomain yang akan dibuat:</h4>
-                <p className="text-blue-700 font-mono">{project?.subdomain}.kampus-berdampak.fsti-itk.ac.id</p>
+                <p className="text-blue-700 font-mono">{project?.url.split('.')[0]}.kampus-berdampak.fsti-itk.ac.id</p>
               </div>
 
               <button 
@@ -428,7 +379,7 @@ const DeploymentModal = ({ project, onClose }) => {
   );
 };
 
-// Simplified Application Form
+// Application Modal
 const ApplicationModal = ({ onClose }) => (
   <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
     <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
@@ -533,7 +484,6 @@ const ApplicationModal = ({ onClose }) => (
             <button 
               type="button"
               onClick={() => {
-                // Handle form submission
                 console.log('Form submitted');
                 onClose();
               }}
@@ -549,16 +499,17 @@ const ApplicationModal = ({ onClose }) => (
 );
 
 // Main Platform Component
-const KampusBerdampakPlatform = () => {
+const KampusBerdampakPlatform = ({ setShowPortfolioGenerator }) => {
   const [activeTab, setActiveTab] = useState('projects');
   const [searchQuery, setSearchQuery] = useState('');
   const [filterProdi, setFilterProdi] = useState('all');
   const [filterStatus, setFilterStatus] = useState('all');
   const [showApplicationForm, setShowApplicationForm] = useState(false);
   const [showDeploymentModal, setShowDeploymentModal] = useState(false);
+  const [showPortfolioModal, setShowPortfolioModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const filteredProjects = projectsData.filter(project => {
+  const filteredProjects = importedProjectsData.filter(project => {
     const matchesSearch = project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                          project.student.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesProdi = filterProdi === 'all' || project.prodi === filterProdi;
@@ -573,15 +524,13 @@ const KampusBerdampakPlatform = () => {
 
   return (
     <div className="space-y-6">
-      {/* Stats */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <StatCard icon={Users} title="Mahasiswa Aktif" value="45" subtitle="Peserta Program" color="text-blue-600" trend="12" />
-        <StatCard icon={Server} title="Apps Deployed" value="18" subtitle="Live Applications" color="text-green-600" trend="25" />
-        <StatCard icon={Globe} title="Subdomains" value="20+" subtitle="Active Subdomains" color="text-purple-600" trend="15" />
+        <StatCard icon={Server} title="Apps Deployed" value={importedProjectsData.filter(p => p.status === 'Live').length} subtitle="Live Applications" color="text-green-600" trend="25" />
+        <StatCard icon={Globe} title="Subdomains" value={`${importedProjectsData.length}+`} subtitle="Active Subdomains" color="text-purple-600" trend="15" />
         <StatCard icon={Shield} title="SSL Enabled" value="100%" subtitle="Secure Connections" color="text-orange-600" trend="0" />
       </div>
 
-      {/* Tab Navigation */}
       <div className="bg-white rounded-xl shadow-lg p-6">
         <div className="flex space-x-1 mb-6">
           {[
@@ -607,7 +556,6 @@ const KampusBerdampakPlatform = () => {
           })}
         </div>
 
-        {/* Projects Tab */}
         {activeTab === 'projects' && (
           <div className="space-y-6">
             <div className="flex flex-col md:flex-row gap-4 mb-6">
@@ -634,6 +582,7 @@ const KampusBerdampakPlatform = () => {
                   <option value="Live">Live</option>
                   <option value="Development">Development</option>
                   <option value="Testing">Testing</option>
+                  <option value="Research">Research</option>
                 </select>
               </div>
             </div>
@@ -646,13 +595,22 @@ const KampusBerdampakPlatform = () => {
                 <Plus className="h-4 w-4 mr-2" />
                 Daftar Program
               </button>
-              <button className="bg-green-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-green-700 transition-colors flex items-center">
+              <button 
+                onClick={() => setShowDeploymentModal(true)} 
+                className="bg-green-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-green-700 transition-colors flex items-center"
+              >
                 <CloudUpload className="h-4 w-4 mr-2" />
                 Deploy App
               </button>
-              <button className="bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors flex items-center">
+              <button 
+                onClick={() => {
+                  setShowPortfolioModal(true);
+                  setShowPortfolioGenerator?.(true);
+                }}
+                className="bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors flex items-center"
+              >
                 <Download className="h-4 w-4 mr-2" />
-                Portfolio Template
+                Buat Portfolio
               </button>
             </div>
 
@@ -669,14 +627,13 @@ const KampusBerdampakPlatform = () => {
           </div>
         )}
 
-        {/* Deployment Tab */}
         {activeTab === 'deployment' && (
           <div className="space-y-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <h3 className="text-lg font-semibold text-gray-800 mb-4">Deployment Stats</h3>
                 <ResponsiveContainer width="100%" height={250}>
-                  <BarChart data={deploymentStats}>
+                  <BarChart data={deploymentStatsData}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="month" />
                     <YAxis />
@@ -694,25 +651,37 @@ const KampusBerdampakPlatform = () => {
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <h4 className="font-medium mb-2">Server Info</h4>
                     <div className="text-sm space-y-1">
-                      <div>💾 <strong>Storage:</strong> 500GB SSD</div>
-                      <div>🔧 <strong>RAM:</strong> 8GB DDR4</div>
-                      <div>⚡ <strong>CPU:</strong> 4 vCPU Intel</div>
-                      <div>🌐 <strong>Bandwidth:</strong> Unlimited</div>
+                      <div>💾 <strong>Storage:</strong> {serverInfoData.storage}</div>
+                      <div>🔧 <strong>RAM:</strong> {serverInfoData.ram}</div>
+                      <div>⚡ <strong>CPU:</strong> {serverInfoData.cpu}</div>
+                      <div>🌐 <strong>Bandwidth:</strong> {serverInfoData.bandwidth}</div>
                     </div>
                   </div>
                   
                   <div className="bg-blue-50 p-4 rounded-lg">
                     <h4 className="font-medium text-blue-800 mb-2">cPanel Features</h4>
                     <div className="text-sm text-blue-700 space-y-1">
-                      <div>✓ Auto SSL Certificate</div>
-                      <div>✓ File Manager</div>
-                      <div>✓ MySQL Database</div>
-                      <div>✓ Subdomain Manager</div>
-                      <div>✓ Backup & Restore</div>
+                      {serverInfoData.cpanelFeatures.map((feature, index) => (
+                        <div key={index}>✓ {feature}</div>
+                      ))}
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Project Growth Trends</h3>
+              <ResponsiveContainer width="100%" height={250}>
+                <AreaChart data={kampusBerdampakProjectsData}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="month" />
+                  <YAxis />
+                  <Tooltip />
+                  <Area type="monotone" dataKey="projects" stroke="#3B82F6" fill="#3B82F6" fillOpacity={0.3} name="Projects" />
+                  <Area type="monotone" dataKey="applications" stroke="#10B981" fill="#10B981" fillOpacity={0.3} name="Applications" />
+                </AreaChart>
+              </ResponsiveContainer>
             </div>
 
             <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl shadow-lg p-6 text-white">
@@ -740,7 +709,6 @@ const KampusBerdampakPlatform = () => {
           </div>
         )}
 
-        {/* Monitoring Tab */}
         {activeTab === 'monitoring' && (
           <div className="space-y-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -749,7 +717,7 @@ const KampusBerdampakPlatform = () => {
                 <ResponsiveContainer width="100%" height={250}>
                   <PieChart>
                     <Pie
-                      data={serverResources}
+                      data={serverResourcesData}
                       cx="50%"
                       cy="50%"
                       innerRadius={60}
@@ -757,7 +725,7 @@ const KampusBerdampakPlatform = () => {
                       dataKey="value"
                       label={({ name, value }) => `${name}: ${value}%`}
                     >
-                      {serverResources.map((entry, index) => (
+                      {serverResourcesData.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={entry.color} />
                       ))}
                     </Pie>
@@ -769,15 +737,15 @@ const KampusBerdampakPlatform = () => {
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <h3 className="text-lg font-semibold text-gray-800 mb-4">Active Applications</h3>
                 <div className="space-y-3">
-                  {projectsData.filter(p => p.deployStatus === 'Deployed').map((project) => (
+                  {importedProjectsData.filter(p => p.status === 'Live').map((project) => (
                     <div key={project.id} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                       <div>
                         <p className="font-medium text-sm">{project.title}</p>
                         <p className="text-xs text-gray-500">{project.url}</p>
                       </div>
                       <div className="text-right">
-                        <div className="w-2 h-2 bg-green-500 rounded-full mb-1"></div>
-                        <span className="text-xs text-green-600">Online</span>
+                        <div className={`w-2 h-2 rounded-full ${project.serverStatus === 'Online' ? 'bg-green-500' : 'bg-red-500'} mb-1`}></div>
+                        <span className={`text-xs ${project.serverStatus === 'Online' ? 'text-green-600' : 'text-red-600'}`}>{project.serverStatus}</span>
                       </div>
                     </div>
                   ))}
@@ -788,7 +756,6 @@ const KampusBerdampakPlatform = () => {
         )}
       </div>
 
-      {/* Modals */}
       {showApplicationForm && <ApplicationModal onClose={() => setShowApplicationForm(false)} />}
       {showDeploymentModal && (
         <DeploymentModal 
@@ -797,6 +764,15 @@ const KampusBerdampakPlatform = () => {
             setShowDeploymentModal(false);
             setSelectedProject(null);
           }} 
+        />
+      )}
+      {showPortfolioModal && (
+        <PortfolioGenerator 
+          filteredProjects={filteredProjects}
+          onClose={() => {
+            setShowPortfolioModal(false);
+            setShowPortfolioGenerator?.(false);
+          }}
         />
       )}
     </div>

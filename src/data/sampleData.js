@@ -48,6 +48,40 @@ export const industryRevenueData = [
   { month: 'Jan', collaboration: 5, programs: 15 }
 ];
 
+// Add new dataset for deployment stats
+export const deploymentStatsData = [
+  { month: 'Jul', deployed: 1, pending: 2, failed: 0 },
+  { month: 'Agu', deployed: 2, pending: 3, failed: 1 },
+  { month: 'Sep', deployed: 3, pending: 4, failed: 0 },
+  { month: 'Okt', deployed: 5, pending: 3, failed: 1 },
+  { month: 'Nov', deployed: 7, pending: 2, failed: 0 },
+  { month: 'Des', deployed: 9, pending: 1, failed: 0 },
+  { month: 'Jan', deployed: 10, pending: 1, failed: 0 }
+];
+
+// Add new dataset for server resources
+export const serverResourcesData = [
+  { name: 'CPU Usage', value: 28, color: '#3B82F6' },
+  { name: 'Memory', value: 52, color: '#10B981' },
+  { name: 'Storage', value: 73, color: '#F59E0B' },
+  { name: 'Bandwidth', value: 41, color: '#8B5CF6' }
+];
+
+// Add server info
+export const serverInfoData = {
+  storage: "500GB SSD",
+  ram: "8GB DDR4",
+  cpu: "4 vCPU Intel",
+  bandwidth: "Unlimited",
+  cpanelFeatures: [
+    "Auto SSL Certificate",
+    "File Manager",
+    "MySQL Database",
+    "Subdomain Manager",
+    "Backup & Restore"
+  ]
+};
+
 export const projectsData = [
   {
     id: 1,
@@ -65,7 +99,9 @@ export const projectsData = [
     github: "https://github.com/andika/ecommerce-kalimantan",
     demo: "https://andika-ecommerce.kampus-berdampak.fsti-itk.ac.id",
     progress: 100,
-    category: "Web Development"
+    category: "Web Development",
+    serverStatus: "Online", // Added
+    resourceUsage: { cpu: 15, memory: 45, storage: 1.2, bandwidth: 89 } // Added
   },
   {
     id: 2,
@@ -83,7 +119,9 @@ export const projectsData = [
     github: "https://github.com/sari/smart-irrigation",
     demo: "https://sari-irrigation.kampus-berdampak.fsti-itk.ac.id",
     progress: 80,
-    category: "IoT & Hardware"
+    category: "IoT & Hardware",
+    serverStatus: "Not Deployed", // Added
+    resourceUsage: null // Added
   },
   {
     id: 3,
@@ -101,7 +139,9 @@ export const projectsData = [
     github: "https://github.com/joko/elearning-dayak",
     demo: "https://joko-elearning.kampus-berdampak.fsti-itk.ac.id",
     progress: 85,
-    category: "Education Technology"
+    category: "Education Technology",
+    serverStatus: "Not Deployed", // Added
+    resourceUsage: null // Added
   },
   {
     id: 4,
@@ -119,7 +159,9 @@ export const projectsData = [
     github: "https://github.com/rina/ai-traffic",
     demo: "https://rina-traffic.kampus-berdampak.fsti-itk.ac.id",
     progress: 70,
-    category: "AI & Machine Learning"
+    category: "AI & Machine Learning",
+    serverStatus: "Not Deployed", // Added
+    resourceUsage: null // Added
   },
   {
     id: 5,
@@ -137,7 +179,9 @@ export const projectsData = [
     github: "https://github.com/budi/digital-twin-cpo",
     demo: "https://budi-digitaltwin.kampus-berdampak.fsti-itk.ac.id",
     progress: 100,
-    category: "Industrial Technology"
+    category: "Industrial Technology",
+    serverStatus: "Online", // Added
+    resourceUsage: { cpu: 20, memory: 50, storage: 2.5, bandwidth: 75 } // Added
   },
   {
     id: 6,
@@ -155,7 +199,9 @@ export const projectsData = [
     github: "https://github.com/lina/fintech-umkm",
     demo: "https://lina-fintech.kampus-berdampak.fsti-itk.ac.id",
     progress: 90,
-    category: "Fintech"
+    category: "Fintech",
+    serverStatus: "Not Deployed", // Added
+    resourceUsage: null // Added
   },
   {
     id: 7,
@@ -173,7 +219,9 @@ export const projectsData = [
     github: "https://github.com/dewi/smart-tourism-kalimantan",
     demo: "https://dewi-tourism.kampus-berdampak.fsti-itk.ac.id",
     progress: 60,
-    category: "Mobile Development"
+    category: "Mobile Development",
+    serverStatus: "Not Deployed", // Added
+    resourceUsage: null // Added
   }
 ];
 

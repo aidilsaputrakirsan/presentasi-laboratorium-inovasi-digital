@@ -1,4 +1,3 @@
-// src/components/modals/PortfolioGenerator.js
 import React from 'react';
 import { X, Download, User, Mail, Phone, Globe } from 'lucide-react';
 
@@ -18,10 +17,26 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
             <div>
               <h3 className="text-lg font-semibold mb-4">Informasi Personal</h3>
               <div className="space-y-4">
-                <input type="text" placeholder="Nama Lengkap" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" />
-                <input type="text" placeholder="Tagline/Bio" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" />
-                <input type="email" placeholder="Email" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" />
-                <input type="text" placeholder="No. Telepon" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" />
+                <input 
+                  type="text" 
+                  placeholder="Nama Lengkap" 
+                  className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" 
+                />
+                <input 
+                  type="text" 
+                  placeholder="Tagline/Bio" 
+                  className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" 
+                />
+                <input 
+                  type="email" 
+                  placeholder="Email" 
+                  className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" 
+                />
+                <input 
+                  type="text" 
+                  placeholder="No. Telepon" 
+                  className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" 
+                />
               </div>
             </div>
 
@@ -88,7 +103,7 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
                     <div key={project.id} className="border border-gray-200 rounded p-2">
                       <p className="font-medium text-sm">{project.title}</p>
                       <p className="text-xs text-gray-500">{project.tech.slice(0, 3).join(', ')}</p>
-                      <p className="text-xs text-blue-500">{project.url}</p>
+                      <p className="text-xs text-blue-600">{project.url}</p>
                     </div>
                   ))}
                 </div>
@@ -98,7 +113,7 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
                 <h5 className="font-semibold mb-2">Fokus Industri</h5>
                 <div className="flex flex-wrap gap-1">
                   {['Kelapa Sawit', 'IoT', 'Smart City', 'Fintech'].map((focus) => (
-                    <span key={focus} className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">{focus}</span>
+                    <span key={focus} className="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs">{focus}</span>
                   ))}
                 </div>
               </div>
@@ -107,7 +122,7 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
                 <h5 className="font-semibold mb-2">Keahlian Teknis</h5>
                 <div className="flex flex-wrap gap-1">
                   {['React', 'Node.js', 'Python', 'IoT', 'AI'].map((skill) => (
-                    <span key={skill} className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">{skill}</span>
+                    <span key={skill} className="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs">{skill}</span>
                   ))}
                 </div>
               </div>
@@ -123,7 +138,7 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
         </div>
 
         <div className="flex space-x-4 mt-6">
-          <button onClick={onClose} className="flex-1 bg-gray-200 text-gray-800 py-3 px-4 rounded-lg font-medium hover:bg-gray-300 transition-colors">
+          <button onClose={onClose} className="flex-1 bg-gray-200 text-gray-800 py-3 px-4 rounded-lg font-medium hover:bg-gray-300 transition-colors">
             Batal
           </button>
           <button className="flex-1 bg-blue-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center justify-center">
@@ -133,7 +148,7 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
         </div>
       </div>
     </div>
-  </div>
-);
+    </div>
+  );
 
 export default PortfolioGenerator;
