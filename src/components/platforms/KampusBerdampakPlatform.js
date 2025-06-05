@@ -151,7 +151,7 @@ const ProjectCard = ({ project, onClick, onDeploy }) => {
   );
 };
 
-// Deployment Modal
+// Deployment Modal - COMPLETE VERSION
 const DeploymentModal = ({ project, onClose }) => {
   const [deployStep, setDeployStep] = useState(1);
   const [uploading, setUploading] = useState(false);
@@ -175,6 +175,7 @@ const DeploymentModal = ({ project, onClose }) => {
         </div>
 
         <div className="p-6">
+          {/* Steps Progress */}
           <div className="flex items-center mb-8">
             {[1,2,3,4].map((step) => (
               <div key={step} className="flex items-center">
@@ -188,6 +189,7 @@ const DeploymentModal = ({ project, onClose }) => {
             ))}
           </div>
 
+          {/* Step 1: Preparation */}
           {deployStep === 1 && (
             <div className="space-y-6">
               <h3 className="text-lg font-semibold">1. Persiapan Aplikasi</h3>
@@ -225,6 +227,7 @@ const DeploymentModal = ({ project, onClose }) => {
             </div>
           )}
 
+          {/* Step 2: Upload */}
           {deployStep === 2 && (
             <div className="space-y-6">
               <h3 className="text-lg font-semibold">2. Upload File ke cPanel</h3>
@@ -236,7 +239,7 @@ const DeploymentModal = ({ project, onClose }) => {
                 <input type="file" accept=".zip" className="hidden" id="app-upload" />
                 <button 
                   className="bg-blue-600 text-white px-6 py-2 rounded-lg cursor-pointer hover:bg-blue-700 transition-colors"
-                  onClick={() => document.getElementById('app-upload').click()}
+                  onClick={() => document.getElementById('app-upload')?.click()}
                 >
                   Pilih File .zip
                 </button>
@@ -284,6 +287,7 @@ const DeploymentModal = ({ project, onClose }) => {
             </div>
           )}
 
+          {/* Step 3: Deployment Process */}
           {deployStep === 3 && (
             <div className="space-y-6">
               <h3 className="text-lg font-semibold">3. Proses Deployment</h3>
@@ -325,6 +329,7 @@ const DeploymentModal = ({ project, onClose }) => {
             </div>
           )}
 
+          {/* Step 4: Success */}
           {deployStep === 4 && (
             <div className="space-y-6 text-center">
               <div className="flex items-center justify-center">
@@ -426,23 +431,6 @@ const ApplicationModal = ({ onClose }) => (
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Judul Proyek/Aplikasi</label>
-            <input type="text" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" placeholder="Nama aplikasi yang akan dideploy" />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Teknologi yang Digunakan</label>
-            <div className="grid grid-cols-2 gap-2">
-              {['React', 'Vue.js', 'Angular', 'Node.js', 'Laravel', 'Python', 'Flutter', 'React Native'].map((tech) => (
-                <label key={tech} className="flex items-center">
-                  <input type="checkbox" className="mr-2" />
-                  <span className="text-sm">{tech}</span>
-                </label>
-              ))}
-            </div>
-          </div>
-
-          <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">Subdomain yang Diinginkan</label>
             <div className="flex">
               <input type="text" className="flex-1 border border-gray-300 rounded-l-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" placeholder="nama-aplikasi" />
@@ -450,16 +438,6 @@ const ApplicationModal = ({ onClose }) => (
                 .kampus-berdampak.fsti-itk.ac.id
               </span>
             </div>
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Deskripsi Singkat Proyek</label>
-            <textarea rows="3" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" placeholder="Jelaskan proyek dan dampaknya untuk industri Kalimantan..."></textarea>
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Repository GitHub</label>
-            <input type="url" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" placeholder="https://github.com/username/repository" />
           </div>
 
           <div className="bg-blue-50 p-4 rounded-lg">
@@ -475,14 +453,12 @@ const ApplicationModal = ({ onClose }) => (
 
           <div className="flex space-x-4">
             <button 
-              type="button" 
               onClick={onClose} 
               className="flex-1 bg-gray-200 text-gray-800 py-3 px-4 rounded-lg font-medium hover:bg-gray-300 transition-colors"
             >
               Batal
             </button>
             <button 
-              type="button"
               onClick={() => {
                 console.log('Form submitted');
                 onClose();
@@ -498,15 +474,18 @@ const ApplicationModal = ({ onClose }) => (
   </div>
 );
 
-// Main Platform Component
-const KampusBerdampakPlatform = ({ setShowPortfolioGenerator }) => {
+// 🔧 FIXED: Main Platform Component
+const KampusBerdampakPlatform = () => {  // ← Removed setShowPortfolioGenerator prop
   const [activeTab, setActiveTab] = useState('projects');
   const [searchQuery, setSearchQuery] = useState('');
   const [filterProdi, setFilterProdi] = useState('all');
   const [filterStatus, setFilterStatus] = useState('all');
   const [showApplicationForm, setShowApplicationForm] = useState(false);
   const [showDeploymentModal, setShowDeploymentModal] = useState(false);
-  const [showPortfolioModal, setShowPortfolioModal] = useState(false);
+  
+  // 🔧 FIXED: Consistent state name
+  const [showPortfolioGenerator, setShowPortfolioGenerator] = useState(false);
+  
   const [selectedProject, setSelectedProject] = useState(null);
 
   const filteredProjects = importedProjectsData.filter(project => {
@@ -602,11 +581,9 @@ const KampusBerdampakPlatform = ({ setShowPortfolioGenerator }) => {
                 <CloudUpload className="h-4 w-4 mr-2" />
                 Deploy App
               </button>
+              {/* 🔧 FIXED: Consistent state name */}
               <button 
-                onClick={() => {
-                  setShowPortfolioModal(true);
-                  setShowPortfolioGenerator?.(true);
-                }}
+                onClick={() => setShowPortfolioGenerator(true)}
                 className="bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors flex items-center"
               >
                 <Download className="h-4 w-4 mr-2" />
@@ -756,7 +733,9 @@ const KampusBerdampakPlatform = ({ setShowPortfolioGenerator }) => {
         )}
       </div>
 
+      {/* 🔧 FIXED: All modals with consistent state names */}
       {showApplicationForm && <ApplicationModal onClose={() => setShowApplicationForm(false)} />}
+      
       {showDeploymentModal && (
         <DeploymentModal 
           project={selectedProject} 
@@ -766,13 +745,12 @@ const KampusBerdampakPlatform = ({ setShowPortfolioGenerator }) => {
           }} 
         />
       )}
-      {showPortfolioModal && (
+      
+      {/* 🔧 FIXED: Correct state name in conditional */}
+      {showPortfolioGenerator && (
         <PortfolioGenerator 
           filteredProjects={filteredProjects}
-          onClose={() => {
-            setShowPortfolioModal(false);
-            setShowPortfolioGenerator?.(false);
-          }}
+          onClose={() => setShowPortfolioGenerator(false)}
         />
       )}
     </div>

@@ -24,7 +24,7 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
                 />
                 <input 
                   type="text" 
-                  placeholder="Tagline/Bio" 
+                  placeholder="Tagline/Bio (contoh: Full Stack Developer | Alumni Kampus Berdampak)" 
                   className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" 
                 />
                 <input 
@@ -57,7 +57,7 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4">Fokus Industri</h3>
+              <h3 className="text-lg font-semibold mb-4">Fokus Industri Kalimantan</h3>
               <div className="grid grid-cols-2 gap-2">
                 {['Kelapa Sawit', 'Teknologi Maritim', 'Smart City', 'Fintech', 'E-Commerce', 'IoT Industry'].map((industry) => (
                   <label key={industry} className="flex items-center">
@@ -69,7 +69,7 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4">Template</h3>
+              <h3 className="text-lg font-semibold mb-4">Template Portfolio</h3>
               <div className="grid grid-cols-2 gap-3">
                 {['Modern', 'Minimalis', 'Kreatif', 'Profesional'].map((template) => (
                   <div key={template} className="border border-gray-200 rounded-lg p-3 text-center cursor-pointer hover:border-blue-500 hover:bg-blue-50">
@@ -113,7 +113,7 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
                 <h5 className="font-semibold mb-2">Fokus Industri</h5>
                 <div className="flex flex-wrap gap-1">
                   {['Kelapa Sawit', 'IoT', 'Smart City', 'Fintech'].map((focus) => (
-                    <span key={focus} className="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs">{focus}</span>
+                    <span key={focus} className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">{focus}</span>
                   ))}
                 </div>
               </div>
@@ -122,7 +122,7 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
                 <h5 className="font-semibold mb-2">Keahlian Teknis</h5>
                 <div className="flex flex-wrap gap-1">
                   {['React', 'Node.js', 'Python', 'IoT', 'AI'].map((skill) => (
-                    <span key={skill} className="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs">{skill}</span>
+                    <span key={skill} className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">{skill}</span>
                   ))}
                 </div>
               </div>
@@ -130,7 +130,8 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
               <div className="bg-blue-50 p-3 rounded">
                 <p className="text-xs text-blue-700">
                   <strong>Program Kampus Berdampak FSTI ITK</strong><br/>
-                  Lulusan program magang 6 bulan dengan deployment aplikasi nyata untuk industri Kalimantan
+                  Lulusan program deployment aplikasi 6 bulan dengan dampak nyata untuk industri Kalimantan. 
+                  Portfolio live di subdomain kampus-berdampak.fsti-itk.ac.id
                 </p>
               </div>
             </div>
@@ -138,17 +139,28 @@ const PortfolioGenerator = ({ onClose, filteredProjects }) => (
         </div>
 
         <div className="flex space-x-4 mt-6">
-          <button onClose={onClose} className="flex-1 bg-gray-200 text-gray-800 py-3 px-4 rounded-lg font-medium hover:bg-gray-300 transition-colors">
+          {/* 🔧 FIXED: Changed from onClose to onClick */}
+          <button 
+            onClick={onClose} 
+            className="flex-1 bg-gray-200 text-gray-800 py-3 px-4 rounded-lg font-medium hover:bg-gray-300 transition-colors"
+          >
             Batal
           </button>
-          <button className="flex-1 bg-blue-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center justify-center">
+          <button 
+            onClick={() => {
+              // Here you could implement actual portfolio generation
+              console.log('Generating portfolio...');
+              alert('Portfolio digital sedang dibuat! File akan didownload setelah selesai.');
+            }}
+            className="flex-1 bg-blue-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center justify-center"
+          >
             <Download className="h-4 w-4 mr-2" />
-            Download Portfolio
+            Generate & Download
           </button>
         </div>
       </div>
     </div>
-    </div>
-  );
+  </div>
+);
 
 export default PortfolioGenerator;
