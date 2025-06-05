@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/presentasi-laboratorium-inovasi-digital/static/js/main.c1e5844b.js",
+    "main.js": "/presentasi-laboratorium-inovasi-digital/static/js/main.c03edb88.js",
     "index.html": "/presentasi-laboratorium-inovasi-digital/index.html",
-    "main.c1e5844b.js.map": "/presentasi-laboratorium-inovasi-digital/static/js/main.c1e5844b.js.map"
+    "main.c03edb88.js.map": "/presentasi-laboratorium-inovasi-digital/static/js/main.c03edb88.js.map"
   },
   "entrypoints": [
-    "static/js/main.c1e5844b.js"
+    "static/js/main.c03edb88.js"
   ]
 }
