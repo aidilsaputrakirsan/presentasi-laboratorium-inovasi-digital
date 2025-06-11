@@ -1,29 +1,31 @@
-// src/components/platforms/FacultyPortal.js - UPDATED with IKU 3 Features
+// src/components/platforms/FacultyPortal.js - UPDATED untuk Lab Inovasi Digital FSTI ITK
 import React, { useState } from 'react';
 import { 
   Users, Building, DollarSign, Calendar, Plus, Download, Star,
   RefreshCw, ExternalLink, CheckCircle, Clock, AlertCircle, Database, Linkedin,
-  UserCheck, FileText, Award, Briefcase, GraduationCap, School, Target, TrendingUp
+  UserCheck, FileText, Award, Briefcase, GraduationCap, School, Target, TrendingUp,
+  Lightbulb, Server, Laptop, BarChart3, Settings
 } from 'lucide-react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts';
 
-// Import new IKU 3 components
-import ExternalTeachingCard from '../cards/ExternalTeachingCard';
-import ResearchCollaborationCard from '../cards/ResearchCollaborationCard';
-import IndustryConsultationCard from '../cards/IndustryConsultationCard';
-import IKU3Calculator from '../shared/IKU3Calculator';
+// Import updated components for Lab Digital
+import InnovationTracker from '../shared/InnovationTracker';
+import ComputingResourceCard from '../cards/ComputingResourceCard';
+import DigitalEquipmentCard from '../cards/DigitalEquipmentCard';
+import ProjectCard from '../cards/ProjectCard';
 import PercentageDisplay from '../shared/PercentageDisplay';
-import AddExternalTeachingForm from '../modals/AddExternalTeachingForm';
-import AddConsultationForm from '../modals/AddConsultationForm';
 
 // Import data
 import { 
   facultyData, 
   facultyActivitiesData, 
-  externalTeachingData, 
-  researchCollaborationData, 
-  industryConsultationData,
-  iku3MetricsData 
+  computingResourcesData,
+  digitalEquipmentData,
+  innovationProjectsData,
+  labUtilizationData,
+  softwareLicensesData,
+  labBookingData,
+  projectsData
 } from '../../data/sampleData';
 
 const StatCard = ({ icon: Icon, title, value, subtitle, color, trend }) => (
@@ -114,11 +116,7 @@ const FacultyPortal = () => {
   const [lastSync, setLastSync] = useState(new Date());
   const [syncStatus, setSyncStatus] = useState('success');
   const [syncType, setSyncType] = useState('siakad');
-  const [activeTab, setActiveTab] = useState('overview'); // NEW: Tab state for IKU 3 features
-  
-  // NEW: Modal states for IKU 3 forms
-  const [showExternalTeachingForm, setShowExternalTeachingForm] = useState(false);
-  const [showConsultationForm, setShowConsultationForm] = useState(false);
+  const [activeTab, setActiveTab] = useState('overview');
 
   const handleSync = async (type) => {
     setSyncStatus('loading');
@@ -152,6 +150,12 @@ const FacultyPortal = () => {
       default: return <Clock className="h-4 w-4 text-gray-500" />;
     }
   };
+
+  // Calculate lab metrics for stats
+  const totalProjects = innovationProjectsData?.reduce((sum, prodi) => sum + prodi.totalProjects, 0) || 7;
+  const onlineResources = computingResourcesData?.filter(r => r.status === 'Online' || r.status === 'High Load').length || 3;
+  const availableEquipment = digitalEquipmentData?.filter(e => e.status === 'Available').length || 3;
+  const totalEquipment = digitalEquipmentData?.length || 5;
 
   return (
     <div className="space-y-6 p-6">
@@ -223,28 +227,28 @@ const FacultyPortal = () => {
         
         <div className="mt-3 p-2 bg-blue-50 rounded border-l-4 border-blue-400">
           <p className="text-xs text-blue-800">
-            💡 <strong>Integrasi Realistis:</strong> SIAKAD (jadwal mengajar) • LinkedIn (profil industri) • Kemendikbud (data praktisi mengajar) • Manual verification
+            💡 <strong>Lab Inovasi Digital FSTI ITK:</strong> Computing resources • Digital equipment • Innovation projects • Faculty mentoring
           </p>
         </div>
       </div>
 
       {/* Main Stats */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <StatCard icon={Users} title="Dosen Praktisi" value="4" subtitle="Active Consultants" color="text-purple-600" trend="15" />
-        <StatCard icon={Building} title="Mitra Industri" value="3" subtitle="Active Partnerships" color="text-blue-600" trend="20" />
-        <StatCard icon={DollarSign} title="Total Honorarium" value="Rp16 Juta" subtitle="Semester ini" color="text-green-600" trend="15" />
-        <StatCard icon={Calendar} title="Total SKS" value="24" subtitle="Semester ini" color="text-orange-600" trend="8" />
+        <StatCard icon={Users} title="Dosen Praktisi" value="4" subtitle="Active Mentors" color="text-purple-600" trend="15" />
+        <StatCard icon={Laptop} title="Digital Projects" value={totalProjects} subtitle="Innovation Projects" color="text-blue-600" trend="20" />
+        <StatCard icon={Server} title="Computing Resources" value={onlineResources} subtitle="Online Resources" color="text-green-600" trend="15" />
+        <StatCard icon={Settings} title="Lab Equipment" value={`${availableEquipment}/${totalEquipment}`} subtitle="Available Equipment" color="text-orange-600" trend="8" />
       </div>
 
-      {/* NEW: Tab Navigation for IKU 3 Features */}
+      {/* Tab Navigation for Lab Digital Features */}
       <div className="bg-white rounded-xl shadow-lg p-6">
         <div className="flex space-x-1 mb-6">
           {[
             { id: 'overview', label: 'Ringkasan Dosen', icon: Users },
-            { id: 'iku3-calculator', label: 'Kalkulator IKU 3', icon: Target },
-            { id: 'external-teaching', label: 'Mengajar Eksternal', icon: School },
-            { id: 'research-collaboration', label: 'Kolaborasi Riset', icon: Award },
-            { id: 'industry-consultation', label: 'Konsultasi Industri', icon: Building }
+            { id: 'innovation-tracker', label: 'Innovation Tracker', icon: Lightbulb },
+            { id: 'computing-resources', label: 'Computing Resources', icon: Server },
+            { id: 'digital-equipment', label: 'Digital Equipment', icon: Laptop },
+            { id: 'project-dashboard', label: 'Project Dashboard', icon: BarChart3 }
           ].map((tab) => {
             const Icon = tab.icon;
             return (
@@ -269,7 +273,7 @@ const FacultyPortal = () => {
           <div className="space-y-6">
             <div className="flex justify-between items-center">
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Dosen Praktisi FSTI</h3>
+                <h3 className="text-lg font-semibold text-gray-800">Dosen Praktisi FSTI ITK</h3>
                 <p className="text-sm text-gray-600">Data real-time dari SIAKAD, LinkedIn, dan sistem Praktisi Mengajar</p>
               </div>
               <div className="flex space-x-2">
@@ -319,92 +323,86 @@ const FacultyPortal = () => {
           </div>
         )}
 
-        {/* NEW: IKU 3 Calculator Tab */}
-        {activeTab === 'iku3-calculator' && (
+        {/* Innovation Tracker Tab */}
+        {activeTab === 'innovation-tracker' && (
           <div className="space-y-6">
-            <IKU3Calculator 
-              externalTeachingData={externalTeachingData}
-              researchCollaborationData={researchCollaborationData}
-              industryConsultationData={industryConsultationData}
+            <InnovationTracker 
+              innovationProjectsData={innovationProjectsData}
+              computingResourcesData={computingResourcesData}
+              digitalEquipmentData={digitalEquipmentData}
               facultyData={facultyData}
             />
             
-            {/* IKU 3 Trends */}
+            {/* Lab Utilization Trends */}
             <div className="bg-white rounded-xl shadow-lg p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">IKU 3 Progress Trends</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Lab Utilization Trends</h3>
               <ResponsiveContainer width="100%" height={250}>
-                <LineChart data={iku3MetricsData}>
+                <LineChart data={labUtilizationData}>
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="month" />
                   <YAxis />
                   <Tooltip />
-                  <Line type="monotone" dataKey="external" stroke="#8B5CF6" strokeWidth={3} name="External Teaching" />
-                  <Line type="monotone" dataKey="collaboration" stroke="#10B981" strokeWidth={3} name="Research Collaboration" />
-                  <Line type="monotone" dataKey="consultation" stroke="#F59E0B" strokeWidth={3} name="Industry Consultation" />
+                  <Line type="monotone" dataKey="workstations" stroke="#8B5CF6" strokeWidth={3} name="Workstations" />
+                  <Line type="monotone" dataKey="servers" stroke="#10B981" strokeWidth={3} name="Servers" />
+                  <Line type="monotone" dataKey="equipment" stroke="#F59E0B" strokeWidth={3} name="Equipment" />
                 </LineChart>
               </ResponsiveContainer>
             </div>
           </div>
         )}
 
-        {/* NEW: External Teaching Tab */}
-        {activeTab === 'external-teaching' && (
+        {/* Computing Resources Tab */}
+        {activeTab === 'computing-resources' && (
           <div className="space-y-6">
             <div className="flex justify-between items-center">
-              <h3 className="text-lg font-semibold text-gray-800">Aktivitas Mengajar Eksternal - IKU 3</h3>
-              <button 
-                onClick={() => setShowExternalTeachingForm(true)}
-                className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors flex items-center"
-              >
+              <h3 className="text-lg font-semibold text-gray-800">Computing Resources Management</h3>
+              <button className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors flex items-center">
                 <Plus className="h-4 w-4 mr-2" />
-                Tambah Mengajar Eksternal
+                Add Resource
               </button>
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {externalTeachingData.map((teaching) => (
-                <ExternalTeachingCard key={teaching.id} teaching={teaching} onClick={(t) => console.log('View external teaching:', t)} />
+              {computingResourcesData.map((resource) => (
+                <ComputingResourceCard key={resource.id} resource={resource} onClick={(r) => console.log('View resource:', r)} />
               ))}
             </div>
           </div>
         )}
 
-        {/* NEW: Research Collaboration Tab */}
-        {activeTab === 'research-collaboration' && (
+        {/* Digital Equipment Tab */}
+        {activeTab === 'digital-equipment' && (
           <div className="space-y-6">
             <div className="flex justify-between items-center">
-              <h3 className="text-lg font-semibold text-gray-800">Kolaborasi Riset - IKU 3</h3>
+              <h3 className="text-lg font-semibold text-gray-800">Digital Equipment Inventory</h3>
+              <button className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors flex items-center">
+                <Plus className="h-4 w-4 mr-2" />
+                Add Equipment
+              </button>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {digitalEquipmentData.map((equipment) => (
+                <DigitalEquipmentCard key={equipment.id} equipment={equipment} onClick={(e) => console.log('View equipment:', e)} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Project Dashboard Tab */}
+        {activeTab === 'project-dashboard' && (
+          <div className="space-y-6">
+            <div className="flex justify-between items-center">
+              <h3 className="text-lg font-semibold text-gray-800">Innovation Project Dashboard</h3>
               <button className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors flex items-center">
                 <Plus className="h-4 w-4 mr-2" />
-                Tambah Kolaborasi
+                New Project
               </button>
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {researchCollaborationData.map((collaboration) => (
-                <ResearchCollaborationCard key={collaboration.id} collaboration={collaboration} onClick={(c) => console.log('View collaboration:', c)} />
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* NEW: Industry Consultation Tab */}
-        {activeTab === 'industry-consultation' && (
-          <div className="space-y-6">
-            <div className="flex justify-between items-center">
-              <h3 className="text-lg font-semibold text-gray-800">Konsultasi Industri - IKU 3</h3>
-              <button 
-                onClick={() => setShowConsultationForm(true)}
-                className="bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-700 transition-colors flex items-center"
-              >
-                <Plus className="h-4 w-4 mr-2" />
-                Tambah Konsultasi
-              </button>
-            </div>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {industryConsultationData.map((consultation) => (
-                <IndustryConsultationCard key={consultation.id} consultation={consultation} onClick={(c) => console.log('View consultation:', c)} />
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+              {projectsData.slice(0, 6).map((project) => (
+                <ProjectCard key={project.id} project={project} onClick={(p) => console.log('View project:', p)} />
               ))}
             </div>
           </div>
@@ -415,24 +413,24 @@ const FacultyPortal = () => {
       <div className="bg-gradient-to-r from-purple-500 to-pink-600 rounded-xl shadow-lg p-6 text-white">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="mb-4 lg:mb-0">
-            <h3 className="text-xl font-bold mb-2">Portal Dosen Praktisi FSTI - IKU 3 Tracker</h3>
-            <p className="text-purple-100 mb-4">Integrasi realistis dengan SIAKAD, LinkedIn, dan sistem Praktisi Mengajar untuk monitoring IKU 3</p>
+            <h3 className="text-xl font-bold mb-2">Lab Inovasi Digital FSTI ITK</h3>
+            <p className="text-purple-100 mb-4">Enabling digital innovation through cutting-edge lab facilities and mentoring excellence</p>
             <div className="grid grid-cols-4 gap-4">
               <div className="text-center">
                 <div className="text-2xl font-bold">SIAKAD</div>
-                <div className="text-sm text-purple-100">Jadwal Mengajar</div>
+                <div className="text-sm text-purple-100">Integration</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">LinkedIn</div>
-                <div className="text-sm text-purple-100">Profil Industri</div>
+                <div className="text-2xl font-bold">4 Prodi</div>
+                <div className="text-sm text-purple-100">SI • IF • TE • BD</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">IKU 3</div>
-                <div className="text-sm text-purple-100">Auto Calculator</div>
+                <div className="text-2xl font-bold">Digital</div>
+                <div className="text-sm text-purple-100">Innovation</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold">75%</div>
-                <div className="text-sm text-purple-100">Compliance Target</div>
+                <div className="text-2xl font-bold">81%</div>
+                <div className="text-sm text-purple-100">Lab Utilization</div>
               </div>
             </div>
           </div>
@@ -445,21 +443,6 @@ const FacultyPortal = () => {
           </button>
         </div>
       </div>
-
-      {/* NEW: Modal Forms */}
-      {showExternalTeachingForm && (
-        <AddExternalTeachingForm 
-          facultyData={facultyData}
-          onClose={() => setShowExternalTeachingForm(false)} 
-        />
-      )}
-      
-      {showConsultationForm && (
-        <AddConsultationForm 
-          facultyData={facultyData}
-          onClose={() => setShowConsultationForm(false)} 
-        />
-      )}
     </div>
   );
 };

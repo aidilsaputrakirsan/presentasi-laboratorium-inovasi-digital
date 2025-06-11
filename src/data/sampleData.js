@@ -525,6 +525,232 @@ export const researchAdoptionData = [
   }
 ];
 
+export const innovationProjectsData = [
+  {
+    id: 1,
+    prodi: "Sistem Informasi",
+    projects: [
+      {
+        id: 1,
+        title: "E-Commerce Platform UMKM Kalimantan",
+        student: "Andika Pratama",
+        type: "Web Application",
+        stage: "Production",
+        progress: 100,
+        tech: ["React", "Node.js", "MongoDB"],
+        impact: "15 UMKM terintegrasi",
+        mentor: "Aidil Saputra Kirsan, M.Tr.Kom"
+      },
+      {
+        id: 2,
+        title: "Smart Tourism App Kalimantan",
+        student: "Dewi Anggraini",
+        type: "Mobile Application", 
+        stage: "Development",
+        progress: 60,
+        tech: ["Flutter", "Firebase", "AI"],
+        impact: "10+ destinasi wisata",
+        mentor: "Dr. Yohanes Khoirul"
+      }
+    ],
+    totalProjects: 2,
+    completedProjects: 1,
+    activeProjects: 1
+  },
+  {
+    id: 2,
+    prodi: "Informatika",
+    projects: [
+      {
+        id: 3,
+        title: "AI Traffic Management Balikpapan",
+        student: "Rina Kartika",
+        type: "AI System",
+        stage: "Testing",
+        progress: 70,
+        tech: ["Python", "TensorFlow", "OpenCV"],
+        impact: "3 persimpangan monitoring",
+        mentor: "Dr. Yohanes Khoirul"
+      },
+      {
+        id: 4,
+        title: "E-Learning Bahasa Dayak",
+        student: "Joko Susilo",
+        type: "Educational Platform",
+        stage: "Testing",
+        progress: 85,
+        tech: ["Vue.js", "Laravel", "PWA"],
+        impact: "500+ kata terekam",
+        mentor: "Aidil Saputra Kirsan, M.Tr.Kom"
+      }
+    ],
+    totalProjects: 2,
+    completedProjects: 0,
+    activeProjects: 2
+  },
+  {
+    id: 3,
+    prodi: "Teknik Elektro",
+    projects: [
+      {
+        id: 5,
+        title: "Smart Irrigation IoT System",
+        student: "Sari Lestari",
+        type: "IoT Hardware",
+        stage: "Prototyping",
+        progress: 80,
+        tech: ["Arduino", "Sensors", "MQTT"],
+        impact: "2 lahan uji coba",
+        mentor: "Dr. Rina Marwanti"
+      },
+      {
+        id: 6,
+        title: "Digital Twin Pabrik CPO",
+        student: "Budi Santoso",
+        type: "Industrial System",
+        stage: "Production",
+        progress: 100,
+        tech: ["Unity", "IoT", "PostgreSQL"],
+        impact: "1 pabrik implementasi",
+        mentor: "Dr. Rina Marwanti"
+      }
+    ],
+    totalProjects: 2,
+    completedProjects: 1,
+    activeProjects: 1
+  },
+  {
+    id: 4,
+    prodi: "Bisnis Digital",
+    projects: [
+      {
+        id: 7,
+        title: "Fintech Platform UMKM",
+        student: "Lina Permatasari",
+        type: "Fintech Application",
+        stage: "Testing",
+        progress: 90,
+        tech: ["React Native", "Blockchain", "Node.js"],
+        impact: "20 UMKM pilot user",
+        mentor: "Dr. Linda Permata"
+      }
+    ],
+    totalProjects: 1,
+    completedProjects: 0,
+    activeProjects: 1
+  }
+];
+
+export const labBookingData = [
+  {
+    id: 1,
+    title: "IoT Development Session",
+    bookedBy: "Sari Lestari",
+    prodi: "Teknik Elektro",
+    date: "2024-11-20",
+    startTime: "09:00",
+    endTime: "12:00",
+    status: "Confirmed",
+    equipment: ["Arduino Mega Kit", "Oscilloscope"],
+    purpose: "Smart Irrigation System Testing",
+    participants: 1,
+    supervisor: "Dr. Rina Marwanti"
+  },
+  {
+    id: 2,
+    title: "Web Development Workshop",
+    bookedBy: "Andika Pratama", 
+    prodi: "Sistem Informasi",
+    date: "2024-11-21",
+    startTime: "13:00", 
+    endTime: "16:00",
+    status: "Confirmed",
+    equipment: ["Dev Workstation 01", "Projector"],
+    purpose: "E-Commerce Development Sprint",
+    participants: 1,
+    supervisor: "Aidil Saputra Kirsan, M.Tr.Kom"
+  },
+  {
+    id: 3,
+    title: "AI Model Training",
+    bookedBy: "Rina Kartika",
+    prodi: "Informatika", 
+    date: "2024-11-22",
+    startTime: "10:00",
+    endTime: "15:00",
+    status: "Pending",
+    equipment: ["AI Workstation Beta"],
+    purpose: "Traffic Management AI Training",
+    participants: 1,
+    supervisor: "Dr. Yohanes Khoirul"
+  }
+];
+
+export const softwareLicensesData = [
+  {
+    id: 1,
+    name: "JetBrains All Products Pack",
+    category: "IDE & Development",
+    type: "Educational License",
+    licenses: 50,
+    used: 42,
+    available: 8,
+    expiryDate: "2025-06-30",
+    annualCost: 0, // Educational license
+    vendor: "JetBrains",
+    coverage: ["IntelliJ IDEA", "PyCharm", "WebStorm", "PhpStorm"]
+  },
+  {
+    id: 2,
+    name: "MATLAB Campus License",
+    category: "Mathematical Computing",
+    type: "Campus Wide License",
+    licenses: 100,
+    used: 35,
+    available: 65,
+    expiryDate: "2025-12-31",
+    annualCost: 45000000,
+    vendor: "MathWorks",
+    coverage: ["MATLAB", "Simulink", "Deep Learning Toolbox"]
+  },
+  {
+    id: 3,
+    name: "Adobe Creative Cloud",
+    category: "Design & Media",
+    type: "Educational License",
+    licenses: 25,
+    used: 23,
+    available: 2,
+    expiryDate: "2025-08-15",
+    annualCost: 15000000,
+    vendor: "Adobe",
+    coverage: ["Photoshop", "Illustrator", "Premiere Pro", "After Effects"]
+  },
+  {
+    id: 4,
+    name: "Altium Designer",
+    category: "PCB Design",
+    type: "Educational License",
+    licenses: 10,
+    used: 8,
+    available: 2,
+    expiryDate: "2025-05-20",
+    annualCost: 25000000,
+    vendor: "Altium",
+    coverage: ["PCB Design", "3D Modeling", "Simulation"]
+  }
+];
+
+export const labUtilizationData = [
+  { month: 'Jul', workstations: 65, servers: 45, equipment: 70, overall: 60 },
+  { month: 'Agu', workstations: 72, servers: 52, equipment: 75, overall: 66 },
+  { month: 'Sep', workstations: 78, servers: 58, equipment: 80, overall: 72 },
+  { month: 'Okt', workstations: 85, servers: 67, equipment: 85, overall: 79 },
+  { month: 'Nov', workstations: 89, servers: 74, equipment: 88, overall: 84 },
+  { month: 'Des', workstations: 82, servers: 69, equipment: 82, overall: 78 },
+  { month: 'Jan', workstations: 87, servers: 71, equipment: 85, overall: 81 }
+];
+
 // IKU 3 & 5 Calculation Data
 export const iku3MetricsData = [
   { month: 'Jul', external: 1, collaboration: 2, consultation: 1 },
@@ -546,87 +772,185 @@ export const iku5MetricsData = [
   { month: 'Jan', citations: 210, patents: 3, adoptions: 6 }
 ];
 
+export const innovationMetricsData = [
+  { month: 'Jul', startups: 0, prototypes: 2, deployed: 1, patents: 0 },
+  { month: 'Agu', startups: 1, prototypes: 3, deployed: 1, patents: 0 },
+  { month: 'Sep', startups: 1, prototypes: 4, deployed: 2, patents: 1 },
+  { month: 'Okt', startups: 2, prototypes: 5, deployed: 3, patents: 1 },
+  { month: 'Nov', startups: 2, prototypes: 6, deployed: 4, patents: 2 },
+  { month: 'Des', startups: 3, prototypes: 7, deployed: 5, patents: 2 },
+  { month: 'Jan', startups: 3, prototypes: 7, deployed: 6, patents: 3 }
+];
+
+export const digitalEquipmentData = [
+  {
+    id: 1,
+    name: "Development Workstation 01",
+    category: "Computing",
+    brand: "Dell Precision 7760",
+    specs: "Intel i7-11850H, 32GB RAM, RTX A4000",
+    status: "Available",
+    condition: "Excellent",
+    location: "Lab Inovasi - Meja 1",
+    assignedTo: null,
+    purchaseDate: "2024-01-15",
+    warrantyExpiry: "2027-01-15",
+    value: 45000000,
+    serialNumber: "DT001-FSTI-2024"
+  },
+  {
+    id: 2,
+    name: "3D Printer Ultimaker S3",
+    category: "Prototyping",
+    brand: "Ultimaker",
+    specs: "Build Volume: 230×190×200mm, Dual Extrusion",
+    status: "In Use",
+    condition: "Good",
+    location: "Lab Inovasi - Prototyping Area",
+    assignedTo: "Sari Lestari",
+    assignedProject: "Smart Irrigation System",
+    purchaseDate: "2023-06-10",
+    warrantyExpiry: "2025-06-10",
+    value: 25000000,
+    serialNumber: "3DP01-FSTI-2023"
+  },
+  {
+    id: 3,
+    name: "Arduino Mega Starter Kit",
+    category: "IoT Development",
+    brand: "Arduino",
+    specs: "Arduino Mega, Sensors, Actuators, Breadboard",
+    status: "Available",
+    condition: "Good",
+    location: "Lab Inovasi - Storage Cabinet A",
+    assignedTo: null,
+    purchaseDate: "2024-03-20",
+    warrantyExpiry: "2026-03-20",
+    value: 2500000,
+    serialNumber: "ARD01-FSTI-2024"
+  },
+  {
+    id: 4,
+    name: "Oscilloscope Rigol DS1054Z",
+    category: "Testing Equipment",
+    brand: "Rigol",
+    specs: "4 Channel, 50MHz, 1GSa/s",
+    status: "Available",
+    condition: "Excellent",
+    location: "Lab Inovasi - Test Bench 1",
+    assignedTo: null,
+    purchaseDate: "2023-08-15",
+    warrantyExpiry: "2026-08-15",
+    value: 15000000,
+    serialNumber: "OSC01-FSTI-2023"
+  },
+  {
+    id: 5,
+    name: "Raspberry Pi 4 Development Kit",
+    category: "IoT Development",
+    brand: "Raspberry Pi Foundation",
+    specs: "8GB RAM, microSD, GPIO Kit",
+    status: "In Use",
+    condition: "Good",
+    location: "Lab Inovasi - Project Table 2",
+    assignedTo: "Joko Susilo",
+    assignedProject: "E-Learning Bahasa Dayak",
+    purchaseDate: "2024-02-10",
+    warrantyExpiry: "2026-02-10",
+    value: 1800000,
+    serialNumber: "RPI01-FSTI-2024"
+  }
+];
+
 // Existing data exports remain the same...
 export const projectsData = [
   {
     id: 1,
-    title: "E-Commerce UMKM Kalimantan",
+    title: "Platform E-Commerce UMKM Kalimantan",
     student: "Andika Pratama",
     prodi: "Sistem Informasi",
     angkatan: "2021",
     status: "Live",
-    url: "andika-ecommerce.kampus-berdampak.fsti-itk.ac.id",
+    url: "ecommerce-umkm.faculty.fsti-itk.ac.id",
     tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-    description: "Platform e-commerce untuk mempromosikan produk UMKM Kalimantan dengan fitur pembayaran digital dan manajemen stok terintegrasi.",
-    features: ['Multi-vendor marketplace', 'Payment gateway', 'Inventory management', 'Analytics dashboard'],
+    description: "Platform e-commerce terintegrasi untuk UMKM Kalimantan dengan bimbingan dosen praktisi dalam arsitektur sistem dan integrasi API pembayaran.",
+    features: ['Marketplace multi-vendor', 'Gateway pembayaran', 'Manajemen inventori', 'Dashboard analitik'],
     timeline: { start: "2024-08-01", end: "2024-11-15", duration: "4 bulan" },
     mentor: "Aidil Saputra Kirsan, M.Tr.Kom",
-    github: "https://github.com/andika/ecommerce-kalimantan",
-    demo: "https://andika-ecommerce.kampus-berdampak.fsti-itk.ac.id",
+    mentorContribution: "Arsitektur cloud, optimasi database, konsultasi teknis sistem pembayaran",
+    github: "https://github.com/fsti-itk/ecommerce-umkm-kalimantan",
+    demo: "https://ecommerce-umkm.faculty.fsti-itk.ac.id",
     progress: 100,
-    category: "Web Development",
+    category: "Pengembangan Web",
     serverStatus: "Online",
-    resourceUsage: { cpu: 15, memory: 45, storage: 1.2, bandwidth: 89 }
+    resourceUsage: { cpu: 15, memory: 45, storage: 1.2, bandwidth: 89 },
+    industryImpact: "15 UMKM Kalimantan terdaftar, Rp45 juta transaksi bulanan"
   },
   {
     id: 2,
-    title: "Smart Irrigation System",
-    student: "Sari Lestari",
+    title: "Sistem Irigasi Cerdas IoT",
+    student: "Sari Lestari", 
     prodi: "Teknik Elektro",
     angkatan: "2022",
     status: "Development",
-    url: "sari-irrigation.kampus-berdampak.fsti-itk.ac.id",
+    url: "smart-irrigation.faculty.fsti-itk.ac.id",
     tech: ['Arduino', 'Python', 'MQTT', 'InfluxDB'],
-    description: "Sistem irigasi pintar berbasis IoT untuk pertanian kelapa sawit di Kalimantan dengan sensor kelembapan dan kontrol otomatis.",
-    features: ['Real-time monitoring', 'Automated irrigation', 'Mobile alerts', 'Weather integration'],
+    description: "Sistem irigasi pintar untuk perkebunan kelapa sawit dengan sensor IoT dan kontrol otomatis dibimbing dosen praktisi industri.",
+    features: ['Monitoring real-time', 'Irigasi otomatis', 'Notifikasi mobile', 'Integrasi cuaca'],
     timeline: { start: "2024-09-01", end: "2024-12-20", duration: "4 bulan" },
     mentor: "Dr. Rina Marwanti",
-    github: "https://github.com/sari/smart-irrigation",
-    demo: "https://sari-irrigation.kampus-berdampak.fsti-itk.ac.id",
+    mentorContribution: "Desain arsitektur IoT, optimasi sensor, konsultasi implementasi industri",
+    github: "https://github.com/fsti-itk/smart-irrigation-iot",
+    demo: "https://smart-irrigation.faculty.fsti-itk.ac.id",
     progress: 80,
-    category: "IoT & Hardware",
-    serverStatus: "Not Deployed",
-    resourceUsage: null
+    category: "IoT & Perangkat Keras",
+    serverStatus: "Dalam Pengembangan",
+    resourceUsage: null,
+    industryImpact: "2 kebun sawit pilot project, 20% efisiensi air"
   },
   {
     id: 3,
-    title: "E-Learning Bahasa Dayak",
+    title: "Platform E-Learning Bahasa Dayak",
     student: "Joko Susilo",
-    prodi: "Informatika",
+    prodi: "Informatika", 
     angkatan: "2021",
     status: "Testing",
-    url: "joko-elearning.kampus-berdampak.fsti-itk.ac.id",
+    url: "elearning-dayak.faculty.fsti-itk.ac.id",
     tech: ['Vue.js', 'Laravel', 'MySQL', 'PWA'],
-    description: "Platform pembelajaran daring untuk pelestarian bahasa Dayak dengan modul interaktif dan kamus digital.",
-    features: ['Interactive modules', 'Digital dictionary', 'Offline access', 'Progress tracking'],
+    description: "Platform pembelajaran digital untuk pelestarian bahasa Dayak dengan modul interaktif dan kamus digital berbasis AI.",
+    features: ['Modul interaktif', 'Kamus digital', 'Akses offline', 'Tracking pembelajaran'],
     timeline: { start: "2024-07-15", end: "2024-11-30", duration: "4.5 bulan" },
     mentor: "Dr. Yohanes Khoirul",
-    github: "https://github.com/joko/elearning-dayak",
-    demo: "https://joko-elearning.kampus-berdampak.fsti-itk.ac.id",
+    mentorContribution: "Algoritma NLP, machine learning untuk pengenalan suara, optimasi AI",
+    github: "https://github.com/fsti-itk/elearning-bahasa-dayak",
+    demo: "https://elearning-dayak.faculty.fsti-itk.ac.id",
     progress: 85,
-    category: "Education Technology",
-    serverStatus: "Not Deployed",
-    resourceUsage: null
+    category: "Teknologi Pendidikan",
+    serverStatus: "Dalam Testing",
+    resourceUsage: null,
+    industryImpact: "500+ kata Dayak terekam, 3 sekolah dasar pilot user"
   },
   {
     id: 4,
-    title: "AI Traffic Management Balikpapan",
+    title: "Sistem Manajemen Lalu Lintas AI",
     student: "Rina Kartika",
     prodi: "Informatika",
-    angkatan: "2022",
+    angkatan: "2022", 
     status: "Development",
-    url: "rina-traffic.kampus-berdampak.fsti-itk.ac.id",
+    url: "traffic-ai.faculty.fsti-itk.ac.id",
     tech: ['Python', 'TensorFlow', 'OpenCV', 'FastAPI'],
-    description: "Sistem manajemen lalu lintas berbasis AI untuk mengurangi kemacetan di Balikpapan dengan analisis real-time dari CCTV.",
-    features: ['Traffic prediction', 'Real-time analysis', 'Incident detection', 'Dashboard reporting'],
+    description: "Sistem manajemen lalu lintas berbasis AI untuk Balikpapan dengan analisis video real-time dan prediksi kemacetan.",
+    features: ['Prediksi lalu lintas', 'Analisis real-time', 'Deteksi insiden', 'Dashboard pelaporan'],
     timeline: { start: "2024-08-15", end: "2024-12-15", duration: "4 bulan" },
-    mentor: "Aidil Saputra Kirsan, M.Tr.Kom",
-    github: "https://github.com/rina/ai-traffic",
-    demo: "https://rina-traffic.kampus-berdampak.fsti-itk.ac.id",
+    mentor: "Dr. Yohanes Khoirul",
+    mentorContribution: "Arsitektur deep learning, optimasi model computer vision, deployment AI",
+    github: "https://github.com/fsti-itk/ai-traffic-management",
+    demo: "https://traffic-ai.faculty.fsti-itk.ac.id",
     progress: 70,
     category: "AI & Machine Learning",
-    serverStatus: "Not Deployed",
-    resourceUsage: null
+    serverStatus: "Dalam Pengembangan",
+    resourceUsage: null,
+    industryImpact: "3 persimpangan Balikpapan monitoring, 15% reduksi kemacetan"
   },
   {
     id: 5,
@@ -634,59 +958,140 @@ export const projectsData = [
     student: "Budi Santoso",
     prodi: "Teknik Elektro",
     angkatan: "2020",
-    status: "Live",
-    url: "budi-digitaltwin.kampus-berdampak.fsti-itk.ac.id",
+    status: "Live", 
+    url: "digital-twin-cpo.faculty.fsti-itk.ac.id",
     tech: ['Unity', 'IoT', 'Python', 'PostgreSQL'],
-    description: "Digital twin untuk monitoring dan optimasi produksi pabrik kelapa sawit di Kalimantan Timur.",
-    features: ['Real-time monitoring', 'Production optimization', '3D visualization', 'Predictive analytics'],
+    description: "Digital twin untuk monitoring dan optimasi produksi pabrik CPO dengan visualisasi 3D dan analitik prediktif.",
+    features: ['Monitoring real-time', 'Optimasi produksi', 'Visualisasi 3D', 'Analitik prediktif'],
     timeline: { start: "2024-07-01", end: "2024-10-30", duration: "4 bulan" },
     mentor: "Dr. Rina Marwanti",
-    github: "https://github.com/budi/digital-twin-cpo",
-    demo: "https://budi-digitaltwin.kampus-berdampak.fsti-itk.ac.id",
+    mentorContribution: "Integrasi sistem industri, optimasi IoT, konsultasi implementasi pabrik",
+    github: "https://github.com/fsti-itk/digital-twin-cpo",
+    demo: "https://digital-twin-cpo.faculty.fsti-itk.ac.id",
     progress: 100,
-    category: "Industrial Technology",
+    category: "Teknologi Industri",
     serverStatus: "Online",
-    resourceUsage: { cpu: 20, memory: 50, storage: 2.5, bandwidth: 75 }
+    resourceUsage: { cpu: 20, memory: 50, storage: 2.5, bandwidth: 75 },
+    industryImpact: "1 pabrik CPO implementasi, 12% peningkatan efisiensi produksi"
   },
   {
     id: 6,
-    title: "Fintech untuk UMKM Balikpapan",
+    title: "Platform Fintech UMKM",
     student: "Lina Permatasari",
     prodi: "Bisnis Digital",
     angkatan: "2021",
     status: "Testing",
-    url: "lina-fintech.kampus-berdampak.fsti-itk.ac.id",
+    url: "fintech-umkm.faculty.fsti-itk.ac.id", 
     tech: ['React Native', 'Node.js', 'Blockchain', 'MongoDB'],
-    description: "Aplikasi fintech untuk UMKM di Balikpapan dengan fitur pinjaman mikro dan manajemen keuangan digital.",
-    features: ['Micro-lending', 'Digital payments', 'Financial tracking', 'Credit scoring'],
+    description: "Aplikasi fintech untuk UMKM Balikpapan dengan micro-lending dan manajemen keuangan digital berbasis blockchain.",
+    features: ['Pinjaman mikro', 'Pembayaran digital', 'Tracking keuangan', 'Credit scoring'],
     timeline: { start: "2024-08-15", end: "2024-12-01", duration: "3.5 bulan" },
     mentor: "Dr. Linda Permata",
-    github: "https://github.com/lina/fintech-umkm",
-    demo: "https://lina-fintech.kampus-berdampak.fsti-itk.ac.id",
+    mentorContribution: "Strategi fintech, implementasi blockchain, konsultasi regulasi keuangan",
+    github: "https://github.com/fsti-itk/fintech-umkm",
+    demo: "https://fintech-umkm.faculty.fsti-itk.ac.id",
     progress: 90,
     category: "Fintech",
-    serverStatus: "Not Deployed",
-    resourceUsage: null
+    serverStatus: "Dalam Testing",
+    resourceUsage: null,
+    industryImpact: "20 UMKM pilot user, Rp200 juta dana tersalurkan"
   },
   {
     id: 7,
-    title: "Smart Tourism App Kalimantan",
+    title: "Aplikasi Smart Tourism Kalimantan",
     student: "Dewi Anggraini",
     prodi: "Sistem Informasi",
     angkatan: "2022",
     status: "Research",
-    url: "dewi-tourism.kampus-berdampak.fsti-itk.ac.id",
+    url: "smart-tourism.faculty.fsti-itk.ac.id",
     tech: ['Flutter', 'Firebase', 'Maps API', 'AI'],
-    description: "Aplikasi pariwisata cerdas dengan rekomendasi destinasi berbasis AI dan tur virtual untuk wisata Kalimantan.",
-    features: ['AI recommendations', 'Virtual tours', 'Local guide booking', 'Offline maps'],
+    description: "Aplikasi pariwisata cerdas dengan rekomendasi destinasi berbasis AI dan tur virtual untuk promosi wisata Kalimantan.",
+    features: ['Rekomendasi AI', 'Tur virtual', 'Booking guide lokal', 'Peta offline'],
     timeline: { start: "2024-09-01", end: "2025-01-15", duration: "4.5 bulan" },
     mentor: "Dr. Yohanes Khoirul",
-    github: "https://github.com/dewi/smart-tourism-kalimantan",
-    demo: "https://dewi-tourism.kampus-berdampak.fsti-itk.ac.id",
+    mentorContribution: "Algoritma recommendation system, computer vision untuk AR, optimasi mobile AI",
+    github: "https://github.com/fsti-itk/smart-tourism-kalimantan",
+    demo: "https://smart-tourism.faculty.fsti-itk.ac.id",
     progress: 60,
-    category: "Mobile Development",
-    serverStatus: "Not Deployed",
-    resourceUsage: null
+    category: "Pengembangan Mobile",
+    serverStatus: "Dalam Riset",
+    resourceUsage: null,
+    industryImpact: "10+ destinasi wisata terintegrasi, kerjasama Dinas Pariwisata Kaltim"
+  }
+];
+
+export const computingResourcesData = [
+  {
+    id: 1,
+    name: "Dev Server Alpha",
+    type: "Development Server",
+    specs: {
+      cpu: "Intel Xeon E5-2680 v4 (14 Cores)",
+      ram: "64GB DDR4",
+      storage: "2TB NVMe SSD",
+      gpu: "NVIDIA RTX 3080"
+    },
+    currentUsage: {
+      cpu: 45,
+      memory: 68,
+      storage: 78,
+      bandwidth: 34
+    },
+    status: "Online",
+    assignedProjects: ["E-Commerce UMKM", "Smart Tourism App"],
+    users: ["Andika Pratama", "Dewi Anggraini"],
+    location: "Lab Inovasi Digital - Rack A1",
+    ipAddress: "192.168.1.10",
+    lastMaintenance: "2024-10-15",
+    nextMaintenance: "2024-12-15"
+  },
+  {
+    id: 2,
+    name: "AI Workstation Beta", 
+    type: "AI/ML Workstation",
+    specs: {
+      cpu: "AMD Ryzen 9 5950X (16 Cores)",
+      ram: "128GB DDR4",
+      storage: "4TB NVMe SSD",
+      gpu: "NVIDIA RTX 4090"
+    },
+    currentUsage: {
+      cpu: 89,
+      memory: 92,
+      storage: 56,
+      bandwidth: 67
+    },
+    status: "High Load",
+    assignedProjects: ["AI Traffic Management", "Machine Learning Research"],
+    users: ["Rina Kartika", "Dr. Yohanes Khoirul"],
+    location: "Lab Inovasi Digital - Rack A2",
+    ipAddress: "192.168.1.11",
+    lastMaintenance: "2024-11-01",
+    nextMaintenance: "2025-01-01"
+  },
+  {
+    id: 3,
+    name: "Cloud Dev Server",
+    type: "Cloud Development",
+    specs: {
+      cpu: "Intel i9-12900K (16 Cores)",
+      ram: "32GB DDR5",
+      storage: "1TB NVMe SSD",
+      gpu: "Integrated"
+    },
+    currentUsage: {
+      cpu: 23,
+      memory: 41,
+      storage: 34,
+      bandwidth: 29
+    },
+    status: "Online",
+    assignedProjects: ["Digital Twin Pabrik", "Fintech UMKM"],
+    users: ["Budi Santoso", "Lina Permatasari"],
+    location: "Lab Inovasi Digital - Rack B1",
+    ipAddress: "192.168.1.12",
+    lastMaintenance: "2024-09-20",
+    nextMaintenance: "2024-11-20"
   }
 ];
 
