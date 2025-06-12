@@ -11,7 +11,7 @@
 | **🏛️ Institusi** | Institut Teknologi Kalimantan |
 | **🏫 Unit** | Lab Inovasi Digital FSTI |
 | **👨‍💼 Kepala Lab** | Aidil Saputra Kirsan, M.Tr.Kom |
-| **📅 Periode** | Januari 2025 - Desember 2025 |
+| **📅 Periode** | Mulai Juli 2025 -  |
 | **💰 Total Budget** | **Rp 14.828.000** |
 
 ---
@@ -29,10 +29,12 @@ Pengembangan **4 Platform Analytics & Tracking Terintegrasi** untuk monitoring c
 ├── Portfolio generator otomatis  
 └── Real-time participation monitoring
 
-👨‍🏫 PORTAL DOSEN ANALYTICS
-├── External teaching hours tracker
-├── Industry consultation monitor
-└── IKU 3 compliance calculator
+🔬 PORTAL LAB INOVASI DIGITAL
+├── Innovation project tracker per prodi
+├── Computing resources management
+├── Digital equipment inventory system
+├── Pemanfaatan Lab analytics
+└── Pendampingan Dosen metrics
 
 🔬 RESEARCH IMPACT ANALYTICS
 ├── Research adoption tracking
@@ -45,11 +47,11 @@ Pengembangan **4 Platform Analytics & Tracking Terintegrasi** untuk monitoring c
 └── Collaboration success metrics
 ```
 
-### **🏆 Target IKU TRACKING**
+### **🏆 TARGET IKU TRACKING**
 | IKU | Platform | Fungsi Analytics |
 |-----|----------|------------------|
 | **IKU 2** | Platform Kampus Berdampak | Tracking mahasiswa program luar kampus |
-| **IKU 3** | Portal Dosen | Tracking kegiatan dosen di luar kampus |
+| **IKU 3** | **Portal Lab Inovasi Digital** | **Lab management & innovation tracking** |
 | **IKU 5** | Research Analytics | Tracking hasil riset yang digunakan masyarakat |
 | **Plus** | Kolaborasi Industri | Tracking partnership & MoU management |
 
@@ -62,8 +64,11 @@ Q1 2025: 🏗️ Foundation Setup
          ├── Infrastructure & Tools
          └── Kampus Berdampak Analytics Platform
 
-Q2 2025: 👨‍🏫 Portal Dosen Analytics
-         └── External Activity Tracking System
+Q2 2025: 🔬 Portal Lab Inovasi Digital
+         ├── Innovation Project Dashboard
+         ├── Computing Resources Management
+         ├── Digital Equipment Inventory
+         └── Lab Analytics & Utilization
 
 Q3 2025: 🔬 Research Impact Analytics
          └── Research Adoption & Impact Monitoring  
@@ -144,36 +149,6 @@ Q4 2025: 🤝 Industry Collaboration Analytics
 
 ---
 
-## ✅ **MENGAPA PILIHAN INI OPTIMAL?**
-
-### **🎯 PILIHAN TOOLS YANG TEPAT**
-
-| ❌ **Dihindari** | 💰 **Harga** | ❌ **Alasan** |
-|------------------|-------------|----------------|
-| JetBrains All Products | Rp 4.500.000 | Overkill untuk web development |
-| Adobe Creative Cloud | Rp 3.600.000 | Terlalu mahal, fitur tidak terpakai |
-
-| ✅ **Dipilih** | 💰 **Harga** | ✅ **Alasan** |
-|----------------|-------------|----------------|
-| Visual Studio Code | **GRATIS** | Terbaik untuk web development |
-| Canva Pro Team | Rp 1.800.000 | Cukup untuk design assets |
-
-### **📊 SURVEY DEVELOPER**
-
-> **Visual Studio Code** adalah editor paling populer dengan **74.48%** pengguna developer worldwide (StackOverflow Survey 2022)
-
-### **💡 KEUNGGULAN PEMILIHAN**
-
-| **Aspek** | **Benefit** |
-|-----------|-------------|
-| **💰 Cost Effective** | Hemat Rp 2.5 juta vs alternatif mahal |
-| **🎯 Fit for Purpose** | Tools khusus untuk web development |
-| **🚀 Scalability** | Infrastructure siap untuk 4 platform |
-| **👥 Team Collaboration** | GitHub + Figma untuk kerja tim |
-| **🔒 Enterprise Security** | Cloudflare + SSL untuk keamanan |
-
----
-
 ## 📈 **ROI & DAMPAK YANG DIHARAPKAN**
 
 ### **🎯 DAMPAK LANGSUNG**
@@ -192,10 +167,12 @@ Q4 2025: 🤝 Industry Collaboration Analytics
 ├── Automated portfolio generation
 └── IKU 2 compliance monitoring
 
-👨‍🏫 FACULTY ANALYTICS IMPACT  
-├── External activity tracking dashboard
-├── Industry consultation analytics
-└── IKU 3 performance calculator
+🔬 LAB INOVASI DIGITAL IMPACT  
+├── Innovation project tracking per prodi
+├── Computing resources optimization
+├── Digital equipment utilization monitoring
+├── Lab performance analytics
+└── Faculty mentoring effectiveness
 
 🔬 RESEARCH ANALYTICS IMPACT
 ├── Research adoption measurement
@@ -207,6 +184,20 @@ Q4 2025: 🤝 Industry Collaboration Analytics
 ├── MoU effectiveness tracking
 └── Collaboration ROI analysis
 ```
+
+### **🎯 DOMAIN STRUKTUR**
+```
+📍 Portal Lab Inovasi Digital: faculty.fsti-itk.ac.id
+├── Innovation Projects: *.faculty.fsti-itk.ac.id
+├── Resource Management Dashboard
+├── Equipment Booking System
+└── Lab Performance Analytics
+```
+
+### **🔗 INTEGRASI SISTEM**
+- **SIAKAD Integration:** Real-time sync dosen praktisi data
+- **LinkedIn Integration:** Profile verification & industry experience
+- **Kemendikbud Praktisi Mengajar:** Program compliance tracking
 
 ---
 
@@ -222,8 +213,12 @@ Q4 2025: 🤝 Industry Collaboration Analytics
 
 🗓️ Q2 2025 (Apr-Jun)
 ├── 🔗 SIAKAD Integration
-├── 📊 Portal Dosen Development
-└── 🧪 Beta Testing Faculty
+├── 🔬 Portal Lab Inovasi Digital Development
+│   ├── Innovation Project Tracker
+│   ├── Computing Resources Management
+│   ├── Digital Equipment Inventory
+│   └── Lab Analytics Dashboard
+└── 🧪 Beta Testing dengan 4 Prodi
 
 🗓️ Q3 2025 (Jul-Sep)  
 ├── 🔬 Research Analytics Development
@@ -263,28 +258,28 @@ Q4 2025: 🤝 Industry Collaboration Analytics
 ### **👨‍💼 PREPARED BY**
 **Aidil Saputra Kirsan, M.Tr.Kom**  
 Kepala Laboratorium Inovasi Digital FSTI ITK  
-📧 aidil@itk.ac.id  
+📧 aidil@lecturer.itk.ac.id  
 📱 +62-xxx-xxxx-xxxx
 
 ### **📅 DOCUMENT INFO**
-- **📅 Date**: 10 Juni 2025
-- **📄 Version**: 2.0
+- **📅 Date**: 12 Juni 2025
+- **📄 Version**: 3.0 (Updated)
 - **🎯 Status**: Ready for Approval
 
 ---
 
 ## 💡 **KESIMPULAN**
 
-> **"Investasi Rp 14.828.000 untuk 4 platform analytics terintegrasi yang akan menghasilkan monitoring real-time capaian IKU, dashboard analytics untuk decision making, dan pelaporan otomatis yang mendukung peningkatan ranking FSTI ITK."**
+> **"Investasi Rp 14.828.000 untuk 4 platform analytics terintegrasi yang akan menghasilkan monitoring real-time capaian IKU, dengan fokus khusus Portal Lab Inovasi Digital untuk optimasi resource management, innovation tracking, dan faculty mentoring excellence di FSTI ITK."**
 
 ### **🎯 KEY HIGHLIGHTS**
 
 - ✅ **Budget Optimal**: Sesuai kebutuhan analytics tools
-- ✅ **Tools Tepat**: Khusus untuk web-based analytics platform  
-- ✅ **ROI Jelas**: Monitoring real-time, decision making data-driven
-- ✅ **Future-Ready**: Infrastruktur analytics scalable
-- ✅ **Team-Friendly**: Tools collaboration untuk development analytics
+- ✅ **Lab-Focused**: Portal khusus untuk Lab Inovasi Digital FSTI  
+- ✅ **ROI Jelas**: Resource optimization, innovation tracking
+- ✅ **Future-Ready**: Infrastructure analytics scalable
+- ✅ **Faculty-Centered**: Tools untuk dosen praktisi & mentoring
 
 ---
 
-**🚀 Ready for Digital Transformation!**
+**🚀 Ready for Digital Innovation Lab Transformation!**
