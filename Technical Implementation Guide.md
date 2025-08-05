@@ -1,4 +1,4 @@
-# 💻 Solusi Development Environment: GitHub Codespaces untuk Dosen FSTI-ITK
+# 💻 Technical Implementation Guide: GitHub Codespaces untuk Dosen FSTI-ITK
 *"Laptop 8GB RAM Penuh? Pakai Cloud Computer Gratis!"*
 
 ---
