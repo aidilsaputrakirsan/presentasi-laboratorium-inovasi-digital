@@ -49,11 +49,16 @@
 
         <!-- Charts -->
         <div class="mb-6 animate-fade-in">
-          <ChartsSection 
+          <ChartsSection
             :yearChartData="yearChartData"
             :categoryChartData="categoryChartData"
             :topLecturersData="topLecturersData"
           />
+        </div>
+
+        <!-- SINTA Data (Penelitian, Pengabdian, Buku) -->
+        <div class="mb-6 animate-fade-in">
+          <SintaStatistics :selectedProdi="selectedProdi" />
         </div>
 
         <!-- Export Button -->
@@ -102,6 +107,7 @@ import ProdiStatistics from './components/ProdiStatistics.vue';
 import ChartsSection from './components/ChartsSection.vue';
 import LecturerCard from './components/LecturerCard.vue';
 import CacheStatus from './components/CacheStatus.vue';
+import SintaStatistics from './components/SintaStatistics.vue';
 import { fetchMultipleLecturers } from './services/serpApi.js';
 import { 
   aggregateProdiData, 
@@ -120,7 +126,8 @@ export default {
     ProdiStatistics,
     ChartsSection,
     LecturerCard,
-    CacheStatus
+    CacheStatus,
+    SintaStatistics
   },
   data() {
     return {
