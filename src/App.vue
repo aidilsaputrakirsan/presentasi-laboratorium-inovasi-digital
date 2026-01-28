@@ -3,17 +3,23 @@
     <div class="max-w-7xl mx-auto">
       <!-- Header -->
       <header class="mb-8 text-center">
-        <div class="inline-flex items-center gap-3 mb-3">
-          <div class="w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-500 rounded-xl flex items-center justify-center shadow-lg">
-            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
-            </svg>
+        <div class="inline-flex items-center gap-4 mb-3">
+          <div class="relative">
+            <div class="w-14 h-14 bg-gradient-to-br from-rose-500 via-pink-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg shadow-rose-500/30">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <div class="absolute inset-0 rounded-2xl bg-rose-500/20 animate-ping"></div>
           </div>
-          <div>
-            <h1 class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent">
-              Monitoring IKU/Akreditasi Dosen
-            </h1>
-            <p class="text-slate-600 text-sm mt-1">Sistem monitoring publikasi via Google Scholar</p>
+          <div class="text-left">
+            <div class="flex items-center gap-3">
+              <h1 class="text-3xl lg:text-4xl font-black bg-gradient-to-r from-rose-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+                SINTA-Pulse
+              </h1>
+              <span class="px-2 py-0.5 bg-gradient-to-r from-rose-500 to-pink-500 text-white text-[10px] font-bold rounded-full uppercase tracking-wider animate-pulse">Live</span>
+            </div>
+            <p class="text-slate-600 text-sm mt-1">Dashboard Monitoring Dosen | Laboratorium Inovasi Digital</p>
           </div>
         </div>
       </header>
@@ -26,118 +32,36 @@
         />
       </div>
 
-      <!-- Cache Status (shown when data is loaded) -->
-      <div v-if="!loading && selectedProdi && lecturersData.length > 0" class="mb-6 flex justify-end">
-        <CacheStatus 
-          :cacheInfo="cacheInfo"
-          :refreshing="refreshing"
-          @refresh="handleRefresh"
-        />
+      <!-- SINTA Dashboard (shown when prodi is selected) -->
+      <div v-if="selectedProdi" class="animate-fade-in">
+        <SintaStatistics :selectedProdi="selectedProdi" />
       </div>
 
-      <!-- Main Tab Navigation -->
-      <div v-if="!loading && selectedProdi && lecturersData.length > 0" class="mb-6 animate-fade-in">
-        <div class="flex gap-2 p-1 bg-slate-100 rounded-xl w-fit">
-          <button
-            @click="activeMainTab = 'scholar'"
-            :class="[
-              'px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 flex items-center gap-2',
-              activeMainTab === 'scholar'
-                ? 'bg-white text-primary-600 shadow-sm'
-                : 'text-slate-600 hover:text-slate-800 hover:bg-slate-50'
-            ]"
-          >
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-            </svg>
-            Google Scholar
-          </button>
-          <button
-            @click="activeMainTab = 'sinta'"
-            :class="[
-              'px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 flex items-center gap-2',
-              activeMainTab === 'sinta'
-                ? 'bg-white text-green-600 shadow-sm'
-                : 'text-slate-600 hover:text-slate-800 hover:bg-slate-50'
-            ]"
-          >
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-            </svg>
-            SINTA
-          </button>
-        </div>
-      </div>
-
-      <!-- Loading State -->
-      <div v-if="loading" class="card text-center py-12">
-        <div class="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
-        <p class="mt-4 text-slate-600">Memuat data {{ loadedCount }}/{{ totalCount }} dosen...</p>
-      </div>
-
+      <!-- Google Scholar Section - DISABLED but preserved -->
+      <!-- 
       <template v-if="!loading && selectedProdi && lecturersData.length > 0">
-        
-        <!-- ========== GOOGLE SCHOLAR TAB ========== -->
-        <template v-if="activeMainTab === 'scholar'">
-          <!-- Prodi Statistics -->
-          <div class="mb-6 animate-fade-in">
-            <ProdiStatistics :stats="prodiStats" />
-          </div>
-
-          <!-- Charts -->
-          <div class="mb-6 animate-fade-in">
-            <ChartsSection
-              :yearChartData="yearChartData"
-              :categoryChartData="categoryChartData"
-              :topLecturersData="topLecturersData"
-            />
-          </div>
-
-          <!-- Export Button -->
-          <div class="mb-6 flex justify-end">
-            <button 
-              @click="exportAllData"
-              class="btn-primary flex items-center gap-2"
-            >
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-              </svg>
-              Export Semua Data CSV
-            </button>
-          </div>
-
-          <!-- Lecturers List -->
-          <div class="space-y-4">
-            <h3 class="text-xl font-bold text-slate-800">Daftar Dosen ({{ lecturersData.length }})</h3>
-            <LecturerCard 
-              v-for="lecturer in lecturersData"
-              :key="lecturer.scholarId"
-              :lecturer="lecturer"
-            />
-          </div>
-        </template>
-
-        <!-- ========== SINTA TAB ========== -->
-        <template v-if="activeMainTab === 'sinta'">
-          <!-- SINTA Data (Penelitian, Pengabdian, Buku) -->
-          <div class="animate-fade-in">
-            <SintaStatistics :selectedProdi="selectedProdi" />
-          </div>
-        </template>
-
+        <ProdiStatistics :stats="prodiStats" />
+        <ChartsSection
+          :yearChartData="yearChartData"
+          :categoryChartData="categoryChartData"
+          :topLecturersData="topLecturersData"
+        />
+        <LecturerCard 
+          v-for="lecturer in lecturersData"
+          :key="lecturer.scholarId"
+          :lecturer="lecturer"
+        />
       </template>
-
-      <!-- No Data State -->
-      <div v-if="!loading && selectedProdi && lecturersData.length === 0" class="card text-center py-12">
-        <svg class="w-16 h-16 text-slate-300 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
-        <p class="mt-4 text-slate-600">Belum ada data untuk prodi ini</p>
-      </div>
+      -->
 
       <!-- Footer -->
       <footer class="mt-12 text-center text-sm text-slate-500">
-        <p>Powered by Google Scholar (SerpApi) & SINTA Kemdiktisaintek | {{ currentYear }}</p>
+        <div class="flex items-center justify-center gap-2 mb-1">
+          <span class="font-semibold text-slate-600">SINTA-Pulse</span>
+          <span class="text-slate-300">|</span>
+          <span>Laboratorium Inovasi Digital</span>
+        </div>
+        <p class="text-xs text-slate-400">Powered by SINTA Kemdiktisaintek | {{ currentYear }}</p>
       </footer>
     </div>
   </div>

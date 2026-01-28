@@ -1,176 +1,178 @@
-# Monitoring IKU/Akreditasi Dosen via Google Scholar
+# Presentasi Laboratorium Inovasi Digital
 
-Aplikasi Vue 3 + Tailwind CSS untuk monitoring publikasi dosen per program studi melalui Google Scholar menggunakan SerpApi.
+Dashboard presentasi untuk Laboratorium Inovasi Digital yang menampilkan data Tridarma Dosen terintegrasi dengan SINTA 3.
 
-## 🎯 Fitur Utama
+## Fitur
 
-### 1. **Multi-Dosen Dashboard**
-- Pilih Program Studi (Sistem Informasi / Bisnis Digital)
-- Auto-fetch semua dosen dalam 1 prodi sekaligus
-- **20 Dosen Total**: 12 Sistem Informasi + 8 Bisnis Digital
+- **Dashboard SINTA**: Visualisasi data publikasi, penelitian, pengabdian, dan IPR dosen
+- **Kategori Publikasi**: Breakdown Scopus (Q1-Q4) dan SINTA (S1-S6)
+- **Top Sitasi**: Peringkat dosen berdasarkan jumlah sitasi
+- **Produktivitas Tridarma**: Grafik perbandingan output dosen
+- **Tabel Detail**: Data lengkap per dosen dengan sorting
 
-### 2. **Statistik Prodi**
-- Total Dosen
-- Total Publikasi
-- Rata-rata Publikasi per Dosen
-- Total Sitasi
+## Persyaratan
 
-### 3. **Visualisasi Data (Charts)**
-- 📊 Publikasi per Tahun (Bar Chart)
-- 🥧 Distribusi Penelitian vs Pengmas (Pie Chart)  
-- 📈 Top 5 Dosen Produktif (Horizontal Bar Chart)
+### Frontend (Vue.js)
+- Node.js >= 16.x
+- npm atau yarn
 
-### 4. **Lecturer Cards (Expandable)**
-- Card per dosen dengan ringkasan statistik
-- Click to expand untuk lihat detail publikasi
-- Quick stats: Publikasi 3 tahun, Penelitian, Pengmas
+### Scraper (Python)
+- Python >= 3.8
+- pip
 
-### 5. **Filter & Export**
-- Filter tahun (2023-2026, 2024-2026, dll)
-- Filter kategori (Penelitian/Pengmas)
-- **Export CSV gabungan** semua dosen di prodi
-- Format sesuai borang akreditasi
+## Instalasi
 
-### 6. **Kategorisasi Otomatis**
-- **Penelitian**: Artikel default
-- **Pengmas**: Judul mengandung "Pengabdian", "Masyarakat", "Pemberdayaan", "Pelatihan"
-
-### 7. **Link Validasi**
-- Klik judul publikasi → Buka link asli
-- Verifikasi mudah untuk auditor
-
-## 📦 Instalasi
-
+### 1. Clone Repository
 ```bash
-# Install dependencies
+git clone <repository-url>
+cd presentasi-laboratorium-inovasi-digital
+```
+
+### 2. Install Dependencies Frontend
+```bash
 npm install
 ```
 
-## 🚀 Menjalankan Aplikasi
-
-### ⚠️ PENTING: Jalankan 2 Server Bersamaan
-
-**Opsi 1: Otomatis (Recommended)**
+### 3. Install Dependencies Python (untuk scraper)
 ```bash
-npm run dev:all
+pip install requests beautifulsoup4
 ```
 
-**Opsi 2: Manual (2 Terminal Terpisah)**
+## Menjalankan Aplikasi
 
-Terminal 1 - Proxy Server:
-```bash
-npm run server
-```
-
-Terminal 2 - Frontend:
+### Development Mode
 ```bash
 npm run dev
 ```
+Aplikasi akan berjalan di `http://localhost:5173` (atau port lain jika 5173 sudah digunakan)
 
-Akses aplikasi di: **http://localhost:5173**
+### Production Build
+```bash
+npm run build
+npm run preview
+```
 
-## 💡 Cara Menggunakan
+## Update Data SINTA
 
-1. **Buka aplikasi** di http://localhost:5173
-2. **Pilih Program Studi** (Sistem Informasi atau Bisnis Digital)
-3. **Tunggu loading** - Sistem akan fetch data semua dosen sekaligus
-4. **Lihat statistik & charts** di bagian atas
-5. **Click lecturer card** untuk expand dan lihat detail publikasi
-6. **Export CSV** untuk mendapatkan data semua dosen dalam format akreditasi
+Data SINTA disimpan di `src/data/sinta_data.json`. Untuk mengupdate data terbaru dari SINTA:
 
-## 📊 Data yang Tersedia
+```bash
+python scripts/sinta_scraper.py
+```
 
-### Sistem Informasi (12 Dosen)
-- Yuyun Tri Wiranti
-- Aidil Saputra Kirsan
-- Arif Wicaksono Septyanto
-- Henokh Lugo Hariyanto
-- Lovinta Happy Atrinawati
-- Vika Fitratunnany Insanittaqwa
-- Hendy Indrawan Sunardi
-- Dwi Nur Amalia
-- Dwi Arief Prambudi
-- I Putu Deny Arthawan Sugih Prabowo
-- M. Ihsan Alfani Putera
-- Sri Rahayu Natasia
+**Catatan Penting:**
+- Scraper membutuhkan koneksi internet
+- Proses scraping memakan waktu sekitar 2-3 detik per dosen
+- **Data yang diambil adalah data KUMULATIF KESELURUHAN KARIR** (bukan per tahun)
+- SINTA tidak menyediakan filter tahun, semua data adalah lifetime/all-time
 
-### Bisnis Digital (8 Dosen)
-- Agung Prabowo
-- Bayu Nur Abdallah
-- Deli Yansyah
-- Eka Krisna Santoso
-- Khairunnisa Rahmah
-- Muhammad Ikhsan Alif S
-- Prasis Damai Nursyam Hamijaya
-- Luh Made Wisnu Satyaninggrat
+## Penjelasan Data
 
-## 🔧 Troubleshooting
+### Apa yang dimaksud data kumulatif?
 
-### Error "Network Error"
-✅ Pastikan proxy server running di port 3000  
-✅ Gunakan `npm run dev:all` untuk menjalankan keduanya
+Semua angka yang ditampilkan adalah **total akumulasi sepanjang karir dosen**, bukan data tahunan atau 5 tahun terakhir:
 
-### Charts tidak muncul
-✅ Clear browser cache  
-✅ Refresh halaman (Ctrl+F5)
+| Metrik | Penjelasan | Sumber |
+|--------|------------|--------|
+| Scopus Q1-Q4 | Total publikasi Scopus sepanjang karir | Scopus |
+| SINTA S1-S6 | Total publikasi nasional terakreditasi | SINTA Garuda |
+| Sitasi | Total sitasi yang diterima keseluruhan | **Google Scholar** (lebih komprehensif) |
+| H-Index | Indeks berdasarkan publikasi | Tertinggi dari Scopus/GScholar/WoS |
+| IPR/HKI | Total Hak Kekayaan Intelektual terdaftar | SINTA |
+| Penelitian | Total hibah penelitian yang pernah diterima | SINTA |
+| Pengabdian | Total kegiatan pengabdian masyarakat | SINTA |
+| Publikasi (Chart) | Total publikasi terindeks | Scopus + SINTA Garuda |
 
-### Data tidak muncul setelah pilih prodi
-✅ Cek console browser untuk error  
-✅ Pastikan SerpApi quota masih tersedia  
-✅ Restart kedua server
+### Sumber Data
 
-## 🛠️ Teknologi
+Data diambil dari portal [SINTA Kemdiktisaintek](https://sinta.kemdiktisaintek.go.id):
 
-- **Vue 3** - Progressive Framework
-- **Vite** - Build Tool
-- **Tailwind CSS** - Utility-first CSS
-- **Chart.js** - Data Visualization
-- **Express.js** - Proxy Server (bypass CORS)
-- **SerpApi** - Google Scholar API
-- **PapaParse** - CSV Export
+- **Sitasi & H-Index**: Menggunakan data **Google Scholar** karena lebih komprehensif untuk peneliti Indonesia (mencakup publikasi bahasa Indonesia)
+- **Publikasi Scopus**: Data dari indeks Scopus internasional dengan kategori Q1-Q4
+- **Publikasi SINTA**: Data dari Garuda (portal jurnal Indonesia) dengan akreditasi S1-S6
+- **Penelitian & Pengabdian**: Data hibah dari SINTA
 
-## 📁 Struktur Project
+## Struktur Data
+
+### Data Dosen (`src/data/lecturers.json`)
+Berisi daftar dosen per program studi beserta SINTA ID mereka.
+
+### Data SINTA (`src/data/sinta_data.json`)
+Hasil scraping dari SINTA, berisi:
+- **stats**: Metrik dasar (articles, citations, h-index, dll)
+- **documents**: Publikasi dengan kategori
+  - `scopus`: Q1, Q2, Q3, Q4, noq (tanpa quartile), total
+  - `sinta`: S1, S2, S3, S4, S5, S6, unknown (tanpa akreditasi), total
+- **research**: Daftar penelitian
+- **services**: Daftar pengabdian masyarakat
+- **books**: Daftar buku
+- **ipr**: Hak Kekayaan Intelektual (Hak Cipta, Paten)
+
+## Menambah/Mengubah Data Dosen
+
+1. Edit file `src/data/lecturers.json`
+2. Tambahkan SINTA ID dosen yang ingin ditampilkan
+3. Jalankan scraper untuk mengambil data:
+   ```bash
+   python scripts/sinta_scraper.py
+   ```
+
+## Keterangan Kolom Tabel
+
+| Kolom | Keterangan |
+|-------|------------|
+| Q1-Q4 | Quartile Scopus (Q1 = tertinggi) |
+| S1-S6 | Akreditasi SINTA Nasional (S1 = tertinggi) |
+| - | Publikasi tanpa kategori/akreditasi |
+| Jml | Jumlah total publikasi |
+| Sitasi | Total sitasi kumulatif |
+| H-Index | H-Index berdasarkan Scopus |
+| IPR | Hak Kekayaan Intelektual |
+| Buku | Jumlah buku yang diterbitkan |
+
+## Tech Stack
+
+- **Frontend**: Vue 3 + Vite
+- **Styling**: Tailwind CSS
+- **Charts**: Chart.js + vue-chartjs
+- **Scraper**: Python + BeautifulSoup4
+
+## Troubleshooting
+
+### Scraper tidak mengambil data
+- Pastikan koneksi internet stabil
+- SINTA ID harus valid dan terdaftar di SINTA
+- Coba jalankan ulang jika timeout
+
+### Data tidak muncul di dashboard
+- Pastikan file `src/data/sinta_data.json` sudah ada dan valid
+- Restart development server setelah update data
+
+### Chart kosong
+- Periksa apakah data publikasi tersedia di `sinta_data.json`
+- Dosen mungkin belum memiliki publikasi terindeks
+
+## Struktur Folder
 
 ```
+presentasi-laboratorium-inovasi-digital/
+├── public/              # Static assets
+├── scripts/
+│   └── sinta_scraper.py # Python scraper untuk SINTA
 ├── src/
-│   ├── components/
-│   │   ├── ProdiSelector.vue        (Dropdown prodi)
-│   │   ├── ProdiStatistics.vue      (Statistik prodi)
-│   │   ├── ChartsSection.vue        (3 charts)
-│   │   ├── LecturerCard.vue         (Card dosen)
-│   │   ├── PublicationTable.vue     (Tabel publikasi)
-│   │   ├── FilterControls.vue       (Filter & search)
-│   │   └── StatCard.vue             (Stat component)
+│   ├── components/      # Vue components
+│   │   └── SintaStatistics.vue
 │   ├── data/
-│   │   └── lecturers.json           (Master data dosen)
-│   ├── services/
-│   │   └── serpApi.js               (SerpApi integration)
-│   ├── utils/
-│   │   ├── categorization.js        (Auto-kategorisasi)
-│   │   ├── csvExport.js             (Export CSV)
-│   │   └── aggregation.js           (Agregasi data prodi)
-│   ├── App.vue                       (Main app)
-│   ├── main.js
-│   └── style.css
-├── server.js                         (Proxy server)
-└── package.json
+│   │   ├── lecturers.json    # Daftar dosen & SINTA ID
+│   │   └── sinta_data.json   # Hasil scraping SINTA
+│   ├── App.vue
+│   └── main.js
+├── package.json
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
 ```
 
-## ✨ Keunggulan
+## Lisensi
 
-✅ **Efisien**: 1 klik → Data semua dosen  
-✅ **Visual**: Charts interaktif untuk presentasi  
-✅ **Akreditasi-Ready**: Export CSV langsung  
-✅ **Modern UI**: Tailwind CSS profesional  
-✅ **Real-time**: Data langsung dari Google Scholar  
-
-## 📝 Developer Notes
-
-- Data dosen tersimpan di `src/data/lecturers.json`
-- Untuk menambah dosen, edit file lecturers.json
-- SerpApi key di file `.env`
-- Proxy server mengatasi CORS issue
-
----
-
-**Dibuat untuk keperluan monitoring IKU dan akreditasi Program Studi** 
+MIT License
