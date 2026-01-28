@@ -14,7 +14,7 @@ dist-ssr
 
 # Cache directory
 cache/
-*.json
+cache/*.json
 
 # Environment variables
 .env

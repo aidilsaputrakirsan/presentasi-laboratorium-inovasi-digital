@@ -35,6 +35,40 @@
         />
       </div>
 
+      <!-- Main Tab Navigation -->
+      <div v-if="!loading && selectedProdi && lecturersData.length > 0" class="mb-6 animate-fade-in">
+        <div class="flex gap-2 p-1 bg-slate-100 rounded-xl w-fit">
+          <button
+            @click="activeMainTab = 'scholar'"
+            :class="[
+              'px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 flex items-center gap-2',
+              activeMainTab === 'scholar'
+                ? 'bg-white text-primary-600 shadow-sm'
+                : 'text-slate-600 hover:text-slate-800 hover:bg-slate-50'
+            ]"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+            Google Scholar
+          </button>
+          <button
+            @click="activeMainTab = 'sinta'"
+            :class="[
+              'px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 flex items-center gap-2',
+              activeMainTab === 'sinta'
+                ? 'bg-white text-green-600 shadow-sm'
+                : 'text-slate-600 hover:text-slate-800 hover:bg-slate-50'
+            ]"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+            SINTA
+          </button>
+        </div>
+      </div>
+
       <!-- Loading State -->
       <div v-if="loading" class="card text-center py-12">
         <div class="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
@@ -42,47 +76,55 @@
       </div>
 
       <template v-if="!loading && selectedProdi && lecturersData.length > 0">
-        <!-- Prodi Statistics -->
-        <div class="mb-6 animate-fade-in">
-          <ProdiStatistics :stats="prodiStats" />
-        </div>
+        
+        <!-- ========== GOOGLE SCHOLAR TAB ========== -->
+        <template v-if="activeMainTab === 'scholar'">
+          <!-- Prodi Statistics -->
+          <div class="mb-6 animate-fade-in">
+            <ProdiStatistics :stats="prodiStats" />
+          </div>
 
-        <!-- Charts -->
-        <div class="mb-6 animate-fade-in">
-          <ChartsSection
-            :yearChartData="yearChartData"
-            :categoryChartData="categoryChartData"
-            :topLecturersData="topLecturersData"
-          />
-        </div>
+          <!-- Charts -->
+          <div class="mb-6 animate-fade-in">
+            <ChartsSection
+              :yearChartData="yearChartData"
+              :categoryChartData="categoryChartData"
+              :topLecturersData="topLecturersData"
+            />
+          </div>
 
-        <!-- SINTA Data (Penelitian, Pengabdian, Buku) -->
-        <div class="mb-6 animate-fade-in">
-          <SintaStatistics :selectedProdi="selectedProdi" />
-        </div>
+          <!-- Export Button -->
+          <div class="mb-6 flex justify-end">
+            <button 
+              @click="exportAllData"
+              class="btn-primary flex items-center gap-2"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+              Export Semua Data CSV
+            </button>
+          </div>
 
-        <!-- Export Button -->
-        <div class="mb-6 flex justify-end">
-          <button 
-            @click="exportAllData"
-            class="btn-primary flex items-center gap-2"
-          >
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-            </svg>
-            Export Semua Data CSV
-          </button>
-        </div>
+          <!-- Lecturers List -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-slate-800">Daftar Dosen ({{ lecturersData.length }})</h3>
+            <LecturerCard 
+              v-for="lecturer in lecturersData"
+              :key="lecturer.scholarId"
+              :lecturer="lecturer"
+            />
+          </div>
+        </template>
 
-        <!-- Lecturers List -->
-        <div class="space-y-4">
-          <h3 class="text-xl font-bold text-slate-800">Daftar Dosen ({{ lecturersData.length }})</h3>
-          <LecturerCard 
-            v-for="lecturer in lecturersData"
-            :key="lecturer.scholarId"
-            :lecturer="lecturer"
-          />
-        </div>
+        <!-- ========== SINTA TAB ========== -->
+        <template v-if="activeMainTab === 'sinta'">
+          <!-- SINTA Data (Penelitian, Pengabdian, Buku) -->
+          <div class="animate-fade-in">
+            <SintaStatistics :selectedProdi="selectedProdi" />
+          </div>
+        </template>
+
       </template>
 
       <!-- No Data State -->
@@ -95,7 +137,7 @@
 
       <!-- Footer -->
       <footer class="mt-12 text-center text-sm text-slate-500">
-        <p>Powered by SerpApi & Google Scholar | {{ currentYear }}</p>
+        <p>Powered by Google Scholar (SerpApi) & SINTA Kemdiktisaintek | {{ currentYear }}</p>
       </footer>
     </div>
   </div>
@@ -137,7 +179,8 @@ export default {
       refreshing: false,
       loadedCount: 0,
       totalCount: 0,
-      cacheInfo: null
+      cacheInfo: null,
+      activeMainTab: 'scholar' // 'scholar' | 'sinta'
     }
   },
   computed: {

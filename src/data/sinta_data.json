@@ -1,0 +1,855 @@
+{
+  "metadata": {
+    "generatedAt": "2026-01-28T07:57:45.086525",
+    "totalLecturers": 8,
+    "source": "SINTA (sinta.kemdikbud.go.id)",
+    "totals": {
+      "ipr": 48,
+      "research": 48,
+      "services": 30,
+      "books": 8
+    }
+  },
+  "lecturers": [
+    {
+      "name": "Yuyun Tri Wiranti",
+      "sintaId": "6787190",
+      "prodi": "Sistem Informasi",
+      "scrapedAt": "2026-01-28T07:57:45.086525",
+      "profile": [],
+      "ipr": [
+        {
+          "title": "Article",
+          "category": "0",
+          "year": "49",
+          "type": "IPR"
+        },
+        {
+          "title": "Citation",
+          "category": "0",
+          "year": "518",
+          "type": "IPR"
+        },
+        {
+          "title": "Cited Document",
+          "category": "0",
+          "year": "33",
+          "type": "IPR"
+        },
+        {
+          "title": "H-Index",
+          "category": "0",
+          "year": "10",
+          "type": "IPR"
+        },
+        {
+          "title": "i10-Index",
+          "category": "0",
+          "year": "11",
+          "type": "IPR"
+        },
+        {
+          "title": "G-Index",
+          "category": "0",
+          "year": "1",
+          "type": "IPR"
+        }
+      ],
+      "research": [],
+      "services": [],
+      "books": []
+    },
+    {
+      "name": "Aidil Saputra Kirsan",
+      "sintaId": "6760340",
+      "prodi": "Sistem Informasi",
+      "scrapedAt": "2026-01-28T07:57:53.682875",
+      "profile": [],
+      "ipr": [
+        {
+          "title": "Article",
+          "category": "6",
+          "year": "28",
+          "type": "IPR"
+        },
+        {
+          "title": "Citation",
+          "category": "18",
+          "year": "77",
+          "type": "IPR"
+        },
+        {
+          "title": "Cited Document",
+          "category": "3",
+          "year": "12",
+          "type": "IPR"
+        },
+        {
+          "title": "H-Index",
+          "category": "3",
+          "year": "5",
+          "type": "IPR"
+        },
+        {
+          "title": "i10-Index",
+          "category": "1",
+          "year": "4",
+          "type": "IPR"
+        },
+        {
+          "title": "G-Index",
+          "category": "3",
+          "year": "1",
+          "type": "IPR"
+        }
+      ],
+      "research": [
+        {
+          "title": "OPTIMALISASI PENGELOLAAN SISTEM MONITORING DATA ENERGI LISTRIK PADA SMART HOME SYSTEM UNTUK SAKLAR LISTRIK MENGGUNAKAN METODE EXTREME PROGRAMMING",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "PENGEMBANGAN SISTEM INFORMASI MANAJEMEN TUGAS AKHIR PADA JURUSAN TEKNIK ELEKTRO, INFORMATIKA, DAN BISNIS INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING (PXP)",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "IMPLEMENTASI METODE SCRUMBAN UNTUK PERANCANGAN ULANG SISTEM INFORMASI DAN MANAJEMEN LABORATORIUM (SIMLAB) INSTITUT TEKNOLOGI KALIMANTAN",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "RANCANGAN DAN IMPLEMENTASI SMART HOME SYSTEM UNTUK PENGENDALIAN SAKELAR LISTRIK BERBASIS IOT",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "IMPLEMENTASI METAVERSE PADA PENGENALAN LAB TERPADU KAMPUS INSTITUT TEKNOLOGI KALIMANTAN (ITK)",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "RANCANG BANGUN SISTEM DETEKSI DINI KEBAKARAN DI RUMAH MENGGUNAKAN SMART HOME BERBASIS IOT",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "PENINGKATAN EFISIENSI DAN EFEKTIVITAS PROSES BELAJAR MENGAJAR DENGAN PEMANFAATAN TEKNOLOGI IOT PADA SISTEM BEL SEKOLAH PINTAR",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "LEAN VS AGILE: EFISIENSI METODE UNTUK SISTEM INFORMASI SEKOLAH CERDAS DI BALIKPAPAN",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "IMPLEMENTASI SIAKAD BERBASIS WEBSITE DAN ANDROID MENGGUNAKAN FRAMEWORK CODEIGNITER DAN RESTFUL API UNTUK MENDUKUNG EKOSISTEM PENDIDIKAN DI SEKOLAH ISLAM BALIKPAPAN",
+          "year": "",
+          "type": "Research"
+        }
+      ],
+      "services": [
+        {
+          "title": "PENGEMBANGAN WISATA TANJUNG GADING MELALUI DIGITALISASI DI RT 17 KELURAHAN KARANG JOANG",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "PENGEMBANGAN WEBSITE DAN PENINGKATAN KENYAMANAN PENGUNJUNG DI WISATA MERANTI BALIKPAPAN",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "DIGITALISASI PEMBANGUNAN WEBSITE DASHBOARD SEBAGAI SARANA INFORMASI DAN PENGELOLAAN DATA MASYARAKAT",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "DIGITALISASI PENGELOLAAN BANK SAMPAH BORNEO 38 DAN PENGEMBANGAN RUMAH KREATIF RT. 38 KELURAHAN BARU TENGAH BALIKPAPAN BARAT",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "PENGEMBANGAN KAWASAN WISATA KULINER KELURAHAN DAMAI BALIKPAPAN",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "SOSIALISASI PEMANFAATAN TEKNOLOGI ICT DALAM PEMBELAJARAN DARING DI SEKOLAH DASAR AL AZHAR 58 BALIKPAPAN",
+          "year": "",
+          "type": "Community Service"
+        }
+      ],
+      "books": [
+        {
+          "title": "Buku ajar komputasi awan",
+          "year": "",
+          "isbn": "",
+          "type": "Book"
+        },
+        {
+          "title": "Implementasi Framework Codeigniter dan Restful API pada website dan Android Siakad untuk mendukung ekosistem pendidikan",
+          "year": "",
+          "isbn": "",
+          "type": "Book"
+        }
+      ]
+    },
+    {
+      "name": "Arif Wicaksono Septyanto",
+      "sintaId": "6741019",
+      "prodi": "Sistem Informasi",
+      "scrapedAt": "2026-01-28T07:58:01.935182",
+      "profile": [],
+      "ipr": [
+        {
+          "title": "Article",
+          "category": "6",
+          "year": "23",
+          "type": "IPR"
+        },
+        {
+          "title": "Citation",
+          "category": "82",
+          "year": "280",
+          "type": "IPR"
+        },
+        {
+          "title": "Cited Document",
+          "category": "5",
+          "year": "13",
+          "type": "IPR"
+        },
+        {
+          "title": "H-Index",
+          "category": "3",
+          "year": "5",
+          "type": "IPR"
+        },
+        {
+          "title": "i10-Index",
+          "category": "1",
+          "year": "3",
+          "type": "IPR"
+        },
+        {
+          "title": "G-Index",
+          "category": "0",
+          "year": "1",
+          "type": "IPR"
+        }
+      ],
+      "research": [
+        {
+          "title": "RANCANG BANGUN TRANSPARANSI PENGGUNAAN DANA TJSLP (TANGGUNG JAWAB SOSIAL DAN LINGKUNGAN PERUSAHAAN) DALAM MENDUKUNG SMART CITY MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "INOVASI PEMBUATAN PROTOTIPE TURBIN ANGIN SAVONIUS BERBAHAN PLA BERSTRUKTUR SANDWICH DENGAN METODE ADITIF MANUFAKTURING SEBAGAI SUMBER ENERGI HIJAU",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "PENGEMBANGAN SISTEM INFORMASI PELAYANAN ADMINISTRASI PADA UNIT LAYANAN TERPADU INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE WATERFALL",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "Pengembangan Algoritma Metaheuristik Untuk Menyelesaikan Permasalahan Optimasi Kombinatorial",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "PENGEMBANGAN INVERSI BATIMETRI UNTUK ESTIMASI KEDALAMAN LAUT PERAIRAN MENGGUNAKAN ALGORITMA INTERPRETABLE DEEP LEARNING",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "SVM (SUPPORT VECTOR MACHINE) UNTUK KLASIFIKASI STATUS GIZI BALITA BERDASARKAN INDEKS ANTROPOMETRI",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "Fuzzy Logic Fog Clod Computing untuk Menganalisis Faktor Penyebab Kematian Ibu Meninggal Masa Postpartum",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "FUZZY RULE BASED-SYSTEM REKAM MEDIS TERKAIT STATUS GIZI BAYI INDEKS ANTROPOMETRI SELAMA POSTPARTUM",
+          "year": "",
+          "type": "Research"
+        }
+      ],
+      "services": [
+        {
+          "title": "Optimalisasi Sistem Irigasi Berbasis Rainwater Harvesting (RWH) dan Pemanfaatan Limbah Pertanian sebagai Pupuk Organik Cair (POC) untuk Meningkatkan Produktivitas Perkebunan Berkelanjutan di Kelompok Tani Harapan Sejahtera",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "PENGEMBANGAN DIGITAL BRANDING BERSAMA TANAMIN BUMI NUSANTARA MELALUI PEMANFAATAN TEKNOLOGI INFORMASI UNTUK KAMPANYE LINGKUNGAN",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "PENINGKATAN KEMANDIRIAN EKONOMI PERKUMPULAN PENYANDANG DISABILITAS INDONESIA (PPDI) BALIKPAPAN MELALUI PENGUATAN PEMASARAN DIGITAL DAN PEMBERDAYAAN LEGALITAS PRODUK",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "OPTIMASI KAWASAN WISATA MELALUI PENGEMBANGAN PRODUK DAN BRANDING DENGAN MEMANFAATKAN TEKNOLOGI DI HUTAN LINDUNG SUNGAI WAIN",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "OPTIMASI KELOMPOK TANI DAN WISATA EDUKATIF BAMBOE WANADESA",
+          "year": "",
+          "type": "Community Service"
+        }
+      ],
+      "books": []
+    },
+    {
+      "name": "Henokh Lugo Hariyanto",
+      "sintaId": "6807418",
+      "prodi": "Sistem Informasi",
+      "scrapedAt": "2026-01-28T07:58:10.298530",
+      "profile": [],
+      "ipr": [
+        {
+          "title": "Article",
+          "category": "0",
+          "year": "9",
+          "type": "IPR"
+        },
+        {
+          "title": "Citation",
+          "category": "0",
+          "year": "20",
+          "type": "IPR"
+        },
+        {
+          "title": "Cited Document",
+          "category": "0",
+          "year": "7",
+          "type": "IPR"
+        },
+        {
+          "title": "H-Index",
+          "category": "3",
+          "year": "3",
+          "type": "IPR"
+        },
+        {
+          "title": "i10-Index",
+          "category": "0",
+          "year": "0",
+          "type": "IPR"
+        },
+        {
+          "title": "G-Index",
+          "category": "3",
+          "year": "3",
+          "type": "IPR"
+        }
+      ],
+      "research": [
+        {
+          "title": "RANCANG BANGUN TRANSPARANSI PENGGUNAAN DANA TJSLP (TANGGUNG JAWAB SOSIAL DAN LINGKUNGAN PERUSAHAAN) DALAM MENDUKUNG SMART CITY MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "PENGEMBANGAN SILURAH: SISTEM INFORMASI KELURAHAN MENGGUNAKAN METODE AGILE",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "Pengembangan Algoritma Metaheuristik Untuk Menyelesaikan Permasalahan Optimasi Kombinatorial",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "PENGEMBANGAN INVERSI BATIMETRI UNTUK ESTIMASI KEDALAMAN LAUT PERAIRAN MENGGUNAKAN ALGORITMA INTERPRETABLE DEEP LEARNING",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "SVM (SUPPORT VECTOR MACHINE) UNTUK KLASIFIKASI STATUS GIZI BALITA BERDASARKAN INDEKS ANTROPOMETRI",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
+          "year": "",
+          "type": "Research"
+        }
+      ],
+      "services": [
+        {
+          "title": "PENGEMBANGAN DIGITAL BRANDING BERSAMA TANAMIN BUMI NUSANTARA MELALUI PEMANFAATAN TEKNOLOGI INFORMASI UNTUK KAMPANYE LINGKUNGAN",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "OPTIMASI KAWASAN WISATA MELALUI PENGEMBANGAN PRODUK DAN BRANDING DENGAN MEMANFAATKAN TEKNOLOGI DI HUTAN LINDUNG SUNGAI WAIN",
+          "year": "",
+          "type": "Community Service"
+        }
+      ],
+      "books": []
+    },
+    {
+      "name": "Vika Fitratunnany Insanittaqwa",
+      "sintaId": "6784235",
+      "prodi": "Sistem Informasi",
+      "scrapedAt": "2026-01-28T07:58:18.459632",
+      "profile": [],
+      "ipr": [
+        {
+          "title": "Article",
+          "category": "0",
+          "year": "14",
+          "type": "IPR"
+        },
+        {
+          "title": "Citation",
+          "category": "0",
+          "year": "54",
+          "type": "IPR"
+        },
+        {
+          "title": "Cited Document",
+          "category": "0",
+          "year": "9",
+          "type": "IPR"
+        },
+        {
+          "title": "H-Index",
+          "category": "0",
+          "year": "3",
+          "type": "IPR"
+        },
+        {
+          "title": "i10-Index",
+          "category": "0",
+          "year": "2",
+          "type": "IPR"
+        },
+        {
+          "title": "G-Index",
+          "category": "0",
+          "year": "3",
+          "type": "IPR"
+        }
+      ],
+      "research": [
+        {
+          "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "PENGEMBANGAN SISTEM INFORMASI PUSAT LAYANAN HUKUM SEBAGAI JARINGAN DOKUMENTASI DAN INFORMASI HUKUM ITK",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "PEMBANGUNAN SMART-SCHOOL SYSTEM PADA LINGKUNGAN PEDESAAN DI WILAYAH IKN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "PENGEMBANGAN SIMSIS SEBAGAI SISTEM SMART CITY RANAH PENDIDIKAN UNTUK MENUNJANG PROSES PEMBELAJARAN",
+          "year": "",
+          "type": "Research"
+        }
+      ],
+      "services": [
+        {
+          "title": "PENGEMBANGAN FASILITAS DAN PROMOSI HUTAN KOTA MANGROVE MARGOMULYO MELALUI TEKNOLOGI DIGITAL",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "PEMBERDAYAAN MASYARAKAT PERUM KARANG JOANG LESTARI RT.50 DALAM BIDANG IPTEK DENGAN MENGGUNAKAN APLIKASI SCRATCH",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "PEMBUATAN SISTEM INFORMASI PENGOLAHAN SAMPAH BERBASIS WEB PADA BANK SAMPAH DARMA BAKTI",
+          "year": "",
+          "type": "Community Service"
+        }
+      ],
+      "books": []
+    },
+    {
+      "name": "I Putu Deny Arthawan Sugih Prabowo",
+      "sintaId": "6701825",
+      "prodi": "Sistem Informasi",
+      "scrapedAt": "2026-01-28T07:58:26.870805",
+      "profile": [],
+      "ipr": [
+        {
+          "title": "Article",
+          "category": "4",
+          "year": "40",
+          "type": "IPR"
+        },
+        {
+          "title": "Citation",
+          "category": "1",
+          "year": "101",
+          "type": "IPR"
+        },
+        {
+          "title": "Cited Document",
+          "category": "1",
+          "year": "24",
+          "type": "IPR"
+        },
+        {
+          "title": "H-Index",
+          "category": "1",
+          "year": "5",
+          "type": "IPR"
+        },
+        {
+          "title": "i10-Index",
+          "category": "0",
+          "year": "3",
+          "type": "IPR"
+        },
+        {
+          "title": "G-Index",
+          "category": "1",
+          "year": "3",
+          "type": "IPR"
+        }
+      ],
+      "research": [
+        {
+          "title": "PENERAPAN LOGIKA FUZZY UNTUK MENENTUKAN DURASI ISTIRAHAT OPTIMAL BERBASIS TINGKAT KEBISINGAN DAN LAMA PAPARAN DI INDUSTRI",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "VISUALISASI DARI KLASTERISASI PENGELOMPOKAN DAERAH BERDASARKAN TINGKAT PENDAPATAN PAJAK DAERAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER LANJUTAN",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "PENYUSUNAN JUSTIFIKASI TEKNIS DAN DISASTER RECOVERY PLAN UNTUK PENGEMBANGAN DATA CENTER UPA TIK ITK",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "RANCANG BANGUN SISTEM INFORMASI PENDAFTARAN SANTRI BARU BERBASIS WEB MENGGUNAKAN METODE RAPID APPLICATION DEVELOPMENT (RAD)",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "REKAYASA KESELAMATAN DALAM PENYUSUNAN DOKUMEN JUSTIFIKASI TEKNIS UNTUK PENGEMBANGAN DATA CENTER DI BANK PEMBANGUNAN DAERAH PROVINSI XYZ",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "ANALISIS ADOPSI PENGGUNAAN E-COMMERCE BERDASARKAN TECHNOLOGY, ORGANIZATION, DAN ENVIRONTMENT (TOE) PADA UMKM DI BALIKPAPAN",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "ANALISIS PENGARUH PENGALAMAN MENGGUNAKAN E-LEARNING SEBELUM COVID-19 DAN KARAKTERISTIK INSTRUKTUR KELAS TERHADAP NIAT PERILAKU MAHASISWA DALAM PEMBELAJARAN MELALUI E-LEARNING BERDASARKAN TECHNOLOGY ACCEPTANCE MODEL",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "COMPETITIVE RESEARCH TERHADAP E-COMMERCE EKSISTING UNTUK REKOMENDASI DESAIN APLIKASI E-COMMERCE UMKM BALIKPAPAN",
+          "year": "",
+          "type": "Research"
+        }
+      ],
+      "services": [
+        {
+          "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "PELATIHAN OPTIMALISASI PEMASARAN DIGITAL PADA BATIK SHAHO DAN KOMUNITAS BATIK TIGA ZAMAN BALIKPAPAN",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "PELATIHAN DIGITAL MARKETING RT.06 KELURAHAN GRAHA INDAH, KECAMATAN BALIKPAPAN UTARA, KOTA BALIKPAPAN, KALIMANTAN TIMUR",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "KEGIATAN PENGAJARAN ANAK-ANAK SERTA SOSIALISASI PEMANFAATAN WEBSITE DAN SOSIAL MEDIA DI KELURAHAN MARGO MULYO",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "BRANDING BANK SAMPAH KOTA HIJAU BALIKPAPAN BERBASIS DIGITAL MARKETING",
+          "year": "",
+          "type": "Community Service"
+        }
+      ],
+      "books": [
+        {
+          "title": "MANAJEMEN SUMBER DAYA MANUSIA",
+          "year": "",
+          "isbn": "",
+          "type": "Book"
+        },
+        {
+          "title": "Inovasi dan transformasi digital",
+          "year": "",
+          "isbn": "",
+          "type": "Book"
+        }
+      ]
+    },
+    {
+      "name": "Sri Rahayu Natasia",
+      "sintaId": "6686868",
+      "prodi": "Sistem Informasi",
+      "scrapedAt": "2026-01-28T07:59:17.734919",
+      "profile": [],
+      "ipr": [
+        {
+          "title": "Article",
+          "category": "5",
+          "year": "27",
+          "type": "IPR"
+        },
+        {
+          "title": "Citation",
+          "category": "13",
+          "year": "48",
+          "type": "IPR"
+        },
+        {
+          "title": "Cited Document",
+          "category": "3",
+          "year": "11",
+          "type": "IPR"
+        },
+        {
+          "title": "H-Index",
+          "category": "2",
+          "year": "5",
+          "type": "IPR"
+        },
+        {
+          "title": "i10-Index",
+          "category": "0",
+          "year": "0",
+          "type": "IPR"
+        },
+        {
+          "title": "G-Index",
+          "category": "1",
+          "year": "1",
+          "type": "IPR"
+        }
+      ],
+      "research": [
+        {
+          "title": "PENGEMBANGAN SISTEM PROYEKSI KEBIJAKAN PENGELOLAAN KEUANGAN BADAN LAYANAN UMUM INSTITUT TEKNOLOGI KALIMANTAN",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "KEBIJAKAN MANAJEMEN TATA KELOLA LIMBAH DOMESTIK DI KOTA BALIKPAPAN DENGAN METODE SISTEM DINAMIS",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "ANALISIS PEMENUHAN KETERSEDIAAN AIR BERSIH DENGAN PEMANFAATAN GREY WATER DAN PENGATURAN PIPA DI BALIKPAPAN SEBAGAI KOTA PENYANGGA IBU KOTA NEGARA NUSANTARA",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "STRATEGI OPTIMISASI LOKASI STASIUN PENUKARAN BATERAI SEPEDA MOTOR LISTRIK DI DAERAH PENYANGGA IKN BERDASARKAN PENDEKATAN PEMROGRAMAN MATEMATIS",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "SKEMA PEMBIAYAAN UMKM PERTANIAN DI KALIMANTANTIMUR BERBASIS LINGKUNGAN (TAHUN KE-3)",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "PEMENUHAN KETERSEDIAAN DAGING SAPI DI KOTA BALIKPAPAN UNTUK MENDUKUNG PEMENUHAN KEBUTUHAN IKN DENGAN PENDEKATAN COOPERATIVE GAME THEORY",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "SKEMA PEMBIAYAAN UMKM PERTANIAN DI KALIMANTAN TIMUR BERBASIS  LINGKUNGAN (ECO-FRIENDLY) (TAHUN KE-2)",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "SKEMA PEMBIAYAAN UMKM BIDANG PANGAN/ PERTANIAN DI KALIMANTAN TIMUR BERBASIS LINGKUNGAN (ECO-FRIENDLY)",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "MODEL OPTIMASI DISTRIBUSI MULTI-PRODUK MULTI-ESELON MENGGUNAKAN SISTEM DEDICATED WAREHOUSE",
+          "year": "",
+          "type": "Research"
+        },
+        {
+          "title": "MODEL HEAVY EQUIPMENT LEASING DENGAN MEMPERTIMBANGKAN BIAYA PENALTI SAAT TERJADI FAILURE YANG MELEBIHI TOLERANSI MENGGUNAKAN GAME THEORY",
+          "year": "",
+          "type": "Research"
+        }
+      ],
+      "services": [
+        {
+          "title": "EDUKASI PPKS DAN PENGEMBANGAN SISTEM INFORMASI PENDATAAN WARGA DI GRAHA POLTEKBA",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "PENGEMBANGAN DAN PELATIHAN SISTEM PENDATAAN DONASI BERBASIS WEB PADA MASJID BERKAH BOX BALIKPAPAN",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "TOURISM IN TERITIP – SEBAGAI BENTUK PENINGKATAN BRANDING POTENSI DAERAH KELURAHAN TERITIP KOTA BALIKPAPAN",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "PEMBERDAYAAN MASYARAKAT MELALUI PROGRAM EDUKASI DAN PEMANFAATAN TEKNOLOGI DI YAYASAN BERKAH BOX BALIKPAPAN",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "IMPLEMENTASI KURIKULUM PROGRAM PEMBINAAN STARTUP DENGAN METODE 4 FASE UNTUK PEMBERDAYAAN KEWIRAUSAHAAN DI KAMPUNG TIMUR KOTA BALIKPAPAN",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "PEMBERDAYAAN MASYARAKAT PESISIR MELALUI PRODUK INOVATIF OLAHAN BUAH BROWNIES MANGROVE BERBASIS EKOWISATA NEW NORMAL DI KELURAHAN MARGOMULYO KOTA BALIKPAPAN",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "LEAN SIX SIGMA JOURNEY PADA INDUSTRI OLEH-OLEH MAKANAN KHAS DAERAH",
+          "year": "",
+          "type": "Community Service"
+        }
+      ],
+      "books": [
+        {
+          "title": "Buku Dasar-Dasar Analisis Data Pelajari Keterampilan Penting, Rangkul Masa Depan, dan Lejitkan Karir Anda di Dunia Berbasis Data",
+          "year": "",
+          "isbn": "",
+          "type": "Book"
+        },
+        {
+          "title": "Analisis data multivariat dengan metode  structural equation modelling (SEM)  teori dan praktik menggunakan aplikasi  Warp-PLS 7.0",
+          "year": "",
+          "isbn": "",
+          "type": "Book"
+        }
+      ]
+    },
+    {
+      "name": "M. Gilvy Langgawan Putra",
+      "sintaId": "6201079",
+      "prodi": "Sistem Informasi",
+      "scrapedAt": "2026-01-28T07:59:25.973974",
+      "profile": [],
+      "ipr": [
+        {
+          "title": "Article",
+          "category": "0",
+          "year": "70",
+          "type": "IPR"
+        },
+        {
+          "title": "Citation",
+          "category": "0",
+          "year": "429",
+          "type": "IPR"
+        },
+        {
+          "title": "Cited Document",
+          "category": "0",
+          "year": "42",
+          "type": "IPR"
+        },
+        {
+          "title": "H-Index",
+          "category": "0",
+          "year": "12",
+          "type": "IPR"
+        },
+        {
+          "title": "i10-Index",
+          "category": "0",
+          "year": "14",
+          "type": "IPR"
+        },
+        {
+          "title": "G-Index",
+          "category": "1",
+          "year": "1",
+          "type": "IPR"
+        }
+      ],
+      "research": [
+        {
+          "title": "MEDIA PEMBELAJARAN DENGAN METODE GAMIFICATION UNTUK PENDIDIKAN FORMAL DAN NON FORMAL DI KALIMANTAN ERA COVID-19",
+          "year": "",
+          "type": "Research"
+        }
+      ],
+      "services": [
+        {
+          "title": "PEMETAAN DAN VISUALISASI PERMODELAN 3D LINGKUNGAN KAWASAN WISATA BARU HUTAN MERANTI KM.15 SEBAGAI UPAYA PENGEMBANGAN WISATA HUTAN LINDUNG BERBASIS ALAM",
+          "year": "",
+          "type": "Community Service"
+        },
+        {
+          "title": "PEMBERDAYAAN MASYARAKAT BARU TENGAH MELALUI BUDIDAYA IKAN LELE DENGAN MENGUNAKAN TEKNIK BUDIKDAMBER",
+          "year": "",
+          "type": "Community Service"
+        }
+      ],
+      "books": [
+        {
+          "title": "Media pembelajaran dengan metode gamification untuk meningkatkan motivasi pembelajaran pada perguruan tinggi di masa Covid-19",
+          "year": "",
+          "isbn": "",
+          "type": "Book"
+        },
+        {
+          "title": "Pemasaran digital : facebook ads, twitter ads, google ads, and youtube ads",
+          "year": "",
+          "isbn": "",
+          "type": "Book"
+        }
+      ]
+    }
+  ]
+}

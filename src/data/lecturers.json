@@ -1,0 +1,161 @@
+{
+    "studyPrograms": {
+        "Sistem Informasi": {
+            "name": "Sistem Informasi",
+            "code": "SI",
+            "lecturers": [
+                {
+                    "name": "Yuyun Tri Wiranti",
+                    "scholarId": "-_VrWf0AAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=-_VrWf0AAAAJ",
+                    "sintaId": "6787190",
+                    "sintaUrl": "https://sinta.kemdiktisaintek.go.id/authors/profile/6787190"
+                },
+                {
+                    "name": "Aidil Saputra Kirsan",
+                    "scholarId": "lzQbWuEAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=lzQbWuEAAAAJ&hl",
+                    "sintaId": "6760340",
+                    "sintaUrl": "https://sinta.kemdiktisaintek.go.id/authors/profile/6760340"
+                },
+                {
+                    "name": "Arif Wicaksono Septyanto",
+                    "scholarId": "j9grU1wAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=j9grU1wAAAAJ",
+                    "sintaId": "6741019",
+                    "sintaUrl": "https://sinta.kemdiktisaintek.go.id/authors/profile/6741019"
+                },
+                {
+                    "name": "Henokh Lugo Hariyanto",
+                    "scholarId": "0-iFtfUAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=0-iFtfUAAAAJ",
+                    "sintaId": "6807418",
+                    "sintaUrl": "https://sinta.kemdiktisaintek.go.id/authors/profile/6807418"
+                },
+                {
+                    "name": "Lovinta Happy Atrinawati",
+                    "scholarId": "hoRXNb0AAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=hoRXNb0AAAAJ",
+                    "sintaId": null,
+                    "sintaUrl": null
+                },
+                {
+                    "name": "Vika Fitratunnany Insanittaqwa",
+                    "scholarId": "KSbR3ScAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=KSbR3ScAAAAJ",
+                    "sintaId": "6784235",
+                    "sintaUrl": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784235"
+                },
+                {
+                    "name": "Hendy Indrawan Sunardi",
+                    "scholarId": "GX3ZBk4AAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=GX3ZBk4AAAAJ",
+                    "sintaId": null,
+                    "sintaUrl": null
+                },
+                {
+                    "name": "Dwi Nur Amalia",
+                    "scholarId": "eJ1lzuIAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=eJ1lzuIAAAAJ",
+                    "sintaId": null,
+                    "sintaUrl": null
+                },
+                {
+                    "name": "Dwi Arief Prambudi",
+                    "scholarId": "nLJNVHEAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=nLJNVHEAAAAJ",
+                    "sintaId": null,
+                    "sintaUrl": null
+                },
+                {
+                    "name": "I Putu Deny Arthawan Sugih Prabowo",
+                    "scholarId": "asIeRU8AAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=asIeRU8AAAAJ",
+                    "sintaId": "6701825",
+                    "sintaUrl": "https://sinta.kemdiktisaintek.go.id/authors/profile/6701825"
+                },
+                {
+                    "name": "M. Ihsan Alfani Putera",
+                    "scholarId": "UtyPlF4AAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=UtyPlF4AAAAJ",
+                    "sintaId": null,
+                    "sintaUrl": null
+                },
+                {
+                    "name": "Sri Rahayu Natasia",
+                    "scholarId": "wCiwTCQAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=wCiwTCQAAAAJ",
+                    "sintaId": "6686868",
+                    "sintaUrl": "https://sinta.kemdiktisaintek.go.id/authors/profile/6686868"
+                },
+                {
+                    "name": "Nursanti Novi Arisa",
+                    "scholarId": "8qByKOIAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?hl=id&user=8qByKOIAAAAJ",
+                    "sintaId": null,
+                    "sintaUrl": null
+                },
+                {
+                    "name": "Rosa Eliviani",
+                    "scholarId": "Mf5WlWgAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=Mf5WlWgAAAAJ",
+                    "sintaId": null,
+                    "sintaUrl": null
+                },
+                {
+                    "name": "M. Gilvy Langgawan Putra",
+                    "scholarId": "6khCqswAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?hl=id&user=6khCqswAAAAJ",
+                    "sintaId": "6201079",
+                    "sintaUrl": "https://sinta.kemdiktisaintek.go.id/authors/profile/6201079"
+                }
+            ]
+        },
+        "Bisnis Digital": {
+            "name": "Bisnis Digital",
+            "code": "BD",
+            "lecturers": [
+                {
+                    "name": "Agung Prabowo",
+                    "scholarId": "vJjETZUAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=vJjETZUAAAAJ"
+                },
+                {
+                    "name": "Bayu Nur Abdallah",
+                    "scholarId": "85FlCPEAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=85FlCPEAAAAJ"
+                },
+                {
+                    "name": "Deli Yansyah",
+                    "scholarId": "iElKjmcAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=iElKjmcAAAAJ"
+                },
+                {
+                    "name": "Eka Krisna Santoso",
+                    "scholarId": "8Mq_nd8AAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=8Mq_nd8AAAAJ"
+                },
+                {
+                    "name": "Khairunnisa Rahmah",
+                    "scholarId": "opyULEcAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=opyULEcAAAAJ"
+                },
+                {
+                    "name": "Muhammad Ikhsan Alif S",
+                    "scholarId": "8SpMkUUAAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=8SpMkUUAAAAJ"
+                },
+                {
+                    "name": "Prasis Damai Nursyam Hamijaya",
+                    "scholarId": "VwG_fH8AAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=VwG_fH8AAAAJ"
+                },
+                {
+                    "name": "Luh Made Wisnu Satyaninggrat",
+                    "scholarId": "W5C4j98AAAAJ",
+                    "scholarUrl": "https://scholar.google.com/citations?user=W5C4j98AAAAJ"
+                }
+            ]
+        }
+    }
+}
