@@ -20,7 +20,7 @@
               <span class="px-2 py-0.5 bg-gradient-to-r from-rose-500 to-pink-500 text-white text-[10px] font-bold rounded-full uppercase tracking-wider animate-pulse">Live</span>
             </div>
             <p class="text-slate-600 text-sm mt-1">Dashboard Monitoring Dosen | Laboratorium Inovasi Digital</p>
-          </div>
+            </div>
         </div>
       </header>
 
@@ -82,6 +82,20 @@
           </svg>
           Roadmap
         </button>
+        <button 
+          @click="activeView = 'expertise'"
+          :class="[
+            'px-6 py-3 rounded-xl text-sm font-bold transition-all duration-300 flex items-center gap-2',
+            activeView === 'expertise' 
+              ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-lg shadow-emerald-500/30' 
+              : 'bg-white text-slate-600 border border-slate-200 hover:border-emerald-300 hover:text-emerald-600'
+          ]"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a4 4 0 00-6-3.862M12 16a4 4 0 01-4-4H3s.002 0 0 0A4 4 0 017 8h.001C7.002 8 7 8 7 8a4 4 0 014-4h.001C11.002 4 11 4 11 4a4 4 0 014 4h.001C15.002 8 15 8 15 8a4 4 0 014 4h.001C19.002 12 19 12 19 12a4 4 0 01-4 4h.001C15.002 16 15 16 15 16z"></path>
+          </svg>
+          Cari Pakar
+        </button>
       </div>
 
       <!-- Dashboard View -->
@@ -118,6 +132,13 @@
       <template v-if="activeView === 'roadmap'">
         <div class="animate-fade-in">
           <ResearchRoadmap />
+        </div>
+      </template>
+
+      <!-- Expertise Finder View -->
+      <template v-if="activeView === 'expertise'">
+        <div class="animate-fade-in">
+          <ExpertiseFinder></ExpertiseFinder>
         </div>
       </template>
 
@@ -161,6 +182,7 @@ import SintaStatistics from './components/SintaStatistics.vue';
 import ResearchGallery from './components/ResearchGallery.vue';
 import ResearchClusters from './components/ResearchClusters.vue';
 import ResearchRoadmap from './components/ResearchRoadmap.vue';
+import ExpertiseFinderView from './components/ExpertiseFinder.vue'; // Import renamed to trigger update
 import { fetchMultipleLecturers } from './services/serpApi.js';
 import { 
   aggregateProdiData, 
@@ -183,7 +205,8 @@ export default {
     SintaStatistics,
     ResearchGallery,
     ResearchClusters,
-    ResearchRoadmap
+    ResearchRoadmap,
+    ExpertiseFinder: ExpertiseFinderView // Explicit registration
   },
   data() {
     return {

@@ -22,14 +22,20 @@ Dashboard presentasi untuk Laboratorium Inovasi Digital yang menampilkan data Tr
 - Deteksi kolaborasi **cross-prodi** (SI + Bisnis Digital)
 - Badge potensi kolaborasi (High 🔥 / Medium ✨ / Low 📌)
 
-### 4. Roadmap Riset (NEW!)
+### 4. Roadmap Riset
 - **Visualisasi Sankey Diagram** evolusi topik riset
 - Analisis tren kata kunci (keywords) dari 2018-2025
 - Deteksi kontinuitas dan perubahan fokus penelitian antar tahun
 
+### 5. Expertise Finder (Cari Pakar) (NEW!)
+- **Matchmaking System** untuk menemukan dosen pembimbing
+- Input ide/proposal -> Output rekomendasi dosen relevan
+- Menggunakan TF-IDF scoring pada riwayat publikasi dosen
+
 📖 **Dokumentasi lengkap**: 
 - [RESEARCH_CLUSTERING.md](./RESEARCH_CLUSTERING.md)
 - [RESEARCH_ROADMAP.md](./RESEARCH_ROADMAP.md)
+- [EXPERTISE_FINDER.md](./EXPERTISE_FINDER.md)
 
 ---
 
@@ -65,7 +71,7 @@ flowchart LR
     
     subgraph Scripts
     B[python scripts/sinta_scraper.py]
-    C[python scripts/research_clustering.py\npython scripts/research_roadmap.py]
+    C[python scripts/research_clustering.py\npython scripts/research_roadmap.py\npython scripts/build_expertise_data.py]
     end
 ```
 
@@ -77,13 +83,16 @@ Edit `src/data/lecturers.json`, tambahkan SINTA ID.
 python scripts/sinta_scraper.py
 ```
 
-### Step 3: Jalankan Analytics (Clustering & Roadmap)
+### Step 3: Jalankan Analytics (Clustering, Roadmap, Expertise)
 ```bash
 # Untuk Clustering Topik
 python scripts/research_clustering.py
 
 # Untuk Roadmap Tahunan
 python scripts/research_roadmap.py
+
+# Untuk Index Pencarian Pakar
+python scripts/build_expertise_data.py
 ```
 
 ---
