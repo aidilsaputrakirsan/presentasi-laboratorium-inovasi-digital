@@ -2,7 +2,7 @@
   <div class="min-h-screen py-8 px-4">
     <div class="max-w-7xl mx-auto">
       <!-- Header -->
-      <header class="mb-8 text-center">
+      <header class="mb-6 text-center">
         <div class="inline-flex items-center gap-4 mb-3">
           <div class="relative">
             <div class="w-14 h-14 bg-gradient-to-br from-rose-500 via-pink-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg shadow-rose-500/30">
@@ -24,18 +24,81 @@
         </div>
       </header>
 
-      <!-- Prodi Selector -->
-      <div class="animate-fade-in">
-        <ProdiSelector 
-          :selectedProdi="selectedProdi"
-          @select="handleProdiSelect"
-        />
+      <!-- Main View Tabs -->
+      <div class="flex justify-center gap-2 mb-6">
+        <button 
+          @click="activeView = 'dashboard'"
+          :class="[
+            'px-6 py-3 rounded-xl text-sm font-bold transition-all duration-300 flex items-center gap-2',
+            activeView === 'dashboard' 
+              ? 'bg-gradient-to-r from-rose-500 to-pink-500 text-white shadow-lg shadow-rose-500/30' 
+              : 'bg-white text-slate-600 border border-slate-200 hover:border-rose-300 hover:text-rose-600'
+          ]"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+          </svg>
+          Dashboard
+        </button>
+        <button 
+          @click="activeView = 'gallery'"
+          :class="[
+            'px-6 py-3 rounded-xl text-sm font-bold transition-all duration-300 flex items-center gap-2',
+            activeView === 'gallery' 
+              ? 'bg-gradient-to-r from-rose-500 to-pink-500 text-white shadow-lg shadow-rose-500/30' 
+              : 'bg-white text-slate-600 border border-slate-200 hover:border-rose-300 hover:text-rose-600'
+          ]"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+          Koleksi Karya
+        </button>
+        <button 
+          @click="activeView = 'clusters'"
+          :class="[
+            'px-6 py-3 rounded-xl text-sm font-bold transition-all duration-300 flex items-center gap-2',
+            activeView === 'clusters' 
+              ? 'bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white shadow-lg shadow-violet-500/30' 
+              : 'bg-white text-slate-600 border border-slate-200 hover:border-violet-300 hover:text-violet-600'
+          ]"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+          </svg>
+          Kolaborasi Riset
+        </button>
       </div>
 
-      <!-- SINTA Dashboard (shown when prodi is selected) -->
-      <div v-if="selectedProdi" class="animate-fade-in">
-        <SintaStatistics :selectedProdi="selectedProdi" />
-      </div>
+      <!-- Dashboard View -->
+      <template v-if="activeView === 'dashboard'">
+        <!-- Prodi Selector -->
+        <div class="animate-fade-in">
+          <ProdiSelector 
+            :selectedProdi="selectedProdi"
+            @select="handleProdiSelect"
+          />
+        </div>
+
+        <!-- SINTA Dashboard (shown when prodi is selected) -->
+        <div v-if="selectedProdi" class="animate-fade-in">
+          <SintaStatistics :selectedProdi="selectedProdi" />
+        </div>
+      </template>
+
+      <!-- Research Gallery View -->
+      <template v-if="activeView === 'gallery'">
+        <div class="animate-fade-in">
+          <ResearchGallery />
+        </div>
+      </template>
+
+      <!-- Research Clusters View -->
+      <template v-if="activeView === 'clusters'">
+        <div class="animate-fade-in">
+          <ResearchClusters />
+        </div>
+      </template>
 
       <!-- Google Scholar Section - DISABLED but preserved -->
       <!-- 
@@ -74,6 +137,8 @@ import ChartsSection from './components/ChartsSection.vue';
 import LecturerCard from './components/LecturerCard.vue';
 import CacheStatus from './components/CacheStatus.vue';
 import SintaStatistics from './components/SintaStatistics.vue';
+import ResearchGallery from './components/ResearchGallery.vue';
+import ResearchClusters from './components/ResearchClusters.vue';
 import { fetchMultipleLecturers } from './services/serpApi.js';
 import { 
   aggregateProdiData, 
@@ -93,10 +158,13 @@ export default {
     ChartsSection,
     LecturerCard,
     CacheStatus,
-    SintaStatistics
+    SintaStatistics,
+    ResearchGallery,
+    ResearchClusters
   },
   data() {
     return {
+      activeView: 'dashboard', // 'dashboard' | 'gallery' | 'clusters'
       selectedProdi: null,
       lecturersData: [],
       loading: false,

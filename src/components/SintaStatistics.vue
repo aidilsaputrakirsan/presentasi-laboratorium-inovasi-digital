@@ -448,6 +448,12 @@ const SortIcon = {
 export default {
   name: 'SintaStatistics',
   components: { Bar, Doughnut, SortIcon },
+  props: {
+    selectedProdi: {
+      type: String,
+      default: null
+    }
+  },
   data() {
     return {
       sortColumn: 'scopus',
@@ -456,7 +462,12 @@ export default {
   },
   computed: {
     metadata() { return sintaData?.metadata || null; },
-    sintaLecturers() { return sintaData?.lecturers || []; },
+    sintaLecturers() { 
+      const allLecturers = sintaData?.lecturers || [];
+      if (!this.selectedProdi) return allLecturers;
+      // Filter by prodi name that matches the selected prodi key
+      return allLecturers.filter(l => l.prodi === this.selectedProdi);
+    },
     sortedLecturers() {
       const lecturers = [...this.sintaLecturers];
       const col = this.sortColumn;
