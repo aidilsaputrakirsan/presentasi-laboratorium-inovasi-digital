@@ -68,6 +68,20 @@
           </svg>
           Kolaborasi Riset
         </button>
+        <button 
+          @click="activeView = 'roadmap'"
+          :class="[
+            'px-6 py-3 rounded-xl text-sm font-bold transition-all duration-300 flex items-center gap-2',
+            activeView === 'roadmap' 
+              ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-lg shadow-cyan-500/30' 
+              : 'bg-white text-slate-600 border border-slate-200 hover:border-cyan-300 hover:text-cyan-600'
+          ]"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+          </svg>
+          Roadmap
+        </button>
       </div>
 
       <!-- Dashboard View -->
@@ -97,6 +111,13 @@
       <template v-if="activeView === 'clusters'">
         <div class="animate-fade-in">
           <ResearchClusters />
+        </div>
+      </template>
+
+      <!-- Research Roadmap View -->
+      <template v-if="activeView === 'roadmap'">
+        <div class="animate-fade-in">
+          <ResearchRoadmap />
         </div>
       </template>
 
@@ -139,6 +160,7 @@ import CacheStatus from './components/CacheStatus.vue';
 import SintaStatistics from './components/SintaStatistics.vue';
 import ResearchGallery from './components/ResearchGallery.vue';
 import ResearchClusters from './components/ResearchClusters.vue';
+import ResearchRoadmap from './components/ResearchRoadmap.vue';
 import { fetchMultipleLecturers } from './services/serpApi.js';
 import { 
   aggregateProdiData, 
@@ -160,11 +182,12 @@ export default {
     CacheStatus,
     SintaStatistics,
     ResearchGallery,
-    ResearchClusters
+    ResearchClusters,
+    ResearchRoadmap
   },
   data() {
     return {
-      activeView: 'dashboard', // 'dashboard' | 'gallery' | 'clusters'
+      activeView: 'dashboard', // 'dashboard' | 'gallery' | 'clusters' | 'roadmap'
       selectedProdi: null,
       lecturersData: [],
       loading: false,

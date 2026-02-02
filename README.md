@@ -16,13 +16,20 @@ Dashboard presentasi untuk Laboratorium Inovasi Digital yang menampilkan data Tr
 - Filter per prodi, pencarian, dan filter tahun
 - Card-based responsive layout
 
-### 3. Kolaborasi Riset (NEW!)
+### 3. Kolaborasi Riset
 - **AI-Powered Clustering** menggunakan TF-IDF + K-Means
 - Identifikasi topik penelitian serupa
 - Deteksi kolaborasi **cross-prodi** (SI + Bisnis Digital)
 - Badge potensi kolaborasi (High 🔥 / Medium ✨ / Low 📌)
 
-📖 **Dokumentasi lengkap**: [RESEARCH_CLUSTERING.md](./RESEARCH_CLUSTERING.md)
+### 4. Roadmap Riset (NEW!)
+- **Visualisasi Sankey Diagram** evolusi topik riset
+- Analisis tren kata kunci (keywords) dari 2018-2025
+- Deteksi kontinuitas dan perubahan fokus penelitian antar tahun
+
+📖 **Dokumentasi lengkap**: 
+- [RESEARCH_CLUSTERING.md](./RESEARCH_CLUSTERING.md)
+- [RESEARCH_ROADMAP.md](./RESEARCH_ROADMAP.md)
 
 ---
 
@@ -53,33 +60,30 @@ Buka `http://localhost:5173`
 ```mermaid
 flowchart LR
     A[Tambah Dosen] --> B[Run Scraper]
-    B --> C[Run Clustering]
+    B --> C[Run Analytics]
     C --> D[Lihat Dashboard]
     
     subgraph Scripts
     B[python scripts/sinta_scraper.py]
-    C[python scripts/research_clustering.py]
+    C[python scripts/research_clustering.py\npython scripts/research_roadmap.py]
     end
 ```
 
 ### Step 1: Tambah Dosen Baru
-Edit `src/data/lecturers.json`, tambahkan SINTA ID:
-```json
-{
-  "name": "Nama Dosen",
-  "sintaId": "1234567",
-  "sintaUrl": "https://sinta.kemdiktisaintek.go.id/authors/profile/1234567"
-}
-```
+Edit `src/data/lecturers.json`, tambahkan SINTA ID.
 
 ### Step 2: Scraping Data SINTA
 ```bash
 python scripts/sinta_scraper.py
 ```
 
-### Step 3: Jalankan Clustering (Optional)
+### Step 3: Jalankan Analytics (Clustering & Roadmap)
 ```bash
+# Untuk Clustering Topik
 python scripts/research_clustering.py
+
+# Untuk Roadmap Tahunan
+python scripts/research_roadmap.py
 ```
 
 ---
@@ -91,20 +95,24 @@ presentasi-laboratorium-inovasi-digital/
 ├── scripts/
 │   ├── sinta_scraper.py          # Scraper SINTA
 │   ├── research_clustering.py     # TF-IDF Clustering
+│   ├── research_roadmap.py        # Sankey Roadmap Analysis
 │   └── requirements.txt
 ├── src/
 │   ├── components/
 │   │   ├── SintaStatistics.vue   # Dashboard utama
 │   │   ├── ResearchGallery.vue   # Galeri karya
 │   │   ├── ResearchClusters.vue  # Kolaborasi riset
+│   │   ├── ResearchRoadmap.vue   # Roadmap riset
 │   │   └── ...
 │   ├── data/
 │   │   ├── lecturers.json        # Daftar dosen
 │   │   ├── sinta_data.json       # Data SINTA (hasil scraping)
-│   │   └── clusters_data.json    # Data cluster (hasil clustering)
+│   │   ├── clusters_data.json    # Data cluster
+│   │   └── roadmap_data.json     # Data roadmap
 │   └── App.vue
-├── RESEARCH_CLUSTERING.md         # Dokumentasi metode clustering
-├── SINTA_DATA_FLOW.md            # Dokumentasi alur data SINTA
+├── RESEARCH_CLUSTERING.md
+├── RESEARCH_ROADMAP.md
+├── SINTA_DATA_FLOW.md
 └── README.md
 ```
 
@@ -115,49 +123,10 @@ presentasi-laboratorium-inovasi-digital/
 | Layer | Technology |
 |-------|------------|
 | Frontend | Vue 3 + Vite |
+| Visualization | Chart.js, **Apache ECharts** |
 | Styling | Tailwind CSS |
-| Charts | Chart.js + vue-chartjs |
 | Scraper | Python + BeautifulSoup4 |
-| Clustering | scikit-learn (TF-IDF + K-Means) |
-
----
-
-## 📈 Penjelasan Data
-
-### Sumber Data
-Data diambil dari [SINTA Kemdiktisaintek](https://sinta.kemdiktisaintek.go.id):
-
-| Metrik | Sumber |
-|--------|--------|
-| Sitasi & H-Index | Google Scholar |
-| Scopus Q1-Q4 | Scopus |
-| SINTA S1-S6 | SINTA Garuda |
-| Penelitian & Pengabdian | SINTA |
-| IPR/HKI | SINTA |
-
-> **Catatan**: Semua data adalah **kumulatif sepanjang karir dosen**, bukan per tahun.
-
----
-
-## 🏷️ Badge Kolaborasi Riset
-
-| Badge | Arti |
-|-------|------|
-| **CROSS-PRODI** (hijau) | Cluster berisi dosen dari SI + Bisnis Digital |
-| **High 🔥** | Cross-prodi dengan >2 dosen, potensi kolaborasi tinggi |
-| **Medium ✨** | Cross-prodi dengan ≤2 dosen |
-| **Low 📌** | Hanya 1 prodi, perlu ekspansi |
-
----
-
-## 🐛 Troubleshooting
-
-| Masalah | Solusi |
-|---------|--------|
-| Scraper timeout | Cek koneksi internet, coba ulang |
-| Data tidak muncul | Restart dev server dengan `npm run dev` |
-| Cluster kosong | Jalankan `python scripts/research_clustering.py` |
-| Chart kosong | Periksa `sinta_data.json` sudah terisi |
+| Analytics | scikit-learn (TF-IDF + K-Means) |
 
 ---
 
