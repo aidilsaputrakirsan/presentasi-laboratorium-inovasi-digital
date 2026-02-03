@@ -34,10 +34,10 @@
         <!-- Search -->
         <div class="flex-1 min-w-[200px]">
           <div class="relative">
-            <input 
-              v-model="searchQuery" 
-              type="text" 
-              placeholder="Cari judul atau nama dosen..." 
+            <input
+              v-model="searchQuery"
+              type="text"
+              placeholder="Cari judul atau nama dosen..."
               class="w-full bg-slate-700 text-white px-4 py-2 pl-10 rounded-lg text-sm border border-slate-600 focus:border-rose-500 focus:outline-none placeholder-slate-400"
             />
             <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,6 +51,53 @@
           <option value="all">Semua Tahun</option>
           <option v-for="year in availableYears" :key="year" :value="year">{{ year }}</option>
         </select>
+      </div>
+    </div>
+
+    <!-- Trend Chart: Penelitian & Pengabdian per Tahun -->
+    <div class="card hover:shadow-lg transition-shadow">
+      <div class="mb-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full"></span>
+            <h3 class="text-lg font-bold text-slate-800">Tren Penelitian & Pengabdian</h3>
+          </div>
+          <div class="flex gap-2 text-[10px] uppercase tracking-tighter">
+            <span class="px-2 py-0.5 bg-blue-100 text-blue-700 rounded flex items-center gap-1">
+              <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+              Penelitian
+            </span>
+            <span class="px-2 py-0.5 bg-emerald-100 text-emerald-700 rounded flex items-center gap-1">
+              <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+              Pengabdian
+            </span>
+          </div>
+        </div>
+        <p class="text-xs text-slate-400 mt-1">
+          Data {{ selectedProdi === 'all' ? 'semua prodi' : selectedProdi }} dari tahun {{ chartYears[0] || '-' }} hingga {{ chartYears[chartYears.length - 1] || '-' }}
+        </p>
+      </div>
+      <div class="h-64">
+        <Line :data="trendChartData" :options="trendChartOptions" />
+      </div>
+      <!-- Summary Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4 pt-4 border-t border-slate-100">
+        <div class="text-center">
+          <div class="text-xl font-black text-blue-600">{{ totalResearchFiltered }}</div>
+          <div class="text-[10px] uppercase tracking-wider text-slate-500 font-medium">Total Penelitian</div>
+        </div>
+        <div class="text-center">
+          <div class="text-xl font-black text-emerald-600">{{ totalServicesFiltered }}</div>
+          <div class="text-[10px] uppercase tracking-wider text-slate-500 font-medium">Total Pengabdian</div>
+        </div>
+        <div class="text-center">
+          <div class="text-xl font-black text-purple-600">{{ peakYear.year || '-' }}</div>
+          <div class="text-[10px] uppercase tracking-wider text-slate-500 font-medium">Tahun Terbanyak</div>
+        </div>
+        <div class="text-center">
+          <div class="text-xl font-black text-rose-600">{{ peakYear.total || 0 }}</div>
+          <div class="text-[10px] uppercase tracking-wider text-slate-500 font-medium">Karya di {{ peakYear.year || '-' }}</div>
+        </div>
       </div>
     </div>
 
@@ -125,10 +172,36 @@
 </template>
 
 <script>
+import { Line } from 'vue-chartjs';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler
+} from 'chart.js';
 import sintaData from '../data/sinta_data.json';
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler
+);
 
 export default {
   name: 'ResearchGallery',
+  components: {
+    Line
+  },
   data() {
     return {
       activeTab: 'research',
@@ -142,12 +215,178 @@ export default {
         { key: 'sinta', label: 'SINTA', icon: '📑' },
         { key: 'books', label: 'Buku', icon: '📚' },
         { key: 'ipr', label: 'HKI', icon: '💡' }
-      ]
+      ],
+      trendChartOptions: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: {
+          mode: 'index',
+          intersect: false,
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+            backgroundColor: 'rgba(15, 23, 42, 0.9)',
+            titleColor: '#fff',
+            bodyColor: '#cbd5e1',
+            borderColor: 'rgba(148, 163, 184, 0.2)',
+            borderWidth: 1,
+            padding: 12,
+            cornerRadius: 8,
+            displayColors: true,
+            callbacks: {
+              title: (items) => `Tahun ${items[0].label}`,
+              label: (item) => ` ${item.dataset.label}: ${item.raw} karya`
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: {
+              display: false
+            },
+            ticks: {
+              color: '#64748b',
+              font: {
+                weight: 'bold',
+                size: 11
+              }
+            }
+          },
+          y: {
+            beginAtZero: true,
+            grid: {
+              color: 'rgba(148, 163, 184, 0.1)'
+            },
+            ticks: {
+              color: '#64748b',
+              font: {
+                weight: 'bold'
+              },
+              stepSize: 5
+            }
+          }
+        },
+        elements: {
+          line: {
+            tension: 0.4
+          },
+          point: {
+            radius: 4,
+            hoverRadius: 6
+          }
+        }
+      }
     };
   },
   computed: {
     lecturers() {
       return sintaData?.lecturers || [];
+    },
+
+    // Filtered lecturers based on prodi selection
+    filteredLecturers() {
+      if (this.selectedProdi === 'all') {
+        return this.lecturers;
+      }
+      return this.lecturers.filter(lec => lec.prodi === this.selectedProdi);
+    },
+
+    // Get all years for the chart (sorted ascending)
+    chartYears() {
+      const years = new Set();
+      this.filteredLecturers.forEach(lec => {
+        (lec.research || []).forEach(r => {
+          if (r.year) years.add(String(r.year));
+        });
+        (lec.services || []).forEach(s => {
+          if (s.year) years.add(String(s.year));
+        });
+      });
+      return [...years].sort((a, b) => Number(a) - Number(b));
+    },
+
+    // Research data by year (filtered by prodi)
+    researchByYear() {
+      const data = {};
+      this.chartYears.forEach(y => data[y] = 0);
+      this.filteredLecturers.forEach(lec => {
+        (lec.research || []).forEach(r => {
+          const y = String(r.year);
+          if (data[y] !== undefined) data[y]++;
+        });
+      });
+      return data;
+    },
+
+    // Services data by year (filtered by prodi)
+    servicesByYear() {
+      const data = {};
+      this.chartYears.forEach(y => data[y] = 0);
+      this.filteredLecturers.forEach(lec => {
+        (lec.services || []).forEach(s => {
+          const y = String(s.year);
+          if (data[y] !== undefined) data[y]++;
+        });
+      });
+      return data;
+    },
+
+    // Total research filtered
+    totalResearchFiltered() {
+      return Object.values(this.researchByYear).reduce((a, b) => a + b, 0);
+    },
+
+    // Total services filtered
+    totalServicesFiltered() {
+      return Object.values(this.servicesByYear).reduce((a, b) => a + b, 0);
+    },
+
+    // Peak year (most combined research + services)
+    peakYear() {
+      let maxYear = null;
+      let maxTotal = 0;
+      this.chartYears.forEach(y => {
+        const total = (this.researchByYear[y] || 0) + (this.servicesByYear[y] || 0);
+        if (total > maxTotal) {
+          maxTotal = total;
+          maxYear = y;
+        }
+      });
+      return { year: maxYear, total: maxTotal };
+    },
+
+    // Chart data for Line chart
+    trendChartData() {
+      return {
+        labels: this.chartYears,
+        datasets: [
+          {
+            label: 'Penelitian',
+            data: this.chartYears.map(y => this.researchByYear[y] || 0),
+            borderColor: '#3b82f6',
+            backgroundColor: 'rgba(59, 130, 246, 0.15)',
+            fill: true,
+            borderWidth: 3,
+            pointBackgroundColor: '#3b82f6',
+            pointBorderColor: '#fff',
+            pointBorderWidth: 2
+          },
+          {
+            label: 'Pengabdian',
+            data: this.chartYears.map(y => this.servicesByYear[y] || 0),
+            borderColor: '#10b981',
+            backgroundColor: 'rgba(16, 185, 129, 0.15)',
+            fill: true,
+            borderWidth: 3,
+            pointBackgroundColor: '#10b981',
+            pointBorderColor: '#fff',
+            pointBorderWidth: 2
+          }
+        ]
+      };
     },
 
     allItems() {
