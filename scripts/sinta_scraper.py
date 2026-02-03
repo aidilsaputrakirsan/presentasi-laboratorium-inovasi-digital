@@ -1,11 +1,21 @@
 """
-SINTA Data Scraper for ITK Lecturers (Enhanced Version 2.2)
+SINTA Data Scraper for ITK Lecturers (Enhanced Version 2.3)
 ============================================================
 Script untuk mengambil data lengkap dari SINTA:
 - Profil & Statistik Utama
 - Publikasi (Scopus Q1-Q4, SINTA S1-S6, WoS)
-- Penelitian & Pengabdian
+- Penelitian & Pengabdian (dengan detail pendanaan)
 - Buku & IPR/HKI (Hak Cipta, Paten)
+
+Update 2.3:
+- BARU: Scrape detail penelitian & pengabdian untuk keperluan akreditasi:
+  - Leader (ketua peneliti/pengabdian)
+  - Personils/members (anggota tim)
+  - Grant type (jenis hibah: internal/eksternal)
+  - Funding amount (jumlah dana dalam Rupiah)
+  - Status (Approved/etc)
+  - Source (INTERNAL SOURCE/BIMA SOURCE/etc)
+- Data bisa digunakan untuk menghitung rasio per prodi dan per dosen
 
 Update 2.2:
 - Perbaikan URL IPR (plural view=iprs) yang lebih konsisten
@@ -233,7 +243,7 @@ def scrape_documents(sinta_id):
     return docs
 
 def scrape_list_items(sinta_id, view_type):
-    """Penelitian, Pengabdian, Buku"""
+    """Scrape Buku (simple format)"""
     url = f"{SINTA_BASE_URL}/{sinta_id}/?view={view_type}"
     results = []
     try:
@@ -250,6 +260,229 @@ def scrape_list_items(sinta_id, view_type):
                 results.append({'title': title[:300], 'year': year})
         return results
     except: return []
+
+
+def parse_funding_amount(text):
+    """Parse funding amount from text like 'Rp. 17.000.000' to integer"""
+    match = re.search(r'Rp\.?\s*([\d.,]+)', text)
+    if match:
+        amount_str = match.group(1).replace('.', '').replace(',', '')
+        try:
+            return int(amount_str)
+        except ValueError:
+            return 0
+    return 0
+
+
+def scrape_research_detailed(sinta_id):
+    """Scrape penelitian dengan detail lengkap untuk keperluan akreditasi"""
+    url = f"{SINTA_BASE_URL}/{sinta_id}/?view=researches"
+    results = []
+
+    try:
+        response = requests.get(url, headers=HEADERS, timeout=30)
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Find all research items with class ar-list-item
+        items = soup.find_all('div', class_='ar-list-item')
+
+        for item in items:
+            research = {
+                'title': '',
+                'leader': '',
+                'members': [],
+                'grantType': '',
+                'grantCategory': '',
+                'year': '',
+                'fundingAmount': 0,
+                'fundingFormatted': '',
+                'status': '',
+                'source': ''
+            }
+
+            # Title - from ar-title div
+            title_elem = item.find('div', class_='ar-title')
+            if title_elem:
+                title_link = title_elem.find('a')
+                research['title'] = title_link.get_text(strip=True) if title_link else title_elem.get_text(strip=True)
+
+            # Get all ar-meta divs
+            meta_divs = item.find_all('div', class_='ar-meta')
+
+            for meta in meta_divs:
+                text = meta.get_text(' ', strip=True)
+
+                # Leader - contains "Leader :"
+                if 'Leader :' in text or 'Leader:' in text:
+                    leader_match = re.search(r'Leader\s*:\s*([^P]+?)(?:Penelitian|HIBAH|$)', text)
+                    if leader_match:
+                        research['leader'] = leader_match.group(1).strip()
+                    else:
+                        # Try getting from first link after "Leader :"
+                        links = meta.find_all('a')
+                        for link in links:
+                            link_text = link.get_text(strip=True)
+                            if link_text.startswith('Leader'):
+                                continue
+                            if 'Penelitian' in link_text or 'HIBAH' in link_text:
+                                # This is grant type
+                                research['grantType'] = link_text
+                                # Parse grant category from parentheses
+                                cat_match = re.search(r'\(([^)]+)\)', link_text)
+                                if cat_match:
+                                    research['grantCategory'] = cat_match.group(1).strip()
+                            elif link_text and not research['leader']:
+                                research['leader'] = link_text
+
+                # Grant type - contains "Penelitian" or "HIBAH"
+                pub_elem = meta.find('a', class_='ar-pub')
+                if pub_elem:
+                    grant_text = pub_elem.get_text(strip=True)
+                    research['grantType'] = grant_text
+                    cat_match = re.search(r'\(([^)]+)\)', grant_text)
+                    if cat_match:
+                        research['grantCategory'] = cat_match.group(1).strip()
+
+                # Personils/Members - contains "Personils :"
+                if 'Personils :' in text or 'Personils:' in text:
+                    member_links = meta.find_all('a', href=re.compile(r'/authors/profile/'))
+                    for ml in member_links:
+                        member_name = ml.get_text(strip=True)
+                        if member_name and member_name not in research['members']:
+                            research['members'].append(member_name)
+
+                # Year, Funding, Status, Source - look for specific patterns
+                year_elem = meta.find('a', class_='ar-year')
+                if year_elem:
+                    year_match = re.search(r'20\d{2}', year_elem.get_text())
+                    if year_match:
+                        research['year'] = year_match.group()
+
+                # Find all ar-quartile elements for funding, status, source
+                quartile_elems = meta.find_all('a', class_='ar-quartile')
+                for qe in quartile_elems:
+                    qe_text = qe.get_text(strip=True)
+
+                    if 'Rp' in qe_text:
+                        research['fundingAmount'] = parse_funding_amount(qe_text)
+                        research['fundingFormatted'] = qe_text
+                    elif qe_text in ['Approved', 'Pending', 'Rejected', 'On Going']:
+                        research['status'] = qe_text
+                    elif 'SOURCE' in qe_text.upper():
+                        research['source'] = qe_text
+
+            # Only add if we have a title
+            if research['title']:
+                results.append(research)
+
+        return results
+    except Exception as e:
+        print(f"  Error scraping research details for {sinta_id}: {e}")
+        return []
+
+
+def scrape_services_detailed(sinta_id):
+    """Scrape pengabdian dengan detail lengkap untuk keperluan akreditasi"""
+    url = f"{SINTA_BASE_URL}/{sinta_id}/?view=services"
+    results = []
+
+    try:
+        response = requests.get(url, headers=HEADERS, timeout=30)
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Find all service items with class ar-list-item
+        items = soup.find_all('div', class_='ar-list-item')
+
+        for item in items:
+            service = {
+                'title': '',
+                'leader': '',
+                'members': [],
+                'grantType': '',
+                'grantCategory': '',
+                'year': '',
+                'fundingAmount': 0,
+                'fundingFormatted': '',
+                'status': '',
+                'source': ''
+            }
+
+            # Title - from ar-title div
+            title_elem = item.find('div', class_='ar-title')
+            if title_elem:
+                title_link = title_elem.find('a')
+                service['title'] = title_link.get_text(strip=True) if title_link else title_elem.get_text(strip=True)
+
+            # Get all ar-meta divs
+            meta_divs = item.find_all('div', class_='ar-meta')
+
+            for meta in meta_divs:
+                text = meta.get_text(' ', strip=True)
+
+                # Leader - contains "Leader :"
+                if 'Leader :' in text or 'Leader:' in text:
+                    leader_match = re.search(r'Leader\s*:\s*([^P]+?)(?:Pengabdian|HIBAH|PKM|$)', text)
+                    if leader_match:
+                        service['leader'] = leader_match.group(1).strip()
+                    else:
+                        links = meta.find_all('a')
+                        for link in links:
+                            link_text = link.get_text(strip=True)
+                            if link_text.startswith('Leader'):
+                                continue
+                            if 'Pengabdian' in link_text or 'HIBAH' in link_text or 'PKM' in link_text:
+                                service['grantType'] = link_text
+                                cat_match = re.search(r'\(([^)]+)\)', link_text)
+                                if cat_match:
+                                    service['grantCategory'] = cat_match.group(1).strip()
+                            elif link_text and not service['leader']:
+                                service['leader'] = link_text
+
+                # Grant type
+                pub_elem = meta.find('a', class_='ar-pub')
+                if pub_elem:
+                    grant_text = pub_elem.get_text(strip=True)
+                    service['grantType'] = grant_text
+                    cat_match = re.search(r'\(([^)]+)\)', grant_text)
+                    if cat_match:
+                        service['grantCategory'] = cat_match.group(1).strip()
+
+                # Personils/Members
+                if 'Personils :' in text or 'Personils:' in text:
+                    member_links = meta.find_all('a', href=re.compile(r'/authors/profile/'))
+                    for ml in member_links:
+                        member_name = ml.get_text(strip=True)
+                        if member_name and member_name not in service['members']:
+                            service['members'].append(member_name)
+
+                # Year
+                year_elem = meta.find('a', class_='ar-year')
+                if year_elem:
+                    year_match = re.search(r'20\d{2}', year_elem.get_text())
+                    if year_match:
+                        service['year'] = year_match.group()
+
+                # Funding, Status, Source
+                quartile_elems = meta.find_all('a', class_='ar-quartile')
+                for qe in quartile_elems:
+                    qe_text = qe.get_text(strip=True)
+
+                    if 'Rp' in qe_text:
+                        service['fundingAmount'] = parse_funding_amount(qe_text)
+                        service['fundingFormatted'] = qe_text
+                    elif qe_text in ['Approved', 'Pending', 'Rejected', 'On Going']:
+                        service['status'] = qe_text
+                    elif 'SOURCE' in qe_text.upper():
+                        service['source'] = qe_text
+
+            # Only add if we have a title
+            if service['title']:
+                results.append(service)
+
+        return results
+    except Exception as e:
+        print(f"  Error scraping service details for {sinta_id}: {e}")
+        return []
 
 def scrape_ipr(sinta_id):
     """Scrape IPR (Hak Cipta/Paten) menggunakan view=iprs atau view=ipr"""
@@ -322,19 +555,33 @@ def scrape_ipr(sinta_id):
 def main():
     lecturers = load_lecturers()
     all_data = {
-        'metadata': {'generatedAt': datetime.now().isoformat(), 'source': 'SINTA 3'},
+        'metadata': {
+            'generatedAt': datetime.now().isoformat(),
+            'source': 'SINTA 3',
+            'version': '2.3',
+            'description': 'Data SINTA dengan detail pendanaan untuk akreditasi'
+        },
         'lecturers': []
     }
-    
+
     for lec in lecturers:
         print(f"Scraping {lec['name']} ({lec['sintaId']})...")
         stats = scrape_main_page(lec['sintaId'])
         docs = scrape_documents(lec['sintaId'])
-        research = scrape_list_items(lec['sintaId'], 'researches')
-        service = scrape_list_items(lec['sintaId'], 'services')
+
+        # Scrape detailed research & services for accreditation
+        print(f"  - Scraping detailed research...")
+        research = scrape_research_detailed(lec['sintaId'])
+        print(f"  - Scraping detailed services...")
+        services = scrape_services_detailed(lec['sintaId'])
+
         books = scrape_list_items(lec['sintaId'], 'books')
         ipr = scrape_ipr(lec['sintaId'])
-        
+
+        # Calculate funding summary for this lecturer
+        total_research_funding = sum(r.get('fundingAmount', 0) for r in research)
+        total_service_funding = sum(s.get('fundingAmount', 0) for s in services)
+
         all_data['lecturers'].append({
             'name': lec['name'],
             'sintaId': lec['sintaId'],
@@ -343,16 +590,66 @@ def main():
             'stats': stats,
             'documents': docs,
             'research': research,
-            'services': service,
+            'services': services,
             'books': books,
-            'ipr': ipr
+            'ipr': ipr,
+            'fundingSummary': {
+                'totalResearchFunding': total_research_funding,
+                'totalServiceFunding': total_service_funding,
+                'totalFunding': total_research_funding + total_service_funding,
+                'researchCount': len(research),
+                'serviceCount': len(services)
+            }
         })
         time.sleep(2)
+
+    # Calculate prodi-level summary
+    prodi_summary = {}
+    for lec in all_data['lecturers']:
+        prodi = lec['prodi']
+        if prodi not in prodi_summary:
+            prodi_summary[prodi] = {
+                'lecturerCount': 0,
+                'totalResearchFunding': 0,
+                'totalServiceFunding': 0,
+                'totalResearchCount': 0,
+                'totalServiceCount': 0
+            }
+        prodi_summary[prodi]['lecturerCount'] += 1
+        prodi_summary[prodi]['totalResearchFunding'] += lec['fundingSummary']['totalResearchFunding']
+        prodi_summary[prodi]['totalServiceFunding'] += lec['fundingSummary']['totalServiceFunding']
+        prodi_summary[prodi]['totalResearchCount'] += lec['fundingSummary']['researchCount']
+        prodi_summary[prodi]['totalServiceCount'] += lec['fundingSummary']['serviceCount']
+
+    # Calculate per-lecturer averages
+    for prodi, data in prodi_summary.items():
+        if data['lecturerCount'] > 0:
+            data['avgResearchFundingPerLecturer'] = data['totalResearchFunding'] / data['lecturerCount']
+            data['avgServiceFundingPerLecturer'] = data['totalServiceFunding'] / data['lecturerCount']
+            data['avgResearchCountPerLecturer'] = data['totalResearchCount'] / data['lecturerCount']
+            data['avgServiceCountPerLecturer'] = data['totalServiceCount'] / data['lecturerCount']
+
+    all_data['prodiSummary'] = prodi_summary
 
     print(f"Saving to {OUTPUT_FILE}...")
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(all_data, f, indent=2, ensure_ascii=False)
-    print("DONE!")
+
+    # Print summary
+    print("\n" + "="*60)
+    print("SUMMARY PER PRODI (untuk Akreditasi)")
+    print("="*60)
+    for prodi, data in prodi_summary.items():
+        print(f"\n{prodi}:")
+        print(f"  Jumlah Dosen: {data['lecturerCount']}")
+        print(f"  Total Dana Penelitian: Rp {data['totalResearchFunding']:,.0f}")
+        print(f"  Total Dana Pengabdian: Rp {data['totalServiceFunding']:,.0f}")
+        print(f"  Rata-rata Penelitian/Dosen: {data.get('avgResearchCountPerLecturer', 0):.2f}")
+        print(f"  Rata-rata Pengabdian/Dosen: {data.get('avgServiceCountPerLecturer', 0):.2f}")
+        print(f"  Rata-rata Dana Penelitian/Dosen: Rp {data.get('avgResearchFundingPerLecturer', 0):,.0f}")
+        print(f"  Rata-rata Dana Pengabdian/Dosen: Rp {data.get('avgServiceFundingPerLecturer', 0):,.0f}")
+
+    print("\nDONE!")
 
 if __name__ == "__main__":
     main()

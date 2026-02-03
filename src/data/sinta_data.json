@@ -1,14 +1,16 @@
 {
   "metadata": {
-    "generatedAt": "2026-02-02T19:43:35.751806",
-    "source": "SINTA 3"
+    "generatedAt": "2026-02-03T14:10:08.241418",
+    "source": "SINTA 3",
+    "version": "2.3",
+    "description": "Data SINTA dengan detail pendanaan untuk akreditasi"
   },
   "lecturers": [
     {
       "name": "Yuyun Tri Wiranti",
       "sintaId": "5978281",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:43:41.963959",
+      "scrapedAt": "2026-02-03T14:12:15.936626",
       "stats": {
         "articles": 40,
         "citations": 473,
@@ -129,65 +131,215 @@
       "research": [
         {
           "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
-          "year": "2025"
+          "leader": "Vika Fitratunnany Insanittaqwa",
+          "members": [
+            "Yuyun Tri Wiranti",
+            "Dwi Nur Amalia"
+          ],
+          "grantType": "Penelitian Internal ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN SISTEM INFORMASI MANAJEMEN TUGAS AKHIR PADA JURUSAN TEKNIK ELEKTRO, INFORMATIKA, DAN BISNIS INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING (PXP)",
-          "year": "2025"
+          "leader": "Sri Rahayu Natasia",
+          "members": [
+            "Yuyun Tri Wiranti",
+            "Aidil Saputra Kirsan"
+          ],
+          "grantType": "Penelitian Internal ( RKS )",
+          "grantCategory": "RKS",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN SILURAH: SISTEM INFORMASI KELURAHAN MENGGUNAKAN METODE AGILE",
-          "year": "2024"
+          "leader": "Yuyun Tri Wiranti",
+          "members": [
+            "Henokh Lugo Hariyanto"
+          ],
+          "grantType": "HIBAH INTERNAL ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "IMPLEMENTASI METAVERSE PADA PENGENALAN LAB TERPADU KAMPUS INSTITUT TEKNOLOGI KALIMANTAN (ITK)",
-          "year": "2024"
+          "leader": "Aidil Saputra Kirsan",
+          "members": [
+            "Sri Rahayu Natasia",
+            "Yuyun Tri Wiranti"
+          ],
+          "grantType": "HIBAH INTERNAL ( RKST )",
+          "grantCategory": "RKST",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN SISTEM INFORMASI PELAYANAN ADMINISTRASI PADA UNIT LAYANAN TERPADU INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE WATERFALL",
-          "year": "2024"
+          "leader": "Sri Rahayu Natasia",
+          "members": [
+            "Arif Wicaksono Septyanto",
+            "Yuyun Tri Wiranti"
+          ],
+          "grantType": "HIBAH INTERNAL ( RKST )",
+          "grantCategory": "RKST",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "RANCANG BANGUN SISTEM INFORMASI PENJADWALAN SEBAGAI UPAYA OPTIMALISASI PENJADWALAN PEMBELAJARAN",
-          "year": "2023"
+          "leader": "Yuyun Tri Wiranti",
+          "members": [
+            "Syamsul Mujahidin"
+          ],
+          "grantType": "HIBAH ITK ( PPI )",
+          "grantCategory": "PPI",
+          "year": "2023",
+          "fundingAmount": 16000000,
+          "fundingFormatted": "Rp. 16.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PERANCANGAN ARSITEKTUR SISTEM INFORMASI UNTUK INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN TOGAF (THE OPEN GROUP ARCHITECTURE FRAMEWORK)",
-          "year": "2020"
+          "leader": "Yuyun Tri Wiranti",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( KEBIJAKAN STRATEGIS )",
+          "grantCategory": "KEBIJAKAN STRATEGIS",
+          "year": "2020",
+          "fundingAmount": 8000000,
+          "fundingFormatted": "Rp. 8.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Analisis Keterhubungan Prestasi Akademik dan Kesehatan Mental Mahasiswa Menggunakan Metode Data Mining Sebagai Upaya Peningkatan Kualitas Peserta Didik di Perguruan Tinggi Negeri di Kalimantan",
-          "year": "2019"
+          "leader": "Soleh Ardiansyah",
+          "members": [
+            "Yuyun Tri Wiranti"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2019",
+          "fundingAmount": 19995000,
+          "fundingFormatted": "Rp. 19.995.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         },
         {
           "title": "Perancangan Arsitektur Sistem dan Teknologi Informasi Perguruan Tinggi di Balikpapan menggunakan TOGAF (The Open Group Architecture Framework)",
-          "year": "2019"
+          "leader": "Yuyun Tri Wiranti",
+          "members": [
+            "Vinda Daningrum",
+            "Lovinta Happy Atrinawati"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2019",
+          "fundingAmount": 16950000,
+          "fundingFormatted": "Rp. 16.950.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         }
       ],
       "services": [
         {
           "title": "IMPLEMENTASI DAN PELATIHAN SISTEM INFORMASI PENGAJIAN DAN MEDIA SOSIAL",
-          "year": "2025"
+          "leader": "Yuyun Tri Wiranti",
+          "members": [
+            "Sri Rahayu Natasia",
+            "Nisa Rizqiya Fadhliana"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "OPTIMALISASI TEKNOLOGI DAN KREATIVITAS UNTUK MENDUKUNG PEMBELAJARAN DAN ADMINISTRASI DI SEKOLAH ISLAM AL AZHAR 58 BALIKPAPAN",
-          "year": "2025"
+          "leader": "Nisa Rizqiya Fadhliana",
+          "members": [
+            "Yuyun Tri Wiranti",
+            "Gusti Ahmad Fanshuri Alfarisy"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "MANAJEMEN KELOMPOK WANITA TANI RT 21 SEPINGGAN MELALUI PEMANFAATAN TEKNOLOGI INFORMASI",
-          "year": "2024"
+          "leader": "Yuyun Tri Wiranti",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 9965000,
+          "fundingFormatted": "Rp. 9.965.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "OPTIMALISASI PENGELOLAAN SAMPAH PADA BANK SAMPAH 123 RT. 001 KELURAHAN MARGO MULYO BALIKPAPAN BARAT",
-          "year": "2023"
+          "leader": "Yuyun Tri Wiranti",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2023",
+          "fundingAmount": 7999000,
+          "fundingFormatted": "Rp. 7.999.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Pemberdayaan Masyarakat Rumah Warna-warni melalui Peningkatan Budaya Gotong Royong dan Pemanfaatan Teknologi Informasi",
-          "year": "2019"
+          "leader": "Yuyun Tri Wiranti",
+          "members": [
+            "Soleh Ardiansyah",
+            "Umi Sholikah"
+          ],
+          "grantType": "Pengabdian Kepada Masyarakat Kompetitif Nasional ( PKM )",
+          "grantCategory": "PKM",
+          "year": "2019",
+          "fundingAmount": 43500000,
+          "fundingFormatted": "Rp. 43.500.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         },
         {
           "title": "PEMBERDAYAAN MASYARAKAT RUMAH WARNA-WARNI MELALUI PENINGKATAN BUDAYA GOTONG ROYONG DAN PEMANFAATAN TEKNOLOGI INFORMASI",
-          "year": "2019"
+          "leader": "Yuyun Tri Wiranti",
+          "members": [],
+          "grantType": "HIBAH DRPM ( PKM )",
+          "grantCategory": "PKM",
+          "year": "2019",
+          "fundingAmount": 43500000,
+          "fundingFormatted": "Rp. 43.500.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [],
@@ -238,13 +390,20 @@
             "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 162945000,
+        "totalServiceFunding": 124964000,
+        "totalFunding": 287909000,
+        "researchCount": 9,
+        "serviceCount": 6
       }
     },
     {
       "name": "Aidil Saputra Kirsan",
       "sintaId": "6760340",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:43:49.870202",
+      "scrapedAt": "2026-02-03T14:12:19.086233",
       "stats": {
         "articles": 28,
         "citations": 77,
@@ -370,65 +529,211 @@
       "research": [
         {
           "title": "PENGEMBANGAN SISTEM INFORMASI MANAJEMEN TUGAS AKHIR PADA JURUSAN TEKNIK ELEKTRO, INFORMATIKA, DAN BISNIS INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING (PXP)",
-          "year": "2025"
+          "leader": "Sri Rahayu Natasia",
+          "members": [
+            "Yuyun Tri Wiranti",
+            "Aidil Saputra Kirsan"
+          ],
+          "grantType": "Penelitian Internal ( RKS )",
+          "grantCategory": "RKS",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "IMPLEMENTASI METODE SCRUMBAN UNTUK PERANCANGAN ULANG SISTEM INFORMASI DAN MANAJEMEN LABORATORIUM (SIMLAB) INSTITUT TEKNOLOGI KALIMANTAN",
-          "year": "2025"
+          "leader": "Aidil Saputra Kirsan",
+          "members": [
+            "Happy Aprillia",
+            "Adi Mahmud Jaya Marindra"
+          ],
+          "grantType": "Penelitian Internal ( RKS )",
+          "grantCategory": "RKS",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "OPTIMALISASI PENGELOLAAN SISTEM MONITORING DATA ENERGI LISTRIK PADA SMART HOME SYSTEM UNTUK SAKLAR LISTRIK MENGGUNAKAN METODE EXTREME PROGRAMMING",
-          "year": "2025"
+          "leader": "Hendy Indrawan Sunardi",
+          "members": [
+            "Aidil Saputra Kirsan",
+            "Irma Fitria"
+          ],
+          "grantType": "Penelitian Internal ( RPI )",
+          "grantCategory": "RPI",
+          "year": "2025",
+          "fundingAmount": 23000000,
+          "fundingFormatted": "Rp. 23.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "RANCANGAN DAN IMPLEMENTASI SMART HOME SYSTEM UNTUK PENGENDALIAN SAKELAR LISTRIK BERBASIS IOT",
-          "year": "2024"
+          "leader": "Hendy Maulana Jaya Saputra",
+          "members": [
+            "Aidil Saputra Kirsan"
+          ],
+          "grantType": "HIBAH INTERNAL ( RPIKN )",
+          "grantCategory": "RPIKN",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "IMPLEMENTASI METAVERSE PADA PENGENALAN LAB TERPADU KAMPUS INSTITUT TEKNOLOGI KALIMANTAN (ITK)",
-          "year": "2024"
+          "leader": "Aidil Saputra Kirsan",
+          "members": [
+            "Sri Rahayu Natasia",
+            "Yuyun Tri Wiranti"
+          ],
+          "grantType": "HIBAH INTERNAL ( RKST )",
+          "grantCategory": "RKST",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "RANCANG BANGUN SISTEM DETEKSI DINI KEBAKARAN DI RUMAH MENGGUNAKAN SMART HOME BERBASIS IOT",
-          "year": "2023"
+          "leader": "Hendy Indrawan Sunardi",
+          "members": [
+            "Aidil Saputra Kirsan",
+            "Irma Fitria"
+          ],
+          "grantType": "HIBAH ITK ( PPI )",
+          "grantCategory": "PPI",
+          "year": "2023",
+          "fundingAmount": 18500000,
+          "fundingFormatted": "Rp. 18.500.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENINGKATAN EFISIENSI DAN EFEKTIVITAS PROSES BELAJAR MENGAJAR DENGAN PEMANFAATAN TEKNOLOGI IOT PADA SISTEM BEL SEKOLAH PINTAR",
-          "year": "2023"
+          "leader": "Aidil Saputra Kirsan",
+          "members": [
+            "Sri Rahayu Natasia",
+            "Hendy Maulana Jaya Saputra"
+          ],
+          "grantType": "HIBAH ITK ( PAI )",
+          "grantCategory": "PAI",
+          "year": "2023",
+          "fundingAmount": 29280000,
+          "fundingFormatted": "Rp. 29.280.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "LEAN VS AGILE: EFISIENSI METODE UNTUK SISTEM INFORMASI SEKOLAH CERDAS DI BALIKPAPAN",
-          "year": "2022"
+          "leader": "Aidil Saputra Kirsan",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PDB )",
+          "grantCategory": "PDB",
+          "year": "2022",
+          "fundingAmount": 14200000,
+          "fundingFormatted": "Rp. 14.200.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "IMPLEMENTASI SIAKAD BERBASIS WEBSITE DAN ANDROID MENGGUNAKAN FRAMEWORK CODEIGNITER DAN RESTFUL API UNTUK MENDUKUNG EKOSISTEM PENDIDIKAN DI SEKOLAH ISLAM BALIKPAPAN",
-          "year": "2021"
+          "leader": "Aidil Saputra Kirsan",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN DOSEN BSARU (PDB) )",
+          "grantCategory": "PENELITIAN DOSEN BSARU (PDB",
+          "year": "2021",
+          "fundingAmount": 14450000,
+          "fundingFormatted": "Rp. 14.450.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
           "title": "PENGEMBANGAN WISATA TANJUNG GADING MELALUI DIGITALISASI DI RT 17 KELURAHAN KARANG JOANG",
-          "year": "2025"
-        },
-        {
-          "title": "DIGITALISASI PEMBANGUNAN WEBSITE DASHBOARD SEBAGAI SARANA INFORMASI DAN PENGELOLAAN DATA MASYARAKAT",
-          "year": "2024"
+          "leader": "Hendy Indrawan Sunardi",
+          "members": [
+            "Aidil Saputra Kirsan"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN WEBSITE DAN PENINGKATAN KENYAMANAN PENGUNJUNG DI WISATA MERANTI BALIKPAPAN",
-          "year": "2024"
+          "leader": "Hendy Indrawan Sunardi",
+          "members": [
+            "Aidil Saputra Kirsan"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "DIGITALISASI PEMBANGUNAN WEBSITE DASHBOARD SEBAGAI SARANA INFORMASI DAN PENGELOLAAN DATA MASYARAKAT",
+          "leader": "Aidil Saputra Kirsan",
+          "members": [
+            "Hendy Indrawan Sunardi"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "DIGITALISASI PENGELOLAAN BANK SAMPAH BORNEO 38 DAN PENGEMBANGAN RUMAH KREATIF RT. 38 KELURAHAN BARU TENGAH BALIKPAPAN BARAT",
-          "year": "2023"
+          "leader": "Aidil Saputra Kirsan",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2023",
+          "fundingAmount": 7995000,
+          "fundingFormatted": "Rp. 7.995.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN KAWASAN WISATA KULINER KELURAHAN DAMAI BALIKPAPAN",
-          "year": "2022"
+          "leader": "Aidil Saputra Kirsan",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2022",
+          "fundingAmount": 7109000,
+          "fundingFormatted": "Rp. 7.109.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "SOSIALISASI PEMANFAATAN TEKNOLOGI ICT DALAM PEMBELAJARAN DARING DI SEKOLAH DASAR AL AZHAR 58 BALIKPAPAN",
-          "year": "2020"
+          "leader": "Aidil Saputra Kirsan MANDIRI ( MANDIRI )",
+          "members": [],
+          "grantType": "MANDIRI ( MANDIRI )",
+          "grantCategory": "MANDIRI",
+          "year": "2020",
+          "fundingAmount": 100000,
+          "fundingFormatted": "Rp. 100.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [
@@ -442,11 +747,19 @@
         }
       ],
       "ipr": {
-        "hakCipta": 10,
+        "hakCipta": 9,
         "paten": 0,
         "other": 0,
-        "total": 10,
+        "total": 9,
         "list": [
+          {
+            "title": "Sistem Informasi Perpustakaan Sekolah (SIMPUS) Berbasis Website",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Sistem Monitoring Orang Tua Terhadap Akademik Siswa (SIMAWA) Di Sekolah Dasar Berbasis Website",
+            "category": "hakCipta"
+          },
           {
             "title": "Sistem Informasi Bagian Usaha Kesehatan Sekolah (SIBUKS) Berbasis Website",
             "category": "hakCipta"
@@ -460,11 +773,11 @@
             "category": "hakCipta"
           },
           {
-            "title": "Sistem Informasi Manajemen Ekstrakurikuler (SIMANTRA) Berbasis Website",
+            "title": "Aplikasi Kasirku",
             "category": "hakCipta"
           },
           {
-            "title": "Aplikasi Kasirku",
+            "title": "Sistem Informasi Manajemen Ekstrakurikuler (SIMANTRA) Berbasis Website",
             "category": "hakCipta"
           },
           {
@@ -474,27 +787,22 @@
           {
             "title": "Smart Quality Learning (Artilearning) Berbasis Website",
             "category": "hakCipta"
-          },
-          {
-            "title": "Clash Of Spaceship",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Sistem Informasi Database (SIDAT) SMA Negeri 9 Balikpapan",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Alien Adventure",
-            "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 183430000,
+        "totalServiceFunding": 45204000,
+        "totalFunding": 228634000,
+        "researchCount": 9,
+        "serviceCount": 6
       }
     },
     {
       "name": "Arif Wicaksono Septyanto",
       "sintaId": "6741019",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:43:58.570340",
+      "scrapedAt": "2026-02-03T14:12:22.159549",
       "stats": {
         "articles": 23,
         "citations": 280,
@@ -625,61 +933,204 @@
       "research": [
         {
           "title": "RANCANG BANGUN TRANSPARANSI PENGGUNAAN DANA TJSLP (TANGGUNG JAWAB SOSIAL DAN LINGKUNGAN PERUSAHAAN) DALAM MENDUKUNG SMART CITY MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
-          "year": "2025"
+          "leader": "Henokh Lugo Hariyanto",
+          "members": [
+            "Arif Wicaksono Septyanto",
+            "Sri Rahayu Natasia"
+          ],
+          "grantType": "Penelitian Internal ( RH )",
+          "grantCategory": "RH",
+          "year": "2025",
+          "fundingAmount": 27000000,
+          "fundingFormatted": "Rp. 27.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "INOVASI PEMBUATAN PROTOTIPE TURBIN ANGIN SAVONIUS BERBAHAN PLA BERSTRUKTUR SANDWICH DENGAN METODE ADITIF MANUFAKTURING SEBAGAI SUMBER ENERGI HIJAU",
-          "year": "2025"
+          "leader": "PENELITIAN INTERNAL ( RH )",
+          "members": [
+            "Nursanti Novi  Arisa",
+            "Arif Wicaksono Septyanto"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RH )",
+          "grantCategory": "RH",
+          "year": "2025",
+          "fundingAmount": 27000000,
+          "fundingFormatted": "Rp. 27.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN SISTEM INFORMASI PELAYANAN ADMINISTRASI PADA UNIT LAYANAN TERPADU INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE WATERFALL",
-          "year": "2024"
+          "leader": "Sri Rahayu Natasia",
+          "members": [
+            "Arif Wicaksono Septyanto",
+            "Yuyun Tri Wiranti"
+          ],
+          "grantType": "HIBAH INTERNAL ( RKST )",
+          "grantCategory": "RKST",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Pengembangan Algoritma Metaheuristik Untuk Menyelesaikan Permasalahan Optimasi Kombinatorial",
-          "year": "2024"
-        },
-        {
-          "title": "PENGEMBANGAN INVERSI BATIMETRI UNTUK ESTIMASI KEDALAMAN LAUT PERAIRAN MENGGUNAKAN ALGORITMA INTERPRETABLE DEEP LEARNING",
-          "year": "2023"
-        },
-        {
-          "title": "SVM (SUPPORT VECTOR MACHINE) UNTUK KLASIFIKASI STATUS GIZI BALITA BERDASARKAN INDEKS ANTROPOMETRI",
-          "year": "2023"
+          "leader": "Arif Wicaksono Septyanto",
+          "members": [
+            "Henokh Lugo Hariyanto"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2024",
+          "fundingAmount": 34740000,
+          "fundingFormatted": "Rp. 34.740.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         },
         {
           "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
-          "year": "2023"
+          "leader": "Henokh Lugo Hariyanto",
+          "members": [
+            "Arif Wicaksono Septyanto"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2023",
+          "fundingAmount": 17900000,
+          "fundingFormatted": "Rp. 17.900.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
+        },
+        {
+          "title": "PENGEMBANGAN INVERSI BATIMETRI UNTUK ESTIMASI KEDALAMAN LAUT PERAIRAN MENGGUNAKAN ALGORITMA INTERPRETABLE DEEP LEARNING",
+          "leader": "Henokh Lugo Hariyanto",
+          "members": [
+            "Arif Wicaksono Septyanto"
+          ],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2023",
+          "fundingAmount": 14963000,
+          "fundingFormatted": "Rp. 14.963.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "SVM (SUPPORT VECTOR MACHINE) UNTUK KLASIFIKASI STATUS GIZI BALITA BERDASARKAN INDEKS ANTROPOMETRI",
+          "leader": "Arif Wicaksono Septyanto",
+          "members": [
+            "Henokh Lugo Hariyanto"
+          ],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2023",
+          "fundingAmount": 14950000,
+          "fundingFormatted": "Rp. 14.950.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Fuzzy Logic Fog Clod Computing untuk Menganalisis Faktor Penyebab Kematian Ibu Meninggal Masa Postpartum",
-          "year": "2021"
+          "leader": "Arif Wicaksono Septyanto",
+          "members": [
+            "Nugroho Arif Sudibyo"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2021",
+          "fundingAmount": 19970000,
+          "fundingFormatted": "Rp. 19.970.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         },
         {
           "title": "FUZZY RULE BASED-SYSTEM REKAM MEDIS TERKAIT STATUS GIZI BAYI INDEKS ANTROPOMETRI SELAMA POSTPARTUM",
-          "year": "2021"
+          "leader": "Arif Wicaksono Septyanto",
+          "members": [
+            "Tiyan Ganang Wicaksono"
+          ],
+          "grantType": "HIBAH PENDANAAN INTERNAL ( TERAPAN )",
+          "grantCategory": "TERAPAN",
+          "year": "2021",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
-          "title": "Optimalisasi Sistem Irigasi Berbasis Rainwater Harvesting (RWH) dan Pemanfaatan Limbah Pertanian sebagai Pupuk Organik Cair (POC) untuk Meningkatkan Produktivitas Perkebunan Berkelanjutan di Kelompok Tani Harapan Sejahtera",
-          "year": "2025"
-        },
-        {
           "title": "PENGEMBANGAN DIGITAL BRANDING BERSAMA TANAMIN BUMI NUSANTARA MELALUI PEMANFAATAN TEKNOLOGI INFORMASI UNTUK KAMPANYE LINGKUNGAN",
-          "year": "2025"
+          "leader": "INSTITUSI INTERNAL ( PMMD )",
+          "members": [
+            "Henokh Lugo Hariyanto"
+          ],
+          "grantType": "INSTITUSI INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENINGKATAN KEMANDIRIAN EKONOMI PERKUMPULAN PENYANDANG DISABILITAS INDONESIA (PPDI) BALIKPAPAN MELALUI PENGUATAN PEMASARAN DIGITAL DAN PEMBERDAYAAN LEGALITAS PRODUK",
-          "year": "2025"
+          "leader": "Muh. Ikhsan Alif S",
+          "members": [
+            "Widya Sartika",
+            "Arif Wicaksono Septyanto"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "Optimalisasi Sistem Irigasi Berbasis Rainwater Harvesting (RWH) dan Pemanfaatan Limbah Pertanian sebagai Pupuk Organik Cair (POC) untuk Meningkatkan Produktivitas Perkebunan Berkelanjutan di Kelompok Tani Harapan Sejahtera",
+          "leader": "Arif Wicaksono Septyanto",
+          "members": [
+            "Khairunnisa Adhar",
+            "Ni''matus Sholihah"
+          ],
+          "grantType": "Pengabdian Kepada Masyarakat Kompetitif Nasional ( PKM )",
+          "grantCategory": "PKM",
+          "year": "2025",
+          "fundingAmount": 45000000,
+          "fundingFormatted": "Rp. 45.000.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         },
         {
           "title": "OPTIMASI KAWASAN WISATA MELALUI PENGEMBANGAN PRODUK DAN BRANDING DENGAN MEMANFAATKAN TEKNOLOGI DI HUTAN LINDUNG SUNGAI WAIN",
-          "year": "2024"
+          "leader": "Arif Wicaksono Septyanto",
+          "members": [
+            "Henokh Lugo Hariyanto"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "OPTIMASI KELOMPOK TANI DAN WISATA EDUKATIF BAMBOE WANADESA",
-          "year": "2023"
+          "leader": "Arif Wicaksono Septyanto",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2023",
+          "fundingAmount": 8000000,
+          "fundingFormatted": "Rp. 8.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [],
@@ -689,13 +1140,20 @@
         "other": 0,
         "total": 0,
         "list": []
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 191523000,
+        "totalServiceFunding": 83000000,
+        "totalFunding": 274523000,
+        "researchCount": 9,
+        "serviceCount": 5
       }
     },
     {
       "name": "Henokh Lugo Hariyanto",
       "sintaId": "6807418",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:44:07.404451",
+      "scrapedAt": "2026-02-03T14:12:25.450684",
       "stats": {
         "articles": 9,
         "citations": 20,
@@ -742,6 +1200,11 @@
         },
         "list": [
           {
+            "title": "Anisotropic internal fields behavior in La2−xSrxCuO4 (x=0.024): Precursor to the spin glass state revealed by muon spin relaxation",
+            "category": "scopus",
+            "q": "Q2"
+          },
+          {
             "title": "Development and application of a three-dimensional pseudo-Voigt function for muon spin relaxation analysis of weakly magnetic materials",
             "category": "scopus",
             "q": "Q2"
@@ -752,19 +1215,14 @@
             "q": "Q1"
           },
           {
-            "title": "Anisotropic internal fields behavior in La2−xSrxCuO4 (x=0.024): Precursor to the spin glass state revealed by muon spin relaxation",
+            "title": "Split-Conv: 1HD Depth Estimation Deep Learning Model",
             "category": "scopus",
-            "q": "Q2"
+            "q": ""
           },
           {
             "title": "Phase-Resolved Wave Simulation over Isolated Seamount",
             "category": "scopus",
             "q": "Q2"
-          },
-          {
-            "title": "Split-Conv: 1HD Depth Estimation Deep Learning Model",
-            "category": "scopus",
-            "q": ""
           },
           {
             "title": "Nearshore Bathymetry Estimation Based on Image Feature of X-Band Marine Radar",
@@ -781,37 +1239,118 @@
       "research": [
         {
           "title": "RANCANG BANGUN TRANSPARANSI PENGGUNAAN DANA TJSLP (TANGGUNG JAWAB SOSIAL DAN LINGKUNGAN PERUSAHAAN) DALAM MENDUKUNG SMART CITY MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
-          "year": "2025"
+          "leader": "Henokh Lugo Hariyanto",
+          "members": [
+            "Arif Wicaksono Septyanto",
+            "Sri Rahayu Natasia"
+          ],
+          "grantType": "Penelitian Internal ( RH )",
+          "grantCategory": "RH",
+          "year": "2025",
+          "fundingAmount": 27000000,
+          "fundingFormatted": "Rp. 27.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN SILURAH: SISTEM INFORMASI KELURAHAN MENGGUNAKAN METODE AGILE",
-          "year": "2024"
+          "leader": "Yuyun Tri Wiranti",
+          "members": [
+            "Henokh Lugo Hariyanto"
+          ],
+          "grantType": "HIBAH INTERNAL ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Pengembangan Algoritma Metaheuristik Untuk Menyelesaikan Permasalahan Optimasi Kombinatorial",
-          "year": "2024"
+          "leader": "Arif Wicaksono Septyanto",
+          "members": [
+            "Henokh Lugo Hariyanto"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2024",
+          "fundingAmount": 34740000,
+          "fundingFormatted": "Rp. 34.740.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         },
         {
           "title": "PENGEMBANGAN INVERSI BATIMETRI UNTUK ESTIMASI KEDALAMAN LAUT PERAIRAN MENGGUNAKAN ALGORITMA INTERPRETABLE DEEP LEARNING",
-          "year": "2023"
+          "leader": "Henokh Lugo Hariyanto",
+          "members": [
+            "Arif Wicaksono Septyanto"
+          ],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2023",
+          "fundingAmount": 14963000,
+          "fundingFormatted": "Rp. 14.963.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "SVM (SUPPORT VECTOR MACHINE) UNTUK KLASIFIKASI STATUS GIZI BALITA BERDASARKAN INDEKS ANTROPOMETRI",
-          "year": "2023"
+          "leader": "Arif Wicaksono Septyanto",
+          "members": [
+            "Henokh Lugo Hariyanto"
+          ],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2023",
+          "fundingAmount": 14950000,
+          "fundingFormatted": "Rp. 14.950.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
-          "year": "2023"
+          "leader": "Henokh Lugo Hariyanto",
+          "members": [
+            "Arif Wicaksono Septyanto"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2023",
+          "fundingAmount": 17900000,
+          "fundingFormatted": "Rp. 17.900.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         }
       ],
       "services": [
         {
           "title": "PENGEMBANGAN DIGITAL BRANDING BERSAMA TANAMIN BUMI NUSANTARA MELALUI PEMANFAATAN TEKNOLOGI INFORMASI UNTUK KAMPANYE LINGKUNGAN",
-          "year": "2025"
+          "leader": "INSTITUSI INTERNAL ( PMMD )",
+          "members": [
+            "Henokh Lugo Hariyanto"
+          ],
+          "grantType": "INSTITUSI INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "OPTIMASI KAWASAN WISATA MELALUI PENGEMBANGAN PRODUK DAN BRANDING DENGAN MEMANFAATKAN TEKNOLOGI DI HUTAN LINDUNG SUNGAI WAIN",
-          "year": "2024"
+          "leader": "Arif Wicaksono Septyanto",
+          "members": [
+            "Henokh Lugo Hariyanto"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [],
@@ -821,13 +1360,20 @@
         "other": 0,
         "total": 0,
         "list": []
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 134553000,
+        "totalServiceFunding": 20000000,
+        "totalFunding": 154553000,
+        "researchCount": 6,
+        "serviceCount": 2
       }
     },
     {
       "name": "Lovinta Happy Atrinawati",
       "sintaId": "5977894",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:44:15.556798",
+      "scrapedAt": "2026-02-03T14:14:34.934758",
       "stats": {
         "articles": 53,
         "citations": 517,
@@ -938,21 +1484,59 @@
       "research": [
         {
           "title": "PERANCANGAN TATA KELOLA TEKNOLOGI INFORMASI INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN COBIT (CONTROL OBJECTIVE INFORMATION TECHNOLOGY)",
-          "year": "2020"
+          "leader": "Lovinta Happy Atrinawati",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( KEBIJAKAN STRATEGIS )",
+          "grantCategory": "KEBIJAKAN STRATEGIS",
+          "year": "2020",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Perancangan Arsitektur Sistem dan Teknologi Informasi untuk Organisasi Perangkat Daerah (OPD) Pemerintah Kota Balikpapan menggunakan TOGAF (The Open Group Architecture Framework)",
-          "year": "2019"
+          "leader": "Lovinta Happy Atrinawati",
+          "members": [
+            "Tegar Palyus Fiqar",
+            "Soleh Ardiansyah"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2019",
+          "fundingAmount": 16185000,
+          "fundingFormatted": "Rp. 16.185.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         },
         {
           "title": "Perancangan Arsitektur Sistem dan Teknologi Informasi Perguruan Tinggi di Balikpapan menggunakan TOGAF (The Open Group Architecture Framework)",
-          "year": "2019"
+          "leader": "Yuyun Tri Wiranti",
+          "members": [
+            "Vinda Daningrum",
+            "Lovinta Happy Atrinawati"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2019",
+          "fundingAmount": 16950000,
+          "fundingFormatted": "Rp. 16.950.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         }
       ],
       "services": [
         {
           "title": "PELATIHAN MEMODELKAN PROSES BISNIS MENGGUNAKAN BIZAGI BAGI ORGANISASI PERANGKAT DAERAH KOTA BALIKPAPAN",
-          "year": "2020"
+          "leader": "Lovinta Happy Atrinawati",
+          "members": [],
+          "grantType": "HIBAH ITK ( PKM )",
+          "grantCategory": "PKM",
+          "year": "2020",
+          "fundingAmount": 5000000,
+          "fundingFormatted": "Rp. 5.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [
@@ -968,14 +1552,6 @@
         "total": 5,
         "list": [
           {
-            "title": "Rancangan Tata Kelola Teknologi Informasi Hotel Astara",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Rancangan Tata Kelola Teknologi Informasi PT Petra Kaltim Sejahtera",
-            "category": "hakCipta"
-          },
-          {
             "title": "Rancangan Tata Kelola Teknologi Informasi Institut Teknologi Kalimantan",
             "category": "hakCipta"
           },
@@ -984,17 +1560,32 @@
             "category": "hakCipta"
           },
           {
+            "title": "Rancangan Tata Kelola Teknologi Informasi Hotel Astara",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Rancangan Tata Kelola Teknologi Informasi PT Petra Kaltim Sejahtera",
+            "category": "hakCipta"
+          },
+          {
             "title": "Sistem Informasi Repository Data Akreditasi Institut Teknologi Kalimantan (ITK)",
             "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 43135000,
+        "totalServiceFunding": 5000000,
+        "totalFunding": 48135000,
+        "researchCount": 3,
+        "serviceCount": 1
       }
     },
     {
       "name": "Vika Fitratunnany Insanittaqwa",
       "sintaId": "6784235",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:44:24.225631",
+      "scrapedAt": "2026-02-03T14:15:20.312932",
       "stats": {
         "articles": 14,
         "citations": 54,
@@ -1043,38 +1634,115 @@
       },
       "research": [
         {
-          "title": "PENGEMBANGAN SISTEM INFORMASI PUSAT LAYANAN HUKUM SEBAGAI JARINGAN DOKUMENTASI DAN INFORMASI HUKUM ITK",
-          "year": "2025"
+          "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
+          "leader": "Vika Fitratunnany Insanittaqwa",
+          "members": [
+            "Yuyun Tri Wiranti",
+            "Dwi Nur Amalia"
+          ],
+          "grantType": "Penelitian Internal ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
-          "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
-          "year": "2025"
+          "title": "PENGEMBANGAN SISTEM INFORMASI PUSAT LAYANAN HUKUM SEBAGAI JARINGAN DOKUMENTASI DAN INFORMASI HUKUM ITK",
+          "leader": "PENILAIAN INTERNAL ( RKS )",
+          "members": [
+            "Farida Nur Hidayah",
+            "Vika Fitratunnany Insanittaqwa"
+          ],
+          "grantType": "PENILAIAN INTERNAL ( RKS )",
+          "grantCategory": "RKS",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMBANGUNAN SMART-SCHOOL SYSTEM PADA LINGKUNGAN PEDESAAN DI WILAYAH IKN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
-          "year": "2024"
+          "leader": "Nursanti Novi  Arisa",
+          "members": [
+            "Vika Fitratunnany Insanittaqwa"
+          ],
+          "grantType": "HIBAH INTERNAL ( RHI )",
+          "grantCategory": "RHI",
+          "year": "2024",
+          "fundingAmount": 30000000,
+          "fundingFormatted": "Rp. 30.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL",
-          "year": "2023"
+          "leader": "Nursanti Novi  Arisa",
+          "members": [
+            "M. Ihsan Alfani Putera",
+            "Vika Fitratunnany Insanittaqwa"
+          ],
+          "grantType": "HIBAH ITK ( PPI )",
+          "grantCategory": "PPI",
+          "year": "2023",
+          "fundingAmount": 19520000,
+          "fundingFormatted": "Rp. 19.520.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN SIMSIS SEBAGAI SISTEM SMART CITY RANAH PENDIDIKAN UNTUK MENUNJANG PROSES PEMBELAJARAN",
-          "year": "2021"
+          "leader": "Vika Fitratunnany Insanittaqwa",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN DOSEN BSARU (PDB) )",
+          "grantCategory": "PENELITIAN DOSEN BSARU (PDB",
+          "year": "2021",
+          "fundingAmount": 14600000,
+          "fundingFormatted": "Rp. 14.600.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
           "title": "PENGEMBANGAN FASILITAS DAN PROMOSI HUTAN KOTA MANGROVE MARGOMULYO MELALUI TEKNOLOGI DIGITAL",
-          "year": "2025"
+          "leader": "INSTITUSI INTERNAL ( PMMD )",
+          "members": [
+            "Dwi Nur Amalia"
+          ],
+          "grantType": "INSTITUSI INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMBERDAYAAN MASYARAKAT PERUM KARANG JOANG LESTARI RT.50 DALAM BIDANG IPTEK DENGAN MENGGUNAKAN APLIKASI SCRATCH",
-          "year": "2023"
+          "leader": "Vika Fitratunnany Insanittaqwa",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2023",
+          "fundingAmount": 8000000,
+          "fundingFormatted": "Rp. 8.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMBUATAN SISTEM INFORMASI PENGOLAHAN SAMPAH BERBASIS WEB PADA BANK SAMPAH DARMA BAKTI",
-          "year": "2022"
+          "leader": "Vika Fitratunnany Insanittaqwa",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2022",
+          "fundingAmount": 8000000,
+          "fundingFormatted": "Rp. 8.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [],
@@ -1084,13 +1752,20 @@
         "other": 0,
         "total": 0,
         "list": []
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 91120000,
+        "totalServiceFunding": 26000000,
+        "totalFunding": 117120000,
+        "researchCount": 5,
+        "serviceCount": 3
       }
     },
     {
       "name": "Hendy Indrawan Sunardi",
       "sintaId": "6784468",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:44:32.987674",
+      "scrapedAt": "2026-02-03T14:15:23.433036",
       "stats": {
         "articles": 9,
         "citations": 11,
@@ -1140,33 +1815,101 @@
       "research": [
         {
           "title": "OPTIMALISASI PENGELOLAAN SISTEM MONITORING DATA ENERGI LISTRIK PADA SMART HOME SYSTEM UNTUK SAKLAR LISTRIK MENGGUNAKAN METODE EXTREME PROGRAMMING",
-          "year": "2025"
+          "leader": "Hendy Indrawan Sunardi",
+          "members": [
+            "Aidil Saputra Kirsan",
+            "Irma Fitria"
+          ],
+          "grantType": "Penelitian Internal ( RPI )",
+          "grantCategory": "RPI",
+          "year": "2025",
+          "fundingAmount": 23000000,
+          "fundingFormatted": "Rp. 23.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "RANCANG BANGUN SISTEM DETEKSI DINI KEBAKARAN DI RUMAH MENGGUNAKAN SMART HOME BERBASIS IOT",
-          "year": "2023"
+          "leader": "Hendy Indrawan Sunardi",
+          "members": [
+            "Aidil Saputra Kirsan",
+            "Irma Fitria"
+          ],
+          "grantType": "HIBAH ITK ( PPI )",
+          "grantCategory": "PPI",
+          "year": "2023",
+          "fundingAmount": 18500000,
+          "fundingFormatted": "Rp. 18.500.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
           "title": "PENGEMBANGAN WISATA TANJUNG GADING MELALUI DIGITALISASI DI RT 17 KELURAHAN KARANG JOANG",
-          "year": "2025"
+          "leader": "Hendy Indrawan Sunardi",
+          "members": [
+            "Aidil Saputra Kirsan"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN WEBSITE DAN PENINGKATAN KENYAMANAN PENGUNJUNG DI WISATA MERANTI BALIKPAPAN",
-          "year": "2024"
+          "leader": "Hendy Indrawan Sunardi",
+          "members": [
+            "Aidil Saputra Kirsan"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "DIGITALISASI PEMBANGUNAN WEBSITE DASHBOARD SEBAGAI SARANA INFORMASI DAN PENGELOLAAN DATA MASYARAKAT",
-          "year": "2024"
+          "leader": "Aidil Saputra Kirsan",
+          "members": [
+            "Hendy Indrawan Sunardi"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN SISTEM “GANTION” (GARDEN INFORMATION ) DAN PENGAPLIKASIAN TEKNOLOGI MESIN \"ALKON\" PADA KEBUN MELON SUMBER BERKAH",
-          "year": "2023"
+          "leader": "Hendy Indrawan Sunardi",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2023",
+          "fundingAmount": 8000000,
+          "fundingFormatted": "Rp. 8.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PERANCANGAN SISTEM INFORMASI BERBASIS WEBSITE SEBAGAI MEDIA INFORMASI SEKALIGUS ETALASE PRODUK OLAHAN KANGKUNG PADA KAMPUNG KANG BEJO BALIKPAPAN.",
-          "year": "2022"
+          "leader": "Hendy Indrawan Sunardi",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2022",
+          "fundingAmount": 7440000,
+          "fundingFormatted": "Rp. 7.440.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [],
@@ -1176,13 +1919,20 @@
         "other": 0,
         "total": 0,
         "list": []
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 41500000,
+        "totalServiceFunding": 45440000,
+        "totalFunding": 86940000,
+        "researchCount": 2,
+        "serviceCount": 5
       }
     },
     {
       "name": "Dwi Nur Amalia",
       "sintaId": "6761367",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:44:42.272207",
+      "scrapedAt": "2026-02-03T14:15:26.573712",
       "stats": {
         "articles": 14,
         "citations": 24,
@@ -1272,34 +2022,101 @@
       },
       "research": [
         {
-          "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
-          "year": "2025"
+          "title": "PENGEMBANGAN SISTEM INFORMASI PUSAT LAYANAN HUKUM SEBAGAI JARINGAN DOKUMENTASI DAN INFORMASI HUKUM ITK",
+          "leader": "PENILAIAN INTERNAL ( RKS )",
+          "members": [
+            "Farida Nur Hidayah",
+            "Vika Fitratunnany Insanittaqwa"
+          ],
+          "grantType": "PENILAIAN INTERNAL ( RKS )",
+          "grantCategory": "RKS",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
-          "title": "PENGEMBANGAN SISTEM INFORMASI PUSAT LAYANAN HUKUM SEBAGAI JARINGAN DOKUMENTASI DAN INFORMASI HUKUM ITK",
-          "year": "2025"
+          "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
+          "leader": "Vika Fitratunnany Insanittaqwa",
+          "members": [
+            "Yuyun Tri Wiranti",
+            "Dwi Nur Amalia"
+          ],
+          "grantType": "Penelitian Internal ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "ANALISIS PENERIMAAN LEARNING MANAGEMENT SYSTEM PADA KULIAH.ITK.AC.ID MENGGUNAKAN PENDEKATAN TECHNOLOGY ACCEPTANCE MODEL (TAM)",
-          "year": "2021"
+          "leader": "Dwi Nur Amalia",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN DOSEN BSARU (PDB) )",
+          "grantCategory": "PENELITIAN DOSEN BSARU (PDB",
+          "year": "2021",
+          "fundingAmount": 14750000,
+          "fundingFormatted": "Rp. 14.750.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
           "title": "PENGEMBANGAN FASILITAS DAN PROMOSI HUTAN KOTA MANGROVE MARGOMULYO MELALUI TEKNOLOGI DIGITAL",
-          "year": "2025"
+          "leader": "INSTITUSI INTERNAL ( PMMD )",
+          "members": [
+            "Dwi Nur Amalia"
+          ],
+          "grantType": "INSTITUSI INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENERAPAN TRIPLE HELIX DALAM MEWUJUDKAN DESA DIGITAL PEDULI SAMPAH SEBAGAI UPAYA PENINGKATAN KESEJAHTERAAN MASYARAKAT",
-          "year": "2024"
+          "leader": "Nursanti Novi  Arisa",
+          "members": [
+            "Dwi Nur Amalia",
+            "Intan Dwi Wahyu Setyo Rini"
+          ],
+          "grantType": "HIBAH INTERNAL ( PPD )",
+          "grantCategory": "PPD",
+          "year": "2024",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "STRATEGI PENINGKATAN PRODUKSI DENGAN PENAMBAHAN MEDIA TANAM HIDROPONIK DAN PERANCANGAN WEBSITE COMPANY PROFILE KELOMPOK WANITA TANI RT 28 SEPINGGAN RAYA BALIKPAPAN",
-          "year": "2023"
+          "leader": "Dwi Nur Amalia",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2023",
+          "fundingAmount": 8000000,
+          "fundingFormatted": "Rp. 8.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMASARAN DAN PENGEMBANGAN OLAHAN JAMBU KRISTAL UNTUK MASYARAKAT PERKEBUNAN JAMBU KRISTAL KM 24 GANG PERJUANGAN II BALIKPAPAN UTARA",
-          "year": "2022"
+          "leader": "Dwi Nur Amalia",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2022",
+          "fundingAmount": 8000000,
+          "fundingFormatted": "Rp. 8.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [],
@@ -1309,13 +2126,20 @@
         "other": 0,
         "total": 0,
         "list": []
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 41750000,
+        "totalServiceFunding": 41000000,
+        "totalFunding": 82750000,
+        "researchCount": 3,
+        "serviceCount": 4
       }
     },
     {
       "name": "Dwi Arief Prambudi",
       "sintaId": "6784358",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:44:49.862084",
+      "scrapedAt": "2026-02-03T14:15:29.699827",
       "stats": {
         "articles": 32,
         "citations": 131,
@@ -1364,62 +2188,197 @@
       },
       "research": [
         {
+          "title": "PENYUSUNAN JUSTIFIKASI TEKNIS DAN DISASTER RECOVERY PLAN UNTUK PENGEMBANGAN DATA CENTER UPA TIK ITK",
+          "leader": "PENELITIAN INTERNAL ( RKS )",
+          "members": [
+            "Riska K Abdullah",
+            "Dwi Arief Prambudi"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RKS )",
+          "grantCategory": "RKS",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
           "title": "INOVASI PENGOLAHAN LIMBAH BAGLOG JAMUR TIRAM MENJADI KOMPOS DENGAN MOL NASI BASI SEBAGAI BIOAKTIVATOR",
-          "year": "2025"
+          "leader": "Nia Febrianti",
+          "members": [
+            "Basransyah",
+            "Dwi Arief Prambudi"
+          ],
+          "grantType": "Penelitian Internal ( RI )",
+          "grantCategory": "RI",
+          "year": "2025",
+          "fundingAmount": 23000000,
+          "fundingFormatted": "Rp. 23.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "VISUALISASI DARI KLASTERISASI PENGELOMPOKAN DAERAH BERDASARKAN TINGKAT PENDAPATAN PAJAK DAERAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER LANJUTAN",
-          "year": "2025"
-        },
-        {
-          "title": "PENYUSUNAN JUSTIFIKASI TEKNIS DAN DISASTER RECOVERY PLAN UNTUK PENGEMBANGAN DATA CENTER UPA TIK ITK",
-          "year": "2025"
+          "leader": "",
+          "members": [
+            "Nia Febrianti",
+            "I Putu Deny Arthawan Sugih Prabowo"
+          ],
+          "grantType": "Penelitian Internal ( RPI )",
+          "grantCategory": "RPI",
+          "year": "2025",
+          "fundingAmount": 23000000,
+          "fundingFormatted": "Rp. 23.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "VISUALISASI DARI KLASTERISASI DAN ESTIMASI KETERSEDIAAN LAHAN PEMBUANGAN SAMPAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER DAN UJI REGRESI LANJUTAN",
-          "year": "2024"
+          "leader": "",
+          "members": [
+            "Nia Febrianti"
+          ],
+          "grantType": "HIBAH INTERNAL ( RPIKN )",
+          "grantCategory": "RPIKN",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Monitoring Dan Forecasting Ketercukupan Tempat Pembuangan Akhir Di Kota Balikpapan Sebagai Penyangga IKN Dengan Metode Regresi Lanjutan Berbasis Website",
-          "year": "2024"
+          "leader": "",
+          "members": [
+            "Nia Febrianti"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2024",
+          "fundingAmount": 28700000,
+          "fundingFormatted": "Rp. 28.700.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         },
         {
           "title": "VISUALISASI DARI KLASTERISASI DAN PERAMALAN KUALITAS UDARA KOTA BALIKPAPAN MENGGUNAKAN METODE KLASTERISASI OBJEK BACKPROPAGATION DAN PERAMALAN ARTIFICIAL NEURAL NETWORK",
-          "year": "2023"
+          "leader": "",
+          "members": [
+            "Nia Febrianti"
+          ],
+          "grantType": "HIBAH ITK ( PPI )",
+          "grantCategory": "PPI",
+          "year": "2023",
+          "fundingAmount": 20000000,
+          "fundingFormatted": "Rp. 20.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENERAPAN ARTIFICIAL NEURAL NETWORK PADA PROTOTYPING SISTEM MONITORING KUALITAS AIR DI KOTA BALIKPAPAN UNTUK MENDUKUNG BALIKPAPAN SEBAGAI SMART CITY",
-          "year": "2021"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN DOSEN BSARU (PDB) )",
+          "grantCategory": "PENELITIAN DOSEN BSARU (PDB",
+          "year": "2021",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
-          "title": "PEMBERDAYAAN KELOMPOK TANI SWATANI KM 17 MELALUI PEMANFAATAN LIMBAH PERTANIAN DAN BIOGAS SEBAGAI PUPUK ORGANIK CAIR",
-          "year": "2025"
+          "title": "DIGITALISASI LAYANAN BERBASIS WEBSITE UNTUK MENINGKATKAN KUALITAS PELAYANAN DI RT 02 KELURAHAN GRAHA INDAH BALIKPAPAN",
+          "leader": "INSTITUSI INTERNAL ( PMMD )",
+          "members": [
+            "Nia Febrianti"
+          ],
+          "grantType": "INSTITUSI INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
-          "title": "DIGITALISASI LAYANAN BERBASIS WEBSITE UNTUK MENINGKATKAN KUALITAS PELAYANAN DI RT 02 KELURAHAN GRAHA INDAH BALIKPAPAN",
-          "year": "2025"
+          "title": "PEMBERDAYAAN KELOMPOK TANI SWATANI KM 17 MELALUI PEMANFAATAN LIMBAH PERTANIAN DAN BIOGAS SEBAGAI PUPUK ORGANIK CAIR",
+          "leader": "Nia Febrianti",
+          "members": [
+            "Dwi Arief Prambudi"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMBUATAN AKUAPONIK SEBAGAI PEMANFAATAN LAHAN TERBATAS DAN PEMANFAATAN LIMBAH KOTORAN IKAN LELE MENJADI PUPUK DI WILAYAN PERUMAHAN BANGUN REKSA RT 21 KELURAHAN GRAHA INDAH, KECAMATAN BALIKPAPAN UTARA",
-          "year": "2024"
+          "leader": "Nia Febrianti",
+          "members": [
+            "Dwi Arief Prambudi"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "MEWUJUDKAN SMART RT DENGAN PERKEMBANGAN TEKNOLOGI RT 31 WADUK WONOREJO KOTA BALIKPAPAN KALIMANTAN TIMUR",
-          "year": "2024"
+          "leader": "",
+          "members": [
+            "Nia Febrianti"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "DIGITALISASI SISTEM PENGELOLAAN BANK SAMPAH DHARMA BAKTI RT. 055, KELURAHAN MUARA RAPAK, KECAMATAN BALIKPAPAN UTARA, KOTA BALIKPAPAN, KALIMANTAN TIMUR",
-          "year": "2023"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2023",
+          "fundingAmount": 8000000,
+          "fundingFormatted": "Rp. 8.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMBERDAYAAN MASYARAKAT KELURAHAN TELAGA SARI MENGGUNAKAN PEMANFAATAN TEKNOLOGI",
-          "year": "2022"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2022",
+          "fundingAmount": 7300000,
+          "fundingFormatted": "Rp. 7.300.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PELATIHAN PEMROGRAMAN UNTUK MELATIH LOGIKA BERPIKIR YANG SISTEMATIS KEPADA SISWA SDN 012 BALIKPAPAN UTARA",
-          "year": "2020"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH ITK ( PKM )",
+          "grantCategory": "PKM",
+          "year": "2020",
+          "fundingAmount": 5810000,
+          "fundingFormatted": "Rp. 5.810.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [],
@@ -1434,13 +2393,20 @@
             "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 151700000,
+        "totalServiceFunding": 61110000,
+        "totalFunding": 212810000,
+        "researchCount": 7,
+        "serviceCount": 7
       }
     },
     {
       "name": "I Putu Deny Arthawan Sugih Prabowo",
       "sintaId": "6701825",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:44:58.008775",
+      "scrapedAt": "2026-02-03T14:15:32.700882",
       "stats": {
         "articles": 42,
         "citations": 103,
@@ -1510,58 +2476,186 @@
       },
       "research": [
         {
-          "title": "PENERAPAN LOGIKA FUZZY UNTUK MENENTUKAN DURASI ISTIRAHAT OPTIMAL BERBASIS TINGKAT KEBISINGAN DAN LAMA PAPARAN DI INDUSTRI",
-          "year": "2025"
-        },
-        {
           "title": "VISUALISASI DARI KLASTERISASI PENGELOMPOKAN DAERAH BERDASARKAN TINGKAT PENDAPATAN PAJAK DAERAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER LANJUTAN",
-          "year": "2025"
+          "leader": "",
+          "members": [
+            "Nia Febrianti",
+            "I Putu Deny Arthawan Sugih Prabowo"
+          ],
+          "grantType": "Penelitian Internal ( RPI )",
+          "grantCategory": "RPI",
+          "year": "2025",
+          "fundingAmount": 23000000,
+          "fundingFormatted": "Rp. 23.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENYUSUNAN JUSTIFIKASI TEKNIS DAN DISASTER RECOVERY PLAN UNTUK PENGEMBANGAN DATA CENTER UPA TIK ITK",
-          "year": "2025"
+          "leader": "PENELITIAN INTERNAL ( RKS )",
+          "members": [
+            "Riska K Abdullah",
+            "Dwi Arief Prambudi"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RKS )",
+          "grantCategory": "RKS",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "PENERAPAN LOGIKA FUZZY UNTUK MENENTUKAN DURASI ISTIRAHAT OPTIMAL BERBASIS TINGKAT KEBISINGAN DAN LAMA PAPARAN DI INDUSTRI",
+          "leader": "Muchammad Chandra Cahyo Utomo",
+          "members": [
+            "Adiek Astika Clara Sudarni",
+            "I Putu Deny Arthawan Sugih Prabowo"
+          ],
+          "grantType": "Penelitian Internal ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2025",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "REKAYASA KESELAMATAN DALAM PENYUSUNAN DOKUMEN JUSTIFIKASI TEKNIS UNTUK PENGEMBANGAN DATA CENTER DI BANK PEMBANGUNAN DAERAH PROVINSI XYZ",
-          "year": "2024"
+          "leader": "",
+          "members": [
+            "Adiek Astika Clara Sudarni",
+            "Muchammad Chandra Cahyo Utomo"
+          ],
+          "grantType": "HIBAH INTERNAL ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "RANCANG BANGUN SISTEM INFORMASI PENDAFTARAN SANTRI BARU BERBASIS WEB MENGGUNAKAN METODE RAPID APPLICATION DEVELOPMENT (RAD)",
-          "year": "2024"
+          "leader": "PROGRAM PENELITIAN MANDIRI ( PENELITIAN MANDIRI )",
+          "members": [
+            "I Putu Deny Arthawan Sugih Prabowo"
+          ],
+          "grantType": "PROGRAM PENELITIAN MANDIRI ( PENELITIAN MANDIRI )",
+          "grantCategory": "PENELITIAN MANDIRI",
+          "year": "2024",
+          "fundingAmount": 1000000,
+          "fundingFormatted": "Rp. 1.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "ANALISIS ADOPSI PENGGUNAAN E-COMMERCE BERDASARKAN TECHNOLOGY, ORGANIZATION, DAN ENVIRONTMENT (TOE) PADA UMKM DI BALIKPAPAN",
-          "year": "2023"
+          "leader": "",
+          "members": [
+            "Nursanti Novi  Arisa"
+          ],
+          "grantType": "HIBAH ITK ( PKLK )",
+          "grantCategory": "PKLK",
+          "year": "2023",
+          "fundingAmount": 14650000,
+          "fundingFormatted": "Rp. 14.650.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "ANALISIS PENGARUH PENGALAMAN MENGGUNAKAN E-LEARNING SEBELUM COVID-19 DAN KARAKTERISTIK INSTRUKTUR KELAS TERHADAP NIAT PERILAKU MAHASISWA DALAM PEMBELAJARAN MELALUI E-LEARNING BERDASARKAN TECHNOLOGY ACCEPTANCE MODEL",
-          "year": "2022"
+          "leader": "MANDIRI ( PMK )",
+          "members": [],
+          "grantType": "MANDIRI ( PMK )",
+          "grantCategory": "PMK",
+          "year": "2022",
+          "fundingAmount": 3521400,
+          "fundingFormatted": "Rp. 3.521.400",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "COMPETITIVE RESEARCH TERHADAP E-COMMERCE EKSISTING UNTUK REKOMENDASI DESAIN APLIKASI E-COMMERCE UMKM BALIKPAPAN",
-          "year": "2021"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN SUMBER DAYA KALIMANTAN (PSDK) )",
+          "grantCategory": "PENELITIAN SUMBER DAYA KALIMANTAN (PSDK",
+          "year": "2021",
+          "fundingAmount": 9170000,
+          "fundingFormatted": "Rp. 9.170.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
-          "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS",
-          "year": "2025"
+          "title": "PELATIHAN OPTIMALISASI PEMASARAN DIGITAL PADA BATIK SHAHO DAN KOMUNITAS BATIK TIGA ZAMAN BALIKPAPAN",
+          "leader": "Luh Made Wisnu Satyaninggrat",
+          "members": [
+            "I Putu Deny Arthawan Sugih Prabowo"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
-          "title": "PELATIHAN OPTIMALISASI PEMASARAN DIGITAL PADA BATIK SHAHO DAN KOMUNITAS BATIK TIGA ZAMAN BALIKPAPAN",
-          "year": "2025"
+          "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS",
+          "leader": "INSTITUSI INTERNAL ( PMMD )",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Muchammad Chandra Cahyo Utomo"
+          ],
+          "grantType": "INSTITUSI INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PELATIHAN DIGITAL MARKETING RT.06 KELURAHAN GRAHA INDAH, KECAMATAN BALIKPAPAN UTARA, KOTA BALIKPAPAN, KALIMANTAN TIMUR",
-          "year": "2024"
+          "leader": "Widya Sartika",
+          "members": [
+            "I Putu Deny Arthawan Sugih Prabowo",
+            "Eko Agung Syaputra"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "KEGIATAN PENGAJARAN ANAK-ANAK SERTA SOSIALISASI PEMANFAATAN WEBSITE DAN SOSIAL MEDIA DI KELURAHAN MARGO MULYO",
-          "year": "2024"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "BRANDING BANK SAMPAH KOTA HIJAU BALIKPAPAN BERBASIS DIGITAL MARKETING",
-          "year": "2023"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2023",
+          "fundingAmount": 8000000,
+          "fundingFormatted": "Rp. 8.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [
@@ -1621,13 +2715,20 @@
             "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 118341400,
+        "totalServiceFunding": 48000000,
+        "totalFunding": 166341400,
+        "researchCount": 8,
+        "serviceCount": 5
       }
     },
     {
       "name": "M. Ihsan Alfani Putera",
       "sintaId": "6681873",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:45:06.099215",
+      "scrapedAt": "2026-02-03T14:15:35.752261",
       "stats": {
         "articles": 40,
         "citations": 271,
@@ -1679,12 +2780,12 @@
             "q": "Q4"
           },
           {
-            "title": "Prediction of Bontang City COVID-19 Data Time Series Using the Facebook Prophet Method",
+            "title": "Analysis Effect of User Experience on Understanding Rate of Student Using Academic Information System in Higher Education with Honeycomb Method",
             "category": "scopus",
             "q": ""
           },
           {
-            "title": "Analysis Effect of User Experience on Understanding Rate of Student Using Academic Information System in Higher Education with Honeycomb Method",
+            "title": "Prediction of Bontang City COVID-19 Data Time Series Using the Facebook Prophet Method",
             "category": "scopus",
             "q": ""
           },
@@ -1743,62 +2844,176 @@
       "research": [
         {
           "title": "PERANCANGAN SISTEM MEDIA PEMBELAJARAN BERBASIS AI DAN ADAPTIVE LEARNING DENGAN KONSEP HEALING TECHNOLOGY PADA PESERTA DIDIK DISABILITAS",
-          "year": "2025"
+          "leader": "PENELITIAN INTERNAL ( RDP )",
+          "members": [
+            "Hesti Rosita Dwi Putri",
+            "Nursanti Novi  Arisa"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RDP )",
+          "grantCategory": "RDP",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) INSTITUT TEKNOLOGI KALIMANTAN",
-          "year": "2025"
+          "leader": "PENELITIAN INTERNAL ( RKS )",
+          "members": [
+            "M. Ihsan Alfani Putera",
+            "Bowo Nugroho"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RKS )",
+          "grantCategory": "RKS",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN SISTEM PELAYANAN SATU PINTU SEBAGAI SISTEM LAYANAN MASYARAKAT MENGGUNAKAN METODE ICONIX PROCESS",
-          "year": "2024"
+          "leader": "",
+          "members": [
+            "Nur Fajri Azhar"
+          ],
+          "grantType": "HIBAH INTERNAL ( RHI )",
+          "grantCategory": "RHI",
+          "year": "2024",
+          "fundingAmount": 30000000,
+          "fundingFormatted": "Rp. 30.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) UNTUK MENINGKATKAN PELAYANAN KEPADA SETIAP UNIT DI INSTITUT TEKNOLOGI KALIMANTAN",
-          "year": "2024"
+          "leader": "Nur Fajri Azhar",
+          "members": [
+            "Bowo Nugroho",
+            "M. Ihsan Alfani Putera"
+          ],
+          "grantType": "HIBAH INTERNAL ( RKST )",
+          "grantCategory": "RKST",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL",
-          "year": "2023"
+          "leader": "Nursanti Novi  Arisa",
+          "members": [
+            "M. Ihsan Alfani Putera",
+            "Vika Fitratunnany Insanittaqwa"
+          ],
+          "grantType": "HIBAH ITK ( PPI )",
+          "grantCategory": "PPI",
+          "year": "2023",
+          "fundingAmount": 19520000,
+          "fundingFormatted": "Rp. 19.520.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "IMPLEMENTASI LIVABLE HOME APPLICATION SEBAGAI SISTEM LAYANAN MASYARAKAT MENGGUNAKAN METODE WATERFALL",
-          "year": "2023"
+          "leader": "",
+          "members": [
+            "Nur Fajri Azhar"
+          ],
+          "grantType": "HIBAH ITK ( PAI )",
+          "grantCategory": "PAI",
+          "year": "2023",
+          "fundingAmount": 30000000,
+          "fundingFormatted": "Rp. 30.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PERBANDINGAN WATERFALL, EXTREME PROGRAMMING DAN ICONIX DALAM PENGEMBANGAN SISTEM INFORMASI COMPANY PROFILE PEMERINTAHAN PADA WILAYAH IBU KOTA NEGARA BARU",
-          "year": "2022"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PUFR )",
+          "grantCategory": "PUFR",
+          "year": "2022",
+          "fundingAmount": 40000000,
+          "fundingFormatted": "Rp. 40.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
           "title": "OPTIMALISASI KEWIRAUSAHAAN BERBASIS MIKRO PADA KELURAHAN KARANG JOANG KOTA BALIKPAPAN",
-          "year": "2025"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENINGKATAN INFRASTRUKTUR PADA JALAN DI KAMPUNG E-SPORT BALIKPAPAN :\nIMPLEMENTASI GOOGLE MAPS, PEMBANGUNAN DIREKSI GANG, CONVEX MIRROR,\nDAN RAMBU KEBISINGAN",
-          "year": "2024"
+          "leader": "",
+          "members": [
+            "Nursanti Novi  Arisa"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN SUMBER DAYA MANUSIA DAN PROSES PEMBENAHAN LINGKUNGAN DALAM UPAYA PENINGKATAN EKSISTENSI KAMPUNG E-SPORTS KOTA BALIKPAPAN",
-          "year": "2023"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2023",
+          "fundingAmount": 8000000,
+          "fundingFormatted": "Rp. 8.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENINGKATAN EKSISTENSI PROMOSI PARIWISATA KAMPUNG E-SPORT KOTA BALIKPAPAN",
-          "year": "2022"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2022",
+          "fundingAmount": 7998000,
+          "fundingFormatted": "Rp. 7.998.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "EDUKASI PENGGUNAAN INTERNET SEHAT UNTUK MEDIA PEMBELAJARAN DI SMP NEGERI BALIKPAPAN",
-          "year": "2019"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH ITK ( PKM )",
+          "grantCategory": "PKM",
+          "year": "2019",
+          "fundingAmount": 6000000,
+          "fundingFormatted": "Rp. 6.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [
         {
-          "title": "PENERAPAN METODE WATERFALL PADA PEMBANGUNAN SISTEM GAJI BERBASIS WEBSITE",
+          "title": "Perancangan Sistem Pemerintahan Berbasis Elektronik",
           "year": "2022"
         },
         {
-          "title": "Perancangan Sistem Pemerintahan Berbasis Elektronik",
+          "title": "PENERAPAN METODE WATERFALL PADA PEMBANGUNAN SISTEM GAJI BERBASIS WEBSITE",
           "year": "2022"
         }
       ],
@@ -1809,10 +3024,6 @@
         "total": 9,
         "list": [
           {
-            "title": "Kopi LOKATARA",
-            "category": "hakCipta"
-          },
-          {
             "title": "Buku Panduan SISTEM INFORMASI NILAI PAJAK AIR TANAH DLH KOTA BALIKPAPAN",
             "category": "hakCipta"
           },
@@ -1821,7 +3032,7 @@
             "category": "hakCipta"
           },
           {
-            "title": "SIKARU",
+            "title": "Kopi LOKATARA",
             "category": "hakCipta"
           },
           {
@@ -1837,6 +3048,10 @@
             "category": "hakCipta"
           },
           {
+            "title": "SIKARU",
+            "category": "hakCipta"
+          },
+          {
             "title": "Buku Deskripsi Perancangan Perangkat Lunak SICOMPAS",
             "category": "hakCipta"
           },
@@ -1845,13 +3060,20 @@
             "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 178520000,
+        "totalServiceFunding": 41998000,
+        "totalFunding": 220518000,
+        "researchCount": 7,
+        "serviceCount": 5
       }
     },
     {
       "name": "Sri Rahayu Natasia",
       "sintaId": "5983406",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:45:14.412296",
+      "scrapedAt": "2026-02-03T14:15:39.126203",
       "stats": {
         "articles": 56,
         "citations": 466,
@@ -1898,6 +3120,16 @@
         },
         "list": [
           {
+            "title": "UI/UX evaluation of android-based social media sestyc application with think aloud and heuristic method",
+            "category": "scopus",
+            "q": "Q4"
+          },
+          {
+            "title": "Analysis of The Influence Student in Higher Education Using Gamification-based E-Learning (Case Study: Institut Teknologi Kalimantan)",
+            "category": "scopus",
+            "q": "Q4"
+          },
+          {
             "title": "Development of tourism information system for storing tourist visit data and provide tourism information using the scrum method",
             "category": "scopus",
             "q": "Q4"
@@ -1909,16 +3141,6 @@
           },
           {
             "title": "Analysis of factors that affect continuance intention on the use of ShopeePay mobile payment using structural equation modeling",
-            "category": "scopus",
-            "q": "Q4"
-          },
-          {
-            "title": "UI/UX evaluation of android-based social media sestyc application with think aloud and heuristic method",
-            "category": "scopus",
-            "q": "Q4"
-          },
-          {
-            "title": "Analysis of The Influence Student in Higher Education Using Gamification-based E-Learning (Case Study: Institut Teknologi Kalimantan)",
             "category": "scopus",
             "q": "Q4"
           },
@@ -2002,65 +3224,203 @@
       "research": [
         {
           "title": "RANCANG BANGUN TRANSPARANSI PENGGUNAAN DANA TJSLP (TANGGUNG JAWAB SOSIAL DAN LINGKUNGAN PERUSAHAAN) DALAM MENDUKUNG SMART CITY MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
-          "year": "2025"
+          "leader": "Henokh Lugo Hariyanto",
+          "members": [
+            "Arif Wicaksono Septyanto",
+            "Sri Rahayu Natasia"
+          ],
+          "grantType": "Penelitian Internal ( RH )",
+          "grantCategory": "RH",
+          "year": "2025",
+          "fundingAmount": 27000000,
+          "fundingFormatted": "Rp. 27.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN SISTEM INFORMASI MANAJEMEN TUGAS AKHIR PADA JURUSAN TEKNIK ELEKTRO, INFORMATIKA, DAN BISNIS INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING (PXP)",
-          "year": "2025"
+          "leader": "Sri Rahayu Natasia",
+          "members": [
+            "Yuyun Tri Wiranti",
+            "Aidil Saputra Kirsan"
+          ],
+          "grantType": "Penelitian Internal ( RKS )",
+          "grantCategory": "RKS",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "IMPLEMENTASI METAVERSE PADA PENGENALAN LAB TERPADU KAMPUS INSTITUT TEKNOLOGI KALIMANTAN (ITK)",
-          "year": "2024"
+          "leader": "Aidil Saputra Kirsan",
+          "members": [
+            "Sri Rahayu Natasia",
+            "Yuyun Tri Wiranti"
+          ],
+          "grantType": "HIBAH INTERNAL ( RKST )",
+          "grantCategory": "RKST",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN SISTEM INFORMASI PELAYANAN ADMINISTRASI PADA UNIT LAYANAN TERPADU INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE WATERFALL",
-          "year": "2024"
+          "leader": "Sri Rahayu Natasia",
+          "members": [
+            "Arif Wicaksono Septyanto",
+            "Yuyun Tri Wiranti"
+          ],
+          "grantType": "HIBAH INTERNAL ( RKST )",
+          "grantCategory": "RKST",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENINGKATAN EFISIENSI DAN EFEKTIVITAS PROSES BELAJAR MENGAJAR DENGAN PEMANFAATAN TEKNOLOGI IOT PADA SISTEM BEL SEKOLAH PINTAR",
-          "year": "2023"
+          "leader": "Aidil Saputra Kirsan",
+          "members": [
+            "Sri Rahayu Natasia",
+            "Hendy Maulana Jaya Saputra"
+          ],
+          "grantType": "HIBAH ITK ( PAI )",
+          "grantCategory": "PAI",
+          "year": "2023",
+          "fundingAmount": 29280000,
+          "fundingFormatted": "Rp. 29.280.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "ANALISIS PENGUKURAN E-READINESS TEKNOLOGI INFORMASI PADA KOTA PENYANGGA IBU KOTA NEGARA BARU INDONESIA",
-          "year": "2022"
+          "leader": "Sri Rahayu Natasia",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PSDK )",
+          "grantCategory": "PSDK",
+          "year": "2022",
+          "fundingAmount": 24550000,
+          "fundingFormatted": "Rp. 24.550.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN SISTEM INFORMASI PARIWISATA BERBASIS WEBSITE PADA DINAS PEMUDA, OLAHRAGA, DAN PARIWISATA KOTA BONTANG MENGGUNAKAN METODE SCRUM",
-          "year": "2022"
+          "leader": "MANDIRI ( PMK )",
+          "members": [],
+          "grantType": "MANDIRI ( PMK )",
+          "grantCategory": "PMK",
+          "year": "2022",
+          "fundingAmount": 2750000,
+          "fundingFormatted": "Rp. 2.750.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "ANALISIS FAKTOR YANG MEMENGARUHI CONTINUANCE INTENTION PADA PENGGUNAAN MOBILE PAYMENT DENGAN MENGGUNAKAN STRUCTURAL EQUATION MODELING",
-          "year": "2021"
+          "leader": "Sri Rahayu Natasia",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN SUMBER DAYA KALIMANTAN (PSDK) )",
+          "grantCategory": "PENELITIAN SUMBER DAYA KALIMANTAN (PSDK",
+          "year": "2021",
+          "fundingAmount": 19250000,
+          "fundingFormatted": "Rp. 19.250.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) INSTITUT TEKNOLOGI KALIMANTAN",
-          "year": "2020"
+          "leader": "Sri Rahayu Natasia",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( KEBIJAKAN STRATEGIS )",
+          "grantCategory": "KEBIJAKAN STRATEGIS",
+          "year": "2020",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMBANGUNAN SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (STUDI KASUS: INSTITUT TEKNOLOGI KALIMANTAN)",
-          "year": "2019"
+          "leader": "Sri Rahayu Natasia",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PSU )",
+          "grantCategory": "PSU",
+          "year": "2019",
+          "fundingAmount": 20070000,
+          "fundingFormatted": "Rp. 20.070.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
           "title": "IMPLEMENTASI DAN PELATIHAN SISTEM INFORMASI PENGAJIAN DAN MEDIA SOSIAL",
-          "year": "2025"
+          "leader": "Yuyun Tri Wiranti",
+          "members": [
+            "Sri Rahayu Natasia",
+            "Nisa Rizqiya Fadhliana"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "SOSIALISASI PEMANFAATAN DIGITAL MARKETING SEBAGAI SOLUSI MENINGKATKAN PENJUALAN UMKM DI KELURAHAN KARANG JATI RT 7",
-          "year": "2022"
+          "leader": "Sri Rahayu Natasia",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2022",
+          "fundingAmount": 6035000,
+          "fundingFormatted": "Rp. 6.035.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGOLAHAN BUAH PEPAYA SEBAGAI PRODUK JUAL YANG MURAH DAN MODERN MELALUI MEDIA PELATIHAN UMKM SEBAGAI UPAYA PENINGKATAN EKONOMI MASYARAKAT DI KELURAHAN KARANG JATI",
-          "year": "2021"
+          "leader": "Sri Rahayu Natasia",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2021",
+          "fundingAmount": 2100000,
+          "fundingFormatted": "Rp. 2.100.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMBANGUNAN SISTEM INFORMASI PERPUSTAKAAN BERBASIS WEB PADA SMAN 9 BALIKPAPAN",
-          "year": "2020"
+          "leader": "Sri Rahayu Natasia MANDIRI ( MANDIRI )",
+          "members": [],
+          "grantType": "MANDIRI ( MANDIRI )",
+          "grantCategory": "MANDIRI",
+          "year": "2020",
+          "fundingAmount": 100000,
+          "fundingFormatted": "Rp. 100.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMANFAATAN SISTEM INFORMASI KELAS DIGITAL UNTUK MENDUKUNG PELAKSANAAN TRY OUT DI SMP 22 BALIKPAPAN",
-          "year": "2020"
+          "leader": "Sri Rahayu Natasia MANDIRI ( MANDIRI )",
+          "members": [],
+          "grantType": "MANDIRI ( MANDIRI )",
+          "grantCategory": "MANDIRI",
+          "year": "2020",
+          "fundingAmount": 100000,
+          "fundingFormatted": "Rp. 100.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [
@@ -2076,10 +3436,6 @@
         "total": 4,
         "list": [
           {
-            "title": "Sistem Informasi Pariwisata DISPOPAR Kota Bontang",
-            "category": "hakCipta"
-          },
-          {
             "title": "Buku Panduan Sistem Informasi Rusunawa Kota Balikpapan",
             "category": "hakCipta"
           },
@@ -2090,15 +3446,26 @@
           {
             "title": "Sistem Informasi Rusunawa Kota Balikpapan",
             "category": "hakCipta"
+          },
+          {
+            "title": "Sistem Informasi Pariwisata DISPOPAR Kota Bontang",
+            "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 199900000,
+        "totalServiceFunding": 18335000,
+        "totalFunding": 218235000,
+        "researchCount": 10,
+        "serviceCount": 5
       }
     },
     {
       "name": "Nursanti Novi Arisa",
       "sintaId": "6757976",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:45:22.076851",
+      "scrapedAt": "2026-02-03T14:17:06.714815",
       "stats": {
         "articles": 18,
         "citations": 161,
@@ -2148,53 +3515,170 @@
       "research": [
         {
           "title": "PERANCANGAN SISTEM MEDIA PEMBELAJARAN BERBASIS AI DAN ADAPTIVE LEARNING DENGAN KONSEP HEALING TECHNOLOGY PADA PESERTA DIDIK DISABILITAS",
-          "year": "2025"
+          "leader": "PENELITIAN INTERNAL ( RDP )",
+          "members": [
+            "Hesti Rosita Dwi Putri",
+            "Nursanti Novi  Arisa"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RDP )",
+          "grantCategory": "RDP",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "INOVASI PEMBUATAN PROTOTIPE TURBIN ANGIN SAVONIUS BERBAHAN PLA BERSTRUKTUR SANDWICH DENGAN METODE ADITIF MANUFAKTURING SEBAGAI SUMBER ENERGI HIJAU",
-          "year": "2025"
+          "leader": "PENELITIAN INTERNAL ( RH )",
+          "members": [
+            "Nursanti Novi  Arisa",
+            "Arif Wicaksono Septyanto"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RH )",
+          "grantCategory": "RH",
+          "year": "2025",
+          "fundingAmount": 27000000,
+          "fundingFormatted": "Rp. 27.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMBANGUNAN SMART-SCHOOL SYSTEM PADA LINGKUNGAN PEDESAAN DI WILAYAH IKN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
-          "year": "2024"
-        },
-        {
-          "title": "ANALISIS ADOPSI PENGGUNAAN E-COMMERCE BERDASARKAN TECHNOLOGY, ORGANIZATION, DAN ENVIRONTMENT (TOE) PADA UMKM DI BALIKPAPAN",
-          "year": "2023"
+          "leader": "Nursanti Novi  Arisa",
+          "members": [
+            "Vika Fitratunnany Insanittaqwa"
+          ],
+          "grantType": "HIBAH INTERNAL ( RHI )",
+          "grantCategory": "RHI",
+          "year": "2024",
+          "fundingAmount": 30000000,
+          "fundingFormatted": "Rp. 30.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL",
-          "year": "2023"
+          "leader": "Nursanti Novi  Arisa",
+          "members": [
+            "M. Ihsan Alfani Putera",
+            "Vika Fitratunnany Insanittaqwa"
+          ],
+          "grantType": "HIBAH ITK ( PPI )",
+          "grantCategory": "PPI",
+          "year": "2023",
+          "fundingAmount": 19520000,
+          "fundingFormatted": "Rp. 19.520.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "ANALISIS ADOPSI PENGGUNAAN E-COMMERCE BERDASARKAN TECHNOLOGY, ORGANIZATION, DAN ENVIRONTMENT (TOE) PADA UMKM DI BALIKPAPAN",
+          "leader": "",
+          "members": [
+            "Nursanti Novi  Arisa"
+          ],
+          "grantType": "HIBAH ITK ( PKLK )",
+          "grantCategory": "PKLK",
+          "year": "2023",
+          "fundingAmount": 14650000,
+          "fundingFormatted": "Rp. 14.650.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PERANCANGAN DESIGN UI/UX PADA BIDANG FINANCIAL TECHNOLOGY DALAM PENGEMBANGAN SMART ECONOMY MENGGUNAKAN METODE DESIGN THINKING",
-          "year": "2022"
+          "leader": "Nursanti Novi  Arisa",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PDB )",
+          "grantCategory": "PDB",
+          "year": "2022",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
           "title": "OPTIMALISASI PENGELOLAAN SAMPAH BERBASIS MASYARAKAT MELALUI PEMBANGUNAN BANK SAMPAH UNIT  DI KELURAHAN KLANDASAN ILIR",
-          "year": "2025"
+          "leader": "Nursanti Novi  Arisa",
+          "members": [],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "OPTIMALISASI PENGELOLAAN SAMPAH MELALUI BIOPORI DAN BANK SAMPAH DI MENTARI VILLAGE",
-          "year": "2025"
+          "leader": "Risty Jayanti Yuniar",
+          "members": [
+            "Nursanti Novi  Arisa",
+            "Olivia Febrianty Ngabito"
+          ],
+          "grantType": "HIBAH INTERNAL ( PPD )",
+          "grantCategory": "PPD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENINGKATAN INFRASTRUKTUR PADA JALAN DI KAMPUNG E-SPORT BALIKPAPAN :\nIMPLEMENTASI GOOGLE MAPS, PEMBANGUNAN DIREKSI GANG, CONVEX MIRROR,\nDAN RAMBU KEBISINGAN",
-          "year": "2024"
+          "leader": "",
+          "members": [
+            "Nursanti Novi  Arisa"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENERAPAN TRIPLE HELIX DALAM MEWUJUDKAN DESA DIGITAL PEDULI SAMPAH SEBAGAI UPAYA PENINGKATAN KESEJAHTERAAN MASYARAKAT",
-          "year": "2024"
+          "leader": "Nursanti Novi  Arisa",
+          "members": [
+            "Dwi Nur Amalia",
+            "Intan Dwi Wahyu Setyo Rini"
+          ],
+          "grantType": "HIBAH INTERNAL ( PPD )",
+          "grantCategory": "PPD",
+          "year": "2024",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENATAAN KAWASAN PEMUKIMAN PADAT PENDUDUK DENGAN STRATEGI ON-SITE UPGRADING DI KELURAHAN KLANDASAN",
-          "year": "2023"
+          "leader": "Nursanti Novi  Arisa",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2023",
+          "fundingAmount": 8000000,
+          "fundingFormatted": "Rp. 8.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMASARAN HASIL URBAN FARMING PADA KWT SUMBER SARI RT 21 MELALUI STRATEGI PEMANFAATAN MEDIA SOSIAL",
-          "year": "2022"
+          "leader": "Nursanti Novi  Arisa",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2022",
+          "fundingAmount": 7950000,
+          "fundingFormatted": "Rp. 7.950.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [
@@ -2210,11 +3694,31 @@
         "total": 9,
         "list": [
           {
-            "title": "BUKU ANALISIS METODE WP PADA PENENTUAN BEASISWA BANK INDONESIA",
+            "title": "Sistem Informasi Manajemen Gula",
+            "category": "hakCipta"
+          },
+          {
+            "title": "PROTOTYPE WEBSITE CROWDE",
+            "category": "hakCipta"
+          },
+          {
+            "title": "CARI BELAJAR YUK",
+            "category": "hakCipta"
+          },
+          {
+            "title": "DOKUMEN PERANCANGAN PERANGKAT LUNAK SIDAT",
+            "category": "hakCipta"
+          },
+          {
+            "title": "CHITEA.ID",
             "category": "hakCipta"
           },
           {
             "title": "Sistem Informasi Database (SIDAT) SMA Negeri 9 Balikpapan",
+            "category": "hakCipta"
+          },
+          {
+            "title": "BUKU ANALISIS METODE WP PADA PENENTUAN BEASISWA BANK INDONESIA",
             "category": "hakCipta"
           },
           {
@@ -2224,35 +3728,22 @@
           {
             "title": "BUKU PANDUAN TOOLS SNA",
             "category": "hakCipta"
-          },
-          {
-            "title": "MERAKI COFFEE & FOOD",
-            "category": "hakCipta"
-          },
-          {
-            "title": "PRODUK INOVASI SAYA IMAN",
-            "category": "hakCipta"
-          },
-          {
-            "title": "ICHIPS BAKERY",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Sistem Informasi Penjualan Sepatu Citra Abadi Berbasis Website",
-            "category": "hakCipta"
-          },
-          {
-            "title": "PROTOTYPE WEBSITE CROWDE",
-            "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 123170000,
+        "totalServiceFunding": 60950000,
+        "totalFunding": 184120000,
+        "researchCount": 6,
+        "serviceCount": 6
       }
     },
     {
       "name": "Rosa Eliviani",
       "sintaId": "6876629",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:45:30.879340",
+      "scrapedAt": "2026-02-03T14:19:37.524266",
       "stats": {
         "articles": 13,
         "citations": 30,
@@ -2302,22 +3793,45 @@
       "research": [
         {
           "title": "SUSTAINABLE ELECTRICITY MONITORING VIA MOBILE APPLICATION IN DORMITORY AREAS",
-          "year": "2025"
+          "leader": "Arie Kusumawati",
+          "members": [
+            "Dwi Diana Wazaumi",
+            "Rosa Eliviani",
+            "Luthfi Atikah"
+          ],
+          "grantType": "HIBAH INTERNAL ( HIBAH INTERNAL PDP )",
+          "grantCategory": "HIBAH INTERNAL PDP",
+          "year": "2025",
+          "fundingAmount": 6632000,
+          "fundingFormatted": "Rp. 6.632.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
           "title": "PESANTREN KODING: EDUKASI PEMROGRAMAN DASAR BAGI SISWA SEKOLAH DASAR MELALUI MIT APP INVENTOR",
-          "year": "2025"
+          "leader": "Rosa Eliviani",
+          "members": [
+            "Arie Kusumawati",
+            "Raden Rara Kartika Kusuma Winahyu"
+          ],
+          "grantType": "HIBAH INTERNAL ( HIBAH INTERNAL )",
+          "grantCategory": "HIBAH INTERNAL",
+          "year": "2025",
+          "fundingAmount": 1094345,
+          "fundingFormatted": "Rp. 1.094.345",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [
         {
-          "title": "Green Technology : Konsep, Prinsip, dan Aplikasi",
+          "title": "Big Data dan Manajemen Basis Data Terdistribusi",
           "year": "2025"
         },
         {
-          "title": "Big Data dan Manajemen Basis Data Terdistribusi",
+          "title": "Green Technology : Konsep, Prinsip, dan Aplikasi",
           "year": "2025"
         },
         {
@@ -2331,13 +3845,20 @@
         "other": 0,
         "total": 0,
         "list": []
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 6632000,
+        "totalServiceFunding": 1094345,
+        "totalFunding": 7726345,
+        "researchCount": 1,
+        "serviceCount": 1
       }
     },
     {
       "name": "M. Gilvy Langgawan Putra",
       "sintaId": "6201079",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-02T19:45:38.601756",
+      "scrapedAt": "2026-02-03T14:19:40.484847",
       "stats": {
         "articles": 70,
         "citations": 429,
@@ -2393,26 +3914,50 @@
       "research": [
         {
           "title": "MEDIA PEMBELAJARAN DENGAN METODE GAMIFICATION UNTUK PENDIDIKAN FORMAL DAN NON FORMAL DI KALIMANTAN ERA COVID-19",
-          "year": "2021"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN SUMBER DAYA KALIMANTAN (PSDK) )",
+          "grantCategory": "PENELITIAN SUMBER DAYA KALIMANTAN (PSDK",
+          "year": "2021",
+          "fundingAmount": 19900000,
+          "fundingFormatted": "Rp. 19.900.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
           "title": "PEMETAAN DAN VISUALISASI PERMODELAN 3D LINGKUNGAN KAWASAN WISATA BARU HUTAN MERANTI KM.15 SEBAGAI UPAYA PENGEMBANGAN WISATA HUTAN LINDUNG BERBASIS ALAM",
-          "year": "2022"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2022",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMBERDAYAAN MASYARAKAT BARU TENGAH MELALUI BUDIDAYA IKAN LELE DENGAN MENGUNAKAN TEKNIK BUDIKDAMBER",
-          "year": "2021"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2021",
+          "fundingAmount": 5822000,
+          "fundingFormatted": "Rp. 5.822.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [
         {
-          "title": "Pemasaran digital : facebook ads, twitter ads, google ads, and youtube ads",
+          "title": "Media pembelajaran dengan metode gamification untuk meningkatkan motivasi pembelajaran pada perguruan tinggi di masa Covid-19",
           "year": "2020"
         },
         {
-          "title": "Media pembelajaran dengan metode gamification untuk meningkatkan motivasi pembelajaran pada perguruan tinggi di masa Covid-19",
+          "title": "Pemasaran digital : facebook ads, twitter ads, google ads, and youtube ads",
           "year": "2020"
         }
       ],
@@ -2423,11 +3968,11 @@
         "total": 10,
         "list": [
           {
-            "title": "Buku DOKUMEN LAPORAN PENGEMBANGAN APLIKASI SIDERMAN",
+            "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK SISALWA",
             "category": "hakCipta"
           },
           {
-            "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK SISALWA",
+            "title": "Buku DOKUMEN LAPORAN PENGEMBANGAN APLIKASI SIDERMAN",
             "category": "hakCipta"
           },
           {
@@ -2447,11 +3992,11 @@
             "category": "hakCipta"
           },
           {
-            "title": "Buku SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK SIDERMAN",
+            "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK (OO) [SISTEM INFORMASI MANAJEMEN TOKO SEPATU]",
             "category": "hakCipta"
           },
           {
-            "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK (OO) [SISTEM INFORMASI MANAJEMEN TOKO SEPATU]",
+            "title": "Buku SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK SIDERMAN",
             "category": "hakCipta"
           },
           {
@@ -2463,13 +4008,20 @@
             "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 19900000,
+        "totalServiceFunding": 20822000,
+        "totalFunding": 40722000,
+        "researchCount": 1,
+        "serviceCount": 2
       }
     },
     {
       "name": "Agung Prabowo, S.E., M.M.",
       "sintaId": "6803848",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-02T19:45:46.518916",
+      "scrapedAt": "2026-02-03T14:19:43.458472",
       "stats": {
         "articles": 14,
         "citations": 25,
@@ -2519,25 +4071,77 @@
       "research": [
         {
           "title": "EVALUASI TINGKAT PENERIMAAN DAN PENGALAMAN PENGGUNA SISTEM CORETAX PADA PERUSAHAAN WAJIB PAJAK DI INDONESIA",
-          "year": "2025"
+          "leader": "Khairunnisa Rahmah",
+          "members": [
+            "Agung Prabowo",
+            "Deli Yansyah"
+          ],
+          "grantType": "Penelitian Internal ( RDP )",
+          "grantCategory": "RDP",
+          "year": "2025",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PERAN MALL SEBAGAI AGEN KEMAJUAN PRODUK HALAL: STUDI KASUS DI MALL PLAZA BALIKPAPAN",
-          "year": "2024"
+          "leader": "Abdul Mujib Syadzali",
+          "members": [
+            "Muhammad Azka",
+            "Agung Prabowo"
+          ],
+          "grantType": "HIBAH INTERNAL ( RDP )",
+          "grantCategory": "RDP",
+          "year": "2024",
+          "fundingAmount": 20000000,
+          "fundingFormatted": "Rp. 20.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "ANALISIS PREFERENSI MASYARAKAT PADA KOTA BERKONSEP SMART CITY",
-          "year": "2023"
+          "leader": "",
+          "members": [
+            "Muh. Ikhsan Alif S",
+            "Deli Yansyah"
+          ],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2023",
+          "fundingAmount": 6875000,
+          "fundingFormatted": "Rp. 6.875.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
           "title": "PEMBERDAYAAN EKONOMI MASYARAKAT MELALUI PENINGKATAN KUALITAS, AKSES, DAN KEBERSIHAN DI PASAR BANGUN REKSA",
-          "year": "2025"
+          "leader": "",
+          "members": [],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENERAPAN DAN PEMANFAATAN TEKNOLOGI AQUAPONIK BERBASIS INTERNET OF THINGS (IOT) DI MASJID BERKAH BOX",
-          "year": "2024"
+          "leader": "Muh. Ikhsan Alif S",
+          "members": [
+            "Supratiwi Amir",
+            "Agung Prabowo"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 9997000,
+          "fundingFormatted": "Rp. 9.997.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [],
@@ -2556,13 +4160,20 @@
             "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 41875000,
+        "totalServiceFunding": 19997000,
+        "totalFunding": 61872000,
+        "researchCount": 3,
+        "serviceCount": 2
       }
     },
     {
       "name": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
       "sintaId": "6686868",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-02T19:45:54.509212",
+      "scrapedAt": "2026-02-03T14:19:46.422813",
       "stats": {
         "articles": 27,
         "citations": 48,
@@ -2614,14 +4225,14 @@
             "q": ""
           },
           {
-            "title": "A Location Routing Problem with Time Windows Consideration: A Metaheuristics Approach",
-            "category": "scopus",
-            "q": "Q1"
-          },
-          {
             "title": "Analysis of Sustainable Online Fish Auction Services Using Process Chain Network Diagram",
             "category": "scopus",
             "q": "Q3"
+          },
+          {
+            "title": "A Location Routing Problem with Time Windows Consideration: A Metaheuristics Approach",
+            "category": "scopus",
+            "q": "Q1"
           },
           {
             "title": "Risk Mitigation Analysis and Strategy of Product Development Processes in the Textile Industry (Case Study: Hijab Trader at Balikpapan Center)",
@@ -2637,74 +4248,240 @@
       },
       "research": [
         {
+          "title": "PENGEMBANGAN SISTEM PROYEKSI KEBIJAKAN PENGELOLAAN KEUANGAN BADAN LAYANAN UMUM INSTITUT TEKNOLOGI KALIMANTAN",
+          "leader": "Bayu Nur Abdallah",
+          "members": [
+            "Christopher Davito Prabandewa Hertadi",
+            "Riza Hadi Saputra"
+          ],
+          "grantType": "Penelitian Internal ( RKS )",
+          "grantCategory": "RKS",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
           "title": "KEBIJAKAN MANAJEMEN TATA KELOLA LIMBAH DOMESTIK DI KOTA BALIKPAPAN DENGAN METODE SISTEM DINAMIS",
-          "year": "2025"
+          "leader": "Amanda Dwi Wantira",
+          "members": [
+            "Bayu Nur Abdallah",
+            "Mochamad Sulaiman"
+          ],
+          "grantType": "Penelitian Internal ( RPI )",
+          "grantCategory": "RPI",
+          "year": "2025",
+          "fundingAmount": 23000000,
+          "fundingFormatted": "Rp. 23.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "ANALISIS PEMENUHAN KETERSEDIAAN AIR BERSIH DENGAN PEMANFAATAN GREY WATER DAN PENGATURAN PIPA DI BALIKPAPAN SEBAGAI KOTA PENYANGGA IBU KOTA NEGARA NUSANTARA",
-          "year": "2025"
-        },
-        {
-          "title": "PENGEMBANGAN SISTEM PROYEKSI KEBIJAKAN PENGELOLAAN KEUANGAN BADAN LAYANAN UMUM INSTITUT TEKNOLOGI KALIMANTAN",
-          "year": "2025"
-        },
-        {
-          "title": "STRATEGI OPTIMISASI LOKASI STASIUN PENUKARAN BATERAI SEPEDA MOTOR LISTRIK DI DAERAH PENYANGGA IKN BERDASARKAN PENDEKATAN PEMROGRAMAN MATEMATIS",
-          "year": "2024"
+          "leader": "PENILAIAN INTERNAL ( RPI )",
+          "members": [
+            "Bayu Nur Abdallah",
+            "Ahmad Jamil"
+          ],
+          "grantType": "PENILAIAN INTERNAL ( RPI )",
+          "grantCategory": "RPI",
+          "year": "2025",
+          "fundingAmount": 23000000,
+          "fundingFormatted": "Rp. 23.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "SKEMA PEMBIAYAAN UMKM PERTANIAN DI KALIMANTANTIMUR BERBASIS LINGKUNGAN (TAHUN KE-3)",
-          "year": "2024"
+          "leader": "Bayu Nur Abdallah",
+          "members": [
+            "Deli Yansyah"
+          ],
+          "grantType": "HIBAH INTERNAL ( PKSA )",
+          "grantCategory": "PKSA",
+          "year": "2024",
+          "fundingAmount": 30000000,
+          "fundingFormatted": "Rp. 30.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "STRATEGI OPTIMISASI LOKASI STASIUN PENUKARAN BATERAI SEPEDA MOTOR LISTRIK DI DAERAH PENYANGGA IKN BERDASARKAN PENDEKATAN PEMROGRAMAN MATEMATIS",
+          "leader": "Alvin Muhammad 'ainul Yaqin",
+          "members": [
+            "Vridayani Anggi Leksono",
+            "Bayu Nur Abdallah"
+          ],
+          "grantType": "HIBAH INTERNAL ( RPIKN )",
+          "grantCategory": "RPIKN",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMENUHAN KETERSEDIAAN DAGING SAPI DI KOTA BALIKPAPAN UNTUK MENDUKUNG PEMENUHAN KEBUTUHAN IKN DENGAN PENDEKATAN COOPERATIVE GAME THEORY",
-          "year": "2023"
+          "leader": "",
+          "members": [
+            "Bayu Nur Abdallah"
+          ],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2023",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "SKEMA PEMBIAYAAN UMKM PERTANIAN DI KALIMANTAN TIMUR BERBASIS  LINGKUNGAN (ECO-FRIENDLY) (TAHUN KE-2)",
-          "year": "2023"
+          "leader": "Bayu Nur Abdallah",
+          "members": [],
+          "grantType": "HIBAH ITK ( PKSA )",
+          "grantCategory": "PKSA",
+          "year": "2023",
+          "fundingAmount": 30000000,
+          "fundingFormatted": "Rp. 30.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "SKEMA PEMBIAYAAN UMKM BIDANG PANGAN/ PERTANIAN DI KALIMANTAN TIMUR BERBASIS LINGKUNGAN (ECO-FRIENDLY)",
-          "year": "2022"
+          "leader": "Bayu Nur Abdallah",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PKSA )",
+          "grantCategory": "PKSA",
+          "year": "2022",
+          "fundingAmount": 30000000,
+          "fundingFormatted": "Rp. 30.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "MODEL OPTIMASI DISTRIBUSI MULTI-PRODUK MULTI-ESELON MENGGUNAKAN SISTEM DEDICATED WAREHOUSE",
-          "year": "2020"
+          "leader": "Bayu Nur Abdallah",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PDB )",
+          "grantCategory": "PDB",
+          "year": "2020",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "MODEL HEAVY EQUIPMENT LEASING DENGAN MEMPERTIMBANGKAN BIAYA PENALTI SAAT TERJADI FAILURE YANG MELEBIHI TOLERANSI MENGGUNAKAN GAME THEORY",
-          "year": "2019"
+          "leader": "Bayu Nur Abdallah",
+          "members": [],
+          "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PDB )",
+          "grantCategory": "PDB",
+          "year": "2019",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
-          "title": "EDUKASI PPKS DAN PENGEMBANGAN SISTEM INFORMASI PENDATAAN WARGA DI GRAHA POLTEKBA",
-          "year": "2025"
+          "title": "PENGEMBANGAN DAN PELATIHAN SISTEM PENDATAAN DONASI BERBASIS WEB PADA MASJID BERKAH BOX BALIKPAPAN",
+          "leader": "Widya Sartika",
+          "members": [
+            "Bayu Nur Abdallah",
+            "Sasferi Yendra"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
-          "title": "PENGEMBANGAN DAN PELATIHAN SISTEM PENDATAAN DONASI BERBASIS WEB PADA MASJID BERKAH BOX BALIKPAPAN",
-          "year": "2025"
+          "title": "EDUKASI PPKS DAN PENGEMBANGAN SISTEM INFORMASI PENDATAAN WARGA DI GRAHA POLTEKBA",
+          "leader": "",
+          "members": [
+            "Bayu Nur Abdallah"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "TOURISM IN TERITIP – SEBAGAI BENTUK PENINGKATAN BRANDING POTENSI DAERAH KELURAHAN TERITIP KOTA BALIKPAPAN",
-          "year": "2024"
+          "leader": "Irma Fitria",
+          "members": [
+            "Riki Herliansyah",
+            "Bayu Nur Abdallah"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMBERDAYAAN MASYARAKAT MELALUI PROGRAM EDUKASI DAN PEMANFAATAN TEKNOLOGI DI YAYASAN BERKAH BOX BALIKPAPAN",
-          "year": "2024"
+          "leader": "Bayu Nur Abdallah",
+          "members": [
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "IMPLEMENTASI KURIKULUM PROGRAM PEMBINAAN STARTUP DENGAN METODE 4 FASE UNTUK PEMBERDAYAAN KEWIRAUSAHAAN DI KAMPUNG TIMUR KOTA BALIKPAPAN",
-          "year": "2023"
+          "leader": "Bayu Nur Abdallah",
+          "members": [
+            "Widya Sartika",
+            "Deli Yansyah",
+            "Irma Fitria"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2023",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMBERDAYAAN MASYARAKAT PESISIR MELALUI PRODUK INOVATIF OLAHAN BUAH BROWNIES MANGROVE BERBASIS EKOWISATA NEW NORMAL DI KELURAHAN MARGOMULYO KOTA BALIKPAPAN",
-          "year": "2021"
+          "leader": "Bayu Nur Abdallah",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2021",
+          "fundingAmount": 2075000,
+          "fundingFormatted": "Rp. 2.075.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "LEAN SIX SIGMA JOURNEY PADA INDUSTRI OLEH-OLEH MAKANAN KHAS DAERAH",
-          "year": "2020"
+          "leader": "Bayu Nur Abdallah MANDIRI ( MANDIRI )",
+          "members": [],
+          "grantType": "MANDIRI ( MANDIRI )",
+          "grantCategory": "MANDIRI",
+          "year": "2020",
+          "fundingAmount": 100000,
+          "fundingFormatted": "Rp. 100.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [
@@ -2724,10 +4501,6 @@
         "total": 9,
         "list": [
           {
-            "title": "Pencegahan & Penanganan Kekerasan Seksual pada Anak Melalui Media Digital",
-            "category": "hakCipta"
-          },
-          {
             "title": "Model Sistem Dinamis Untuk Peningkatan Ketersediaan Air Bersih dengan Menggunakan Grey Water di Kota Balikpapan",
             "category": "hakCipta"
           },
@@ -2736,7 +4509,7 @@
             "category": "hakCipta"
           },
           {
-            "title": "Video Dokumenter Pemberdayaan Masyarakat Melalui Program Edukasi Dan Pemanfaatan Teknologi",
+            "title": "Pencegahan & Penanganan Kekerasan Seksual pada Anak Melalui Media Digital",
             "category": "hakCipta"
           },
           {
@@ -2748,25 +4521,36 @@
             "category": "hakCipta"
           },
           {
-            "title": "Program Website CLevelIndonesia.com",
+            "title": "Video Dokumenter Pemberdayaan Masyarakat Melalui Program Edukasi Dan Pemanfaatan Teknologi",
             "category": "hakCipta"
           },
           {
-            "title": "Iklan Profil Program Studi Bisnis Digital ITK",
+            "title": "Program Website CLevelIndonesia.com",
             "category": "hakCipta"
           },
           {
             "title": "Kid's Multimedia Development Di Rumah Singgah Kopaja Balikpapan",
             "category": "hakCipta"
+          },
+          {
+            "title": "Iklan Profil Program Studi Bisnis Digital ITK",
+            "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 223000000,
+        "totalServiceFunding": 52175000,
+        "totalFunding": 275175000,
+        "researchCount": 10,
+        "serviceCount": 7
       }
     },
     {
       "name": "Deli Yansyah, S.E., M.Acc., Ak.",
       "sintaId": "6807445",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-02T19:46:02.567461",
+      "scrapedAt": "2026-02-03T14:19:49.560076",
       "stats": {
         "articles": 8,
         "citations": 10,
@@ -2816,33 +4600,108 @@
       "research": [
         {
           "title": "EVALUASI TINGKAT PENERIMAAN DAN PENGALAMAN PENGGUNA SISTEM CORETAX PADA PERUSAHAAN WAJIB PAJAK DI INDONESIA",
-          "year": "2025"
+          "leader": "Khairunnisa Rahmah",
+          "members": [
+            "Agung Prabowo",
+            "Deli Yansyah"
+          ],
+          "grantType": "Penelitian Internal ( RDP )",
+          "grantCategory": "RDP",
+          "year": "2025",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "DESAIN DAN IMPLEMENTASI SMART AUTO FEEDER FISH  BERDASARKAN UMUR DAN UKURAN IKAN DENGAN METODE  FUZZY LOGIC",
-          "year": "2025"
+          "leader": "Kharis Sugiarto",
+          "members": [
+            "Gad Gunawan",
+            "Deli Yansyah"
+          ],
+          "grantType": "Penelitian Internal ( RI )",
+          "grantCategory": "RI",
+          "year": "2025",
+          "fundingAmount": 14670000,
+          "fundingFormatted": "Rp. 14.670.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "SKEMA PEMBIAYAAN UMKM PERTANIAN DI KALIMANTANTIMUR BERBASIS LINGKUNGAN (TAHUN KE-3)",
-          "year": "2024"
+          "leader": "Bayu Nur Abdallah",
+          "members": [
+            "Deli Yansyah"
+          ],
+          "grantType": "HIBAH INTERNAL ( PKSA )",
+          "grantCategory": "PKSA",
+          "year": "2024",
+          "fundingAmount": 30000000,
+          "fundingFormatted": "Rp. 30.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "ANALISIS PREFERENSI MASYARAKAT PADA KOTA BERKONSEP SMART CITY",
-          "year": "2023"
+          "leader": "",
+          "members": [
+            "Muh. Ikhsan Alif S",
+            "Deli Yansyah"
+          ],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2023",
+          "fundingAmount": 6875000,
+          "fundingFormatted": "Rp. 6.875.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
           "title": "DIGITALISASI LAYANAN ADMINISTRASI RT MELALUI PENGEMBANGAN WEBSITE UNTUK PENGELOLAAN DATA WARGA",
-          "year": "2025"
+          "leader": "Deli Yansyah",
+          "members": [
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "REDESIGN PACKAGING PRODUK DAN PELATIHAN DESIGN SEBAGAI UPAYA MENINGKATKAN PROMOSI KAMPUNG WISATA KANG BEJO",
-          "year": "2024"
+          "leader": "Luh Made Wisnu Satyaninggrat",
+          "members": [
+            "Deli Yansyah"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "IMPLEMENTASI KURIKULUM PROGRAM PEMBINAAN STARTUP DENGAN METODE 4 FASE UNTUK PEMBERDAYAAN KEWIRAUSAHAAN DI KAMPUNG TIMUR KOTA BALIKPAPAN",
-          "year": "2023"
+          "leader": "Bayu Nur Abdallah",
+          "members": [
+            "Widya Sartika",
+            "Deli Yansyah",
+            "Irma Fitria"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2023",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [],
@@ -2853,21 +4712,28 @@
         "total": 2,
         "list": [
           {
-            "title": "Video Profil Program Studi Bisnis Digital 2024",
+            "title": "Video Kurikulum dan Mata Kuliah Program Studi Bisnis Digital 2024",
             "category": "hakCipta"
           },
           {
-            "title": "Video Kurikulum dan Mata Kuliah Program Studi Bisnis Digital 2024",
+            "title": "Video Profil Program Studi Bisnis Digital 2024",
             "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 66545000,
+        "totalServiceFunding": 30000000,
+        "totalFunding": 96545000,
+        "researchCount": 4,
+        "serviceCount": 3
       }
     },
     {
       "name": "Eka Krisna Santoso, S.Si., MBA.",
       "sintaId": "6788207",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-02T19:46:11.448790",
+      "scrapedAt": "2026-02-03T14:19:52.982153",
       "stats": {
         "articles": 15,
         "citations": 13,
@@ -2917,16 +4783,47 @@
       "research": [],
       "services": [
         {
-          "title": "DIGITALISASI PROMOSI CELOSIA GARDEN PARK BALIKPAPAN  MELALUI PENGEMBANGAN WEBSITE SEBAGAI PLATFORM INFORMASI UTAMA",
-          "year": "2025"
+          "title": "PENINGKATAN FASILITAS WISATA DENGAN PEMANFAATAN PANEL SURYA DALAM PENERANGAN AREA FOTO DI TANJUNG GADING KM.12 BALIKPAPAN",
+          "leader": "Nurul Maqfirah Rauf",
+          "members": [
+            "Isti Kamila",
+            "Eka Krisna Santoso"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
-          "title": "PENINGKATAN FASILITAS WISATA DENGAN PEMANFAATAN PANEL SURYA DALAM PENERANGAN AREA FOTO DI TANJUNG GADING KM.12 BALIKPAPAN",
-          "year": "2025"
+          "title": "DIGITALISASI PROMOSI CELOSIA GARDEN PARK BALIKPAPAN  MELALUI PENGEMBANGAN WEBSITE SEBAGAI PLATFORM INFORMASI UTAMA",
+          "leader": "Muhammad Azka",
+          "members": [
+            "Eka Krisna Santoso"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "RANCANGAN DAN PENGEMBANGAN WEBSITE SERTA PROGRAM EDUKASI RT 34 KELURAHAN KARANG JOANG",
-          "year": "2024"
+          "leader": "Muhammad Azka",
+          "members": [
+            "Eka Krisna Santoso"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [
@@ -2945,13 +4842,20 @@
         "other": 0,
         "total": 0,
         "list": []
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 0,
+        "totalServiceFunding": 30000000,
+        "totalFunding": 30000000,
+        "researchCount": 0,
+        "serviceCount": 3
       }
     },
     {
       "name": "Fegy Sukris Sri Andriany, M.Ak.",
       "sintaId": "6957012",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-02T19:46:20.942832",
+      "scrapedAt": "2026-02-03T14:19:56.157261",
       "stats": {
         "articles": 0,
         "citations": 0,
@@ -3012,13 +4916,20 @@
         "other": 0,
         "total": 0,
         "list": []
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 0,
+        "totalServiceFunding": 0,
+        "totalFunding": 0,
+        "researchCount": 0,
+        "serviceCount": 0
       }
     },
     {
       "name": "Ir. Riovan Styx Roring, S.T., M.Kom.",
       "sintaId": "6958596",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-02T19:46:28.917318",
+      "scrapedAt": "2026-02-03T14:19:59.231440",
       "stats": {
         "articles": 17,
         "citations": 68,
@@ -3124,21 +5035,63 @@
       "research": [
         {
           "title": "PENGEMBANGAN ROLE-PLAYING GAME (RPG) BERBASIS ANDROID SEBAGAI ALAT BANTU AJAR PELAJARAN SEJARAH KELAS XI SMA SEDERAJAT",
-          "year": "2019"
+          "leader": "Riovan Styx Roring",
+          "members": [
+            "Mundzir"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2019",
+          "fundingAmount": 15795000,
+          "fundingFormatted": "Rp. 15.795.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         },
         {
           "title": "IMPLEMENTASI DAN EVALUASI ALGORITMA C5.0 PADA KLASIFIKASI EMOSI TEKS BERITA BERBAHASA INDONESIA.",
-          "year": "2019"
+          "leader": "M. Nurfalah Setiawan",
+          "members": [
+            "Riovan Styx Roring"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2019",
+          "fundingAmount": 14795000,
+          "fundingFormatted": "Rp. 14.795.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         },
         {
           "title": "IMPLEMENTASI SISTEM BIMBINGAN PENJUALAN  BERBASIS PREDICTIVE ANALYTICS UNTUK USAHA MIKRO DAN KECIL \r\n(Studi Kasus: Pasar Tradisional Klandasan Balikpapan)",
-          "year": "2018"
+          "leader": "Riovan Styx Roring",
+          "members": [
+            "M. Nurfalah Setiawan"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2018",
+          "fundingAmount": 18217000,
+          "fundingFormatted": "Rp. 18.217.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         }
       ],
       "services": [
         {
           "title": "Inkubasi Global Technopreneurship Berbasis Teknologi Menuju Revolusi Society 5.0 Universitas Mulia",
-          "year": "2020"
+          "leader": "Mundzir",
+          "members": [
+            "Riovan Styx Roring",
+            "Fx Nanang Sujatmiko",
+            "Vidy"
+          ],
+          "grantType": "Pengabdian Kepada Masyarakat Kompetitif Nasional ( PPK )",
+          "grantCategory": "PPK",
+          "year": "2020",
+          "fundingAmount": 149800000,
+          "fundingFormatted": "Rp. 149.800.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         }
       ],
       "books": [
@@ -3182,13 +5135,20 @@
             "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 48807000,
+        "totalServiceFunding": 149800000,
+        "totalFunding": 198607000,
+        "researchCount": 3,
+        "serviceCount": 1
       }
     },
     {
       "name": "Khairunnisa Rahmah, S.E., M.M., CDMS.",
       "sintaId": "6798949",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-02T19:46:36.887866",
+      "scrapedAt": "2026-02-03T14:20:02.902984",
       "stats": {
         "articles": 23,
         "citations": 189,
@@ -3238,46 +5198,132 @@
       "research": [
         {
           "title": "EVALUASI TINGKAT PENERIMAAN DAN PENGALAMAN PENGGUNA SISTEM CORETAX PADA PERUSAHAAN WAJIB PAJAK DI INDONESIA",
-          "year": "2025"
+          "leader": "Khairunnisa Rahmah",
+          "members": [
+            "Agung Prabowo",
+            "Deli Yansyah"
+          ],
+          "grantType": "Penelitian Internal ( RDP )",
+          "grantCategory": "RDP",
+          "year": "2025",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PROTOTYPE SISTEM INFORMASI MANAJEMEN STOK GUDANG PADA INDUSTRI MIKRO KECIL DI KOTA PENYANGGA IKN",
-          "year": "2024"
+          "leader": "Luh Made Wisnu Satyaninggrat",
+          "members": [
+            "Prasis Damai Nh",
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "HIBAH INTERNAL ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PERANCANGAN BASIS DATA WISATA KULINER SEBAGAI SARANA PROMOSI DAN PEMASARAN DESTINASI KULINER BERBASIS DIGITAL DI KOTA PENYANGGA IBU KOTA NEGARA (IKN)",
-          "year": "2023"
+          "leader": "Luh Made Wisnu Satyaninggrat",
+          "members": [
+            "Prasis Damai Nh",
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2023",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGARUH LITERASI DIGITAL DAN PENGALAMAN DIGITAL TERHADAP PERILAKU DIGITAL UMKM DI KOTA PENYANGGA IKN",
-          "year": "2023"
+          "leader": "",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2023",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Perancangan Desain UI/UX Prototype Aplikasi Wisata Kuliner sebagai Media Promosi dan Pemasaran Digital UMKM di Kota Penyangga IKN dengan menggunakan Pendekatan User Centered Design",
-          "year": "2023"
+          "leader": "Luh Made Wisnu Satyaninggrat",
+          "members": [
+            "Prasis Damai Nursyam Hamijaya",
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2023",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         }
       ],
       "services": [
         {
           "title": "DIGITALISASI LAYANAN ADMINISTRASI RT MELALUI PENGEMBANGAN WEBSITE UNTUK PENGELOLAAN DATA WARGA",
-          "year": "2025"
+          "leader": "Deli Yansyah",
+          "members": [
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMBERDAYAAN MASYARAKAT MELALUI PROGRAM EDUKASI DAN PEMANFAATAN TEKNOLOGI DI YAYASAN BERKAH BOX BALIKPAPAN",
-          "year": "2024"
+          "leader": "Bayu Nur Abdallah",
+          "members": [
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PERKUAT INDUSTRI MIKRO KECIL MELALUI PENDAMPINGAN PROSES BISNIS: KOLABORASI PENGABDIAN MASYARAKAT DENGAN KOPERASI SEBAGAI MITRA UTAMA",
-          "year": "2024"
+          "leader": "",
+          "members": [
+            "Khairunnisa Rahmah",
+            "Luh Made Wisnu Satyaninggrat"
+          ],
+          "grantType": "HIBAH INTERNAL ( PPK )",
+          "grantCategory": "PPK",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [
         {
-          "title": "Pengantar Bisnis Digital",
+          "title": "MSDM: Pendekatan Strategis dan Dinamis",
           "year": "2025"
         },
         {
-          "title": "MSDM: Pendekatan Strategis dan Dinamis",
+          "title": "Pengantar Bisnis Digital",
           "year": "2025"
         }
       ],
@@ -3288,10 +5334,6 @@
         "total": 9,
         "list": [
           {
-            "title": "Video Dokumenter Kepada Pengabdian Masyarakat di RT36 kel.Kec. Kaltim.",
-            "category": "hakCipta"
-          },
-          {
             "title": "Manajemen Sumber Daya Manusia: Pendekatan, Strategis dan Dimanis",
             "category": "hakCipta"
           },
@@ -3300,11 +5342,7 @@
             "category": "hakCipta"
           },
           {
-            "title": "Video Profil Program Studi Bisnis Digital 2024",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Website Yayasan Berkah-Box Dalam Pemberdayaan Masyarakat Melalui Pemanfaatan Teknologi",
+            "title": "Video Dokumenter Kepada Pengabdian Masyarakat di RT36 kel.Kec. Kaltim.",
             "category": "hakCipta"
           },
           {
@@ -3322,15 +5360,30 @@
           {
             "title": "Video Dokumenter Pemberdayaan Masyarakat Melalui Program Edukasi Dan Pemanfaatan Teknologi",
             "category": "hakCipta"
+          },
+          {
+            "title": "Video Profil Program Studi Bisnis Digital 2024",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Website Yayasan Berkah-Box Dalam Pemberdayaan Masyarakat Melalui Pemanfaatan Teknologi",
+            "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 80000000,
+        "totalServiceFunding": 30000000,
+        "totalFunding": 110000000,
+        "researchCount": 5,
+        "serviceCount": 3
       }
     },
     {
       "name": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
       "sintaId": "6793011",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-02T19:46:44.734449",
+      "scrapedAt": "2026-02-03T14:20:06.028291",
       "stats": {
         "articles": 26,
         "citations": 88,
@@ -3435,62 +5488,214 @@
       },
       "research": [
         {
-          "title": "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
-          "year": "2025"
-        },
-        {
           "title": "RANCANG BANGUN SISTEM STOK GUDANG BERBASIS WEB UNTUK INDUSTRI MIKRO DAN KECIL DI KOTA PENYANGGA IKN",
-          "year": "2025"
+          "leader": "PENELITIAN INTERNAL ( RI )",
+          "members": [
+            "Prasis Damai Nh",
+            "Maryo Inri Pratama"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RI )",
+          "grantCategory": "RI",
+          "year": "2025",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "DAMPAK KEMAMPUAN MANAJEMEN PROSES BISNIS DAN ADOPSI KECERDASAN BUATAN  TERHADAP KINERJA PROSES: STUDI KASUS UKM DI KAWASAN IKN",
-          "year": "2025"
+          "leader": "PENELITIAN INTERNAL ( RPI )",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Muh. Ikhsan Alif S"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RPI )",
+          "grantCategory": "RPI",
+          "year": "2025",
+          "fundingAmount": 23000000,
+          "fundingFormatted": "Rp. 23.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
+          "leader": "PENELITIAN INTERNAL ( RSS )",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Prasis Damai Nh"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RSS )",
+          "grantCategory": "RSS",
+          "year": "2025",
+          "fundingAmount": 20000000,
+          "fundingFormatted": "Rp. 20.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "ANALISIS PREFERENSI PENDUDUK DALAM MEMILIH HUNIAN DI WILAYAH KECAMATAN BALIKPAPAN UTARA",
-          "year": "2024"
+          "leader": "",
+          "members": [
+            "Rahmat Aris Pratomo",
+            "Luh Made Wisnu Satyaninggrat"
+          ],
+          "grantType": "HIBAH INTERNAL ( RDP )",
+          "grantCategory": "RDP",
+          "year": "2024",
+          "fundingAmount": 20000000,
+          "fundingFormatted": "Rp. 20.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PROTOTYPE SISTEM INFORMASI MANAJEMEN STOK GUDANG PADA INDUSTRI MIKRO KECIL DI KOTA PENYANGGA IKN",
-          "year": "2024"
+          "leader": "Luh Made Wisnu Satyaninggrat",
+          "members": [
+            "Prasis Damai Nh",
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "HIBAH INTERNAL ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "KAJIAN GARIS PANTAI SECARA TEMPORAR DI WILAYAH PESISIR IKN SEBAGAI PERSIAPAN PEMBAGUNAN INFRASTRUKTUR",
-          "year": "2024"
+          "leader": "Muhammad Khaisar Wirawan",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Luh Putri Adnyani"
+          ],
+          "grantType": "HIBAH INTERNAL ( RPIKN )",
+          "grantCategory": "RPIKN",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PERANCANGAN BASIS DATA WISATA KULINER SEBAGAI SARANA PROMOSI DAN PEMASARAN DESTINASI KULINER BERBASIS DIGITAL DI KOTA PENYANGGA IBU KOTA NEGARA (IKN)",
-          "year": "2023"
+          "leader": "Luh Made Wisnu Satyaninggrat",
+          "members": [
+            "Prasis Damai Nh",
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2023",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGARUH LITERASI DIGITAL DAN PENGALAMAN DIGITAL TERHADAP PERILAKU DIGITAL UMKM DI KOTA PENYANGGA IKN",
-          "year": "2023"
+          "leader": "",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2023",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Perancangan Desain UI/UX Prototype Aplikasi Wisata Kuliner sebagai Media Promosi dan Pemasaran Digital UMKM di Kota Penyangga IKN dengan menggunakan Pendekatan User Centered Design",
-          "year": "2023"
+          "leader": "Luh Made Wisnu Satyaninggrat",
+          "members": [
+            "Prasis Damai Nursyam Hamijaya",
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2023",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         }
       ],
       "services": [
         {
           "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS",
-          "year": "2025"
+          "leader": "INSTITUSI INTERNAL ( PMMD )",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Muchammad Chandra Cahyo Utomo"
+          ],
+          "grantType": "INSTITUSI INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PELATIHAN OPTIMALISASI PEMASARAN DIGITAL PADA BATIK SHAHO DAN KOMUNITAS BATIK TIGA ZAMAN BALIKPAPAN",
-          "year": "2025"
+          "leader": "Luh Made Wisnu Satyaninggrat",
+          "members": [
+            "I Putu Deny Arthawan Sugih Prabowo"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
-          "year": "2025"
+          "leader": "",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Muh. Ikhsan Alif"
+          ],
+          "grantType": "Pengabdian Kepada Masyarakat Kompetitif Nasional ( PKM )",
+          "grantCategory": "PKM",
+          "year": "2025",
+          "fundingAmount": 47993000,
+          "fundingFormatted": "Rp. 47.993.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         },
         {
           "title": "REDESIGN PACKAGING PRODUK DAN PELATIHAN DESIGN SEBAGAI UPAYA MENINGKATKAN PROMOSI KAMPUNG WISATA KANG BEJO",
-          "year": "2024"
+          "leader": "Luh Made Wisnu Satyaninggrat",
+          "members": [
+            "Deli Yansyah"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PERKUAT INDUSTRI MIKRO KECIL MELALUI PENDAMPINGAN PROSES BISNIS: KOLABORASI PENGABDIAN MASYARAKAT DENGAN KOPERASI SEBAGAI MITRA UTAMA",
-          "year": "2024"
+          "leader": "",
+          "members": [
+            "Khairunnisa Rahmah",
+            "Luh Made Wisnu Satyaninggrat"
+          ],
+          "grantType": "HIBAH INTERNAL ( PPK )",
+          "grantCategory": "PPK",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [
@@ -3510,6 +5715,14 @@
         "total": 7,
         "list": [
           {
+            "title": "Film Dokumenter: Pemberdayaan Komunitas Bakoel Kembang Ruhui Rahayu melalui Inovasi Produk, Pemasaran Digital dan Manajemen Stok",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Pengantar Bisnis Digital",
+            "category": "hakCipta"
+          },
+          {
             "title": "Poster Kegiatan dan Capaian Pemberdayaan Kemitraan PAI  Balikpapan",
             "category": "hakCipta"
           },
@@ -3526,25 +5739,24 @@
             "category": "hakCipta"
           },
           {
-            "title": "Film Dokumenter: Pemberdayaan Komunitas Bakoel Kembang Ruhui Rahayu melalui Inovasi Produk, Pemasaran Digital dan Manajemen Stok",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Pengantar Bisnis Digital",
-            "category": "hakCipta"
-          },
-          {
             "title": "Video Dokumenter Program Pendampingan Proses Bisnis Dan Uji  Prototype Aplikasi PRIMKOPTI Balikpapan",
             "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 178000000,
+        "totalServiceFunding": 87993000,
+        "totalFunding": 265993000,
+        "researchCount": 9,
+        "serviceCount": 5
       }
     },
     {
       "name": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
       "sintaId": "6780638",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-02T19:46:52.635438",
+      "scrapedAt": "2026-02-03T14:20:09.078620",
       "stats": {
         "articles": 20,
         "citations": 51,
@@ -3645,53 +5857,182 @@
       "research": [
         {
           "title": "DAMPAK KEMAMPUAN MANAJEMEN PROSES BISNIS DAN ADOPSI KECERDASAN BUATAN  TERHADAP KINERJA PROSES: STUDI KASUS UKM DI KAWASAN IKN",
-          "year": "2025"
+          "leader": "PENELITIAN INTERNAL ( RPI )",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Muh. Ikhsan Alif S"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RPI )",
+          "grantCategory": "RPI",
+          "year": "2025",
+          "fundingAmount": 23000000,
+          "fundingFormatted": "Rp. 23.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
-          "year": "2025"
+          "leader": "PENELITIAN INTERNAL ( RSS )",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Prasis Damai Nh"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RSS )",
+          "grantCategory": "RSS",
+          "year": "2025",
+          "fundingAmount": 20000000,
+          "fundingFormatted": "Rp. 20.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Peran isu privasi terhadap efektivitas pemanfaatan Artificial Intelligence di Social Commerce: Perspektif Fungsional dan Sosial Emosional",
-          "year": "2025"
+          "leader": "Angga Febrian",
+          "members": [
+            "Yuniarti Fihartini",
+            "Roslina",
+            "Muh. Ikhsan Alif"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PFR )",
+          "grantCategory": "PFR",
+          "year": "2025",
+          "fundingAmount": 95070000,
+          "fundingFormatted": "Rp. 95.070.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         },
         {
           "title": "PERANCANGAN DECISION SUPPORT SYSTEM BERBASIS WEB UNTUK PEMILIHAN PRODUK UMKM LAYAK EKSPORT KERJASAMA INKUBATOR BISNIS DAN TEKNOLOGI ITK DAN KOMUNITAS PENGUSAHA MUSLIM INDONESIA (KPMI)",
-          "year": "2025"
+          "leader": "PENELITIAN INTERNAL ( RKDN )",
+          "members": [
+            "Muh. Ikhsan Alif S",
+            "Anggela"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2025",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "ANALISIS PREFERENSI MASYARAKAT PADA KOTA BERKONSEP SMART CITY",
-          "year": "2023"
+          "leader": "",
+          "members": [
+            "Muh. Ikhsan Alif S",
+            "Deli Yansyah"
+          ],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2023",
+          "fundingAmount": 6875000,
+          "fundingFormatted": "Rp. 6.875.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
-          "title": "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
-          "year": "2025"
-        },
-        {
-          "title": "OPTIMALISASI TATA KELOLA DAN FASILITAS WISATA BAMBOE WANADESA KOTA BALIKPAPAN",
-          "year": "2025"
-        },
-        {
           "title": "PENINGKATAN KEMANDIRIAN EKONOMI PERKUMPULAN PENYANDANG DISABILITAS INDONESIA (PPDI) BALIKPAPAN MELALUI PENGUATAN PEMASARAN DIGITAL DAN PEMBERDAYAAN LEGALITAS PRODUK",
-          "year": "2025"
+          "leader": "Muh. Ikhsan Alif S",
+          "members": [
+            "Widya Sartika",
+            "Arif Wicaksono Septyanto"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Peningkatan Kapasitas Produksi dan Daya Saing Kelompok Usaha Bersama melalui Pelatihan Teknologi Sablon dan Pemasaran Digital di Karang Joang Balikpapan Utara",
-          "year": "2025"
+          "leader": "Supratiwi Amir",
+          "members": [
+            "Sasferi Yendra",
+            "Muh. Ikhsan Alif"
+          ],
+          "grantType": "Pengabdian Kepada Masyarakat Kompetitif Nasional ( PKM )",
+          "grantCategory": "PKM",
+          "year": "2025",
+          "fundingAmount": 38904000,
+          "fundingFormatted": "Rp. 38.904.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
+        },
+        {
+          "title": "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
+          "leader": "",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Muh. Ikhsan Alif"
+          ],
+          "grantType": "Pengabdian Kepada Masyarakat Kompetitif Nasional ( PKM )",
+          "grantCategory": "PKM",
+          "year": "2025",
+          "fundingAmount": 47993000,
+          "fundingFormatted": "Rp. 47.993.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
+        },
+        {
+          "title": "OPTIMALISASI TATA KELOLA DAN FASILITAS WISATA BAMBOE WANADESA KOTA BALIKPAPAN",
+          "leader": "Supratiwi Amir",
+          "members": [
+            "Faisal Syamsuddin",
+            "Muh. Ikhsan Alif S"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENERAPAN DAN PEMANFAATAN TEKNOLOGI AQUAPONIK BERBASIS INTERNET OF THINGS (IOT) DI MASJID BERKAH BOX",
-          "year": "2024"
+          "leader": "Muh. Ikhsan Alif S",
+          "members": [
+            "Supratiwi Amir",
+            "Agung Prabowo"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 9997000,
+          "fundingFormatted": "Rp. 9.997.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PENGEMBANGAN SUMBER DAYA SINGKONG DI KAMPUNG BANYUMAS RT 32 KARANG JOANG KECAMATAN BALIKPAPAN UTARA",
-          "year": "2024"
+          "leader": "Supratiwi Amir",
+          "members": [
+            "Muh. Ikhsan Alif S"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PEMBERDAYAAN URBAN FARMING DAN PENGELOLAAN SAMPAH MENJADI KOMPOSDI KELURAHAN GUNUNG SAMARINDA BARU, RT 9 PERUMAHAN TAMAN SARI BUKIT",
-          "year": "2022"
+          "leader": "Muh. Ikhsan Alif S",
+          "members": [],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2022",
+          "fundingAmount": 7850000,
+          "fundingFormatted": "Rp. 7.850.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [
@@ -3711,26 +6052,6 @@
         "total": 10,
         "list": [
           {
-            "title": "Logo Inkubator Bisnis Teknologi ITK",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Pengembangan Website Inkubasi Bisnis Menggunakan Metode Personal Extreme Programming (PXP)",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Film Dokumenter: Pemberdayaan Komunitas Bakoel Kembang Ruhui Rahayu melalui Inovasi Produk, Pemasaran Digital dan Manajemen Stok",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Website Decision Support System untuk Pemilihan Produk UMKM Layak Ekspor",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Brand Guidelines IBT ITK",
-            "category": "hakCipta"
-          },
-          {
             "title": "Alat Peraga Panduan Penggunaan QR Code Identitas Anggrek",
             "category": "hakCipta"
           },
@@ -3747,17 +6068,44 @@
             "category": "hakCipta"
           },
           {
-            "title": "Program Komputer Wisata Bamboe Wanadesa",
+            "title": "Logo Inkubator Bisnis Teknologi ITK",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Pengembangan Website Inkubasi Bisnis Menggunakan Metode Personal Extreme Programming (PXP)",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Film Dokumenter: Pemberdayaan Komunitas Bakoel Kembang Ruhui Rahayu melalui Inovasi Produk, Pemasaran Digital dan Manajemen Stok",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Brand Guidelines IBT ITK",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Website Decision Support System untuk Pemilihan Produk UMKM Layak Ekspor",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Data Dan Statistik: Pemilihan, Pengolahan, Proses Analisa Hingga Visualisasi Data Menggunakan Microsoft Excel",
             "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 169945000,
+        "totalServiceFunding": 134744000,
+        "totalFunding": 304689000,
+        "researchCount": 5,
+        "serviceCount": 7
       }
     },
     {
       "name": "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
       "sintaId": "6790854",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-02T19:47:00.748367",
+      "scrapedAt": "2026-02-03T14:20:12.044987",
       "stats": {
         "articles": 25,
         "citations": 84,
@@ -3857,55 +6205,164 @@
       },
       "research": [
         {
-          "title": "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
-          "year": "2025"
-        },
-        {
           "title": "RANCANG BANGUN SISTEM STOK GUDANG BERBASIS WEB UNTUK INDUSTRI MIKRO DAN KECIL DI KOTA PENYANGGA IKN",
-          "year": "2025"
+          "leader": "PENELITIAN INTERNAL ( RI )",
+          "members": [
+            "Prasis Damai Nh",
+            "Maryo Inri Pratama"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RI )",
+          "grantCategory": "RI",
+          "year": "2025",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "DAMPAK KEMAMPUAN MANAJEMEN PROSES BISNIS DAN ADOPSI KECERDASAN BUATAN  TERHADAP KINERJA PROSES: STUDI KASUS UKM DI KAWASAN IKN",
-          "year": "2025"
+          "leader": "PENELITIAN INTERNAL ( RPI )",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Muh. Ikhsan Alif S"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RPI )",
+          "grantCategory": "RPI",
+          "year": "2025",
+          "fundingAmount": 23000000,
+          "fundingFormatted": "Rp. 23.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
+          "leader": "PENELITIAN INTERNAL ( RSS )",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Prasis Damai Nh"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RSS )",
+          "grantCategory": "RSS",
+          "year": "2025",
+          "fundingAmount": 20000000,
+          "fundingFormatted": "Rp. 20.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PROTOTYPE SISTEM INFORMASI MANAJEMEN STOK GUDANG PADA INDUSTRI MIKRO KECIL DI KOTA PENYANGGA IKN",
-          "year": "2024"
-        },
-        {
-          "title": "PERANCANGAN BASIS DATA WISATA KULINER SEBAGAI SARANA PROMOSI DAN PEMASARAN DESTINASI KULINER BERBASIS DIGITAL DI KOTA PENYANGGA IBU KOTA NEGARA (IKN)",
-          "year": "2023"
-        },
-        {
-          "title": "PENGARUH LITERASI DIGITAL DAN PENGALAMAN DIGITAL TERHADAP PERILAKU DIGITAL UMKM DI KOTA PENYANGGA IKN",
-          "year": "2023"
+          "leader": "Luh Made Wisnu Satyaninggrat",
+          "members": [
+            "Prasis Damai Nh",
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "HIBAH INTERNAL ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Perancangan Desain UI/UX Prototype Aplikasi Wisata Kuliner sebagai Media Promosi dan Pemasaran Digital UMKM di Kota Penyangga IKN dengan menggunakan Pendekatan User Centered Design",
-          "year": "2023"
+          "leader": "Luh Made Wisnu Satyaninggrat",
+          "members": [
+            "Prasis Damai Nursyam Hamijaya",
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2023",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
+        },
+        {
+          "title": "PERANCANGAN BASIS DATA WISATA KULINER SEBAGAI SARANA PROMOSI DAN PEMASARAN DESTINASI KULINER BERBASIS DIGITAL DI KOTA PENYANGGA IBU KOTA NEGARA (IKN)",
+          "leader": "Luh Made Wisnu Satyaninggrat",
+          "members": [
+            "Prasis Damai Nh",
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2023",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "PENGARUH LITERASI DIGITAL DAN PENGALAMAN DIGITAL TERHADAP PERILAKU DIGITAL UMKM DI KOTA PENYANGGA IKN",
+          "leader": "",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Khairunnisa Rahmah"
+          ],
+          "grantType": "HIBAH ITK ( PDM )",
+          "grantCategory": "PDM",
+          "year": "2023",
+          "fundingAmount": 15000000,
+          "fundingFormatted": "Rp. 15.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "services": [
         {
-          "title": "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
-          "year": "2025"
+          "title": "EDUKASI PPKS DAN PENGEMBANGAN SISTEM INFORMASI PENDATAAN WARGA DI GRAHA POLTEKBA",
+          "leader": "",
+          "members": [
+            "Bayu Nur Abdallah"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
-          "title": "EDUKASI PPKS DAN PENGEMBANGAN SISTEM INFORMASI PENDATAAN WARGA DI GRAHA POLTEKBA",
-          "year": "2025"
+          "title": "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
+          "leader": "",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Muh. Ikhsan Alif"
+          ],
+          "grantType": "Pengabdian Kepada Masyarakat Kompetitif Nasional ( PKM )",
+          "grantCategory": "PKM",
+          "year": "2025",
+          "fundingAmount": 47993000,
+          "fundingFormatted": "Rp. 47.993.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
         },
         {
           "title": "PERKUAT INDUSTRI MIKRO KECIL MELALUI PENDAMPINGAN PROSES BISNIS: KOLABORASI PENGABDIAN MASYARAKAT DENGAN KOPERASI SEBAGAI MITRA UTAMA",
-          "year": "2024"
+          "leader": "",
+          "members": [
+            "Khairunnisa Rahmah",
+            "Luh Made Wisnu Satyaninggrat"
+          ],
+          "grantType": "HIBAH INTERNAL ( PPK )",
+          "grantCategory": "PPK",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         }
       ],
       "books": [
         {
-          "title": "Ekonomi Lingkungan Berkelanjutan",
+          "title": "Pengantar Bisnis Digital",
           "year": "2025"
         },
         {
-          "title": "Pengantar Bisnis Digital",
+          "title": "Ekonomi Lingkungan Berkelanjutan",
           "year": "2025"
         }
       ],
@@ -3915,22 +6372,6 @@
         "other": 0,
         "total": 9,
         "list": [
-          {
-            "title": "Panduan Penggunaan Aplikasi Manajemen Stok",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Film Dokumenter: Pemberdayaan Komunitas Bakoel Kembang Ruhui Rahayu melalui Inovasi Produk, Pemasaran Digital dan Manajemen Stok",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Kartu Perawatan Anggrek",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Alat Peraga Panduan Penggunaan QR Code Identitas Anggrek",
-            "category": "hakCipta"
-          },
           {
             "title": "Pengantar Bisnis Digital",
             "category": "hakCipta"
@@ -3948,11 +6389,58 @@
             "category": "hakCipta"
           },
           {
+            "title": "Panduan Penggunaan Aplikasi Manajemen Stok",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Film Dokumenter: Pemberdayaan Komunitas Bakoel Kembang Ruhui Rahayu melalui Inovasi Produk, Pemasaran Digital dan Manajemen Stok",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Kartu Perawatan Anggrek",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Alat Peraga Panduan Penggunaan QR Code Identitas Anggrek",
+            "category": "hakCipta"
+          },
+          {
             "title": "Video Dokumenter Program Pendampingan Proses Bisnis Dan Uji  Prototype Aplikasi PRIMKOPTI Balikpapan",
             "category": "hakCipta"
           }
         ]
+      },
+      "fundingSummary": {
+        "totalResearchFunding": 133000000,
+        "totalServiceFunding": 67993000,
+        "totalFunding": 200993000,
+        "researchCount": 7,
+        "serviceCount": 3
       }
     }
-  ]
+  ],
+  "prodiSummary": {
+    "Sistem Informasi": {
+      "lecturerCount": 15,
+      "totalResearchFunding": 1688119400,
+      "totalServiceFunding": 642917345,
+      "totalResearchCount": 86,
+      "totalServiceCount": 63,
+      "avgResearchFundingPerLecturer": 112541293.33333333,
+      "avgServiceFundingPerLecturer": 42861156.333333336,
+      "avgResearchCountPerLecturer": 5.733333333333333,
+      "avgServiceCountPerLecturer": 4.2
+    },
+    "Bisnis Digital": {
+      "lecturerCount": 10,
+      "totalResearchFunding": 941172000,
+      "totalServiceFunding": 602702000,
+      "totalResearchCount": 46,
+      "totalServiceCount": 34,
+      "avgResearchFundingPerLecturer": 94117200.0,
+      "avgServiceFundingPerLecturer": 60270200.0,
+      "avgResearchCountPerLecturer": 4.6,
+      "avgServiceCountPerLecturer": 3.4
+    }
+  }
 }

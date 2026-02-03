@@ -27,15 +27,24 @@ Dashboard presentasi untuk Laboratorium Inovasi Digital yang menampilkan data Tr
 - Analisis tren kata kunci (keywords) dari 2018-2025
 - Deteksi kontinuitas dan perubahan fokus penelitian antar tahun
 
-### 5. Expertise Finder (Cari Pakar) (NEW!)
+### 5. Expertise Finder (Cari Pakar)
 - **Matchmaking System** untuk menemukan dosen pembimbing
 - Input ide/proposal -> Output rekomendasi dosen relevan
 - Menggunakan TF-IDF scoring pada riwayat publikasi dosen
 
-📖 **Dokumentasi lengkap**: 
+### 6. Dana & Hibah (NEW!)
+- **Dashboard Pendanaan** penelitian dan pengabdian untuk akreditasi
+- Data lengkap: Ketua, Anggota, Jenis Hibah, Dana, Sumber
+- Grafik tren pendanaan per tahun
+- Proporsi sumber dana (Internal vs Eksternal/BIMA)
+- Tabel ringkasan per prodi dengan rasio per dosen
+- Filter per prodi dan tipe kegiatan
+
+📖 **Dokumentasi lengkap**:
 - [RESEARCH_CLUSTERING.md](./RESEARCH_CLUSTERING.md)
 - [RESEARCH_ROADMAP.md](./RESEARCH_ROADMAP.md)
 - [EXPERTISE_FINDER.md](./EXPERTISE_FINDER.md)
+- [FUNDING_DASHBOARD.md](./docs/FUNDING_DASHBOARD.md)
 
 ---
 
@@ -112,6 +121,8 @@ presentasi-laboratorium-inovasi-digital/
 │   │   ├── ResearchGallery.vue   # Galeri karya
 │   │   ├── ResearchClusters.vue  # Kolaborasi riset
 │   │   ├── ResearchRoadmap.vue   # Roadmap riset
+│   │   ├── ExpertiseFinder.vue   # Cari pakar
+│   │   ├── FundingDashboard.vue  # Dana & hibah
 │   │   └── ...
 │   ├── data/
 │   │   ├── lecturers.json        # Daftar dosen
