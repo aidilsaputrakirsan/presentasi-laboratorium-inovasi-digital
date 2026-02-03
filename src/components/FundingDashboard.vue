@@ -1,10 +1,9 @@
 <template>
   <div class="space-y-6">
-    <!-- Header -->
+    <!-- 1. HEADER + OVERVIEW -->
     <div class="card bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-slate-700">
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center gap-4">
-          <!-- Icon -->
           <div class="relative">
             <div class="w-14 h-14 bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 rounded-2xl flex items-center justify-center shadow-lg shadow-amber-500/30">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,10 +55,27 @@
           <div class="text-xs uppercase tracking-wider text-rose-700 mt-1 font-bold">Rata-rata/Dosen</div>
         </div>
       </div>
+
+      <!-- Penjelasan Overview -->
+      <div class="mt-4 p-3 bg-slate-800/50 rounded-lg text-xs text-slate-300 border border-slate-600">
+        <div class="flex items-start gap-2">
+          <svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <div>
+            <strong class="text-amber-400">Tentang Data Ini:</strong>
+            <span class="ml-1">Data diambil dari SINTA. Angka di atas menghitung <strong>judul unik</strong> yang tercatat di SINTA (tanpa duplikasi). Untuk melihat detail per dosen termasuk partisipasi sebagai anggota di proyek luar prodi, lihat tabel "Kinerja Dosen" di bawah.</span>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Filter by Prodi -->
+    <!-- 2. FILTER PRODI -->
     <div class="card">
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-sm font-bold text-slate-700">Filter Program Studi:</span>
+        <span class="text-xs text-slate-400">Pilih prodi untuk melihat data spesifik</span>
+      </div>
       <div class="flex flex-wrap gap-2">
         <button
           @click="selectedProdi = 'all'"
@@ -88,247 +104,301 @@
       </div>
     </div>
 
-    <!-- Charts Row -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <!-- Funding by Year -->
-      <div class="card hover:shadow-lg transition-shadow">
-        <div class="mb-4">
-          <div class="flex items-center gap-2">
-            <span class="w-3 h-3 bg-amber-500 rounded-full"></span>
-            <h3 class="text-lg font-bold text-slate-800">Pendanaan per Tahun</h3>
-          </div>
-          <p class="text-xs text-slate-400 mt-1">Tren pendanaan penelitian & pengabdian</p>
+    <!-- 3. RINGKASAN PER PRODI (dipindah ke atas) -->
+    <div class="card hover:shadow-lg transition-shadow">
+      <div class="mb-4">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 bg-purple-500 rounded-full"></span>
+          <h3 class="text-lg font-bold text-slate-800">
+            {{ selectedProdi === 'all' ? 'Ringkasan per Program Studi' : 'Ringkasan ' + selectedProdi }}
+          </h3>
         </div>
-        <div class="h-64">
-          <Bar :data="fundingByYearData" :options="barChartOptions" />
-        </div>
+        <p class="text-xs text-slate-400 mt-1">
+          {{ selectedProdi === 'all' ? 'Perbandingan kinerja antar program studi' : 'Detail kinerja prodi terpilih' }}
+        </p>
       </div>
 
-      <!-- Funding by Source -->
-      <div class="card hover:shadow-lg transition-shadow">
-        <div class="mb-4">
-          <div class="flex items-center gap-2">
-            <span class="w-3 h-3 bg-blue-500 rounded-full"></span>
-            <h3 class="text-lg font-bold text-slate-800">Sumber Pendanaan</h3>
-          </div>
-          <p class="text-xs text-slate-400 mt-1">Internal vs Eksternal</p>
-        </div>
-        <div class="h-64 flex items-center justify-center">
-          <Doughnut :data="fundingBySourceData" :options="doughnutOptions" />
-        </div>
+      <!-- Penjelasan -->
+      <div class="mb-4 p-3 bg-purple-50 rounded-lg text-xs text-purple-700 border border-purple-200">
+        <strong>Cara Membaca:</strong>
+        <ul class="mt-1 ml-4 list-disc space-y-0.5">
+          <li><strong>Penelitian/Pengabdian</strong> = jumlah kegiatan yang tercatat di SINTA</li>
+          <li><strong>Dana</strong> = total pendanaan yang diperoleh (dalam Rupiah)</li>
+          <li><strong>Rata-rata/Dosen</strong> = total dana dibagi jumlah dosen (indikator produktivitas)</li>
+        </ul>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-slate-200">
+              <th class="text-left py-3 px-4 font-bold text-slate-700">{{ selectedProdi === 'all' ? 'Prodi' : 'Indikator' }}</th>
+              <th class="text-center py-3 px-4 font-bold text-slate-700">{{ selectedProdi === 'all' ? 'Dosen' : '' }}</th>
+              <th class="text-center py-3 px-4 font-bold text-slate-700">Penelitian</th>
+              <th class="text-center py-3 px-4 font-bold text-slate-700">Pengabdian</th>
+              <th class="text-right py-3 px-4 font-bold text-slate-700">Dana Penelitian</th>
+              <th class="text-right py-3 px-4 font-bold text-slate-700">Dana Pengabdian</th>
+              <th class="text-right py-3 px-4 font-bold text-slate-700">Total Dana</th>
+              <th class="text-right py-3 px-4 font-bold text-slate-700">Rata-rata/Dosen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <template v-if="selectedProdi === 'all'">
+              <tr v-for="summary in prodiSummaryList" :key="summary.prodi" class="border-b border-slate-100 hover:bg-slate-50">
+                <td class="py-3 px-4 font-medium text-slate-800">{{ summary.prodi }}</td>
+                <td class="py-3 px-4 text-center">{{ summary.lecturerCount }}</td>
+                <td class="py-3 px-4 text-center">
+                  <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold">{{ summary.totalResearchCount }}</span>
+                </td>
+                <td class="py-3 px-4 text-center">
+                  <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold">{{ summary.totalServiceCount }}</span>
+                </td>
+                <td class="py-3 px-4 text-right font-mono text-amber-600">{{ formatCurrency(summary.totalResearchFunding) }}</td>
+                <td class="py-3 px-4 text-right font-mono text-orange-600">{{ formatCurrency(summary.totalServiceFunding) }}</td>
+                <td class="py-3 px-4 text-right font-mono font-bold text-slate-800">{{ formatCurrency(summary.totalResearchFunding + summary.totalServiceFunding) }}</td>
+                <td class="py-3 px-4 text-right font-mono text-purple-600">{{ formatCurrency((summary.totalResearchFunding + summary.totalServiceFunding) / summary.lecturerCount) }}</td>
+              </tr>
+            </template>
+            <template v-else>
+              <tr class="border-b border-slate-100">
+                <td class="py-3 px-4 font-medium text-slate-800">Jumlah Total</td>
+                <td class="py-3 px-4 text-center font-bold">{{ lecturerCount }} dosen</td>
+                <td class="py-3 px-4 text-center">
+                  <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold">{{ totalResearchCount }}</span>
+                </td>
+                <td class="py-3 px-4 text-center">
+                  <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold">{{ totalServiceCount }}</span>
+                </td>
+                <td class="py-3 px-4 text-right font-mono text-amber-600 font-bold">{{ formatCurrency(totalResearchFunding) }}</td>
+                <td class="py-3 px-4 text-right font-mono text-orange-600 font-bold">{{ formatCurrency(totalServiceFunding) }}</td>
+                <td class="py-3 px-4 text-right font-mono font-bold text-slate-800">{{ formatCurrency(totalFunding) }}</td>
+                <td class="py-3 px-4 text-right font-mono text-purple-600">-</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-purple-50">
+                <td class="py-3 px-4 font-medium text-purple-800">Rata-rata per Dosen</td>
+                <td class="py-3 px-4 text-center">-</td>
+                <td class="py-3 px-4 text-center">
+                  <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold">{{ (totalResearchCount / lecturerCount).toFixed(1) }}</span>
+                </td>
+                <td class="py-3 px-4 text-center">
+                  <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold">{{ (totalServiceCount / lecturerCount).toFixed(1) }}</span>
+                </td>
+                <td class="py-3 px-4 text-right font-mono text-amber-600">{{ formatCurrency(totalResearchFunding / lecturerCount) }}</td>
+                <td class="py-3 px-4 text-right font-mono text-orange-600">{{ formatCurrency(totalServiceFunding / lecturerCount) }}</td>
+                <td class="py-3 px-4 text-right font-mono text-purple-700 font-bold">{{ formatCurrency(avgFundingPerLecturer) }}</td>
+                <td class="py-3 px-4 text-right font-mono text-purple-600">-</td>
+              </tr>
+            </template>
+          </tbody>
+          <tfoot v-if="selectedProdi === 'all'">
+            <tr class="bg-slate-100 font-bold">
+              <td class="py-3 px-4 text-slate-800">TOTAL SEMUA PRODI</td>
+              <td class="py-3 px-4 text-center">{{ lecturerCount }}</td>
+              <td class="py-3 px-4 text-center">
+                <span class="px-2 py-1 bg-blue-200 text-blue-800 rounded-full text-xs">{{ totalResearchCount }}</span>
+              </td>
+              <td class="py-3 px-4 text-center">
+                <span class="px-2 py-1 bg-emerald-200 text-emerald-800 rounded-full text-xs">{{ totalServiceCount }}</span>
+              </td>
+              <td class="py-3 px-4 text-right font-mono text-amber-700">{{ formatCurrency(totalResearchFunding) }}</td>
+              <td class="py-3 px-4 text-right font-mono text-orange-700">{{ formatCurrency(totalServiceFunding) }}</td>
+              <td class="py-3 px-4 text-right font-mono text-slate-900">{{ formatCurrency(totalFunding) }}</td>
+              <td class="py-3 px-4 text-right font-mono text-purple-700">{{ formatCurrency(avgFundingPerLecturer) }}</td>
+            </tr>
+          </tfoot>
+        </table>
       </div>
     </div>
 
-    <!-- Kinerja per Tahun - untuk Akreditasi -->
+    <!-- 4. KINERJA DOSEN -->
     <div class="card hover:shadow-lg transition-shadow">
       <div class="mb-4">
         <div class="flex items-center justify-between">
           <div>
             <div class="flex items-center gap-2">
               <span class="w-3 h-3 bg-cyan-500 rounded-full"></span>
-              <h3 class="text-lg font-bold text-slate-800">Kinerja per Tahun</h3>
-              <span class="px-2 py-0.5 bg-cyan-100 text-cyan-700 text-[10px] font-bold rounded-full">AKREDITASI</span>
+              <h3 class="text-lg font-bold text-slate-800">Kinerja Dosen</h3>
             </div>
-            <p class="text-xs text-slate-400 mt-1">Data untuk pelaporan LKPS dengan breakdown DTPS vs Eksternal</p>
+            <p class="text-xs text-slate-400 mt-1">Detail hibah per dosen di prodi terpilih</p>
+          </div>
+          <!-- Filter Tahun -->
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-slate-500">Tahun:</span>
+            <select v-model="selectedYear" class="px-3 py-1.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500">
+              <option value="all">Semua Tahun</option>
+              <option v-for="year in availableYears" :key="year" :value="year">{{ year }}</option>
+            </select>
           </div>
         </div>
       </div>
-      <div class="overflow-x-auto">
+
+      <!-- Penjelasan Tabel -->
+      <div class="mb-4 p-3 bg-cyan-50 rounded-lg text-xs text-cyan-700 border border-cyan-200">
+        <strong>Cara Membaca Tabel:</strong>
+        <ul class="mt-1 ml-4 list-disc space-y-0.5">
+          <li><strong>Sebagai Ketua</strong> = judul dimana dosen menjadi pemimpin (leader)</li>
+          <li><strong>Sebagai Anggota</strong> = judul dimana dosen menjadi anggota, <em>hanya dihitung jika ketuanya dari luar prodi</em></li>
+          <li><strong>Total Judul</strong> = Ketua + Anggota (judul yang bisa diklaim prodi)</li>
+          <li><strong>Total Dana</strong> = akumulasi pendanaan dari semua judul (sebagai ketua)</li>
+        </ul>
+        <div class="mt-2 pt-2 border-t border-cyan-200 text-cyan-600">
+          <em>Catatan: Total di tabel ini mungkin lebih besar dari Overview/Rincian Hibah karena menghitung tambahan partisipasi sebagai anggota di proyek dengan ketua dari luar prodi.</em>
+        </div>
+      </div>
+
+      <div class="overflow-x-auto max-h-[500px] overflow-y-auto">
         <table class="w-full text-sm">
-          <thead>
+          <thead class="sticky top-0 bg-white z-10">
             <tr class="border-b border-slate-200 bg-slate-50">
-              <th class="text-left py-3 px-3 font-bold text-slate-700">Tahun</th>
-              <th class="text-center py-3 px-2 font-bold text-slate-700 bg-indigo-50" colspan="3">
-                <div>Ketua (Leader)</div>
+              <th class="text-left py-3 px-4 font-bold text-slate-700">Nama Dosen</th>
+              <th class="text-center py-3 px-2 font-bold text-slate-700 bg-blue-50" colspan="2">
+                <div>Penelitian</div>
               </th>
-              <th class="text-center py-3 px-2 font-bold text-slate-700 bg-cyan-50" colspan="3">
-                <div>Terlibat (Ketua+Anggota)</div>
+              <th class="text-center py-3 px-2 font-bold text-slate-700 bg-emerald-50" colspan="2">
+                <div>Pengabdian</div>
               </th>
-              <th class="text-center py-3 px-2 font-bold text-slate-700">
-                <div>Judul</div>
-                <div class="text-[10px] font-normal text-slate-400">Penelitian</div>
-              </th>
-              <th class="text-center py-3 px-2 font-bold text-slate-700">
-                <div>Judul</div>
-                <div class="text-[10px] font-normal text-slate-400">Pengabdian</div>
-              </th>
-              <th class="text-center py-3 px-2 font-bold text-slate-700 bg-purple-50">
-                <div>Rasio LKPS</div>
-                <div class="text-[10px] font-normal text-purple-500" title="Judul ÷ Ketua DTPS (standar BAN-PT)">(judul/DTPS)</div>
-              </th>
+              <th class="text-center py-3 px-2 font-bold text-slate-700">Total Judul</th>
+              <th class="text-right py-3 px-4 font-bold text-slate-700 bg-amber-50">Total Dana</th>
             </tr>
             <tr class="border-b border-slate-200 bg-slate-50 text-[10px]">
               <th></th>
-              <!-- Ketua sub-columns -->
-              <th class="text-center py-2 px-1 bg-indigo-50 text-indigo-600">Total</th>
-              <th class="text-center py-2 px-1 bg-green-50 text-green-600">DTPS</th>
-              <th class="text-center py-2 px-1 bg-orange-50 text-orange-600">Eksternal</th>
-              <!-- Terlibat sub-columns -->
-              <th class="text-center py-2 px-1 bg-cyan-50 text-cyan-600">Total</th>
-              <th class="text-center py-2 px-1 bg-green-50 text-green-600">DTPS</th>
-              <th class="text-center py-2 px-1 bg-orange-50 text-orange-600">Eksternal</th>
+              <th class="text-center py-2 px-1 bg-blue-50 text-blue-600">Ketua</th>
+              <th class="text-center py-2 px-1 bg-blue-50/50 text-blue-500">Anggota*</th>
+              <th class="text-center py-2 px-1 bg-emerald-50 text-emerald-600">Ketua</th>
+              <th class="text-center py-2 px-1 bg-emerald-50/50 text-emerald-500">Anggota*</th>
               <th></th>
               <th></th>
-              <th class="text-center py-2 px-1 bg-purple-50 text-purple-600">Standar LKPS</th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="year in yearlyPerformance" :key="year.year" class="border-b border-slate-100 hover:bg-slate-50">
-              <td class="py-3 px-3 font-bold text-slate-800">{{ year.year }}</td>
-              <!-- Ketua columns -->
-              <td class="py-3 px-1 text-center bg-indigo-50/30">
-                <span class="px-2 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-bold">{{ year.leaderCount }}</span>
+            <tr v-for="lecturer in lecturerPerformance" :key="lecturer.name" class="border-b border-slate-100 hover:bg-slate-50">
+              <td class="py-3 px-4">
+                <div class="font-medium text-slate-800">{{ lecturer.name }}</div>
               </td>
-              <td class="py-3 px-1 text-center bg-green-50/30">
-                <span class="px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold" :title="'Ketua dari DTPS'">{{ year.leaderDTPSCount }}</span>
+              <td class="py-3 px-2 text-center bg-blue-50/20">
+                <span v-if="lecturer.researchAsLeader > 0" class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold">{{ lecturer.researchAsLeader }}</span>
+                <span v-else class="text-slate-300">-</span>
               </td>
-              <td class="py-3 px-1 text-center bg-orange-50/30">
-                <span class="px-2 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-bold" :title="'Ketua dari luar prodi/kampus'">{{ year.leaderExternalCount }}</span>
+              <td class="py-3 px-2 text-center bg-blue-50/10">
+                <span v-if="lecturer.researchAsMember > 0" class="px-2 py-1 bg-blue-50 text-blue-600 rounded-full text-xs font-bold">{{ lecturer.researchAsMember }}</span>
+                <span v-else class="text-slate-300">-</span>
               </td>
-              <!-- Terlibat columns -->
-              <td class="py-3 px-1 text-center bg-cyan-50/30">
-                <span class="px-2 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-bold">{{ year.activeLecturers }}</span>
+              <td class="py-3 px-2 text-center bg-emerald-50/20">
+                <span v-if="lecturer.serviceAsLeader > 0" class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold">{{ lecturer.serviceAsLeader }}</span>
+                <span v-else class="text-slate-300">-</span>
               </td>
-              <td class="py-3 px-1 text-center bg-green-50/30">
-                <span class="px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold" :title="'Terlibat dari DTPS'">{{ year.activeDTPSCount }}</span>
-              </td>
-              <td class="py-3 px-1 text-center bg-orange-50/30">
-                <span class="px-2 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-bold" :title="'Terlibat dari luar prodi/kampus'">{{ year.activeExternalCount }}</span>
-              </td>
-              <!-- Judul columns -->
-              <td class="py-3 px-2 text-center">
-                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold">{{ year.researchCount }}</span>
+              <td class="py-3 px-2 text-center bg-emerald-50/10">
+                <span v-if="lecturer.serviceAsMember > 0" class="px-2 py-1 bg-emerald-50 text-emerald-600 rounded-full text-xs font-bold">{{ lecturer.serviceAsMember }}</span>
+                <span v-else class="text-slate-300">-</span>
               </td>
               <td class="py-3 px-2 text-center">
-                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold">{{ year.serviceCount }}</span>
+                <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-bold">{{ lecturer.totalTitles }}</span>
               </td>
-              <!-- Rasio LKPS (hanya DTPS) -->
-              <td class="py-3 px-2 text-center bg-purple-50/50">
-                <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-bold" :title="'(' + year.researchCount + '+' + year.serviceCount + ') ÷ ' + year.leaderDTPSCount + ' DTPS'">{{ year.ratioByDTPS > 0 ? year.ratioByDTPS.toFixed(2) : '-' }}</span>
+              <td class="py-3 px-4 text-right">
+                <span class="font-mono text-xs font-bold text-amber-700">{{ formatCurrencyShort(lecturer.totalFunding) }}</span>
               </td>
             </tr>
           </tbody>
-          <tfoot>
-            <tr class="bg-slate-100 font-bold">
-              <td class="py-3 px-3 text-slate-800">RATA-RATA 3 TAHUN</td>
-              <!-- Ketua rata-rata -->
-              <td class="py-3 px-1 text-center bg-indigo-100/50">
-                <span class="px-2 py-1 bg-indigo-200 text-indigo-800 rounded-full text-xs">{{ avg3Year.avgLeaders.toFixed(1) }}</span>
+          <tfoot class="sticky bottom-0 bg-slate-100">
+            <tr class="font-bold">
+              <td class="py-3 px-4 text-slate-800">TOTAL ({{ lecturerPerformance.length }} dosen)</td>
+              <td class="py-3 px-2 text-center bg-blue-100/50">
+                <span class="px-2 py-1 bg-blue-200 text-blue-800 rounded-full text-xs">{{ lecturerPerformanceTotal.researchAsLeader }}</span>
               </td>
-              <td class="py-3 px-1 text-center bg-green-100/50">
-                <span class="px-2 py-1 bg-green-200 text-green-800 rounded-full text-xs">{{ avg3Year.avgLeadersDTPS.toFixed(1) }}</span>
+              <td class="py-3 px-2 text-center bg-blue-50/50">
+                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">{{ lecturerPerformanceTotal.researchAsMember }}</span>
               </td>
-              <td class="py-3 px-1 text-center bg-orange-100/50">
-                <span class="px-2 py-1 bg-orange-200 text-orange-800 rounded-full text-xs">{{ avg3Year.avgLeadersExternal.toFixed(1) }}</span>
+              <td class="py-3 px-2 text-center bg-emerald-100/50">
+                <span class="px-2 py-1 bg-emerald-200 text-emerald-800 rounded-full text-xs">{{ lecturerPerformanceTotal.serviceAsLeader }}</span>
               </td>
-              <!-- Terlibat rata-rata -->
-              <td class="py-3 px-1 text-center bg-cyan-100/50">
-                <span class="px-2 py-1 bg-cyan-200 text-cyan-800 rounded-full text-xs">{{ avg3Year.avgActiveLecturers.toFixed(1) }}</span>
-              </td>
-              <td class="py-3 px-1 text-center bg-green-100/50">
-                <span class="px-2 py-1 bg-green-200 text-green-800 rounded-full text-xs">{{ avg3Year.avgActiveDTPS.toFixed(1) }}</span>
-              </td>
-              <td class="py-3 px-1 text-center bg-orange-100/50">
-                <span class="px-2 py-1 bg-orange-200 text-orange-800 rounded-full text-xs">{{ avg3Year.avgActiveExternal.toFixed(1) }}</span>
-              </td>
-              <!-- Judul rata-rata -->
-              <td class="py-3 px-2 text-center">
-                <span class="px-2 py-1 bg-blue-200 text-blue-800 rounded-full text-xs">{{ avg3Year.avgResearch.toFixed(1) }}</span>
+              <td class="py-3 px-2 text-center bg-emerald-50/50">
+                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs">{{ lecturerPerformanceTotal.serviceAsMember }}</span>
               </td>
               <td class="py-3 px-2 text-center">
-                <span class="px-2 py-1 bg-emerald-200 text-emerald-800 rounded-full text-xs">{{ avg3Year.avgService.toFixed(1) }}</span>
+                <span class="px-2 py-1 bg-slate-200 text-slate-800 rounded-full text-xs">{{ lecturerPerformanceTotal.totalTitles }}</span>
               </td>
-              <!-- Rasio LKPS rata-rata -->
-              <td class="py-3 px-2 text-center bg-purple-100/50">
-                <span class="px-2 py-1 bg-purple-200 text-purple-800 rounded text-xs font-bold">{{ avg3Year.avgRatioByDTPS.toFixed(2) }}</span>
+              <td class="py-3 px-4 text-right">
+                <span class="font-mono text-xs font-bold text-amber-800">{{ formatCurrencyShort(lecturerPerformanceTotal.totalFunding) }}</span>
               </td>
             </tr>
           </tfoot>
         </table>
       </div>
 
-      <!-- Penjelasan Detail DTPS -->
-      <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3">
-        <div class="p-3 bg-green-50 rounded-lg text-xs text-green-700 border border-green-200">
-          <div class="flex items-center gap-2 mb-2">
-            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-            <strong>DTPS (Dosen Tetap Program Studi)</strong>
-          </div>
-          <ul class="space-y-1 ml-4 list-disc">
-            <li>Dosen yang <strong>homebase</strong>-nya di prodi yang diakreditasi</li>
-            <li>Masuk dalam <strong>lecturers.json</strong> (master data)</li>
-            <li><strong>Hanya DTPS yang dihitung</strong> untuk rasio LKPS</li>
-          </ul>
-        </div>
-        <div class="p-3 bg-orange-50 rounded-lg text-xs text-orange-700 border border-orange-200">
-          <div class="flex items-center gap-2 mb-2">
-            <span class="w-2 h-2 bg-orange-500 rounded-full"></span>
-            <strong>Eksternal (Non-DTPS)</strong>
-          </div>
-          <ul class="space-y-1 ml-4 list-disc">
-            <li>Dosen dari <strong>prodi lain</strong> di institusi yang sama</li>
-            <li>Dosen dari <strong>kampus lain</strong> (kolaborator)</li>
-            <li><strong>Tidak masuk hitungan</strong> LKPS prodi ini</li>
-          </ul>
-        </div>
-        <div class="p-3 bg-purple-50 rounded-lg text-xs text-purple-700 border border-purple-200">
-          <div class="flex items-center gap-2 mb-2">
-            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
-            <strong>Rasio LKPS (Standar BAN-PT)</strong>
-          </div>
-          <ul class="space-y-1 ml-4 list-disc">
-            <li><strong>Rasio LKPS</strong> = Judul ÷ Ketua DTPS</li>
-            <li>Sesuai format <strong>Tabel 3.b.2</strong> LKPS</li>
-            <li>Hitung hanya <strong>ketua dari DTPS</strong></li>
-          </ul>
-        </div>
-      </div>
-
+      <!-- Catatan -->
       <div class="mt-3 p-3 bg-amber-50 rounded-lg text-xs text-amber-700 border border-amber-200">
         <div class="flex items-start gap-2">
           <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
           <div>
-            <strong>Catatan Penting untuk Akreditasi:</strong>
+            <strong>Catatan:</strong>
             <ul class="mt-1 ml-4 list-disc space-y-0.5">
-              <li><strong>Rata-rata 3 Tahun</strong> = rata-rata nilai dari TS-2, TS-1, dan TS (3 tahun terakhir)</li>
-              <li>Untuk pelaporan LKPS, gunakan <strong>Rasio LKPS</strong> (kolom ungu) yang hanya menghitung ketua DTPS</li>
-              <li>1 judul penelitian dengan 3 dosen (1 ketua DTPS + 2 anggota) tetap dihitung <strong>1 judul</strong></li>
-              <li>Jika <strong>ketua bukan DTPS</strong>, penelitian tersebut <strong>tidak masuk</strong> hitungan LKPS prodi ini</li>
-              <li>Anggota eksternal boleh ada, tapi <strong>tidak mempengaruhi</strong> perhitungan rasio</li>
+              <li><strong>*Anggota</strong> = hanya dihitung jika ketua penelitian/pengabdian dari <em>luar prodi</em> (kolaborasi eksternal)</li>
+              <li>Jika ketua dan anggota dari prodi sama, judul hanya dihitung sekali di kolom "Ketua"</li>
+              <li><strong>Total Dana</strong> = dana dari judul dimana dosen menjadi ketua</li>
             </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Info Daftar DTPS -->
-      <div class="mt-3 p-3 bg-slate-50 rounded-lg text-xs text-slate-600 border border-slate-200">
-        <div class="flex items-start gap-2">
-          <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-          </svg>
-          <div>
-            <strong>Daftar DTPS {{ selectedProdi === 'all' ? '(Semua Prodi)' : selectedProdi }}:</strong>
-            <span class="ml-2 text-slate-500">{{ currentDtpsNames.size }} dosen terdaftar</span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Funding by Grant Type - Table View -->
+    <!-- 5. VISUALISASI GRAFIK -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <!-- Funding by Year Chart -->
+      <div class="card hover:shadow-lg transition-shadow">
+        <div class="mb-4">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 bg-amber-500 rounded-full"></span>
+            <h3 class="text-lg font-bold text-slate-800">Tren Pendanaan per Tahun</h3>
+          </div>
+          <p class="text-xs text-slate-400 mt-1">Perbandingan dana penelitian vs pengabdian setiap tahun</p>
+        </div>
+        <div class="h-64">
+          <Bar :data="fundingByYearData" :options="barChartOptions" />
+        </div>
+        <div class="mt-3 p-2 bg-slate-50 rounded text-xs text-slate-500">
+          <strong>Insight:</strong> Grafik menunjukkan tren pendanaan dari tahun ke tahun. Batang biru = penelitian, hijau = pengabdian.
+        </div>
+      </div>
+
+      <!-- Funding by Source Chart -->
+      <div class="card hover:shadow-lg transition-shadow">
+        <div class="mb-4">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 bg-blue-500 rounded-full"></span>
+            <h3 class="text-lg font-bold text-slate-800">Distribusi Sumber Pendanaan</h3>
+          </div>
+          <p class="text-xs text-slate-400 mt-1">Proporsi dana dari berbagai sumber</p>
+        </div>
+        <div class="h-64 flex items-center justify-center">
+          <Doughnut :data="fundingBySourceData" :options="doughnutOptions" />
+        </div>
+        <div class="mt-3 p-2 bg-slate-50 rounded text-xs text-slate-500">
+          <strong>Insight:</strong> Internal = dana dari institusi. Eksternal (BIMA) = dana dari Kemdiktisaintek. Lainnya = sumber lain.
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. RINCIAN JENIS HIBAH -->
     <div class="card hover:shadow-lg transition-shadow">
       <div class="mb-4">
         <div class="flex items-center justify-between">
           <div>
             <div class="flex items-center gap-2">
               <span class="w-3 h-3 bg-emerald-500 rounded-full"></span>
-              <h3 class="text-lg font-bold text-slate-800">Rincian Jenis Hibah</h3>
+              <h3 class="text-lg font-bold text-slate-800">Rincian per Jenis Hibah</h3>
             </div>
             <p class="text-xs text-slate-400 mt-1">{{ grantTypeDetails.length }} kategori hibah ditemukan</p>
           </div>
         </div>
       </div>
+
+      <!-- Penjelasan -->
+      <div class="mb-4 p-3 bg-emerald-50 rounded-lg text-xs text-emerald-700 border border-emerald-200">
+        <strong>Cara Membaca:</strong> Tabel ini mengelompokkan kegiatan berdasarkan jenis skema hibah. Menghitung <strong>judul unik</strong> yang tercatat di SINTA (sama dengan Overview). <em>Catatan: Total mungkin berbeda dengan "Kinerja Dosen" karena tabel tersebut juga menghitung partisipasi sebagai anggota di proyek luar prodi.</em>
+      </div>
+
       <div class="overflow-x-auto max-h-[400px] overflow-y-auto">
         <table class="w-full text-sm">
           <thead class="sticky top-0 bg-white">
@@ -338,7 +408,7 @@
               <th class="text-center py-3 px-4 font-bold text-slate-700">Penelitian</th>
               <th class="text-center py-3 px-4 font-bold text-slate-700">Pengabdian</th>
               <th class="text-right py-3 px-4 font-bold text-slate-700">Total Dana</th>
-              <th class="text-right py-3 px-4 font-bold text-slate-700">Rata-rata</th>
+              <th class="text-right py-3 px-4 font-bold text-slate-700">Rata-rata/Kegiatan</th>
             </tr>
           </thead>
           <tbody>
@@ -382,114 +452,16 @@
       </div>
     </div>
 
-    <!-- Per Prodi Summary Table -->
-    <div class="card hover:shadow-lg transition-shadow">
-      <div class="mb-4">
-        <div class="flex items-center gap-2">
-          <span class="w-3 h-3 bg-purple-500 rounded-full"></span>
-          <h3 class="text-lg font-bold text-slate-800">
-            {{ selectedProdi === 'all' ? 'Ringkasan per Prodi' : 'Ringkasan ' + selectedProdi }}
-          </h3>
-        </div>
-        <p class="text-xs text-slate-400 mt-1">
-          {{ selectedProdi === 'all' ? 'Perbandingan semua program studi' : 'Data detail untuk pelaporan prodi' }}
-        </p>
-      </div>
-      <div class="overflow-x-auto">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="border-b border-slate-200">
-              <th class="text-left py-3 px-4 font-bold text-slate-700">{{ selectedProdi === 'all' ? 'Prodi' : 'Indikator' }}</th>
-              <th class="text-center py-3 px-4 font-bold text-slate-700">{{ selectedProdi === 'all' ? 'Dosen' : '' }}</th>
-              <th class="text-center py-3 px-4 font-bold text-slate-700">Penelitian</th>
-              <th class="text-center py-3 px-4 font-bold text-slate-700">Pengabdian</th>
-              <th class="text-right py-3 px-4 font-bold text-slate-700">Dana Penelitian</th>
-              <th class="text-right py-3 px-4 font-bold text-slate-700">Dana Pengabdian</th>
-              <th class="text-right py-3 px-4 font-bold text-slate-700">Total Dana</th>
-              <th class="text-right py-3 px-4 font-bold text-slate-700">Rata-rata/Dosen</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Mode: Semua Prodi - tampilkan list prodi -->
-            <template v-if="selectedProdi === 'all'">
-              <tr v-for="summary in prodiSummaryList" :key="summary.prodi" class="border-b border-slate-100 hover:bg-slate-50">
-                <td class="py-3 px-4 font-medium text-slate-800">{{ summary.prodi }}</td>
-                <td class="py-3 px-4 text-center">{{ summary.lecturerCount }}</td>
-                <td class="py-3 px-4 text-center">
-                  <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold">{{ summary.totalResearchCount }}</span>
-                </td>
-                <td class="py-3 px-4 text-center">
-                  <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold">{{ summary.totalServiceCount }}</span>
-                </td>
-                <td class="py-3 px-4 text-right font-mono text-amber-600">{{ formatCurrency(summary.totalResearchFunding) }}</td>
-                <td class="py-3 px-4 text-right font-mono text-orange-600">{{ formatCurrency(summary.totalServiceFunding) }}</td>
-                <td class="py-3 px-4 text-right font-mono font-bold text-slate-800">{{ formatCurrency(summary.totalResearchFunding + summary.totalServiceFunding) }}</td>
-                <td class="py-3 px-4 text-right font-mono text-purple-600">{{ formatCurrency((summary.totalResearchFunding + summary.totalServiceFunding) / summary.lecturerCount) }}</td>
-              </tr>
-            </template>
-            <!-- Mode: Single Prodi - tampilkan detail metrics -->
-            <template v-else>
-              <tr class="border-b border-slate-100">
-                <td class="py-3 px-4 font-medium text-slate-800">Jumlah Total</td>
-                <td class="py-3 px-4 text-center font-bold">{{ lecturerCount }} dosen</td>
-                <td class="py-3 px-4 text-center">
-                  <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold">{{ totalResearchCount }}</span>
-                </td>
-                <td class="py-3 px-4 text-center">
-                  <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold">{{ totalServiceCount }}</span>
-                </td>
-                <td class="py-3 px-4 text-right font-mono text-amber-600 font-bold">{{ formatCurrency(totalResearchFunding) }}</td>
-                <td class="py-3 px-4 text-right font-mono text-orange-600 font-bold">{{ formatCurrency(totalServiceFunding) }}</td>
-                <td class="py-3 px-4 text-right font-mono font-bold text-slate-800">{{ formatCurrency(totalFunding) }}</td>
-                <td class="py-3 px-4 text-right font-mono text-purple-600">-</td>
-              </tr>
-              <tr class="border-b border-slate-100 bg-purple-50">
-                <td class="py-3 px-4 font-medium text-purple-800">Rata-rata per Dosen</td>
-                <td class="py-3 px-4 text-center">-</td>
-                <td class="py-3 px-4 text-center">
-                  <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold">{{ (totalResearchCount / lecturerCount).toFixed(1) }}</span>
-                </td>
-                <td class="py-3 px-4 text-center">
-                  <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold">{{ (totalServiceCount / lecturerCount).toFixed(1) }}</span>
-                </td>
-                <td class="py-3 px-4 text-right font-mono text-amber-600">{{ formatCurrency(totalResearchFunding / lecturerCount) }}</td>
-                <td class="py-3 px-4 text-right font-mono text-orange-600">{{ formatCurrency(totalServiceFunding / lecturerCount) }}</td>
-                <td class="py-3 px-4 text-right font-mono text-purple-700 font-bold">{{ formatCurrency(avgFundingPerLecturer) }}</td>
-                <td class="py-3 px-4 text-right font-mono text-purple-600">-</td>
-              </tr>
-            </template>
-          </tbody>
-          <!-- Footer hanya muncul jika mode Semua Prodi -->
-          <tfoot v-if="selectedProdi === 'all'">
-            <tr class="bg-slate-100 font-bold">
-              <td class="py-3 px-4 text-slate-800">TOTAL SEMUA PRODI</td>
-              <td class="py-3 px-4 text-center">{{ lecturerCount }}</td>
-              <td class="py-3 px-4 text-center">
-                <span class="px-2 py-1 bg-blue-200 text-blue-800 rounded-full text-xs">{{ totalResearchCount }}</span>
-              </td>
-              <td class="py-3 px-4 text-center">
-                <span class="px-2 py-1 bg-emerald-200 text-emerald-800 rounded-full text-xs">{{ totalServiceCount }}</span>
-              </td>
-              <td class="py-3 px-4 text-right font-mono text-amber-700">{{ formatCurrency(totalResearchFunding) }}</td>
-              <td class="py-3 px-4 text-right font-mono text-orange-700">{{ formatCurrency(totalServiceFunding) }}</td>
-              <td class="py-3 px-4 text-right font-mono text-slate-900">{{ formatCurrency(totalFunding) }}</td>
-              <td class="py-3 px-4 text-right font-mono text-purple-700">{{ formatCurrency(avgFundingPerLecturer) }}</td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-    </div>
-
-    <!-- Detailed Items List -->
+    <!-- 7. DAFTAR DETAIL HIBAH -->
     <div class="card hover:shadow-lg transition-shadow">
       <div class="mb-4">
         <div class="flex items-center justify-between">
           <div>
             <div class="flex items-center gap-2">
               <span class="w-3 h-3 bg-rose-500 rounded-full"></span>
-              <h3 class="text-lg font-bold text-slate-800">Daftar Detail Hibah</h3>
+              <h3 class="text-lg font-bold text-slate-800">Daftar Detail Kegiatan</h3>
             </div>
-            <p class="text-xs text-slate-400 mt-1">{{ filteredItems.length }} item ditemukan</p>
+            <p class="text-xs text-slate-400 mt-1">{{ filteredItems.length }} kegiatan ditemukan - klik filter untuk menyaring</p>
           </div>
           <div class="flex gap-2">
             <button
@@ -521,6 +493,11 @@
             </button>
           </div>
         </div>
+      </div>
+
+      <!-- Penjelasan -->
+      <div class="mb-4 p-3 bg-rose-50 rounded-lg text-xs text-rose-700 border border-rose-200">
+        <strong>Tentang Data Detail:</strong> Setiap item menampilkan judul kegiatan, ketua pelaksana, anggota tim, jenis hibah, dan jumlah dana. Data diurutkan dari tahun terbaru dan dana terbesar.
       </div>
 
       <div class="space-y-3 max-h-[600px] overflow-y-auto">
@@ -607,6 +584,7 @@ export default {
   data() {
     return {
       selectedProdi: 'all',
+      selectedYear: 'all',
       itemType: 'all',
       currentPage: 1,
       itemsPerPage: 20
@@ -631,7 +609,6 @@ export default {
         result[prodiName] = new Set()
         if (prodiData.lecturers) {
           prodiData.lecturers.forEach(l => {
-            // Normalize nama (hapus gelar untuk matching)
             const normalizedName = this.normalizeName(l.name)
             result[prodiName].add(normalizedName)
           })
@@ -662,39 +639,47 @@ export default {
       return this.lecturers.filter(l => l.prodi === this.selectedProdi)
     },
 
-    // Collect all research and service items with prodi info
+    // Collect all research and service items with prodi info (DEDUPLICATED by title+year+type)
     allItems() {
-      const items = []
+      const itemsMap = new Map() // Use Map to deduplicate by unique key
+
       this.filteredLecturers.forEach(lecturer => {
-        // Research items
         if (lecturer.research && Array.isArray(lecturer.research)) {
           lecturer.research.forEach(r => {
             if (r.title) {
-              items.push({
-                ...r,
-                type: 'research',
-                prodi: lecturer.prodi,
-                lecturerName: lecturer.name
-              })
+              // Create unique key: title + year + type
+              const key = `research|${r.title}|${r.year || ''}`
+              if (!itemsMap.has(key)) {
+                itemsMap.set(key, {
+                  ...r,
+                  type: 'research',
+                  prodi: lecturer.prodi,
+                  lecturerName: lecturer.name
+                })
+              }
             }
           })
         }
-        // Service items
         if (lecturer.services && Array.isArray(lecturer.services)) {
           lecturer.services.forEach(s => {
             if (s.title) {
-              items.push({
-                ...s,
-                type: 'service',
-                prodi: lecturer.prodi,
-                lecturerName: lecturer.name
-              })
+              // Create unique key: title + year + type
+              const key = `service|${s.title}|${s.year || ''}`
+              if (!itemsMap.has(key)) {
+                itemsMap.set(key, {
+                  ...s,
+                  type: 'service',
+                  prodi: lecturer.prodi,
+                  lecturerName: lecturer.name
+                })
+              }
             }
           })
         }
       })
-      // Sort by year descending, then by funding amount
-      return items.sort((a, b) => {
+
+      // Convert Map to array and sort
+      return Array.from(itemsMap.values()).sort((a, b) => {
         if (b.year !== a.year) return (b.year || '0').localeCompare(a.year || '0')
         return (b.fundingAmount || 0) - (a.fundingAmount || 0)
       })
@@ -714,7 +699,6 @@ export default {
       return this.filteredItems.slice(start, start + this.itemsPerPage)
     },
 
-    // Summary stats
     lecturerCount() {
       return this.filteredLecturers.length
     },
@@ -748,12 +732,116 @@ export default {
       return this.totalFunding / this.lecturerCount
     },
 
-    // Yearly Performance - untuk akreditasi dengan dosen aktif per tahun
+    // Daftar tahun yang tersedia
+    availableYears() {
+      const years = new Set()
+      this.allItems.forEach(item => {
+        if (item.year && item.year !== 'Unknown') {
+          years.add(item.year)
+        }
+      })
+      return Array.from(years).sort((a, b) => b.localeCompare(a))
+    },
+
+    // Kinerja per Dosen
+    lecturerPerformance() {
+      const lecturerMap = {}
+      const dtpsNames = this.currentDtpsNames
+
+      // Filter items by selected year
+      const items = this.selectedYear === 'all'
+        ? this.allItems
+        : this.allItems.filter(i => i.year === this.selectedYear)
+
+      // Initialize all lecturers from current prodi
+      this.filteredLecturers.forEach(lecturer => {
+        const normalizedName = this.normalizeName(lecturer.name)
+        lecturerMap[normalizedName] = {
+          name: lecturer.name,
+          normalizedName,
+          researchAsLeader: 0,
+          researchAsMember: 0,
+          serviceAsLeader: 0,
+          serviceAsMember: 0,
+          totalFunding: 0
+        }
+      })
+
+      // Process each item
+      items.forEach(item => {
+        const leaderNormalized = this.normalizeName(item.leader)
+        const leaderIsDTPS = this.isDTPS(leaderNormalized, dtpsNames)
+        const fundingAmount = item.fundingAmount || 0
+
+        // Count as leader if lecturer is the leader
+        if (leaderIsDTPS) {
+          // Find the lecturer entry
+          for (const key of Object.keys(lecturerMap)) {
+            if (this.isDTPS(leaderNormalized, new Set([key]))) {
+              if (item.type === 'research') {
+                lecturerMap[key].researchAsLeader++
+              } else {
+                lecturerMap[key].serviceAsLeader++
+              }
+              lecturerMap[key].totalFunding += fundingAmount
+              break
+            }
+          }
+        }
+
+        // Count members only if leader is from OUTSIDE prodi
+        if (!leaderIsDTPS && item.members && item.members.length) {
+          item.members.forEach(member => {
+            const memberNormalized = this.normalizeName(member)
+            // Check if member is DTPS
+            for (const key of Object.keys(lecturerMap)) {
+              if (this.isDTPS(memberNormalized, new Set([key]))) {
+                if (item.type === 'research') {
+                  lecturerMap[key].researchAsMember++
+                } else {
+                  lecturerMap[key].serviceAsMember++
+                }
+                break
+              }
+            }
+          })
+        }
+      })
+
+      // Convert to array and calculate totals
+      return Object.values(lecturerMap)
+        .map(l => ({
+          ...l,
+          totalTitles: l.researchAsLeader + l.researchAsMember + l.serviceAsLeader + l.serviceAsMember
+        }))
+        .filter(l => l.totalTitles > 0 || this.selectedYear === 'all')
+        .sort((a, b) => b.totalFunding - a.totalFunding || b.totalTitles - a.totalTitles)
+    },
+
+    // Total for lecturerPerformance
+    lecturerPerformanceTotal() {
+      return this.lecturerPerformance.reduce((acc, l) => ({
+        researchAsLeader: acc.researchAsLeader + l.researchAsLeader,
+        researchAsMember: acc.researchAsMember + l.researchAsMember,
+        serviceAsLeader: acc.serviceAsLeader + l.serviceAsLeader,
+        serviceAsMember: acc.serviceAsMember + l.serviceAsMember,
+        totalTitles: acc.totalTitles + l.totalTitles,
+        totalFunding: acc.totalFunding + l.totalFunding
+      }), {
+        researchAsLeader: 0,
+        researchAsMember: 0,
+        serviceAsLeader: 0,
+        serviceAsMember: 0,
+        totalTitles: 0,
+        totalFunding: 0
+      })
+    },
+
+    // Yearly Performance (kept for charts)
     yearlyPerformance() {
       const yearMap = {}
       const dtpsNames = this.currentDtpsNames
 
-      // Kumpulkan data per tahun
       this.allItems.forEach(item => {
         const year = item.year || 'Unknown'
         if (year === 'Unknown') return
@@ -764,29 +852,32 @@ export default {
             researchCount: 0,
             serviceCount: 0,
             totalFunding: 0,
-            leaders: new Set(),           // Semua ketua
-            leadersDTPS: new Set(),       // Ketua yang DTPS
-            leadersExternal: new Set(),   // Ketua yang bukan DTPS
-            activeLecturers: new Set(),   // Semua yang terlibat
-            activeDTPS: new Set(),        // Terlibat yang DTPS
-            activeExternal: new Set()     // Terlibat yang bukan DTPS
+            researchFunding: 0,
+            serviceFunding: 0,
+            leaders: new Set(),
+            leadersDTPS: new Set(),
+            leadersExternal: new Set(),
+            activeLecturers: new Set(),
+            activeDTPS: new Set(),
+            activeExternal: new Set()
           }
         }
 
+        const fundingAmount = item.fundingAmount || 0
         if (item.type === 'research') {
           yearMap[year].researchCount++
+          yearMap[year].researchFunding += fundingAmount
         } else {
           yearMap[year].serviceCount++
+          yearMap[year].serviceFunding += fundingAmount
         }
-        yearMap[year].totalFunding += item.fundingAmount || 0
+        yearMap[year].totalFunding += fundingAmount
 
-        // Tambahkan leader (ketua) - untuk perhitungan LKPS
         if (item.leader) {
           const normalizedLeader = this.normalizeName(item.leader)
           yearMap[year].leaders.add(item.leader)
           yearMap[year].activeLecturers.add(item.leader)
 
-          // Cek apakah DTPS atau Eksternal
           if (this.isDTPS(normalizedLeader, dtpsNames)) {
             yearMap[year].leadersDTPS.add(item.leader)
             yearMap[year].activeDTPS.add(item.leader)
@@ -796,7 +887,6 @@ export default {
           }
         }
 
-        // Tambahkan members (anggota)
         if (item.members && item.members.length) {
           item.members.forEach(m => {
             const normalizedMember = this.normalizeName(m)
@@ -810,7 +900,6 @@ export default {
           })
         }
 
-        // Tambahkan lecturer name jika ada (fallback)
         if (item.lecturerName) {
           yearMap[year].activeLecturers.add(item.lecturerName)
           const normalizedName = this.normalizeName(item.lecturerName)
@@ -822,7 +911,6 @@ export default {
         }
       })
 
-      // Convert to array dan hitung rasio
       return Object.values(yearMap)
         .map(y => {
           const leaderCount = y.leaders.size || 1
@@ -832,8 +920,6 @@ export default {
           const activeDTPSCount = y.activeDTPS.size
           const activeExternalCount = y.activeExternal.size
           const totalActivities = y.researchCount + y.serviceCount
-
-          // Rasio LKPS seharusnya hanya DTPS
           const ratioByDTPS = leaderDTPSCount > 0 ? totalActivities / leaderDTPSCount : 0
 
           return {
@@ -841,24 +927,20 @@ export default {
             researchCount: y.researchCount,
             serviceCount: y.serviceCount,
             totalFunding: y.totalFunding,
-            // Semua ketua
-            leaderCount: leaderCount,
-            leaderDTPSCount: leaderDTPSCount,
-            leaderExternalCount: leaderExternalCount,
-            // Semua terlibat
-            activeLecturers: activeLecturers,
-            activeDTPSCount: activeDTPSCount,
-            activeExternalCount: activeExternalCount,
-            // Rasio
-            ratioByLeader: totalActivities / leaderCount,           // Semua ketua
-            ratioByDTPS: ratioByDTPS,                               // Hanya DTPS (standar LKPS)
-            ratioByActive: totalActivities / activeLecturers        // Semua terlibat
+            researchFunding: y.researchFunding,
+            serviceFunding: y.serviceFunding,
+            leaderCount,
+            leaderDTPSCount,
+            leaderExternalCount,
+            activeLecturers,
+            activeDTPSCount,
+            activeExternalCount
           }
         })
-        .sort((a, b) => b.year.localeCompare(a.year)) // Descending by year
+        .sort((a, b) => b.year.localeCompare(a.year))
     },
 
-    // Rata-rata 3 tahun terakhir untuk akreditasi
+    // Rata-rata 3 tahun terakhir
     avg3Year() {
       const recent3 = this.yearlyPerformance.slice(0, 3)
 
@@ -873,9 +955,8 @@ export default {
           avgResearch: 0,
           avgService: 0,
           avgFunding: 0,
-          avgRatioByLeader: 0,
-          avgRatioByDTPS: 0,
-          avgRatioByActive: 0
+          avgResearchFunding: 0,
+          avgServiceFunding: 0
         }
       }
 
@@ -889,14 +970,13 @@ export default {
         research: acc.research + y.researchCount,
         service: acc.service + y.serviceCount,
         funding: acc.funding + y.totalFunding,
-        ratioByLeader: acc.ratioByLeader + y.ratioByLeader,
-        ratioByDTPS: acc.ratioByDTPS + y.ratioByDTPS,
-        ratioByActive: acc.ratioByActive + y.ratioByActive
+        researchFunding: acc.researchFunding + y.researchFunding,
+        serviceFunding: acc.serviceFunding + y.serviceFunding
       }), {
         leaders: 0, leadersDTPS: 0, leadersExternal: 0,
         activeLecturers: 0, activeDTPS: 0, activeExternal: 0,
         research: 0, service: 0, funding: 0,
-        ratioByLeader: 0, ratioByDTPS: 0, ratioByActive: 0
+        researchFunding: 0, serviceFunding: 0
       })
 
       const count = recent3.length
@@ -911,9 +991,8 @@ export default {
         avgResearch: sum.research / count,
         avgService: sum.service / count,
         avgFunding: sum.funding / count,
-        avgRatioByLeader: sum.ratioByLeader / count,
-        avgRatioByDTPS: sum.ratioByDTPS / count,
-        avgRatioByActive: sum.ratioByActive / count
+        avgResearchFunding: sum.researchFunding / count,
+        avgServiceFunding: sum.serviceFunding / count
       }
     },
 
@@ -954,15 +1033,13 @@ export default {
       )
     },
 
-    // Grant Type Details - tabel lengkap semua jenis hibah
+    // Grant Type Details
     grantTypeDetails() {
       const grantMap = {}
 
       this.allItems.forEach(item => {
         const grantType = item.grantType || 'Tidak Diketahui'
         const source = item.source || 'Tidak Diketahui'
-
-        // Gunakan kombinasi grantType sebagai key
         const key = grantType
 
         if (!grantMap[key]) {
@@ -985,13 +1062,11 @@ export default {
           grantMap[key].serviceCount++
         }
 
-        // Update source jika belum ada
         if (grantMap[key].source === 'Tidak Diketahui' && source !== 'Tidak Diketahui') {
           grantMap[key].source = source
         }
       })
 
-      // Convert to array, calculate avg, and sort by total funding
       return Object.values(grantMap)
         .map(g => ({
           ...g,
@@ -1066,34 +1141,6 @@ export default {
       }
     },
 
-    // Chart data: Funding by Grant Type
-    fundingByGrantTypeData() {
-      const grantMap = {}
-
-      this.allItems.forEach(item => {
-        const grantType = item.grantType || item.grantCategory || 'Tidak Diketahui'
-        if (!grantMap[grantType]) {
-          grantMap[grantType] = 0
-        }
-        grantMap[grantType] += item.fundingAmount || 0
-      })
-
-      // Sort by funding amount and take top 10
-      const sorted = Object.entries(grantMap)
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, 10)
-
-      return {
-        labels: sorted.map(([type]) => type.length > 40 ? type.substring(0, 40) + '...' : type),
-        datasets: [{
-          label: 'Dana (Juta Rp)',
-          data: sorted.map(([, amount]) => amount / 1000000),
-          backgroundColor: 'rgba(16, 185, 129, 0.8)',
-          borderRadius: 4
-        }]
-      }
-    },
-
     barChartOptions() {
       return {
         responsive: true,
@@ -1111,31 +1158,6 @@ export default {
         },
         scales: {
           y: {
-            beginAtZero: true,
-            title: {
-              display: true,
-              text: 'Juta Rupiah'
-            }
-          }
-        }
-      }
-    },
-
-    horizontalBarOptions() {
-      return {
-        responsive: true,
-        maintainAspectRatio: false,
-        indexAxis: 'y',
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            callbacks: {
-              label: (ctx) => `Rp ${ctx.raw.toFixed(1)} Juta`
-            }
-          }
-        },
-        scales: {
-          x: {
             beginAtZero: true,
             title: {
               display: true,
@@ -1171,7 +1193,6 @@ export default {
     // Normalize nama dosen - hapus gelar untuk matching
     normalizeName(name) {
       if (!name) return ''
-      // Hapus gelar umum di Indonesia
       return name
         .replace(/,?\s*(S\.T\.|S\.E\.|S\.Kom\.|S\.Si\.|S\.P\.|M\.T\.|M\.M\.|M\.Kom\.|M\.Sc\.|M\.Acc\.|M\.Ak\.|MBA\.|Ak\.|Ir\.|Dr\.|Prof\.|Ph\.D\.|CSCA\.|CDMS\.|CPEC\.|CHCM\.)/gi, '')
         .replace(/\s+/g, ' ')
@@ -1183,20 +1204,15 @@ export default {
     isDTPS(normalizedName, dtpsSet) {
       if (!normalizedName || !dtpsSet) return false
 
-      // Cek exact match dulu
       if (dtpsSet.has(normalizedName)) return true
 
-      // Cek partial match (nama depan + tengah)
       for (const dtpsName of dtpsSet) {
-        // Jika salah satu mengandung yang lain (untuk handle variasi penulisan nama)
         if (dtpsName.includes(normalizedName) || normalizedName.includes(dtpsName)) {
           return true
         }
-        // Cek nama depan dan nama belakang saja
         const dtpsParts = dtpsName.split(' ')
         const nameParts = normalizedName.split(' ')
         if (dtpsParts.length >= 2 && nameParts.length >= 2) {
-          // Cek nama depan dan nama belakang match
           if (dtpsParts[0] === nameParts[0] && dtpsParts[dtpsParts.length - 1] === nameParts[nameParts.length - 1]) {
             return true
           }
