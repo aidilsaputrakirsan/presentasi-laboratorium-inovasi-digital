@@ -1,40 +1,48 @@
 <template>
   <div class="space-y-6">
     <!-- Header -->
-    <div class="card bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-slate-700">
-      <div class="flex items-center justify-between mb-4">
-        <div class="flex items-center gap-4">
+    <!-- Header -->
+    <div class="relative overflow-hidden rounded-2xl bg-slate-900 shadow-xl border border-slate-800">
+      <!-- Background Effects -->
+      <div class="absolute top-0 right-0 w-96 h-96 bg-rose-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+      
+      <div class="relative p-6 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-5">
           <!-- Pulse Logo -->
-          <div class="relative">
-            <div class="w-14 h-14 bg-gradient-to-br from-rose-500 via-pink-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg shadow-rose-500/30">
-              <!-- Heartbeat/Pulse Icon -->
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="relative group">
+            <div class="w-16 h-16 bg-gradient-to-br from-rose-500 via-pink-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg shadow-rose-500/20 group-hover:scale-105 transition-transform duration-300">
+              <svg class="w-8 h-8 text-white drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
               </svg>
             </div>
-            <!-- Pulse ring animation -->
-            <div class="absolute inset-0 rounded-2xl bg-rose-500/30 animate-ping"></div>
+            <!-- Pulse ring -->
+            <div class="absolute inset-0 rounded-2xl bg-rose-500/40 animate-ping opacity-75"></div>
           </div>
           <div>
-            <div class="flex items-center gap-3">
-              <h1 class="text-2xl font-black text-white tracking-tight">SINTA-Pulse</h1>
-              <span class="px-2 py-0.5 bg-gradient-to-r from-rose-500 to-pink-500 text-white text-[10px] font-bold rounded-full uppercase tracking-wider">Live</span>
+            <div class="flex items-center gap-3 mb-1">
+              <h1 class="text-3xl font-black text-white tracking-tight leading-none bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">SINTA-Pulse</h1>
+              <span class="px-2.5 py-0.5 bg-rose-500/20 text-rose-300 border border-rose-500/30 text-[10px] font-bold rounded-full uppercase tracking-wider backdrop-blur-sm flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>
+                Live Sync
+              </span>
             </div>
-            <p class="text-sm text-slate-400 mt-0.5">Dashboard Monitoring Dosen | Data Kumulatif SINTA 3</p>
+            <p class="text-slate-400 font-medium">Dashboard Monitoring Performa Dosen & Tridarma</p>
           </div>
         </div>
-        <div class="flex items-center gap-4">
+        
+        <div class="flex items-center gap-4 z-10">
           <div class="hidden md:flex flex-col items-end">
-            <span class="text-xs uppercase tracking-wider text-slate-500 font-bold">Monitoring</span>
-            <span class="text-sm font-semibold text-slate-300">{{ sintaLecturers.length }} Dosen Aktif</span>
+            <span class="text-[10px] uppercase tracking-wider text-slate-500 font-bold">Total Dosen</span>
+            <span class="text-2xl font-bold text-white leading-none">{{ sintaLecturers.length }}</span>
           </div>
           <a
             href="https://sinta.kemdiktisaintek.go.id"
             target="_blank"
-            class="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:from-rose-600 hover:to-pink-600 transition-all flex items-center gap-2 shadow-lg shadow-rose-500/25"
+            class="group bg-gradient-to-r from-rose-600 to-pink-600 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:from-rose-500 hover:to-pink-500 transition-all flex items-center gap-2 shadow-lg shadow-rose-500/25 border border-white/10"
           >
             <span>Buka SINTA</span>
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
             </svg>
           </a>
@@ -58,6 +66,14 @@
         <div class="bg-gradient-to-br from-sky-50 to-sky-100 rounded-xl p-4 text-center border border-sky-200 hover:shadow-md transition-all group">
           <div class="text-2xl font-black text-sky-600 group-hover:scale-110 transition-transform">{{ stats.totalSinta }}</div>
           <div class="text-xs uppercase tracking-wider text-sky-700 mt-1 font-bold">SINTA</div>
+        </div>
+        <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-4 text-center border border-orange-200 hover:shadow-md transition-all group">
+          <div class="text-2xl font-black text-orange-600 group-hover:scale-110 transition-transform">{{ stats.totalGoogle }}</div>
+          <div class="text-xs uppercase tracking-wider text-orange-700 mt-1 font-bold">G.Scholar</div>
+        </div>
+        <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-4 text-center border border-pink-200 hover:shadow-md transition-all group">
+          <div class="text-2xl font-black text-pink-600 group-hover:scale-110 transition-transform">{{ stats.totalRama }}</div>
+          <div class="text-xs uppercase tracking-wider text-pink-700 mt-1 font-bold">RAMA</div>
         </div>
         <div class="bg-gradient-to-br from-rose-50 to-rose-100 rounded-xl p-4 text-center border border-rose-200 hover:shadow-md transition-all group">
           <div class="text-2xl font-black text-rose-600 group-hover:scale-110 transition-transform">{{ stats.totalCitations }}</div>
@@ -159,8 +175,22 @@
     <div class="card">
       <div class="flex items-center justify-between mb-4">
         <div class="flex flex-col">
-          <h3 class="text-lg font-bold text-slate-800">Detail Performa Dosen</h3>
-          <p class="text-sm text-slate-500">Data kumulatif keseluruhan karir | Kolom "-" = tanpa kategori/akreditasi | Jml = Jumlah total</p>
+          <div class="flex items-center gap-3">
+            <h3 class="text-lg font-bold text-slate-800">Detail Performa Dosen</h3>
+            <!-- Year Filter -->
+            <select
+              v-model="yearFilter"
+              class="px-3 py-1.5 text-sm bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 font-medium text-slate-600"
+            >
+              <option value="all">Semua Tahun</option>
+              <option value="3">3 Tahun Terakhir</option>
+              <option value="5">5 Tahun Terakhir</option>
+            </select>
+            <span v-if="yearFilter !== 'all'" class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-medium">
+              Filter Aktif: Penelitian, Pengabdian, Scopus, SINTA
+            </span>
+          </div>
+          <p class="text-sm text-slate-500">{{ yearFilter === 'all' ? 'Data kumulatif keseluruhan karir' : 'Filter ' + yearFilter + ' tahun terakhir (Penelitian, Pengabdian, Scopus, SINTA)' }} | Kolom "-" = tanpa kategori</p>
         </div>
       </div>
 
@@ -186,10 +216,31 @@
                   <SortIcon :active="sortColumn === 'services'" :direction="sortDirection" />
                 </button>
               </th>
+              <th class="text-center py-3 px-2 font-bold text-orange-600 uppercase tracking-wider text-xs" rowspan="2">
+                <div class="flex items-center justify-center gap-1 group/tooltip relative">
+                  <button @click="sortBy('google')" class="flex items-center gap-1 justify-center">
+                    G.Scholar
+                    <SortIcon :active="sortColumn === 'google'" :direction="sortDirection" />
+                  </button>
+                  <div class="hidden group-hover/tooltip:block absolute top-full left-1/2 -translate-x-1/2 mt-2 w-48 p-2 bg-slate-800 text-white text-[10px] font-medium rounded shadow-lg z-50 normal-case leading-tight text-center">
+                    Data diambil langsung (real-time) dari profil Google Scholar, mungkin berbeda dengan sinkronisasi SINTA.
+                    <div class="absolute bottom-full left-1/2 -translate-x-1/2 border-4 border-transparent border-b-slate-800"></div>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3 text-orange-400 cursor-help">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </th>
+              <th class="text-center py-3 px-2 font-bold text-pink-600 uppercase tracking-wider text-xs" rowspan="2">
+                <button @click="sortBy('rama')" class="flex items-center gap-1 justify-center w-full">
+                  RAMA
+                  <SortIcon :active="sortColumn === 'rama'" :direction="sortDirection" />
+                </button>
+              </th>
               <th class="text-center py-2 px-2 font-bold text-indigo-600 uppercase tracking-wider text-xs border-l border-slate-200 bg-indigo-50/50" colspan="6">
                 Scopus (Internasional)
               </th>
-              <th class="text-center py-2 px-2 font-bold text-sky-600 uppercase tracking-wider text-xs border-l border-slate-200 bg-sky-50/50" colspan="8">
+              <th class="text-center py-2 px-2 font-bold text-sky-600 uppercase tracking-wider text-xs border-l border-slate-200 bg-sky-50/50" colspan="9">
                 SINTA (Nasional)
               </th>
               <th class="text-center py-3 px-2 font-bold text-rose-600 uppercase tracking-wider text-xs border-l border-slate-200" rowspan="2">
@@ -229,6 +280,7 @@
               <th class="text-center py-2 px-1 font-semibold text-sky-400 text-[11px] bg-sky-50/20">S5</th>
               <th class="text-center py-2 px-1 font-semibold text-sky-300 text-[11px]">S6</th>
               <th class="text-center py-2 px-1 font-semibold text-slate-400 text-[11px]" title="Tanpa Akreditasi">-</th>
+              <th class="text-center py-2 px-1 font-semibold text-slate-500 text-[11px] bg-slate-50/30" title="Item diluar 10 sampel data (Older)">Lain</th>
               <th class="text-center py-2 px-1 font-semibold text-sky-600 text-[11px] bg-sky-100/30">Jml</th>
             </tr>
           </thead>
@@ -243,85 +295,119 @@
                 <div class="text-xs text-slate-400 font-medium">SINTA ID: {{ lecturer.sintaId }}</div>
               </td>
               <td class="text-center py-3 px-2">
-                <span class="inline-flex items-center justify-center min-w-[2rem] h-8 px-2 rounded-lg bg-blue-50 text-blue-700 font-bold text-sm border border-blue-100">
-                  {{ lecturer.research?.length || 0 }}
+                <span :class="[
+                  'inline-flex items-center justify-center min-w-[2rem] h-8 px-2 rounded-lg font-bold text-sm border',
+                  yearFilter !== 'all' ? 'bg-blue-100 text-blue-800 border-blue-200' : 'bg-blue-50 text-blue-700 border-blue-100'
+                ]">
+                  {{ getFilteredResearchCount(lecturer) }}
                 </span>
               </td>
               <td class="text-center py-3 px-2">
-                <span class="inline-flex items-center justify-center min-w-[2rem] h-8 px-2 rounded-lg bg-emerald-50 text-emerald-700 font-bold text-sm border border-emerald-100">
-                  {{ lecturer.services?.length || 0 }}
+                <span :class="[
+                  'inline-flex items-center justify-center min-w-[2rem] h-8 px-2 rounded-lg font-bold text-sm border',
+                  yearFilter !== 'all' ? 'bg-emerald-100 text-emerald-800 border-emerald-200' : 'bg-emerald-50 text-emerald-700 border-emerald-100'
+                ]">
+                  {{ getFilteredServicesCount(lecturer) }}
                 </span>
               </td>
-              <!-- Scopus Q1-Q4 -->
+              <!-- Google Scholar & RAMA -->
+              <td class="text-center py-3 px-2">
+                <span :class="[
+                  'inline-flex items-center justify-center min-w-[2rem] h-8 px-2 rounded-lg font-bold text-sm border',
+                  (lecturer.documents?.googlescholar?.total || 0) > 0 ? 'bg-orange-50 text-orange-700 border-orange-100' : 'bg-slate-50 text-slate-300 border-slate-100'
+                ]">
+                  {{ lecturer.documents?.googlescholar?.total || 0 }}
+                </span>
+              </td>
+              <td class="text-center py-3 px-2">
+                <span :class="[
+                  'inline-flex items-center justify-center min-w-[2rem] h-8 px-2 rounded-lg font-bold text-sm border',
+                  (lecturer.documents?.rama?.total || 0) > 0 ? 'bg-pink-50 text-pink-700 border-pink-100' : 'bg-slate-50 text-slate-300 border-slate-100'
+                ]">
+                  {{ lecturer.documents?.rama?.total || 0 }}
+                </span>
+              </td>
+              <!-- Scopus Q1-Q4 (with year filtering) -->
               <td class="text-center py-3 px-1 border-l border-slate-100 bg-indigo-50/20">
-                <span :class="['font-bold text-sm', lecturer.documents?.scopus?.q1 > 0 ? 'text-indigo-800' : 'text-slate-300']">
-                  {{ lecturer.documents?.scopus?.q1 || 0 }}
+                <span :class="['font-bold text-sm', getFilteredScopusCounts(lecturer).q1 > 0 ? 'text-indigo-800' : 'text-slate-300']">
+                  {{ getFilteredScopusCounts(lecturer).q1 }}
                 </span>
               </td>
               <td class="text-center py-3 px-1 bg-indigo-50/10">
-                <span :class="['font-bold text-sm', lecturer.documents?.scopus?.q2 > 0 ? 'text-indigo-700' : 'text-slate-300']">
-                  {{ lecturer.documents?.scopus?.q2 || 0 }}
+                <span :class="['font-bold text-sm', getFilteredScopusCounts(lecturer).q2 > 0 ? 'text-indigo-700' : 'text-slate-300']">
+                  {{ getFilteredScopusCounts(lecturer).q2 }}
                 </span>
               </td>
               <td class="text-center py-3 px-1">
-                <span :class="['font-bold text-sm', lecturer.documents?.scopus?.q3 > 0 ? 'text-indigo-600' : 'text-slate-300']">
-                  {{ lecturer.documents?.scopus?.q3 || 0 }}
+                <span :class="['font-bold text-sm', getFilteredScopusCounts(lecturer).q3 > 0 ? 'text-indigo-600' : 'text-slate-300']">
+                  {{ getFilteredScopusCounts(lecturer).q3 }}
                 </span>
               </td>
               <td class="text-center py-3 px-1">
-                <span :class="['font-bold text-sm', lecturer.documents?.scopus?.q4 > 0 ? 'text-indigo-500' : 'text-slate-300']">
-                  {{ lecturer.documents?.scopus?.q4 || 0 }}
+                <span :class="['font-bold text-sm', getFilteredScopusCounts(lecturer).q4 > 0 ? 'text-indigo-500' : 'text-slate-300']">
+                  {{ getFilteredScopusCounts(lecturer).q4 }}
                 </span>
               </td>
               <td class="text-center py-3 px-1">
-                <span :class="['font-bold text-sm', lecturer.documents?.scopus?.noq > 0 ? 'text-slate-500' : 'text-slate-300']">
-                  {{ lecturer.documents?.scopus?.noq || 0 }}
+                <span :class="['font-bold text-sm', getFilteredScopusCounts(lecturer).noq > 0 ? 'text-slate-500' : 'text-slate-300']">
+                  {{ getFilteredScopusCounts(lecturer).noq }}
                 </span>
               </td>
               <td class="text-center py-3 px-1">
-                <span class="inline-flex items-center justify-center min-w-[1.5rem] h-6 px-1 rounded bg-indigo-100 text-indigo-700 font-bold text-xs">
-                  {{ lecturer.documents?.scopus?.total || 0 }}
+                <span :class="[
+                  'inline-flex items-center justify-center min-w-[1.5rem] h-6 px-1 rounded font-bold text-xs',
+                  yearFilter !== 'all' ? 'bg-indigo-200 text-indigo-800' : 'bg-indigo-100 text-indigo-700'
+                ]">
+                  {{ getFilteredScopusCounts(lecturer).total }}
                 </span>
               </td>
-              <!-- SINTA S1-S6 -->
+              <!-- SINTA S1-S6 (with year filtering) -->
               <td class="text-center py-3 px-1 border-l border-slate-100 bg-sky-50/20">
-                <span :class="['font-bold text-sm', lecturer.documents?.sinta?.s1 > 0 ? 'text-sky-800' : 'text-slate-300']">
-                  {{ lecturer.documents?.sinta?.s1 || 0 }}
+                <span :class="['font-bold text-sm', getFilteredSintaCounts(lecturer).s1 > 0 ? 'text-sky-800' : 'text-slate-300']">
+                  {{ getFilteredSintaCounts(lecturer).s1 }}
                 </span>
               </td>
               <td class="text-center py-3 px-1 bg-sky-50/10">
-                <span :class="['font-bold text-sm', lecturer.documents?.sinta?.s2 > 0 ? 'text-sky-700' : 'text-slate-300']">
-                  {{ lecturer.documents?.sinta?.s2 || 0 }}
+                <span :class="['font-bold text-sm', getFilteredSintaCounts(lecturer).s2 > 0 ? 'text-sky-700' : 'text-slate-300']">
+                  {{ getFilteredSintaCounts(lecturer).s2 }}
                 </span>
               </td>
               <td class="text-center py-3 px-1">
-                <span :class="['font-bold text-sm', lecturer.documents?.sinta?.s3 > 0 ? 'text-sky-600' : 'text-slate-300']">
-                  {{ lecturer.documents?.sinta?.s3 || 0 }}
+                <span :class="['font-bold text-sm', getFilteredSintaCounts(lecturer).s3 > 0 ? 'text-sky-600' : 'text-slate-300']">
+                  {{ getFilteredSintaCounts(lecturer).s3 }}
                 </span>
               </td>
               <td class="text-center py-3 px-1">
-                <span :class="['font-bold text-sm', lecturer.documents?.sinta?.s4 > 0 ? 'text-sky-500' : 'text-slate-300']">
-                  {{ lecturer.documents?.sinta?.s4 || 0 }}
+                <span :class="['font-bold text-sm', getFilteredSintaCounts(lecturer).s4 > 0 ? 'text-sky-500' : 'text-slate-300']">
+                  {{ getFilteredSintaCounts(lecturer).s4 }}
                 </span>
               </td>
               <td class="text-center py-3 px-1">
-                <span :class="['font-bold text-sm', lecturer.documents?.sinta?.s5 > 0 ? 'text-sky-400' : 'text-slate-300']">
-                  {{ lecturer.documents?.sinta?.s5 || 0 }}
+                <span :class="['font-bold text-sm', getFilteredSintaCounts(lecturer).s5 > 0 ? 'text-sky-400' : 'text-slate-300']">
+                  {{ getFilteredSintaCounts(lecturer).s5 }}
                 </span>
               </td>
               <td class="text-center py-3 px-1">
-                <span :class="['font-bold text-sm', lecturer.documents?.sinta?.s6 > 0 ? 'text-sky-300' : 'text-slate-300']">
-                  {{ lecturer.documents?.sinta?.s6 || 0 }}
+                <span :class="['font-bold text-sm', getFilteredSintaCounts(lecturer).s6 > 0 ? 'text-sky-300' : 'text-slate-300']">
+                  {{ getFilteredSintaCounts(lecturer).s6 }}
                 </span>
               </td>
               <td class="text-center py-3 px-1">
-                <span :class="['font-bold text-sm', lecturer.documents?.sinta?.unknown > 0 ? 'text-slate-500' : 'text-slate-300']">
-                  {{ lecturer.documents?.sinta?.unknown || 0 }}
+                <span :class="['font-bold text-sm', getFilteredSintaCounts(lecturer).unknown > 0 ? 'text-slate-500' : 'text-slate-300']">
+                  {{ getFilteredSintaCounts(lecturer).unknown }}
+                </span>
+              </td>
+              <td class="text-center py-3 px-1 border-l border-slate-100 bg-slate-50/20">
+                <span :class="['font-bold text-sm', getFilteredSintaCounts(lecturer).others > 0 ? 'text-slate-500' : 'text-slate-300']" title="Item diluar 10 sampel data terbaru">
+                  {{ getFilteredSintaCounts(lecturer).others }}
                 </span>
               </td>
               <td class="text-center py-3 px-1">
-                <span class="inline-flex items-center justify-center min-w-[1.5rem] h-6 px-1 rounded bg-sky-100 text-sky-700 font-bold text-xs">
-                  {{ lecturer.documents?.sinta?.total || 0 }}
+                <span :class="[
+                  'inline-flex items-center justify-center min-w-[1.5rem] h-6 px-1 rounded font-bold text-xs',
+                  yearFilter !== 'all' ? 'bg-sky-200 text-sky-800' : 'bg-sky-100 text-sky-700'
+                ]">
+                  {{ getFilteredSintaCounts(lecturer).total }}
                 </span>
               </td>
               <!-- Sitasi -->
@@ -367,22 +453,25 @@
           <tfoot class="bg-slate-100 border-t-2 border-slate-300">
             <tr class="font-bold">
               <td class="py-4 px-4 text-slate-700 text-sm">TOTAL</td>
-              <td class="text-center py-4 px-2 text-blue-700 text-sm">{{ stats.totalResearch }}</td>
-              <td class="text-center py-4 px-2 text-emerald-700 text-sm">{{ stats.totalServices }}</td>
-              <td class="text-center py-4 px-1 border-l border-slate-200 text-indigo-800 text-sm">{{ scopusTotals.q1 }}</td>
-              <td class="text-center py-4 px-1 text-indigo-700 text-sm">{{ scopusTotals.q2 }}</td>
-              <td class="text-center py-4 px-1 text-indigo-600 text-sm">{{ scopusTotals.q3 }}</td>
-              <td class="text-center py-4 px-1 text-indigo-500 text-sm">{{ scopusTotals.q4 }}</td>
-              <td class="text-center py-4 px-1 text-slate-500 text-sm">{{ scopusTotals.noq }}</td>
-              <td class="text-center py-4 px-1 text-indigo-700 text-sm bg-indigo-100 rounded">{{ stats.totalScopus }}</td>
-              <td class="text-center py-4 px-1 border-l border-slate-200 text-sky-800 text-sm">{{ sintaTotals.s1 }}</td>
-              <td class="text-center py-4 px-1 text-sky-700 text-sm">{{ sintaTotals.s2 }}</td>
-              <td class="text-center py-4 px-1 text-sky-600 text-sm">{{ sintaTotals.s3 }}</td>
-              <td class="text-center py-4 px-1 text-sky-500 text-sm">{{ sintaTotals.s4 }}</td>
-              <td class="text-center py-4 px-1 text-sky-400 text-sm">{{ sintaTotals.s5 }}</td>
-              <td class="text-center py-4 px-1 text-sky-300 text-sm">{{ sintaTotals.s6 }}</td>
-              <td class="text-center py-4 px-1 text-slate-500 text-sm">{{ sintaTotals.unknown }}</td>
-              <td class="text-center py-4 px-1 text-sky-700 text-sm bg-sky-100 rounded">{{ stats.totalSinta }}</td>
+              <td class="text-center py-4 px-2 text-blue-700 text-sm">{{ filteredTotalResearch }}</td>
+              <td class="text-center py-4 px-2 text-emerald-700 text-sm">{{ filteredTotalServices }}</td>
+              <td class="text-center py-4 px-2 text-orange-700 text-sm">{{ stats.totalGoogle }}</td>
+              <td class="text-center py-4 px-2 text-pink-700 text-sm">{{ stats.totalRama }}</td>
+              <td class="text-center py-4 px-1 border-l border-slate-200 text-indigo-800 text-sm">{{ filteredScopusTotals.q1 }}</td>
+              <td class="text-center py-4 px-1 text-indigo-700 text-sm">{{ filteredScopusTotals.q2 }}</td>
+              <td class="text-center py-4 px-1 text-indigo-600 text-sm">{{ filteredScopusTotals.q3 }}</td>
+              <td class="text-center py-4 px-1 text-indigo-500 text-sm">{{ filteredScopusTotals.q4 }}</td>
+              <td class="text-center py-4 px-1 text-slate-500 text-sm">{{ filteredScopusTotals.noq }}</td>
+              <td class="text-center py-4 px-1 text-indigo-700 text-sm bg-indigo-100 rounded">{{ filteredScopusTotals.total }}</td>
+              <td class="text-center py-4 px-1 border-l border-slate-200 text-sky-800 text-sm">{{ filteredSintaTotals.s1 }}</td>
+              <td class="text-center py-4 px-1 text-sky-700 text-sm">{{ filteredSintaTotals.s2 }}</td>
+              <td class="text-center py-4 px-1 text-sky-600 text-sm">{{ filteredSintaTotals.s3 }}</td>
+              <td class="text-center py-4 px-1 text-sky-500 text-sm">{{ filteredSintaTotals.s4 }}</td>
+              <td class="text-center py-4 px-1 text-sky-400 text-sm">{{ filteredSintaTotals.s5 }}</td>
+              <td class="text-center py-4 px-1 text-sky-300 text-sm">{{ filteredSintaTotals.s6 }}</td>
+              <td class="text-center py-4 px-1 text-slate-500 text-sm">{{ filteredSintaTotals.unknown }}</td>
+              <td class="text-center py-4 px-1 border-l border-slate-200 text-slate-500 text-sm">{{ filteredSintaTotals.others }}</td>
+              <td class="text-center py-4 px-1 text-sky-700 text-sm bg-sky-100 rounded">{{ filteredSintaTotals.total }}</td>
               <td class="text-center py-4 px-2 border-l border-slate-200 text-rose-700 text-sm">{{ stats.totalCitations }}</td>
               <td class="text-center py-4 px-2 text-purple-700 text-sm">-</td>
               <td class="text-center py-4 px-2 text-amber-700 text-sm">{{ stats.totalIpr }}</td>
@@ -457,7 +546,8 @@ export default {
   data() {
     return {
       sortColumn: 'scopus',
-      sortDirection: 'desc'
+      sortDirection: 'desc',
+      yearFilter: 'all' // 'all', '3', '5'
     };
   },
   computed: {
@@ -480,6 +570,8 @@ export default {
         }
         if (col === 'research') { valA = a.research?.length || 0; valB = b.research?.length || 0; }
         else if (col === 'services') { valA = a.services?.length || 0; valB = b.services?.length || 0; }
+        else if (col === 'google') { valA = a.documents?.googlescholar?.total || 0; valB = b.documents?.googlescholar?.total || 0; }
+        else if (col === 'rama') { valA = a.documents?.rama?.total || 0; valB = b.documents?.rama?.total || 0; }
         else if (col === 'scopus') { valA = a.documents?.scopus?.total || 0; valB = b.documents?.scopus?.total || 0; }
         else if (col === 'sinta') { valA = a.documents?.sinta?.total || 0; valB = b.documents?.sinta?.total || 0; }
         else if (col === 'citations') { valA = a.stats?.citations || 0; valB = b.stats?.citations || 0; }
@@ -489,12 +581,14 @@ export default {
       });
     },
     stats() {
-      const s = { totalResearch: 0, totalServices: 0, totalScopus: 0, totalSinta: 0, totalCitations: 0, totalIpr: 0, totalBooks: 0 };
+      const s = { totalResearch: 0, totalServices: 0, totalScopus: 0, totalSinta: 0, totalCitations: 0, totalIpr: 0, totalBooks: 0, totalGoogle: 0, totalRama: 0 };
       this.sintaLecturers.forEach(l => {
-        s.totalResearch += l.research?.length || 0;
-        s.totalServices += l.services?.length || 0;
+        s.totalResearch += l.researchTotal || l.research?.length || 0;
+        s.totalServices += l.servicesTotal || l.services?.length || 0;
         s.totalScopus += l.documents?.scopus?.total || 0;
         s.totalSinta += l.documents?.sinta?.total || 0;
+        s.totalGoogle += l.documents?.googlescholar?.total || 0;
+        s.totalRama += l.documents?.rama?.total || 0;
         s.totalCitations += l.stats?.citations || 0;
         s.totalIpr += l.ipr?.total || 0;
         s.totalBooks += l.books?.length || 0;
@@ -634,7 +728,36 @@ export default {
         legend: { position: 'bottom', labels: { font: { size: 12, weight: 'bold' } } },
         tooltip: { titleFont: { size: 14 }, bodyFont: { size: 13 } }
       } 
-    })
+    }),
+    // Computed for filtered totals
+    filteredTotalResearch() {
+      return this.sintaLecturers.reduce((sum, l) => sum + this.getFilteredResearchCount(l), 0);
+    },
+    filteredTotalServices() {
+      return this.sintaLecturers.reduce((sum, l) => sum + this.getFilteredServicesCount(l), 0);
+    },
+    filteredScopusTotals() {
+      const t = { q1: 0, q2: 0, q3: 0, q4: 0, noq: 0, total: 0 };
+      this.sintaLecturers.forEach(l => {
+        const c = this.getFilteredScopusCounts(l);
+        t.q1 += c.q1; t.q2 += c.q2; t.q3 += c.q3; t.q4 += c.q4; t.noq += c.noq; t.total += c.total;
+      });
+      return t;
+    },
+    filteredSintaTotals() {
+      const t = { s1: 0, s2: 0, s3: 0, s4: 0, s5: 0, s6: 0, unknown: 0, others: 0, total: 0 };
+      this.sintaLecturers.forEach(l => {
+        const c = this.getFilteredSintaCounts(l);
+        t.s1 += c.s1; t.s2 += c.s2; t.s3 += c.s3; t.s4 += c.s4; t.s5 += c.s5; t.s6 += c.s6; 
+        t.unknown += c.unknown; t.others += c.others; t.total += c.total;
+      });
+      return t;
+    },
+    minYear() {
+      if (this.yearFilter === 'all') return 0;
+      const currentYear = new Date().getFullYear();
+      return currentYear - parseInt(this.yearFilter);
+    }
   },
   methods: {
     sortBy(column) {
@@ -642,7 +765,96 @@ export default {
       else { this.sortColumn = column; this.sortDirection = 'desc'; }
     },
     getShortName(name) { const p = name.split(' '); return p.length <= 2 ? name : p.slice(0,2).join(' '); },
-    formatDate(ds) { if (!ds) return ''; return new Date(ds).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }); }
+    formatDate(ds) { if (!ds) return ''; return new Date(ds).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }); },
+    getFilteredResearchCount(lecturer) {
+      if (this.yearFilter === 'all') return lecturer.researchTotal || lecturer.research?.length || 0;
+      return (lecturer.research || []).filter(r => {
+        const year = parseInt(r.year);
+        return year && year > this.minYear;
+      }).length;
+    },
+    getFilteredServicesCount(lecturer) {
+      if (this.yearFilter === 'all') return lecturer.servicesTotal || lecturer.services?.length || 0;
+      return (lecturer.services || []).filter(s => {
+        const year = parseInt(s.year);
+        return year && year > this.minYear;
+      }).length;
+    },
+    // Scopus year filtering - returns object with q1,q2,q3,q4,noq,total
+    getFilteredScopusCounts(lecturer) {
+      const scopus = lecturer.documents?.scopus;
+      if (this.yearFilter === 'all' || !scopus?.scopusList) {
+        return {
+          q1: scopus?.q1 || 0,
+          q2: scopus?.q2 || 0,
+          q3: scopus?.q3 || 0,
+          q4: scopus?.q4 || 0,
+          noq: scopus?.noq || 0,
+          total: scopus?.total || 0
+        };
+      }
+      const counts = { q1: 0, q2: 0, q3: 0, q4: 0, noq: 0, total: 0 };
+      (scopus.scopusList || []).forEach(item => {
+        const year = parseInt(item.year);
+        if (year && year > this.minYear) {
+          const q = item.q?.toUpperCase() || '';
+          if (q === 'Q1') counts.q1++;
+          else if (q === 'Q2') counts.q2++;
+          else if (q === 'Q3') counts.q3++;
+          else if (q === 'Q4') counts.q4++;
+          else counts.noq++;
+      counts.total++;
+        }
+      });
+      return counts;
+    },
+    // SINTA year filtering - returns object with s1-s6, unknown, others, total
+    getFilteredSintaCounts(lecturer) {
+      const sinta = lecturer.documents?.sinta;
+      if (this.yearFilter === 'all' || !sinta?.sintaList) {
+        // Calculate known sum to find 'others' (hidden due to pagination limit)
+        const total = sinta?.total || 0;
+        const s1 = sinta?.s1 || 0;
+        const s2 = sinta?.s2 || 0;
+        const s3 = sinta?.s3 || 0;
+        const s4 = sinta?.s4 || 0;
+        const s5 = sinta?.s5 || 0;
+        const s6 = sinta?.s6 || 0;
+        const unknown = sinta?.unknown || 0;
+        
+        // Others = Total - Known Items. Ensure not negative.
+        const knownSum = s1 + s2 + s3 + s4 + s5 + s6 + unknown;
+        const others = Math.max(0, total - knownSum);
+
+        return { s1, s2, s3, s4, s5, s6, unknown, others, total };
+      }
+      
+      const counts = { s1: 0, s2: 0, s3: 0, s4: 0, s5: 0, s6: 0, unknown: 0, others: 0, total: 0 };
+      let listTotal = 0;
+      
+      (sinta.sintaList || []).forEach(item => {
+        const year = parseInt(item.year);
+        if (year && year > this.minYear) {
+          const rank = (item.rank || '').toUpperCase();
+          if (rank === 'S1') counts.s1++;
+          else if (rank === 'S2') counts.s2++;
+          else if (rank === 'S3') counts.s3++;
+          else if (rank === 'S4') counts.s4++;
+          else if (rank === 'S5') counts.s5++;
+          else if (rank === 'S6') counts.s6++;
+          else counts.unknown++;
+          listTotal++;
+        }
+      });
+
+      // For filtered view, 'others' is tricky because we don't know the years of hidden items.
+      // We assume filtered view only shows what we HAVE. 
+      // So others = 0 for filtered view to be safe/accurate to what represents "filtered".
+      // OR we could estimate, but better to be strict: "Shown filtered items".
+      
+      counts.total = listTotal; 
+      return counts;
+    }
   }
 }
 </script>

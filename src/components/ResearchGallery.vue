@@ -213,6 +213,8 @@ export default {
         { key: 'services', label: 'Pengabdian', icon: '🤝' },
         { key: 'scopus', label: 'Scopus', icon: '📊' },
         { key: 'sinta', label: 'SINTA', icon: '📑' },
+        { key: 'google', label: 'G.Scholar', icon: '🎓' },
+        { key: 'rama', label: 'RAMA', icon: '📝' },
         { key: 'books', label: 'Buku', icon: '📚' },
         { key: 'ipr', label: 'HKI', icon: '💡' }
       ],
@@ -415,13 +417,21 @@ export default {
           });
         });
 
-        // Scopus & SINTA Documents
+        // Documents (Scopus, SINTA, Google Scholar, RAMA)
         (lec.documents?.list || []).forEach(d => {
+          let type = 'sinta'; // Default
+          let categoryUpper = (d.category || '').toUpperCase();
+          
+          if (categoryUpper.includes('SCOPUS')) type = 'scopus';
+          else if (categoryUpper.includes('SINTA')) type = 'sinta';
+          else if (categoryUpper.includes('GOOGLE')) type = 'google';
+          else if (categoryUpper.includes('RAMA')) type = 'rama';
+
           items.push({
-            type: d.category === 'scopus' ? 'scopus' : 'sinta',
+            type: type,
             title: d.title,
-            q: d.q || '',
-            rank: d.rank || '',
+            q: d.category, // Pass original category string for display logic
+            year: d.year,
             author: lec.name,
             prodi: lec.prodi
           });
@@ -505,20 +515,29 @@ export default {
       
       if (item.type === 'research') return `${base} bg-blue-100 text-blue-700`;
       if (item.type === 'services') return `${base} bg-emerald-100 text-emerald-700`;
+      
       if (item.type === 'scopus') {
-        if (item.q === 'Q1') return `${base} bg-indigo-200 text-indigo-800`;
-        if (item.q === 'Q2') return `${base} bg-indigo-100 text-indigo-700`;
-        if (item.q === 'Q3') return `${base} bg-indigo-50 text-indigo-600`;
-        if (item.q === 'Q4') return `${base} bg-slate-100 text-indigo-500`;
+        const cat = (item.q || '').toUpperCase();
+        if (cat.includes('Q1')) return `${base} bg-indigo-200 text-indigo-800`;
+        if (cat.includes('Q2')) return `${base} bg-indigo-100 text-indigo-700`;
+        if (cat.includes('Q3')) return `${base} bg-indigo-50 text-indigo-600`;
+        if (cat.includes('Q4')) return `${base} bg-slate-100 text-indigo-500`;
         return `${base} bg-slate-100 text-slate-500`;
       }
+      
       if (item.type === 'sinta') {
-        if (item.rank === 'S1') return `${base} bg-sky-200 text-sky-800`;
-        if (item.rank === 'S2') return `${base} bg-sky-100 text-sky-700`;
-        if (item.rank === 'S3') return `${base} bg-sky-50 text-sky-600`;
+        const cat = (item.q || '').toUpperCase();
+        if (cat.includes('S1')) return `${base} bg-sky-200 text-sky-800`;
+        if (cat.includes('S2')) return `${base} bg-sky-100 text-sky-700`;
+        if (cat.includes('S3')) return `${base} bg-sky-50 text-sky-600`;
         return `${base} bg-slate-100 text-sky-500`;
       }
+
+      if (item.type === 'google') return `${base} bg-orange-100 text-orange-700`;
+      if (item.type === 'rama') return `${base} bg-pink-100 text-pink-700`;
+      
       if (item.type === 'books') return `${base} bg-teal-100 text-teal-700`;
+      
       if (item.type === 'ipr') {
         if (item.category === 'hakCipta') return `${base} bg-amber-100 text-amber-700`;
         if (item.category === 'paten') return `${base} bg-purple-100 text-purple-700`;
@@ -531,8 +550,10 @@ export default {
     getBadgeText(item) {
       if (item.type === 'research') return 'Penelitian';
       if (item.type === 'services') return 'Pengabdian';
-      if (item.type === 'scopus') return item.q ? `Scopus ${item.q}` : 'Scopus';
-      if (item.type === 'sinta') return item.rank ? `SINTA ${item.rank}` : 'SINTA';
+      if (item.type === 'scopus') return item.q || 'Scopus';
+      if (item.type === 'sinta') return item.q || 'SINTA';
+      if (item.type === 'google') return 'Google Scholar';
+      if (item.type === 'rama') return 'RAMA';
       if (item.type === 'books') return 'Buku';
       if (item.type === 'ipr') {
         if (item.category === 'hakCipta') return 'Hak Cipta';
