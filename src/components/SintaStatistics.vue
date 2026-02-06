@@ -1,5 +1,211 @@
 <template>
   <div class="space-y-6">
+
+    <!-- ==================== TV DISPLAY MODE ==================== -->
+    <div v-if="tvMode" class="tv-display fixed inset-0 z-50 bg-slate-950 overflow-hidden" @mouseenter="pauseTv" @mouseleave="resumeTv">
+      <!-- TV Header Bar -->
+      <div class="relative h-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-b border-slate-700/50 flex items-center justify-between px-8">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-gradient-to-br from-rose-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-rose-500/20">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-lg font-black text-white tracking-tight">SINTA-Pulse</span>
+              <span class="px-2 py-0.5 bg-rose-500/20 text-rose-300 border border-rose-500/30 text-[9px] font-bold rounded-full uppercase tracking-wider flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>
+                Live
+              </span>
+            </div>
+            <p class="text-slate-500 text-xs font-medium">{{ currentProdiName }}</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-6">
+          <div class="text-right">
+            <div class="text-slate-500 text-[10px] uppercase tracking-wider font-bold">Dosen</div>
+            <div class="text-white text-lg font-black leading-none">{{ tvCurrentIndex + 1 }} <span class="text-slate-500 font-normal text-sm">/ {{ sintaLecturers.length }}</span></div>
+          </div>
+          <button @click="toggleTvMode" class="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-white hover:bg-slate-700 transition-all flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- TV Main Content -->
+      <div v-if="currentTvLecturer" class="h-[calc(100vh-4rem-6px)] flex">
+        <!-- Left Panel: Photo + Identity -->
+        <div class="w-[380px] flex-shrink-0 bg-gradient-to-b from-slate-900 to-slate-950 border-r border-slate-800/50 flex flex-col items-center justify-center p-8">
+          <!-- Photo -->
+          <div class="relative mb-6">
+            <div class="w-44 h-44 rounded-full overflow-hidden border-4 border-slate-700 shadow-2xl shadow-black/50 bg-slate-800">
+              <img
+                :src="getPhotoUrl(currentTvLecturer)"
+                :alt="currentTvLecturer.name"
+                class="w-full h-full object-cover"
+                @error="$event.target.style.display='none'; $event.target.nextElementSibling.style.display='flex'"
+              />
+              <div class="w-full h-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center" style="display:none">
+                <span class="text-5xl font-black text-white/90">{{ getInitials(currentTvLecturer.name) }}</span>
+              </div>
+            </div>
+            <div class="absolute -bottom-1 -right-1 w-10 h-10 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full border-4 border-slate-950 flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Name -->
+          <h2 class="text-2xl font-black text-white text-center leading-tight mb-2">{{ getShortDisplayName(currentTvLecturer.name) }}</h2>
+          <p class="text-slate-500 text-sm font-medium mb-1">{{ currentTvLecturer.prodi }}</p>
+          <p class="text-slate-600 text-xs font-mono">SINTA ID: {{ currentTvLecturer.sintaId }}</p>
+
+          <!-- Quick Stats under photo -->
+          <div class="grid grid-cols-2 gap-3 mt-8 w-full px-4">
+            <div class="bg-slate-800/80 rounded-xl p-3 text-center border border-slate-700/50">
+              <div class="text-2xl font-black text-rose-400">{{ currentTvLecturer.stats?.citations || 0 }}</div>
+              <div class="text-[10px] uppercase tracking-wider text-slate-500 font-bold mt-0.5">Sitasi</div>
+            </div>
+            <div class="bg-slate-800/80 rounded-xl p-3 text-center border border-slate-700/50">
+              <div class="text-2xl font-black text-purple-400">{{ currentTvLecturer.stats?.hIndex || 0 }}</div>
+              <div class="text-[10px] uppercase tracking-wider text-slate-500 font-bold mt-0.5">H-Index</div>
+            </div>
+            <div class="bg-slate-800/80 rounded-xl p-3 text-center border border-slate-700/50">
+              <div class="text-2xl font-black text-blue-400">{{ currentTvLecturer.researchTotal || currentTvLecturer.research?.length || 0 }}</div>
+              <div class="text-[10px] uppercase tracking-wider text-slate-500 font-bold mt-0.5">Penelitian</div>
+            </div>
+            <div class="bg-slate-800/80 rounded-xl p-3 text-center border border-slate-700/50">
+              <div class="text-2xl font-black text-emerald-400">{{ currentTvLecturer.servicesTotal || currentTvLecturer.services?.length || 0 }}</div>
+              <div class="text-[10px] uppercase tracking-wider text-slate-500 font-bold mt-0.5">Pengabdian</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Panel: Detailed Stats -->
+        <div class="flex-1 p-8 overflow-hidden flex flex-col gap-6">
+          <!-- Row 1: Publication Cards -->
+          <div class="grid grid-cols-2 gap-5">
+            <!-- Scopus Card -->
+            <div class="bg-gradient-to-br from-indigo-500/10 to-indigo-600/5 rounded-2xl p-6 border border-indigo-500/20">
+              <div class="flex items-center gap-2 mb-4">
+                <div class="w-3 h-3 rounded-full bg-indigo-400"></div>
+                <h3 class="text-lg font-bold text-indigo-300">Scopus (Internasional)</h3>
+                <span class="ml-auto text-3xl font-black text-indigo-400">{{ currentTvLecturer.documents?.scopus?.total || 0 }}</span>
+              </div>
+              <div class="grid grid-cols-5 gap-2">
+                <div v-for="q in ['q1','q2','q3','q4','noq']" :key="q" class="text-center">
+                  <div class="text-2xl font-black" :class="(currentTvLecturer.documents?.scopus?.[q] || 0) > 0 ? 'text-indigo-300' : 'text-slate-700'">
+                    {{ currentTvLecturer.documents?.scopus?.[q] || 0 }}
+                  </div>
+                  <div class="text-[10px] uppercase tracking-wider font-bold" :class="(currentTvLecturer.documents?.scopus?.[q] || 0) > 0 ? 'text-indigo-500' : 'text-slate-700'">
+                    {{ q === 'noq' ? 'N/A' : q.toUpperCase() }}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SINTA Card -->
+            <div class="bg-gradient-to-br from-sky-500/10 to-sky-600/5 rounded-2xl p-6 border border-sky-500/20">
+              <div class="flex items-center gap-2 mb-4">
+                <div class="w-3 h-3 rounded-full bg-sky-400"></div>
+                <h3 class="text-lg font-bold text-sky-300">SINTA (Nasional)</h3>
+                <span class="ml-auto text-3xl font-black text-sky-400">{{ currentTvLecturer.documents?.sinta?.total || 0 }}</span>
+              </div>
+              <div class="grid grid-cols-7 gap-2">
+                <div v-for="s in ['s1','s2','s3','s4','s5','s6','unknown']" :key="s" class="text-center">
+                  <div class="text-2xl font-black" :class="(currentTvLecturer.documents?.sinta?.[s] || 0) > 0 ? 'text-sky-300' : 'text-slate-700'">
+                    {{ currentTvLecturer.documents?.sinta?.[s] || 0 }}
+                  </div>
+                  <div class="text-[10px] uppercase tracking-wider font-bold" :class="(currentTvLecturer.documents?.sinta?.[s] || 0) > 0 ? 'text-sky-500' : 'text-slate-700'">
+                    {{ s === 'unknown' ? 'N/A' : s.toUpperCase() }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2: Additional Stats + Chart -->
+          <div class="grid grid-cols-3 gap-5 flex-1">
+            <!-- Google Scholar -->
+            <div class="bg-slate-800/60 rounded-2xl p-5 border border-slate-700/50 flex flex-col items-center justify-center">
+              <div class="text-4xl font-black text-orange-400 mb-1">{{ currentTvLecturer.documents?.googlescholar?.total || 0 }}</div>
+              <div class="text-xs uppercase tracking-wider text-slate-500 font-bold">Google Scholar</div>
+            </div>
+
+            <!-- IPR -->
+            <div class="bg-slate-800/60 rounded-2xl p-5 border border-slate-700/50 flex flex-col items-center justify-center">
+              <div class="text-4xl font-black text-amber-400 mb-1">{{ currentTvLecturer.ipr?.total || 0 }}</div>
+              <div class="text-xs uppercase tracking-wider text-slate-500 font-bold">IPR / HKI</div>
+            </div>
+
+            <!-- Books -->
+            <div class="bg-slate-800/60 rounded-2xl p-5 border border-slate-700/50 flex flex-col items-center justify-center">
+              <div class="text-4xl font-black text-teal-400 mb-1">{{ currentTvLecturer.booksTotal || currentTvLecturer.books?.length || 0 }}</div>
+              <div class="text-xs uppercase tracking-wider text-slate-500 font-bold">Buku</div>
+            </div>
+          </div>
+
+          <!-- Row 3: Recent Publications List -->
+          <div class="bg-slate-800/40 rounded-2xl p-5 border border-slate-700/30 flex-1 overflow-hidden">
+            <div class="flex items-center gap-2 mb-3">
+              <div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+              <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider">Publikasi Terbaru</h3>
+            </div>
+            <div class="space-y-2">
+              <div
+                v-for="(pub, pi) in getRecentPublications(currentTvLecturer)"
+                :key="pi"
+                class="flex items-start gap-3 py-2 border-b border-slate-800/50 last:border-0"
+              >
+                <span class="flex-shrink-0 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider mt-0.5"
+                  :class="pub.category.includes('Scopus') ? 'bg-indigo-500/20 text-indigo-400' : pub.category.includes('SINTA') ? 'bg-sky-500/20 text-sky-400' : 'bg-slate-700 text-slate-400'"
+                >{{ pub.category }}</span>
+                <span class="text-sm text-slate-300 leading-snug line-clamp-2">{{ pub.title }}</span>
+                <span v-if="pub.year" class="flex-shrink-0 text-xs text-slate-600 font-mono">{{ pub.year }}</span>
+              </div>
+              <div v-if="getRecentPublications(currentTvLecturer).length === 0" class="text-center text-slate-600 text-sm py-4">
+                Belum ada data publikasi
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TV Progress Bar -->
+      <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-slate-800">
+        <div
+          class="h-full bg-gradient-to-r from-rose-500 via-pink-500 to-purple-500 transition-none"
+          :class="{ 'tv-progress-animate': !tvPaused }"
+          :style="{ animationDuration: tvInterval + 'ms' }"
+        ></div>
+      </div>
+
+      <!-- TV Navigation (visible on hover) -->
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-3 opacity-0 hover:opacity-100 transition-opacity duration-300" style="pointer-events: auto;">
+        <button @click.stop="prevSlide" class="w-10 h-10 rounded-full bg-slate-800/90 border border-slate-700 text-slate-400 hover:text-white hover:bg-slate-700 transition-all flex items-center justify-center backdrop-blur-sm">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <div class="px-4 py-2 rounded-full bg-slate-800/90 border border-slate-700 backdrop-blur-sm">
+          <span class="text-xs font-bold text-slate-400">
+            {{ tvPaused ? 'PAUSED' : 'AUTO' }} | {{ Math.round(tvInterval / 1000) }}s
+          </span>
+        </div>
+        <button @click.stop="nextSlide" class="w-10 h-10 rounded-full bg-slate-800/90 border border-slate-700 text-slate-400 hover:text-white hover:bg-slate-700 transition-all flex items-center justify-center backdrop-blur-sm">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- ==================== NORMAL TABLE MODE ==================== -->
+
     <!-- Header -->
     <!-- Header -->
     <div class="relative overflow-hidden rounded-2xl bg-slate-900 shadow-xl border border-slate-800">
@@ -36,6 +242,16 @@
             <span class="text-[10px] uppercase tracking-wider text-slate-500 font-bold">Total Dosen</span>
             <span class="text-2xl font-bold text-white leading-none">{{ sintaLecturers.length }}</span>
           </div>
+          <!-- TV Display Toggle -->
+          <button
+            @click="toggleTvMode"
+            class="group bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:from-purple-500 hover:to-indigo-500 transition-all flex items-center gap-2 shadow-lg shadow-purple-500/25 border border-white/10"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            <span>TV Display</span>
+          </button>
           <a
             href="https://sinta.kemdiktisaintek.go.id"
             target="_blank"
@@ -70,10 +286,6 @@
         <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-4 text-center border border-orange-200 hover:shadow-md transition-all group">
           <div class="text-2xl font-black text-orange-600 group-hover:scale-110 transition-transform">{{ stats.totalGoogle }}</div>
           <div class="text-xs uppercase tracking-wider text-orange-700 mt-1 font-bold">G.Scholar</div>
-        </div>
-        <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-4 text-center border border-pink-200 hover:shadow-md transition-all group">
-          <div class="text-2xl font-black text-pink-600 group-hover:scale-110 transition-transform">{{ stats.totalRama }}</div>
-          <div class="text-xs uppercase tracking-wider text-pink-700 mt-1 font-bold">RAMA</div>
         </div>
         <div class="bg-gradient-to-br from-rose-50 to-rose-100 rounded-xl p-4 text-center border border-rose-200 hover:shadow-md transition-all group">
           <div class="text-2xl font-black text-rose-600 group-hover:scale-110 transition-transform">{{ stats.totalCitations }}</div>
@@ -231,16 +443,10 @@
                   </svg>
                 </div>
               </th>
-              <th class="text-center py-3 px-2 font-bold text-pink-600 uppercase tracking-wider text-xs" rowspan="2">
-                <button @click="sortBy('rama')" class="flex items-center gap-1 justify-center w-full">
-                  RAMA
-                  <SortIcon :active="sortColumn === 'rama'" :direction="sortDirection" />
-                </button>
-              </th>
               <th class="text-center py-2 px-2 font-bold text-indigo-600 uppercase tracking-wider text-xs border-l border-slate-200 bg-indigo-50/50" colspan="6">
                 Scopus (Internasional)
               </th>
-              <th class="text-center py-2 px-2 font-bold text-sky-600 uppercase tracking-wider text-xs border-l border-slate-200 bg-sky-50/50" colspan="9">
+              <th class="text-center py-2 px-2 font-bold text-sky-600 uppercase tracking-wider text-xs border-l border-slate-200 bg-sky-50/50" colspan="8">
                 SINTA (Nasional)
               </th>
               <th class="text-center py-3 px-2 font-bold text-rose-600 uppercase tracking-wider text-xs border-l border-slate-200" rowspan="2">
@@ -280,7 +486,6 @@
               <th class="text-center py-2 px-1 font-semibold text-sky-400 text-[11px] bg-sky-50/20">S5</th>
               <th class="text-center py-2 px-1 font-semibold text-sky-300 text-[11px]">S6</th>
               <th class="text-center py-2 px-1 font-semibold text-slate-400 text-[11px]" title="Tanpa Akreditasi">-</th>
-              <th class="text-center py-2 px-1 font-semibold text-slate-500 text-[11px] bg-slate-50/30" title="Item diluar 10 sampel data (Older)">Lain</th>
               <th class="text-center py-2 px-1 font-semibold text-sky-600 text-[11px] bg-sky-100/30">Jml</th>
             </tr>
           </thead>
@@ -317,14 +522,6 @@
                   (lecturer.documents?.googlescholar?.total || 0) > 0 ? 'bg-orange-50 text-orange-700 border-orange-100' : 'bg-slate-50 text-slate-300 border-slate-100'
                 ]">
                   {{ lecturer.documents?.googlescholar?.total || 0 }}
-                </span>
-              </td>
-              <td class="text-center py-3 px-2">
-                <span :class="[
-                  'inline-flex items-center justify-center min-w-[2rem] h-8 px-2 rounded-lg font-bold text-sm border',
-                  (lecturer.documents?.rama?.total || 0) > 0 ? 'bg-pink-50 text-pink-700 border-pink-100' : 'bg-slate-50 text-slate-300 border-slate-100'
-                ]">
-                  {{ lecturer.documents?.rama?.total || 0 }}
                 </span>
               </td>
               <!-- Scopus Q1-Q4 (with year filtering) -->
@@ -397,11 +594,6 @@
                   {{ getFilteredSintaCounts(lecturer).unknown }}
                 </span>
               </td>
-              <td class="text-center py-3 px-1 border-l border-slate-100 bg-slate-50/20">
-                <span :class="['font-bold text-sm', getFilteredSintaCounts(lecturer).others > 0 ? 'text-slate-500' : 'text-slate-300']" title="Item diluar 10 sampel data terbaru">
-                  {{ getFilteredSintaCounts(lecturer).others }}
-                </span>
-              </td>
               <td class="text-center py-3 px-1">
                 <span :class="[
                   'inline-flex items-center justify-center min-w-[1.5rem] h-6 px-1 rounded font-bold text-xs',
@@ -456,7 +648,6 @@
               <td class="text-center py-4 px-2 text-blue-700 text-sm">{{ filteredTotalResearch }}</td>
               <td class="text-center py-4 px-2 text-emerald-700 text-sm">{{ filteredTotalServices }}</td>
               <td class="text-center py-4 px-2 text-orange-700 text-sm">{{ stats.totalGoogle }}</td>
-              <td class="text-center py-4 px-2 text-pink-700 text-sm">{{ stats.totalRama }}</td>
               <td class="text-center py-4 px-1 border-l border-slate-200 text-indigo-800 text-sm">{{ filteredScopusTotals.q1 }}</td>
               <td class="text-center py-4 px-1 text-indigo-700 text-sm">{{ filteredScopusTotals.q2 }}</td>
               <td class="text-center py-4 px-1 text-indigo-600 text-sm">{{ filteredScopusTotals.q3 }}</td>
@@ -470,7 +661,6 @@
               <td class="text-center py-4 px-1 text-sky-400 text-sm">{{ filteredSintaTotals.s5 }}</td>
               <td class="text-center py-4 px-1 text-sky-300 text-sm">{{ filteredSintaTotals.s6 }}</td>
               <td class="text-center py-4 px-1 text-slate-500 text-sm">{{ filteredSintaTotals.unknown }}</td>
-              <td class="text-center py-4 px-1 border-l border-slate-200 text-slate-500 text-sm">{{ filteredSintaTotals.others }}</td>
               <td class="text-center py-4 px-1 text-sky-700 text-sm bg-sky-100 rounded">{{ filteredSintaTotals.total }}</td>
               <td class="text-center py-4 px-2 border-l border-slate-200 text-rose-700 text-sm">{{ stats.totalCitations }}</td>
               <td class="text-center py-4 px-2 text-purple-700 text-sm">-</td>
@@ -547,8 +737,17 @@ export default {
     return {
       sortColumn: 'scopus',
       sortDirection: 'desc',
-      yearFilter: 'all' // 'all', '3', '5'
+      yearFilter: 'all', // 'all', '3', '5'
+      // TV Display mode
+      tvMode: false,
+      tvCurrentIndex: 0,
+      tvTimer: null,
+      tvInterval: 8000,
+      tvPaused: false
     };
+  },
+  beforeUnmount() {
+    this.stopTvTimer();
   },
   computed: {
     metadata() {
@@ -772,7 +971,16 @@ export default {
       if (this.yearFilter === 'all') return 0;
       const currentYear = new Date().getFullYear();
       return currentYear - parseInt(this.yearFilter);
-    }
+    },
+    // TV Display computed
+    currentTvLecturer() {
+      return this.sintaLecturers[this.tvCurrentIndex] || null;
+    },
+    currentProdiName() {
+      if (this.currentTvLecturer?.prodi) return this.currentTvLecturer.prodi;
+      if (this.selectedProdi) return this.selectedProdi;
+      return 'Semua Prodi';
+    },
   },
   methods: {
     sortBy(column) {
@@ -780,6 +988,49 @@ export default {
       else { this.sortColumn = column; this.sortDirection = 'desc'; }
     },
     getShortName(name) { const p = name.split(' '); return p.length <= 2 ? name : p.slice(0,2).join(' '); },
+    // TV Display methods
+    toggleTvMode() {
+      this.tvMode = !this.tvMode;
+      if (this.tvMode) {
+        this.tvCurrentIndex = 0;
+        this.tvPaused = false;
+        this.startTvTimer();
+      } else {
+        this.stopTvTimer();
+      }
+    },
+    startTvTimer() {
+      this.stopTvTimer();
+      this.tvTimer = setInterval(() => {
+        if (!this.tvPaused) this.nextSlide();
+      }, this.tvInterval);
+    },
+    stopTvTimer() {
+      if (this.tvTimer) { clearInterval(this.tvTimer); this.tvTimer = null; }
+    },
+    nextSlide() {
+      this.tvCurrentIndex = (this.tvCurrentIndex + 1) % this.sintaLecturers.length;
+    },
+    prevSlide() {
+      this.tvCurrentIndex = (this.tvCurrentIndex - 1 + this.sintaLecturers.length) % this.sintaLecturers.length;
+    },
+    pauseTv() { this.tvPaused = true; },
+    resumeTv() { this.tvPaused = false; },
+    getPhotoUrl(lecturer) {
+      const name = encodeURIComponent(this.getShortDisplayName(lecturer.name));
+      return `https://ui-avatars.com/api/?name=${name}&size=200&background=random&color=fff&bold=true&format=svg`;
+    },
+    getInitials(name) {
+      return name.split(' ').filter(w => w.length > 1 && w[0] === w[0].toUpperCase()).slice(0, 2).map(w => w[0]).join('');
+    },
+    getShortDisplayName(name) {
+      // Remove degree suffixes for cleaner TV display
+      return name.replace(/,?\s*(S\.\w+\.?|M\.\w+\.?|Ph\.?D\.?|Dr\.?|Ir\.?|Prof\.?|CSCA\.?|CDMS\.?|Ak\.?|MBA\.?)/gi, '').replace(/,\s*$/, '').trim();
+    },
+    getRecentPublications(lecturer) {
+      const pubs = lecturer.documents?.list || [];
+      return pubs.slice(0, 5);
+    },
     formatDate(ds) { if (!ds) return ''; return new Date(ds).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }); },
     getFilteredResearchCount(lecturer) {
       if (this.yearFilter === 'all') return lecturer.researchTotal || lecturer.research?.length || 0;
@@ -876,4 +1127,26 @@ export default {
 
 <style scoped>
 .card { @apply bg-white p-6 rounded-2xl border border-slate-200 shadow-sm transition-all; }
+
+/* TV Display animations */
+@keyframes tvProgress {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.tv-progress-animate {
+  animation: tvProgress linear forwards;
+}
+
+.tv-display {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 </style>

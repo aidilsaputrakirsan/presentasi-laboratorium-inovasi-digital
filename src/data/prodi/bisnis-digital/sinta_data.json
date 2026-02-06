@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-02-06T17:14:32.797482",
+    "generatedAt": "2026-02-06T22:11:49.123302",
     "source": "SINTA 3",
     "version": "2.3",
     "prodi": "Bisnis Digital",
@@ -11,7 +11,7 @@
       "name": "Agung Prabowo, S.E., M.M.",
       "sintaId": "6803848",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-06T17:14:37.187725",
+      "scrapedAt": "2026-02-06T22:11:52.478912",
       "stats": {
         "articles": 14,
         "citations": 25,
@@ -58,13 +58,141 @@
           "total": 0
         },
         "googlescholar": {
-          "total": 0,
-          "list": []
+          "total": 14,
+          "list": [
+            {
+              "title": "Implementation of IoT-Based Aquaponics Technology to Enhance Food Security and Economic Independence at Berkah Box Mosque",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pelatihan Literasi Pemasaran Digital: Pembuatan Konten Visual Dan Penyusunan Copywriting",
+              "category": "googlescholar"
+            },
+            {
+              "title": "The Influence of Food Quality, Subculture, and Situational Factors on Purchasing Decisions",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis UI/UX menggunakan metode System Usability Scale: Studi pada Aplikasi Ruangguru",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pengembangan Usaha Pertanian Melalui Pelatihan Pemasaran Dan Produksi Olahan Hasil Panen Menjadi Stik",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Intensi untuk tinggal di lingkungan Smart-City: Studi Pada Masyarakat Kalimantan Timur",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pemberdayaan Masyarakat Melalui Kegiatan Urban farming dan Pengelolaan sampah di Kelurahan Gunung Samarinda Baru: Community Empowerment Through Urban Farming Activities and …",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Penilaian Bisnis dan Prediksi Kebangkrutan Perusahaan: Studi pada Emiten Yang Listing pada Papan Akselerasi Bursa Efek Indonesia",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Dampak COVID 19 terhadap PDRB Provinsi Bali dengan Model Intervensi",
+              "category": "googlescholar"
+            },
+            {
+              "title": "ANTESEDEN DAN KONSEKUEN PEMBERDAYAAN PSIKOLOGIS PADA KARYAWAN START-UP DIGITAL INDONESIA KEPEMIMPINAN PEMBERDAYAAN DAN KREATIFITAS",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Potential Management Development Of Batik Small-Medium Enterprise In Pilang Village, Sragen",
+              "category": "googlescholar"
+            },
+            {
+              "title": "The characteristics of MSME entrepreneurs in Surakarta, Indonesia",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PERAN USIA DALAM MEMODERASI PERILAKU WISATAWAN KULINER: STUDY PADA WISATAWAN DOMESTIK",
+              "category": "googlescholar"
+            },
+            {
+              "title": "EXPERIENCE VALUE TOWARD TOURIST BEHAVIORAL INTENTION: STUDY ON INDONESIAN TRADITIONAL CULINARY",
+              "category": "googlescholar"
+            }
+          ]
         },
         "rama": {
           "total": 0
         },
-        "list": []
+        "list": [
+          {
+            "title": "Implementation of IoT-Based Aquaponics Technology to Enhance Food Security and Economic Independence at Berkah Box Mosque",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pelatihan Literasi Pemasaran Digital: Pembuatan Konten Visual Dan Penyusunan Copywriting",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "The Influence of Food Quality, Subculture, and Situational Factors on Purchasing Decisions",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis UI/UX menggunakan metode System Usability Scale: Studi pada Aplikasi Ruangguru",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pengembangan Usaha Pertanian Melalui Pelatihan Pemasaran Dan Produksi Olahan Hasil Panen Menjadi Stik",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Intensi untuk tinggal di lingkungan Smart-City: Studi Pada Masyarakat Kalimantan Timur",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pemberdayaan Masyarakat Melalui Kegiatan Urban farming dan Pengelolaan sampah di Kelurahan Gunung Samarinda Baru: Community Empowerment Through Urban Farming Activities and …",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Penilaian Bisnis dan Prediksi Kebangkrutan Perusahaan: Studi pada Emiten Yang Listing pada Papan Akselerasi Bursa Efek Indonesia",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Dampak COVID 19 terhadap PDRB Provinsi Bali dengan Model Intervensi",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "ANTESEDEN DAN KONSEKUEN PEMBERDAYAAN PSIKOLOGIS PADA KARYAWAN START-UP DIGITAL INDONESIA KEPEMIMPINAN PEMBERDAYAAN DAN KREATIFITAS",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Potential Management Development Of Batik Small-Medium Enterprise In Pilang Village, Sragen",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "The characteristics of MSME entrepreneurs in Surakarta, Indonesia",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PERAN USIA DALAM MEMODERASI PERILAKU WISATAWAN KULINER: STUDY PADA WISATAWAN DOMESTIK",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "EXPERIENCE VALUE TOWARD TOURIST BEHAVIORAL INTENTION: STUDY ON INDONESIAN TRADITIONAL CULINARY",
+            "category": "Google Scholar",
+            "year": ""
+          }
+        ]
       },
       "research": [
         {
@@ -144,8 +272,13 @@
         }
       ],
       "servicesTotal": 2,
-      "books": [],
-      "booksTotal": 0,
+      "books": [
+        {
+          "title": "Pengantar Bisnis Digital",
+          "year": "2025"
+        }
+      ],
+      "booksTotal": 1,
       "ipr": {
         "hakCipta": 3,
         "paten": 0,
@@ -178,7 +311,7 @@
       "name": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
       "sintaId": "6686868",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-06T17:14:45.178941",
+      "scrapedAt": "2026-02-06T22:12:01.156705",
       "stats": {
         "articles": 27,
         "citations": 48,
@@ -220,13 +353,13 @@
               "year": "2024"
             },
             {
-              "title": "Analysis of Sustainable Online Fish Auction Services Using Process Chain Network Diagram",
-              "q": "Q3",
+              "title": "A Location Routing Problem with Time Windows Consideration: A Metaheuristics Approach",
+              "q": "Q1",
               "year": "2023"
             },
             {
-              "title": "A Location Routing Problem with Time Windows Consideration: A Metaheuristics Approach",
-              "q": "Q1",
+              "title": "Analysis of Sustainable Online Fish Auction Services Using Process Chain Network Diagram",
+              "q": "Q3",
               "year": "2023"
             },
             {
@@ -252,8 +385,101 @@
           "total": 0
         },
         "googlescholar": {
-          "total": 0,
-          "list": []
+          "total": 23,
+          "list": [
+            {
+              "title": "Dynamic System Model for Optimizing Clean Water Distribution in Balikpapan City",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Dynamic System Model of Rice Commodity Availability For Increasing The Needs of The Society of Balikpapan City",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Predicting the Academic Performance of Industrial Engineering Students Based on Socioeconomic Background and Past Achievements: A Two-step Blending-based Ensemble Approach",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Buku Dasar-Dasar Analisis Data Pelajari Keterampilan Penting, Rangkul Masa Depan, dan Lejitkan Karir Anda di Dunia Berbasis Data",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Evaluasi dan Pemilihan Desain Alternatif Instalasi Pengolahan Limbah Cair Industri Tahu-Tempe",
+              "category": "googlescholar"
+            },
+            {
+              "title": "SYSTEM MODELLING OF BEEF AVAILABILITY IN IKN BUFFERAREAS USING SYSTEM DYNAMICS",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Determination of supply strategy for beef price stability in Balikpapan: Game Theory Approach",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Estimating Energy Demand for Electric Motorcycle Battery Swap Stations Using Logistic Regression and Monte Carlo Simulation",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pelatihan Literasi Pemasaran Digital: Pembuatan Konten Visual Dan Penyusunan Copywriting",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analysis of Waste Separation Drivers in Urban Centers Using the Theory of Planned Behavior and the Norm Activation Model",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analysis of Sustainable Online Fish Auction Services Using Process Chain Network Diagram",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Implementasi Kurikulum Program Pembinaan Startup di Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Kuantitas Pemesanan Beras Dengan Mempertimbangkan Ketidakpastian Permintaan Menggunakan Metode Economic Order Quantity",
+              "category": "googlescholar"
+            },
+            {
+              "title": "A location routing problem with time windows consideration: a metaheuristics approach",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Prioritas Penyelesaian Akar Masalah Kualitas Palm Kernel Oil Dengan Memperhatikan Uncertain Information",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis data multivariat dengan metode structural equation modelling (SEM) teori dan praktik menggunakan aplikasi Warp-PLS 7.0",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Value Added and Non-Value Added Activity Analysis in Disassembly Process for Productivity Enhancement during Covid-19 Pandemic",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Peningkatan Karakteristik Kualitas Palm Kernel Oil (PKO) Menggunakan Metodologi Six Sigma",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Firefly algorithm for multi-type vehicle routing problem",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Equipment Leasing Model with Failure Tolerance Cost Using Game Theory",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pelatihan Pembuatan Ecobrick Untuk Masyarakat Pesisir Pantai Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Cooperative Game-Theory Pada Lease Equipment Dengan Mempertimbangkan Penalty Cost Dan Usage Rate",
+              "category": "googlescholar"
+            },
+            {
+              "title": "SISTEM INFORMASI PEMBELIAN DAN PENYALURAN PUPUK BAGI DISTRIBUTOR PT. PETROKIMIA GRESIK",
+              "category": "googlescholar"
+            }
+          ]
         },
         "rama": {
           "total": 0
@@ -265,13 +491,13 @@
             "year": "2024"
           },
           {
-            "title": "Analysis of Sustainable Online Fish Auction Services Using Process Chain Network Diagram",
-            "category": "Scopus Q3",
+            "title": "A Location Routing Problem with Time Windows Consideration: A Metaheuristics Approach",
+            "category": "Scopus Q1",
             "year": "2023"
           },
           {
-            "title": "A Location Routing Problem with Time Windows Consideration: A Metaheuristics Approach",
-            "category": "Scopus Q1",
+            "title": "Analysis of Sustainable Online Fish Auction Services Using Process Chain Network Diagram",
+            "category": "Scopus Q3",
             "year": "2023"
           },
           {
@@ -283,25 +509,125 @@
             "title": "Firefly Algorithm for Multi-type Vehicle Routing Problem",
             "category": "Scopus Q4",
             "year": "2021"
+          },
+          {
+            "title": "Dynamic System Model for Optimizing Clean Water Distribution in Balikpapan City",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Dynamic System Model of Rice Commodity Availability For Increasing The Needs of The Society of Balikpapan City",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Predicting the Academic Performance of Industrial Engineering Students Based on Socioeconomic Background and Past Achievements: A Two-step Blending-based Ensemble Approach",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Buku Dasar-Dasar Analisis Data Pelajari Keterampilan Penting, Rangkul Masa Depan, dan Lejitkan Karir Anda di Dunia Berbasis Data",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Evaluasi dan Pemilihan Desain Alternatif Instalasi Pengolahan Limbah Cair Industri Tahu-Tempe",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "SYSTEM MODELLING OF BEEF AVAILABILITY IN IKN BUFFERAREAS USING SYSTEM DYNAMICS",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Determination of supply strategy for beef price stability in Balikpapan: Game Theory Approach",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Estimating Energy Demand for Electric Motorcycle Battery Swap Stations Using Logistic Regression and Monte Carlo Simulation",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pelatihan Literasi Pemasaran Digital: Pembuatan Konten Visual Dan Penyusunan Copywriting",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analysis of Waste Separation Drivers in Urban Centers Using the Theory of Planned Behavior and the Norm Activation Model",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analysis of Sustainable Online Fish Auction Services Using Process Chain Network Diagram",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Implementasi Kurikulum Program Pembinaan Startup di Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Kuantitas Pemesanan Beras Dengan Mempertimbangkan Ketidakpastian Permintaan Menggunakan Metode Economic Order Quantity",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "A location routing problem with time windows consideration: a metaheuristics approach",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Prioritas Penyelesaian Akar Masalah Kualitas Palm Kernel Oil Dengan Memperhatikan Uncertain Information",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis data multivariat dengan metode structural equation modelling (SEM) teori dan praktik menggunakan aplikasi Warp-PLS 7.0",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Value Added and Non-Value Added Activity Analysis in Disassembly Process for Productivity Enhancement during Covid-19 Pandemic",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Peningkatan Karakteristik Kualitas Palm Kernel Oil (PKO) Menggunakan Metodologi Six Sigma",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Firefly algorithm for multi-type vehicle routing problem",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Equipment Leasing Model with Failure Tolerance Cost Using Game Theory",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pelatihan Pembuatan Ecobrick Untuk Masyarakat Pesisir Pantai Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Cooperative Game-Theory Pada Lease Equipment Dengan Mempertimbangkan Penalty Cost Dan Usage Rate",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "SISTEM INFORMASI PEMBELIAN DAN PENYALURAN PUPUK BAGI DISTRIBUTOR PT. PETROKIMIA GRESIK",
+            "category": "Google Scholar",
+            "year": ""
           }
         ]
       },
       "research": [
-        {
-          "title": "PENGEMBANGAN SISTEM PROYEKSI KEBIJAKAN PENGELOLAAN KEUANGAN BADAN LAYANAN UMUM INSTITUT TEKNOLOGI KALIMANTAN",
-          "leader": "Bayu Nur Abdallah",
-          "members": [
-            "Christopher Davito Prabandewa Hertadi",
-            "Riza Hadi Saputra"
-          ],
-          "grantType": "Penelitian Internal ( RKS )",
-          "grantCategory": "RKS",
-          "year": "2025",
-          "fundingAmount": 17000000,
-          "fundingFormatted": "Rp. 17.000.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
         {
           "title": "KEBIJAKAN MANAJEMEN TATA KELOLA LIMBAH DOMESTIK DI KOTA BALIKPAPAN DENGAN METODE SISTEM DINAMIS",
           "leader": "Amanda Dwi Wantira",
@@ -333,16 +659,17 @@
           "source": "INTERNAL SOURCE"
         },
         {
-          "title": "SKEMA PEMBIAYAAN UMKM PERTANIAN DI KALIMANTANTIMUR BERBASIS LINGKUNGAN (TAHUN KE-3)",
+          "title": "PENGEMBANGAN SISTEM PROYEKSI KEBIJAKAN PENGELOLAAN KEUANGAN BADAN LAYANAN UMUM INSTITUT TEKNOLOGI KALIMANTAN",
           "leader": "Bayu Nur Abdallah",
           "members": [
-            "Deli Yansyah"
+            "Christopher Davito Prabandewa Hertadi",
+            "Riza Hadi Saputra"
           ],
-          "grantType": "HIBAH INTERNAL ( PKSA )",
-          "grantCategory": "PKSA",
-          "year": "2024",
-          "fundingAmount": 30000000,
-          "fundingFormatted": "Rp. 30.000.000",
+          "grantType": "Penelitian Internal ( RKS )",
+          "grantCategory": "RKS",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
           "status": "Approved",
           "source": "INTERNAL SOURCE"
         },
@@ -358,6 +685,20 @@
           "year": "2024",
           "fundingAmount": 25000000,
           "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "SKEMA PEMBIAYAAN UMKM PERTANIAN DI KALIMANTANTIMUR BERBASIS LINGKUNGAN (TAHUN KE-3)",
+          "leader": "Bayu Nur Abdallah",
+          "members": [
+            "Deli Yansyah"
+          ],
+          "grantType": "HIBAH INTERNAL ( PKSA )",
+          "grantCategory": "PKSA",
+          "year": "2024",
+          "fundingAmount": 30000000,
+          "fundingFormatted": "Rp. 30.000.000",
           "status": "Approved",
           "source": "INTERNAL SOURCE"
         },
@@ -526,14 +867,27 @@
         }
       ],
       "servicesTotal": 7,
-      "books": [],
-      "booksTotal": 0,
+      "books": [
+        {
+          "title": "Buku Dasar-Dasar Analisis Data Pelajari Keterampilan Penting, Rangkul Masa Depan, dan Lejitkan Karir Anda di Dunia Berbasis Data",
+          "year": "2024"
+        },
+        {
+          "title": "Analisis data multivariat dengan metode  structural equation modelling (SEM)  teori dan praktik menggunakan aplikasi  Warp-PLS 7.0",
+          "year": "2022"
+        }
+      ],
+      "booksTotal": 2,
       "ipr": {
         "hakCipta": 9,
         "paten": 0,
         "other": 0,
         "total": 9,
         "list": [
+          {
+            "title": "Pencegahan & Penanganan Kekerasan Seksual pada Anak Melalui Media Digital",
+            "category": "hakCipta"
+          },
           {
             "title": "Model Sistem Dinamis Untuk Peningkatan Ketersediaan Air Bersih dengan Menggunakan Grey Water di Kota Balikpapan",
             "category": "hakCipta"
@@ -543,7 +897,7 @@
             "category": "hakCipta"
           },
           {
-            "title": "Pencegahan & Penanganan Kekerasan Seksual pada Anak Melalui Media Digital",
+            "title": "Video Dokumenter Pemberdayaan Masyarakat Melalui Program Edukasi Dan Pemanfaatan Teknologi",
             "category": "hakCipta"
           },
           {
@@ -555,19 +909,15 @@
             "category": "hakCipta"
           },
           {
-            "title": "Video Dokumenter Pemberdayaan Masyarakat Melalui Program Edukasi Dan Pemanfaatan Teknologi",
-            "category": "hakCipta"
-          },
-          {
             "title": "Program Website CLevelIndonesia.com",
             "category": "hakCipta"
           },
           {
-            "title": "Kid's Multimedia Development Di Rumah Singgah Kopaja Balikpapan",
+            "title": "Iklan Profil Program Studi Bisnis Digital ITK",
             "category": "hakCipta"
           },
           {
-            "title": "Iklan Profil Program Studi Bisnis Digital ITK",
+            "title": "Kid's Multimedia Development Di Rumah Singgah Kopaja Balikpapan",
             "category": "hakCipta"
           }
         ]
@@ -584,7 +934,7 @@
       "name": "Deli Yansyah, S.E., M.Acc., Ak.",
       "sintaId": "6807445",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-06T17:14:50.110731",
+      "scrapedAt": "2026-02-06T22:12:05.142796",
       "stats": {
         "articles": 8,
         "citations": 10,
@@ -631,73 +981,39 @@
           "total": 0
         },
         "googlescholar": {
-          "total": 11,
+          "total": 8,
           "list": [
             {
-              "title": "Pelatihan Literasi Pemasaran Digital: Pembuatan Konten Visual Dan Penyusunan Copywriting",
-              "year": "",
-              "citation": "6",
-              "source": "Google Scholar"
+              "title": "PENGANTAR BISNIS DIGITAL",
+              "category": "googlescholar"
             },
             {
-              "title": "Recommendations of e-commerce website design for MSME local products in Balikpapan based on competitive research",
-              "year": "",
-              "citation": "2",
-              "source": "Google Scholar"
+              "title": "Pelatihan Literasi Pemasaran Digital: Pembuatan Konten Visual Dan Penyusunan Copywriting",
+              "category": "googlescholar"
             },
             {
               "title": "Intensi untuk tinggal di lingkungan Smart-City: Studi Pada Masyarakat Kalimantan Timur",
-              "year": "",
-              "citation": "1",
-              "source": "Google Scholar"
+              "category": "googlescholar"
             },
             {
-              "title": "PERAN MEDIASI KEPUASAN KERJA PADA PENGARUH BUDAYA ORGANISASI TERHADAP KINERJA KARYAWAN OPERASIONAL PERKEBUNAN KELAPA SAWIT",
-              "year": "",
-              "citation": "1",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "Evaluation of User Acceptance and Experience of the Coretax System Among Corporate Taxpayers in Indonesia",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "Kegiatan Pengabdian Masyarakat pada RT 36 Kelurahan Gunung Samarinda Baru Melalui Kegiatan Renovasi Fasilitas dan Sosialisasi Pembelajaran",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "Pengantar Bisnis Digital",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "DIGITALISASI LAYANAN ADMINISTRASI RT 36 KELURAHAN GUNUNG SAMARINDA BARU MELALUI PENGEMBANGAN WEBSITE UNTUK PENGELOLAAN DATA WARGA",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
+              "title": "Recommendations of e-commerce website design for MSME local products in Balikpapan based on competitive research",
+              "category": "googlescholar"
             },
             {
               "title": "Penilaian Bisnis dan Prediksi Kebangkrutan Perusahaan: Studi pada Emiten Yang Listing pada Papan Akselerasi Bursa Efek Indonesia",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
+              "category": "googlescholar"
             },
             {
               "title": "Implementasi Kurikulum Program Pembinaan Startup di Balikpapan",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
+              "category": "googlescholar"
+            },
+            {
+              "title": "PERAN MEDIASI KEPUASAN KERJA PADA PENGARUH BUDAYA ORGANISASI TERHADAP KINERJA KARYAWAN OPERASIONAL PERKEBUNAN KELAPA SAWIT",
+              "category": "googlescholar"
             },
             {
               "title": "Pelatihan Desain Kreatif Dengan Canva Pada Desa Wisata Kang Bejo",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
+              "category": "googlescholar"
             }
           ]
         },
@@ -706,12 +1022,12 @@
         },
         "list": [
           {
-            "title": "Pelatihan Literasi Pemasaran Digital: Pembuatan Konten Visual Dan Penyusunan Copywriting",
+            "title": "PENGANTAR BISNIS DIGITAL",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Recommendations of e-commerce website design for MSME local products in Balikpapan based on competitive research",
+            "title": "Pelatihan Literasi Pemasaran Digital: Pembuatan Konten Visual Dan Penyusunan Copywriting",
             "category": "Google Scholar",
             "year": ""
           },
@@ -721,27 +1037,7 @@
             "year": ""
           },
           {
-            "title": "PERAN MEDIASI KEPUASAN KERJA PADA PENGARUH BUDAYA ORGANISASI TERHADAP KINERJA KARYAWAN OPERASIONAL PERKEBUNAN KELAPA SAWIT",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Evaluation of User Acceptance and Experience of the Coretax System Among Corporate Taxpayers in Indonesia",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Kegiatan Pengabdian Masyarakat pada RT 36 Kelurahan Gunung Samarinda Baru Melalui Kegiatan Renovasi Fasilitas dan Sosialisasi Pembelajaran",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Pengantar Bisnis Digital",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "DIGITALISASI LAYANAN ADMINISTRASI RT 36 KELURAHAN GUNUNG SAMARINDA BARU MELALUI PENGEMBANGAN WEBSITE UNTUK PENGELOLAAN DATA WARGA",
+            "title": "Recommendations of e-commerce website design for MSME local products in Balikpapan based on competitive research",
             "category": "Google Scholar",
             "year": ""
           },
@@ -752,6 +1048,11 @@
           },
           {
             "title": "Implementasi Kurikulum Program Pembinaan Startup di Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PERAN MEDIASI KEPUASAN KERJA PADA PENGARUH BUDAYA ORGANISASI TERHADAP KINERJA KARYAWAN OPERASIONAL PERKEBUNAN KELAPA SAWIT",
             "category": "Google Scholar",
             "year": ""
           },
@@ -880,11 +1181,11 @@
         "total": 2,
         "list": [
           {
-            "title": "Video Kurikulum dan Mata Kuliah Program Studi Bisnis Digital 2024",
+            "title": "Video Profil Program Studi Bisnis Digital 2024",
             "category": "hakCipta"
           },
           {
-            "title": "Video Profil Program Studi Bisnis Digital 2024",
+            "title": "Video Kurikulum dan Mata Kuliah Program Studi Bisnis Digital 2024",
             "category": "hakCipta"
           }
         ]
@@ -901,7 +1202,7 @@
       "name": "Eka Krisna Santoso, S.Si., MBA.",
       "sintaId": "6788207",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-06T17:14:54.975456",
+      "scrapedAt": "2026-02-06T22:12:10.588946",
       "stats": {
         "articles": 15,
         "citations": 13,
@@ -948,13 +1249,150 @@
           "total": 0
         },
         "googlescholar": {
-          "total": 0,
-          "list": []
+          "total": 15,
+          "list": [
+            {
+              "title": "Improving stock forecasting accuracy using hybrid of double seasonal autoregressive integrated moving average and artificial neural network",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Classification of Money Market Mutual Fund Products in Indonesia By Using Mahalanobis Distance and Manhattan Distance",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Rancangan dan Pengembangan Website serta Program Edukasi di RT 34 Kelurahan Karang Joang",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Training on Strategies to Pass CPNS Test for CPNS Applicants Through the Giat Belajar Abadi Platform",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Penentuan Portofolio Saham Dengan Memperhatikan Standar Deviasi Dan Rata-Rata Tingkat Pengembalian Harian (Studi pada Emiten BSSR dan ITMG selama 2019-2022): Penentuan …",
+              "category": "googlescholar"
+            },
+            {
+              "title": "INDONESIAN EGGS ARE PRICIER THAN THOSE IN AUSTRALIA",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pelatihan keterampilan dalam pengelolaan data dengan Ms Excel",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pelatihan dan Simulasi Penggunaan Alat Pemadam Api Ringan (APAR) pada Asrama Mahasiswa Kampus XYZ",
+              "category": "googlescholar"
+            },
+            {
+              "title": "OPTIMALISASI NILAI GUNA SAMPAH RUMAH TANGGA MASYARAKAT RT 42 BDS II BALIKPAPAN SELATAN UNTUK PEMBENTUKAN BANK SAMPAH DAN LUBANG RESAPAN BIOPORI",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Peningkatan Minat Baca Warga Perumahan Nusantara Lestari Balikpapan Dengan Metode Read-Aloud",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Hybrid Double Seasonal Autoregressive Integrated Moving Average (DSARIMA) and Artificial Neural Network (ANN) for Stock Forecasting",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Buku Mudah Bangun Startup",
+              "category": "googlescholar"
+            },
+            {
+              "title": "It Costs More to Purchase Eggs in Indonesia than in The US",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Assessment of Students Satisfaction with Online Learning Experiences during the COVID-19 Pandemic: Customer Satisfaction Index and Importance. Performance Analysis Case Study …",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Penentuan Premi Tunggal Asuransi Jiwa Seumur Hidup dengan Hukum Mortalita Gompertz",
+              "category": "googlescholar"
+            }
+          ]
         },
         "rama": {
           "total": 0
         },
-        "list": []
+        "list": [
+          {
+            "title": "Improving stock forecasting accuracy using hybrid of double seasonal autoregressive integrated moving average and artificial neural network",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Classification of Money Market Mutual Fund Products in Indonesia By Using Mahalanobis Distance and Manhattan Distance",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Rancangan dan Pengembangan Website serta Program Edukasi di RT 34 Kelurahan Karang Joang",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Training on Strategies to Pass CPNS Test for CPNS Applicants Through the Giat Belajar Abadi Platform",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Penentuan Portofolio Saham Dengan Memperhatikan Standar Deviasi Dan Rata-Rata Tingkat Pengembalian Harian (Studi pada Emiten BSSR dan ITMG selama 2019-2022): Penentuan …",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "INDONESIAN EGGS ARE PRICIER THAN THOSE IN AUSTRALIA",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pelatihan keterampilan dalam pengelolaan data dengan Ms Excel",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pelatihan dan Simulasi Penggunaan Alat Pemadam Api Ringan (APAR) pada Asrama Mahasiswa Kampus XYZ",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "OPTIMALISASI NILAI GUNA SAMPAH RUMAH TANGGA MASYARAKAT RT 42 BDS II BALIKPAPAN SELATAN UNTUK PEMBENTUKAN BANK SAMPAH DAN LUBANG RESAPAN BIOPORI",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Peningkatan Minat Baca Warga Perumahan Nusantara Lestari Balikpapan Dengan Metode Read-Aloud",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Hybrid Double Seasonal Autoregressive Integrated Moving Average (DSARIMA) and Artificial Neural Network (ANN) for Stock Forecasting",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Buku Mudah Bangun Startup",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "It Costs More to Purchase Eggs in Indonesia than in The US",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Assessment of Students Satisfaction with Online Learning Experiences during the COVID-19 Pandemic: Customer Satisfaction Index and Importance. Performance Analysis Case Study …",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Penentuan Premi Tunggal Asuransi Jiwa Seumur Hidup dengan Hukum Mortalita Gompertz",
+            "category": "Google Scholar",
+            "year": ""
+          }
+        ]
       },
       "research": [],
       "researchTotal": 0,
@@ -1004,8 +1442,17 @@
         }
       ],
       "servicesTotal": 3,
-      "books": [],
-      "booksTotal": 0,
+      "books": [
+        {
+          "title": "Pengantar Bisnis Digital",
+          "year": "2025"
+        },
+        {
+          "title": "Buku mudah bangun startup",
+          "year": "2022"
+        }
+      ],
+      "booksTotal": 2,
       "ipr": {
         "hakCipta": 0,
         "paten": 0,
@@ -1025,7 +1472,7 @@
       "name": "Fegy Sukris Sri Andriany, M.Ak.",
       "sintaId": "6957012",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-06T17:14:59.809626",
+      "scrapedAt": "2026-02-06T22:12:14.291418",
       "stats": {
         "articles": 0,
         "citations": 0,
@@ -1084,8 +1531,13 @@
       "researchTotal": 0,
       "services": [],
       "servicesTotal": 0,
-      "books": [],
-      "booksTotal": 0,
+      "books": [
+        {
+          "title": "Pengantar Bisnis Digital",
+          "year": "2025"
+        }
+      ],
+      "booksTotal": 1,
       "ipr": {
         "hakCipta": 1,
         "paten": 0,
@@ -1110,7 +1562,7 @@
       "name": "Ir. Riovan Styx Roring, S.T., M.Kom.",
       "sintaId": "6958596",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-06T17:15:07.859714",
+      "scrapedAt": "2026-02-06T22:12:22.885541",
       "stats": {
         "articles": 20,
         "citations": 68,
@@ -1216,8 +1668,89 @@
           ]
         },
         "googlescholar": {
-          "total": 0,
-          "list": []
+          "total": 20,
+          "list": [
+            {
+              "title": "Pemrograman Python Dasar",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PENERAPAN GAMIFIKASI UNTUK MENINGKATKAN EFEKTIVITAS EVALUASI PEMBELAJARAN SISWA DI SD HARAPAN BANGSA INTEGRATED CHRISTIAN SCHOOL",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Studi empiris terhadap asistensi artificial intelligence (AI) dalam rancang bangun aplikasi",
+              "category": "googlescholar"
+            },
+            {
+              "title": "TEKNIK DASAR GAMBAR KARAKTER 2D: Panduan Praktis Untuk Pemula",
+              "category": "googlescholar"
+            },
+            {
+              "title": "DASAR–DASAR SQL UNTUK PEMULA",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Dasar dan Teori Sistem Multimedia",
+              "category": "googlescholar"
+            },
+            {
+              "title": "TOWARDS SOCIETY 5.0: A PILOT STUDY ON COSTLESS SMART TRANSPORTATION BUSINESS MODEL.",
+              "category": "googlescholar"
+            },
+            {
+              "title": "THE IMPACT OF ARTIFICIAL NEURAL NETWORK (ANN) DEVELOPMENTS FOR THE ACCOUNTANT PROFESSION IN FACING THE INDUSTRIAL ERA 4.0 AND SOCIETY 5.0",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Penerapan User-Centered Design Method Guna Pembaruan Substansi Terhadap Informasi dan Data-Data pada Website",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Kombinasi Sistem Berbasis Web Dan Android Sebagai Aplikasi Presensi Kegiatan Menggunakan QR Code",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Penerapan aplikasi android “ojek gt” sebagai startup industri kreatif menuju society 5.0",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Perancangan Dan Implementasi Jaringan Failover Menggunakan Protokol Spanning Tree Pada Pt. Pln Up3B Kalimantan Timur",
+              "category": "googlescholar"
+            },
+            {
+              "title": "SISTEM BIMBINGAN PENJUALAN “JUTUNG” UNTUK USAHA MIKRO DAN KECIL",
+              "category": "googlescholar"
+            },
+            {
+              "title": "INSTRUMEN PENILAIAN DOSEN SEBAGAI KNOWLEDGE MANAGEMENT SYSTEM DALAM LINGKUNGAN INTERNAL KAMPUS",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Perancangan Aplikasi Penggajian Karyawan Tetap pada PT. Rachmat Cahaya Abadi",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Integrasi Sistem berbasis Predictive Analytics untuk Pasar Tradisional Indonesia",
+              "category": "googlescholar"
+            },
+            {
+              "title": "ANALISIS KLASIFIKASI DAN PENGOLAHAN KNOWLEDGE DALAM EVALUASI PELATIHAN SEA SURVIVAL",
+              "category": "googlescholar"
+            },
+            {
+              "title": "SISTEM BIMBINGAN PENJUALAN “JUTUNG” UNTUK USAHA MIKRO DAN KECIL “JUTUNG” SALES GUIDANCE SYSTEM DESIGN FOR SMALL AND VERY SMALL ENTERPRISES",
+              "category": "googlescholar"
+            },
+            {
+              "title": "From Data Mining to Predictive Analytics: Progress in Understanding and Forecasting Social Media Virality",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Decoding Social Media Virality: Measuring Impact, Influence, and Engagement in the Digital Age",
+              "category": "googlescholar"
+            }
+          ]
         },
         "rama": {
           "total": 0
@@ -1277,6 +1810,106 @@
             "title": "ANALISIS KLASIFIKASI DAN PENGOLAHAN KNOWLEDGE DALAM EVALUASI PELATIHAN SEA SURVIVAL",
             "category": "SINTA",
             "year": "2017"
+          },
+          {
+            "title": "Pemrograman Python Dasar",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PENERAPAN GAMIFIKASI UNTUK MENINGKATKAN EFEKTIVITAS EVALUASI PEMBELAJARAN SISWA DI SD HARAPAN BANGSA INTEGRATED CHRISTIAN SCHOOL",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Studi empiris terhadap asistensi artificial intelligence (AI) dalam rancang bangun aplikasi",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "TEKNIK DASAR GAMBAR KARAKTER 2D: Panduan Praktis Untuk Pemula",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "DASAR–DASAR SQL UNTUK PEMULA",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Dasar dan Teori Sistem Multimedia",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "TOWARDS SOCIETY 5.0: A PILOT STUDY ON COSTLESS SMART TRANSPORTATION BUSINESS MODEL.",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "THE IMPACT OF ARTIFICIAL NEURAL NETWORK (ANN) DEVELOPMENTS FOR THE ACCOUNTANT PROFESSION IN FACING THE INDUSTRIAL ERA 4.0 AND SOCIETY 5.0",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Penerapan User-Centered Design Method Guna Pembaruan Substansi Terhadap Informasi dan Data-Data pada Website",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Kombinasi Sistem Berbasis Web Dan Android Sebagai Aplikasi Presensi Kegiatan Menggunakan QR Code",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Penerapan aplikasi android “ojek gt” sebagai startup industri kreatif menuju society 5.0",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Perancangan Dan Implementasi Jaringan Failover Menggunakan Protokol Spanning Tree Pada Pt. Pln Up3B Kalimantan Timur",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "SISTEM BIMBINGAN PENJUALAN “JUTUNG” UNTUK USAHA MIKRO DAN KECIL",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "INSTRUMEN PENILAIAN DOSEN SEBAGAI KNOWLEDGE MANAGEMENT SYSTEM DALAM LINGKUNGAN INTERNAL KAMPUS",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Perancangan Aplikasi Penggajian Karyawan Tetap pada PT. Rachmat Cahaya Abadi",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Integrasi Sistem berbasis Predictive Analytics untuk Pasar Tradisional Indonesia",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "ANALISIS KLASIFIKASI DAN PENGOLAHAN KNOWLEDGE DALAM EVALUASI PELATIHAN SEA SURVIVAL",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "SISTEM BIMBINGAN PENJUALAN “JUTUNG” UNTUK USAHA MIKRO DAN KECIL “JUTUNG” SALES GUIDANCE SYSTEM DESIGN FOR SMALL AND VERY SMALL ENTERPRISES",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "From Data Mining to Predictive Analytics: Progress in Understanding and Forecasting Social Media Virality",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Decoding Social Media Virality: Measuring Impact, Influence, and Engagement in the Digital Age",
+            "category": "Google Scholar",
+            "year": ""
           }
         ]
       },
@@ -1344,8 +1977,33 @@
         }
       ],
       "servicesTotal": 1,
-      "books": [],
-      "booksTotal": 0,
+      "books": [
+        {
+          "title": "Pemrograman Python Dasar",
+          "year": "2026"
+        },
+        {
+          "title": "Metodologi Pembelajaran E-learning dan Praktik Terbaik Edisi Kedua",
+          "year": "2026"
+        },
+        {
+          "title": "Dasar-Dasar SQL Untuk Pemula",
+          "year": "2023"
+        },
+        {
+          "title": "Sistem Informasi Berbasis Cloud: Keunggulan dan Tantangan Implementasi",
+          "year": "2023"
+        },
+        {
+          "title": "TEKNIK DASAR GAMBAR KARAKTER 2D: PANDUAN PRAKTIS UNTUK PEMULA",
+          "year": "2023"
+        },
+        {
+          "title": "Dasar dan teori sistem multimedia",
+          "year": "2022"
+        }
+      ],
+      "booksTotal": 6,
       "ipr": {
         "hakCipta": 4,
         "paten": 0,
@@ -1382,7 +2040,7 @@
       "name": "Khairunnisa Rahmah, S.E., M.M., CDMS.",
       "sintaId": "6798949",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-06T17:15:12.795176",
+      "scrapedAt": "2026-02-06T22:12:29.992914",
       "stats": {
         "articles": 24,
         "citations": 193,
@@ -1429,13 +2087,213 @@
           "total": 0
         },
         "googlescholar": {
-          "total": 0,
-          "list": []
+          "total": 22,
+          "list": [
+            {
+              "title": "Evaluation of User Acceptance and Experience of the Coretax System Among Corporate Taxpayers in Indonesia",
+              "category": "googlescholar"
+            },
+            {
+              "title": "DIGITALISASI LAYANAN ADMINISTRASI RT 36 KELURAHAN GUNUNG SAMARINDA BARU MELALUI PENGEMBANGAN WEBSITE UNTUK PENGELOLAAN DATA WARGA",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Kegiatan Pengabdian Masyarakat pada RT 36 Kelurahan Gunung Samarinda Baru Melalui Kegiatan Renovasi Fasilitas dan Sosialisasi Pembelajaran",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PENGANTAR BISNIS DIGITAL",
+              "category": "googlescholar"
+            },
+            {
+              "title": "KEGIATAN PENGABDIAN MASYARAKAT PADA RT 36 KELURAHAN GUNUNG SAMARINDA BARU MELALUI KEGIATAN RENOVASI DAN SOSIALISASI PEMBELAJARAN",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Manajemen Sumber Daya Manusia: Pendekatan Strategis dan Dinamis",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Mediasi Literasi Digital Dalam Meningkatkan Kinerja Bisnis Industri Mikro Dan Kecil Kota Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pemberdayaan Masyarakat Melalui Program Edukasi dan Pemanfaatan Teknologi di Yayasan Berkah Box",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pemanfaatan BPMN dalam Optimalisasi Proses Bisnis di PRIMKOPTI Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Digital literacy mediation in improving business performance of balikpapan micro and small industries",
+              "category": "googlescholar"
+            },
+            {
+              "title": "MEDIATING DIGITAL BEHAVIOR TO IMPROVE BUSINESS PERFORMANCE IN IKN BUFFER ZONE",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pelatihan Penyusunan Proposal Bisnis dan Pemanfaatan Toko Online bagi Penyandang Disabilitas",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan. MALCOM: Indonesian Journal of Machine Learning and Computer Science, 3 (2), 236–246",
+              "category": "googlescholar"
+            },
+            {
+              "title": "User Flow Design Research for a Culinary Application Prototype to Improve Customer Satisfaction in Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "The effect of consumer characteristics and lifestyle toward purchase decision",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan: Analysis of Data Flow Diagram on Culinary Tourism Database System in Balikpapan City",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pengaruh Ekuitas Merek, Bauran Pemasaran, dan Gaya Hidup Terhadap Keputusan Pembelian (Studi Kasus: Maxx Coffee, Bogor)",
+              "category": "googlescholar"
+            },
+            {
+              "title": "The effect of brand equity, marketing mix, and lifestyle to purchase decision at Maxx Coffee, Bogor",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Trade Flows Analysis and the role of standards on canned tuna trade",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis strategi pemasaran kopi lokal di rumah kopi ranin.[Skripsi]",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Strategi Pemasaran Kopi Lokal di Rumah Kopi Ranin",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Aliran Perdagangan Dan Peran Standar Dalam Perdagangan Tuna Kaleng",
+              "category": "googlescholar"
+            }
+          ]
         },
         "rama": {
           "total": 0
         },
-        "list": []
+        "list": [
+          {
+            "title": "Evaluation of User Acceptance and Experience of the Coretax System Among Corporate Taxpayers in Indonesia",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "DIGITALISASI LAYANAN ADMINISTRASI RT 36 KELURAHAN GUNUNG SAMARINDA BARU MELALUI PENGEMBANGAN WEBSITE UNTUK PENGELOLAAN DATA WARGA",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Kegiatan Pengabdian Masyarakat pada RT 36 Kelurahan Gunung Samarinda Baru Melalui Kegiatan Renovasi Fasilitas dan Sosialisasi Pembelajaran",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PENGANTAR BISNIS DIGITAL",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "KEGIATAN PENGABDIAN MASYARAKAT PADA RT 36 KELURAHAN GUNUNG SAMARINDA BARU MELALUI KEGIATAN RENOVASI DAN SOSIALISASI PEMBELAJARAN",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Manajemen Sumber Daya Manusia: Pendekatan Strategis dan Dinamis",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Mediasi Literasi Digital Dalam Meningkatkan Kinerja Bisnis Industri Mikro Dan Kecil Kota Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pemberdayaan Masyarakat Melalui Program Edukasi dan Pemanfaatan Teknologi di Yayasan Berkah Box",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pemanfaatan BPMN dalam Optimalisasi Proses Bisnis di PRIMKOPTI Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Digital literacy mediation in improving business performance of balikpapan micro and small industries",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "MEDIATING DIGITAL BEHAVIOR TO IMPROVE BUSINESS PERFORMANCE IN IKN BUFFER ZONE",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pelatihan Penyusunan Proposal Bisnis dan Pemanfaatan Toko Online bagi Penyandang Disabilitas",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan. MALCOM: Indonesian Journal of Machine Learning and Computer Science, 3 (2), 236–246",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "User Flow Design Research for a Culinary Application Prototype to Improve Customer Satisfaction in Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "The effect of consumer characteristics and lifestyle toward purchase decision",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan: Analysis of Data Flow Diagram on Culinary Tourism Database System in Balikpapan City",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pengaruh Ekuitas Merek, Bauran Pemasaran, dan Gaya Hidup Terhadap Keputusan Pembelian (Studi Kasus: Maxx Coffee, Bogor)",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "The effect of brand equity, marketing mix, and lifestyle to purchase decision at Maxx Coffee, Bogor",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Trade Flows Analysis and the role of standards on canned tuna trade",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis strategi pemasaran kopi lokal di rumah kopi ranin.[Skripsi]",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Strategi Pemasaran Kopi Lokal di Rumah Kopi Ranin",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Aliran Perdagangan Dan Peran Standar Dalam Perdagangan Tuna Kaleng",
+            "category": "Google Scholar",
+            "year": ""
+          }
+        ]
       },
       "research": [
         {
@@ -1561,8 +2419,17 @@
         }
       ],
       "servicesTotal": 3,
-      "books": [],
-      "booksTotal": 0,
+      "books": [
+        {
+          "title": "Pengantar Bisnis Digital",
+          "year": "2025"
+        },
+        {
+          "title": "MSDM: Pendekatan Strategis dan Dinamis",
+          "year": "2025"
+        }
+      ],
+      "booksTotal": 2,
       "ipr": {
         "hakCipta": 9,
         "paten": 0,
@@ -1619,7 +2486,7 @@
       "name": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
       "sintaId": "6793011",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-06T17:15:20.803178",
+      "scrapedAt": "2026-02-06T22:12:38.610712",
       "stats": {
         "articles": 26,
         "citations": 88,
@@ -1664,13 +2531,13 @@
         },
         "sinta": {
           "s1": 0,
-          "s2": 1,
+          "s2": 3,
           "s3": 1,
-          "s4": 5,
-          "s5": 2,
+          "s4": 7,
+          "s5": 3,
           "s6": 0,
-          "unknown": 1,
-          "total": 10,
+          "unknown": 2,
+          "total": 16,
           "sintaList": [
             {
               "title": "Koptihub: A UI/UX Design for Transparent Procurement using a User-Centered Design Approach",
@@ -1721,12 +2588,135 @@
               "title": "Pelatihan Desain Kreatif Dengan Canva Pada Desa Wisata Kang Bejo",
               "rank": "S4",
               "year": "2024"
+            },
+            {
+              "title": "Pelatihan Penyusunan Proposal Bisnis dan Pemanfaatan Toko Online bagi Penyandang Disabilitas",
+              "rank": "S5",
+              "year": "2023"
+            },
+            {
+              "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan: Analysis of Data Flow Diagram on Culinary Tourism Database System in Balikpapan City",
+              "rank": "S4",
+              "year": "2023"
+            },
+            {
+              "title": "User Flow Design Research for a Culinary Application Prototype to Improve Customer Satisfaction in Balikpapan",
+              "rank": "S4",
+              "year": "2023"
+            },
+            {
+              "title": "The Effect of Consumer Characteristics and Lifestyle toward Purchase Decision",
+              "rank": "S2",
+              "year": "2023"
+            },
+            {
+              "title": "MEDIATING DIGITAL BEHAVIOR TO IMPROVE BUSINESS PERFORMANCE IN IKN BUFFER ZONE",
+              "rank": "S2",
+              "year": "2023"
+            },
+            {
+              "title": "Implementasi Multiple Regression dan Geograpically Weighted Regression Guna Pemodelan Indeks Pembangunan Manusia Provinsi Bali Tahun 2019",
+              "rank": "",
+              "year": "2019"
             }
           ]
         },
         "googlescholar": {
-          "total": 0,
-          "list": []
+          "total": 23,
+          "list": [
+            {
+              "title": "INOVASI PRODUK: PENINGKATAN LAYANAN DAN DESAIN KEMASAN KREATIF DI INDUSTRI FLORIST KOMUNITAS PENCINTA ANGGREK INDONESIA CABANG BALIKPAPAN",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Koptihub: A UI/UX Design for Transparent Procurement using a User-Centered Design Approach",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Perancangan Sistem Pergudangan Usaha Mikro Kecil (UMK) melalui Pemodelan Data Flow Diagram (DFD) dan Analisis MoSCoW",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Aligning Middle-Class First-Time Homebuyers Preferences with Stakeholder Perception A Comprehensive Study in North Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PENGANTAR BISNIS DIGITAL",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Kecerdasan Buatan (AI) di Era Digital",
+              "category": "googlescholar"
+            },
+            {
+              "title": "KOPTIHUB: A WAREHOUSE APPLICATION PROTOTYPE FROM COOPERATIVE PERS PECTIVE",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Mediasi Literasi Digital Dalam Meningkatkan Kinerja Bisnis Industri Mikro Dan Kecil Kota Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "THE COMFORT OF DIGITAL TYPING WITH A USER EXPERIENCE (UE) APPROACH",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pemanfaatan BPMN dalam Optimalisasi Proses Bisnis di PRIMKOPTI Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Identification of Community Preferences in Housing Selection in North Balikpapan District",
+              "category": "googlescholar"
+            },
+            {
+              "title": "MEDIATING DIGITAL BEHAVIOR TO IMPROVE BUSINESS PERFORMANCE IN IKN BUFFER ZONE",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan. MALCOM: Indonesian Journal of Machine Learning and Computer Science, 3 (2), 236–246",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Implementasi Multiple Regression dan Geograpically Weighted Regression Guna Pemodelan Indeks Pembangunan Manusia Provinsi Bali Tahun 2019",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pelatihan Penyusunan Proposal Bisnis dan Pemanfaatan Toko Online bagi Penyandang Disabilitas",
+              "category": "googlescholar"
+            },
+            {
+              "title": "User Flow Design Research for a Culinary Application Prototype to Improve Customer Satisfaction in Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PENINGKATAN LITERASI MICROSOFT OFFICE UNTUK GENERASI MUDA RT. 05 DAKSA TIMUR III BALIKPAPAN",
+              "category": "googlescholar"
+            },
+            {
+              "title": "The effect of consumer characteristics and lifestyle toward purchase decision",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan: Analysis of Data Flow Diagram on Culinary Tourism Database System in Balikpapan City",
+              "category": "googlescholar"
+            },
+            {
+              "title": "WORKSHOP PEMBUATAN AQUAPONIC SEBAGAI UPAYA DALAM PEMANFAATAN LAHAN KOSONG WARGA RT 15 KELURAHAN LAMARU BALIKPAPAN",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Development of Capability Assessment Model of IT Operation Management Process with Organizational Behavior",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PENERAPAN METODE SIMULASI SISTEM DINAMIK UNTUK MENGANALISIS KEBUTUHAN LISTRIK SEKTOR RUMAH TANGGA PADA TIAP AREA DI JAWA TIMUR",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pelatihan Desain Kreatif Dengan Canva Pada Desa Wisata Kang Bejo",
+              "category": "googlescholar"
+            }
+          ]
         },
         "rama": {
           "total": 0
@@ -1786,25 +2776,155 @@
             "title": "Pelatihan Desain Kreatif Dengan Canva Pada Desa Wisata Kang Bejo",
             "category": "SINTA S4",
             "year": "2024"
+          },
+          {
+            "title": "Pelatihan Penyusunan Proposal Bisnis dan Pemanfaatan Toko Online bagi Penyandang Disabilitas",
+            "category": "SINTA S5",
+            "year": "2023"
+          },
+          {
+            "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan: Analysis of Data Flow Diagram on Culinary Tourism Database System in Balikpapan City",
+            "category": "SINTA S4",
+            "year": "2023"
+          },
+          {
+            "title": "User Flow Design Research for a Culinary Application Prototype to Improve Customer Satisfaction in Balikpapan",
+            "category": "SINTA S4",
+            "year": "2023"
+          },
+          {
+            "title": "The Effect of Consumer Characteristics and Lifestyle toward Purchase Decision",
+            "category": "SINTA S2",
+            "year": "2023"
+          },
+          {
+            "title": "MEDIATING DIGITAL BEHAVIOR TO IMPROVE BUSINESS PERFORMANCE IN IKN BUFFER ZONE",
+            "category": "SINTA S2",
+            "year": "2023"
+          },
+          {
+            "title": "Implementasi Multiple Regression dan Geograpically Weighted Regression Guna Pemodelan Indeks Pembangunan Manusia Provinsi Bali Tahun 2019",
+            "category": "SINTA",
+            "year": "2019"
+          },
+          {
+            "title": "INOVASI PRODUK: PENINGKATAN LAYANAN DAN DESAIN KEMASAN KREATIF DI INDUSTRI FLORIST KOMUNITAS PENCINTA ANGGREK INDONESIA CABANG BALIKPAPAN",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Koptihub: A UI/UX Design for Transparent Procurement using a User-Centered Design Approach",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Perancangan Sistem Pergudangan Usaha Mikro Kecil (UMK) melalui Pemodelan Data Flow Diagram (DFD) dan Analisis MoSCoW",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Aligning Middle-Class First-Time Homebuyers Preferences with Stakeholder Perception A Comprehensive Study in North Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PENGANTAR BISNIS DIGITAL",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Kecerdasan Buatan (AI) di Era Digital",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "KOPTIHUB: A WAREHOUSE APPLICATION PROTOTYPE FROM COOPERATIVE PERS PECTIVE",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Mediasi Literasi Digital Dalam Meningkatkan Kinerja Bisnis Industri Mikro Dan Kecil Kota Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "THE COMFORT OF DIGITAL TYPING WITH A USER EXPERIENCE (UE) APPROACH",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pemanfaatan BPMN dalam Optimalisasi Proses Bisnis di PRIMKOPTI Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Identification of Community Preferences in Housing Selection in North Balikpapan District",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "MEDIATING DIGITAL BEHAVIOR TO IMPROVE BUSINESS PERFORMANCE IN IKN BUFFER ZONE",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan. MALCOM: Indonesian Journal of Machine Learning and Computer Science, 3 (2), 236–246",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Implementasi Multiple Regression dan Geograpically Weighted Regression Guna Pemodelan Indeks Pembangunan Manusia Provinsi Bali Tahun 2019",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pelatihan Penyusunan Proposal Bisnis dan Pemanfaatan Toko Online bagi Penyandang Disabilitas",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "User Flow Design Research for a Culinary Application Prototype to Improve Customer Satisfaction in Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PENINGKATAN LITERASI MICROSOFT OFFICE UNTUK GENERASI MUDA RT. 05 DAKSA TIMUR III BALIKPAPAN",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "The effect of consumer characteristics and lifestyle toward purchase decision",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan: Analysis of Data Flow Diagram on Culinary Tourism Database System in Balikpapan City",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "WORKSHOP PEMBUATAN AQUAPONIC SEBAGAI UPAYA DALAM PEMANFAATAN LAHAN KOSONG WARGA RT 15 KELURAHAN LAMARU BALIKPAPAN",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Development of Capability Assessment Model of IT Operation Management Process with Organizational Behavior",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PENERAPAN METODE SIMULASI SISTEM DINAMIK UNTUK MENGANALISIS KEBUTUHAN LISTRIK SEKTOR RUMAH TANGGA PADA TIAP AREA DI JAWA TIMUR",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pelatihan Desain Kreatif Dengan Canva Pada Desa Wisata Kang Bejo",
+            "category": "Google Scholar",
+            "year": ""
           }
         ]
       },
       "research": [
-        {
-          "title": "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
-          "leader": "PENELITIAN INTERNAL ( RSS )",
-          "members": [
-            "Luh Made Wisnu Satyaninggrat",
-            "Prasis Damai Nh"
-          ],
-          "grantType": "PENELITIAN INTERNAL ( RSS )",
-          "grantCategory": "RSS",
-          "year": "2025",
-          "fundingAmount": 20000000,
-          "fundingFormatted": "Rp. 20.000.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
         {
           "title": "RANCANG BANGUN SISTEM STOK GUDANG BERBASIS WEB UNTUK INDUSTRI MIKRO DAN KECIL DI KOTA PENYANGGA IKN",
           "leader": "PENELITIAN INTERNAL ( RI )",
@@ -1832,6 +2952,21 @@
           "year": "2025",
           "fundingAmount": 23000000,
           "fundingFormatted": "Rp. 23.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
+          "leader": "PENELITIAN INTERNAL ( RSS )",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Prasis Damai Nh"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RSS )",
+          "grantCategory": "RSS",
+          "year": "2025",
+          "fundingAmount": 20000000,
+          "fundingFormatted": "Rp. 20.000.000",
           "status": "Approved",
           "source": "INTERNAL SOURCE"
         },
@@ -2003,8 +3138,17 @@
         }
       ],
       "servicesTotal": 5,
-      "books": [],
-      "booksTotal": 0,
+      "books": [
+        {
+          "title": "Pengantar Bisnis Digital",
+          "year": "2025"
+        },
+        {
+          "title": "Kecerdasan Buatan (AI) di Era Digital",
+          "year": "2025"
+        }
+      ],
+      "booksTotal": 2,
       "ipr": {
         "hakCipta": 7,
         "paten": 0,
@@ -2053,7 +3197,7 @@
       "name": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
       "sintaId": "6780638",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-06T17:15:25.657346",
+      "scrapedAt": "2026-02-06T22:12:45.989835",
       "stats": {
         "articles": 20,
         "citations": 51,
@@ -2154,8 +3298,113 @@
           ]
         },
         "googlescholar": {
-          "total": 0,
-          "list": []
+          "total": 26,
+          "list": [
+            {
+              "title": "Self-Control Demand Affects Procrastination: Moderated by Proactive Behavior and Perceived Social Support From Educators and Lecturers in Higher Education Institutions",
+              "category": "googlescholar"
+            },
+            {
+              "title": "FILOSOFI DAN SUMBER HUKUM DALAM BISNIS ISLAM",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Internal Whistleblowing and Perceptions of Organizational Politics, Pressure, and Professional Commitment",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Optimasi Kawasan Wisata Melalui Pengembangan Produk Dan Branding Dengan Memanfaatkan Teknologi Di Hutan Lindung Sungai",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PERAN HUKUM ISLAM DALAM MENJAGA ETIKA BISINIS DI ERA EKONOMI BERKELANJUTAN",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analysis of PT Borneo Enterprisindo Strategy to Increase Competitiveness in the Event Organizer Industry to Achieve Competitive Advantage",
+              "category": "googlescholar"
+            },
+            {
+              "title": "pdf Pengaruh Pemahaman Peraturan Perpajakan, Kualitas Pelayanan Fiskus, dan Penegakan Hukum Pajak Terhadap Perilaku Kepatuhan Wajib Pajak",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PENGARUH KONTROL DIRI TERHADAP PROKRASTINASI TENAGA KEPENDIDIKAN DAN DOSEN BERDASARKAN GENDER",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Implementation of IoT-Based Aquaponics Technology to Enhance Food Security and Economic Independence at Berkah Box Mosque",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Perancangan Mekanisme Pengaduk Kompos Sampah Organik dengan CAD/CAE",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PERAN TEKNOLOGI BLOCKCHAIN DALAM TRANSFORMASI PASAR INVESTASI NEGARA BERKEMBANG",
+              "category": "googlescholar"
+            },
+            {
+              "title": "RANCANG BANGUN SISTEM INFORMASI PELAYANAN MASYARAKAT MENGGUNAKAN API WHATSAPP PADA KELURAHAN RENGAS PULAU BERBASIS WEBSITE",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Penyebab Kerusakan Berkas Rekam Medis Terhadap Efisiensi Pelayanan Kesehatan di RSU Rajawali Citra Bantul Daerah Istimewa Yogyakarta",
+              "category": "googlescholar"
+            },
+            {
+              "title": "INDONESIAN EGGS ARE PRICIER THAN THOSE IN AUSTRALIA",
+              "category": "googlescholar"
+            },
+            {
+              "title": "ANALISIS KEPEMIMPINAN PEREMPUAN DI INDONESIA MENGGUNAKAN METODE BIBLIOMETRIK",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pemberdayaan Masyarakat Melalui Kegiatan Urban farming dan Pengelolaan sampah di Kelurahan Gunung Samarinda Baru: Community Empowerment Through Urban Farming Activities and …",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Optimization of farmer groups and educational tourism of Bamboe Wanadesa",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Intensi untuk tinggal di lingkungan Smart-City: Studi Pada Masyarakat Kalimantan Timur",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Does Heuristic Bias Matter for Long and Short-Term Investment Decision-Making During the COVID-19 Pandemic?",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Empowering leadership in creativity and work-effort: An elucidation through the psychological empowerment and self-leadership of the millennials generation",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pelatihan Penyusunan Laporan Dan Pelaporan Pajak Untuk Koperasi Kabupaten Pindrang",
+              "category": "googlescholar"
+            },
+            {
+              "title": "ANTESEDEN DAN KONSEKUEN PEMBERDAYAAN PSIKOLOGIS PADA KARYAWAN START-UP DIGITAL INDONESIA KEPEMIMPINAN PEMBERDAYAAN DAN KREATIFITAS",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Meningkatkan Loyalitas melalui Citra Merek, Kepercayaan, dan Biaya Ujrah Pegadaian Syariah Pekalongan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Kesesuaian Kompetensi Alumni Uin Alauddin Terhadap Kepuasan Stakeholder (Study Kasus Lulusan Manajemen Fakultas Ekonomi & Bisnis Islam UIN Alauddin Makassar angkatan …",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Strategi Bisnis Ciro Waste dalam Lingkungan Berkelanjutan Guna Menciptakan Keunggulan Kompetitif",
+              "category": "googlescholar"
+            },
+            {
+              "title": "JURUSAN BIOLOGI FAKULTAS SAINS DAN TEKNOLOGI UNIVERSITAS ISLAM NEGERI ALAUDDIN MAKASSAR",
+              "category": "googlescholar"
+            }
+          ]
         },
         "rama": {
           "total": 0
@@ -2210,6 +3459,136 @@
             "title": "ANALISIS KESESUAIAN KOMPETENSI ALUMNI UIN ALAUDDIN TERHADAP KEPUASAN STAKEHOLDER (Study kasus Lulusan Manajemen Fakultas Ekonomi & Bisnis Islam UIN Alauddin Makassar angkatan 2006-2010)",
             "category": "SINTA",
             "year": "2006"
+          },
+          {
+            "title": "Self-Control Demand Affects Procrastination: Moderated by Proactive Behavior and Perceived Social Support From Educators and Lecturers in Higher Education Institutions",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "FILOSOFI DAN SUMBER HUKUM DALAM BISNIS ISLAM",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Internal Whistleblowing and Perceptions of Organizational Politics, Pressure, and Professional Commitment",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Optimasi Kawasan Wisata Melalui Pengembangan Produk Dan Branding Dengan Memanfaatkan Teknologi Di Hutan Lindung Sungai",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PERAN HUKUM ISLAM DALAM MENJAGA ETIKA BISINIS DI ERA EKONOMI BERKELANJUTAN",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analysis of PT Borneo Enterprisindo Strategy to Increase Competitiveness in the Event Organizer Industry to Achieve Competitive Advantage",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "pdf Pengaruh Pemahaman Peraturan Perpajakan, Kualitas Pelayanan Fiskus, dan Penegakan Hukum Pajak Terhadap Perilaku Kepatuhan Wajib Pajak",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PENGARUH KONTROL DIRI TERHADAP PROKRASTINASI TENAGA KEPENDIDIKAN DAN DOSEN BERDASARKAN GENDER",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Implementation of IoT-Based Aquaponics Technology to Enhance Food Security and Economic Independence at Berkah Box Mosque",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Perancangan Mekanisme Pengaduk Kompos Sampah Organik dengan CAD/CAE",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PERAN TEKNOLOGI BLOCKCHAIN DALAM TRANSFORMASI PASAR INVESTASI NEGARA BERKEMBANG",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "RANCANG BANGUN SISTEM INFORMASI PELAYANAN MASYARAKAT MENGGUNAKAN API WHATSAPP PADA KELURAHAN RENGAS PULAU BERBASIS WEBSITE",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Penyebab Kerusakan Berkas Rekam Medis Terhadap Efisiensi Pelayanan Kesehatan di RSU Rajawali Citra Bantul Daerah Istimewa Yogyakarta",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "INDONESIAN EGGS ARE PRICIER THAN THOSE IN AUSTRALIA",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "ANALISIS KEPEMIMPINAN PEREMPUAN DI INDONESIA MENGGUNAKAN METODE BIBLIOMETRIK",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pemberdayaan Masyarakat Melalui Kegiatan Urban farming dan Pengelolaan sampah di Kelurahan Gunung Samarinda Baru: Community Empowerment Through Urban Farming Activities and …",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Optimization of farmer groups and educational tourism of Bamboe Wanadesa",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Intensi untuk tinggal di lingkungan Smart-City: Studi Pada Masyarakat Kalimantan Timur",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Does Heuristic Bias Matter for Long and Short-Term Investment Decision-Making During the COVID-19 Pandemic?",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Empowering leadership in creativity and work-effort: An elucidation through the psychological empowerment and self-leadership of the millennials generation",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pelatihan Penyusunan Laporan Dan Pelaporan Pajak Untuk Koperasi Kabupaten Pindrang",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "ANTESEDEN DAN KONSEKUEN PEMBERDAYAAN PSIKOLOGIS PADA KARYAWAN START-UP DIGITAL INDONESIA KEPEMIMPINAN PEMBERDAYAAN DAN KREATIFITAS",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Meningkatkan Loyalitas melalui Citra Merek, Kepercayaan, dan Biaya Ujrah Pegadaian Syariah Pekalongan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Kesesuaian Kompetensi Alumni Uin Alauddin Terhadap Kepuasan Stakeholder (Study Kasus Lulusan Manajemen Fakultas Ekonomi & Bisnis Islam UIN Alauddin Makassar angkatan …",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Strategi Bisnis Ciro Waste dalam Lingkungan Berkelanjutan Guna Menciptakan Keunggulan Kompetitif",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "JURUSAN BIOLOGI FAKULTAS SAINS DAN TEKNOLOGI UNIVERSITAS ISLAM NEGERI ALAUDDIN MAKASSAR",
+            "category": "Google Scholar",
+            "year": ""
           }
         ]
       },
@@ -2294,6 +3673,21 @@
       "researchTotal": 5,
       "services": [
         {
+          "title": "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
+          "leader": "",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Muh. Ikhsan Alif"
+          ],
+          "grantType": "Pengabdian Kepada Masyarakat Kompetitif Nasional ( PKM )",
+          "grantCategory": "PKM",
+          "year": "2025",
+          "fundingAmount": 47993000,
+          "fundingFormatted": "Rp. 47.993.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
+        },
+        {
           "title": "OPTIMALISASI TATA KELOLA DAN FASILITAS WISATA BAMBOE WANADESA KOTA BALIKPAPAN",
           "leader": "Supratiwi Amir",
           "members": [
@@ -2335,21 +3729,6 @@
           "year": "2025",
           "fundingAmount": 38904000,
           "fundingFormatted": "Rp. 38.904.000",
-          "status": "Approved",
-          "source": "BIMA SOURCE"
-        },
-        {
-          "title": "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
-          "leader": "",
-          "members": [
-            "Luh Made Wisnu Satyaninggrat",
-            "Muh. Ikhsan Alif"
-          ],
-          "grantType": "Pengabdian Kepada Masyarakat Kompetitif Nasional ( PKM )",
-          "grantCategory": "PKM",
-          "year": "2025",
-          "fundingAmount": 47993000,
-          "fundingFormatted": "Rp. 47.993.000",
           "status": "Approved",
           "source": "BIMA SOURCE"
         },
@@ -2396,8 +3775,17 @@
         }
       ],
       "servicesTotal": 7,
-      "books": [],
-      "booksTotal": 0,
+      "books": [
+        {
+          "title": "Dasar-dasar analisis data : pelajari keterampilan penting, rangkul masa depan, dan lejitkan karir anda di dunia berbasis data",
+          "year": "2024"
+        },
+        {
+          "title": "Analisis data multivariat dengan metode  structural equation modelling (SEM)  teori dan praktik menggunakan aplikasi  Warp-PLS 7.0",
+          "year": "2022"
+        }
+      ],
+      "booksTotal": 2,
       "ipr": {
         "hakCipta": 10,
         "paten": 0,
@@ -2405,23 +3793,15 @@
         "total": 10,
         "list": [
           {
-            "title": "Logo Inkubator Bisnis Teknologi ITK",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Pengembangan Website Inkubasi Bisnis Menggunakan Metode Personal Extreme Programming (PXP)",
-            "category": "hakCipta"
-          },
-          {
             "title": "Film Dokumenter: Pemberdayaan Komunitas Bakoel Kembang Ruhui Rahayu melalui Inovasi Produk, Pemasaran Digital dan Manajemen Stok",
             "category": "hakCipta"
           },
           {
-            "title": "Brand Guidelines IBT ITK",
+            "title": "Website Decision Support System untuk Pemilihan Produk UMKM Layak Ekspor",
             "category": "hakCipta"
           },
           {
-            "title": "Website Decision Support System untuk Pemilihan Produk UMKM Layak Ekspor",
+            "title": "Brand Guidelines IBT ITK",
             "category": "hakCipta"
           },
           {
@@ -2441,7 +3821,15 @@
             "category": "hakCipta"
           },
           {
-            "title": "Program Komputer Wisata Bamboe Wanadesa",
+            "title": "Logo Inkubator Bisnis Teknologi ITK",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Pengembangan Website Inkubasi Bisnis Menggunakan Metode Personal Extreme Programming (PXP)",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Data Dan Statistik: Pemilihan, Pengolahan, Proses Analisa Hingga Visualisasi Data Menggunakan Microsoft Excel",
             "category": "hakCipta"
           }
         ]
@@ -2458,7 +3846,7 @@
       "name": "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
       "sintaId": "6790854",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-06T17:15:33.779692",
+      "scrapedAt": "2026-02-06T22:13:17.705422",
       "stats": {
         "articles": 25,
         "citations": 84,
@@ -2496,13 +3884,13 @@
         },
         "sinta": {
           "s1": 0,
-          "s2": 1,
+          "s2": 3,
           "s3": 1,
-          "s4": 4,
-          "s5": 3,
+          "s4": 7,
+          "s5": 5,
           "s6": 0,
           "unknown": 1,
-          "total": 10,
+          "total": 17,
           "sintaList": [
             {
               "title": "ANALISIS PENGELOLAAN RISIKO PADA USAHA MIKRO KAVINA CATERING DENGAN METODE RCA DAN FISHBONE ANALYSIS",
@@ -2553,167 +3941,138 @@
               "title": "Pemanfaatan BPMN dalam Optimalisasi Proses Bisnis di PRIMKOPTI Balikpapan",
               "rank": "",
               "year": "2024"
+            },
+            {
+              "title": "Pelatihan Bizagi untuk Pemodelan Proses Bisnis Primer Koperasi Produsen Tempe Tahu Indonesia di Balikpapan",
+              "rank": "S4",
+              "year": "2024"
+            },
+            {
+              "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan: Analysis of Data Flow Diagram on Culinary Tourism Database System in Balikpapan City",
+              "rank": "S4",
+              "year": "2023"
+            },
+            {
+              "title": "PELATIHAN PEMBUATAN ECO-PRINT DARI PEWARNA ALAMI LIMBAH TEPUNG BUAH MANGROVE Rhizophora mucronata DI POKLAHSAR SUMBER REJEKI, NGULING, PASURUAN",
+              "rank": "S5",
+              "year": "2023"
+            },
+            {
+              "title": "User Flow Design Research for a Culinary Application Prototype to Improve Customer Satisfaction in Balikpapan",
+              "rank": "S4",
+              "year": "2023"
+            },
+            {
+              "title": "JOB SATISFACTION AND EMPLOYEE PERFORMANCE FACTORS IN PALM OIL PLANTATIONS",
+              "rank": "S2",
+              "year": "2023"
+            },
+            {
+              "title": "MEDIATING DIGITAL BEHAVIOR TO IMPROVE BUSINESS PERFORMANCE IN IKN BUFFER ZONE",
+              "rank": "S2",
+              "year": "2023"
+            },
+            {
+              "title": "PERAN MEDIASI KEPUASAN KERJA PADA PENGARUH BUDAYA ORGANISASI TERHADAP KINERJA KARYAWAN OPERASIONAL PERKEBUNAN KELAPA SAWIT",
+              "rank": "S5",
+              "year": "2022"
             }
           ]
         },
         "googlescholar": {
-          "total": 26,
+          "total": 23,
           "list": [
             {
-              "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan: Analysis of Data Flow Diagram on Culinary Tourism Database System in Balikpapan City",
-              "year": "",
-              "citation": "55",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "JOB SATISFACTION AND EMPLOYEE PERFORMANCE FACTORS IN PALM OIL PLANTATIONS",
-              "year": "",
-              "citation": "13",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "MEDIASI LITERASI DIGITAL DALAM MENINGKATKAN KINERJA BISNIS INDUSTRI MIKRO DAN KECIL KOTA BALIKPAPAN",
-              "year": "",
-              "citation": "3",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "User Flow Design Research for a Culinary Application Prototype to Improve Customer Satisfaction in Balikpapan",
-              "year": "",
-              "citation": "3",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "Pelatihan Pemodelan Proses Bisnis Koperasi di Sentra Industri Kecil Somber Balikpapan",
-              "year": "",
-              "citation": "2",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "Digital literacy mediation in improving business performance of balikpapan micro and small industries",
-              "year": "",
-              "citation": "2",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "Risk Identification and Assessment at Cyr Cake Balikpapan SMEs Using the HAZOP Method",
-              "year": "",
-              "citation": "1",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "PENERAPAN ISO 31000 DALAM PENGELOLAAN RISIKO PADA KOPERASI PKK KARANG REJO, BALIKPAPAN TENGAH",
-              "year": "",
-              "citation": "1",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "ANALISIS PENGELOLAAN RISIKO PADA USAHA MIKRO KAVINA CATERING DENGAN METODE RCA DAN FISHBONE ANALYSIS",
-              "year": "",
-              "citation": "1",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "PELATIHAN PEMBUATAN ECO-PRINT DARI PEWARNA ALAMI LIMBAH TEPUNG BUAH MANGROVE Rhizophora mucronata DI POKLAHSAR SUMBER REJEKI, NGULING, PASURUAN",
-              "year": "",
-              "citation": "1",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "PERAN MEDIASI KEPUASAN KERJA PADA PENGARUH BUDAYA ORGANISASI TERHADAP KINERJA KARYAWAN OPERASIONAL PERKEBUNAN KELAPA SAWIT",
-              "year": "",
-              "citation": "1",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "The Role of Business Process Capability and AI Adoption in SMEs",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "Pengantar Bisnis Digital",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "Perancangan Sistem Pergudangan Usaha Mikro Kecil (UMK) melalui Pemodelan Data Flow Diagram (DFD) dan Analisis MoSCoW",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "KOPTIHUB: A WAREHOUSE APPLICATION PROTOTYPE FROM COOPERATIVE PERS PECTIVE",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "INOVASI PRODUK: PENINGKATAN LAYANAN DAN DESAIN KEMASAN KREATIF DI INDUSTRI FLORIST KOMUNITAS PENCINTA ANGGREK INDONESIA CABANG BALIKPAPAN",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
+              "title": "Identifikasi dan Penilaian Resiko pada UMKM Cyr Cake  Balikpapan Menggunakan Metode HAZOP",
+              "category": "googlescholar"
             },
             {
               "title": "Koptihub: A UI/UX Design for Transparent Procurement using a User-Centered Design Approach",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "Analisis Manajemen Risiko pada Proses PT. Multiply Sarana  Indotama: dengan Metode Human Research Analysis dan  HAZOP",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "Analisis Risiko Pada UMKM Hobby Donut & Bakery Menggunakan Metode Business Impact Analysis (BIA)",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "PENERAPAN MANAJEMEN DASHBOARD DATA WARGA GRAHA POLTEKBA",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
+              "category": "googlescholar"
             },
             {
               "title": "Ekonomi Lingkungan Berkelanjutan",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
+              "category": "googlescholar"
+            },
+            {
+              "title": "RISK IDENTIFICATION AND ASSESSMENT AT CYR CAKE BALIKPAPAN SMES USING THE HAZOP METHOD",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PENGANTAR BISNIS DIGITAL",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Risiko Pada UMKM Hobby Donut & Bakery Menggunakan Metode Business Impact Analysis (BIA)",
+              "category": "googlescholar"
+            },
+            {
+              "title": "ANALISIS PENGELOLAAN RISIKO PADA USAHA MIKRO KAVINA CATERING DENGAN METODE RCA DAN FISHBONE ANALYSIS",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Perancangan Sistem Pergudangan Usaha Mikro Kecil (UMK) melalui Pemodelan Data Flow Diagram (DFD) dan Analisis MoSCoW",
+              "category": "googlescholar"
+            },
+            {
+              "title": "KOPTIHUB: A WAREHOUSE APPLICATION PROTOTYPE FROM COOPERATIVE PERS PECTIVE",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Manajemen Risiko pada Proses PT. Multiply Sarana  Indotama: dengan Metode Human Research Analysis dan  HAZOP",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Digital literacy mediation in improving business performance of balikpapan micro and small industries",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Digital Literacy Mediation in Balikpapan Micro and Small Industries' Business Performance",
+              "category": "googlescholar"
             },
             {
               "title": "Perancangan Sistem Pengelolaan Untuk Optimalisasi Stok dan Penjualan Barang di Toko Bahan Bangunan Berkah Balikpapan",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pelatihan Pemodelan Proses Bisnis Koperasi di Sentra Industri Kecil Somber Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Mediasi Literasi Digital Dalam Meningkatkan Kinerja Bisnis Industri Mikro Dan Kecil Kota Balikpapan",
+              "category": "googlescholar"
             },
             {
               "title": "Pemanfaatan BPMN dalam Optimalisasi Proses Bisnis di PRIMKOPTI Balikpapan",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
+              "category": "googlescholar"
             },
             {
-              "title": "Digital Literacy Mediation In Balikpapan Micro And Small Industries' Business Performance",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
+              "title": "PELATIHAN PEMBUATAN ECO-PRINT DARI PEWARNA ALAMI LIMBAH TEPUNG BUAH MANGROVE Rhizophora mucronata DI POKLAHSAR SUMBER REJEKI, NGULING, PASURUAN",
+              "category": "googlescholar"
+            },
+            {
+              "title": "JOB SATISFACTION AND EMPLOYEE PERFORMANCE FACTORS IN PALM OIL PLANTATIONS",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan: Analysis of Data Flow Diagram on Culinary Tourism Database System in Balikpapan City",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan. MALCOM: Indonesian Journal of Machine Learning and Computer Science, 3 (2), 236–246",
+              "category": "googlescholar"
             },
             {
               "title": "MEDIATING DIGITAL BEHAVIOR TO IMPROVE BUSINESS PERFORMANCE IN IKN BUFFER ZONE",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
+              "category": "googlescholar"
+            },
+            {
+              "title": "PERAN MEDIASI KEPUASAN KERJA PADA PENGARUH BUDAYA ORGANISASI TERHADAP KINERJA KARYAWAN OPERASIONAL PERKEBUNAN KELAPA SAWIT",
+              "category": "googlescholar"
             },
             {
               "title": "Pengaruh Kompos Limbah Nilam Dan Kelengasan Tanah Terhadap Sifat Fisik Tanah Dan Pertumbuhan Nilam (Pogostemon cablin Benth) Di Tanah Pasir Pantai Kecamatan Tirtoyudo",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
+              "category": "googlescholar"
             }
           ]
         },
@@ -2772,67 +4131,72 @@
             "year": "2024"
           },
           {
+            "title": "Pelatihan Bizagi untuk Pemodelan Proses Bisnis Primer Koperasi Produsen Tempe Tahu Indonesia di Balikpapan",
+            "category": "SINTA S4",
+            "year": "2024"
+          },
+          {
             "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan: Analysis of Data Flow Diagram on Culinary Tourism Database System in Balikpapan City",
-            "category": "Google Scholar",
-            "year": ""
+            "category": "SINTA S4",
+            "year": "2023"
           },
           {
-            "title": "JOB SATISFACTION AND EMPLOYEE PERFORMANCE FACTORS IN PALM OIL PLANTATIONS",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "MEDIASI LITERASI DIGITAL DALAM MENINGKATKAN KINERJA BISNIS INDUSTRI MIKRO DAN KECIL KOTA BALIKPAPAN",
-            "category": "Google Scholar",
-            "year": ""
+            "title": "PELATIHAN PEMBUATAN ECO-PRINT DARI PEWARNA ALAMI LIMBAH TEPUNG BUAH MANGROVE Rhizophora mucronata DI POKLAHSAR SUMBER REJEKI, NGULING, PASURUAN",
+            "category": "SINTA S5",
+            "year": "2023"
           },
           {
             "title": "User Flow Design Research for a Culinary Application Prototype to Improve Customer Satisfaction in Balikpapan",
+            "category": "SINTA S4",
+            "year": "2023"
+          },
+          {
+            "title": "JOB SATISFACTION AND EMPLOYEE PERFORMANCE FACTORS IN PALM OIL PLANTATIONS",
+            "category": "SINTA S2",
+            "year": "2023"
+          },
+          {
+            "title": "MEDIATING DIGITAL BEHAVIOR TO IMPROVE BUSINESS PERFORMANCE IN IKN BUFFER ZONE",
+            "category": "SINTA S2",
+            "year": "2023"
+          },
+          {
+            "title": "PERAN MEDIASI KEPUASAN KERJA PADA PENGARUH BUDAYA ORGANISASI TERHADAP KINERJA KARYAWAN OPERASIONAL PERKEBUNAN KELAPA SAWIT",
+            "category": "SINTA S5",
+            "year": "2022"
+          },
+          {
+            "title": "Identifikasi dan Penilaian Resiko pada UMKM Cyr Cake  Balikpapan Menggunakan Metode HAZOP",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Pelatihan Pemodelan Proses Bisnis Koperasi di Sentra Industri Kecil Somber Balikpapan",
+            "title": "Koptihub: A UI/UX Design for Transparent Procurement using a User-Centered Design Approach",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Digital literacy mediation in improving business performance of balikpapan micro and small industries",
+            "title": "Ekonomi Lingkungan Berkelanjutan",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Risk Identification and Assessment at Cyr Cake Balikpapan SMEs Using the HAZOP Method",
+            "title": "RISK IDENTIFICATION AND ASSESSMENT AT CYR CAKE BALIKPAPAN SMES USING THE HAZOP METHOD",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "PENERAPAN ISO 31000 DALAM PENGELOLAAN RISIKO PADA KOPERASI PKK KARANG REJO, BALIKPAPAN TENGAH",
+            "title": "PENGANTAR BISNIS DIGITAL",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Risiko Pada UMKM Hobby Donut & Bakery Menggunakan Metode Business Impact Analysis (BIA)",
             "category": "Google Scholar",
             "year": ""
           },
           {
             "title": "ANALISIS PENGELOLAAN RISIKO PADA USAHA MIKRO KAVINA CATERING DENGAN METODE RCA DAN FISHBONE ANALYSIS",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "PELATIHAN PEMBUATAN ECO-PRINT DARI PEWARNA ALAMI LIMBAH TEPUNG BUAH MANGROVE Rhizophora mucronata DI POKLAHSAR SUMBER REJEKI, NGULING, PASURUAN",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "PERAN MEDIASI KEPUASAN KERJA PADA PENGARUH BUDAYA ORGANISASI TERHADAP KINERJA KARYAWAN OPERASIONAL PERKEBUNAN KELAPA SAWIT",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "The Role of Business Process Capability and AI Adoption in SMEs",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Pengantar Bisnis Digital",
             "category": "Google Scholar",
             "year": ""
           },
@@ -2847,32 +4211,17 @@
             "year": ""
           },
           {
-            "title": "INOVASI PRODUK: PENINGKATAN LAYANAN DAN DESAIN KEMASAN KREATIF DI INDUSTRI FLORIST KOMUNITAS PENCINTA ANGGREK INDONESIA CABANG BALIKPAPAN",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Koptihub: A UI/UX Design for Transparent Procurement using a User-Centered Design Approach",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
             "title": "Analisis Manajemen Risiko pada Proses PT. Multiply Sarana  Indotama: dengan Metode Human Research Analysis dan  HAZOP",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Analisis Risiko Pada UMKM Hobby Donut & Bakery Menggunakan Metode Business Impact Analysis (BIA)",
+            "title": "Digital literacy mediation in improving business performance of balikpapan micro and small industries",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "PENERAPAN MANAJEMEN DASHBOARD DATA WARGA GRAHA POLTEKBA",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Ekonomi Lingkungan Berkelanjutan",
+            "title": "Digital Literacy Mediation in Balikpapan Micro and Small Industries' Business Performance",
             "category": "Google Scholar",
             "year": ""
           },
@@ -2882,17 +4231,47 @@
             "year": ""
           },
           {
+            "title": "Pelatihan Pemodelan Proses Bisnis Koperasi di Sentra Industri Kecil Somber Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Mediasi Literasi Digital Dalam Meningkatkan Kinerja Bisnis Industri Mikro Dan Kecil Kota Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Pemanfaatan BPMN dalam Optimalisasi Proses Bisnis di PRIMKOPTI Balikpapan",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Digital Literacy Mediation In Balikpapan Micro And Small Industries' Business Performance",
+            "title": "PELATIHAN PEMBUATAN ECO-PRINT DARI PEWARNA ALAMI LIMBAH TEPUNG BUAH MANGROVE Rhizophora mucronata DI POKLAHSAR SUMBER REJEKI, NGULING, PASURUAN",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "JOB SATISFACTION AND EMPLOYEE PERFORMANCE FACTORS IN PALM OIL PLANTATIONS",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan: Analysis of Data Flow Diagram on Culinary Tourism Database System in Balikpapan City",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Pemodelan Data Flow Diagram pada Sistem Basis Data Wisata Kuliner di Kota Balikpapan. MALCOM: Indonesian Journal of Machine Learning and Computer Science, 3 (2), 236–246",
             "category": "Google Scholar",
             "year": ""
           },
           {
             "title": "MEDIATING DIGITAL BEHAVIOR TO IMPROVE BUSINESS PERFORMANCE IN IKN BUFFER ZONE",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PERAN MEDIASI KEPUASAN KERJA PADA PENGARUH BUDAYA ORGANISASI TERHADAP KINERJA KARYAWAN OPERASIONAL PERKEBUNAN KELAPA SAWIT",
             "category": "Google Scholar",
             "year": ""
           },
@@ -2904,21 +4283,6 @@
         ]
       },
       "research": [
-        {
-          "title": "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
-          "leader": "PENELITIAN INTERNAL ( RSS )",
-          "members": [
-            "Luh Made Wisnu Satyaninggrat",
-            "Prasis Damai Nh"
-          ],
-          "grantType": "PENELITIAN INTERNAL ( RSS )",
-          "grantCategory": "RSS",
-          "year": "2025",
-          "fundingAmount": 20000000,
-          "fundingFormatted": "Rp. 20.000.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
         {
           "title": "RANCANG BANGUN SISTEM STOK GUDANG BERBASIS WEB UNTUK INDUSTRI MIKRO DAN KECIL DI KOTA PENYANGGA IKN",
           "leader": "PENELITIAN INTERNAL ( RI )",
@@ -2946,6 +4310,21 @@
           "year": "2025",
           "fundingAmount": 23000000,
           "fundingFormatted": "Rp. 23.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
+          "leader": "PENELITIAN INTERNAL ( RSS )",
+          "members": [
+            "Luh Made Wisnu Satyaninggrat",
+            "Prasis Damai Nh"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RSS )",
+          "grantCategory": "RSS",
+          "year": "2025",
+          "fundingAmount": 20000000,
+          "fundingFormatted": "Rp. 20.000.000",
           "status": "Approved",
           "source": "INTERNAL SOURCE"
         },
@@ -3013,6 +4392,20 @@
       "researchTotal": 7,
       "services": [
         {
+          "title": "EDUKASI PPKS DAN PENGEMBANGAN SISTEM INFORMASI PENDATAAN WARGA DI GRAHA POLTEKBA",
+          "leader": "",
+          "members": [
+            "Bayu Nur Abdallah"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
           "title": "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
           "leader": "",
           "members": [
@@ -3026,20 +4419,6 @@
           "fundingFormatted": "Rp. 47.993.000",
           "status": "Approved",
           "source": "BIMA SOURCE"
-        },
-        {
-          "title": "EDUKASI PPKS DAN PENGEMBANGAN SISTEM INFORMASI PENDATAAN WARGA DI GRAHA POLTEKBA",
-          "leader": "",
-          "members": [
-            "Bayu Nur Abdallah"
-          ],
-          "grantType": "HIBAH INTERNAL ( PMMD )",
-          "grantCategory": "PMMD",
-          "year": "2025",
-          "fundingAmount": 10000000,
-          "fundingFormatted": "Rp. 10.000.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PERKUAT INDUSTRI MIKRO KECIL MELALUI PENDAMPINGAN PROSES BISNIS: KOLABORASI PENGABDIAN MASYARAKAT DENGAN KOPERASI SEBAGAI MITRA UTAMA",
@@ -3058,22 +4437,23 @@
         }
       ],
       "servicesTotal": 3,
-      "books": [],
-      "booksTotal": 0,
+      "books": [
+        {
+          "title": "Pengantar Bisnis Digital",
+          "year": "2025"
+        },
+        {
+          "title": "Ekonomi Lingkungan Berkelanjutan",
+          "year": "2025"
+        }
+      ],
+      "booksTotal": 2,
       "ipr": {
         "hakCipta": 9,
         "paten": 0,
         "other": 0,
         "total": 9,
         "list": [
-          {
-            "title": "Kartu Perawatan Anggrek",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Alat Peraga Panduan Penggunaan QR Code Identitas Anggrek",
-            "category": "hakCipta"
-          },
           {
             "title": "Pengantar Bisnis Digital",
             "category": "hakCipta"
@@ -3096,6 +4476,14 @@
           },
           {
             "title": "Film Dokumenter: Pemberdayaan Komunitas Bakoel Kembang Ruhui Rahayu melalui Inovasi Produk, Pemasaran Digital dan Manajemen Stok",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Kartu Perawatan Anggrek",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Alat Peraga Panduan Penggunaan QR Code Identitas Anggrek",
             "category": "hakCipta"
           },
           {
