@@ -1,8 +1,9 @@
 {
   "metadata": {
-    "generatedAt": "2026-02-05T15:44:12.150205",
+    "generatedAt": "2026-02-06T17:03:12.637898",
     "source": "SINTA 3",
     "version": "2.3",
+    "prodi": "Sistem Informasi",
     "description": "Data SINTA dengan detail pendanaan untuk akreditasi"
   },
   "lecturers": [
@@ -10,7 +11,7 @@
       "name": "Yuyun Tri Wiranti",
       "sintaId": "5978281",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:44:19.208887",
+      "scrapedAt": "2026-02-06T17:03:59.168052",
       "stats": {
         "articles": 40,
         "citations": 473,
@@ -57,11 +58,6 @@
               "year": "2022"
             },
             {
-              "title": "Assessment of Process Capability Level in University XYZ Based on COBIT 2019",
-              "q": "Q4",
-              "year": "2019"
-            },
-            {
               "title": "Acceptance analysis of NUADU as e-learning platform using the Technology Acceptance Model (TAM) approach",
               "q": "Q2",
               "year": "2021"
@@ -70,6 +66,11 @@
               "title": "Evaluation of the Application of Hospital Management Information System (SIMRS) in RSUD Dr. Kanujoso Djatiwibowo Using the HOT-Fit Method",
               "q": "Q4",
               "year": "2021"
+            },
+            {
+              "title": "Assessment of Process Capability Level in University XYZ Based on COBIT 2019",
+              "q": "Q4",
+              "year": "2019"
             },
             {
               "title": "Managing Service Level for Academic Information System Help Desk for XYZ University Based on ITIL V3 Framework",
@@ -396,11 +397,6 @@
             "year": "2022"
           },
           {
-            "title": "Assessment of Process Capability Level in University XYZ Based on COBIT 2019",
-            "category": "Scopus Q4",
-            "year": "2019"
-          },
-          {
             "title": "Acceptance analysis of NUADU as e-learning platform using the Technology Acceptance Model (TAM) approach",
             "category": "Scopus Q2",
             "year": "2021"
@@ -409,6 +405,11 @@
             "title": "Evaluation of the Application of Hospital Management Information System (SIMRS) in RSUD Dr. Kanujoso Djatiwibowo Using the HOT-Fit Method",
             "category": "Scopus Q4",
             "year": "2021"
+          },
+          {
+            "title": "Assessment of Process Capability Level in University XYZ Based on COBIT 2019",
+            "category": "Scopus Q4",
+            "year": "2019"
           },
           {
             "title": "Managing Service Level for Academic Information System Help Desk for XYZ University Based on ITIL V3 Framework",
@@ -793,6 +794,7 @@
           "source": "BIMA SOURCE"
         }
       ],
+      "researchTotal": 9,
       "services": [
         {
           "title": "IMPLEMENTASI DAN PELATIHAN SISTEM INFORMASI PENGAJIAN DAN MEDIA SOSIAL",
@@ -864,7 +866,9 @@
           "source": "BIMA SOURCE"
         }
       ],
+      "servicesTotal": 5,
       "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 10,
         "paten": 0,
@@ -880,6 +884,10 @@
             "category": "hakCipta"
           },
           {
+            "title": "Sistem Informasi Pelayanan Administrasi Pada Unit Layanan Terpadu ITK",
+            "category": "hakCipta"
+          },
+          {
             "title": "Sistem Informasi Kelurahan Salok Api Darat (SILUSAD)",
             "category": "hakCipta"
           },
@@ -892,10 +900,6 @@
             "category": "hakCipta"
           },
           {
-            "title": "Sistem Informasi Pelayanan Administrasi Pada Unit Layanan Terpadu ITK",
-            "category": "hakCipta"
-          },
-          {
             "title": "Sistem Informasi E-Voting",
             "category": "hakCipta"
           },
@@ -904,11 +908,11 @@
             "category": "hakCipta"
           },
           {
-            "title": "Rancangan Tata Kelola Teknologi Informasi PT Telekomunikasi Indonesia Regional VI Balikpapan",
+            "title": "Rancangan Tata Kelola Teknologi Informasi Institut Teknologi Kalimantan",
             "category": "hakCipta"
           },
           {
-            "title": "Sistem Informasi Pariwisata DISPOPAR Kota Bontang",
+            "title": "Rancangan Tata Kelola Teknologi Informasi PT Telekomunikasi Indonesia Regional VI Balikpapan",
             "category": "hakCipta"
           }
         ]
@@ -925,7 +929,7 @@
       "name": "Aidil Saputra Kirsan",
       "sintaId": "6760340",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:44:31.266819",
+      "scrapedAt": "2026-02-06T17:04:25.182396",
       "stats": {
         "articles": 28,
         "citations": 77,
@@ -1051,7 +1055,7 @@
           ]
         },
         "googlescholar": {
-          "total": 28,
+          "total": 29,
           "list": [
             {
               "title": "Energy efficiency optimization for intermediate node selection using MhSA-LEACH: multi-hop simulated annealing in wireless sensor network",
@@ -1145,6 +1149,12 @@
             },
             {
               "title": "Rancangan Smart Home System untuk Pengendalian Saklar Listrik",
+              "year": "",
+              "citation": "0",
+              "source": "Google Scholar"
+            },
+            {
+              "title": "RANCANGAN SMART HOME SYSTEM UNTUK PENGENDALIAN SAKLAR LISTRIK",
               "year": "",
               "citation": "0",
               "source": "Google Scholar"
@@ -1383,6 +1393,11 @@
             "year": ""
           },
           {
+            "title": "RANCANGAN SMART HOME SYSTEM UNTUK PENGENDALIAN SAKLAR LISTRIK",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Implementasi Metaverse Pada Pengenalan Lab Terpadu Kampus Institut Teknologi Kalimantan (ITK)",
             "category": "Google Scholar",
             "year": ""
@@ -1574,6 +1589,7 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 9,
       "services": [
         {
           "title": "PENGEMBANGAN WISATA TANJUNG GADING MELALUI DIGITALISASI DI RT 17 KELURAHAN KARANG JOANG",
@@ -1654,22 +1670,39 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "Buku ajar komputasi awan",
-          "year": "2023"
-        },
-        {
-          "title": "Implementasi Framework Codeigniter dan Restful API pada website dan Android Siakad untuk mendukung ekosistem pendidikan",
-          "year": "2022"
-        }
-      ],
+      "servicesTotal": 6,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
-        "hakCipta": 10,
+        "hakCipta": 9,
         "paten": 0,
         "other": 0,
-        "total": 10,
+        "total": 9,
         "list": [
+          {
+            "title": "Clash Of Spaceship",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Smart Quality Learning (Artilearning) Berbasis Website",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Alien Adventure",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Sistem Informasi Database (SIDAT) SMA Negeri 9 Balikpapan",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Sistem Informasi Perpustakaan Sekolah (SIMPUS) Berbasis Website",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Sistem Monitoring Orang Tua Terhadap Akademik Siswa (SIMAWA) Di Sekolah Dasar Berbasis Website",
+            "category": "hakCipta"
+          },
           {
             "title": "Sistem Informasi Bagian Usaha Kesehatan Sekolah (SIBUKS) Berbasis Website",
             "category": "hakCipta"
@@ -1680,34 +1713,6 @@
           },
           {
             "title": "Sistem Informasi Tata Usaha Online (SITULEN) Berbasis Website",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Aplikasi Kasirku",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Sistem Informasi Manajemen Ekstrakurikuler (SIMANTRA) Berbasis Website",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Sistem Informasi Sekolah (SIAKAD) Di Sekolah Al-Azhar 58 Balikpapan Dasar Berbasis Website Dan Android",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Smart Quality Learning (Artilearning) Berbasis Website",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Clash Of Spaceship",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Alien Adventure",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Sistem Informasi Database (SIDAT) SMA Negeri 9 Balikpapan",
             "category": "hakCipta"
           }
         ]
@@ -1724,7 +1729,7 @@
       "name": "Arif Wicaksono Septyanto",
       "sintaId": "6741019",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:44:42.686911",
+      "scrapedAt": "2026-02-06T17:04:54.453113",
       "stats": {
         "articles": 23,
         "citations": 280,
@@ -1766,12 +1771,12 @@
               "year": "2023"
             },
             {
-              "title": "Applied Artificial Intelligence as Event Horizon Of Cyber Security",
+              "title": "Adaptively Intelligent Meta-search Engine with Minimum Edit Distance",
               "q": "No-Q",
               "year": "2022"
             },
             {
-              "title": "Adaptively Intelligent Meta-search Engine with Minimum Edit Distance",
+              "title": "Applied Artificial Intelligence as Event Horizon Of Cyber Security",
               "q": "No-Q",
               "year": "2022"
             },
@@ -2151,12 +2156,12 @@
             "year": "2023"
           },
           {
-            "title": "Applied Artificial Intelligence as Event Horizon Of Cyber Security",
+            "title": "Adaptively Intelligent Meta-search Engine with Minimum Edit Distance",
             "category": "Scopus No-Q",
             "year": "2022"
           },
           {
-            "title": "Adaptively Intelligent Meta-search Engine with Minimum Edit Distance",
+            "title": "Applied Artificial Intelligence as Event Horizon Of Cyber Security",
             "category": "Scopus No-Q",
             "year": "2022"
           },
@@ -2593,6 +2598,7 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 9,
       "services": [
         {
           "title": "PENGEMBANGAN DIGITAL BRANDING BERSAMA TANAMIN BUMI NUSANTARA MELALUI PEMANFAATAN TEKNOLOGI INFORMASI UNTUK KAMPANYE LINGKUNGAN",
@@ -2665,7 +2671,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "servicesTotal": 5,
       "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 0,
         "paten": 0,
@@ -2685,7 +2693,7 @@
       "name": "Henokh Lugo Hariyanto",
       "sintaId": "6807418",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:44:50.784096",
+      "scrapedAt": "2026-02-06T17:05:20.561865",
       "stats": {
         "articles": 9,
         "citations": 20,
@@ -2722,11 +2730,6 @@
           "total": 7,
           "scopusList": [
             {
-              "title": "Anisotropic internal fields behavior in La2−xSrxCuO4 (x=0.024): Precursor to the spin glass state revealed by muon spin relaxation",
-              "q": "Q2",
-              "year": "2024"
-            },
-            {
               "title": "Development and application of a three-dimensional pseudo-Voigt function for muon spin relaxation analysis of weakly magnetic materials",
               "q": "Q2",
               "year": "2024"
@@ -2737,13 +2740,18 @@
               "year": "2024"
             },
             {
-              "title": "Split-Conv: 1HD Depth Estimation Deep Learning Model",
-              "q": "No-Q",
-              "year": "2023"
+              "title": "Anisotropic internal fields behavior in La2−xSrxCuO4 (x=0.024): Precursor to the spin glass state revealed by muon spin relaxation",
+              "q": "Q2",
+              "year": "2024"
             },
             {
               "title": "Phase-Resolved Wave Simulation over Isolated Seamount",
               "q": "Q2",
+              "year": "2023"
+            },
+            {
+              "title": "Split-Conv: 1HD Depth Estimation Deep Learning Model",
+              "q": "No-Q",
               "year": "2023"
             },
             {
@@ -2844,11 +2852,6 @@
         },
         "list": [
           {
-            "title": "Anisotropic internal fields behavior in La2−xSrxCuO4 (x=0.024): Precursor to the spin glass state revealed by muon spin relaxation",
-            "category": "Scopus Q2",
-            "year": "2024"
-          },
-          {
             "title": "Development and application of a three-dimensional pseudo-Voigt function for muon spin relaxation analysis of weakly magnetic materials",
             "category": "Scopus Q2",
             "year": "2024"
@@ -2859,13 +2862,18 @@
             "year": "2024"
           },
           {
-            "title": "Split-Conv: 1HD Depth Estimation Deep Learning Model",
-            "category": "Scopus No-Q",
-            "year": "2023"
+            "title": "Anisotropic internal fields behavior in La2−xSrxCuO4 (x=0.024): Precursor to the spin glass state revealed by muon spin relaxation",
+            "category": "Scopus Q2",
+            "year": "2024"
           },
           {
             "title": "Phase-Resolved Wave Simulation over Isolated Seamount",
             "category": "Scopus Q2",
+            "year": "2023"
+          },
+          {
+            "title": "Split-Conv: 1HD Depth Estimation Deep Learning Model",
+            "category": "Scopus No-Q",
             "year": "2023"
           },
           {
@@ -2952,20 +2960,6 @@
           "source": "INTERNAL SOURCE"
         },
         {
-          "title": "PENGEMBANGAN SILURAH: SISTEM INFORMASI KELURAHAN MENGGUNAKAN METODE AGILE",
-          "leader": "Yuyun Tri Wiranti",
-          "members": [
-            "Henokh Lugo Hariyanto"
-          ],
-          "grantType": "HIBAH INTERNAL ( RKDN )",
-          "grantCategory": "RKDN",
-          "year": "2024",
-          "fundingAmount": 25000000,
-          "fundingFormatted": "Rp. 25.000.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
-        {
           "title": "Pengembangan Algoritma Metaheuristik Untuk Menyelesaikan Permasalahan Optimasi Kombinatorial",
           "leader": "Arif Wicaksono Septyanto",
           "members": [
@@ -2978,6 +2972,20 @@
           "fundingFormatted": "Rp. 34.740.000",
           "status": "Approved",
           "source": "BIMA SOURCE"
+        },
+        {
+          "title": "PENGEMBANGAN SILURAH: SISTEM INFORMASI KELURAHAN MENGGUNAKAN METODE AGILE",
+          "leader": "Yuyun Tri Wiranti",
+          "members": [
+            "Henokh Lugo Hariyanto"
+          ],
+          "grantType": "HIBAH INTERNAL ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2024",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
@@ -3022,6 +3030,7 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 6,
       "services": [
         {
           "title": "PENGEMBANGAN DIGITAL BRANDING BERSAMA TANAMIN BUMI NUSANTARA MELALUI PEMANFAATAN TEKNOLOGI INFORMASI UNTUK KAMPANYE LINGKUNGAN",
@@ -3052,7 +3061,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "servicesTotal": 2,
       "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 0,
         "paten": 0,
@@ -3072,7 +3083,7 @@
       "name": "Lovinta Happy Atrinawati",
       "sintaId": "5977894",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:44:58.836108",
+      "scrapedAt": "2026-02-06T17:05:49.768271",
       "stats": {
         "articles": 53,
         "citations": 517,
@@ -3201,7 +3212,7 @@
             {
               "title": "PERANCANGAN TATA KELOLA TEKNOLOGI INFORMASI MENGGUNAKAN FRAMEWORK COBIT 2019 PADA HOTEL XYZ",
               "year": "",
-              "citation": "53",
+              "citation": "52",
               "source": "Google Scholar"
             },
             {
@@ -3243,7 +3254,7 @@
             {
               "title": "PERANCANGAN TATA KELOLA TEKNOLOGI INFORMASI DENGAN MENGGUNAKAN FRAMEWORK COBIT 2019 PADA PT JWT GLOBAL LOGISTICS INDONESIA",
               "year": "",
-              "citation": "19",
+              "citation": "18",
               "source": "Google Scholar"
             },
             {
@@ -3870,6 +3881,7 @@
           "source": "BIMA SOURCE"
         }
       ],
+      "researchTotal": 3,
       "services": [
         {
           "title": "PELATIHAN MEMODELKAN PROSES BISNIS MENGGUNAKAN BIZAGI BAGI ORGANISASI PERANGKAT DAERAH KOTA BALIKPAPAN",
@@ -3884,12 +3896,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "Memodelkan proses bisnis menggunakan bizagi modeler",
-          "year": "2021"
-        }
-      ],
+      "servicesTotal": 1,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 5,
         "paten": 0,
@@ -3897,19 +3906,19 @@
         "total": 5,
         "list": [
           {
-            "title": "Rancangan Tata Kelola Teknologi Informasi Institut Teknologi Kalimantan",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Rancangan Tata Kelola Teknologi Informasi PT Telekomunikasi Indonesia Regional VI Balikpapan",
-            "category": "hakCipta"
-          },
-          {
             "title": "Rancangan Tata Kelola Teknologi Informasi Hotel Astara",
             "category": "hakCipta"
           },
           {
             "title": "Rancangan Tata Kelola Teknologi Informasi PT Petra Kaltim Sejahtera",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Rancangan Tata Kelola Teknologi Informasi Institut Teknologi Kalimantan",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Rancangan Tata Kelola Teknologi Informasi PT Telekomunikasi Indonesia Regional VI Balikpapan",
             "category": "hakCipta"
           },
           {
@@ -3930,7 +3939,7 @@
       "name": "Vika Fitratunnany Insanittaqwa",
       "sintaId": "6784235",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:45:07.758685",
+      "scrapedAt": "2026-02-06T17:06:15.787113",
       "stats": {
         "articles": 14,
         "citations": 54,
@@ -4225,6 +4234,7 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 5,
       "services": [
         {
           "title": "PENGEMBANGAN FASILITAS DAN PROMOSI HUTAN KOTA MANGROVE MARGOMULYO MELALUI TEKNOLOGI DIGITAL",
@@ -4265,7 +4275,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "servicesTotal": 3,
       "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 0,
         "paten": 0,
@@ -4285,7 +4297,7 @@
       "name": "Hendy Indrawan Sunardi",
       "sintaId": "6784468",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:45:25.129145",
+      "scrapedAt": "2026-02-06T17:06:41.867019",
       "stats": {
         "articles": 9,
         "citations": 11,
@@ -4473,6 +4485,7 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 2,
       "services": [
         {
           "title": "PENGEMBANGAN WISATA TANJUNG GADING MELALUI DIGITALISASI DI RT 17 KELURAHAN KARANG JOANG",
@@ -4541,7 +4554,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "servicesTotal": 5,
       "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 0,
         "paten": 0,
@@ -4561,7 +4576,7 @@
       "name": "Dwi Nur Amalia",
       "sintaId": "6761367",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:45:35.225283",
+      "scrapedAt": "2026-02-06T17:07:07.866859",
       "stats": {
         "articles": 14,
         "citations": 24,
@@ -4868,21 +4883,6 @@
       },
       "research": [
         {
-          "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
-          "leader": "Vika Fitratunnany Insanittaqwa",
-          "members": [
-            "Yuyun Tri Wiranti",
-            "Dwi Nur Amalia"
-          ],
-          "grantType": "Penelitian Internal ( RKDN )",
-          "grantCategory": "RKDN",
-          "year": "2025",
-          "fundingAmount": 10000000,
-          "fundingFormatted": "Rp. 10.000.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
-        {
           "title": "PENGEMBANGAN SISTEM INFORMASI PUSAT LAYANAN HUKUM SEBAGAI JARINGAN DOKUMENTASI DAN INFORMASI HUKUM ITK",
           "leader": "PENILAIAN INTERNAL ( RKS )",
           "members": [
@@ -4894,6 +4894,21 @@
           "year": "2025",
           "fundingAmount": 17000000,
           "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
+          "leader": "Vika Fitratunnany Insanittaqwa",
+          "members": [
+            "Yuyun Tri Wiranti",
+            "Dwi Nur Amalia"
+          ],
+          "grantType": "Penelitian Internal ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
           "status": "Approved",
           "source": "INTERNAL SOURCE"
         },
@@ -4910,6 +4925,7 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 3,
       "services": [
         {
           "title": "PENGEMBANGAN FASILITAS DAN PROMOSI HUTAN KOTA MANGROVE MARGOMULYO MELALUI TEKNOLOGI DIGITAL",
@@ -4965,7 +4981,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "servicesTotal": 4,
       "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 0,
         "paten": 0,
@@ -4985,7 +5003,7 @@
       "name": "Dwi Arief Prambudi",
       "sintaId": "6784358",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:46:27.790423",
+      "scrapedAt": "2026-02-06T17:07:33.888503",
       "stats": {
         "articles": 32,
         "citations": 131,
@@ -5517,6 +5535,7 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 7,
       "services": [
         {
           "title": "DIGITALISASI LAYANAN BERBASIS WEBSITE UNTUK MENINGKATKAN KUALITAS PELAYANAN DI RT 02 KELURAHAN GRAHA INDAH BALIKPAPAN",
@@ -5547,10 +5566,10 @@
           "source": "INTERNAL SOURCE"
         },
         {
-          "title": "PEMBUATAN AKUAPONIK SEBAGAI PEMANFAATAN LAHAN TERBATAS DAN PEMANFAATAN LIMBAH KOTORAN IKAN LELE MENJADI PUPUK DI WILAYAN PERUMAHAN BANGUN REKSA RT 21 KELURAHAN GRAHA INDAH, KECAMATAN BALIKPAPAN UTARA",
-          "leader": "Nia Febrianti",
+          "title": "MEWUJUDKAN SMART RT DENGAN PERKEMBANGAN TEKNOLOGI RT 31 WADUK WONOREJO KOTA BALIKPAPAN KALIMANTAN TIMUR",
+          "leader": "",
           "members": [
-            "Dwi Arief Prambudi"
+            "Nia Febrianti"
           ],
           "grantType": "HIBAH ITK ( PMMD )",
           "grantCategory": "PMMD",
@@ -5561,10 +5580,10 @@
           "source": "INTERNAL SOURCE"
         },
         {
-          "title": "MEWUJUDKAN SMART RT DENGAN PERKEMBANGAN TEKNOLOGI RT 31 WADUK WONOREJO KOTA BALIKPAPAN KALIMANTAN TIMUR",
-          "leader": "",
+          "title": "PEMBUATAN AKUAPONIK SEBAGAI PEMANFAATAN LAHAN TERBATAS DAN PEMANFAATAN LIMBAH KOTORAN IKAN LELE MENJADI PUPUK DI WILAYAN PERUMAHAN BANGUN REKSA RT 21 KELURAHAN GRAHA INDAH, KECAMATAN BALIKPAPAN UTARA",
+          "leader": "Nia Febrianti",
           "members": [
-            "Nia Febrianti"
+            "Dwi Arief Prambudi"
           ],
           "grantType": "HIBAH ITK ( PMMD )",
           "grantCategory": "PMMD",
@@ -5611,7 +5630,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "servicesTotal": 7,
       "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 1,
         "paten": 0,
@@ -5636,7 +5657,7 @@
       "name": "I Putu Deny Arthawan Sugih Prabowo",
       "sintaId": "6701825",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:47:26.324473",
+      "scrapedAt": "2026-02-06T17:07:39.054594",
       "stats": {
         "articles": 42,
         "citations": 103,
@@ -6333,15 +6354,15 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 8,
       "services": [
         {
-          "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS",
-          "leader": "INSTITUSI INTERNAL ( PMMD )",
+          "title": "PELATIHAN OPTIMALISASI PEMASARAN DIGITAL PADA BATIK SHAHO DAN KOMUNITAS BATIK TIGA ZAMAN BALIKPAPAN",
+          "leader": "Luh Made Wisnu Satyaninggrat",
           "members": [
-            "Luh Made Wisnu Satyaninggrat",
-            "Muchammad Chandra Cahyo Utomo"
+            "I Putu Deny Arthawan Sugih Prabowo"
           ],
-          "grantType": "INSTITUSI INTERNAL ( PMMD )",
+          "grantType": "HIBAH INTERNAL ( PMMD )",
           "grantCategory": "PMMD",
           "year": "2025",
           "fundingAmount": 10000000,
@@ -6350,12 +6371,13 @@
           "source": "INTERNAL SOURCE"
         },
         {
-          "title": "PELATIHAN OPTIMALISASI PEMASARAN DIGITAL PADA BATIK SHAHO DAN KOMUNITAS BATIK TIGA ZAMAN BALIKPAPAN",
-          "leader": "Luh Made Wisnu Satyaninggrat",
+          "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS",
+          "leader": "INSTITUSI INTERNAL ( PMMD )",
           "members": [
-            "I Putu Deny Arthawan Sugih Prabowo"
+            "Luh Made Wisnu Satyaninggrat",
+            "Muchammad Chandra Cahyo Utomo"
           ],
-          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantType": "INSTITUSI INTERNAL ( PMMD )",
           "grantCategory": "PMMD",
           "year": "2025",
           "fundingAmount": 10000000,
@@ -6403,16 +6425,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "MANAJEMEN SUMBER DAYA MANUSIA",
-          "year": "2023"
-        },
-        {
-          "title": "Inovasi dan transformasi digital",
-          "year": "2021"
-        }
-      ],
+      "servicesTotal": 5,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 10,
         "paten": 0,
@@ -6473,7 +6488,7 @@
       "name": "M. Ihsan Alfani Putera",
       "sintaId": "6681873",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:49:48.360967",
+      "scrapedAt": "2026-02-06T17:07:47.228704",
       "stats": {
         "articles": 40,
         "citations": 271,
@@ -6600,7 +6615,7 @@
             {
               "title": "Analisis Perbandingan metode SOAP dan REST yang digunakan pada Framework Flask untuk membangun Web Service",
               "year": "",
-              "citation": "58",
+              "citation": "59",
               "source": "Google Scholar"
             },
             {
@@ -6778,12 +6793,6 @@
               "source": "Google Scholar"
             },
             {
-              "title": "PENINGKATAN KETERAMPILAN REMAJA DALAM BIDANG VIDEOGRAFI DAN PEMAKSIMALAN EKSISTENSI KAMPUNG E-SPORT BALIKPAPAN",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
-            },
-            {
               "title": "Pembangunan Sistem Informasi Inventaris Barang Asset Management dengan Metode Iconix pada XYZ",
               "year": "",
               "citation": "0",
@@ -6827,6 +6836,12 @@
             },
             {
               "title": "Web-based Application for Classification Using Naïve Bayes and K-means Clustering (Case Study: Tic-tac-toe Game)",
+              "year": "",
+              "citation": "0",
+              "source": "Google Scholar"
+            },
+            {
+              "title": "PENINGKATAN KETERAMPILAN REMAJA DALAM BIDANG VIDEOGRAFI DAN PEMAKSIMALAN EKSISTENSI KAMPUNG E-SPORT BALIKPAPAN",
               "year": "",
               "citation": "0",
               "source": "Google Scholar"
@@ -7064,11 +7079,6 @@
             "year": ""
           },
           {
-            "title": "PENINGKATAN KETERAMPILAN REMAJA DALAM BIDANG VIDEOGRAFI DAN PEMAKSIMALAN EKSISTENSI KAMPUNG E-SPORT BALIKPAPAN",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
             "title": "Pembangunan Sistem Informasi Inventaris Barang Asset Management dengan Metode Iconix pada XYZ",
             "category": "Google Scholar",
             "year": ""
@@ -7105,6 +7115,11 @@
           },
           {
             "title": "Web-based Application for Classification Using Naïve Bayes and K-means Clustering (Case Study: Tic-tac-toe Game)",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PENINGKATAN KETERAMPILAN REMAJA DALAM BIDANG VIDEOGRAFI DAN PEMAKSIMALAN EKSISTENSI KAMPUNG E-SPORT BALIKPAPAN",
             "category": "Google Scholar",
             "year": ""
           },
@@ -7217,6 +7232,7 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 7,
       "services": [
         {
           "title": "OPTIMALISASI KEWIRAUSAHAAN BERBASIS MIKRO PADA KELURAHAN KARANG JOANG KOTA BALIKPAPAN",
@@ -7281,16 +7297,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "Perancangan Sistem Pemerintahan Berbasis Elektronik",
-          "year": "2022"
-        },
-        {
-          "title": "PENERAPAN METODE WATERFALL PADA PEMBANGUNAN SISTEM GAJI BERBASIS WEBSITE",
-          "year": "2022"
-        }
-      ],
+      "servicesTotal": 5,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 10,
         "paten": 0,
@@ -7298,35 +7307,7 @@
         "total": 10,
         "list": [
           {
-            "title": "Ngabsen",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Desain Peta RT.30 Klandasan Ilir (Kampung E-Sports) Balikpapan",
-            "category": "hakCipta"
-          },
-          {
-            "title": "SIBOK",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Buku Deskripsi Perancangan Perangkat Lunak SICOMPAS",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Website Dinas Pendidikan Dan Kebudayaan Kota Balikpapan Ver.1.0",
-            "category": "hakCipta"
-          },
-          {
-            "title": "PRESENTHERE",
-            "category": "hakCipta"
-          },
-          {
-            "title": "DIGI CARE",
-            "category": "hakCipta"
-          },
-          {
-            "title": "KARYAONE",
+            "title": "SISTEM INFORMASI AKADEMIK WEBSITE SMK NEGERI 3 PENAJAM PASER UTARA",
             "category": "hakCipta"
           },
           {
@@ -7335,6 +7316,34 @@
           },
           {
             "title": "SITARI",
+            "category": "hakCipta"
+          },
+          {
+            "title": "ITKOFFEE",
+            "category": "hakCipta"
+          },
+          {
+            "title": "C.A.M.S",
+            "category": "hakCipta"
+          },
+          {
+            "title": "NEW START",
+            "category": "hakCipta"
+          },
+          {
+            "title": "SIMPARCO",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Desain Website SIM-TA",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Aplikasi Absensi LOKATARA",
+            "category": "hakCipta"
+          },
+          {
+            "title": "PRECARE",
             "category": "hakCipta"
           }
         ]
@@ -7351,7 +7360,7 @@
       "name": "Sri Rahayu Natasia",
       "sintaId": "5983406",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:54:00.830645",
+      "scrapedAt": "2026-02-06T17:08:02.031910",
       "stats": {
         "articles": 56,
         "citations": 466,
@@ -7388,16 +7397,6 @@
           "total": 10,
           "scopusList": [
             {
-              "title": "UI/UX evaluation of android-based social media sestyc application with think aloud and heuristic method",
-              "q": "Q4",
-              "year": "2023"
-            },
-            {
-              "title": "Analysis of The Influence Student in Higher Education Using Gamification-based E-Learning (Case Study: Institut Teknologi Kalimantan)",
-              "q": "Q4",
-              "year": "2023"
-            },
-            {
               "title": "Development of tourism information system for storing tourist visit data and provide tourism information using the scrum method",
               "q": "Q4",
               "year": "2023"
@@ -7409,6 +7408,16 @@
             },
             {
               "title": "Analysis of factors that affect continuance intention on the use of ShopeePay mobile payment using structural equation modeling",
+              "q": "Q4",
+              "year": "2023"
+            },
+            {
+              "title": "UI/UX evaluation of android-based social media sestyc application with think aloud and heuristic method",
+              "q": "Q4",
+              "year": "2023"
+            },
+            {
+              "title": "Analysis of The Influence Student in Higher Education Using Gamification-based E-Learning (Case Study: Institut Teknologi Kalimantan)",
               "q": "Q4",
               "year": "2023"
             },
@@ -7847,16 +7856,6 @@
         },
         "list": [
           {
-            "title": "UI/UX evaluation of android-based social media sestyc application with think aloud and heuristic method",
-            "category": "Scopus Q4",
-            "year": "2023"
-          },
-          {
-            "title": "Analysis of The Influence Student in Higher Education Using Gamification-based E-Learning (Case Study: Institut Teknologi Kalimantan)",
-            "category": "Scopus Q4",
-            "year": "2023"
-          },
-          {
             "title": "Development of tourism information system for storing tourist visit data and provide tourism information using the scrum method",
             "category": "Scopus Q4",
             "year": "2023"
@@ -7868,6 +7867,16 @@
           },
           {
             "title": "Analysis of factors that affect continuance intention on the use of ShopeePay mobile payment using structural equation modeling",
+            "category": "Scopus Q4",
+            "year": "2023"
+          },
+          {
+            "title": "UI/UX evaluation of android-based social media sestyc application with think aloud and heuristic method",
+            "category": "Scopus Q4",
+            "year": "2023"
+          },
+          {
+            "title": "Analysis of The Influence Student in Higher Education Using Gamification-based E-Learning (Case Study: Institut Teknologi Kalimantan)",
             "category": "Scopus Q4",
             "year": "2023"
           },
@@ -8365,6 +8374,7 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 10,
       "services": [
         {
           "title": "IMPLEMENTASI DAN PELATIHAN SISTEM INFORMASI PENGAJIAN DAN MEDIA SOSIAL",
@@ -8430,12 +8440,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "Media pembelajaran dengan metode gamification untuk meningkatkan motivasi pembelajaran pada perguruan tinggi di masa Covid-19",
-          "year": "2020"
-        }
-      ],
+      "servicesTotal": 5,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 4,
         "paten": 0,
@@ -8443,19 +8450,19 @@
         "total": 4,
         "list": [
           {
-            "title": "Sistem Perhitungan Penggantian Nilai Pohon Pemerintah Kota Balikpapan",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Sistem Informasi Rusunawa Kota Balikpapan",
-            "category": "hakCipta"
-          },
-          {
             "title": "Sistem Informasi Pariwisata DISPOPAR Kota Bontang",
             "category": "hakCipta"
           },
           {
             "title": "Buku Panduan Sistem Informasi Rusunawa Kota Balikpapan",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Sistem Perhitungan Penggantian Nilai Pohon Pemerintah Kota Balikpapan",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Sistem Informasi Rusunawa Kota Balikpapan",
             "category": "hakCipta"
           }
         ]
@@ -8472,7 +8479,7 @@
       "name": "Nursanti Novi Arisa",
       "sintaId": "6757976",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:54:31.667548",
+      "scrapedAt": "2026-02-06T17:08:07.058155",
       "stats": {
         "articles": 18,
         "citations": 161,
@@ -8612,12 +8619,6 @@
               "source": "Google Scholar"
             },
             {
-              "title": "PENINGKATAN KETERAMPILAN REMAJA DALAM BIDANG VIDEOGRAFI DAN PEMAKSIMALAN EKSISTENSI KAMPUNG E-SPORT BALIKPAPAN",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
-            },
-            {
               "title": "PEMBERDAYAAN MASYARAKAT MENTARI VILLAGE MELALUI PENGELOLAAN SAMPAH RUMAH TANGGA MENUJU LINGKUNGAN BERSIH DAN BERKELANJUTAN: PEMBERDAYAAN MASYARAKAT MENTARI VILLAGE MELALUI …",
               "year": "",
               "citation": "0",
@@ -8637,6 +8638,12 @@
             },
             {
               "title": "Penerapan Metode Adaptive Software Development Pada Pengembangan Aplikasi Presensi Sekolah Alam Balikpapan",
+              "year": "",
+              "citation": "0",
+              "source": "Google Scholar"
+            },
+            {
+              "title": "PENINGKATAN KETERAMPILAN REMAJA DALAM BIDANG VIDEOGRAFI DAN PEMAKSIMALAN EKSISTENSI KAMPUNG E-SPORT BALIKPAPAN",
               "year": "",
               "citation": "0",
               "source": "Google Scholar"
@@ -8723,11 +8730,6 @@
             "year": ""
           },
           {
-            "title": "PENINGKATAN KETERAMPILAN REMAJA DALAM BIDANG VIDEOGRAFI DAN PEMAKSIMALAN EKSISTENSI KAMPUNG E-SPORT BALIKPAPAN",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
             "title": "PEMBERDAYAAN MASYARAKAT MENTARI VILLAGE MELALUI PENGELOLAAN SAMPAH RUMAH TANGGA MENUJU LINGKUNGAN BERSIH DAN BERKELANJUTAN: PEMBERDAYAAN MASYARAKAT MENTARI VILLAGE MELALUI …",
             "category": "Google Scholar",
             "year": ""
@@ -8744,6 +8746,11 @@
           },
           {
             "title": "Penerapan Metode Adaptive Software Development Pada Pengembangan Aplikasi Presensi Sekolah Alam Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PENINGKATAN KETERAMPILAN REMAJA DALAM BIDANG VIDEOGRAFI DAN PEMAKSIMALAN EKSISTENSI KAMPUNG E-SPORT BALIKPAPAN",
             "category": "Google Scholar",
             "year": ""
           }
@@ -8795,20 +8802,6 @@
           "source": "INTERNAL SOURCE"
         },
         {
-          "title": "ANALISIS ADOPSI PENGGUNAAN E-COMMERCE BERDASARKAN TECHNOLOGY, ORGANIZATION, DAN ENVIRONTMENT (TOE) PADA UMKM DI BALIKPAPAN",
-          "leader": "",
-          "members": [
-            "Nursanti Novi  Arisa"
-          ],
-          "grantType": "HIBAH ITK ( PKLK )",
-          "grantCategory": "PKLK",
-          "year": "2023",
-          "fundingAmount": 14650000,
-          "fundingFormatted": "Rp. 14.650.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
-        {
           "title": "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL",
           "leader": "Nursanti Novi  Arisa",
           "members": [
@@ -8820,6 +8813,20 @@
           "year": "2023",
           "fundingAmount": 19520000,
           "fundingFormatted": "Rp. 19.520.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "ANALISIS ADOPSI PENGGUNAAN E-COMMERCE BERDASARKAN TECHNOLOGY, ORGANIZATION, DAN ENVIRONTMENT (TOE) PADA UMKM DI BALIKPAPAN",
+          "leader": "",
+          "members": [
+            "Nursanti Novi  Arisa"
+          ],
+          "grantType": "HIBAH ITK ( PKLK )",
+          "grantCategory": "PKLK",
+          "year": "2023",
+          "fundingAmount": 14650000,
+          "fundingFormatted": "Rp. 14.650.000",
           "status": "Approved",
           "source": "INTERNAL SOURCE"
         },
@@ -8836,6 +8843,7 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 6,
       "services": [
         {
           "title": "OPTIMALISASI PENGELOLAAN SAMPAH BERBASIS MASYARAKAT MELALUI PEMBANGUNAN BANK SAMPAH UNIT  DI KELURAHAN KLANDASAN ILIR",
@@ -8918,18 +8926,35 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "Inovasi dan transformasi digital",
-          "year": "2021"
-        }
-      ],
+      "servicesTotal": 6,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 10,
         "paten": 0,
         "other": 0,
         "total": 10,
         "list": [
+          {
+            "title": "PRODUK INOVASI SAYA IMAN",
+            "category": "hakCipta"
+          },
+          {
+            "title": "ICHIPS BAKERY",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Sistem Informasi Penjualan Sepatu Citra Abadi Berbasis Website",
+            "category": "hakCipta"
+          },
+          {
+            "title": "PROTOTYPE WEBSITE CROWDE",
+            "category": "hakCipta"
+          },
+          {
+            "title": "RED FACIAL & BODY TREATMENT",
+            "category": "hakCipta"
+          },
           {
             "title": "SISTEM INFORMASI FIND YOUR VENDORS (FINDORS)",
             "category": "hakCipta"
@@ -8943,31 +8968,11 @@
             "category": "hakCipta"
           },
           {
-            "title": "BUKU ANALISIS METODE SMART PADA PENENTUAN SUPLAI TERBAIK",
-            "category": "hakCipta"
-          },
-          {
             "title": "RESORT",
             "category": "hakCipta"
           },
           {
-            "title": "Sistem Informasi Manajemen Gula",
-            "category": "hakCipta"
-          },
-          {
-            "title": "PROTOTYPE WEBSITE CROWDE",
-            "category": "hakCipta"
-          },
-          {
-            "title": "CARI BELAJAR YUK",
-            "category": "hakCipta"
-          },
-          {
-            "title": "DOKUMEN PERANCANGAN PERANGKAT LUNAK SIDAT",
-            "category": "hakCipta"
-          },
-          {
-            "title": "CHITEA.ID",
+            "title": "BUKU ANALISIS METODE SMART PADA PENENTUAN SUPLAI TERBAIK",
             "category": "hakCipta"
           }
         ]
@@ -8984,7 +8989,7 @@
       "name": "Rosa Eliviani",
       "sintaId": "6876629",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:54:45.806499",
+      "scrapedAt": "2026-02-06T17:08:12.186983",
       "stats": {
         "articles": 13,
         "citations": 30,
@@ -9202,6 +9207,7 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 1,
       "services": [
         {
           "title": "PESANTREN KODING: EDUKASI PEMROGRAMAN DASAR BAGI SISWA SEKOLAH DASAR MELALUI MIT APP INVENTOR",
@@ -9219,20 +9225,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "Green Technology : Konsep, Prinsip, dan Aplikasi",
-          "year": "2025"
-        },
-        {
-          "title": "Big Data dan Manajemen Basis Data Terdistribusi",
-          "year": "2025"
-        },
-        {
-          "title": "TEKNOLOGI BIG DATA : Pengantar Dan Penerapan Teknologi Big Data Di Berbagai Bidang",
-          "year": "2024"
-        }
-      ],
+      "servicesTotal": 1,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 0,
         "paten": 0,
@@ -9252,7 +9247,7 @@
       "name": "M. Gilvy Langgawan Putra",
       "sintaId": "6201079",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-05T15:54:55.297102",
+      "scrapedAt": "2026-02-06T17:08:17.151776",
       "stats": {
         "articles": 70,
         "citations": 429,
@@ -9317,7 +9312,7 @@
             {
               "title": "Analisis Perbandingan metode SOAP dan REST yang digunakan pada Framework Flask untuk membangun Web Service",
               "year": "",
-              "citation": "58",
+              "citation": "59",
               "source": "Google Scholar"
             },
             {
@@ -9347,7 +9342,7 @@
             {
               "title": "Perancangan Tata Kelola Teknologi Informasi dengan Menggunakan Framework COBIT 2019 pada PT JWT Global Logistics Indonesia",
               "year": "",
-              "citation": "19",
+              "citation": "18",
               "source": "Google Scholar"
             },
             {
@@ -10116,6 +10111,7 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 1,
       "services": [
         {
           "title": "PEMETAAN DAN VISUALISASI PERMODELAN 3D LINGKUNGAN KAWASAN WISATA BARU HUTAN MERANTI KM.15 SEBAGAI UPAYA PENGEMBANGAN WISATA HUTAN LINDUNG BERBASIS ALAM",
@@ -10142,22 +10138,43 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "Pemasaran digital : facebook ads, twitter ads, google ads, and youtube ads",
-          "year": "2020"
-        },
-        {
-          "title": "Media pembelajaran dengan metode gamification untuk meningkatkan motivasi pembelajaran pada perguruan tinggi di masa Covid-19",
-          "year": "2020"
-        }
-      ],
+      "servicesTotal": 2,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 10,
         "paten": 0,
         "other": 0,
         "total": 10,
         "list": [
+          {
+            "title": "Buku DOKUMEN UJI PERANGKAT LUNAK (OO) SIMENTOS",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK SIMKEKO",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK SIDERMAN",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK SISALWA",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Buku DOKUMEN LAPORAN PENGEMBANGAN APLIKASI SIDERMAN",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Buku SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK SIMKEKO",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Buku SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK [SISTEM INFORMASI MANAJEMEN TOKO SEPATU]",
+            "category": "hakCipta"
+          },
           {
             "title": "Buku DOKUMEN LAPORAN PENGEMBANGAN APLIKASI SISTEM INFORMASI MANAJEMEN TOKO SEPATU",
             "category": "hakCipta"
@@ -10167,35 +10184,7 @@
             "category": "hakCipta"
           },
           {
-            "title": "Buku SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK SIDERMAN",
-            "category": "hakCipta"
-          },
-          {
             "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK (OO) [SISTEM INFORMASI MANAJEMEN TOKO SEPATU]",
-            "category": "hakCipta"
-          },
-          {
-            "title": "DOKUMEN LAPORAN PENGEMBANGAN APLIKASI SISTEM INFORMASI WARUNG MAKAN SALWA",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Buku DOKUMEN UJI PERANGKAT LUNAK SIDERMAN",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Buku SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK SISTEM INFORMASI WARUNG MAKAN SALWA",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK SIMKEKO",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Buku DOKUMEN UJI PERANGKAT LUNAK (OO) SIMENTOS",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK SIDERMAN",
             "category": "hakCipta"
           }
         ]
@@ -10208,5 +10197,16 @@
         "serviceCount": 2
       }
     }
-  ]
+  ],
+  "prodiSummary": {
+    "lecturerCount": 15,
+    "totalResearchFunding": 1688119400,
+    "totalServiceFunding": 599417345,
+    "totalResearchCount": 86,
+    "totalServiceCount": 62,
+    "avgResearchFundingPerLecturer": 112541293.33333333,
+    "avgServiceFundingPerLecturer": 39961156.333333336,
+    "avgResearchCountPerLecturer": 5.733333333333333,
+    "avgServiceCountPerLecturer": 4.133333333333334
+  }
 }

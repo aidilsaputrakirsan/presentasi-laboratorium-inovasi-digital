@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:sinta.kemdiktisaintek.go.id)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(del debug_gs_direct.py debug_pagination.py dump_sinta_html.py sinta_gs_dump.html)",
+      "Bash(npm run build:*)"
     ]
   }
 }

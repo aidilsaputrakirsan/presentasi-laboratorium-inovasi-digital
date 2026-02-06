@@ -1,32 +1,24 @@
 """
-SINTA Data Scraper for ITK Lecturers (Enhanced Version 2.3)
-============================================================
-Script untuk mengambil data lengkap dari SINTA:
+SINTA Data Scraper for ITK Lecturers (Per-Prodi v3.0)
+======================================================
+Script untuk mengambil data lengkap dari SINTA per prodi:
 - Profil & Statistik Utama
-- Publikasi (Scopus Q1-Q4, SINTA S1-S6, WoS)
+- Publikasi (Scopus Q1-Q4, SINTA S1-S6, Google Scholar via SINTA, RAMA)
 - Penelitian & Pengabdian (dengan detail pendanaan)
-- Buku & IPR/HKI (Hak Cipta, Paten)
+- IPR/HKI (Hak Cipta, Paten)
 
-Update 2.3:
-- BARU: Scrape detail penelitian & pengabdian untuk keperluan akreditasi:
-  - Leader (ketua peneliti/pengabdian)
-  - Personils/members (anggota tim)
-  - Grant type (jenis hibah: internal/eksternal)
-  - Funding amount (jumlah dana dalam Rupiah)
-  - Status (Approved/etc)
-  - Source (INTERNAL SOURCE/BIMA SOURCE/etc)
-- Data bisa digunakan untuk menghitung rasio per prodi dan per dosen
+Semua data diambil dari website SINTA (termasuk Google Scholar).
 
-Update 2.2:
-- Perbaikan URL IPR (plural view=iprs) yang lebih konsisten
-- Perbaikan selektor untuk judul dokumen agar tidak "Untitled"
-- Deteksi rank SINTA (S1-S6) yang lebih akurat dari halaman Garuda
-- Penambahan penanganan error untuk koneksi timeout
+Usage:
+  python scripts/sinta_scraper.py                    # Scrape semua prodi
+  python scripts/sinta_scraper.py sistem-informasi   # Scrape 1 prodi
+
+Input:  src/data/prodi/{slug}/lecturers.json
+Output: src/data/prodi/{slug}/sinta_data.json
 """
 
 import json
 import os
-import time
 import re
 import time
 from datetime import datetime
@@ -36,8 +28,7 @@ from bs4 import BeautifulSoup
 
 # Konfigurasi
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LECTURERS_FILE = os.path.join(BASE_DIR, 'src', 'data', 'lecturers.json')
-OUTPUT_FILE = os.path.join(BASE_DIR, 'src', 'data', 'sinta_data.json')
+PRODI_DIR = os.path.join(BASE_DIR, 'src', 'data', 'prodi')
 
 SINTA_BASE_URL = "https://sinta.kemdiktisaintek.go.id/authors/profile"
 
@@ -56,81 +47,33 @@ HEADERS = {
 }
 session.headers.update(HEADERS)
 
-def scrape_google_scholar_direct(gs_id):
-    """Scrape langsung dari Google Scholar menggunakan ID"""
-    if not gs_id:
-        return {'total': 0, 'list': []}
-    
-    print(f"   [GS Direct] Scraping Google Scholar ID: {gs_id}")
-    all_articles = []
-    start = 0
-    page_size = 100
-    max_retries = 3
-    
-    while True:
-        url = f"https://scholar.google.co.id/citations?user={gs_id}&hl=en&cstart={start}&pagesize={page_size}"
-        try:
-            time.sleep(2) # Delay to be polite
-            response = session.get(url, headers=HEADERS, timeout=30)
-            if response.status_code != 200:
-                print(f"   [GS Direct] Error {response.status_code}")
-                break
-                
-            soup = BeautifulSoup(response.text, 'html.parser')
-            rows = soup.find_all('tr', class_='gsc_a_tr')
-            
-            if not rows:
-                break
-                
-            for row in rows:
-                title_link = row.find('a', class_='gsc_a_at')
-                year_elem = row.find('span', class_='gsc_a_h gsc_a_hc')
-                cite_elem = row.find('a', class_='gsc_a_ac')
-                
-                title = title_link.get_text(strip=True) if title_link else "Untitled"
-                year = year_elem.get_text(strip=True) if year_elem else ""
-                citations = cite_elem.get_text(strip=True) if cite_elem else "0"
-                
-                # Check for empty year/citations which sometimes happens
-                if not citations: citations = "0"
-                
-                all_articles.append({
-                    'title': title,
-                    'year': year,
-                    'citation': citations,
-                    'source': 'Google Scholar'
-                })
-            
-            print(f"   [GS Direct] Fetched {len(rows)} items (Total so far: {len(all_articles)})")
-            
-            if len(rows) < page_size:
-                break
-                
-            start += page_size
-            
-        except Exception as e:
-            print(f"   [GS Direct] Exception: {e}")
-            break
-            
-    return {
-        'total': len(all_articles),
-        'list': all_articles
-    }
+def get_prodi_folders():
+    """Scan prodi directory for folders with lecturers.json"""
+    prodi_folders = []
+    if not os.path.exists(PRODI_DIR):
+        print(f"Error: {PRODI_DIR} not found.")
+        return prodi_folders
+    for slug in os.listdir(PRODI_DIR):
+        lect_file = os.path.join(PRODI_DIR, slug, 'lecturers.json')
+        if os.path.isdir(os.path.join(PRODI_DIR, slug)) and os.path.exists(lect_file):
+            prodi_folders.append(slug)
+    return sorted(prodi_folders)
 
-def load_lecturers():
-    with open(LECTURERS_FILE, 'r', encoding='utf-8') as f:
+def load_lecturers(prodi_slug):
+    """Load lecturers from a single prodi's lecturers.json"""
+    lect_file = os.path.join(PRODI_DIR, prodi_slug, 'lecturers.json')
+    with open(lect_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
     lecturers = []
-    for prodi_key, prodi_data in data['studyPrograms'].items():
-        for lecturer in prodi_data['lecturers']:
-            if lecturer.get('sintaId'):
-                lecturers.append({
-                    'name': lecturer['name'],
-                    'sintaId': lecturer['sintaId'],
-                    'scholarId': lecturer.get('scholarId'),
-                    'prodi': prodi_data['name']
-                })
-    return lecturers
+    prodi_name = data.get('name', prodi_slug)
+    for lecturer in data.get('lecturers', []):
+        if lecturer.get('sintaId'):
+            lecturers.append({
+                'name': lecturer['name'],
+                'sintaId': lecturer['sintaId'],
+                'prodi': prodi_name
+            })
+    return lecturers, prodi_name
 
 def scrape_main_page(sinta_id):
     """Scrape data dari halaman utama profil (summary)"""
@@ -306,7 +249,7 @@ def scrape_with_pagination(sinta_id, view_type, parser_func, max_pages=50):
     return all_items, final_total
 
 
-def scrape_documents(sinta_id, gs_id=None):
+def scrape_documents(sinta_id):
     """Scrape documents dengan kategori Scopus/SINTA secara spesifik"""
     docs = {
         'scopus': {'q1': 0, 'q2': 0, 'q3': 0, 'q4': 0, 'noq': 0, 'total': 0},
@@ -504,32 +447,19 @@ def scrape_documents(sinta_id, gs_id=None):
             docs['sinta']['sintaList'] = []
         docs['sinta']['sintaList'].append({'title': item['title'], 'rank': f"S{rank}" if rank else "", 'year': year})
 
-    # 3. Google Scholar
-    if gs_id:
-        print(f"   [Google Scholar] Switching to Direct Mode (ID: {gs_id})")
-        gs_data = scrape_google_scholar_direct(gs_id)
-        docs['googlescholar'] = gs_data
-        # Add to main list
-        for item in gs_data['list']:
-             docs['list'].append({
-                'title': item['title'],
-                'category': 'Google Scholar',
-                'year': item['year']
-             })
-    else:
-        print("   [Google Scholar] Scraping via SINTA (Limited)...")
-        google_list, google_total = scrape_with_pagination(sinta_id, 'googlescholar', parse_google)
-        docs['googlescholar']['total'] = google_total
-        docs['googlescholar']['list'] = google_list
-        for item in google_list:
-            docs['list'].append({'title': item['title'], 'category': 'Google Scholar', 'year': ''})
+    # 3. Google Scholar (via SINTA)
+    print("   [Google Scholar] Scraping via SINTA...")
+    google_list, google_total = scrape_with_pagination(sinta_id, 'googlescholar', parse_google)
+    docs['googlescholar']['total'] = google_total
+    docs['googlescholar']['list'] = google_list
+    for item in google_list:
+        docs['list'].append({'title': item['title'], 'category': 'Google Scholar', 'year': ''})
 
     # 4. RAMA
     print("   [RAMA] Scraping...")
     rama_list, rama_total = scrape_with_pagination(sinta_id, 'rama', parse_rama)
     docs['rama']['total'] = rama_total
     for item in rama_list:
-        docs['rama']['total'] += 1
         docs['list'].append({'title': item['title'], 'category': 'RAMA', 'year': ''})
     
     return docs
@@ -840,45 +770,45 @@ def scrape_ipr(sinta_id):
 
     return ipr
 
-def main():
-    lecturers = load_lecturers()
+def scrape_prodi(prodi_slug):
+    """Scrape all lecturers for a single prodi and save to per-prodi sinta_data.json"""
+    lecturers, prodi_name = load_lecturers(prodi_slug)
+    if not lecturers:
+        print(f"  No lecturers with sintaId found in {prodi_slug}")
+        return None
+
+    output_file = os.path.join(PRODI_DIR, prodi_slug, 'sinta_data.json')
     all_data = {
         'metadata': {
             'generatedAt': datetime.now().isoformat(),
             'source': 'SINTA 3',
             'version': '2.3',
+            'prodi': prodi_name,
             'description': 'Data SINTA dengan detail pendanaan untuk akreditasi'
         },
         'lecturers': []
     }
 
     for lec in lecturers:
-        print(f"Scraping {lec['name']} ({lec['sintaId']})...")
+        print(f"  Scraping {lec['name']} ({lec['sintaId']})...")
         stats = scrape_main_page(lec['sintaId'])
-        docs = scrape_documents(lec['sintaId'], lec.get('scholarId'))
+        docs = scrape_documents(lec['sintaId'])
 
-        # Scrape detailed research & services for accreditation
-        print(f"  - Scraping detailed research...")
+        print(f"    - Scraping detailed research...")
         research, research_total = scrape_research_detailed(lec['sintaId'])
-        print(f"  - Scraping detailed services...")
+        print(f"    - Scraping detailed services...")
         services, services_total = scrape_services_detailed(lec['sintaId'])
 
-        # books = scrape_list_items(lec['sintaId'], 'books') # Commented out
         books = []
         books_total = stats.get('book', 0)
         ipr = scrape_ipr(lec['sintaId'])
-        
-        # --- CORRECT TOTALS FROM SUMMARY STATS IF HIGHER ---
-        # Sometimes detailed pagination doesn't show 'Total Records' text but summary does
+
         docs['sinta']['total'] = max(docs['sinta']['total'], stats.get('garuda', 0))
         docs['scopus']['total'] = max(docs['scopus']['total'], stats.get('scopus', 0))
         docs['rama']['total'] = max(docs['rama']['total'], stats.get('rama', 0))
-        
         research_total = max(research_total, stats.get('research', 0))
         services_total = max(services_total, stats.get('service', 0))
-        # ---------------------------------------------------
 
-        # Calculate funding summary for this lecturer
         total_research_funding = sum(r.get('fundingAmount', 0) for r in research)
         total_service_funding = sum(s.get('fundingAmount', 0) for s in services)
 
@@ -906,51 +836,69 @@ def main():
         })
         time.sleep(2)
 
-    # Calculate prodi-level summary
-    prodi_summary = {}
-    for lec in all_data['lecturers']:
-        prodi = lec['prodi']
-        if prodi not in prodi_summary:
-            prodi_summary[prodi] = {
-                'lecturerCount': 0,
-                'totalResearchFunding': 0,
-                'totalServiceFunding': 0,
-                'totalResearchCount': 0,
-                'totalServiceCount': 0
-            }
-        prodi_summary[prodi]['lecturerCount'] += 1
-        prodi_summary[prodi]['totalResearchFunding'] += lec['fundingSummary']['totalResearchFunding']
-        prodi_summary[prodi]['totalServiceFunding'] += lec['fundingSummary']['totalServiceFunding']
-        prodi_summary[prodi]['totalResearchCount'] += lec['fundingSummary']['researchCount']
-        prodi_summary[prodi]['totalServiceCount'] += lec['fundingSummary']['serviceCount']
+    # Prodi-level summary
+    summary = {
+        'lecturerCount': len(all_data['lecturers']),
+        'totalResearchFunding': sum(l['fundingSummary']['totalResearchFunding'] for l in all_data['lecturers']),
+        'totalServiceFunding': sum(l['fundingSummary']['totalServiceFunding'] for l in all_data['lecturers']),
+        'totalResearchCount': sum(l['fundingSummary']['researchCount'] for l in all_data['lecturers']),
+        'totalServiceCount': sum(l['fundingSummary']['serviceCount'] for l in all_data['lecturers'])
+    }
+    if summary['lecturerCount'] > 0:
+        summary['avgResearchFundingPerLecturer'] = summary['totalResearchFunding'] / summary['lecturerCount']
+        summary['avgServiceFundingPerLecturer'] = summary['totalServiceFunding'] / summary['lecturerCount']
+        summary['avgResearchCountPerLecturer'] = summary['totalResearchCount'] / summary['lecturerCount']
+        summary['avgServiceCountPerLecturer'] = summary['totalServiceCount'] / summary['lecturerCount']
+    all_data['prodiSummary'] = summary
 
-    # Calculate per-lecturer averages
-    for prodi, data in prodi_summary.items():
-        if data['lecturerCount'] > 0:
-            data['avgResearchFundingPerLecturer'] = data['totalResearchFunding'] / data['lecturerCount']
-            data['avgServiceFundingPerLecturer'] = data['totalServiceFunding'] / data['lecturerCount']
-            data['avgResearchCountPerLecturer'] = data['totalResearchCount'] / data['lecturerCount']
-            data['avgServiceCountPerLecturer'] = data['totalServiceCount'] / data['lecturerCount']
-
-    all_data['prodiSummary'] = prodi_summary
-
-    print(f"Saving to {OUTPUT_FILE}...")
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+    print(f"  Saving to {output_file}...")
+    with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(all_data, f, indent=2, ensure_ascii=False)
 
-    # Print summary
-    print("\n" + "="*60)
+    return summary
+
+
+def main():
+    import sys
+
+    prodi_folders = get_prodi_folders()
+    if not prodi_folders:
+        print("No prodi folders with lecturers.json found!")
+        return
+
+    # Allow filtering by prodi slug via CLI argument
+    target = sys.argv[1] if len(sys.argv) > 1 else None
+    if target:
+        if target not in prodi_folders:
+            print(f"Error: '{target}' not found. Available: {', '.join(prodi_folders)}")
+            return
+        prodi_folders = [target]
+
+    print("=" * 60)
+    print("SINTA Scraper - Per Prodi")
+    print(f"Target: {', '.join(prodi_folders)}")
+    print("=" * 60)
+
+    all_summaries = {}
+    for slug in prodi_folders:
+        print(f"\n{'='*60}")
+        print(f"Prodi: {slug}")
+        print(f"{'='*60}")
+        summary = scrape_prodi(slug)
+        if summary:
+            all_summaries[slug] = summary
+
+    # Print overall summary
+    print("\n" + "=" * 60)
     print("SUMMARY PER PRODI (untuk Akreditasi)")
-    print("="*60)
-    for prodi, data in prodi_summary.items():
-        print(f"\n{prodi}:")
+    print("=" * 60)
+    for slug, data in all_summaries.items():
+        print(f"\n{slug}:")
         print(f"  Jumlah Dosen: {data['lecturerCount']}")
         print(f"  Total Dana Penelitian: Rp {data['totalResearchFunding']:,.0f}")
         print(f"  Total Dana Pengabdian: Rp {data['totalServiceFunding']:,.0f}")
         print(f"  Rata-rata Penelitian/Dosen: {data.get('avgResearchCountPerLecturer', 0):.2f}")
         print(f"  Rata-rata Pengabdian/Dosen: {data.get('avgServiceCountPerLecturer', 0):.2f}")
-        print(f"  Rata-rata Dana Penelitian/Dosen: Rp {data.get('avgResearchFundingPerLecturer', 0):,.0f}")
-        print(f"  Rata-rata Dana Pengabdian/Dosen: Rp {data.get('avgServiceFundingPerLecturer', 0):,.0f}")
 
     print("\nDONE!")
 

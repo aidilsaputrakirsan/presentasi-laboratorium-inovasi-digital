@@ -14,8 +14,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Configuration
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SINTA_DATA_FILE = os.path.join(BASE_DIR, 'src', 'data', 'sinta_data.json')
-OUTPUT_FILE = os.path.join(BASE_DIR, 'src', 'data', 'expertise_data.json')
+PRODI_DIR = os.path.join(BASE_DIR, 'src', 'data', 'prodi')
 
 # Expanded Stopwords (Include Locations & Generals)
 STOPWORDS_ID = {
@@ -42,11 +41,24 @@ STOPWORDS_ID = {
     'evaluation', 'performance', 'assessment', 'management', 'technology', 'research'
 }
 
-def load_data():
-    if not os.path.exists(SINTA_DATA_FILE):
-        print(f"Error: {SINTA_DATA_FILE} not found.")
+def get_prodi_folders():
+    """Scan prodi directory for folders with sinta_data.json"""
+    prodi_folders = []
+    if not os.path.exists(PRODI_DIR):
+        print(f"Error: {PRODI_DIR} not found.")
+        return prodi_folders
+    for slug in os.listdir(PRODI_DIR):
+        sinta_file = os.path.join(PRODI_DIR, slug, 'sinta_data.json')
+        if os.path.isdir(os.path.join(PRODI_DIR, slug)) and os.path.exists(sinta_file):
+            prodi_folders.append(slug)
+    return sorted(prodi_folders)
+
+def load_data(prodi_slug):
+    sinta_file = os.path.join(PRODI_DIR, prodi_slug, 'sinta_data.json')
+    if not os.path.exists(sinta_file):
+        print(f"Error: {sinta_file} not found.")
         return None
-    with open(SINTA_DATA_FILE, 'r', encoding='utf-8') as f:
+    with open(sinta_file, 'r', encoding='utf-8') as f:
         return json.load(f)
 
 def preprocess_text(text):
@@ -57,41 +69,34 @@ def preprocess_text(text):
     words = [w for w in words if w not in STOPWORDS_ID and len(w) > 2]
     return ' '.join(words)
 
-def build_expertise_profile():
-    data = load_data()
+def build_expertise_profile(prodi_slug):
+    data = load_data(prodi_slug)
     if not data: return
 
     lecturers = data.get('lecturers', [])
     corpus = []
-    lecturer_map = [] # To map corpus index back to lecturer
+    lecturer_map = []
 
-    print(f"Processing {len(lecturers)} lecturers...")
+    print(f"  Processing {len(lecturers)} lecturers...")
 
     # 1. Prepare Corpus per Lecturer
     for idx, lect in enumerate(lecturers):
-        # Combine Research + Service titles
-        combined_text = ""
-        
-        # Collect Titles
         titles = []
         for item in lect.get('research', []):
             if item.get('title'): titles.append(item['title'])
         for item in lect.get('services', []):
             if item.get('title'): titles.append(item['title'])
-            
-        # Add Publications (Journals/Proceedings)
         documents = lect.get('documents', {})
         for item in documents.get('list', []):
             if item.get('title'): titles.append(item['title'])
-            
-        # Join and Preprocess
+
         combined_text = " ".join(titles)
         clean_text = preprocess_text(combined_text)
-        
+
         if clean_text:
             corpus.append(clean_text)
             lecturer_map.append({
-                'id': lect.get('id') or lect.get('sintaId') or str(idx), # Fallback ID
+                'id': lect.get('id') or lect.get('sintaId') or str(idx),
                 'name': lect['name'],
                 'prodi': lect.get('prodi', 'Unknown'),
                 'avatar': lect.get('image', ''),
@@ -99,8 +104,7 @@ def build_expertise_profile():
                 'title_count': len(titles)
             })
         else:
-            # Handle lecturers with no valid text
-            corpus.append("") 
+            corpus.append("")
             lecturer_map.append({
                  'id': lect.get('id') or lect.get('sintaId') or str(idx),
                  'name': lect['name'],
@@ -108,8 +112,7 @@ def build_expertise_profile():
             })
 
     # 2. TF-IDF Calculation
-    # Increase max_features to capture more specific terms (Global Vacabulary)
-    vectorizer = TfidfVectorizer(max_features=1500, ngram_range=(1,1)) # Increased to 1500
+    vectorizer = TfidfVectorizer(max_features=1500, ngram_range=(1,1))
     tfidf_matrix = vectorizer.fit_transform(corpus)
     feature_names = vectorizer.get_feature_names_out()
 
@@ -119,36 +122,52 @@ def build_expertise_profile():
         if lect_info.get('title_count', 0) == 0:
             continue
 
-        # Get top keywords for this lecturer
         row = tfidf_matrix[idx]
-        # Coo format to iterate non-zero
         coo = row.tocoo()
         keywords = {}
-        
-        # store keywords with their weights
+
         for col, data_val in zip(coo.col, coo.data):
             word = feature_names[col]
-            keywords[word] = round(data_val, 3) # Keep distinct weight
-            
-        # Sort keywords by weight descending and Take Top 50
+            keywords[word] = round(data_val, 3)
+
         sorted_items = sorted(keywords.items(), key=lambda item: item[1], reverse=True)
-        sorted_keywords = dict(sorted_items[:50]) # Limit to Top 50 per lecturer
+        sorted_keywords = dict(sorted_items[:50])
 
         final_profiles.append({
             **lect_info,
             'keywords': sorted_keywords
         })
 
-    # 3. Save Output
+    # 3. Save Output per prodi
+    output_file = os.path.join(PRODI_DIR, prodi_slug, 'expertise_data.json')
     output_data = {
         'generated_at': "Auto-generated",
         'profiles': final_profiles
     }
 
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+    with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(output_data, f, indent=2)
 
-    print(f"Expertise data saved to {OUTPUT_FILE} with {len(final_profiles)} profiles.")
+    print(f"  Expertise data saved to {output_file} with {len(final_profiles)} profiles.")
+
 
 if __name__ == "__main__":
-    build_expertise_profile()
+    import sys
+
+    prodi_folders = get_prodi_folders()
+    if not prodi_folders:
+        print("No prodi folders with sinta_data.json found!")
+        sys.exit(1)
+
+    target = sys.argv[1] if len(sys.argv) > 1 else None
+    if target:
+        if target not in prodi_folders:
+            print(f"Error: '{target}' not found. Available: {', '.join(prodi_folders)}")
+            sys.exit(1)
+        prodi_folders = [target]
+
+    for slug in prodi_folders:
+        print(f"\n{'='*40}")
+        print(f"Building expertise data: {slug}")
+        print(f"{'='*40}")
+        build_expertise_profile(slug)

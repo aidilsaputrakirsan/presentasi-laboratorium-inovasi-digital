@@ -1,8 +1,9 @@
 {
   "metadata": {
-    "generatedAt": "2026-02-05T15:44:12.150205",
+    "generatedAt": "2026-02-06T17:14:32.797482",
     "source": "SINTA 3",
     "version": "2.3",
+    "prodi": "Bisnis Digital",
     "description": "Data SINTA dengan detail pendanaan untuk akreditasi"
   },
   "lecturers": [
@@ -10,7 +11,7 @@
       "name": "Agung Prabowo, S.E., M.M.",
       "sintaId": "6803848",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-05T15:55:04.694862",
+      "scrapedAt": "2026-02-06T17:14:37.187725",
       "stats": {
         "articles": 14,
         "citations": 25,
@@ -112,6 +113,7 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 3,
       "services": [
         {
           "title": "PEMBERDAYAAN EKONOMI MASYARAKAT MELALUI PENINGKATAN KUALITAS, AKSES, DAN KEBERSIHAN DI PASAR BANGUN REKSA",
@@ -141,12 +143,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "Pengantar Bisnis Digital",
-          "year": "2025"
-        }
-      ],
+      "servicesTotal": 2,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 3,
         "paten": 0,
@@ -179,7 +178,7 @@
       "name": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
       "sintaId": "6686868",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-05T15:55:15.678219",
+      "scrapedAt": "2026-02-06T17:14:45.178941",
       "stats": {
         "articles": 27,
         "citations": 48,
@@ -221,13 +220,13 @@
               "year": "2024"
             },
             {
-              "title": "A Location Routing Problem with Time Windows Consideration: A Metaheuristics Approach",
-              "q": "Q1",
+              "title": "Analysis of Sustainable Online Fish Auction Services Using Process Chain Network Diagram",
+              "q": "Q3",
               "year": "2023"
             },
             {
-              "title": "Analysis of Sustainable Online Fish Auction Services Using Process Chain Network Diagram",
-              "q": "Q3",
+              "title": "A Location Routing Problem with Time Windows Consideration: A Metaheuristics Approach",
+              "q": "Q1",
               "year": "2023"
             },
             {
@@ -266,13 +265,13 @@
             "year": "2024"
           },
           {
-            "title": "A Location Routing Problem with Time Windows Consideration: A Metaheuristics Approach",
-            "category": "Scopus Q1",
+            "title": "Analysis of Sustainable Online Fish Auction Services Using Process Chain Network Diagram",
+            "category": "Scopus Q3",
             "year": "2023"
           },
           {
-            "title": "Analysis of Sustainable Online Fish Auction Services Using Process Chain Network Diagram",
-            "category": "Scopus Q3",
+            "title": "A Location Routing Problem with Time Windows Consideration: A Metaheuristics Approach",
+            "category": "Scopus Q1",
             "year": "2023"
           },
           {
@@ -288,6 +287,21 @@
         ]
       },
       "research": [
+        {
+          "title": "PENGEMBANGAN SISTEM PROYEKSI KEBIJAKAN PENGELOLAAN KEUANGAN BADAN LAYANAN UMUM INSTITUT TEKNOLOGI KALIMANTAN",
+          "leader": "Bayu Nur Abdallah",
+          "members": [
+            "Christopher Davito Prabandewa Hertadi",
+            "Riza Hadi Saputra"
+          ],
+          "grantType": "Penelitian Internal ( RKS )",
+          "grantCategory": "RKS",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
         {
           "title": "KEBIJAKAN MANAJEMEN TATA KELOLA LIMBAH DOMESTIK DI KOTA BALIKPAPAN DENGAN METODE SISTEM DINAMIS",
           "leader": "Amanda Dwi Wantira",
@@ -319,17 +333,16 @@
           "source": "INTERNAL SOURCE"
         },
         {
-          "title": "PENGEMBANGAN SISTEM PROYEKSI KEBIJAKAN PENGELOLAAN KEUANGAN BADAN LAYANAN UMUM INSTITUT TEKNOLOGI KALIMANTAN",
+          "title": "SKEMA PEMBIAYAAN UMKM PERTANIAN DI KALIMANTANTIMUR BERBASIS LINGKUNGAN (TAHUN KE-3)",
           "leader": "Bayu Nur Abdallah",
           "members": [
-            "Christopher Davito Prabandewa Hertadi",
-            "Riza Hadi Saputra"
+            "Deli Yansyah"
           ],
-          "grantType": "Penelitian Internal ( RKS )",
-          "grantCategory": "RKS",
-          "year": "2025",
-          "fundingAmount": 17000000,
-          "fundingFormatted": "Rp. 17.000.000",
+          "grantType": "HIBAH INTERNAL ( PKSA )",
+          "grantCategory": "PKSA",
+          "year": "2024",
+          "fundingAmount": 30000000,
+          "fundingFormatted": "Rp. 30.000.000",
           "status": "Approved",
           "source": "INTERNAL SOURCE"
         },
@@ -345,20 +358,6 @@
           "year": "2024",
           "fundingAmount": 25000000,
           "fundingFormatted": "Rp. 25.000.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
-        {
-          "title": "SKEMA PEMBIAYAAN UMKM PERTANIAN DI KALIMANTANTIMUR BERBASIS LINGKUNGAN (TAHUN KE-3)",
-          "leader": "Bayu Nur Abdallah",
-          "members": [
-            "Deli Yansyah"
-          ],
-          "grantType": "HIBAH INTERNAL ( PKSA )",
-          "grantCategory": "PKSA",
-          "year": "2024",
-          "fundingAmount": 30000000,
-          "fundingFormatted": "Rp. 30.000.000",
           "status": "Approved",
           "source": "INTERNAL SOURCE"
         },
@@ -425,21 +424,8 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 10,
       "services": [
-        {
-          "title": "EDUKASI PPKS DAN PENGEMBANGAN SISTEM INFORMASI PENDATAAN WARGA DI GRAHA POLTEKBA",
-          "leader": "",
-          "members": [
-            "Bayu Nur Abdallah"
-          ],
-          "grantType": "HIBAH INTERNAL ( PMMD )",
-          "grantCategory": "PMMD",
-          "year": "2025",
-          "fundingAmount": 10000000,
-          "fundingFormatted": "Rp. 10.000.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
         {
           "title": "PENGEMBANGAN DAN PELATIHAN SISTEM PENDATAAN DONASI BERBASIS WEB PADA MASJID BERKAH BOX BALIKPAPAN",
           "leader": "Widya Sartika",
@@ -456,15 +442,14 @@
           "source": "INTERNAL SOURCE"
         },
         {
-          "title": "TOURISM IN TERITIP – SEBAGAI BENTUK PENINGKATAN BRANDING POTENSI DAERAH KELURAHAN TERITIP KOTA BALIKPAPAN",
-          "leader": "Irma Fitria",
+          "title": "EDUKASI PPKS DAN PENGEMBANGAN SISTEM INFORMASI PENDATAAN WARGA DI GRAHA POLTEKBA",
+          "leader": "",
           "members": [
-            "Riki Herliansyah",
             "Bayu Nur Abdallah"
           ],
-          "grantType": "HIBAH ITK ( PMMD )",
+          "grantType": "HIBAH INTERNAL ( PMMD )",
           "grantCategory": "PMMD",
-          "year": "2024",
+          "year": "2025",
           "fundingAmount": 10000000,
           "fundingFormatted": "Rp. 10.000.000",
           "status": "Approved",
@@ -475,6 +460,21 @@
           "leader": "Bayu Nur Abdallah",
           "members": [
             "Khairunnisa Rahmah"
+          ],
+          "grantType": "HIBAH ITK ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2024",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "TOURISM IN TERITIP – SEBAGAI BENTUK PENINGKATAN BRANDING POTENSI DAERAH KELURAHAN TERITIP KOTA BALIKPAPAN",
+          "leader": "Irma Fitria",
+          "members": [
+            "Riki Herliansyah",
+            "Bayu Nur Abdallah"
           ],
           "grantType": "HIBAH ITK ( PMMD )",
           "grantCategory": "PMMD",
@@ -525,26 +525,15 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "Buku Dasar-Dasar Analisis Data Pelajari Keterampilan Penting, Rangkul Masa Depan, dan Lejitkan Karir Anda di Dunia Berbasis Data",
-          "year": "2024"
-        },
-        {
-          "title": "Analisis data multivariat dengan metode  structural equation modelling (SEM)  teori dan praktik menggunakan aplikasi  Warp-PLS 7.0",
-          "year": "2022"
-        }
-      ],
+      "servicesTotal": 7,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 9,
         "paten": 0,
         "other": 0,
         "total": 9,
         "list": [
-          {
-            "title": "Pencegahan & Penanganan Kekerasan Seksual pada Anak Melalui Media Digital",
-            "category": "hakCipta"
-          },
           {
             "title": "Model Sistem Dinamis Untuk Peningkatan Ketersediaan Air Bersih dengan Menggunakan Grey Water di Kota Balikpapan",
             "category": "hakCipta"
@@ -554,7 +543,7 @@
             "category": "hakCipta"
           },
           {
-            "title": "Video Dokumenter Pemberdayaan Masyarakat Melalui Program Edukasi Dan Pemanfaatan Teknologi",
+            "title": "Pencegahan & Penanganan Kekerasan Seksual pada Anak Melalui Media Digital",
             "category": "hakCipta"
           },
           {
@@ -566,15 +555,19 @@
             "category": "hakCipta"
           },
           {
+            "title": "Video Dokumenter Pemberdayaan Masyarakat Melalui Program Edukasi Dan Pemanfaatan Teknologi",
+            "category": "hakCipta"
+          },
+          {
             "title": "Program Website CLevelIndonesia.com",
             "category": "hakCipta"
           },
           {
-            "title": "Iklan Profil Program Studi Bisnis Digital ITK",
+            "title": "Kid's Multimedia Development Di Rumah Singgah Kopaja Balikpapan",
             "category": "hakCipta"
           },
           {
-            "title": "Kid's Multimedia Development Di Rumah Singgah Kopaja Balikpapan",
+            "title": "Iklan Profil Program Studi Bisnis Digital ITK",
             "category": "hakCipta"
           }
         ]
@@ -591,7 +584,7 @@
       "name": "Deli Yansyah, S.E., M.Acc., Ak.",
       "sintaId": "6807445",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-05T15:55:25.329024",
+      "scrapedAt": "2026-02-06T17:14:50.110731",
       "stats": {
         "articles": 8,
         "citations": 10,
@@ -830,6 +823,7 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 4,
       "services": [
         {
           "title": "DIGITALISASI LAYANAN ADMINISTRASI RT MELALUI PENGEMBANGAN WEBSITE UNTUK PENGELOLAAN DATA WARGA",
@@ -876,7 +870,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "servicesTotal": 3,
       "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 2,
         "paten": 0,
@@ -884,11 +880,11 @@
         "total": 2,
         "list": [
           {
-            "title": "Video Profil Program Studi Bisnis Digital 2024",
+            "title": "Video Kurikulum dan Mata Kuliah Program Studi Bisnis Digital 2024",
             "category": "hakCipta"
           },
           {
-            "title": "Video Kurikulum dan Mata Kuliah Program Studi Bisnis Digital 2024",
+            "title": "Video Profil Program Studi Bisnis Digital 2024",
             "category": "hakCipta"
           }
         ]
@@ -905,7 +901,7 @@
       "name": "Eka Krisna Santoso, S.Si., MBA.",
       "sintaId": "6788207",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-05T15:57:41.872272",
+      "scrapedAt": "2026-02-06T17:14:54.975456",
       "stats": {
         "articles": 15,
         "citations": 13,
@@ -961,6 +957,7 @@
         "list": []
       },
       "research": [],
+      "researchTotal": 0,
       "services": [
         {
           "title": "DIGITALISASI PROMOSI CELOSIA GARDEN PARK BALIKPAPAN  MELALUI PENGEMBANGAN WEBSITE SEBAGAI PLATFORM INFORMASI UTAMA",
@@ -1006,16 +1003,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "Pengantar Bisnis Digital",
-          "year": "2025"
-        },
-        {
-          "title": "Buku mudah bangun startup",
-          "year": "2022"
-        }
-      ],
+      "servicesTotal": 3,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 0,
         "paten": 0,
@@ -1035,7 +1025,7 @@
       "name": "Fegy Sukris Sri Andriany, M.Ak.",
       "sintaId": "6957012",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-05T15:58:11.468960",
+      "scrapedAt": "2026-02-06T17:14:59.809626",
       "stats": {
         "articles": 0,
         "citations": 0,
@@ -1091,13 +1081,11 @@
         "list": []
       },
       "research": [],
+      "researchTotal": 0,
       "services": [],
-      "books": [
-        {
-          "title": "Pengantar Bisnis Digital",
-          "year": "2025"
-        }
-      ],
+      "servicesTotal": 0,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 1,
         "paten": 0,
@@ -1122,7 +1110,7 @@
       "name": "Ir. Riovan Styx Roring, S.T., M.Kom.",
       "sintaId": "6958596",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-05T15:58:22.752174",
+      "scrapedAt": "2026-02-06T17:15:07.859714",
       "stats": {
         "articles": 20,
         "citations": 68,
@@ -1336,6 +1324,7 @@
           "source": "BIMA SOURCE"
         }
       ],
+      "researchTotal": 3,
       "services": [
         {
           "title": "Inkubasi Global Technopreneurship Berbasis Teknologi Menuju Revolusi Society 5.0 Universitas Mulia",
@@ -1354,32 +1343,9 @@
           "source": "BIMA SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "Pemrograman Python Dasar",
-          "year": "2026"
-        },
-        {
-          "title": "Metodologi Pembelajaran E-learning dan Praktik Terbaik Edisi Kedua",
-          "year": "2026"
-        },
-        {
-          "title": "Dasar-Dasar SQL Untuk Pemula",
-          "year": "2023"
-        },
-        {
-          "title": "Sistem Informasi Berbasis Cloud: Keunggulan dan Tantangan Implementasi",
-          "year": "2023"
-        },
-        {
-          "title": "TEKNIK DASAR GAMBAR KARAKTER 2D: PANDUAN PRAKTIS UNTUK PEMULA",
-          "year": "2023"
-        },
-        {
-          "title": "Dasar dan teori sistem multimedia",
-          "year": "2022"
-        }
-      ],
+      "servicesTotal": 1,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 4,
         "paten": 0,
@@ -1416,7 +1382,7 @@
       "name": "Khairunnisa Rahmah, S.E., M.M., CDMS.",
       "sintaId": "6798949",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-05T15:58:32.093694",
+      "scrapedAt": "2026-02-06T17:15:12.795176",
       "stats": {
         "articles": 24,
         "citations": 193,
@@ -1548,6 +1514,7 @@
           "source": "BIMA SOURCE"
         }
       ],
+      "researchTotal": 5,
       "services": [
         {
           "title": "DIGITALISASI LAYANAN ADMINISTRASI RT MELALUI PENGEMBANGAN WEBSITE UNTUK PENGELOLAAN DATA WARGA",
@@ -1593,16 +1560,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "MSDM: Pendekatan Strategis dan Dinamis",
-          "year": "2025"
-        },
-        {
-          "title": "Pengantar Bisnis Digital",
-          "year": "2025"
-        }
-      ],
+      "servicesTotal": 3,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 9,
         "paten": 0,
@@ -1659,7 +1619,7 @@
       "name": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
       "sintaId": "6793011",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-05T15:58:44.428592",
+      "scrapedAt": "2026-02-06T17:15:20.803178",
       "stats": {
         "articles": 26,
         "citations": 88,
@@ -1966,6 +1926,7 @@
           "source": "BIMA SOURCE"
         }
       ],
+      "researchTotal": 9,
       "services": [
         {
           "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS",
@@ -2041,30 +2002,15 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "Kecerdasan Buatan (AI) di Era Digital",
-          "year": "2025"
-        },
-        {
-          "title": "Pengantar Bisnis Digital",
-          "year": "2025"
-        }
-      ],
+      "servicesTotal": 5,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 7,
         "paten": 0,
         "other": 0,
         "total": 7,
         "list": [
-          {
-            "title": "Film Dokumenter: Pemberdayaan Komunitas Bakoel Kembang Ruhui Rahayu melalui Inovasi Produk, Pemasaran Digital dan Manajemen Stok",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Pengantar Bisnis Digital",
-            "category": "hakCipta"
-          },
           {
             "title": "Poster Kegiatan dan Capaian Pemberdayaan Kemitraan PAI  Balikpapan",
             "category": "hakCipta"
@@ -2079,6 +2025,14 @@
           },
           {
             "title": "Alat Peraga Panduan Penggunaan QR Code Identitas Anggrek",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Film Dokumenter: Pemberdayaan Komunitas Bakoel Kembang Ruhui Rahayu melalui Inovasi Produk, Pemasaran Digital dan Manajemen Stok",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Pengantar Bisnis Digital",
             "category": "hakCipta"
           },
           {
@@ -2099,7 +2053,7 @@
       "name": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
       "sintaId": "6780638",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-05T15:58:53.585446",
+      "scrapedAt": "2026-02-06T17:15:25.657346",
       "stats": {
         "articles": 20,
         "citations": 51,
@@ -2261,6 +2215,21 @@
       },
       "research": [
         {
+          "title": "PERANCANGAN DECISION SUPPORT SYSTEM BERBASIS WEB UNTUK PEMILIHAN PRODUK UMKM LAYAK EKSPORT KERJASAMA INKUBATOR BISNIS DAN TEKNOLOGI ITK DAN KOMUNITAS PENGUSAHA MUSLIM INDONESIA (KPMI)",
+          "leader": "PENELITIAN INTERNAL ( RKDN )",
+          "members": [
+            "Muh. Ikhsan Alif S",
+            "Anggela"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2025",
+          "fundingAmount": 25000000,
+          "fundingFormatted": "Rp. 25.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
           "title": "DAMPAK KEMAMPUAN MANAJEMEN PROSES BISNIS DAN ADOPSI KECERDASAN BUATAN  TERHADAP KINERJA PROSES: STUDI KASUS UKM DI KAWASAN IKN",
           "leader": "PENELITIAN INTERNAL ( RPI )",
           "members": [
@@ -2307,21 +2276,6 @@
           "source": "BIMA SOURCE"
         },
         {
-          "title": "PERANCANGAN DECISION SUPPORT SYSTEM BERBASIS WEB UNTUK PEMILIHAN PRODUK UMKM LAYAK EKSPORT KERJASAMA INKUBATOR BISNIS DAN TEKNOLOGI ITK DAN KOMUNITAS PENGUSAHA MUSLIM INDONESIA (KPMI)",
-          "leader": "PENELITIAN INTERNAL ( RKDN )",
-          "members": [
-            "Muh. Ikhsan Alif S",
-            "Anggela"
-          ],
-          "grantType": "PENELITIAN INTERNAL ( RKDN )",
-          "grantCategory": "RKDN",
-          "year": "2025",
-          "fundingAmount": 25000000,
-          "fundingFormatted": "Rp. 25.000.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
-        {
           "title": "ANALISIS PREFERENSI MASYARAKAT PADA KOTA BERKONSEP SMART CITY",
           "leader": "",
           "members": [
@@ -2337,7 +2291,23 @@
           "source": "INTERNAL SOURCE"
         }
       ],
+      "researchTotal": 5,
       "services": [
+        {
+          "title": "OPTIMALISASI TATA KELOLA DAN FASILITAS WISATA BAMBOE WANADESA KOTA BALIKPAPAN",
+          "leader": "Supratiwi Amir",
+          "members": [
+            "Faisal Syamsuddin",
+            "Muh. Ikhsan Alif S"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
         {
           "title": "PENINGKATAN KEMANDIRIAN EKONOMI PERKUMPULAN PENYANDANG DISABILITAS INDONESIA (PPDI) BALIKPAPAN MELALUI PENGUATAN PEMASARAN DIGITAL DAN PEMBERDAYAAN LEGALITAS PRODUK",
           "leader": "Muh. Ikhsan Alif S",
@@ -2384,21 +2354,6 @@
           "source": "BIMA SOURCE"
         },
         {
-          "title": "OPTIMALISASI TATA KELOLA DAN FASILITAS WISATA BAMBOE WANADESA KOTA BALIKPAPAN",
-          "leader": "Supratiwi Amir",
-          "members": [
-            "Faisal Syamsuddin",
-            "Muh. Ikhsan Alif S"
-          ],
-          "grantType": "HIBAH INTERNAL ( PMMD )",
-          "grantCategory": "PMMD",
-          "year": "2025",
-          "fundingAmount": 10000000,
-          "fundingFormatted": "Rp. 10.000.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
-        {
           "title": "PENERAPAN DAN PEMANFAATAN TEKNOLOGI AQUAPONIK BERBASIS INTERNET OF THINGS (IOT) DI MASJID BERKAH BOX",
           "leader": "Muh. Ikhsan Alif S",
           "members": [
@@ -2440,30 +2395,15 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "Dasar-dasar analisis data : pelajari keterampilan penting, rangkul masa depan, dan lejitkan karir anda di dunia berbasis data",
-          "year": "2024"
-        },
-        {
-          "title": "Analisis data multivariat dengan metode  structural equation modelling (SEM)  teori dan praktik menggunakan aplikasi  Warp-PLS 7.0",
-          "year": "2022"
-        }
-      ],
+      "servicesTotal": 7,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 10,
         "paten": 0,
         "other": 0,
         "total": 10,
         "list": [
-          {
-            "title": "The Role of Privacy Issues on The Effectiveness of Artificial Intelligence Utilisation: Functional and Social Emotional Perspectives",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Poster Kegiatan dan Capaian Pemberdayaan Kemitraan PAI  Balikpapan",
-            "category": "hakCipta"
-          },
           {
             "title": "Logo Inkubator Bisnis Teknologi ITK",
             "category": "hakCipta"
@@ -2477,11 +2417,11 @@
             "category": "hakCipta"
           },
           {
-            "title": "Website Decision Support System untuk Pemilihan Produk UMKM Layak Ekspor",
+            "title": "Brand Guidelines IBT ITK",
             "category": "hakCipta"
           },
           {
-            "title": "Brand Guidelines IBT ITK",
+            "title": "Website Decision Support System untuk Pemilihan Produk UMKM Layak Ekspor",
             "category": "hakCipta"
           },
           {
@@ -2493,7 +2433,15 @@
             "category": "hakCipta"
           },
           {
-            "title": "Data Dan Statistik: Pemilihan, Pengolahan, Proses Analisa Hingga Visualisasi Data Menggunakan Microsoft Excel",
+            "title": "The Role of Privacy Issues on The Effectiveness of Artificial Intelligence Utilisation: Functional and Social Emotional Perspectives",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Poster Kegiatan dan Capaian Pemberdayaan Kemitraan PAI  Balikpapan",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Program Komputer Wisata Bamboe Wanadesa",
             "category": "hakCipta"
           }
         ]
@@ -2510,7 +2458,7 @@
       "name": "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
       "sintaId": "6790854",
       "prodi": "Bisnis Digital",
-      "scrapedAt": "2026-02-05T15:59:03.175803",
+      "scrapedAt": "2026-02-06T17:15:33.779692",
       "stats": {
         "articles": 25,
         "citations": 84,
@@ -2636,6 +2584,12 @@
               "source": "Google Scholar"
             },
             {
+              "title": "Pelatihan Pemodelan Proses Bisnis Koperasi di Sentra Industri Kecil Somber Balikpapan",
+              "year": "",
+              "citation": "2",
+              "source": "Google Scholar"
+            },
+            {
               "title": "Digital literacy mediation in improving business performance of balikpapan micro and small industries",
               "year": "",
               "citation": "2",
@@ -2654,7 +2608,7 @@
               "source": "Google Scholar"
             },
             {
-              "title": "Pelatihan Pemodelan Proses Bisnis Koperasi di Sentra Industri Kecil Somber Balikpapan",
+              "title": "ANALISIS PENGELOLAAN RISIKO PADA USAHA MIKRO KAVINA CATERING DENGAN METODE RCA DAN FISHBONE ANALYSIS",
               "year": "",
               "citation": "1",
               "source": "Google Scholar"
@@ -2727,12 +2681,6 @@
             },
             {
               "title": "Ekonomi Lingkungan Berkelanjutan",
-              "year": "",
-              "citation": "0",
-              "source": "Google Scholar"
-            },
-            {
-              "title": "ANALISIS PENGELOLAAN RISIKO PADA USAHA MIKRO KAVINA CATERING DENGAN METODE RCA DAN FISHBONE ANALYSIS",
               "year": "",
               "citation": "0",
               "source": "Google Scholar"
@@ -2844,6 +2792,11 @@
             "year": ""
           },
           {
+            "title": "Pelatihan Pemodelan Proses Bisnis Koperasi di Sentra Industri Kecil Somber Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Digital literacy mediation in improving business performance of balikpapan micro and small industries",
             "category": "Google Scholar",
             "year": ""
@@ -2859,7 +2812,7 @@
             "year": ""
           },
           {
-            "title": "Pelatihan Pemodelan Proses Bisnis Koperasi di Sentra Industri Kecil Somber Balikpapan",
+            "title": "ANALISIS PENGELOLAAN RISIKO PADA USAHA MIKRO KAVINA CATERING DENGAN METODE RCA DAN FISHBONE ANALYSIS",
             "category": "Google Scholar",
             "year": ""
           },
@@ -2920,11 +2873,6 @@
           },
           {
             "title": "Ekonomi Lingkungan Berkelanjutan",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "ANALISIS PENGELOLAAN RISIKO PADA USAHA MIKRO KAVINA CATERING DENGAN METODE RCA DAN FISHBONE ANALYSIS",
             "category": "Google Scholar",
             "year": ""
           },
@@ -3062,21 +3010,8 @@
           "source": "BIMA SOURCE"
         }
       ],
+      "researchTotal": 7,
       "services": [
-        {
-          "title": "EDUKASI PPKS DAN PENGEMBANGAN SISTEM INFORMASI PENDATAAN WARGA DI GRAHA POLTEKBA",
-          "leader": "",
-          "members": [
-            "Bayu Nur Abdallah"
-          ],
-          "grantType": "HIBAH INTERNAL ( PMMD )",
-          "grantCategory": "PMMD",
-          "year": "2025",
-          "fundingAmount": 10000000,
-          "fundingFormatted": "Rp. 10.000.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
         {
           "title": "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
           "leader": "",
@@ -3091,6 +3026,20 @@
           "fundingFormatted": "Rp. 47.993.000",
           "status": "Approved",
           "source": "BIMA SOURCE"
+        },
+        {
+          "title": "EDUKASI PPKS DAN PENGEMBANGAN SISTEM INFORMASI PENDATAAN WARGA DI GRAHA POLTEKBA",
+          "leader": "",
+          "members": [
+            "Bayu Nur Abdallah"
+          ],
+          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantCategory": "PMMD",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
         },
         {
           "title": "PERKUAT INDUSTRI MIKRO KECIL MELALUI PENDAMPINGAN PROSES BISNIS: KOLABORASI PENGABDIAN MASYARAKAT DENGAN KOPERASI SEBAGAI MITRA UTAMA",
@@ -3108,16 +3057,9 @@
           "source": "INTERNAL SOURCE"
         }
       ],
-      "books": [
-        {
-          "title": "Pengantar Bisnis Digital",
-          "year": "2025"
-        },
-        {
-          "title": "Ekonomi Lingkungan Berkelanjutan",
-          "year": "2025"
-        }
-      ],
+      "servicesTotal": 3,
+      "books": [],
+      "booksTotal": 0,
       "ipr": {
         "hakCipta": 9,
         "paten": 0,
@@ -3170,5 +3112,16 @@
         "serviceCount": 3
       }
     }
-  ]
+  ],
+  "prodiSummary": {
+    "lecturerCount": 10,
+    "totalResearchFunding": 941172000,
+    "totalServiceFunding": 602702000,
+    "totalResearchCount": 46,
+    "totalServiceCount": 34,
+    "avgResearchFundingPerLecturer": 94117200.0,
+    "avgServiceFundingPerLecturer": 60270200.0,
+    "avgResearchCountPerLecturer": 4.6,
+    "avgServiceCountPerLecturer": 3.4
+  }
 }

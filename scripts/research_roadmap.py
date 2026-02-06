@@ -21,8 +21,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Konfigurasi
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SINTA_DATA_FILE = os.path.join(BASE_DIR, 'src', 'data', 'sinta_data.json')
-OUTPUT_FILE = os.path.join(BASE_DIR, 'src', 'data', 'roadmap_data.json')
+PRODI_DIR = os.path.join(BASE_DIR, 'src', 'data', 'prodi')
+SHARED_DIR = os.path.join(BASE_DIR, 'src', 'data', 'shared')
+OUTPUT_FILE = os.path.join(SHARED_DIR, 'roadmap_data.json')
 
 # Indonesian stopwords (same as clustering)
 STOPWORDS_ID = {
@@ -39,9 +40,20 @@ STOPWORDS_ID = {
     'melalui', 'secara', 'upaya', 'dalam', 'serta', 'bagi', 'kaltim'
 }
 
-def load_sinta_data():
-    with open(SINTA_DATA_FILE, 'r', encoding='utf-8') as f:
-        return json.load(f)
+def load_all_sinta_data():
+    """Load and merge sinta_data.json from all prodi folders"""
+    merged = {'lecturers': []}
+    if not os.path.exists(PRODI_DIR):
+        print(f"Error: {PRODI_DIR} not found.")
+        return merged
+    for slug in sorted(os.listdir(PRODI_DIR)):
+        sinta_file = os.path.join(PRODI_DIR, slug, 'sinta_data.json')
+        if os.path.isdir(os.path.join(PRODI_DIR, slug)) and os.path.exists(sinta_file):
+            with open(sinta_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            merged['lecturers'].extend(data.get('lecturers', []))
+            print(f"  Loaded {len(data.get('lecturers', []))} lecturers from {slug}")
+    return merged
 
 def preprocess_text(text):
     text = text.lower()
@@ -222,9 +234,9 @@ def build_sankey_data(yearly_keywords):
     return {'nodes': final_nodes, 'links': links}
 
 def main():
-    print("Generating Research Roadmap Data...")
-    
-    sinta_data = load_sinta_data()
+    print("Generating Research Roadmap Data (from all prodi)...")
+
+    sinta_data = load_all_sinta_data()
     items_by_year = extract_items_by_year(sinta_data)
     
     # 1. Timeline stats

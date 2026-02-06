@@ -25,8 +25,7 @@ from sklearn.metrics import silhouette_score
 
 # Konfigurasi
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SINTA_DATA_FILE = os.path.join(BASE_DIR, 'src', 'data', 'sinta_data.json')
-OUTPUT_FILE = os.path.join(BASE_DIR, 'src', 'data', 'clusters_data.json')
+PRODI_DIR = os.path.join(BASE_DIR, 'src', 'data', 'prodi')
 
 # Indonesian stopwords (common words to remove)
 STOPWORDS_ID = {
@@ -42,9 +41,22 @@ STOPWORDS_ID = {
     'application', 'approach', 'model', 'data', 'process'
 }
 
-def load_sinta_data():
-    """Load data dari sinta_data.json"""
-    with open(SINTA_DATA_FILE, 'r', encoding='utf-8') as f:
+def get_prodi_folders():
+    """Scan prodi directory for folders with sinta_data.json"""
+    prodi_folders = []
+    if not os.path.exists(PRODI_DIR):
+        print(f"Error: {PRODI_DIR} not found.")
+        return prodi_folders
+    for slug in os.listdir(PRODI_DIR):
+        sinta_file = os.path.join(PRODI_DIR, slug, 'sinta_data.json')
+        if os.path.isdir(os.path.join(PRODI_DIR, slug)) and os.path.exists(sinta_file):
+            prodi_folders.append(slug)
+    return sorted(prodi_folders)
+
+def load_sinta_data(prodi_slug):
+    """Load data dari per-prodi sinta_data.json"""
+    sinta_file = os.path.join(PRODI_DIR, prodi_slug, 'sinta_data.json')
+    with open(sinta_file, 'r', encoding='utf-8') as f:
         return json.load(f)
 
 def extract_research_items(sinta_data):
@@ -244,29 +256,23 @@ def run_clustering(items, n_clusters=None):
     
     return clusters
 
-def main():
-    print("=" * 60)
-    print("Research Topic Clustering - TF-IDF + K-Means")
-    print("=" * 60)
-    
-    # Load data
-    print("\nLoading SINTA data...")
-    sinta_data = load_sinta_data()
-    
-    # Extract research items
-    print("Extracting research items...")
+def cluster_prodi(prodi_slug):
+    """Run clustering for a single prodi"""
+    print(f"\n  Loading SINTA data for {prodi_slug}...")
+    sinta_data = load_sinta_data(prodi_slug)
+
+    print("  Extracting research items...")
     items = extract_research_items(sinta_data)
-    print(f"Found {len(items)} research items")
-    
-    # Run clustering
-    print("\nRunning TF-IDF + K-Means clustering...")
+    print(f"  Found {len(items)} research items")
+
+    print("  Running TF-IDF + K-Means clustering...")
     clusters = run_clustering(items)
-    
+
     if clusters is None:
-        print("Clustering failed!")
+        print("  Clustering failed (not enough data)")
         return
-    
-    # Build output data
+
+    output_file = os.path.join(PRODI_DIR, prodi_slug, 'clusters_data.json')
     output_data = {
         'metadata': {
             'generatedAt': datetime.now().isoformat(),
@@ -285,23 +291,42 @@ def main():
             )[:5]
         }
     }
-    
-    # Save output
-    print(f"\nSaving to {OUTPUT_FILE}...")
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+
+    print(f"  Saving to {output_file}...")
+    with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(output_data, f, indent=2, ensure_ascii=False)
-    
-    # Print summary
-    print("\n" + "=" * 60)
-    print("CLUSTERING RESULTS SUMMARY")
+
+    print(f"  Total Clusters: {len(clusters)}")
+    print(f"  Cross-Prodi: {output_data['summary']['crossProdiCount']}")
+    print(f"  High Potential: {output_data['summary']['highPotentialCount']}")
+
+
+def main():
+    import sys
+
+    prodi_folders = get_prodi_folders()
+    if not prodi_folders:
+        print("No prodi folders with sinta_data.json found!")
+        return
+
+    target = sys.argv[1] if len(sys.argv) > 1 else None
+    if target:
+        if target not in prodi_folders:
+            print(f"Error: '{target}' not found. Available: {', '.join(prodi_folders)}")
+            return
+        prodi_folders = [target]
+
     print("=" * 60)
-    print(f"Total Clusters: {len(clusters)}")
-    print(f"Cross-Prodi Clusters: {output_data['summary']['crossProdiCount']}")
-    print(f"High Collaboration Potential: {output_data['summary']['highPotentialCount']}")
-    print("\nTop 5 Clusters by Size:")
-    for i, c in enumerate(output_data['summary']['topClusters'], 1):
-        print(f"  {i}. {c['name']} ({c['count']} items)")
-    
+    print("Research Topic Clustering - TF-IDF + K-Means (Per Prodi)")
+    print(f"Target: {', '.join(prodi_folders)}")
+    print("=" * 60)
+
+    for slug in prodi_folders:
+        print(f"\n{'='*40}")
+        print(f"Clustering: {slug}")
+        print(f"{'='*40}")
+        cluster_prodi(slug)
+
     print("\nDONE!")
 
 if __name__ == "__main__":
