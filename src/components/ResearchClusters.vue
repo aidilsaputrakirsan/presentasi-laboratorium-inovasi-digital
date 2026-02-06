@@ -175,7 +175,7 @@
 </template>
 
 <script>
-import clustersData from '../data/clusters_data.json';
+import { prodiRegistry, prodiList } from '../data/prodi/index.js';
 
 export default {
   name: 'ResearchClusters',
@@ -193,18 +193,54 @@ export default {
     };
   },
   computed: {
+    combinedClustersData() {
+      const allClusters = {};
+      let totalItems = 0;
+      prodiList.filter(p => p.hasData).forEach(p => {
+        const data = prodiRegistry[p.slug];
+        if (data?.clustersData?.clusters) {
+          for (const [id, cluster] of Object.entries(data.clustersData.clusters)) {
+            if (!allClusters[id]) {
+              allClusters[id] = { ...cluster, items: [...cluster.items] };
+            } else {
+              allClusters[id].items.push(...cluster.items);
+              allClusters[id].count = allClusters[id].items.length;
+            }
+          }
+        }
+        if (data?.clustersData?.metadata) {
+          totalItems += data.clustersData.metadata.totalItems || 0;
+        }
+      });
+      for (const cluster of Object.values(allClusters)) {
+        const prodis = [...new Set(cluster.items.map(i => i.prodi))];
+        cluster.prodis = prodis;
+        cluster.isCrossProdi = prodis.length > 1;
+        const authors = [...new Set(cluster.items.map(i => i.author))];
+        cluster.authors = authors;
+        cluster.count = cluster.items.length;
+        cluster.collaborationPotential = cluster.isCrossProdi && authors.length >= 3 ? 'high' : authors.length >= 2 ? 'medium' : 'low';
+      }
+      return {
+        clusters: allClusters,
+        metadata: { totalItems, totalClusters: Object.keys(allClusters).length },
+        summary: {
+          crossProdiCount: Object.values(allClusters).filter(c => c.isCrossProdi).length,
+          highPotentialCount: Object.values(allClusters).filter(c => c.collaborationPotential === 'high').length
+        }
+      };
+    },
     hasData() {
-      return clustersData && clustersData.clusters && Object.keys(clustersData.clusters).length > 0;
+      return Object.keys(this.combinedClustersData.clusters).length > 0;
     },
     metadata() {
-      return clustersData?.metadata || null;
+      return this.combinedClustersData.metadata || null;
     },
     summary() {
-      return clustersData?.summary || null;
+      return this.combinedClustersData.summary || null;
     },
     clusters() {
-      if (!clustersData?.clusters) return [];
-      return Object.values(clustersData.clusters).sort((a, b) => b.count - a.count);
+      return Object.values(this.combinedClustersData.clusters).sort((a, b) => b.count - a.count);
     },
     filteredClusters() {
       if (this.activeFilter === 'all') return this.clusters;

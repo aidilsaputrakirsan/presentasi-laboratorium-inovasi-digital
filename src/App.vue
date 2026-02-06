@@ -184,23 +184,6 @@
         </div>
       </template>
 
-      <!-- Google Scholar Section - DISABLED but preserved -->
-      <!-- 
-      <template v-if="!loading && selectedProdi && lecturersData.length > 0">
-        <ProdiStatistics :stats="prodiStats" />
-        <ChartsSection
-          :yearChartData="yearChartData"
-          :categoryChartData="categoryChartData"
-          :topLecturersData="topLecturersData"
-        />
-        <LecturerCard 
-          v-for="lecturer in lecturersData"
-          :key="lecturer.scholarId"
-          :lecturer="lecturer"
-        />
-      </template>
-      -->
-
       <!-- Footer -->
       <footer class="mt-12 text-center text-sm text-slate-500">
         <div class="flex items-center justify-center gap-2 mb-1">
@@ -216,41 +199,33 @@
 
 <script>
 import ProdiSelector from './components/ProdiSelector.vue';
-import ProdiStatistics from './components/ProdiStatistics.vue';
-import ChartsSection from './components/ChartsSection.vue';
-import LecturerCard from './components/LecturerCard.vue';
-import CacheStatus from './components/CacheStatus.vue';
 import SintaStatistics from './components/SintaStatistics.vue';
 import ResearchGallery from './components/ResearchGallery.vue';
 import ResearchClusters from './components/ResearchClusters.vue';
 import ResearchRoadmap from './components/ResearchRoadmap.vue';
-import ExpertiseFinderView from './components/ExpertiseFinder.vue'; // Import renamed to trigger update
+import ExpertiseFinderView from './components/ExpertiseFinder.vue';
 import FundingDashboard from './components/FundingDashboard.vue';
 import DTPSAkreditasi from './components/DTPSAkreditasi.vue';
 import { fetchMultipleLecturers } from './services/serpApi.js';
-import { 
-  aggregateProdiData, 
+import {
+  aggregateProdiData,
   getPublicationsByYearData,
   getCategoryDistributionData,
   getTopLecturersData
 } from './utils/aggregation.js';
 import { exportToCSV } from './utils/csvExport.js';
 import { categorizePublication } from './utils/categorization.js';
-import lecturersJSON from './data/lecturers.json';
+import { prodiRegistry, prodiList } from './data/prodi/index.js';
 
 export default {
   name: 'App',
   components: {
     ProdiSelector,
-    ProdiStatistics,
-    ChartsSection,
-    LecturerCard,
-    CacheStatus,
     SintaStatistics,
     ResearchGallery,
     ResearchClusters,
     ResearchRoadmap,
-    ExpertiseFinder: ExpertiseFinderView, // Explicit registration
+    ExpertiseFinder: ExpertiseFinderView,
     FundingDashboard,
     DTPSAkreditasi
   },
@@ -302,17 +277,18 @@ export default {
       this.loadedCount = 0;
       this.lecturersData = [];
 
-      const prodi = lecturersJSON.studyPrograms[prodiKey];
-      if (!prodi) {
+      const prodiMeta = prodiList.find(p => p.name === prodiKey);
+      const prodiData = prodiMeta ? prodiRegistry[prodiMeta.slug] : null;
+      if (!prodiData?.config) {
         this.loading = false;
         return;
       }
 
-      this.totalCount = prodi.lecturers.length;
+      this.totalCount = prodiData.config.lecturers.length;
 
       try {
         // Fetch all lecturers data
-        const results = await fetchMultipleLecturers(prodi.lecturers);
+        const results = await fetchMultipleLecturers(prodiData.config.lecturers);
         this.lecturersData = results;
         
         // Update cache info from first lecturer
@@ -338,15 +314,16 @@ export default {
       
       this.refreshing = true;
       
-      const prodi = lecturersJSON.studyPrograms[this.selectedProdi];
-      if (!prodi) {
+      const prodiMeta = prodiList.find(p => p.name === this.selectedProdi);
+      const prodiData = prodiMeta ? prodiRegistry[prodiMeta.slug] : null;
+      if (!prodiData?.config) {
         this.refreshing = false;
         return;
       }
-      
+
       try {
         // Force refresh from API
-        const results = await fetchMultipleLecturers(prodi.lecturers, true);
+        const results = await fetchMultipleLecturers(prodiData.config.lecturers, true);
         this.lecturersData = results;
         
         // Update cache info

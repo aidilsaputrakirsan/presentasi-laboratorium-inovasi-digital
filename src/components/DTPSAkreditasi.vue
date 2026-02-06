@@ -352,8 +352,7 @@
 </template>
 
 <script>
-import sintaData from '../data/sinta_data.json'
-import lecturersConfig from '../data/lecturers.json'
+import { prodiRegistry, prodiList as prodiListData } from '../data/prodi/index.js'
 
 export default {
   name: 'DTPSAkreditasi',
@@ -373,12 +372,16 @@ export default {
   },
   computed: {
     lecturers() {
-      return sintaData.lecturers || []
+      const allLecturers = []
+      prodiListData.filter(p => p.hasData).forEach(p => {
+        const data = prodiRegistry[p.slug]
+        if (data?.sintaData?.lecturers) allLecturers.push(...data.sintaData.lecturers)
+      })
+      return allLecturers
     },
 
     prodiList() {
-      const programs = lecturersConfig.studyPrograms || {}
-      return Object.keys(programs).sort()
+      return prodiListData.filter(p => p.hasData).map(p => p.name).sort()
     },
 
     availableYears() {
@@ -398,13 +401,15 @@ export default {
       return Array.from(years).sort((a, b) => b.localeCompare(a))
     },
 
-    // Daftar nama dosen per prodi dari lecturers.json
+    // Daftar nama dosen per prodi
     lecturersByProdi() {
       const result = {}
-      const programs = lecturersConfig.studyPrograms || {}
-      for (const [prodiName, prodiData] of Object.entries(programs)) {
-        result[prodiName] = prodiData.lecturers || []
-      }
+      prodiListData.filter(p => p.hasData).forEach(p => {
+        const data = prodiRegistry[p.slug]
+        if (data?.config) {
+          result[p.name] = data.config.lecturers || []
+        }
+      })
       return result
     },
 

@@ -2,8 +2,8 @@
   "metadata": {
     "generatedAt": "2026-02-02T19:59:50.015712",
     "algorithm": "TF-IDF + K-Means",
-    "totalItems": 229,
-    "totalClusters": 12
+    "totalItems": 149,
+    "totalClusters": 11
   },
   "clusters": {
     "0": {
@@ -282,132 +282,27 @@
           "prodi": "Sistem Informasi",
           "type": "Penelitian",
           "year": "2025"
-        },
-        {
-          "title": "ANALISIS PREFERENSI MASYARAKAT PADA KOTA BERKONSEP SMART CITY",
-          "author": "Agung Prabowo, S.E., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2023"
-        },
-        {
-          "title": "KEBIJAKAN MANAJEMEN TATA KELOLA LIMBAH DOMESTIK DI KOTA BALIKPAPAN DENGAN METODE SISTEM DINAMIS",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
-        },
-        {
-          "title": "PEMENUHAN KETERSEDIAAN DAGING SAPI DI KOTA BALIKPAPAN UNTUK MENDUKUNG PEMENUHAN KEBUTUHAN IKN DENGAN PENDEKATAN COOPERATIVE GAME THEORY",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2023"
-        },
-        {
-          "title": "MODEL HEAVY EQUIPMENT LEASING DENGAN MEMPERTIMBANGKAN BIAYA PENALTI SAAT TERJADI FAILURE YANG MELEBIHI TOLERANSI MENGGUNAKAN GAME THEORY",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2019"
-        },
-        {
-          "title": "TOURISM IN TERITIP – SEBAGAI BENTUK PENINGKATAN BRANDING POTENSI DAERAH KELURAHAN TERITIP KOTA BALIKPAPAN",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2024"
-        },
-        {
-          "title": "IMPLEMENTASI KURIKULUM PROGRAM PEMBINAAN STARTUP DENGAN METODE 4 FASE UNTUK PEMBERDAYAAN KEWIRAUSAHAAN DI KAMPUNG TIMUR KOTA BALIKPAPAN",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2023"
-        },
-        {
-          "title": "ANALISIS PREFERENSI MASYARAKAT PADA KOTA BERKONSEP SMART CITY",
-          "author": "Deli Yansyah, S.E., M.Acc., Ak.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2023"
-        },
-        {
-          "title": "IMPLEMENTASI KURIKULUM PROGRAM PEMBINAAN STARTUP DENGAN METODE 4 FASE UNTUK PEMBERDAYAAN KEWIRAUSAHAAN DI KAMPUNG TIMUR KOTA BALIKPAPAN",
-          "author": "Deli Yansyah, S.E., M.Acc., Ak.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2023"
-        },
-        {
-          "title": "PENGEMBANGAN ROLE-PLAYING GAME (RPG) BERBASIS ANDROID SEBAGAI ALAT BANTU AJAR PELAJARAN SEJARAH KELAS XI SMA SEDERAJAT",
-          "author": "Ir. Riovan Styx Roring, S.T., M.Kom.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2019"
-        },
-        {
-          "title": "IMPLEMENTASI DAN EVALUASI ALGORITMA C5.0 PADA KLASIFIKASI EMOSI TEKS BERITA BERBAHASA INDONESIA.",
-          "author": "Ir. Riovan Styx Roring, S.T., M.Kom.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2019"
-        },
-        {
-          "title": "Inkubasi Global Technopreneurship Berbasis Teknologi Menuju Revolusi Society 5.0 Universitas Mulia",
-          "author": "Ir. Riovan Styx Roring, S.T., M.Kom.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2020"
-        },
-        {
-          "title": "ANALISIS PREFERENSI PENDUDUK DALAM MEMILIH HUNIAN DI WILAYAH KECAMATAN BALIKPAPAN UTARA",
-          "author": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2024"
-        },
-        {
-          "title": "ANALISIS PREFERENSI MASYARAKAT PADA KOTA BERKONSEP SMART CITY",
-          "author": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2023"
-        },
-        {
-          "title": "OPTIMALISASI TATA KELOLA DAN FASILITAS WISATA BAMBOE WANADESA KOTA BALIKPAPAN",
-          "author": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
         }
       ],
-      "count": 52,
+      "count": 38,
       "prodis": [
-        "Sistem Informasi",
-        "Bisnis Digital"
+        "Sistem Informasi"
       ],
       "authors": [
-        "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-        "Deli Yansyah, S.E., M.Acc., Ak.",
+        "Yuyun Tri Wiranti",
         "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto",
+        "Lovinta Happy Atrinawati",
+        "Vika Fitratunnany Insanittaqwa",
+        "Dwi Nur Amalia",
         "Dwi Arief Prambudi",
-        "Ir. Riovan Styx Roring, S.T., M.Kom.",
+        "I Putu Deny Arthawan Sugih Prabowo",
+        "M. Ihsan Alfani Putera",
         "Sri Rahayu Natasia",
         "Nursanti Novi Arisa",
-        "Lovinta Happy Atrinawati",
-        "M. Ihsan Alfani Putera",
-        "Rosa Eliviani",
-        "Henokh Lugo Hariyanto",
-        "Dwi Nur Amalia",
-        "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-        "Yuyun Tri Wiranti",
-        "Vika Fitratunnany Insanittaqwa",
-        "Agung Prabowo, S.E., M.M.",
-        "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-        "I Putu Deny Arthawan Sugih Prabowo"
+        "Rosa Eliviani"
       ],
-      "isCrossProdi": true,
+      "isCrossProdi": false,
       "collaborationPotential": "high"
     },
     "1": {
@@ -532,30 +427,21 @@
           "prodi": "Sistem Informasi",
           "type": "Penelitian",
           "year": "2019"
-        },
-        {
-          "title": "PENGEMBANGAN SISTEM PROYEKSI KEBIJAKAN PENGELOLAAN KEUANGAN BADAN LAYANAN UMUM INSTITUT TEKNOLOGI KALIMANTAN",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
         }
       ],
-      "count": 17,
+      "count": 16,
       "prodis": [
-        "Sistem Informasi",
-        "Bisnis Digital"
+        "Sistem Informasi"
       ],
       "authors": [
-        "Bayu Nur Abdallah, S.T., M.T., CSCA.",
+        "Yuyun Tri Wiranti",
+        "Aidil Saputra Kirsan",
         "Arif Wicaksono Septyanto",
-        "Sri Rahayu Natasia",
         "Lovinta Happy Atrinawati",
         "M. Ihsan Alfani Putera",
-        "Yuyun Tri Wiranti",
-        "Aidil Saputra Kirsan"
+        "Sri Rahayu Natasia"
       ],
-      "isCrossProdi": true,
+      "isCrossProdi": false,
       "collaborationPotential": "high"
     },
     "2": {
@@ -603,129 +489,17 @@
           "prodi": "Sistem Informasi",
           "type": "Penelitian",
           "year": "2025"
-        },
-        {
-          "title": "STRATEGI OPTIMISASI LOKASI STASIUN PENUKARAN BATERAI SEPEDA MOTOR LISTRIK DI DAERAH PENYANGGA IKN BERDASARKAN PENDEKATAN PEMROGRAMAN MATEMATIS",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2024"
-        },
-        {
-          "title": "LEAN SIX SIGMA JOURNEY PADA INDUSTRI OLEH-OLEH MAKANAN KHAS DAERAH",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2020"
-        },
-        {
-          "title": "IMPLEMENTASI SISTEM BIMBINGAN PENJUALAN  BERBASIS PREDICTIVE ANALYTICS UNTUK USAHA MIKRO DAN KECIL \r\n(Studi Kasus: Pasar Tradisional Klandasan Balikpapan)",
-          "author": "Ir. Riovan Styx Roring, S.T., M.Kom.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2018"
-        },
-        {
-          "title": "PROTOTYPE SISTEM INFORMASI MANAJEMEN STOK GUDANG PADA INDUSTRI MIKRO KECIL DI KOTA PENYANGGA IKN",
-          "author": "Khairunnisa Rahmah, S.E., M.M., CDMS.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2024"
-        },
-        {
-          "title": "PERKUAT INDUSTRI MIKRO KECIL MELALUI PENDAMPINGAN PROSES BISNIS: KOLABORASI PENGABDIAN MASYARAKAT DENGAN KOPERASI SEBAGAI MITRA UTAMA",
-          "author": "Khairunnisa Rahmah, S.E., M.M., CDMS.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2024"
-        },
-        {
-          "title": "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
-          "author": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
-        },
-        {
-          "title": "RANCANG BANGUN SISTEM STOK GUDANG BERBASIS WEB UNTUK INDUSTRI MIKRO DAN KECIL DI KOTA PENYANGGA IKN",
-          "author": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
-        },
-        {
-          "title": "PROTOTYPE SISTEM INFORMASI MANAJEMEN STOK GUDANG PADA INDUSTRI MIKRO KECIL DI KOTA PENYANGGA IKN",
-          "author": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2024"
-        },
-        {
-          "title": "KAJIAN GARIS PANTAI SECARA TEMPORAR DI WILAYAH PESISIR IKN SEBAGAI PERSIAPAN PEMBAGUNAN INFRASTRUKTUR",
-          "author": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2024"
-        },
-        {
-          "title": "PERKUAT INDUSTRI MIKRO KECIL MELALUI PENDAMPINGAN PROSES BISNIS: KOLABORASI PENGABDIAN MASYARAKAT DENGAN KOPERASI SEBAGAI MITRA UTAMA",
-          "author": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2024"
-        },
-        {
-          "title": "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
-          "author": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
-        },
-        {
-          "title": "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
-          "author": "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
-        },
-        {
-          "title": "RANCANG BANGUN SISTEM STOK GUDANG BERBASIS WEB UNTUK INDUSTRI MIKRO DAN KECIL DI KOTA PENYANGGA IKN",
-          "author": "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
-        },
-        {
-          "title": "PROTOTYPE SISTEM INFORMASI MANAJEMEN STOK GUDANG PADA INDUSTRI MIKRO KECIL DI KOTA PENYANGGA IKN",
-          "author": "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2024"
-        },
-        {
-          "title": "PERKUAT INDUSTRI MIKRO KECIL MELALUI PENDAMPINGAN PROSES BISNIS: KOLABORASI PENGABDIAN MASYARAKAT DENGAN KOPERASI SEBAGAI MITRA UTAMA",
-          "author": "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2024"
         }
       ],
-      "count": 20,
+      "count": 5,
       "prodis": [
-        "Sistem Informasi",
-        "Bisnis Digital"
+        "Sistem Informasi"
       ],
       "authors": [
-        "Bayu Nur Abdallah, S.T., M.T., CSCA.",
         "Dwi Arief Prambudi",
-        "Ir. Riovan Styx Roring, S.T., M.Kom.",
-        "Khairunnisa Rahmah, S.E., M.M., CDMS.",
-        "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-        "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
-        "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
         "I Putu Deny Arthawan Sugih Prabowo"
       ],
-      "isCrossProdi": true,
+      "isCrossProdi": false,
       "collaborationPotential": "high"
     },
     "3": {
@@ -815,62 +589,22 @@
           "prodi": "Sistem Informasi",
           "type": "Penelitian",
           "year": "2023"
-        },
-        {
-          "title": "PENINGKATAN FASILITAS WISATA DENGAN PEMANFAATAN PANEL SURYA DALAM PENERANGAN AREA FOTO DI TANJUNG GADING KM.12 BALIKPAPAN",
-          "author": "Eka Krisna Santoso, S.Si., MBA.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
-        },
-        {
-          "title": "DAMPAK KEMAMPUAN MANAJEMEN PROSES BISNIS DAN ADOPSI KECERDASAN BUATAN  TERHADAP KINERJA PROSES: STUDI KASUS UKM DI KAWASAN IKN",
-          "author": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
-        },
-        {
-          "title": "DAMPAK KEMAMPUAN MANAJEMEN PROSES BISNIS DAN ADOPSI KECERDASAN BUATAN  TERHADAP KINERJA PROSES: STUDI KASUS UKM DI KAWASAN IKN",
-          "author": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
-        },
-        {
-          "title": "Peran isu privasi terhadap efektivitas pemanfaatan Artificial Intelligence di Social Commerce: Perspektif Fungsional dan Sosial Emosional",
-          "author": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
-        },
-        {
-          "title": "DAMPAK KEMAMPUAN MANAJEMEN PROSES BISNIS DAN ADOPSI KECERDASAN BUATAN  TERHADAP KINERJA PROSES: STUDI KASUS UKM DI KAWASAN IKN",
-          "author": "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
         }
       ],
-      "count": 16,
+      "count": 11,
       "prodis": [
-        "Sistem Informasi",
-        "Bisnis Digital"
+        "Sistem Informasi"
       ],
       "authors": [
-        "Arif Wicaksono Septyanto",
-        "Dwi Arief Prambudi",
-        "Sri Rahayu Natasia",
-        "Henokh Lugo Hariyanto",
-        "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-        "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
         "Yuyun Tri Wiranti",
+        "Aidil Saputra Kirsan",
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto",
         "Vika Fitratunnany Insanittaqwa",
-        "Eka Krisna Santoso, S.Si., MBA.",
-        "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-        "Aidil Saputra Kirsan"
+        "Dwi Arief Prambudi",
+        "Sri Rahayu Natasia"
       ],
-      "isCrossProdi": true,
+      "isCrossProdi": false,
       "collaborationPotential": "high"
     },
     "4": {
@@ -1016,73 +750,25 @@
           "prodi": "Sistem Informasi",
           "type": "Penelitian",
           "year": "2021"
-        },
-        {
-          "title": "PERAN MALL SEBAGAI AGEN KEMAJUAN PRODUK HALAL: STUDI KASUS DI MALL PLAZA BALIKPAPAN",
-          "author": "Agung Prabowo, S.E., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2024"
-        },
-        {
-          "title": "MODEL OPTIMASI DISTRIBUSI MULTI-PRODUK MULTI-ESELON MENGGUNAKAN SISTEM DEDICATED WAREHOUSE",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2020"
-        },
-        {
-          "title": "PEMBERDAYAAN MASYARAKAT PESISIR MELALUI PRODUK INOVATIF OLAHAN BUAH BROWNIES MANGROVE BERBASIS EKOWISATA NEW NORMAL DI KELURAHAN MARGOMULYO KOTA BALIKPAPAN",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2021"
-        },
-        {
-          "title": "REDESIGN PACKAGING PRODUK DAN PELATIHAN DESIGN SEBAGAI UPAYA MENINGKATKAN PROMOSI KAMPUNG WISATA KANG BEJO",
-          "author": "Deli Yansyah, S.E., M.Acc., Ak.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2024"
-        },
-        {
-          "title": "REDESIGN PACKAGING PRODUK DAN PELATIHAN DESIGN SEBAGAI UPAYA MENINGKATKAN PROMOSI KAMPUNG WISATA KANG BEJO",
-          "author": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2024"
-        },
-        {
-          "title": "PENGEMBANGAN SUMBER DAYA SINGKONG DI KAMPUNG BANYUMAS RT 32 KARANG JOANG KECAMATAN BALIKPAPAN UTARA",
-          "author": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2024"
         }
       ],
-      "count": 25,
+      "count": 19,
       "prodis": [
-        "Sistem Informasi",
-        "Bisnis Digital"
+        "Sistem Informasi"
       ],
       "authors": [
-        "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-        "Deli Yansyah, S.E., M.Acc., Ak.",
+        "Yuyun Tri Wiranti",
+        "Aidil Saputra Kirsan",
         "Arif Wicaksono Septyanto",
-        "Sri Rahayu Natasia",
-        "Nursanti Novi Arisa",
-        "M. Ihsan Alfani Putera",
         "Hendy Indrawan Sunardi",
         "Dwi Nur Amalia",
-        "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-        "Yuyun Tri Wiranti",
-        "M. Gilvy Langgawan Putra",
-        "Agung Prabowo, S.E., M.M.",
-        "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
         "I Putu Deny Arthawan Sugih Prabowo",
-        "Aidil Saputra Kirsan"
+        "M. Ihsan Alfani Putera",
+        "Sri Rahayu Natasia",
+        "Nursanti Novi Arisa",
+        "M. Gilvy Langgawan Putra"
       ],
-      "isCrossProdi": true,
+      "isCrossProdi": false,
       "collaborationPotential": "high"
     },
     "5": {
@@ -1221,58 +907,25 @@
           "prodi": "Sistem Informasi",
           "type": "Pengabdian",
           "year": "2022"
-        },
-        {
-          "title": "DIGITALISASI LAYANAN ADMINISTRASI RT MELALUI PENGEMBANGAN WEBSITE UNTUK PENGELOLAAN DATA WARGA",
-          "author": "Deli Yansyah, S.E., M.Acc., Ak.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
-        },
-        {
-          "title": "DIGITALISASI PROMOSI CELOSIA GARDEN PARK BALIKPAPAN  MELALUI PENGEMBANGAN WEBSITE SEBAGAI PLATFORM INFORMASI UTAMA",
-          "author": "Eka Krisna Santoso, S.Si., MBA.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
-        },
-        {
-          "title": "DIGITALISASI LAYANAN ADMINISTRASI RT MELALUI PENGEMBANGAN WEBSITE UNTUK PENGELOLAAN DATA WARGA",
-          "author": "Khairunnisa Rahmah, S.E., M.M., CDMS.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
-        },
-        {
-          "title": "PEMBERDAYAAN URBAN FARMING DAN PENGELOLAAN SAMPAH MENJADI KOMPOSDI KELURAHAN GUNUNG SAMARINDA BARU, RT 9 PERUMAHAN TAMAN SARI BUKIT",
-          "author": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2022"
         }
       ],
-      "count": 22,
+      "count": 18,
       "prodis": [
-        "Sistem Informasi",
-        "Bisnis Digital"
+        "Sistem Informasi"
       ],
       "authors": [
-        "Deli Yansyah, S.E., M.Acc., Ak.",
+        "Yuyun Tri Wiranti",
+        "Aidil Saputra Kirsan",
+        "Henokh Lugo Hariyanto",
+        "Vika Fitratunnany Insanittaqwa",
+        "Hendy Indrawan Sunardi",
         "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo",
         "Sri Rahayu Natasia",
         "Nursanti Novi Arisa",
-        "Khairunnisa Rahmah, S.E., M.M., CDMS.",
-        "Henokh Lugo Hariyanto",
-        "Hendy Indrawan Sunardi",
-        "M. Gilvy Langgawan Putra",
-        "Yuyun Tri Wiranti",
-        "Vika Fitratunnany Insanittaqwa",
-        "Eka Krisna Santoso, S.Si., MBA.",
-        "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-        "I Putu Deny Arthawan Sugih Prabowo",
-        "Aidil Saputra Kirsan"
+        "M. Gilvy Langgawan Putra"
       ],
-      "isCrossProdi": true,
+      "isCrossProdi": false,
       "collaborationPotential": "high"
     },
     "6": {
@@ -1327,67 +980,19 @@
           "prodi": "Sistem Informasi",
           "type": "Pengabdian",
           "year": "2020"
-        },
-        {
-          "title": "EVALUASI TINGKAT PENERIMAAN DAN PENGALAMAN PENGGUNA SISTEM CORETAX PADA PERUSAHAAN WAJIB PAJAK DI INDONESIA",
-          "author": "Agung Prabowo, S.E., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
-        },
-        {
-          "title": "EVALUASI TINGKAT PENERIMAAN DAN PENGALAMAN PENGGUNA SISTEM CORETAX PADA PERUSAHAAN WAJIB PAJAK DI INDONESIA",
-          "author": "Deli Yansyah, S.E., M.Acc., Ak.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
-        },
-        {
-          "title": "EVALUASI TINGKAT PENERIMAAN DAN PENGALAMAN PENGGUNA SISTEM CORETAX PADA PERUSAHAAN WAJIB PAJAK DI INDONESIA",
-          "author": "Khairunnisa Rahmah, S.E., M.M., CDMS.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
-        },
-        {
-          "title": "PENGARUH LITERASI DIGITAL DAN PENGALAMAN DIGITAL TERHADAP PERILAKU DIGITAL UMKM DI KOTA PENYANGGA IKN",
-          "author": "Khairunnisa Rahmah, S.E., M.M., CDMS.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2023"
-        },
-        {
-          "title": "PENGARUH LITERASI DIGITAL DAN PENGALAMAN DIGITAL TERHADAP PERILAKU DIGITAL UMKM DI KOTA PENYANGGA IKN",
-          "author": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2023"
-        },
-        {
-          "title": "PENGARUH LITERASI DIGITAL DAN PENGALAMAN DIGITAL TERHADAP PERILAKU DIGITAL UMKM DI KOTA PENYANGGA IKN",
-          "author": "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2023"
         }
       ],
-      "count": 12,
+      "count": 6,
       "prodis": [
-        "Sistem Informasi",
-        "Bisnis Digital"
+        "Sistem Informasi"
       ],
       "authors": [
-        "Deli Yansyah, S.E., M.Acc., Ak.",
-        "Sri Rahayu Natasia",
-        "Khairunnisa Rahmah, S.E., M.M., CDMS.",
-        "Dwi Nur Amalia",
-        "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-        "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
         "Vika Fitratunnany Insanittaqwa",
-        "Agung Prabowo, S.E., M.M.",
-        "I Putu Deny Arthawan Sugih Prabowo"
+        "Dwi Nur Amalia",
+        "I Putu Deny Arthawan Sugih Prabowo",
+        "Sri Rahayu Natasia"
       ],
-      "isCrossProdi": true,
+      "isCrossProdi": false,
       "collaborationPotential": "high"
     },
     "7": {
@@ -1456,91 +1061,21 @@
           "prodi": "Sistem Informasi",
           "type": "Pengabdian",
           "year": "2021"
-        },
-        {
-          "title": "PEMBERDAYAAN EKONOMI MASYARAKAT MELALUI PENINGKATAN KUALITAS, AKSES, DAN KEBERSIHAN DI PASAR BANGUN REKSA",
-          "author": "Agung Prabowo, S.E., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
-        },
-        {
-          "title": "PENERAPAN DAN PEMANFAATAN TEKNOLOGI AQUAPONIK BERBASIS INTERNET OF THINGS (IOT) DI MASJID BERKAH BOX",
-          "author": "Agung Prabowo, S.E., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2024"
-        },
-        {
-          "title": "EDUKASI PPKS DAN PENGEMBANGAN SISTEM INFORMASI PENDATAAN WARGA DI GRAHA POLTEKBA",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
-        },
-        {
-          "title": "PENGEMBANGAN DAN PELATIHAN SISTEM PENDATAAN DONASI BERBASIS WEB PADA MASJID BERKAH BOX BALIKPAPAN",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
-        },
-        {
-          "title": "PEMBERDAYAAN MASYARAKAT MELALUI PROGRAM EDUKASI DAN PEMANFAATAN TEKNOLOGI DI YAYASAN BERKAH BOX BALIKPAPAN",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2024"
-        },
-        {
-          "title": "RANCANGAN DAN PENGEMBANGAN WEBSITE SERTA PROGRAM EDUKASI RT 34 KELURAHAN KARANG JOANG",
-          "author": "Eka Krisna Santoso, S.Si., MBA.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2024"
-        },
-        {
-          "title": "PEMBERDAYAAN MASYARAKAT MELALUI PROGRAM EDUKASI DAN PEMANFAATAN TEKNOLOGI DI YAYASAN BERKAH BOX BALIKPAPAN",
-          "author": "Khairunnisa Rahmah, S.E., M.M., CDMS.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2024"
-        },
-        {
-          "title": "PENERAPAN DAN PEMANFAATAN TEKNOLOGI AQUAPONIK BERBASIS INTERNET OF THINGS (IOT) DI MASJID BERKAH BOX",
-          "author": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2024"
-        },
-        {
-          "title": "EDUKASI PPKS DAN PENGEMBANGAN SISTEM INFORMASI PENDATAAN WARGA DI GRAHA POLTEKBA",
-          "author": "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
         }
       ],
-      "count": 17,
+      "count": 8,
       "prodis": [
-        "Sistem Informasi",
-        "Bisnis Digital"
+        "Sistem Informasi"
       ],
       "authors": [
-        "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-        "Dwi Arief Prambudi",
-        "Rosa Eliviani",
-        "Khairunnisa Rahmah, S.E., M.M., CDMS.",
-        "Hendy Indrawan Sunardi",
-        "M. Gilvy Langgawan Putra",
-        "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
         "Yuyun Tri Wiranti",
         "Vika Fitratunnany Insanittaqwa",
-        "Agung Prabowo, S.E., M.M.",
-        "Eka Krisna Santoso, S.Si., MBA.",
-        "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM."
+        "Hendy Indrawan Sunardi",
+        "Dwi Arief Prambudi",
+        "Rosa Eliviani",
+        "M. Gilvy Langgawan Putra"
       ],
-      "isCrossProdi": true,
+      "isCrossProdi": false,
       "collaborationPotential": "high"
     },
     "8": {
@@ -1623,80 +1158,20 @@
           "prodi": "Sistem Informasi",
           "type": "Penelitian",
           "year": "2023"
-        },
-        {
-          "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS",
-          "author": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
-        },
-        {
-          "title": "PELATIHAN OPTIMALISASI PEMASARAN DIGITAL PADA BATIK SHAHO DAN KOMUNITAS BATIK TIGA ZAMAN BALIKPAPAN",
-          "author": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
-        },
-        {
-          "title": "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
-          "author": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
-        },
-        {
-          "title": "PERANCANGAN DECISION SUPPORT SYSTEM BERBASIS WEB UNTUK PEMILIHAN PRODUK UMKM LAYAK EKSPORT KERJASAMA INKUBATOR BISNIS DAN TEKNOLOGI ITK DAN KOMUNITAS PENGUSAHA MUSLIM INDONESIA (KPMI)",
-          "author": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
-        },
-        {
-          "title": "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
-          "author": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
-        },
-        {
-          "title": "PENINGKATAN KEMANDIRIAN EKONOMI PERKUMPULAN PENYANDANG DISABILITAS INDONESIA (PPDI) BALIKPAPAN MELALUI PENGUATAN PEMASARAN DIGITAL DAN PEMBERDAYAAN LEGALITAS PRODUK",
-          "author": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
-        },
-        {
-          "title": "Peningkatan Kapasitas Produksi dan Daya Saing Kelompok Usaha Bersama melalui Pelatihan Teknologi Sablon dan Pemasaran Digital di Karang Joang Balikpapan Utara",
-          "author": "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
-        },
-        {
-          "title": "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
-          "author": "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Pengabdian",
-          "year": "2025"
         }
       ],
-      "count": 18,
+      "count": 10,
       "prodis": [
-        "Sistem Informasi",
-        "Bisnis Digital"
+        "Sistem Informasi"
       ],
       "authors": [
         "Arif Wicaksono Septyanto",
-        "Dwi Arief Prambudi",
-        "Nursanti Novi Arisa",
         "Henokh Lugo Hariyanto",
-        "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-        "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
-        "Muhammad Ikhsan Alif S., S.E., M.Sc., CPEC., CHCM.",
-        "I Putu Deny Arthawan Sugih Prabowo"
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo",
+        "Nursanti Novi Arisa"
       ],
-      "isCrossProdi": true,
+      "isCrossProdi": false,
       "collaborationPotential": "high"
     },
     "9": {
@@ -1737,125 +1212,20 @@
           "prodi": "Sistem Informasi",
           "type": "Penelitian",
           "year": "2022"
-        },
-        {
-          "title": "ANALISIS PEMENUHAN KETERSEDIAAN AIR BERSIH DENGAN PEMANFAATAN GREY WATER DAN PENGATURAN PIPA DI BALIKPAPAN SEBAGAI KOTA PENYANGGA IBU KOTA NEGARA NUSANTARA",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
-        },
-        {
-          "title": "PERANCANGAN BASIS DATA WISATA KULINER SEBAGAI SARANA PROMOSI DAN PEMASARAN DESTINASI KULINER BERBASIS DIGITAL DI KOTA PENYANGGA IBU KOTA NEGARA (IKN)",
-          "author": "Khairunnisa Rahmah, S.E., M.M., CDMS.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2023"
-        },
-        {
-          "title": "Perancangan Desain UI/UX Prototype Aplikasi Wisata Kuliner sebagai Media Promosi dan Pemasaran Digital UMKM di Kota Penyangga IKN dengan menggunakan Pendekatan User Centered Design",
-          "author": "Khairunnisa Rahmah, S.E., M.M., CDMS.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2023"
-        },
-        {
-          "title": "PERANCANGAN BASIS DATA WISATA KULINER SEBAGAI SARANA PROMOSI DAN PEMASARAN DESTINASI KULINER BERBASIS DIGITAL DI KOTA PENYANGGA IBU KOTA NEGARA (IKN)",
-          "author": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2023"
-        },
-        {
-          "title": "Perancangan Desain UI/UX Prototype Aplikasi Wisata Kuliner sebagai Media Promosi dan Pemasaran Digital UMKM di Kota Penyangga IKN dengan menggunakan Pendekatan User Centered Design",
-          "author": "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2023"
-        },
-        {
-          "title": "PERANCANGAN BASIS DATA WISATA KULINER SEBAGAI SARANA PROMOSI DAN PEMASARAN DESTINASI KULINER BERBASIS DIGITAL DI KOTA PENYANGGA IBU KOTA NEGARA (IKN)",
-          "author": "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2023"
-        },
-        {
-          "title": "Perancangan Desain UI/UX Prototype Aplikasi Wisata Kuliner sebagai Media Promosi dan Pemasaran Digital UMKM di Kota Penyangga IKN dengan menggunakan Pendekatan User Centered Design",
-          "author": "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2023"
-        }
-      ],
-      "count": 11,
-      "prodis": [
-        "Sistem Informasi",
-        "Bisnis Digital"
-      ],
-      "authors": [
-        "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-        "Arif Wicaksono Septyanto",
-        "Sri Rahayu Natasia",
-        "M. Ihsan Alfani Putera",
-        "Khairunnisa Rahmah, S.E., M.M., CDMS.",
-        "Luh Made Wisnu Satyaninggrat, S.Kom., M.T.",
-        "Prasis Damai Nursyam Hamijaya, S.P., M.M.",
-        "Aidil Saputra Kirsan"
-      ],
-      "isCrossProdi": true,
-      "collaborationPotential": "high"
-    },
-    "10": {
-      "id": 10,
-      "name": "Skema & Pembiayaan & Umkm",
-      "keywords": [
-        "skema",
-        "pembiayaan",
-        "umkm",
-        "pertanian",
-        "lingkungan"
-      ],
-      "items": [
-        {
-          "title": "SKEMA PEMBIAYAAN UMKM PERTANIAN DI KALIMANTANTIMUR BERBASIS LINGKUNGAN (TAHUN KE-3)",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2024"
-        },
-        {
-          "title": "SKEMA PEMBIAYAAN UMKM PERTANIAN DI KALIMANTAN TIMUR BERBASIS  LINGKUNGAN (ECO-FRIENDLY) (TAHUN KE-2)",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2023"
-        },
-        {
-          "title": "SKEMA PEMBIAYAAN UMKM BIDANG PANGAN/ PERTANIAN DI KALIMANTAN TIMUR BERBASIS LINGKUNGAN (ECO-FRIENDLY)",
-          "author": "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2022"
-        },
-        {
-          "title": "SKEMA PEMBIAYAAN UMKM PERTANIAN DI KALIMANTANTIMUR BERBASIS LINGKUNGAN (TAHUN KE-3)",
-          "author": "Deli Yansyah, S.E., M.Acc., Ak.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2024"
         }
       ],
       "count": 4,
       "prodis": [
-        "Bisnis Digital"
+        "Sistem Informasi"
       ],
       "authors": [
-        "Bayu Nur Abdallah, S.T., M.T., CSCA.",
-        "Deli Yansyah, S.E., M.Acc., Ak."
+        "Aidil Saputra Kirsan",
+        "Arif Wicaksono Septyanto",
+        "M. Ihsan Alfani Putera",
+        "Sri Rahayu Natasia"
       ],
       "isCrossProdi": false,
-      "collaborationPotential": "low"
+      "collaborationPotential": "high"
     },
     "11": {
       "id": 11,
@@ -1965,64 +1335,24 @@
           "prodi": "Sistem Informasi",
           "type": "Penelitian",
           "year": "2023"
-        },
-        {
-          "title": "DESAIN DAN IMPLEMENTASI SMART AUTO FEEDER FISH  BERDASARKAN UMUR DAN UKURAN IKAN DENGAN METODE  FUZZY LOGIC",
-          "author": "Deli Yansyah, S.E., M.Acc., Ak.",
-          "prodi": "Bisnis Digital",
-          "type": "Penelitian",
-          "year": "2025"
         }
       ],
-      "count": 15,
+      "count": 14,
       "prodis": [
-        "Sistem Informasi",
-        "Bisnis Digital"
+        "Sistem Informasi"
       ],
       "authors": [
-        "Deli Yansyah, S.E., M.Acc., Ak.",
+        "Aidil Saputra Kirsan",
         "Arif Wicaksono Septyanto",
-        "Sri Rahayu Natasia",
-        "Nursanti Novi Arisa",
-        "M. Ihsan Alfani Putera",
         "Henokh Lugo Hariyanto",
-        "Hendy Indrawan Sunardi",
         "Vika Fitratunnany Insanittaqwa",
-        "Aidil Saputra Kirsan"
+        "Hendy Indrawan Sunardi",
+        "M. Ihsan Alfani Putera",
+        "Sri Rahayu Natasia",
+        "Nursanti Novi Arisa"
       ],
-      "isCrossProdi": true,
+      "isCrossProdi": false,
       "collaborationPotential": "high"
     }
-  },
-  "summary": {
-    "crossProdiCount": 11,
-    "highPotentialCount": 11,
-    "topClusters": [
-      {
-        "id": 0,
-        "name": "Balikpapan & Kota & Timur",
-        "count": 52
-      },
-      {
-        "id": 4,
-        "name": "Balikpapan & Media & Peningkatan",
-        "count": 25
-      },
-      {
-        "id": 5,
-        "name": "Sampah & Kelurahan & Pengelolaan",
-        "count": 22
-      },
-      {
-        "id": 2,
-        "name": "Ikn & Kota & Penyangga",
-        "count": 20
-      },
-      {
-        "id": 8,
-        "name": "Produk & Balikpapan & Pemasaran",
-        "count": 18
-      }
-    ]
   }
 }

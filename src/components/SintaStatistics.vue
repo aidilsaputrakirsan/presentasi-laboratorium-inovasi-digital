@@ -513,7 +513,7 @@ import {
   ArcElement
 } from 'chart.js';
 
-import sintaData from '../data/sinta_data.json';
+import { prodiRegistry, prodiList } from '../data/prodi/index.js';
 
 ChartJS.register(
   Title,
@@ -551,12 +551,27 @@ export default {
     };
   },
   computed: {
-    metadata() { return sintaData?.metadata || null; },
-    sintaLecturers() { 
-      const allLecturers = sintaData?.lecturers || [];
-      if (!this.selectedProdi) return allLecturers;
-      // Filter by prodi name that matches the selected prodi key
-      return allLecturers.filter(l => l.prodi === this.selectedProdi);
+    metadata() {
+      for (const p of prodiList.filter(p => p.hasData)) {
+        const data = prodiRegistry[p.slug];
+        if (data?.sintaData?.metadata) return data.sintaData.metadata;
+      }
+      return null;
+    },
+    sintaLecturers() {
+      if (!this.selectedProdi) {
+        const allLecturers = [];
+        prodiList.filter(p => p.hasData).forEach(p => {
+          const data = prodiRegistry[p.slug];
+          if (data?.sintaData?.lecturers) allLecturers.push(...data.sintaData.lecturers);
+        });
+        return allLecturers;
+      }
+      const prodi = prodiList.find(p => p.name === this.selectedProdi);
+      if (prodi && prodiRegistry[prodi.slug]?.sintaData?.lecturers) {
+        return prodiRegistry[prodi.slug].sintaData.lecturers;
+      }
+      return [];
     },
     sortedLecturers() {
       const lecturers = [...this.sintaLecturers];

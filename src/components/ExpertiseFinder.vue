@@ -109,8 +109,7 @@
 </template>
 
 <script>
-// Import generated expertise profile data
-import expertiseData from '../data/expertise_data.json';
+import { prodiRegistry, prodiList } from '../data/prodi/index.js';
 
 export default {
   name: 'ExpertiseFinder',
@@ -119,8 +118,17 @@ export default {
       query: '',
       results: [],
       hasSearched: false,
-      lastTokens: [],
-      profiles: expertiseData.profiles || []
+      lastTokens: []
+    }
+  },
+  computed: {
+    profiles() {
+      const allProfiles = [];
+      prodiList.filter(p => p.hasData).forEach(p => {
+        const data = prodiRegistry[p.slug];
+        if (data?.expertiseData?.profiles) allProfiles.push(...data.expertiseData.profiles);
+      });
+      return allProfiles;
     }
   },
   methods: {

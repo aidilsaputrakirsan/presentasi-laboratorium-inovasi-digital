@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import lecturersData from '../data/lecturers.json';
+import { prodiRegistry, prodiList } from '../data/prodi/index.js';
 
 export default {
   name: 'ProdiSelector',
@@ -51,9 +51,20 @@ export default {
       default: null
     }
   },
-  data() {
-    return {
-      studyPrograms: lecturersData.studyPrograms
+  computed: {
+    studyPrograms() {
+      const programs = {};
+      prodiList.filter(p => p.hasData).forEach(p => {
+        const data = prodiRegistry[p.slug];
+        if (data && data.config) {
+          programs[p.name] = {
+            name: data.config.name,
+            code: data.config.code,
+            lecturers: data.config.lecturers
+          };
+        }
+      });
+      return programs;
     }
   },
   methods: {

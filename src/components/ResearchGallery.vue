@@ -27,8 +27,7 @@
         <!-- Prodi Filter -->
         <select v-model="selectedProdi" class="bg-slate-700 text-white px-4 py-2 rounded-lg text-sm font-medium border border-slate-600 focus:border-rose-500 focus:outline-none">
           <option value="all">Semua Prodi</option>
-          <option value="Sistem Informasi">Sistem Informasi</option>
-          <option value="Bisnis Digital">Bisnis Digital</option>
+          <option v-for="p in availableProdi" :key="p.slug" :value="p.name">{{ p.name }}</option>
         </select>
 
         <!-- Search -->
@@ -184,7 +183,7 @@ import {
   Legend,
   Filler
 } from 'chart.js';
-import sintaData from '../data/sinta_data.json';
+import { prodiRegistry, prodiList } from '../data/prodi/index.js';
 
 ChartJS.register(
   CategoryScale,
@@ -284,8 +283,16 @@ export default {
     };
   },
   computed: {
+    availableProdi() {
+      return prodiList.filter(p => p.hasData);
+    },
     lecturers() {
-      return sintaData?.lecturers || [];
+      const allLecturers = [];
+      prodiList.filter(p => p.hasData).forEach(p => {
+        const data = prodiRegistry[p.slug];
+        if (data?.sintaData?.lecturers) allLecturers.push(...data.sintaData.lecturers);
+      });
+      return allLecturers;
     },
 
     // Filtered lecturers based on prodi selection

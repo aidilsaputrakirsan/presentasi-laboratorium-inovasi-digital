@@ -98,7 +98,7 @@ use([
 ]);
 
 // Import data
-import roadmapData from '../data/roadmap_data.json';
+import roadmapData from '../data/shared/roadmap_data.json';
 
 export default {
   name: 'ResearchRoadmap',

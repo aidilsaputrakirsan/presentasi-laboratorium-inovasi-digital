@@ -573,8 +573,7 @@ import {
   Tooltip,
   Legend
 } from 'chart.js'
-import sintaData from '../data/sinta_data.json'
-import lecturersConfig from '../data/lecturers.json'
+import { prodiRegistry, prodiList as prodiListData } from '../data/prodi/index.js'
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, ArcElement, Title, Tooltip, Legend)
 
@@ -592,28 +591,31 @@ export default {
   },
   computed: {
     lecturers() {
-      return sintaData.lecturers || []
+      const allLecturers = []
+      prodiListData.filter(p => p.hasData).forEach(p => {
+        const data = prodiRegistry[p.slug]
+        if (data?.sintaData?.lecturers) allLecturers.push(...data.sintaData.lecturers)
+      })
+      return allLecturers
     },
 
     prodiList() {
-      const prodis = new Set(this.lecturers.map(l => l.prodi))
-      return Array.from(prodis).sort()
+      return prodiListData.filter(p => p.hasData).map(p => p.name).sort()
     },
 
-    // Daftar nama DTPS per prodi (dari lecturers.json sebagai master data)
+    // Daftar nama DTPS per prodi (dari lecturers per prodi sebagai master data)
     dtpsNamesByProdi() {
       const result = {}
-      const programs = lecturersConfig.studyPrograms || {}
-
-      for (const [prodiName, prodiData] of Object.entries(programs)) {
-        result[prodiName] = new Set()
-        if (prodiData.lecturers) {
-          prodiData.lecturers.forEach(l => {
+      prodiListData.filter(p => p.hasData).forEach(p => {
+        const data = prodiRegistry[p.slug]
+        if (data?.config?.lecturers) {
+          result[p.name] = new Set()
+          data.config.lecturers.forEach(l => {
             const normalizedName = this.normalizeName(l.name)
-            result[prodiName].add(normalizedName)
+            result[p.name].add(normalizedName)
           })
         }
-      }
+      })
       return result
     },
 
