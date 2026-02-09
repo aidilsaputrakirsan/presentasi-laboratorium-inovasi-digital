@@ -13,7 +13,7 @@
           </div>
           <div>
             <div class="flex items-center gap-2">
-              <span class="text-lg font-black text-white tracking-tight">SINTA-Pulse</span>
+              <span class="text-lg font-black text-white tracking-tight">Galeri Inovasi</span>
               <span class="px-2 py-0.5 bg-rose-500/20 text-rose-300 border border-rose-500/30 text-[9px] font-bold rounded-full uppercase tracking-wider flex items-center gap-1">
                 <span class="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>
                 Live
@@ -314,6 +314,8 @@
              <div class="bg-indigo-500 h-full shadow-[0_0_10px_rgba(99,102,241,0.5)]" :style="`width: ${(stats.totalScopus / (stats.totalScopus + stats.totalSinta || 1)) * 100}%`"></div>
              <div class="bg-sky-400 h-full" :style="`width: ${(stats.totalSinta / (stats.totalScopus + stats.totalSinta || 1)) * 100}%`"></div>
           </div>
+        </div>
+
         <!-- Sitasi (Google Scholar) -->
         <div class="relative overflow-hidden bg-white p-6 rounded-2xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border border-slate-100 group hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
@@ -329,37 +331,36 @@
           </div>
         </div>
       </div>
-      </div>
 
       <!-- Secondary Stats Grid (Smaller) -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-         <div class="bg-white rounded-xl p-5 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-slate-100 flex items-center justify-between group hover:border-orange-200 transition-all">
+         <div class="bg-white rounded-xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center justify-between group hover:border-blue-200 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300">
             <div>
                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider mb-1">Google Scholar</p>
-               <p class="text-2xl font-black text-slate-800 group-hover:text-orange-600 transition-colors">{{ stats.totalGoogle }}</p>
+               <p class="text-2xl font-black text-slate-800 group-hover:text-blue-600 transition-colors">{{ stats.totalGoogle }}</p>
             </div>
-            <div class="w-10 h-10 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center font-black text-xs shadow-sm border border-orange-100 group-hover:scale-110 transition-transform">GS</div>
+            <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-black text-xs shadow-sm border border-blue-100 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">GS</div>
          </div>
-         <div class="bg-white rounded-xl p-5 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-slate-100 flex items-center justify-between group hover:border-rose-200 transition-all">
+         <div class="bg-white rounded-xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center justify-between group hover:border-rose-200 hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300">
             <div>
                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider mb-1">RAMA Repositori</p>
                <p class="text-2xl font-black text-slate-800 group-hover:text-rose-600 transition-colors">{{ stats.totalRama }}</p>
             </div>
-             <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-black text-xs shadow-sm border border-rose-100 group-hover:scale-110 transition-transform">RM</div>
+             <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-black text-xs shadow-sm border border-rose-100 group-hover:scale-110 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300">RM</div>
          </div>
-         <div class="bg-white rounded-xl p-5 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-slate-100 flex items-center justify-between group hover:border-purple-200 transition-all">
+         <div class="bg-white rounded-xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center justify-between group hover:border-violet-200 hover:shadow-lg hover:shadow-violet-500/5 transition-all duration-300">
             <div>
                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider mb-1">HKI / IPR</p>
-               <p class="text-2xl font-black text-slate-800 group-hover:text-purple-600 transition-colors">{{ stats.totalIpr }}</p>
+               <p class="text-2xl font-black text-slate-800 group-hover:text-violet-600 transition-colors">{{ stats.totalIpr }}</p>
             </div>
-             <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center font-black text-xs shadow-sm border border-purple-100 group-hover:scale-110 transition-transform">IP</div>
+             <div class="w-10 h-10 rounded-xl bg-violet-50 text-violet-600 flex items-center justify-center font-black text-xs shadow-sm border border-violet-100 group-hover:scale-110 group-hover:bg-violet-600 group-hover:text-white transition-all duration-300">IP</div>
          </div>
-         <div class="bg-white rounded-xl p-5 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-slate-100 flex items-center justify-between group hover:border-teal-200 transition-all">
+         <div class="bg-white rounded-xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center justify-between group hover:border-emerald-200 hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300">
             <div>
                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider mb-1">Buku Ajar</p>
-               <p class="text-2xl font-black text-slate-800 group-hover:text-teal-600 transition-colors">{{ stats.totalBooks }}</p>
+               <p class="text-2xl font-black text-slate-800 group-hover:text-emerald-600 transition-colors">{{ stats.totalBooks }}</p>
             </div>
-             <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center font-black text-xs shadow-sm border border-teal-100 group-hover:scale-110 transition-transform">BK</div>
+             <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-xs shadow-sm border border-emerald-100 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">BK</div>
          </div>
       </div>
 
@@ -734,8 +735,8 @@
     <div class="text-center text-sm text-slate-500 pb-6 space-y-2">
       <div class="flex items-center justify-center gap-3">
         <div class="flex items-center gap-2 px-3 py-1.5 bg-slate-100 rounded-full">
-          <div class="w-2 h-2 bg-rose-500 rounded-full animate-pulse"></div>
-          <span class="text-xs font-semibold text-slate-600">SINTA-Pulse Active</span>
+          <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+          <span class="text-xs font-semibold text-slate-600">Galeri Inovasi Active</span>
         </div>
         <span v-if="metadata" class="text-slate-400">|</span>
         <span v-if="metadata" class="text-slate-500">Last sync: {{ formatDate(metadata.generatedAt) }}</span>
@@ -823,7 +824,7 @@ export default {
         });
         return allLecturers;
       }
-      const prodi = prodiList.find(p => p.name === this.selectedProdi);
+      const prodi = prodiList.find(p => p.slug === this.selectedProdi);
       if (prodi && prodiRegistry[prodi.slug]?.sintaData?.lecturers) {
         return prodiRegistry[prodi.slug].sintaData.lecturers;
       }
