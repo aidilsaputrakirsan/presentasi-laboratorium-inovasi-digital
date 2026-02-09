@@ -2,97 +2,151 @@
   <div class="space-y-6">
     <!-- Header -->
     <!-- Header -->
-    <div class="relative overflow-hidden rounded-2xl bg-slate-900 shadow-xl border border-slate-800">
+    <div class="relative overflow-hidden rounded-2xl bg-white shadow-xl border border-slate-100">
       <!-- Background Effects -->
-      <div class="absolute top-0 right-0 w-96 h-96 bg-rose-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+      <div class="absolute top-0 right-0 w-96 h-96 bg-rose-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-indigo-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
       
       <div class="relative p-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="flex items-center gap-5">
           <!-- Pulse Logo -->
           <div class="relative group">
-            <div class="w-16 h-16 bg-gradient-to-br from-rose-500 via-pink-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg shadow-rose-500/20 group-hover:scale-105 transition-transform duration-300">
+            <div class="w-16 h-16 bg-gradient-to-br from-blue-600 via-indigo-600 to-violet-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform duration-300">
               <svg class="w-8 h-8 text-white drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
               </svg>
             </div>
             <!-- Pulse ring -->
-            <div class="absolute inset-0 rounded-2xl bg-rose-500/40 animate-ping opacity-75"></div>
+            <div class="absolute inset-0 rounded-2xl bg-blue-500/20 animate-ping opacity-75"></div>
           </div>
           <div>
             <div class="flex items-center gap-3 mb-1">
-              <h1 class="text-3xl font-black text-white tracking-tight leading-none bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">SINTA-Pulse</h1>
-              <span class="px-2.5 py-0.5 bg-rose-500/20 text-rose-300 border border-rose-500/30 text-[10px] font-bold rounded-full uppercase tracking-wider backdrop-blur-sm flex items-center gap-1.5">
-                <span class="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>
-                Live Sync
+              <h1 class="text-3xl font-black text-slate-800 tracking-tight leading-none bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-600">Galeri Inovasi</h1>
+              <span class="px-2.5 py-0.5 bg-blue-50 text-blue-600 border border-blue-100 text-[10px] font-bold rounded-full uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
+                Digital Lab
               </span>
             </div>
-            <p class="text-slate-400 font-medium">Dashboard Monitoring Performa Dosen & Tridarma</p>
+            <p class="text-slate-500 font-medium">Katalog Riset & Pengembangan Inovasi</p>
           </div>
         </div>
         
         <div class="flex items-center gap-4 z-10">
           <div class="hidden md:flex flex-col items-end">
-            <span class="text-[10px] uppercase tracking-wider text-slate-500 font-bold">Total Dosen</span>
-            <span class="text-2xl font-bold text-white leading-none">{{ sintaLecturers.length }}</span>
+            <span class="text-[10px] uppercase tracking-wider text-slate-400 font-bold">Total Dosen</span>
+            <span class="text-2xl font-bold text-slate-800 leading-none">{{ sintaLecturers.length }}</span>
           </div>
           <a
             href="https://sinta.kemdiktisaintek.go.id"
             target="_blank"
-            class="group bg-gradient-to-r from-rose-600 to-pink-600 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:from-rose-500 hover:to-pink-500 transition-all flex items-center gap-2 shadow-lg shadow-rose-500/25 border border-white/10"
+            class="group bg-white text-slate-700 hover:text-blue-600 px-5 py-2.5 rounded-xl text-sm font-bold border border-slate-200 hover:border-blue-200 hover:shadow-md transition-all flex items-center gap-2"
           >
-            <span>Buka SINTA</span>
+            <span>SINTA </span>
             <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
             </svg>
           </a>
         </div>
       </div>
+    </div>
 
-      <!-- Stats Cards -->
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3">
-        <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 text-center border border-blue-200 hover:shadow-md transition-all group">
-          <div class="text-2xl font-black text-blue-600 group-hover:scale-110 transition-transform">{{ stats.totalResearch }}</div>
-          <div class="text-xs uppercase tracking-wider text-blue-700 mt-1 font-bold">Penelitian</div>
+      <!-- Stats Cards Wrapper -->
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
+        <!-- Penelitian -->
+        <div class="relative overflow-hidden bg-white p-6 rounded-2xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border border-slate-100 group hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+            <svg class="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+          </div>
+          <p class="text-sm font-bold text-slate-400 uppercase tracking-wider">Penelitian</p>
+          <div class="mt-2 flex items-baseline gap-2">
+            <span class="text-3xl font-black text-slate-800">{{ stats.totalResearch }}</span>
+            <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">+{{ Math.floor(stats.totalResearch * 0.1) }}% this year</span>
+          </div>
+          <div class="w-full bg-slate-100 h-1.5 mt-4 rounded-full overflow-hidden">
+             <div class="bg-blue-500 h-full rounded-full shadow-[0_0_10px_rgba(59,130,246,0.5)]" style="width: 70%"></div>
+          </div>
         </div>
-        <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xl p-4 text-center border border-emerald-200 hover:shadow-md transition-all group">
-          <div class="text-2xl font-black text-emerald-600 group-hover:scale-110 transition-transform">{{ stats.totalServices }}</div>
-          <div class="text-xs uppercase tracking-wider text-emerald-700 mt-1 font-bold">Pengabdian</div>
+
+        <!-- Pengabdian -->
+        <div class="relative overflow-hidden bg-white p-6 rounded-2xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border border-slate-100 group hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+           <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+            <svg class="w-16 h-16 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+          </div>
+          <p class="text-sm font-bold text-slate-400 uppercase tracking-wider">Pengabdian</p>
+           <div class="mt-2 flex items-baseline gap-2">
+            <span class="text-3xl font-black text-slate-800">{{ stats.totalServices }}</span>
+            <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">Active</span>
+          </div>
+          <div class="w-full bg-slate-100 h-1.5 mt-4 rounded-full overflow-hidden">
+             <div class="bg-emerald-500 h-full rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]" style="width: 60%"></div>
+          </div>
         </div>
-        <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-4 text-center border border-indigo-200 hover:shadow-md transition-all group">
-          <div class="text-2xl font-black text-indigo-600 group-hover:scale-110 transition-transform">{{ stats.totalScopus }}</div>
-          <div class="text-xs uppercase tracking-wider text-indigo-700 mt-1 font-bold">Scopus</div>
+
+        <!-- Publikasi (Scopus + Sinta) -->
+        <div class="relative overflow-hidden bg-white p-6 rounded-2xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border border-slate-100 group hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+           <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+             <svg class="w-16 h-16 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+          </div>
+          <p class="text-sm font-bold text-slate-400 uppercase tracking-wider">Total Publikasi</p>
+           <div class="mt-2 flex items-baseline gap-2">
+            <span class="text-3xl font-black text-slate-800">{{ stats.totalScopus + stats.totalSinta }}</span>
+             <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full border border-indigo-100">
+               {{ stats.totalScopus }} Int. • {{ stats.totalSinta }} Nas.
+             </span>
+          </div>
+           <div class="w-full bg-slate-100 h-1.5 mt-4 rounded-full overflow-hidden flex">
+             <div class="bg-indigo-500 h-full shadow-[0_0_10px_rgba(99,102,241,0.5)]" :style="`width: ${(stats.totalScopus / (stats.totalScopus + stats.totalSinta || 1)) * 100}%`"></div>
+             <div class="bg-sky-400 h-full" :style="`width: ${(stats.totalSinta / (stats.totalScopus + stats.totalSinta || 1)) * 100}%`"></div>
+          </div>
         </div>
-        <div class="bg-gradient-to-br from-sky-50 to-sky-100 rounded-xl p-4 text-center border border-sky-200 hover:shadow-md transition-all group">
-          <div class="text-2xl font-black text-sky-600 group-hover:scale-110 transition-transform">{{ stats.totalSinta }}</div>
-          <div class="text-xs uppercase tracking-wider text-sky-700 mt-1 font-bold">SINTA</div>
-        </div>
-        <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-4 text-center border border-orange-200 hover:shadow-md transition-all group">
-          <div class="text-2xl font-black text-orange-600 group-hover:scale-110 transition-transform">{{ stats.totalGoogle }}</div>
-          <div class="text-xs uppercase tracking-wider text-orange-700 mt-1 font-bold">G.Scholar</div>
-        </div>
-        <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-4 text-center border border-pink-200 hover:shadow-md transition-all group">
-          <div class="text-2xl font-black text-pink-600 group-hover:scale-110 transition-transform">{{ stats.totalRama }}</div>
-          <div class="text-xs uppercase tracking-wider text-pink-700 mt-1 font-bold">RAMA</div>
-        </div>
-        <div class="bg-gradient-to-br from-rose-50 to-rose-100 rounded-xl p-4 text-center border border-rose-200 hover:shadow-md transition-all group">
-          <div class="text-2xl font-black text-rose-600 group-hover:scale-110 transition-transform">{{ stats.totalCitations }}</div>
-          <div class="text-xs uppercase tracking-wider text-rose-700 mt-1 font-bold">Sitasi</div>
-        </div>
-        <div class="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-4 text-center border border-amber-200 hover:shadow-md transition-all group">
-          <div class="text-2xl font-black text-amber-600 group-hover:scale-110 transition-transform">{{ stats.totalIpr }}</div>
-          <div class="text-xs uppercase tracking-wider text-amber-700 mt-1 font-bold">IPR/HKI</div>
-        </div>
-        <div class="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl p-4 text-center border border-teal-200 hover:shadow-md transition-all group">
-          <div class="text-2xl font-black text-teal-600 group-hover:scale-110 transition-transform">{{ stats.totalBooks }}</div>
-          <div class="text-xs uppercase tracking-wider text-teal-700 mt-1 font-bold">Buku</div>
-        </div>
-        <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-4 text-center border border-purple-200 hover:shadow-md transition-all group">
-          <div class="text-2xl font-black text-purple-600 group-hover:scale-110 transition-transform">{{ sintaLecturers.length }}</div>
-          <div class="text-xs uppercase tracking-wider text-purple-700 mt-1 font-bold">Dosen</div>
+
+        <!-- Sitasi (Google Scholar) -->
+        <div class="relative overflow-hidden bg-white p-6 rounded-2xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border border-slate-100 group hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+           <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+            <svg class="w-16 h-16 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+          </div>
+          <p class="text-sm font-bold text-slate-400 uppercase tracking-wider">Total Sitasi</p>
+           <div class="mt-2 flex items-baseline gap-2">
+            <span class="text-3xl font-black text-slate-800">{{ stats.totalCitations }}</span>
+             <span class="text-xs font-bold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-100">Impact Factor</span>
+          </div>
+           <div class="w-full bg-slate-100 h-1.5 mt-4 rounded-full overflow-hidden">
+             <div class="bg-amber-500 h-full rounded-full shadow-[0_0_10px_rgba(245,158,11,0.5)]" style="width: 85%"></div>
+          </div>
         </div>
       </div>
-    </div>
+
+      <!-- Secondary Stats Grid (Smaller) -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+         <div class="bg-white rounded-xl p-5 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-slate-100 flex items-center justify-between group hover:border-orange-200 transition-all">
+            <div>
+               <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider mb-1">Google Scholar</p>
+               <p class="text-2xl font-black text-slate-800 group-hover:text-orange-600 transition-colors">{{ stats.totalGoogle }}</p>
+            </div>
+            <div class="w-10 h-10 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center font-black text-xs shadow-sm border border-orange-100 group-hover:scale-110 transition-transform">GS</div>
+         </div>
+         <div class="bg-white rounded-xl p-5 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-slate-100 flex items-center justify-between group hover:border-rose-200 transition-all">
+            <div>
+               <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider mb-1">RAMA Repositori</p>
+               <p class="text-2xl font-black text-slate-800 group-hover:text-rose-600 transition-colors">{{ stats.totalRama }}</p>
+            </div>
+             <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-black text-xs shadow-sm border border-rose-100 group-hover:scale-110 transition-transform">RM</div>
+         </div>
+         <div class="bg-white rounded-xl p-5 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-slate-100 flex items-center justify-between group hover:border-purple-200 transition-all">
+            <div>
+               <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider mb-1">HKI / IPR</p>
+               <p class="text-2xl font-black text-slate-800 group-hover:text-purple-600 transition-colors">{{ stats.totalIpr }}</p>
+            </div>
+             <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center font-black text-xs shadow-sm border border-purple-100 group-hover:scale-110 transition-transform">IP</div>
+         </div>
+         <div class="bg-white rounded-xl p-5 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-slate-100 flex items-center justify-between group hover:border-teal-200 transition-all">
+            <div>
+               <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider mb-1">Buku Ajar</p>
+               <p class="text-2xl font-black text-slate-800 group-hover:text-teal-600 transition-colors">{{ stats.totalBooks }}</p>
+            </div>
+             <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center font-black text-xs shadow-sm border border-teal-100 group-hover:scale-110 transition-transform">BK</div>
+         </div>
+      </div>
 
     <!-- Charts Row 1 -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">

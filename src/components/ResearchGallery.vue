@@ -129,27 +129,39 @@
         :key="`${item.type}-${index}`"
         class="card group hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
       >
+        <!-- Image -->
+        <div class="aspect-video w-full rounded-lg overflow-hidden mb-3 bg-slate-100 relative group-hover:shadow-inner">
+          <img 
+            :src="item.image" 
+            :alt="item.title"
+            loading="lazy"
+            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </div>
+
         <!-- Category Badge -->
-        <div class="flex items-center justify-between mb-3">
+        <div class="flex items-center justify-between mb-2">
           <span :class="getBadgeClass(item)">{{ getBadgeText(item) }}</span>
           <span v-if="item.year" class="text-xs text-slate-400 font-medium">{{ item.year }}</span>
         </div>
 
         <!-- Title -->
-        <h3 class="font-bold text-slate-800 text-sm leading-relaxed mb-3 group-hover:text-rose-600 transition-colors line-clamp-3">
+        <h3 class="font-bold text-slate-800 text-sm leading-relaxed mb-3 group-hover:text-rose-600 transition-colors line-clamp-2" :title="item.title">
           {{ item.title }}
         </h3>
 
         <!-- Author -->
-        <div class="flex items-center gap-2 text-xs text-slate-500">
-          <div class="w-6 h-6 bg-gradient-to-br from-slate-200 to-slate-300 rounded-full flex items-center justify-center">
+        <div class="flex items-center gap-2 text-xs text-slate-500 mt-auto">
+          <div class="w-6 h-6 bg-gradient-to-br from-slate-200 to-slate-300 rounded-full flex items-center justify-center flex-shrink-0">
             <svg class="w-3 h-3 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
             </svg>
           </div>
-          <span class="font-medium truncate">{{ item.author }}</span>
-          <span class="text-slate-300">|</span>
-          <span class="text-slate-400">{{ item.prodi }}</span>
+          <div class="flex flex-col min-w-0">
+             <span class="font-medium truncate">{{ item.author }}</span>
+             <span class="text-slate-400 text-[10px] truncate">{{ item.prodi }}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -409,7 +421,8 @@ export default {
             title: r.title,
             year: r.year,
             author: lec.name,
-            prodi: lec.prodi
+            prodi: lec.prodi,
+            image: `https://picsum.photos/seed/${encodeURIComponent(r.title + 'research')}/800/600`
           });
         });
 
@@ -420,7 +433,8 @@ export default {
             title: s.title,
             year: s.year,
             author: lec.name,
-            prodi: lec.prodi
+            prodi: lec.prodi,
+            image: `https://picsum.photos/seed/${encodeURIComponent(s.title + 'services')}/800/600`
           });
         });
 
@@ -440,7 +454,8 @@ export default {
             q: d.category, // Pass original category string for display logic
             year: d.year,
             author: lec.name,
-            prodi: lec.prodi
+            prodi: lec.prodi,
+            image: `https://picsum.photos/seed/${encodeURIComponent(d.title + type)}/800/600`
           });
         });
 
@@ -451,7 +466,8 @@ export default {
             title: b.title,
             year: b.year,
             author: lec.name,
-            prodi: lec.prodi
+            prodi: lec.prodi,
+            image: `https://picsum.photos/seed/${encodeURIComponent(b.title + 'book')}/800/600`
           });
         });
 
@@ -462,7 +478,8 @@ export default {
             title: i.title,
             category: i.category,
             author: lec.name,
-            prodi: lec.prodi
+            prodi: lec.prodi,
+            image: `https://picsum.photos/seed/${encodeURIComponent(i.title + 'ipr')}/800/600`
           });
         });
       });
