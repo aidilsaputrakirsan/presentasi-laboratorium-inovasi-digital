@@ -8,6 +8,7 @@ Script untuk mengambil data lengkap dari SINTA per prodi:
 - IPR/HKI (Hak Cipta, Paten)
 
 Semua data diambil dari website SINTA (termasuk Google Scholar).
+Login otomatis menggunakan kredensial dari file .env di root project.
 
 Usage:
   python scripts/sinta_scraper.py                    # Scrape semua prodi
@@ -15,22 +16,37 @@ Usage:
 
 Input:  src/data/prodi/{slug}/lecturers.json
 Output: src/data/prodi/{slug}/sinta_data.json
+
+Requires .env file with:
+  SINTA_USERNAME=your_email
+  SINTA_PASSWORD=your_password
 """
 
 import json
 import os
 import re
+import sys
 import time
 from datetime import datetime
 
 import requests
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+
+# Fix encoding for Windows console
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
 
 # Konfigurasi
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PRODI_DIR = os.path.join(BASE_DIR, 'src', 'data', 'prodi')
 
+# Load .env
+load_dotenv(os.path.join(BASE_DIR, '.env'))
+
 SINTA_BASE_URL = "https://sinta.kemdiktisaintek.go.id/authors/profile"
+SINTA_LOGIN_PAGE = "https://sinta.kemdiktisaintek.go.id/logins"
+SINTA_LOGIN_URL = "https://sinta.kemdiktisaintek.go.id/logins/do_login"
 
 session = requests.Session()
 HEADERS = {
@@ -46,6 +62,42 @@ HEADERS = {
     'Sec-Fetch-User': '?1',
 }
 session.headers.update(HEADERS)
+
+
+def login_sinta():
+    """Login ke SINTA menggunakan kredensial dari .env. Wajib untuk akses pagination."""
+    username = os.getenv('SINTA_USERNAME')
+    password = os.getenv('SINTA_PASSWORD')
+
+    if not username or not password:
+        print("ERROR: SINTA_USERNAME dan SINTA_PASSWORD harus diisi di file .env")
+        print("Tanpa login, pagination tidak berfungsi (hanya 10 item per view).")
+        sys.exit(1)
+
+    print(f"Login ke SINTA sebagai {username}...")
+
+    # GET login page untuk dapat session cookie
+    session.get(SINTA_LOGIN_PAGE, timeout=30)
+
+    # POST login
+    resp = session.post(
+        SINTA_LOGIN_URL,
+        data={'username': username, 'password': password},
+        headers={**HEADERS, 'Content-Type': 'application/x-www-form-urlencoded',
+                 'Referer': SINTA_LOGIN_PAGE},
+        timeout=30,
+        allow_redirects=True
+    )
+
+    # Verifikasi login berhasil
+    soup = BeautifulSoup(resp.text, 'html.parser')
+    login_form = soup.find('form', action=re.compile(r'do_login'))
+
+    if login_form:
+        print("ERROR: Login SINTA gagal. Cek username/password di .env")
+        sys.exit(1)
+
+    print("Login SINTA berhasil!")
 
 def get_prodi_folders():
     """Scan prodi directory for folders with lecturers.json"""
@@ -799,8 +851,9 @@ def scrape_prodi(prodi_slug):
         print(f"    - Scraping detailed services...")
         services, services_total = scrape_services_detailed(lec['sintaId'])
 
-        books = []
-        books_total = stats.get('book', 0)
+        print(f"    - Scraping books...")
+        books = scrape_list_items(lec['sintaId'], 'books')
+        books_total = max(len(books), stats.get('book', 0))
         ipr = scrape_ipr(lec['sintaId'])
 
         docs['sinta']['total'] = max(docs['sinta']['total'], stats.get('garuda', 0))
@@ -859,8 +912,6 @@ def scrape_prodi(prodi_slug):
 
 
 def main():
-    import sys
-
     prodi_folders = get_prodi_folders()
     if not prodi_folders:
         print("No prodi folders with lecturers.json found!")
@@ -873,6 +924,9 @@ def main():
             print(f"Error: '{target}' not found. Available: {', '.join(prodi_folders)}")
             return
         prodi_folders = [target]
+
+    # Login ke SINTA (wajib untuk pagination)
+    login_sinta()
 
     print("=" * 60)
     print("SINTA Scraper - Per Prodi")

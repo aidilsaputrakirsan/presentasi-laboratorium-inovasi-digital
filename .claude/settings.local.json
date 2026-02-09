@@ -4,7 +4,11 @@
       "WebFetch(domain:sinta.kemdiktisaintek.go.id)",
       "Bash(python:*)",
       "Bash(del debug_gs_direct.py debug_pagination.py dump_sinta_html.py sinta_gs_dump.html)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(pip install:*)",
+      "Bash(del \"c:\\\\laragon\\\\www\\\\Materi-Presentasi\\\\presentasi-laboratorium-inovasi-digital\\\\scripts\\\\debug_pagination.py\")",
+      "Bash(del \"c:\\\\laragon\\\\www\\\\Materi-Presentasi\\\\presentasi-laboratorium-inovasi-digital\\\\scripts\\\\debug_login_form.py\")",
+      "Bash(del \"c:\\\\laragon\\\\www\\\\Materi-Presentasi\\\\presentasi-laboratorium-inovasi-digital\\\\scripts\\\\debug_login_pagination.py\")"
     ]
   }
 }
