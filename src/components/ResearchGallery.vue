@@ -422,7 +422,7 @@ export default {
             year: r.year,
             author: lec.name,
             prodi: lec.prodi,
-            image: `https://picsum.photos/seed/${encodeURIComponent(r.title + 'research')}/800/600`
+            image: this.getItemImage(r.title, 'research')
           });
         });
 
@@ -434,7 +434,7 @@ export default {
             year: s.year,
             author: lec.name,
             prodi: lec.prodi,
-            image: `https://picsum.photos/seed/${encodeURIComponent(s.title + 'services')}/800/600`
+            image: this.getItemImage(s.title, 'services')
           });
         });
 
@@ -455,7 +455,7 @@ export default {
             year: d.year,
             author: lec.name,
             prodi: lec.prodi,
-            image: `https://picsum.photos/seed/${encodeURIComponent(d.title + type)}/800/600`
+            image: this.getItemImage(d.title, type)
           });
         });
 
@@ -467,7 +467,7 @@ export default {
             year: b.year,
             author: lec.name,
             prodi: lec.prodi,
-            image: `https://picsum.photos/seed/${encodeURIComponent(b.title + 'book')}/800/600`
+            image: this.getItemImage(b.title, 'books')
           });
         });
 
@@ -479,7 +479,7 @@ export default {
             category: i.category,
             author: lec.name,
             prodi: lec.prodi,
-            image: `https://picsum.photos/seed/${encodeURIComponent(i.title + 'ipr')}/800/600`
+            image: this.getItemImage(i.title, 'ipr')
           });
         });
       });
@@ -585,6 +585,35 @@ export default {
         return 'HKI';
       }
       return item.type;
+    },
+
+    getItemImage(title, type) {
+      const lowerTitle = title.toLowerCase();
+      let tags = ['technology'];
+
+      if (lowerTitle.includes('iot') || lowerTitle.includes('internet of things')) tags.push('iot', 'sensor', 'internet');
+      else if (lowerTitle.includes('informasi') || lowerTitle.includes('software')) tags.push('software', 'coding', 'data');
+      else if (lowerTitle.includes('web') || lowerTitle.includes('aplikasi')) tags.push('website', 'ui', 'ux');
+      else if (lowerTitle.includes('jaringan') || lowerTitle.includes('network')) tags.push('network', 'server');
+      else if (lowerTitle.includes('bisnis') || lowerTitle.includes('manajemen')) tags.push('business', 'workspace');
+      else if (lowerTitle.includes('elektro') || lowerTitle.includes('robot')) tags.push('robot', 'arduino', 'circuit');
+      else if (type === 'research') tags.push('science', 'laboratory');
+      else if (type === 'services') tags.push('community', 'social', 'collaboration');
+      else if (type === 'books') tags.push('book', 'library');
+      else if (type === 'ipr') tags.push('innovation', 'patent');
+      else tags.push('digital', 'abstract');
+
+      // Use loremflickr for high quality themed images
+      return `https://loremflickr.com/800/600/${tags.join(',')}?lock=${Math.abs(this.hashCode(title))}`;
+    },
+
+    hashCode(str) {
+      let hash = 0;
+      for (let i = 0; i < str.length; i++) {
+        hash = ((hash << 5) - hash) + str.charCodeAt(i);
+        hash |= 0;
+      }
+      return hash;
     }
   }
 };
