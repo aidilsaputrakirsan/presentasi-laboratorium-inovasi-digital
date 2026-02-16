@@ -56,6 +56,29 @@ const routes = [
     name: 'Accreditation',
     component: AccreditationView,
     meta: { title: 'DTPS Akreditasi' }
+  },
+
+  // --- V2 Public SaaS Routes ---
+  {
+    path: '/v2',
+    component: () => import('../layouts/PublicLayout.vue'),
+    children: [
+      {
+        path: '', // /v2
+        component: () => import('../views/v2/LandingPage.vue'),
+        meta: { title: 'SINTA Intelligence' }
+      },
+      {
+        path: 'login',
+        component: () => import('../views/v2/LoginPage.vue'),
+        meta: { title: 'Login - SINTA Intelligence' }
+      },
+      {
+        path: 'dashboard',
+        component: () => import('../views/v2/DashboardV2.vue'),
+        meta: { title: 'Smart Dashboard' }
+      }
+    ]
   }
 ]
 

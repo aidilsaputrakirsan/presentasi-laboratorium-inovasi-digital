@@ -81,6 +81,22 @@
           </button>
         </div>
       </div>
+
+      <!-- V2 Promo Link (New) -->
+      <div class="px-4 pb-4">
+        <router-link to="/v2" class="block p-4 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 text-white shadow-lg shadow-slate-900/10 group relative overflow-hidden">
+           <div class="absolute top-0 right-0 w-16 h-16 bg-white/10 rounded-full blur-xl -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-colors"></div>
+           <div class="relative z-10 flex items-center justify-between">
+             <div>
+               <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">New Version</p>
+               <p class="font-bold text-sm">SINTA Intel 2.0</p>
+             </div>
+             <svg class="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+             </svg>
+           </div>
+        </router-link>
+      </div>
     </aside>
 
     <!-- Overlay for mobile -->
