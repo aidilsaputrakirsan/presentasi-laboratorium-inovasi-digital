@@ -58,27 +58,21 @@ const routes = [
     meta: { title: 'DTPS Akreditasi' }
   },
 
-  // --- V2 Public SaaS Routes ---
+  // --- V2 Public SaaS Routes (no DashboardLayout wrapper) ---
   {
     path: '/v2',
-    component: () => import('../layouts/PublicLayout.vue'),
-    children: [
-      {
-        path: '', // /v2
-        component: () => import('../views/v2/LandingPage.vue'),
-        meta: { title: 'SINTA Intelligence' }
-      },
-      {
-        path: 'login',
-        component: () => import('../views/v2/LoginPage.vue'),
-        meta: { title: 'Login - SINTA Intelligence' }
-      },
-      {
-        path: 'dashboard',
-        component: () => import('../views/v2/DashboardV2.vue'),
-        meta: { title: 'Smart Dashboard' }
-      }
-    ]
+    component: () => import('../views/v2/LandingPage.vue'),
+    meta: { title: 'SINTA Intelligence' }
+  },
+  {
+    path: '/v2/login',
+    component: () => import('../views/v2/LoginPage.vue'),
+    meta: { title: 'Login - SINTA Intelligence' }
+  },
+  {
+    path: '/v2/dashboard',
+    component: () => import('../views/v2/DashboardV2.vue'),
+    meta: { title: 'Smart Dashboard' }
   }
 ]
 
