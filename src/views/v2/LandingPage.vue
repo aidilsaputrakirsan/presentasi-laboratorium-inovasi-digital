@@ -2,17 +2,64 @@
   <div class="bg-white">
 
     <!-- ═══════════════════════════════════════
-         FILMSTRIP — 8 frame, scroll-driven
-         Tinggi = 8 × 100vh
+         VIDEO HERO — autoplay loop
     ═══════════════════════════════════════ -->
+    <section class="relative h-screen overflow-hidden bg-black">
+      <video
+        ref="heroVideo"
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+        :src="`${base}video/videonew.mp4`"
+      ></video>
+
+      <!-- Hero content overlay -->
+      <div class="absolute inset-x-0 top-0 z-10 flex flex-col items-center text-center px-6 pt-32">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/40 border border-white/15 text-white text-sm font-semibold mb-6 backdrop-blur-2xl" style="box-shadow: 0 4px 24px rgba(0,0,0,0.3)">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-400"></span>
+          </span>
+          Baru: Analisis Riset Berbasis AI
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-black text-white tracking-tight mb-5 leading-tight" style="text-shadow: 0 2px 32px rgba(0,0,0,0.9), 0 0 80px rgba(0,0,0,0.5)">
+          Optimalkan Potensi<br>
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300">
+            Riset Institusi Anda
+          </span>
+        </h1>
+
+        <p class="text-lg text-white/90 max-w-xl mx-auto mb-8 leading-relaxed" style="text-shadow: 0 1px 20px rgba(0,0,0,1), 0 0 40px rgba(0,0,0,0.8)">
+          Ubah data mentah SINTA menjadi wawasan strategis.<br>Otomatis, real-time, berbasis AI.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          <router-link to="/v2/login"
+            class="px-7 py-3 rounded-xl bg-white/90 backdrop-blur-sm text-slate-900 font-bold text-base hover:bg-white transition-all shadow-2xl hover:scale-105 active:scale-95">
+            Mulai Uji Coba Gratis
+          </router-link>
+          <button
+            class="px-7 py-3 rounded-xl bg-black/40 border border-white/25 text-white font-bold text-base hover:bg-black/60 transition-all backdrop-blur-2xl" style="box-shadow: 0 4px 20px rgba(0,0,0,0.3)">
+            Lihat Demo
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         [BACKUP] FILMSTRIP — 8 frame, scroll-driven
+         Uncomment bagian ini dan hapus section VIDEO HERO di atas untuk kembali ke mode frame PNG
+    ═══════════════════════════════════════
     <section
       ref="filmstripSection"
       class="relative"
       :style="{ height: frames.length * 100 + 'vh' }"
     >
       <div class="sticky top-0 h-screen overflow-hidden bg-black">
-
-        <!-- Frame images — crossfade smooth -->
         <div
           v-for="(frame, i) in frames"
           :key="frame.id"
@@ -26,8 +73,6 @@
             :loading="i === 0 ? 'eager' : 'lazy'"
           />
         </div>
-
-        <!-- Hero content — fade out saat scroll, fade in saat kembali -->
         <div
           class="absolute inset-x-0 top-0 z-10 flex flex-col items-center text-center px-6 pt-32 hero-text-wrap"
           :style="{ opacity: heroOpacity, transform: `translateY(${heroTranslate}px)`, pointerEvents: heroOpacity > 0.1 ? 'auto' : 'none' }"
@@ -39,18 +84,15 @@
             </span>
             Baru: Analisis Riset Berbasis AI
           </div>
-
           <h1 class="text-4xl md:text-6xl font-black text-white tracking-tight mb-5 leading-tight" style="text-shadow: 0 2px 32px rgba(0,0,0,0.9), 0 0 80px rgba(0,0,0,0.5)">
             Optimalkan Potensi<br>
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300">
               Riset Institusi Anda
             </span>
           </h1>
-
           <p class="text-lg text-white/90 max-w-xl mx-auto mb-8 leading-relaxed" style="text-shadow: 0 1px 20px rgba(0,0,0,1), 0 0 40px rgba(0,0,0,0.8)">
             Ubah data mentah SINTA menjadi wawasan strategis.<br>Otomatis, real-time, berbasis AI.
           </p>
-
           <div class="flex flex-wrap items-center justify-center gap-3">
             <router-link to="/v2/login"
               class="px-7 py-3 rounded-xl bg-white/90 backdrop-blur-sm text-slate-900 font-bold text-base hover:bg-white transition-all shadow-2xl hover:scale-105 active:scale-95">
@@ -62,9 +104,9 @@
             </button>
           </div>
         </div>
-
       </div>
     </section>
+    -->
 
     <!-- ═══════════════════════════════════════
          SECTION: FEATURES
