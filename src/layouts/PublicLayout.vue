@@ -4,9 +4,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <div class="flex items-center gap-2">
-            <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-500 to-indigo-500 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/30">
-              S
-            </div>
+            <img src="/images/logosintaintel.png" alt="SINTA Intel" class="h-8 w-8 rounded-lg object-cover drop-shadow-lg" />
             <span class="font-bold text-xl tracking-tight text-white drop-shadow">SINTA Intel</span>
           </div>
 
