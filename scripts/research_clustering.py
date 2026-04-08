@@ -55,10 +55,12 @@ STOPWORDS_ID = {
     'ibu', 'anak', 'wanita', 'pria', 'lansia', 'remaja', 'umkm', 'usaha',
     'tani', 'petani', 'nelayan', 'pedagang', 'karyawan', 'tenaga',
 
-    # Kata tempat / wilayah
+    # Kata tempat / wilayah / institusi
     'balikpapan', 'kalimantan', 'timur', 'kelurahan', 'kota', 'desa',
     'kabupaten', 'provinsi', 'wilayah', 'daerah', 'rt', 'rw', 'indonesia',
     'nasional', 'lokal', 'regional', 'internasional', 'global',
+    'itk', 'institut', 'terpadu', 'teknologi', 'lab', 'laboratorium',
+    'kampus', 'perguruan', 'tinggi', 'universitas', 'politeknik',
 
     # Kata sifat generik
     'berbasis', 'cerdas', 'efisien', 'efektif', 'optimal', 'baik',
@@ -125,7 +127,18 @@ def extract_research_items(sinta_data):
                     'year': service.get('year', '')
                 })
 
-    return {'penelitian': penelitian, 'pengabdian': pengabdian}
+    # Deduplikasi per tipe: judul yang sama (ketua + anggota) → ambil yang pertama
+    def dedup(items):
+        seen = set()
+        result = []
+        for item in items:
+            key = item['title'].strip().lower()
+            if key not in seen:
+                seen.add(key)
+                result.append(item)
+        return result
+
+    return {'penelitian': dedup(penelitian), 'pengabdian': dedup(pengabdian)}
 
 def preprocess_text(text):
     """

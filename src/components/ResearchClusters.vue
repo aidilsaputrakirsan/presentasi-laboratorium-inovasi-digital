@@ -120,8 +120,10 @@
         >
           <div class="flex items-start justify-between gap-3">
             <div class="flex-1 min-w-0">
+              <!-- Label -->
+              <p class="text-[10px] font-bold uppercase tracking-widest text-violet-400 mb-1">Topik Rekomendasi</p>
               <!-- Nama cluster -->
-              <h3 class="text-base font-bold text-slate-800 leading-snug mb-2">{{ cluster.name }}</h3>
+              <h3 class="text-base font-bold text-slate-800 leading-snug mb-2">{{ clusterDisplayName(cluster) }}</h3>
 
               <!-- Keywords — sudah deduplikasi -->
               <div class="flex flex-wrap gap-1">
@@ -254,6 +256,15 @@ export default {
       ['penelitian', 'pengabdian'].forEach(type => {
         const clusters = result[type];
         for (const cluster of Object.values(clusters)) {
+          // Deduplikasi judul: judul yang sama (ketua + anggota) → ambil yang pertama saja
+          const seen = new Set();
+          cluster.items = cluster.items.filter(item => {
+            const key = item.title.trim().toLowerCase();
+            if (seen.has(key)) return false;
+            seen.add(key);
+            return true;
+          });
+
           const prodis = [...new Set(cluster.items.map(i => i.prodi))];
           cluster.prodis = prodis;
           cluster.isCrossProdi = prodis.length > 1;
@@ -296,13 +307,39 @@ export default {
     }
   },
   methods: {
-    // Deduplikasi keyword: buang unigram yang sudah terkandung di dalam bigram
+    // Kata-kata generik yang tidak bermakna sebagai label topik
+    _genericWords() {
+      return new Set([
+        'home', 'itk', 'terpadu', 'institut', 'teknologi', 'digital',
+        'sistem', 'informasi', 'aplikasi', 'data', 'model', 'platform',
+        'metode', 'analisis', 'pengembangan', 'implementasi', 'perancangan',
+        'indonesia', 'nasional', 'lokal', 'kota', 'daerah', 'wilayah',
+        'masyarakat', 'kelompok', 'mahasiswa', 'dosen', 'siswa',
+        'balikpapan', 'kalimantan', 'timur', 'lab', 'laboratorium',
+        'hukum', // terlalu luas sebagai topik
+      ]);
+    },
+
+    // Deduplikasi keyword: buang unigram yang sudah terkandung di dalam bigram,
+    // dan buang kata-kata yang terlalu generik
     cleanKeywords(keywords) {
       if (!keywords?.length) return [];
+      const generic  = this._genericWords();
       const bigrams  = keywords.filter(kw => kw.includes(' '));
-      const unigrams = keywords.filter(kw => !kw.includes(' '));
+      const unigrams = keywords.filter(kw => !kw.includes(' ') && !generic.has(kw.toLowerCase()));
       const bgWords  = new Set(bigrams.flatMap(bg => bg.split(' ')));
       return [...bigrams, ...unigrams.filter(u => !bgWords.has(u))];
+    },
+
+    // Nama cluster: pakai field name dari JSON (sudah dikurasi manual),
+    // fallback ke keywords hanya kalau name kosong/masih format lama
+    clusterDisplayName(cluster) {
+      if (cluster.name && cluster.name.trim()) return cluster.name;
+      const clean = this.cleanKeywords(cluster.keywords);
+      if (!clean.length) return 'Topik Umum';
+      return clean.slice(0, 3)
+        .map(kw => kw.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()))
+        .join(' & ');
     },
 
     // Tampilkan 3 item atau semua jika expanded

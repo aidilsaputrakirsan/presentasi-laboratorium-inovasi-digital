@@ -11,7 +11,7 @@
     "penelitian": {
       "0": {
         "id": 0,
-        "name": "Skema & Lingkungan & Skema Pembiayaan",
+        "name": "Pembiayaan UMKM & Pertanian Hijau",
         "keywords": [
           "skema",
           "lingkungan",
@@ -62,7 +62,7 @@
       },
       "1": {
         "id": 1,
-        "name": "Mikro Kecil & Kecil & Mikro",
+        "name": "Predictive Analytics UMKM",
         "keywords": [
           "mikro kecil",
           "kecil",
@@ -129,7 +129,7 @@
       },
       "2": {
         "id": 2,
-        "name": "User & Pemasaran Penyangga & Kuliner Media",
+        "name": "UI/UX & Promosi Wisata Kuliner",
         "keywords": [
           "user",
           "pemasaran penyangga",
@@ -174,7 +174,7 @@
       },
       "3": {
         "id": 3,
-        "name": "Strategi & Menelaah Cyberloafing & Meningkatkan Produktivitas",
+        "name": "Gamifikasi & Produktivitas Kerja",
         "keywords": [
           "strategi",
           "menelaah cyberloafing",
@@ -271,7 +271,7 @@
       },
       "4": {
         "id": 4,
-        "name": "Preferensi & Smart & Smart City",
+        "name": "Preferensi Masyarakat Smart City",
         "keywords": [
           "preferensi",
           "smart",
@@ -331,7 +331,7 @@
       },
       "5": {
         "id": 5,
-        "name": "Pajak & Perusahaan & Coretax",
+        "name": "Sistem Pajak & Coretax",
         "keywords": [
           "pajak",
           "perusahaan",
@@ -376,7 +376,7 @@
       },
       "6": {
         "id": 6,
-        "name": "Kuliner & Negara Ikn & Destinasi Kuliner",
+        "name": "Destinasi Kuliner & IKN",
         "keywords": [
           "kuliner",
           "negara ikn",
@@ -421,7 +421,7 @@
       },
       "7": {
         "id": 7,
-        "name": "Perilaku & Literasi & Perilaku Penyangga",
+        "name": "Literasi & Perilaku Digital",
         "keywords": [
           "perilaku",
           "literasi",
@@ -473,7 +473,7 @@
       },
       "8": {
         "id": 8,
-        "name": "Bisnis & Adopsi & Kemampuan",
+        "name": "Kecerdasan Buatan & Proses Bisnis",
         "keywords": [
           "bisnis",
           "adopsi",
@@ -525,7 +525,7 @@
       },
       "9": {
         "id": 9,
-        "name": "Pemenuhan & Game & Ketersediaan",
+        "name": "Game Theory & Manajemen Sumber Daya",
         "keywords": [
           "pemenuhan",
           "game",
@@ -578,7 +578,7 @@
     "pengabdian": {
       "0": {
         "id": 0,
-        "name": "Masjid & Masjid Berkah & Box",
+        "name": "IoT & Pemberdayaan Komunitas",
         "keywords": [
           "masjid",
           "masjid berkah",
@@ -623,7 +623,7 @@
       },
       "1": {
         "id": 1,
-        "name": "Wisata & Kang Bejo & Produk Meningkatkan",
+        "name": "Redesain Produk & Pemasaran UMKM",
         "keywords": [
           "wisata",
           "kang bejo",
@@ -676,7 +676,7 @@
       },
       "2": {
         "id": 2,
-        "name": "Industri & Perkuat Industri & Perkuat",
+        "name": "Lean Six Sigma & Industri Lokal",
         "keywords": [
           "industri",
           "perkuat industri",
@@ -729,7 +729,7 @@
       },
       "3": {
         "id": 3,
-        "name": "Pemasaran & Produk & Pencinta Anggrek",
+        "name": "Platform Digital & Pemasaran UMKM",
         "keywords": [
           "pemasaran",
           "produk",
@@ -795,7 +795,7 @@
       },
       "4": {
         "id": 4,
-        "name": "Graha Poltekba & Ppks Pendataan & Pendataan Graha",
+        "name": "Sistem Pendataan Warga & PPKS",
         "keywords": [
           "graha poltekba",
           "ppks pendataan",
@@ -832,7 +832,7 @@
       },
       "5": {
         "id": 5,
-        "name": "Digitalisasi & Website & Administrasi",
+        "name": "Digitalisasi Administrasi RT/Kelurahan",
         "keywords": [
           "digitalisasi",
           "website",
@@ -877,7 +877,7 @@
       },
       "6": {
         "id": 6,
-        "name": "Karang Joang & Joang & Karang",
+        "name": "Website & Edukasi Komunitas Lokal",
         "keywords": [
           "karang joang",
           "joang",
@@ -921,7 +921,7 @@
       },
       "7": {
         "id": 7,
-        "name": "Pembinaan & Kurikulum & Startup Fase",
+        "name": "Pembinaan Startup & Kewirausahaan",
         "keywords": [
           "pembinaan",
           "kurikulum",
@@ -958,7 +958,7 @@
       },
       "8": {
         "id": 8,
-        "name": "Yayasan Berkah & Yayasan & Edukasi Yayasan",
+        "name": "Edukasi & Pemberdayaan Yayasan",
         "keywords": [
           "yayasan berkah",
           "yayasan",
@@ -995,7 +995,7 @@
       },
       "9": {
         "id": 9,
-        "name": "Teritip & Pasar Reksa & Reksa",
+        "name": "Pemberdayaan Ekonomi Pasar Lokal",
         "keywords": [
           "teritip",
           "pasar reksa",

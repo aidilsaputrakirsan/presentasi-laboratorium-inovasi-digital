@@ -11,7 +11,7 @@
     "penelitian": {
       "0": {
         "id": 0,
-        "name": "Literasi & Society & Literasi Modified",
+        "name": "Smart Society & Literasi Digital",
         "keywords": [
           "literasi",
           "society",
@@ -56,7 +56,7 @@
       },
       "1": {
         "id": 1,
-        "name": "Terpadu Institut & Terpadu & Institut",
+        "name": "Metaverse & Lab Virtual",
         "keywords": [
           "terpadu institut",
           "terpadu",
@@ -123,7 +123,7 @@
       },
       "2": {
         "id": 2,
-        "name": "Technology & Hukum & Itk",
+        "name": "Deep Learning & Teknologi Kelautan",
         "keywords": [
           "technology",
           "hukum",
@@ -243,7 +243,7 @@
       },
       "3": {
         "id": 3,
-        "name": "Smart & Smart City & City",
+        "name": "Smart City & Lingkungan Hidup",
         "keywords": [
           "smart",
           "smart city",
@@ -326,7 +326,7 @@
       },
       "4": {
         "id": 4,
-        "name": "Ikan Tumbuhan & Pegawai Balai & Besar",
+        "name": "Sistem Informasi Manajemen Instansi",
         "keywords": [
           "ikan tumbuhan",
           "pegawai balai",
@@ -371,7 +371,7 @@
       },
       "5": {
         "id": 5,
-        "name": "Open & Togaf & Arsitektur",
+        "name": "Arsitektur Enterprise & TOGAF",
         "keywords": [
           "open",
           "togaf",
@@ -422,7 +422,7 @@
       },
       "6": {
         "id": 6,
-        "name": "Home & Agile & Listrik",
+        "name": "IoT & Smart Home System",
         "keywords": [
           "home",
           "agile",
@@ -678,7 +678,7 @@
       },
       "7": {
         "id": 7,
-        "name": "Penelitian Pengabdian & Pengabdian & Penelitian",
+        "name": "Sistem Informasi Tridharma & LPPM",
         "keywords": [
           "penelitian pengabdian",
           "pengabdian",
@@ -729,7 +729,7 @@
       },
       "8": {
         "id": 8,
-        "name": "Adaptive & Pembelajaran & Didik",
+        "name": "Sistem Pembelajaran Adaptif",
         "keywords": [
           "adaptive",
           "pembelajaran",
@@ -805,7 +805,7 @@
       },
       "9": {
         "id": 9,
-        "name": "Manajemen & Akhir & Programming",
+        "name": "Manajemen Akademik & Extreme Programming",
         "keywords": [
           "manajemen",
           "akhir",
@@ -875,7 +875,7 @@
     "pengabdian": {
       "0": {
         "id": 0,
-        "name": "Media & Sosial & Media Sosial",
+        "name": "Media Sosial & Literasi Digital Warga",
         "keywords": [
           "media",
           "sosial",
@@ -1003,7 +1003,7 @@
       },
       "1": {
         "id": 1,
-        "name": "Pengunjung & Kenyamanan Pengunjung & Wisata Meranti",
+        "name": "Digitalisasi Wisata Lokal",
         "keywords": [
           "pengunjung",
           "kenyamanan pengunjung",
@@ -1040,7 +1040,7 @@
       },
       "2": {
         "id": 2,
-        "name": "Sampah & Bank Sampah & Bank",
+        "name": "Pengelolaan Bank Sampah Digital",
         "keywords": [
           "sampah",
           "bank sampah",
@@ -1124,7 +1124,7 @@
       },
       "3": {
         "id": 3,
-        "name": "Sport & Kampung Sport & Kampung",
+        "name": "Pemberdayaan Ekonomi Kampung",
         "keywords": [
           "sport",
           "kampung sport",
@@ -1176,7 +1176,7 @@
       },
       "4": {
         "id": 4,
-        "name": "Bersama Tanamin & Nusantara & Kampanye",
+        "name": "Digital Branding & Kampanye Lingkungan",
         "keywords": [
           "bersama tanamin",
           "nusantara",
@@ -1213,7 +1213,7 @@
       },
       "5": {
         "id": 5,
-        "name": "Wisata & Hutan & Kawasan Wisata",
+        "name": "Promosi Digital Kawasan Wisata",
         "keywords": [
           "wisata",
           "hutan",
@@ -1304,7 +1304,7 @@
       },
       "6": {
         "id": 6,
-        "name": "Mewujudkan & Kesejahteraan & Triple",
+        "name": "Triple Helix & Desa Digital",
         "keywords": [
           "mewujudkan",
           "kesejahteraan",
@@ -1349,7 +1349,7 @@
       },
       "7": {
         "id": 7,
-        "name": "Pembangunan & Pembangunan Website & Dashboard",
+        "name": "Website & Dashboard Informasi Publik",
         "keywords": [
           "pembangunan",
           "pembangunan website",
@@ -1401,7 +1401,7 @@
       },
       "8": {
         "id": 8,
-        "name": "Sepinggan & Indah & Graha Indah",
+        "name": "Teknologi untuk Pendidikan Dasar",
         "keywords": [
           "sepinggan",
           "indah",
