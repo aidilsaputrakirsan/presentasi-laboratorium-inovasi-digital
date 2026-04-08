@@ -140,10 +140,16 @@ def scrape_main_page(sinta_id):
         'wosArticles': 0, 'wosCitations': 0, 'wosHIndex': 0
     }
 
+    photo = None
     try:
         response = requests.get(url, headers=HEADERS, timeout=30)
-        if response.status_code != 200: return stats
+        if response.status_code != 200: return stats, photo
         soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Foto profil (dari Google Scholar via SINTA)
+        img_tag = soup.find('img', class_='img-thumbnail')
+        if img_tag and img_tag.get('src'):
+            photo = img_tag['src']
 
         # SINTA 3 structure typically has nav-items with badges
         nav_tabs = soup.find_all('a', class_='nav-link')
@@ -207,10 +213,10 @@ def scrape_main_page(sinta_id):
                     elif 'g-index' in label:
                         stats['gIndex'] = google_val if google_val > 0 else scopus_val
 
-        return stats
+        return stats, photo
     except Exception as e:
         print(f"  Error scraping main page {sinta_id}: {e}")
-        return stats
+        return stats, photo
 
 def scrape_with_pagination(sinta_id, view_type, parser_func, max_pages=50):
     """Generic helper to scrape paginated SINTA lists with improved pagination"""
@@ -843,7 +849,7 @@ def scrape_prodi(prodi_slug):
 
     for lec in lecturers:
         print(f"  Scraping {lec['name']} ({lec['sintaId']})...")
-        stats = scrape_main_page(lec['sintaId'])
+        stats, photo = scrape_main_page(lec['sintaId'])
         docs = scrape_documents(lec['sintaId'])
 
         print(f"    - Scraping detailed research...")
@@ -869,6 +875,7 @@ def scrape_prodi(prodi_slug):
             'name': lec['name'],
             'sintaId': lec['sintaId'],
             'prodi': lec['prodi'],
+            'photo': photo,
             'scrapedAt': datetime.now().isoformat(),
             'stats': stats,
             'documents': docs,

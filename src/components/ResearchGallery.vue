@@ -124,20 +124,25 @@
 
     <!-- Content Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <div 
-        v-for="(item, index) in filteredItems" 
+      <div
+        v-for="(item, index) in filteredItems"
         :key="`${item.type}-${index}`"
-        class="card group hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+        class="card group hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+        @click="openModal(item)"
       >
         <!-- Image -->
         <div class="aspect-video w-full rounded-lg overflow-hidden mb-3 bg-slate-100 relative group-hover:shadow-inner">
-          <img 
-            :src="item.image" 
+          <img
+            :src="item.image"
             :alt="item.title"
             loading="lazy"
             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
           >
           <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <!-- Hover overlay: klik untuk detail -->
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="bg-white/90 text-slate-800 text-xs font-bold px-3 py-1.5 rounded-full shadow">Lihat Detail</span>
+          </div>
         </div>
 
         <!-- Category Badge -->
@@ -153,8 +158,9 @@
 
         <!-- Author -->
         <div class="flex items-center gap-2 text-xs text-slate-500 mt-auto">
-          <div class="w-6 h-6 bg-gradient-to-br from-slate-200 to-slate-300 rounded-full flex items-center justify-center flex-shrink-0">
-            <svg class="w-3 h-3 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="w-6 h-6 rounded-full overflow-hidden bg-gradient-to-br from-slate-200 to-slate-300 flex-shrink-0">
+            <img v-if="item.authorPhoto" :src="item.authorPhoto" :alt="item.author" class="w-full h-full object-cover">
+            <svg v-else class="w-full h-full p-1 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
             </svg>
           </div>
@@ -165,6 +171,172 @@
         </div>
       </div>
     </div>
+
+    <!-- Modal Detail -->
+    <teleport to="body">
+      <transition name="modal-fade">
+        <div
+          v-if="selectedItem"
+          class="fixed inset-0 z-50 flex items-center justify-center p-4"
+          @click.self="closeModal"
+        >
+          <!-- Backdrop -->
+          <div class="absolute inset-0 bg-slate-900/70 backdrop-blur-sm"></div>
+
+          <!-- Modal Card -->
+          <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+            <!-- Foto Tematik Header -->
+            <div class="relative h-52 w-full overflow-hidden rounded-t-2xl">
+              <img :src="selectedItem.image" :alt="selectedItem.title" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent"></div>
+              <!-- Tombol tutup -->
+              <button
+                @click="closeModal"
+                class="absolute top-3 right-3 w-8 h-8 bg-white/20 hover:bg-white/40 backdrop-blur-sm rounded-full flex items-center justify-center transition-colors"
+              >
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+              <!-- Badge di atas foto -->
+              <div class="absolute bottom-3 left-4">
+                <span :class="getBadgeClass(selectedItem)" class="text-xs">{{ getBadgeText(selectedItem) }}</span>
+              </div>
+            </div>
+
+            <!-- Konten Modal -->
+            <div class="p-6">
+              <!-- Judul -->
+              <h2 class="text-lg font-black text-slate-800 leading-snug mb-5">
+                {{ selectedItem.title }}
+              </h2>
+
+              <!-- Profil Dosen -->
+              <div class="flex items-center gap-4 p-4 bg-slate-50 rounded-xl mb-5">
+                <div class="w-14 h-14 rounded-full overflow-hidden bg-gradient-to-br from-slate-200 to-slate-300 flex-shrink-0 ring-2 ring-white shadow-md">
+                  <img
+                    v-if="selectedItem.authorPhoto"
+                    :src="selectedItem.authorPhoto"
+                    :alt="selectedItem.author"
+                    class="w-full h-full object-cover"
+                    @error="$event.target.style.display='none'"
+                  >
+                  <svg v-else class="w-full h-full p-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-bold text-slate-800 text-sm">{{ selectedItem.author }}</div>
+                  <div class="text-xs text-slate-500 mt-0.5">{{ selectedItem.prodi }}</div>
+                </div>
+              </div>
+
+              <!-- Detail berdasarkan tipe -->
+              <!-- Penelitian / Pengabdian -->
+              <div v-if="selectedItem.type === 'research' || selectedItem.type === 'services'" class="space-y-3">
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="bg-slate-50 rounded-xl p-3">
+                    <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Tahun</div>
+                    <div class="text-sm font-bold text-slate-700">{{ selectedItem.year || '-' }}</div>
+                  </div>
+                  <div class="bg-slate-50 rounded-xl p-3">
+                    <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Status</div>
+                    <div class="text-sm font-bold" :class="selectedItem.raw?.status === 'Approved' ? 'text-emerald-600' : 'text-slate-600'">
+                      {{ selectedItem.raw?.status || '-' }}
+                    </div>
+                  </div>
+                  <div class="bg-slate-50 rounded-xl p-3" v-if="selectedItem.raw?.fundingFormatted">
+                    <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Dana</div>
+                    <div class="text-sm font-bold text-rose-600">{{ selectedItem.raw.fundingFormatted }}</div>
+                  </div>
+                  <div class="bg-slate-50 rounded-xl p-3" v-if="selectedItem.raw?.grantCategory">
+                    <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Kategori Hibah</div>
+                    <div class="text-sm font-bold text-slate-700">{{ selectedItem.raw.grantCategory }}</div>
+                  </div>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-3" v-if="selectedItem.raw?.grantType">
+                  <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Jenis Hibah</div>
+                  <div class="text-sm text-slate-700">{{ selectedItem.raw.grantType }}</div>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-3" v-if="selectedItem.raw?.source">
+                  <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Sumber Dana</div>
+                  <div class="text-sm text-slate-700">{{ selectedItem.raw.source }}</div>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-3" v-if="selectedItem.raw?.leader && selectedItem.raw.leader !== selectedItem.raw.grantType">
+                  <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Ketua</div>
+                  <div class="text-sm font-medium text-slate-700">{{ selectedItem.raw.leader }}</div>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-3" v-if="selectedItem.raw?.members?.length">
+                  <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-2">Anggota</div>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      v-for="m in selectedItem.raw.members"
+                      :key="m"
+                      class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 text-xs rounded-full font-medium"
+                    >{{ m }}</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Scopus / SINTA / Google Scholar / RAMA -->
+              <div v-else-if="['scopus','sinta','google','rama'].includes(selectedItem.type)" class="space-y-3">
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="bg-slate-50 rounded-xl p-3">
+                    <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Tahun</div>
+                    <div class="text-sm font-bold text-slate-700">{{ selectedItem.year || '-' }}</div>
+                  </div>
+                  <div class="bg-slate-50 rounded-xl p-3">
+                    <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Indeks</div>
+                    <div class="text-sm font-bold text-indigo-600">{{ selectedItem.q || '-' }}</div>
+                  </div>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-3" v-if="selectedItem.raw?.journal">
+                  <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Jurnal</div>
+                  <div class="text-sm text-slate-700">{{ selectedItem.raw.journal }}</div>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-3" v-if="selectedItem.raw?.doi">
+                  <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">DOI</div>
+                  <a :href="'https://doi.org/' + selectedItem.raw.doi" target="_blank" class="text-sm text-blue-600 hover:underline break-all">{{ selectedItem.raw.doi }}</a>
+                </div>
+              </div>
+
+              <!-- Buku -->
+              <div v-else-if="selectedItem.type === 'books'" class="space-y-3">
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="bg-slate-50 rounded-xl p-3">
+                    <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Tahun</div>
+                    <div class="text-sm font-bold text-slate-700">{{ selectedItem.year || '-' }}</div>
+                  </div>
+                  <div class="bg-slate-50 rounded-xl p-3" v-if="selectedItem.raw?.isbn">
+                    <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">ISBN</div>
+                    <div class="text-sm font-bold text-slate-700">{{ selectedItem.raw.isbn }}</div>
+                  </div>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-3" v-if="selectedItem.raw?.publisher">
+                  <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Penerbit</div>
+                  <div class="text-sm text-slate-700">{{ selectedItem.raw.publisher }}</div>
+                </div>
+              </div>
+
+              <!-- HKI -->
+              <div v-else-if="selectedItem.type === 'ipr'" class="space-y-3">
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="bg-slate-50 rounded-xl p-3" v-if="selectedItem.raw?.registrationNumber">
+                    <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">No. Registrasi</div>
+                    <div class="text-sm font-bold text-slate-700">{{ selectedItem.raw.registrationNumber }}</div>
+                  </div>
+                  <div class="bg-slate-50 rounded-xl p-3" v-if="selectedItem.raw?.year">
+                    <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Tahun</div>
+                    <div class="text-sm font-bold text-slate-700">{{ selectedItem.raw.year }}</div>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- end konten modal -->
+          </div>
+        </div>
+      </transition>
+    </teleport>
 
     <!-- Empty State -->
     <div v-if="filteredItems.length === 0" class="card text-center py-12">
@@ -213,12 +385,19 @@ export default {
   components: {
     Line
   },
+  mounted() {
+    window.addEventListener('keydown', this.handleKeydown);
+  },
+  beforeUnmount() {
+    window.removeEventListener('keydown', this.handleKeydown);
+  },
   data() {
     return {
       activeTab: 'research',
       selectedProdi: 'all',
       selectedYear: 'all',
       searchQuery: '',
+      selectedItem: null,
       tabs: [
         { key: 'research', label: 'Penelitian', icon: '🔬' },
         { key: 'services', label: 'Pengabdian', icon: '🤝' },
@@ -414,6 +593,8 @@ export default {
       const items = [];
       
       this.lecturers.forEach(lec => {
+        const authorPhoto = lec.photo || null;
+
         // Research
         (lec.research || []).forEach(r => {
           items.push({
@@ -421,8 +602,10 @@ export default {
             title: r.title,
             year: r.year,
             author: lec.name,
+            authorPhoto,
             prodi: lec.prodi,
-            image: this.getItemImage(r.title, 'research')
+            image: this.getItemImage(r.title, 'research'),
+            raw: r
           });
         });
 
@@ -433,16 +616,18 @@ export default {
             title: s.title,
             year: s.year,
             author: lec.name,
+            authorPhoto,
             prodi: lec.prodi,
-            image: this.getItemImage(s.title, 'services')
+            image: this.getItemImage(s.title, 'services'),
+            raw: s
           });
         });
 
         // Documents (Scopus, SINTA, Google Scholar, RAMA)
         (lec.documents?.list || []).forEach(d => {
-          let type = 'sinta'; // Default
+          let type = 'sinta';
           let categoryUpper = (d.category || '').toUpperCase();
-          
+
           if (categoryUpper.includes('SCOPUS')) type = 'scopus';
           else if (categoryUpper.includes('SINTA')) type = 'sinta';
           else if (categoryUpper.includes('GOOGLE')) type = 'google';
@@ -451,11 +636,13 @@ export default {
           items.push({
             type: type,
             title: d.title,
-            q: d.category, // Pass original category string for display logic
+            q: d.category,
             year: d.year,
             author: lec.name,
+            authorPhoto,
             prodi: lec.prodi,
-            image: this.getItemImage(d.title, type)
+            image: this.getItemImage(d.title, type),
+            raw: d
           });
         });
 
@@ -466,8 +653,10 @@ export default {
             title: b.title,
             year: b.year,
             author: lec.name,
+            authorPhoto,
             prodi: lec.prodi,
-            image: this.getItemImage(b.title, 'books')
+            image: this.getItemImage(b.title, 'books'),
+            raw: b
           });
         });
 
@@ -478,8 +667,10 @@ export default {
             title: i.title,
             category: i.category,
             author: lec.name,
+            authorPhoto,
             prodi: lec.prodi,
-            image: this.getItemImage(i.title, 'ipr')
+            image: this.getItemImage(i.title, 'ipr'),
+            raw: i
           });
         });
       });
@@ -614,6 +805,20 @@ export default {
         hash |= 0;
       }
       return hash;
+    },
+
+    openModal(item) {
+      this.selectedItem = item;
+      document.body.style.overflow = 'hidden';
+    },
+
+    closeModal() {
+      this.selectedItem = null;
+      document.body.style.overflow = '';
+    },
+
+    handleKeydown(e) {
+      if (e.key === 'Escape') this.closeModal();
     }
   }
 };
@@ -629,5 +834,23 @@ export default {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Modal transition */
+.modal-fade-enter-active,
+.modal-fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+.modal-fade-enter-active .relative,
+.modal-fade-leave-active .relative {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.modal-fade-enter-from,
+.modal-fade-leave-to {
+  opacity: 0;
+}
+.modal-fade-enter-from .relative {
+  transform: scale(0.95) translateY(10px);
+  opacity: 0;
 }
 </style>
