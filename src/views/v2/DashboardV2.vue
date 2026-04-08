@@ -36,7 +36,7 @@
              </div>
              <div>
                <h2 class="text-xl font-black text-slate-900">Ringkasan Eksekutif AI</h2>
-               <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Dibuat oleh SINTA Intelligence Engine</p>
+               <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Dibuat oleh SITRIA Engine</p>
              </div>
            </div>
 

@@ -215,7 +215,7 @@
           Siap Transformasi<br>Data Riset Anda?
         </h2>
         <p class="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
-          Bergabunglah dengan institusi yang sudah memanfaatkan SINTA Intel untuk pengambilan keputusan yang lebih cepat dan akurat.
+          Bergabunglah dengan institusi yang sudah memanfaatkan SITRIA untuk pengambilan keputusan yang lebih cepat dan akurat.
         </p>
         <router-link
           to="/v2/login"
@@ -245,7 +245,7 @@ const frames = [
   { id: 4, src: `${base}frames/frame-04.png`, label: 'Visualisasi Aktif', desc: 'Grafik dan chart diperbarui secara langsung berdasarkan data terkini' },
   { id: 5, src: `${base}frames/frame-05.png`, label: 'Analitik Mendalam', desc: 'Pola dan anomali terdeteksi oleh mesin analitik berbasis AI' },
   { id: 6, src: `${base}frames/frame-06.png`, label: 'Laporan Otomatis', desc: 'Sistem menyusun ringkasan laporan periodik secara otomatis' },
-  { id: 7, src: `${base}frames/frame-07.png`, label: 'Integrasi SINTA Intel', desc: 'Data IoT tersinkronisasi dengan platform riset SINTA Intel' },
+  { id: 7, src: `${base}frames/frame-07.png`, label: 'Integrasi SITRIA', desc: 'Data IoT tersinkronisasi dengan platform riset SITRIA' },
   { id: 8, src: `${base}frames/frame-08.png`, label: 'Ekosistem Terintegrasi', desc: 'Seluruh data riset dan inovasi digital ITK dalam satu platform' },
 ]
 

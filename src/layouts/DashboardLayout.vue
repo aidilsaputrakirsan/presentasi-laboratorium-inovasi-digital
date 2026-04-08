@@ -89,7 +89,7 @@
            <div class="relative z-10 flex items-center justify-between">
              <div>
                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">New Version</p>
-               <p class="font-bold text-sm">SINTA Intel 2.0</p>
+               <p class="font-bold text-sm">SITRIA 2.0</p>
              </div>
              <svg class="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -116,7 +116,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
-            <span class="font-bold text-slate-800">SINTA Pulse</span>
+            <span class="font-bold text-slate-800">SITRIA</span>
          </div>
          <button @click="mobileMenuOpen = true" class="p-2 text-slate-500 hover:text-slate-900 rounded-lg hover:bg-slate-100 transition-colors">
            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

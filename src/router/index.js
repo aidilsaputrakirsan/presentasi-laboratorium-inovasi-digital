@@ -62,12 +62,12 @@ const routes = [
   {
     path: '/v2',
     component: () => import('../views/v2/LandingPage.vue'),
-    meta: { title: 'SINTA Intelligence' }
+    meta: { title: 'SITRIA' }
   },
   {
     path: '/v2/login',
     component: () => import('../views/v2/LoginPage.vue'),
-    meta: { title: 'Login - SINTA Intelligence' }
+    meta: { title: 'Login - SITRIA' }
   },
   {
     path: '/v2/dashboard',
@@ -82,7 +82,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = `${to.meta.title} - SINTA Pulse`
+  document.title = `${to.meta.title} - SITRIA`
   next()
 })
 

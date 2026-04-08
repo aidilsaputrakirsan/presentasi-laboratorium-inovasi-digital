@@ -1,5 +1,5 @@
 """
-Generate RAB (Rencana Anggaran Biaya) DOCX untuk SINTA Intel - Galeri Inovasi Digital
+Generate RAB (Rencana Anggaran Biaya) DOCX untuk SITRIA - Galeri Inovasi Digital
 """
 
 from docx import Document
@@ -114,7 +114,7 @@ def create_rab_document():
 
     subtitle = doc.add_paragraph()
     subtitle.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = subtitle.add_run("Pembuatan Aplikasi Web SINTA Intel \u2013 Galeri Inovasi Digital")
+    run = subtitle.add_run("Pembuatan Aplikasi Web SITRIA \u2013 Galeri Inovasi Digital")
     run.font.size = Pt(12)
     run.font.name = "Times New Roman"
     run.bold = True
@@ -415,7 +415,7 @@ def create_rab_document():
 
     # Save
     output_dir = os.path.dirname(os.path.abspath(__file__))
-    output_path = os.path.join(output_dir, "RAB_SINTA_Intel_Galeri_Inovasi_Digital.docx")
+    output_path = os.path.join(output_dir, "RAB_SITRIA_Galeri_Inovasi_Digital.docx")
     doc.save(output_path)
     print(f"Dokumen berhasil disimpan: {output_path}")
     print(f"\nRingkasan:")

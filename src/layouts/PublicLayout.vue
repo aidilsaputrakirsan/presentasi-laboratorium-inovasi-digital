@@ -4,8 +4,8 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <div class="flex items-center gap-2">
-            <img src="/images/logosintaintel.png" alt="SINTA Intel" class="h-8 w-8 rounded-lg object-cover drop-shadow-lg" />
-            <span class="font-bold text-xl tracking-tight text-white drop-shadow">SINTA Intel</span>
+            <img src="/images/logosintaintel.png" alt="SITRIA" class="h-8 w-8 rounded-lg object-cover drop-shadow-lg" />
+            <span class="font-bold text-xl tracking-tight text-white drop-shadow">SITRIA</span>
           </div>
 
           <div class="hidden md:flex items-center gap-8">
