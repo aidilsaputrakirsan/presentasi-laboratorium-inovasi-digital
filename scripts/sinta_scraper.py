@@ -65,6 +65,15 @@ session.headers.update(HEADERS)
 
 
 def login_sinta():
+    # -------------------------------------------------------------------------
+    # TAHAP 2 - Fungsi 1: OTENTIKASI KE SINTA
+    # -------------------------------------------------------------------------
+    # Fungsi ini bertanggung jawab untuk login otomatis ke portal SINTA
+    # menggunakan kredensial (email & password) yang disimpan di file .env.
+    # Login wajib dilakukan agar sistem bisa mengakses seluruh halaman data
+    # (tanpa login, SINTA hanya menampilkan 10 item pertama tanpa pagination).
+    # Alur: GET halaman login → ambil session cookie → POST kredensial → verifikasi.
+    # -------------------------------------------------------------------------
     """Login ke SINTA menggunakan kredensial dari .env. Wajib untuk akses pagination."""
     username = os.getenv('SINTA_USERNAME')
     password = os.getenv('SINTA_PASSWORD')
@@ -100,6 +109,15 @@ def login_sinta():
     print("Login SINTA berhasil!")
 
 def get_prodi_folders():
+    # -------------------------------------------------------------------------
+    # TAHAP 2 - Fungsi 2: DETEKSI PRODI YANG TERSEDIA
+    # -------------------------------------------------------------------------
+    # Fungsi ini memindai folder src/data/prodi/ untuk menemukan semua prodi
+    # yang sudah memiliki file lecturers.json (daftar dosen terstruktur).
+    # Hasilnya diurutkan alfabetis: ['bisnis-digital', 'sistem-informasi'].
+    # Dengan ini, scraper bersifat dinamis — cukup tambah folder prodi baru
+    # tanpa perlu ubah kode.
+    # -------------------------------------------------------------------------
     """Scan prodi directory for folders with lecturers.json"""
     prodi_folders = []
     if not os.path.exists(PRODI_DIR):
@@ -112,6 +130,14 @@ def get_prodi_folders():
     return sorted(prodi_folders)
 
 def load_lecturers(prodi_slug):
+    # -------------------------------------------------------------------------
+    # TAHAP 2 - Fungsi 3: MEMUAT DAFTAR DOSEN
+    # -------------------------------------------------------------------------
+    # Membaca file lecturers.json milik sebuah prodi, lalu mengekstrak daftar
+    # dosen yang memiliki sintaId (ID profil di portal SINTA).
+    # Dosen tanpa sintaId otomatis dilewati agar tidak terjadi error saat scraping.
+    # Output: list dosen siap-scrape beserta nama prodi.
+    # -------------------------------------------------------------------------
     """Load lecturers from a single prodi's lecturers.json"""
     lect_file = os.path.join(PRODI_DIR, prodi_slug, 'lecturers.json')
     with open(lect_file, 'r', encoding='utf-8') as f:
@@ -128,6 +154,18 @@ def load_lecturers(prodi_slug):
     return lecturers, prodi_name
 
 def scrape_main_page(sinta_id):
+    # -------------------------------------------------------------------------
+    # TAHAP 2 - Fungsi 4: SCRAPING HALAMAN PROFIL UTAMA DOSEN
+    # -------------------------------------------------------------------------
+    # Mengakses URL: sinta.kemdiktisaintek.go.id/authors/profile/{sintaId}
+    # Mengambil data ringkasan dari halaman profil seorang dosen, meliputi:
+    #   - Foto profil dosen
+    #   - Jumlah artikel, sitasi, H-Index, i10-Index, G-Index
+    #   - Jumlah dokumen per sumber: Scopus, WoS, Garuda, Google Scholar, RAMA
+    #   - Jumlah penelitian, pengabdian, IPR, buku
+    # Data diambil dengan cara parsing HTML (BeautifulSoup) pada tabel metrik
+    # dan badge navigasi di halaman profil SINTA.
+    # -------------------------------------------------------------------------
     """Scrape data dari halaman utama profil (summary)"""
     url = f"{SINTA_BASE_URL}/{sinta_id}"
     stats = {
@@ -219,6 +257,19 @@ def scrape_main_page(sinta_id):
         return stats, photo
 
 def scrape_with_pagination(sinta_id, view_type, parser_func, max_pages=50):
+    # -------------------------------------------------------------------------
+    # TAHAP 2 - Fungsi 5: ENGINE SCRAPING DENGAN PAGINATION OTOMATIS
+    # -------------------------------------------------------------------------
+    # Ini adalah fungsi inti / engine utama scraper. Digunakan oleh hampir
+    # semua fungsi pengambilan data (Scopus, SINTA, penelitian, pengabdian, dll).
+    # Cara kerja:
+    #   1. Buka halaman pertama data (page=1)
+    #   2. Parse item di halaman tersebut
+    #   3. Deteksi apakah ada halaman berikutnya (via elemen pagination)
+    #   4. Ulangi sampai halaman terakhir atau data habis (max 50 halaman)
+    # Fitur proteksi duplikat: setiap judul dicek, jika sudah ada maka dilewati.
+    # Delay antar halaman: 1.5 detik, agar tidak diblokir server SINTA.
+    # -------------------------------------------------------------------------
     """Generic helper to scrape paginated SINTA lists with improved pagination"""
     all_items = []
     seen_titles = set()
@@ -308,6 +359,19 @@ def scrape_with_pagination(sinta_id, view_type, parser_func, max_pages=50):
 
 
 def scrape_documents(sinta_id):
+    # -------------------------------------------------------------------------
+    # TAHAP 2 - Fungsi 6: SCRAPING DATA PUBLIKASI ILMIAH
+    # -------------------------------------------------------------------------
+    # Mengambil seluruh data publikasi seorang dosen dari 4 sumber sekaligus:
+    #   1. Scopus  — dikelompokkan per kuartil: Q1, Q2, Q3, Q4, No-Q
+    #   2. SINTA/Garuda — dikelompokkan per peringkat: S1, S2, S3, S4, S5, S6
+    #   3. Google Scholar (via SINTA) — total artikel + judul
+    #   4. RAMA — repositori mandiri nasional
+    # Setiap sumber menggunakan parser khusus (parse_scopus, parse_sinta,
+    # parse_google, parse_rama) yang masing-masing memahami struktur HTML
+    # halaman SINTA untuk sumber tersebut.
+    # Semua publikasi juga disimpan dalam satu list gabungan (docs['list']).
+    # -------------------------------------------------------------------------
     """Scrape documents dengan kategori Scopus/SINTA secara spesifik"""
     docs = {
         'scopus': {'q1': 0, 'q2': 0, 'q3': 0, 'q4': 0, 'noq': 0, 'total': 0},
@@ -543,6 +607,14 @@ def scrape_list_items(sinta_id, view_type):
 
 
 def parse_funding_amount(text):
+    # -------------------------------------------------------------------------
+    # TAHAP 2 - Fungsi 7: PARSER NOMINAL DANA
+    # -------------------------------------------------------------------------
+    # Fungsi pembantu untuk mengekstrak angka dari teks dana seperti
+    # "Rp. 17.000.000" → 17000000 (integer).
+    # Digunakan saat memproses data penelitian dan pengabdian yang memiliki
+    # informasi nominal pendanaan dari SINTA.
+    # -------------------------------------------------------------------------
     """Parse funding amount from text like 'Rp. 17.000.000' to integer"""
     match = re.search(r'Rp\.?\s*([\d.,]+)', text)
     if match:
@@ -642,6 +714,19 @@ def parse_research_item(item):
 
 
 def scrape_research_detailed(sinta_id):
+    # -------------------------------------------------------------------------
+    # TAHAP 2 - Fungsi 8: SCRAPING DATA PENELITIAN LENGKAP
+    # -------------------------------------------------------------------------
+    # Mengambil seluruh data penelitian seorang dosen dengan detail penuh:
+    #   - Judul penelitian
+    #   - Ketua & anggota peneliti
+    #   - Jenis & kategori hibah (misal: Hibah BRIN, DIPA, dll)
+    #   - Tahun pelaksanaan
+    #   - Nominal dana penelitian (Rp)
+    #   - Status (Approved / On Going / dll)
+    # Menggunakan pagination agar semua data terambil, bukan hanya 10 pertama.
+    # Data ini penting untuk keperluan akreditasi prodi (kelengkapan Tridharma).
+    # -------------------------------------------------------------------------
     """Scrape penelitian dengan detail lengkap untuk keperluan akreditasi (WITH PAGINATION)"""
     
     def parse_research_page(soup):
@@ -745,6 +830,18 @@ def parse_service_item(item):
 
 
 def scrape_services_detailed(sinta_id):
+    # -------------------------------------------------------------------------
+    # TAHAP 2 - Fungsi 9: SCRAPING DATA PENGABDIAN MASYARAKAT LENGKAP
+    # -------------------------------------------------------------------------
+    # Sama seperti scrape_research_detailed, namun untuk data pengabdian kepada
+    # masyarakat (PKM). Mengambil detail:
+    #   - Judul kegiatan pengabdian
+    #   - Ketua & anggota tim
+    #   - Jenis & kategori hibah pengabdian
+    #   - Tahun pelaksanaan & nominal dana (Rp)
+    #   - Status kegiatan
+    # Dengan pagination agar data lengkap per dosen.
+    # -------------------------------------------------------------------------
     """Scrape pengabdian dengan detail lengkap untuk keperluan akreditasi (WITH PAGINATION)"""
     
     def parse_service_page(soup):
@@ -761,6 +858,17 @@ def scrape_services_detailed(sinta_id):
     return scrape_with_pagination(sinta_id, 'services', parse_service_page)
 
 def scrape_ipr(sinta_id):
+    # -------------------------------------------------------------------------
+    # TAHAP 2 - Fungsi 10: SCRAPING DATA HKI (HAK KEKAYAAN INTELEKTUAL)
+    # -------------------------------------------------------------------------
+    # Mengambil data Hak Kekayaan Intelektual (IPR) milik dosen dari SINTA:
+    #   - Hak Cipta (copyright/ciptaan)
+    #   - Paten
+    #   - Lainnya (other)
+    # Mencoba dua endpoint berbeda: view=iprs dan view=ipr, karena SINTA tidak
+    # konsisten dalam penamaan endpoint antar versi.
+    # Output: dict berisi jumlah per kategori + list judul HKI.
+    # -------------------------------------------------------------------------
     """Scrape IPR (Hak Cipta/Paten) menggunakan view=iprs atau view=ipr"""
     ipr = {'hakCipta': 0, 'paten': 0, 'other': 0, 'total': 0, 'list': []}
 
@@ -829,6 +937,22 @@ def scrape_ipr(sinta_id):
     return ipr
 
 def scrape_prodi(prodi_slug):
+    # -------------------------------------------------------------------------
+    # TAHAP 2 - Fungsi 11: ORKESTRATOR SCRAPING PER PRODI
+    # -------------------------------------------------------------------------
+    # Fungsi utama yang mengkoordinasikan seluruh proses scraping untuk SATU prodi.
+    # Alur kerja untuk setiap dosen:
+    #   1. Load daftar dosen dari lecturers.json
+    #   2. Scraping profil utama (foto, metrik, indeks)
+    #   3. Scraping semua publikasi (Scopus, SINTA, GScholar, RAMA)
+    #   4. Scraping penelitian + detail pendanaan
+    #   5. Scraping pengabdian + detail pendanaan
+    #   6. Scraping buku & HKI
+    #   7. Hitung ringkasan dana per dosen (fundingSummary)
+    # Setelah semua dosen selesai, hitung ringkasan prodi (prodiSummary)
+    # dan simpan semua data ke file sinta_data.json prodi tersebut.
+    # Jeda 2 detik antar dosen untuk menghindari rate-limiting SINTA.
+    # -------------------------------------------------------------------------
     """Scrape all lecturers for a single prodi and save to per-prodi sinta_data.json"""
     lecturers, prodi_name = load_lecturers(prodi_slug)
     if not lecturers:
@@ -919,6 +1043,19 @@ def scrape_prodi(prodi_slug):
 
 
 def main():
+    # -------------------------------------------------------------------------
+    # TAHAP 2 - Fungsi 12: ENTRY POINT / TITIK MASUK PROGRAM
+    # -------------------------------------------------------------------------
+    # Fungsi yang pertama kali dijalankan saat script dipanggil dari terminal.
+    # Mendukung dua mode:
+    #   python scripts/sinta_scraper.py                   → scrape semua prodi
+    #   python scripts/sinta_scraper.py sistem-informasi  → scrape 1 prodi saja
+    # Urutan eksekusi:
+    #   1. Deteksi prodi yang tersedia
+    #   2. Login ke SINTA
+    #   3. Jalankan scraping per prodi (memanggil scrape_prodi)
+    #   4. Tampilkan SUMMARY akhir di terminal (jumlah dosen, total dana, rata-rata)
+    # -------------------------------------------------------------------------
     prodi_folders = get_prodi_folders()
     if not prodi_folders:
         print("No prodi folders with lecturers.json found!")

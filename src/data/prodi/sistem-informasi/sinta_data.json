@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-02-06T22:13:19.718927",
+    "generatedAt": "2026-04-16T19:36:08.585852",
     "source": "SINTA 3",
     "version": "2.3",
     "prodi": "Sistem Informasi",
@@ -11,7 +11,8 @@
       "name": "Yuyun Tri Wiranti",
       "sintaId": "5978281",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:13:52.401299",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=-_VrWf0AAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:36:37.684694",
       "stats": {
         "articles": 40,
         "citations": 473,
@@ -58,11 +59,6 @@
               "year": "2022"
             },
             {
-              "title": "Assessment of Process Capability Level in University XYZ Based on COBIT 2019",
-              "q": "Q4",
-              "year": "2019"
-            },
-            {
               "title": "Acceptance analysis of NUADU as e-learning platform using the Technology Acceptance Model (TAM) approach",
               "q": "Q2",
               "year": "2021"
@@ -71,6 +67,11 @@
               "title": "Evaluation of the Application of Hospital Management Information System (SIMRS) in RSUD Dr. Kanujoso Djatiwibowo Using the HOT-Fit Method",
               "q": "Q4",
               "year": "2021"
+            },
+            {
+              "title": "Assessment of Process Capability Level in University XYZ Based on COBIT 2019",
+              "q": "Q4",
+              "year": "2019"
             },
             {
               "title": "Managing Service Level for Academic Information System Help Desk for XYZ University Based on ITIL V3 Framework",
@@ -139,14 +140,6 @@
               "category": "googlescholar"
             },
             {
-              "title": "Pengaruh behavioral intention terhadap use behavior pada penggunaan aplikasi Gojek",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Sistem Informasi Pelayanan Administrasi pada Unit Layanan Terpadu ITK menggunakan Metode Waterfall",
-              "category": "googlescholar"
-            },
-            {
               "title": "Perancangan Model Proses Bisnis dan Standar Operasional Prosedur Pada PT XYZ Bagian Operations Department",
               "category": "googlescholar"
             },
@@ -155,7 +148,11 @@
               "category": "googlescholar"
             },
             {
-              "title": "Development of tourism information system for storing tourist visit data and provide tourism information using the scrum method",
+              "title": "Pengaruh behavioral intention terhadap use behavior pada penggunaan aplikasi Gojek",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Sistem Informasi Pelayanan Administrasi pada Unit Layanan Terpadu ITK menggunakan Metode Waterfall",
               "category": "googlescholar"
             },
             {
@@ -163,11 +160,11 @@
               "category": "googlescholar"
             },
             {
-              "title": "OPTIMALISASI PENGELOLAAN SAMPAH PADA BANK SAMPAH 123 BALIKPAPAN BARAT",
+              "title": "Pemodelan Proses Bisnis Dan Penyusunan Standar Opersaional Prosedur Pada Operations Departement PT. Coates Hire Indonesia",
               "category": "googlescholar"
             },
             {
-              "title": "Pemodelan Proses Bisnis Dan Penyusunan Standar Opersaional Prosedur Pada Operations Departement PT. Coates Hire Indonesia",
+              "title": "OPTIMALISASI PENGELOLAAN SAMPAH PADA BANK SAMPAH 123 BALIKPAPAN BARAT",
               "category": "googlescholar"
             },
             {
@@ -175,27 +172,7 @@
               "category": "googlescholar"
             },
             {
-              "title": "SISTEM INFORMASI MONITORING AKADEMIK SISWA PADA SMAN 9 BALIKPAPAN DENGAN EXTREME PROGRAMMING",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Perencanaan Strategis Sistem Informasi Hotel Xyz Balikpapan",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Evaluasi Usability Website Menggunakan Metode Website Usability Evaluation (WEBUSE)(Studi Kasus: UMKM Bunga Bali Florist)",
-              "category": "googlescholar"
-            },
-            {
-              "title": "PENDIDIKAN DAN PENENTUAN JALUR MITIGASI BENCANA TANAH LONGSOR BAGI MASYARAKAT KELURAHAN TELAGA SARI",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Penyusunan Proses Bisnis dan Standar Operasional Prosedur Administrasi Pemerintahan (SOP AP) pada Kelurahan Sepinggan",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Perencanaan Strategis Sistem Informasi Pada Pengadilan Agama Balikpapan",
+              "title": "Development of tourism information system for storing tourist visit data and provide tourism information using the scrum method",
               "category": "googlescholar"
             },
             {
@@ -219,7 +196,23 @@
               "category": "googlescholar"
             },
             {
-              "title": "Evaluation of the application of hospital management information system (SIMRS) in RSUD Dr. Kanujoso Djatiwibowo using the HOT-Fit method",
+              "title": "Evaluasi Usability Website Menggunakan Metode Website Usability Evaluation (WEBUSE)(Studi Kasus: UMKM Bunga Bali Florist)",
+              "category": "googlescholar"
+            },
+            {
+              "title": "SISTEM INFORMASI MONITORING AKADEMIK SISWA PADA SMAN 9 BALIKPAPAN DENGAN EXTREME PROGRAMMING",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Perencanaan Strategis Sistem Informasi Hotel Xyz Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PENDIDIKAN DAN PENENTUAN JALUR MITIGASI BENCANA TANAH LONGSOR BAGI MASYARAKAT KELURAHAN TELAGA SARI",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Penyusunan Proses Bisnis dan Standar Operasional Prosedur Administrasi Pemerintahan (SOP AP) pada Kelurahan Sepinggan",
               "category": "googlescholar"
             },
             {
@@ -251,11 +244,15 @@
               "category": "googlescholar"
             },
             {
-              "title": "Pemodelan Proses Bisnis Dan Penyusunan Standard Operating Procedure Pada Badan Pengelola Pajak Daerah Dan Retribusi Daerah Kota Balikpapan",
+              "title": "Evaluation of the application of hospital management information system (SIMRS) in RSUD Dr. Kanujoso Djatiwibowo using the HOT-Fit method",
               "category": "googlescholar"
             },
             {
-              "title": "Pelatihan Peningkatan Produktivitas Pelaku Industri Rumahan melalui Teknologi Informasi dan Komunikasi di Kota Balikpapan",
+              "title": "Managing Service Level for Academic Information System Help Desk for XYZ University Based on ITIL V3 Framework",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Enterprise Architecture Planning with TOGAF ADM for Balikpapan College of Economics",
               "category": "googlescholar"
             },
             {
@@ -267,7 +264,7 @@
               "category": "googlescholar"
             },
             {
-              "title": "Managing Service Level for Academic Information System Help Desk for XYZ University Based on ITIL V3 Framework",
+              "title": "Pemodelan Proses Bisnis Dan Penyusunan Standard Operating Procedure Pada Badan Pengelola Pajak Daerah Dan Retribusi Daerah Kota Balikpapan",
               "category": "googlescholar"
             },
             {
@@ -279,11 +276,15 @@
               "category": "googlescholar"
             },
             {
-              "title": "Enterprise Architecture Planning with TOGAF ADM for Balikpapan College of Economics",
+              "title": "Peningkatan Budaya Gotong Royong Masyarakat Kampung Warna-warni Teluk Seribu Balikpapan Melalui Program Kemitraan Masyarakat",
               "category": "googlescholar"
             },
             {
-              "title": "Peningkatan Budaya Gotong Royong Masyarakat Kampung Warna-warni Teluk Seribu Balikpapan Melalui Program Kemitraan Masyarakat",
+              "title": "LACAK PESANAN",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Perancangan Arsitektur Sistem Informasi pada Perguruan Tinggi Menggunakan TOGAF ADM (Studi Kasus: Politeknik Negeri Balikpapan)",
               "category": "googlescholar"
             },
             {
@@ -315,11 +316,6 @@
             "year": "2022"
           },
           {
-            "title": "Assessment of Process Capability Level in University XYZ Based on COBIT 2019",
-            "category": "Scopus Q4",
-            "year": "2019"
-          },
-          {
             "title": "Acceptance analysis of NUADU as e-learning platform using the Technology Acceptance Model (TAM) approach",
             "category": "Scopus Q2",
             "year": "2021"
@@ -328,6 +324,11 @@
             "title": "Evaluation of the Application of Hospital Management Information System (SIMRS) in RSUD Dr. Kanujoso Djatiwibowo Using the HOT-Fit Method",
             "category": "Scopus Q4",
             "year": "2021"
+          },
+          {
+            "title": "Assessment of Process Capability Level in University XYZ Based on COBIT 2019",
+            "category": "Scopus Q4",
+            "year": "2019"
           },
           {
             "title": "Managing Service Level for Academic Information System Help Desk for XYZ University Based on ITIL V3 Framework",
@@ -380,16 +381,6 @@
             "year": ""
           },
           {
-            "title": "Pengaruh behavioral intention terhadap use behavior pada penggunaan aplikasi Gojek",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Sistem Informasi Pelayanan Administrasi pada Unit Layanan Terpadu ITK menggunakan Metode Waterfall",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
             "title": "Perancangan Model Proses Bisnis dan Standar Operasional Prosedur Pada PT XYZ Bagian Operations Department",
             "category": "Google Scholar",
             "year": ""
@@ -400,7 +391,12 @@
             "year": ""
           },
           {
-            "title": "Development of tourism information system for storing tourist visit data and provide tourism information using the scrum method",
+            "title": "Pengaruh behavioral intention terhadap use behavior pada penggunaan aplikasi Gojek",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Sistem Informasi Pelayanan Administrasi pada Unit Layanan Terpadu ITK menggunakan Metode Waterfall",
             "category": "Google Scholar",
             "year": ""
           },
@@ -410,12 +406,12 @@
             "year": ""
           },
           {
-            "title": "OPTIMALISASI PENGELOLAAN SAMPAH PADA BANK SAMPAH 123 BALIKPAPAN BARAT",
+            "title": "Pemodelan Proses Bisnis Dan Penyusunan Standar Opersaional Prosedur Pada Operations Departement PT. Coates Hire Indonesia",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Pemodelan Proses Bisnis Dan Penyusunan Standar Opersaional Prosedur Pada Operations Departement PT. Coates Hire Indonesia",
+            "title": "OPTIMALISASI PENGELOLAAN SAMPAH PADA BANK SAMPAH 123 BALIKPAPAN BARAT",
             "category": "Google Scholar",
             "year": ""
           },
@@ -425,32 +421,7 @@
             "year": ""
           },
           {
-            "title": "SISTEM INFORMASI MONITORING AKADEMIK SISWA PADA SMAN 9 BALIKPAPAN DENGAN EXTREME PROGRAMMING",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Perencanaan Strategis Sistem Informasi Hotel Xyz Balikpapan",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Evaluasi Usability Website Menggunakan Metode Website Usability Evaluation (WEBUSE)(Studi Kasus: UMKM Bunga Bali Florist)",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "PENDIDIKAN DAN PENENTUAN JALUR MITIGASI BENCANA TANAH LONGSOR BAGI MASYARAKAT KELURAHAN TELAGA SARI",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Penyusunan Proses Bisnis dan Standar Operasional Prosedur Administrasi Pemerintahan (SOP AP) pada Kelurahan Sepinggan",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Perencanaan Strategis Sistem Informasi Pada Pengadilan Agama Balikpapan",
+            "title": "Development of tourism information system for storing tourist visit data and provide tourism information using the scrum method",
             "category": "Google Scholar",
             "year": ""
           },
@@ -480,7 +451,27 @@
             "year": ""
           },
           {
-            "title": "Evaluation of the application of hospital management information system (SIMRS) in RSUD Dr. Kanujoso Djatiwibowo using the HOT-Fit method",
+            "title": "Evaluasi Usability Website Menggunakan Metode Website Usability Evaluation (WEBUSE)(Studi Kasus: UMKM Bunga Bali Florist)",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "SISTEM INFORMASI MONITORING AKADEMIK SISWA PADA SMAN 9 BALIKPAPAN DENGAN EXTREME PROGRAMMING",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Perencanaan Strategis Sistem Informasi Hotel Xyz Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PENDIDIKAN DAN PENENTUAN JALUR MITIGASI BENCANA TANAH LONGSOR BAGI MASYARAKAT KELURAHAN TELAGA SARI",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Penyusunan Proses Bisnis dan Standar Operasional Prosedur Administrasi Pemerintahan (SOP AP) pada Kelurahan Sepinggan",
             "category": "Google Scholar",
             "year": ""
           },
@@ -520,12 +511,17 @@
             "year": ""
           },
           {
-            "title": "Pemodelan Proses Bisnis Dan Penyusunan Standard Operating Procedure Pada Badan Pengelola Pajak Daerah Dan Retribusi Daerah Kota Balikpapan",
+            "title": "Evaluation of the application of hospital management information system (SIMRS) in RSUD Dr. Kanujoso Djatiwibowo using the HOT-Fit method",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Pelatihan Peningkatan Produktivitas Pelaku Industri Rumahan melalui Teknologi Informasi dan Komunikasi di Kota Balikpapan",
+            "title": "Managing Service Level for Academic Information System Help Desk for XYZ University Based on ITIL V3 Framework",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Enterprise Architecture Planning with TOGAF ADM for Balikpapan College of Economics",
             "category": "Google Scholar",
             "year": ""
           },
@@ -540,7 +536,7 @@
             "year": ""
           },
           {
-            "title": "Managing Service Level for Academic Information System Help Desk for XYZ University Based on ITIL V3 Framework",
+            "title": "Pemodelan Proses Bisnis Dan Penyusunan Standard Operating Procedure Pada Badan Pengelola Pajak Daerah Dan Retribusi Daerah Kota Balikpapan",
             "category": "Google Scholar",
             "year": ""
           },
@@ -555,12 +551,17 @@
             "year": ""
           },
           {
-            "title": "Enterprise Architecture Planning with TOGAF ADM for Balikpapan College of Economics",
+            "title": "Peningkatan Budaya Gotong Royong Masyarakat Kampung Warna-warni Teluk Seribu Balikpapan Melalui Program Kemitraan Masyarakat",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Peningkatan Budaya Gotong Royong Masyarakat Kampung Warna-warni Teluk Seribu Balikpapan Melalui Program Kemitraan Masyarakat",
+            "title": "LACAK PESANAN",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Perancangan Arsitektur Sistem Informasi pada Perguruan Tinggi Menggunakan TOGAF ADM (Studi Kasus: Politeknik Negeri Balikpapan)",
             "category": "Google Scholar",
             "year": ""
           },
@@ -583,21 +584,6 @@
       },
       "research": [
         {
-          "title": "PENGEMBANGAN SISTEM INFORMASI MANAJEMEN TUGAS AKHIR PADA JURUSAN TEKNIK ELEKTRO, INFORMATIKA, DAN BISNIS INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING (PXP)",
-          "leader": "Sri Rahayu Natasia",
-          "members": [
-            "Yuyun Tri Wiranti",
-            "Aidil Saputra Kirsan"
-          ],
-          "grantType": "Penelitian Internal ( RKS )",
-          "grantCategory": "RKS",
-          "year": "2025",
-          "fundingAmount": 17000000,
-          "fundingFormatted": "Rp. 17.000.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
-        {
           "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
           "leader": "Vika Fitratunnany Insanittaqwa",
           "members": [
@@ -609,6 +595,21 @@
           "year": "2025",
           "fundingAmount": 10000000,
           "fundingFormatted": "Rp. 10.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "PENGEMBANGAN SISTEM INFORMASI MANAJEMEN TUGAS AKHIR PADA JURUSAN TEKNIK ELEKTRO, INFORMATIKA, DAN BISNIS INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING (PXP)",
+          "leader": "Sri Rahayu Natasia",
+          "members": [
+            "Yuyun Tri Wiranti",
+            "Aidil Saputra Kirsan"
+          ],
+          "grantType": "Penelitian Internal ( RKS )",
+          "grantCategory": "RKS",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
           "status": "Approved",
           "source": "INTERNAL SOURCE"
         },
@@ -841,14 +842,14 @@
         "totalFunding": 244409000,
         "researchCount": 9,
         "serviceCount": 5
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=-_VrWf0AAAAJ&citpid=1"
+      }
     },
     {
       "name": "Aidil Saputra Kirsan",
       "sintaId": "6760340",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:14:24.280630",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=lzQbWuEAAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:37:07.167673",
       "stats": {
         "articles": 28,
         "citations": 77,
@@ -890,17 +891,17 @@
               "year": "2024"
             },
             {
+              "title": "Improved access speed of the Codeigniter framework and REST APIs for the implementation of SIAKAD: Academic information system in Balikpapan schools",
+              "q": "Q4",
+              "year": "2023"
+            },
+            {
               "title": "E-Readiness of North Penajam Paser Regency Regional Apparatus as Supporting City of Indonesian New Capital City",
               "q": "No-Q",
               "year": "2023"
             },
             {
               "title": "Analysis of factors that affect continuance intention on the use of ShopeePay mobile payment using structural equation modeling",
-              "q": "Q4",
-              "year": "2023"
-            },
-            {
-              "title": "Improved access speed of the Codeigniter framework and REST APIs for the implementation of SIAKAD: Academic information system in Balikpapan schools",
               "q": "Q4",
               "year": "2023"
             },
@@ -977,10 +978,6 @@
           "total": 32,
           "list": [
             {
-              "title": "Indonesian Research Journal on Education",
-              "category": "googlescholar"
-            },
-            {
               "title": "Design and Build a Legal Service Information System Using the Personal Extreme Programming Method at the Legal Service Center of the Kalimantan Institute of Technology",
               "category": "googlescholar"
             },
@@ -994,6 +991,10 @@
             },
             {
               "title": "Optimization of Electrical Energy Data Monitoring System Management in Smart Home System for Electrical Switches Using Extreme Programming Method",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Indonesian Research Journal on Education",
               "category": "googlescholar"
             },
             {
@@ -1014,6 +1015,22 @@
             },
             {
               "title": "EksPy: a new Python framework for developing graphical user interface based PyQt5.",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Improved access speed of the Codeigniter framework and REST APIs for the implementation of SIAKAD: Academic information system in Balikpapan schools",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Rancang Bangun Alat Pendeteksi Kebakaran Berbasis Internet Of Things (IOT) Menggunakan Metode Scrum",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PENGEMBANGAN KAWASAN WISATA KULINER KELURAHAN DAMAI BALIKPAPAN",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Penerapan Metode Adaptive Software Development Pada Pengembangan Aplikasi Presensi Sekolah Alam Balikpapan",
               "category": "googlescholar"
             },
             {
@@ -1041,26 +1058,6 @@
               "category": "googlescholar"
             },
             {
-              "title": "Improved access speed of the Codeigniter framework and REST APIs for the implementation of SIAKAD: Academic information system in Balikpapan schools",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Rancang Bangun Alat Pendeteksi Kebakaran Berbasis Internet Of Things (IOT) Menggunakan Metode Scrum",
-              "category": "googlescholar"
-            },
-            {
-              "title": "PENGEMBANGAN KAWASAN WISATA KULINER KELURAHAN DAMAI BALIKPAPAN",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Penerapan Metode Adaptive Software Development Pada Pengembangan Aplikasi Presensi Sekolah Alam Balikpapan",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Perancangan Sistem Informasi Manajemen Badan Amal Menggunakan Metode Waterfall",
-              "category": "googlescholar"
-            },
-            {
               "title": "Development of SIAKAD Applications in Balikpapan Schools using APXP: Advanced Personal Extreme Programming",
               "category": "googlescholar"
             },
@@ -1069,7 +1066,7 @@
               "category": "googlescholar"
             },
             {
-              "title": "OPTIMALISASI PENINGKATAN TEKNOLOGI DALAM PENGEMBANGAN NOTIFIKASI SIAKAD BERBASIS MOBILE DI SEKOLAH BALIKPAPAN.",
+              "title": "Perancangan Sistem Informasi Manajemen Badan Amal Menggunakan Metode Waterfall",
               "category": "googlescholar"
             },
             {
@@ -1089,11 +1086,15 @@
               "category": "googlescholar"
             },
             {
-              "title": "Optimasi Efisiensi Energi untuk Pemilihan Intermediate Cluster Head menggunakan MI-C LEACH: Multi-hop Inter-Cluster pada Jaringan Sensor Nirkabel",
+              "title": "OPTIMALISASI PENINGKATAN TEKNOLOGI DALAM PENGEMBANGAN NOTIFIKASI SIAKAD BERBASIS MOBILE DI SEKOLAH BALIKPAPAN.",
               "category": "googlescholar"
             },
             {
               "title": "Energy efficiency optimization for intermediate node selection using MhSA-LEACH: multi-hop simulated annealing in wireless sensor network",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Optimasi Efisiensi Energi untuk Pemilihan Intermediate Cluster Head menggunakan MI-C LEACH: Multi-hop Inter-Cluster pada Jaringan Sensor Nirkabel",
               "category": "googlescholar"
             },
             {
@@ -1116,17 +1117,17 @@
             "year": "2024"
           },
           {
+            "title": "Improved access speed of the Codeigniter framework and REST APIs for the implementation of SIAKAD: Academic information system in Balikpapan schools",
+            "category": "Scopus Q4",
+            "year": "2023"
+          },
+          {
             "title": "E-Readiness of North Penajam Paser Regency Regional Apparatus as Supporting City of Indonesian New Capital City",
             "category": "Scopus No-Q",
             "year": "2023"
           },
           {
             "title": "Analysis of factors that affect continuance intention on the use of ShopeePay mobile payment using structural equation modeling",
-            "category": "Scopus Q4",
-            "year": "2023"
-          },
-          {
-            "title": "Improved access speed of the Codeigniter framework and REST APIs for the implementation of SIAKAD: Academic information system in Balikpapan schools",
             "category": "Scopus Q4",
             "year": "2023"
           },
@@ -1186,11 +1187,6 @@
             "year": "2020"
           },
           {
-            "title": "Indonesian Research Journal on Education",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
             "title": "Design and Build a Legal Service Information System Using the Personal Extreme Programming Method at the Legal Service Center of the Kalimantan Institute of Technology",
             "category": "Google Scholar",
             "year": ""
@@ -1207,6 +1203,11 @@
           },
           {
             "title": "Optimization of Electrical Energy Data Monitoring System Management in Smart Home System for Electrical Switches Using Extreme Programming Method",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Indonesian Research Journal on Education",
             "category": "Google Scholar",
             "year": ""
           },
@@ -1232,6 +1233,26 @@
           },
           {
             "title": "EksPy: a new Python framework for developing graphical user interface based PyQt5.",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Improved access speed of the Codeigniter framework and REST APIs for the implementation of SIAKAD: Academic information system in Balikpapan schools",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Rancang Bangun Alat Pendeteksi Kebakaran Berbasis Internet Of Things (IOT) Menggunakan Metode Scrum",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PENGEMBANGAN KAWASAN WISATA KULINER KELURAHAN DAMAI BALIKPAPAN",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Penerapan Metode Adaptive Software Development Pada Pengembangan Aplikasi Presensi Sekolah Alam Balikpapan",
             "category": "Google Scholar",
             "year": ""
           },
@@ -1266,31 +1287,6 @@
             "year": ""
           },
           {
-            "title": "Improved access speed of the Codeigniter framework and REST APIs for the implementation of SIAKAD: Academic information system in Balikpapan schools",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Rancang Bangun Alat Pendeteksi Kebakaran Berbasis Internet Of Things (IOT) Menggunakan Metode Scrum",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "PENGEMBANGAN KAWASAN WISATA KULINER KELURAHAN DAMAI BALIKPAPAN",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Penerapan Metode Adaptive Software Development Pada Pengembangan Aplikasi Presensi Sekolah Alam Balikpapan",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Perancangan Sistem Informasi Manajemen Badan Amal Menggunakan Metode Waterfall",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
             "title": "Development of SIAKAD Applications in Balikpapan Schools using APXP: Advanced Personal Extreme Programming",
             "category": "Google Scholar",
             "year": ""
@@ -1301,7 +1297,7 @@
             "year": ""
           },
           {
-            "title": "OPTIMALISASI PENINGKATAN TEKNOLOGI DALAM PENGEMBANGAN NOTIFIKASI SIAKAD BERBASIS MOBILE DI SEKOLAH BALIKPAPAN.",
+            "title": "Perancangan Sistem Informasi Manajemen Badan Amal Menggunakan Metode Waterfall",
             "category": "Google Scholar",
             "year": ""
           },
@@ -1326,12 +1322,17 @@
             "year": ""
           },
           {
-            "title": "Optimasi Efisiensi Energi untuk Pemilihan Intermediate Cluster Head menggunakan MI-C LEACH: Multi-hop Inter-Cluster pada Jaringan Sensor Nirkabel",
+            "title": "OPTIMALISASI PENINGKATAN TEKNOLOGI DALAM PENGEMBANGAN NOTIFIKASI SIAKAD BERBASIS MOBILE DI SEKOLAH BALIKPAPAN.",
             "category": "Google Scholar",
             "year": ""
           },
           {
             "title": "Energy efficiency optimization for intermediate node selection using MhSA-LEACH: multi-hop simulated annealing in wireless sensor network",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Optimasi Efisiensi Energi untuk Pemilihan Intermediate Cluster Head menggunakan MI-C LEACH: Multi-hop Inter-Cluster pada Jaringan Sensor Nirkabel",
             "category": "Google Scholar",
             "year": ""
           },
@@ -1494,10 +1495,10 @@
           "source": "INTERNAL SOURCE"
         },
         {
-          "title": "PENGEMBANGAN WEBSITE DAN PENINGKATAN KENYAMANAN PENGUNJUNG DI WISATA MERANTI BALIKPAPAN",
-          "leader": "Hendy Indrawan Sunardi",
+          "title": "DIGITALISASI PEMBANGUNAN WEBSITE DASHBOARD SEBAGAI SARANA INFORMASI DAN PENGELOLAAN DATA MASYARAKAT",
+          "leader": "Aidil Saputra Kirsan",
           "members": [
-            "Aidil Saputra Kirsan"
+            "Hendy Indrawan Sunardi"
           ],
           "grantType": "HIBAH INTERNAL ( PMMD )",
           "grantCategory": "PMMD",
@@ -1508,10 +1509,10 @@
           "source": "INTERNAL SOURCE"
         },
         {
-          "title": "DIGITALISASI PEMBANGUNAN WEBSITE DASHBOARD SEBAGAI SARANA INFORMASI DAN PENGELOLAAN DATA MASYARAKAT",
-          "leader": "Aidil Saputra Kirsan",
+          "title": "PENGEMBANGAN WEBSITE DAN PENINGKATAN KENYAMANAN PENGUNJUNG DI WISATA MERANTI BALIKPAPAN",
+          "leader": "Hendy Indrawan Sunardi",
           "members": [
-            "Hendy Indrawan Sunardi"
+            "Aidil Saputra Kirsan"
           ],
           "grantType": "HIBAH INTERNAL ( PMMD )",
           "grantCategory": "PMMD",
@@ -1571,35 +1572,11 @@
       ],
       "booksTotal": 2,
       "ipr": {
-        "hakCipta": 10,
+        "hakCipta": 9,
         "paten": 0,
         "other": 0,
-        "total": 10,
+        "total": 9,
         "list": [
-          {
-            "title": "Sistem Informasi Bagian Usaha Kesehatan Sekolah (SIBUKS) Berbasis Website",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Sistem Informasi Penjualan Sepatu Citra Abadi Berbasis Website",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Sistem Informasi Tata Usaha Online (SITULEN) Berbasis Website",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Aplikasi Kasirku",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Sistem Informasi Manajemen Ekstrakurikuler (SIMANTRA) Berbasis Website",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Sistem Informasi Sekolah (SIAKAD) Di Sekolah Al-Azhar 58 Balikpapan Dasar Berbasis Website Dan Android",
-            "category": "hakCipta"
-          },
           {
             "title": "Clash Of Spaceship",
             "category": "hakCipta"
@@ -1609,11 +1586,31 @@
             "category": "hakCipta"
           },
           {
+            "title": "Sistem Informasi Database (SIDAT) SMA Negeri 9 Balikpapan",
+            "category": "hakCipta"
+          },
+          {
             "title": "Alien Adventure",
             "category": "hakCipta"
           },
           {
-            "title": "Sistem Informasi Database (SIDAT) SMA Negeri 9 Balikpapan",
+            "title": "Sistem Informasi Perpustakaan Sekolah (SIMPUS) Berbasis Website",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Sistem Monitoring Orang Tua Terhadap Akademik Siswa (SIMAWA) Di Sekolah Dasar Berbasis Website",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Sistem Informasi Penjualan Sepatu Citra Abadi Berbasis Website",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Sistem Informasi Bagian Usaha Kesehatan Sekolah (SIBUKS) Berbasis Website",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Sistem Informasi Tata Usaha Online (SITULEN) Berbasis Website",
             "category": "hakCipta"
           }
         ]
@@ -1624,14 +1621,14 @@
         "totalFunding": 228634000,
         "researchCount": 9,
         "serviceCount": 6
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=lzQbWuEAAAAJ&citpid=1"
+      }
     },
     {
       "name": "Arif Wicaksono Septyanto",
       "sintaId": "6741019",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:14:58.301669",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=fI1Db5oAAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:37:38.312247",
       "stats": {
         "articles": 23,
         "citations": 280,
@@ -1767,10 +1764,14 @@
           ]
         },
         "googlescholar": {
-          "total": 27,
+          "total": 28,
           "list": [
             {
               "title": "Peran Iklan Video Konten Reels Instagram dalam Meningkatkan Brand Awareness Produk UMKM TUKUTACO. ID",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Maize Leaf Disease Classification System using Deep Neural Network",
               "category": "googlescholar"
             },
             {
@@ -1782,7 +1783,11 @@
               "category": "googlescholar"
             },
             {
-              "title": "Maize Leaf Disease Classification System using Deep Neural Network",
+              "title": "Split-Conv: 1HD Depth Estimation Deep Learning Model",
+              "category": "googlescholar"
+            },
+            {
+              "title": "GRADATIONAL PAVEMENT CRACKS SEGMENTATION USING FUZZY INFERENCE SYSTEM",
               "category": "googlescholar"
             },
             {
@@ -1794,26 +1799,6 @@
               "category": "googlescholar"
             },
             {
-              "title": "Split-Conv: 1HD Depth Estimation Deep Learning Model",
-              "category": "googlescholar"
-            },
-            {
-              "title": "GRADATIONAL PAVEMENT CRACKS SEGMENTATION USING FUZZY INFERENCE SYSTEM",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Adaptively intelligent meta-search engine with minimum edit distance",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Rancang Bangun Sistem Informasi Tracking Sales dengan Integrasi Kartu Radio Frequency Identification",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Applied artificial intelligence as event horizon of cyber security",
-              "category": "googlescholar"
-            },
-            {
               "title": "Penerapan Data Mining untuk Memprediksi Jumlah Produk Terlaris Menggunakan Algoritma Naive Bayes Studi Kasus (Toko Prapti)",
               "category": "googlescholar"
             },
@@ -1822,11 +1807,31 @@
               "category": "googlescholar"
             },
             {
+              "title": "Fuzzy Logic Tahani System Pemilihan Kualitas Kayu Terbaik",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Adaptively Intelligent Meta-search Engine with Minimum Edit Distance (No Full Text)",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Applied artificial intelligence as event horizon of cyber security",
+              "category": "googlescholar"
+            },
+            {
               "title": "Automatic Number Plate Recognition (ANPR) and Automatic License Plate Recognition (ALPR) System using ANN",
               "category": "googlescholar"
             },
             {
               "title": "Fuzzy Logic Tahani System Pemilihan Kualitas Kayu Terbaik pada Kerajinan Mebel",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Fuzzy Topsis System Untuk Pemilihan Karyawan Terbaik Pada PT. Delta Dunia Textile",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Stock Market Predictor Through LSTM",
               "category": "googlescholar"
             },
             {
@@ -1846,15 +1851,7 @@
               "category": "googlescholar"
             },
             {
-              "title": "Natural language processing and machine linguistic interpretation",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Challenges in deployment of 5GGCRNs for IoTs",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Analyzing the Causes of Maternal Death in Postpartum Period Using a Fuzzy Inference System Approach",
+              "title": "Fuzzy Topsis System Untuk Pemilihan Atlet Balap Sepeda Terbaik",
               "category": "googlescholar"
             },
             {
@@ -1866,11 +1863,15 @@
               "category": "googlescholar"
             },
             {
-              "title": "Fuzzy Topsis System Untuk Pemilihan Atlet Balap Sepeda Terbaik",
+              "title": "Fuzzy rule-based system for monitoring traffic congestion using technology radio frequency identification",
               "category": "googlescholar"
             },
             {
               "title": "FUZZY RULE-BASED SYSTEM UNTUK MONITORING KEMACETAN LALU LINTAS MENGGUNAKAN TEKNOLOGI RADIO FREQUENCY IDENTIFICATION",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Challenges in deployment of 5GGCRNs for IoTs",
               "category": "googlescholar"
             },
             {
@@ -1974,27 +1975,17 @@
             "year": ""
           },
           {
+            "title": "Maize Leaf Disease Classification System using Deep Neural Network",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Perbandingan Teknik Klasifikasi Catatan Medis untuk Indeks Antropometri Status Gizi Balita",
             "category": "Google Scholar",
             "year": ""
           },
           {
             "title": "Sistem Informasi Pelayanan Administrasi pada Unit Layanan Terpadu ITK menggunakan Metode Waterfall",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Maize Leaf Disease Classification System using Deep Neural Network",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Utilizing the SVM Approach for Toddler Nutrition Status Classification based on Anthropometric Measurements",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Optimization of farmer groups and educational tourism of Bamboe Wanadesa",
             "category": "Google Scholar",
             "year": ""
           },
@@ -2009,17 +2000,12 @@
             "year": ""
           },
           {
-            "title": "Adaptively intelligent meta-search engine with minimum edit distance",
+            "title": "Utilizing the SVM Approach for Toddler Nutrition Status Classification based on Anthropometric Measurements",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Rancang Bangun Sistem Informasi Tracking Sales dengan Integrasi Kartu Radio Frequency Identification",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Applied artificial intelligence as event horizon of cyber security",
+            "title": "Optimization of farmer groups and educational tourism of Bamboe Wanadesa",
             "category": "Google Scholar",
             "year": ""
           },
@@ -2034,12 +2020,37 @@
             "year": ""
           },
           {
+            "title": "Fuzzy Logic Tahani System Pemilihan Kualitas Kayu Terbaik",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Adaptively Intelligent Meta-search Engine with Minimum Edit Distance (No Full Text)",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Applied artificial intelligence as event horizon of cyber security",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Automatic Number Plate Recognition (ANPR) and Automatic License Plate Recognition (ALPR) System using ANN",
             "category": "Google Scholar",
             "year": ""
           },
           {
             "title": "Fuzzy Logic Tahani System Pemilihan Kualitas Kayu Terbaik pada Kerajinan Mebel",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Fuzzy Topsis System Untuk Pemilihan Karyawan Terbaik Pada PT. Delta Dunia Textile",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Stock Market Predictor Through LSTM",
             "category": "Google Scholar",
             "year": ""
           },
@@ -2064,17 +2075,7 @@
             "year": ""
           },
           {
-            "title": "Natural language processing and machine linguistic interpretation",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Challenges in deployment of 5GGCRNs for IoTs",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Analyzing the Causes of Maternal Death in Postpartum Period Using a Fuzzy Inference System Approach",
+            "title": "Fuzzy Topsis System Untuk Pemilihan Atlet Balap Sepeda Terbaik",
             "category": "Google Scholar",
             "year": ""
           },
@@ -2089,12 +2090,17 @@
             "year": ""
           },
           {
-            "title": "Fuzzy Topsis System Untuk Pemilihan Atlet Balap Sepeda Terbaik",
+            "title": "Fuzzy rule-based system for monitoring traffic congestion using technology radio frequency identification",
             "category": "Google Scholar",
             "year": ""
           },
           {
             "title": "FUZZY RULE-BASED SYSTEM UNTUK MONITORING KEMACETAN LALU LINTAS MENGGUNAKAN TEKNOLOGI RADIO FREQUENCY IDENTIFICATION",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Challenges in deployment of 5GGCRNs for IoTs",
             "category": "Google Scholar",
             "year": ""
           },
@@ -2166,6 +2172,20 @@
           "source": "BIMA SOURCE"
         },
         {
+          "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
+          "leader": "Henokh Lugo Hariyanto",
+          "members": [
+            "Arif Wicaksono Septyanto"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2023",
+          "fundingAmount": 17900000,
+          "fundingFormatted": "Rp. 17.900.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
+        },
+        {
           "title": "PENGEMBANGAN INVERSI BATIMETRI UNTUK ESTIMASI KEDALAMAN LAUT PERAIRAN MENGGUNAKAN ALGORITMA INTERPRETABLE DEEP LEARNING",
           "leader": "Henokh Lugo Hariyanto",
           "members": [
@@ -2192,20 +2212,6 @@
           "fundingFormatted": "Rp. 14.950.000",
           "status": "Approved",
           "source": "INTERNAL SOURCE"
-        },
-        {
-          "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
-          "leader": "Henokh Lugo Hariyanto",
-          "members": [
-            "Arif Wicaksono Septyanto"
-          ],
-          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
-          "grantCategory": "PDP/Dosen Pemula",
-          "year": "2023",
-          "fundingAmount": 17900000,
-          "fundingFormatted": "Rp. 17.900.000",
-          "status": "Approved",
-          "source": "BIMA SOURCE"
         },
         {
           "title": "Fuzzy Logic Fog Clod Computing untuk Menganalisis Faktor Penyebab Kematian Ibu Meninggal Masa Postpartum",
@@ -2325,14 +2331,14 @@
         "totalFunding": 274523000,
         "researchCount": 9,
         "serviceCount": 5
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=fI1Db5oAAAAJ&citpid=1"
+      }
     },
     {
       "name": "Henokh Lugo Hariyanto",
       "sintaId": "6807418",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:15:03.873927",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=0-iFtfUAAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:38:03.109107",
       "stats": {
         "articles": 9,
         "citations": 20,
@@ -2559,6 +2565,20 @@
           "source": "INTERNAL SOURCE"
         },
         {
+          "title": "Pengembangan Algoritma Metaheuristik Untuk Menyelesaikan Permasalahan Optimasi Kombinatorial",
+          "leader": "Arif Wicaksono Septyanto",
+          "members": [
+            "Henokh Lugo Hariyanto"
+          ],
+          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "grantCategory": "PDP/Dosen Pemula",
+          "year": "2024",
+          "fundingAmount": 34740000,
+          "fundingFormatted": "Rp. 34.740.000",
+          "status": "Approved",
+          "source": "BIMA SOURCE"
+        },
+        {
           "title": "PENGEMBANGAN SILURAH: SISTEM INFORMASI KELURAHAN MENGGUNAKAN METODE AGILE",
           "leader": "Yuyun Tri Wiranti",
           "members": [
@@ -2573,16 +2593,16 @@
           "source": "INTERNAL SOURCE"
         },
         {
-          "title": "Pengembangan Algoritma Metaheuristik Untuk Menyelesaikan Permasalahan Optimasi Kombinatorial",
-          "leader": "Arif Wicaksono Septyanto",
+          "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
+          "leader": "Henokh Lugo Hariyanto",
           "members": [
-            "Henokh Lugo Hariyanto"
+            "Arif Wicaksono Septyanto"
           ],
           "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
           "grantCategory": "PDP/Dosen Pemula",
-          "year": "2024",
-          "fundingAmount": 34740000,
-          "fundingFormatted": "Rp. 34.740.000",
+          "year": "2023",
+          "fundingAmount": 17900000,
+          "fundingFormatted": "Rp. 17.900.000",
           "status": "Approved",
           "source": "BIMA SOURCE"
         },
@@ -2613,20 +2633,6 @@
           "fundingFormatted": "Rp. 14.950.000",
           "status": "Approved",
           "source": "INTERNAL SOURCE"
-        },
-        {
-          "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
-          "leader": "Henokh Lugo Hariyanto",
-          "members": [
-            "Arif Wicaksono Septyanto"
-          ],
-          "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
-          "grantCategory": "PDP/Dosen Pemula",
-          "year": "2023",
-          "fundingAmount": 17900000,
-          "fundingFormatted": "Rp. 17.900.000",
-          "status": "Approved",
-          "source": "BIMA SOURCE"
         }
       ],
       "researchTotal": 6,
@@ -2676,14 +2682,14 @@
         "totalFunding": 154553000,
         "researchCount": 6,
         "serviceCount": 2
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=0-iFtfUAAAAJ&citpid=1"
+      }
     },
     {
       "name": "Lovinta Happy Atrinawati",
       "sintaId": "5977894",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:15:21.350617",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=hoRXNb0AAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:38:38.958934",
       "stats": {
         "articles": 53,
         "citations": 517,
@@ -2809,20 +2815,8 @@
           ]
         },
         "googlescholar": {
-          "total": 53,
+          "total": 56,
           "list": [
-            {
-              "title": "Improving helpdesk capability in perum peruri through service catalog management based on itil v3",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Designing Business Process Model and Standard Operating Procedures (SOP) of Integrated Laboratory Management At XYZ University",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Peningkatan penjualan keripik singkong melalui penambahan variasi rasa dan peningkatan desain kemasan",
-              "category": "googlescholar"
-            },
             {
               "title": "Perancangan Tata Kelola Teknologi Informasi dengan Menggunakan Framework Cobit 2019 pada PT XYZ Balikpapan",
               "category": "googlescholar"
@@ -2832,11 +2826,11 @@
               "category": "googlescholar"
             },
             {
-              "title": "Cyber Resilience Evaluation Using Cyber Resilience Review Framework at University XYZ",
+              "title": "Pelatihan Pengolahan Rumput Laut menjadi Permen Jelly untuk Meningkatkan Nilai bagi Masyarakat Kelurahan Teritip, Balikpapan",
               "category": "googlescholar"
             },
             {
-              "title": "Pelatihan Pengolahan Rumput Laut menjadi Permen Jelly untuk Meningkatkan Nilai bagi Masyarakat Kelurahan Teritip, Balikpapan",
+              "title": "Cyber Resilience Evaluation Using Cyber Resilience Review Framework at University XYZ",
               "category": "googlescholar"
             },
             {
@@ -2852,19 +2846,19 @@
               "category": "googlescholar"
             },
             {
-              "title": "Perancangan Model Proses Bisnis dan Penyusunan Standar Operasional Prosedur (SOP) Manajemen Laboratorium Terpadu Institut Teknologi Kalimantan",
+              "title": "Determination of Discounts Using K-Means Clustering with RFM Models in Retail Business",
               "category": "googlescholar"
             },
             {
-              "title": "Pembangunan Sistem Informasi Manajemen Laboratorium Terpadu Universitas ABC",
+              "title": "Improving helpdesk capability in perum peruri through service catalog management based on itil v3",
               "category": "googlescholar"
             },
             {
-              "title": "Penyusunan Standar Operasional Prosedur Gudang pada PT. XYZ",
+              "title": "Peningkatan penjualan keripik singkong melalui penambahan variasi rasa dan peningkatan desain kemasan",
               "category": "googlescholar"
             },
             {
-              "title": "Penerapan Metode Agile Untuk Membangun Sistem Informasi Monitoring Santri Pondok Modern Asy-Syifa Balikpapan",
+              "title": "Designing Business Process Model and Standard Operating Procedures (SOP) of Integrated Laboratory Management At XYZ University",
               "category": "googlescholar"
             },
             {
@@ -2888,15 +2882,19 @@
               "category": "googlescholar"
             },
             {
-              "title": "Rancangan Tata Kelola Teknologi Informasi Menggunakan Framework COBIT 2019 (Studi Kasus: PT XYZ)",
+              "title": "Perancangan Model Proses Bisnis dan Penyusunan Standar Operasional Prosedur (SOP) Manajemen Laboratorium Terpadu Institut Teknologi Kalimantan",
               "category": "googlescholar"
             },
             {
-              "title": "Pelatihan Peningkatan Produktivitas Pelaku Industri Rumahan melalui Teknologi Informasi dan Komunikasi di Kota Balikpapan",
+              "title": "Pembangunan Sistem Informasi Manajemen Laboratorium Terpadu Universitas ABC",
               "category": "googlescholar"
             },
             {
-              "title": "PENINGKATAN KEMAMPUAN BAHASA INGGRIS UNTUK KELOMPOK MASYARAKAT DAN PENGELOLA HUTAN LINDUNG SUNGAI WAIN DAN KEBUN RAYA BALIKPAPAN DI KOTA BALIKPAPAN",
+              "title": "Penyusunan Standar Operasional Prosedur Gudang pada PT. XYZ",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Penerapan Metode Agile Untuk Membangun Sistem Informasi Monitoring Santri Pondok Modern Asy-Syifa Balikpapan",
               "category": "googlescholar"
             },
             {
@@ -2940,6 +2938,50 @@
               "category": "googlescholar"
             },
             {
+              "title": "Rancangan Tata Kelola Teknologi Informasi Menggunakan Framework COBIT 2019 (Studi Kasus: PT XYZ)",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pelatihan Peningkatan Produktivitas Pelaku Industri Rumahan melalui Teknologi Informasi dan Komunikasi di Kota Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PENINGKATAN KEMAMPUAN BAHASA INGGRIS UNTUK KELOMPOK MASYARAKAT DAN PENGELOLA HUTAN LINDUNG SUNGAI WAIN DAN KEBUN RAYA BALIKPAPAN DI KOTA BALIKPAPAN",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Enterprise Architecture Planning with TOGAF ADM for Balikpapan College of Economics",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pemodelan Arsitektur Enterprise Menggunakan Metode Togaf Pada Sekolah Tinggi Ilmu Ekonomi Madani Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Perancangan Arsitektur Sistem dan Teknologi Informasi Menggunakan Togaf ADM (Studi Kasus Dinas Perhubungan Kota Balikpapan)",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Evaluasi Tata Kelola Teknologi Informasi di Fungsi ICT PT XYZ Menggunakan Framework COBIT 5 pada Domain Proses BAI06 Mengelola Program dan Proyek",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PENINGKATAN MINAT MASYARAKAT BALIKPAPAN UNTUK MENGELOLA KEUANGAN DAN BERINVESTASI",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Automation of Student's Final Project Business Process using ProcessMaker (Case study: Kalimantan Institute of Technology)",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Desain Manajemen Perangkat Jaringan Organisasi Perangkat Daerah (OPD) Kota Balikpapan dengan Metode Network Development Lifecycle (NDLC) Menuju Balikpapan Smart City",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Perancangan Arsitektur Sistem Informasi pada Perguruan Tinggi Menggunakan TOGAF ADM (Studi Kasus: Politeknik Negeri Balikpapan)",
+              "category": "googlescholar"
+            },
+            {
               "title": "Manajemen Proses Bisnis untuk Institut Teknologi Kalimantan",
               "category": "googlescholar"
             },
@@ -2949,26 +2991,6 @@
             },
             {
               "title": "Enterprise Architecture Planning for Balikpapan Environmental Services Using TOGAF ADM",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Pemodelan Arsitektur Enterprise Menggunakan Metode Togaf Pada Sekolah Tinggi Ilmu Ekonomi Madani Balikpapan",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Enterprise Architecture Planning with TOGAF ADM for Balikpapan College of Economics",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Evaluasi Tata Kelola Teknologi Informasi di Fungsi ICT PT XYZ Menggunakan Framework COBIT 5 pada Domain Proses BAI06 Mengelola Program dan Proyek",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Desain Manajemen Perangkat Jaringan Organisasi Perangkat Daerah (OPD) Kota Balikpapan dengan Metode Network Development Lifecycle (NDLC) Menuju Balikpapan Smart City",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Perancangan Arsitektur Sistem Informasi pada Perguruan Tinggi Menggunakan TOGAF ADM (Studi Kasus: Politeknik Negeri Balikpapan)",
               "category": "googlescholar"
             },
             {
@@ -3000,11 +3022,11 @@
               "category": "googlescholar"
             },
             {
-              "title": "Penerapan Algoritma Depth First Search (DFS) pada Pencarian Solusi Permainan “Pairs”",
+              "title": "Analisis Kompleksitas algoritma untuk Berbagai Macam Metode Pencarian Nilai (Searching) dan Pengurutan Nilai (Sorting) pada Tabel",
               "category": "googlescholar"
             },
             {
-              "title": "Analisis Kompleksitas algoritma untuk Berbagai Macam Metode Pencarian Nilai (Searching) dan Pengurutan Nilai (Sorting) pada Tabel",
+              "title": "Penerapan Algoritma Depth First Search (DFS) pada Pencarian Solusi Permainan “Pairs”",
               "category": "googlescholar"
             },
             {
@@ -3017,10 +3039,6 @@
             },
             {
               "title": "PENGGUNAAN MOODLE UNTUK KNOWLEDGE MANAGEMENT SYSTEM",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Determination of Discounts Using K-Means Clustering with RFM Models in Retail Business",
               "category": "googlescholar"
             }
           ]
@@ -3105,21 +3123,6 @@
             "year": "2019"
           },
           {
-            "title": "Improving helpdesk capability in perum peruri through service catalog management based on itil v3",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Designing Business Process Model and Standard Operating Procedures (SOP) of Integrated Laboratory Management At XYZ University",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Peningkatan penjualan keripik singkong melalui penambahan variasi rasa dan peningkatan desain kemasan",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
             "title": "Perancangan Tata Kelola Teknologi Informasi dengan Menggunakan Framework Cobit 2019 pada PT XYZ Balikpapan",
             "category": "Google Scholar",
             "year": ""
@@ -3130,12 +3133,12 @@
             "year": ""
           },
           {
-            "title": "Cyber Resilience Evaluation Using Cyber Resilience Review Framework at University XYZ",
+            "title": "Pelatihan Pengolahan Rumput Laut menjadi Permen Jelly untuk Meningkatkan Nilai bagi Masyarakat Kelurahan Teritip, Balikpapan",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Pelatihan Pengolahan Rumput Laut menjadi Permen Jelly untuk Meningkatkan Nilai bagi Masyarakat Kelurahan Teritip, Balikpapan",
+            "title": "Cyber Resilience Evaluation Using Cyber Resilience Review Framework at University XYZ",
             "category": "Google Scholar",
             "year": ""
           },
@@ -3155,22 +3158,22 @@
             "year": ""
           },
           {
-            "title": "Perancangan Model Proses Bisnis dan Penyusunan Standar Operasional Prosedur (SOP) Manajemen Laboratorium Terpadu Institut Teknologi Kalimantan",
+            "title": "Determination of Discounts Using K-Means Clustering with RFM Models in Retail Business",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Pembangunan Sistem Informasi Manajemen Laboratorium Terpadu Universitas ABC",
+            "title": "Improving helpdesk capability in perum peruri through service catalog management based on itil v3",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Penyusunan Standar Operasional Prosedur Gudang pada PT. XYZ",
+            "title": "Peningkatan penjualan keripik singkong melalui penambahan variasi rasa dan peningkatan desain kemasan",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Penerapan Metode Agile Untuk Membangun Sistem Informasi Monitoring Santri Pondok Modern Asy-Syifa Balikpapan",
+            "title": "Designing Business Process Model and Standard Operating Procedures (SOP) of Integrated Laboratory Management At XYZ University",
             "category": "Google Scholar",
             "year": ""
           },
@@ -3200,17 +3203,22 @@
             "year": ""
           },
           {
-            "title": "Rancangan Tata Kelola Teknologi Informasi Menggunakan Framework COBIT 2019 (Studi Kasus: PT XYZ)",
+            "title": "Perancangan Model Proses Bisnis dan Penyusunan Standar Operasional Prosedur (SOP) Manajemen Laboratorium Terpadu Institut Teknologi Kalimantan",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Pelatihan Peningkatan Produktivitas Pelaku Industri Rumahan melalui Teknologi Informasi dan Komunikasi di Kota Balikpapan",
+            "title": "Pembangunan Sistem Informasi Manajemen Laboratorium Terpadu Universitas ABC",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "PENINGKATAN KEMAMPUAN BAHASA INGGRIS UNTUK KELOMPOK MASYARAKAT DAN PENGELOLA HUTAN LINDUNG SUNGAI WAIN DAN KEBUN RAYA BALIKPAPAN DI KOTA BALIKPAPAN",
+            "title": "Penyusunan Standar Operasional Prosedur Gudang pada PT. XYZ",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Penerapan Metode Agile Untuk Membangun Sistem Informasi Monitoring Santri Pondok Modern Asy-Syifa Balikpapan",
             "category": "Google Scholar",
             "year": ""
           },
@@ -3265,6 +3273,61 @@
             "year": ""
           },
           {
+            "title": "Rancangan Tata Kelola Teknologi Informasi Menggunakan Framework COBIT 2019 (Studi Kasus: PT XYZ)",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pelatihan Peningkatan Produktivitas Pelaku Industri Rumahan melalui Teknologi Informasi dan Komunikasi di Kota Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PENINGKATAN KEMAMPUAN BAHASA INGGRIS UNTUK KELOMPOK MASYARAKAT DAN PENGELOLA HUTAN LINDUNG SUNGAI WAIN DAN KEBUN RAYA BALIKPAPAN DI KOTA BALIKPAPAN",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Enterprise Architecture Planning with TOGAF ADM for Balikpapan College of Economics",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pemodelan Arsitektur Enterprise Menggunakan Metode Togaf Pada Sekolah Tinggi Ilmu Ekonomi Madani Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Perancangan Arsitektur Sistem dan Teknologi Informasi Menggunakan Togaf ADM (Studi Kasus Dinas Perhubungan Kota Balikpapan)",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Evaluasi Tata Kelola Teknologi Informasi di Fungsi ICT PT XYZ Menggunakan Framework COBIT 5 pada Domain Proses BAI06 Mengelola Program dan Proyek",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PENINGKATAN MINAT MASYARAKAT BALIKPAPAN UNTUK MENGELOLA KEUANGAN DAN BERINVESTASI",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Automation of Student's Final Project Business Process using ProcessMaker (Case study: Kalimantan Institute of Technology)",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Desain Manajemen Perangkat Jaringan Organisasi Perangkat Daerah (OPD) Kota Balikpapan dengan Metode Network Development Lifecycle (NDLC) Menuju Balikpapan Smart City",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Perancangan Arsitektur Sistem Informasi pada Perguruan Tinggi Menggunakan TOGAF ADM (Studi Kasus: Politeknik Negeri Balikpapan)",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Manajemen Proses Bisnis untuk Institut Teknologi Kalimantan",
             "category": "Google Scholar",
             "year": ""
@@ -3276,31 +3339,6 @@
           },
           {
             "title": "Enterprise Architecture Planning for Balikpapan Environmental Services Using TOGAF ADM",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Pemodelan Arsitektur Enterprise Menggunakan Metode Togaf Pada Sekolah Tinggi Ilmu Ekonomi Madani Balikpapan",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Enterprise Architecture Planning with TOGAF ADM for Balikpapan College of Economics",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Evaluasi Tata Kelola Teknologi Informasi di Fungsi ICT PT XYZ Menggunakan Framework COBIT 5 pada Domain Proses BAI06 Mengelola Program dan Proyek",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Desain Manajemen Perangkat Jaringan Organisasi Perangkat Daerah (OPD) Kota Balikpapan dengan Metode Network Development Lifecycle (NDLC) Menuju Balikpapan Smart City",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Perancangan Arsitektur Sistem Informasi pada Perguruan Tinggi Menggunakan TOGAF ADM (Studi Kasus: Politeknik Negeri Balikpapan)",
             "category": "Google Scholar",
             "year": ""
           },
@@ -3340,12 +3378,12 @@
             "year": ""
           },
           {
-            "title": "Penerapan Algoritma Depth First Search (DFS) pada Pencarian Solusi Permainan “Pairs”",
+            "title": "Analisis Kompleksitas algoritma untuk Berbagai Macam Metode Pencarian Nilai (Searching) dan Pengurutan Nilai (Sorting) pada Tabel",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Analisis Kompleksitas algoritma untuk Berbagai Macam Metode Pencarian Nilai (Searching) dan Pengurutan Nilai (Sorting) pada Tabel",
+            "title": "Penerapan Algoritma Depth First Search (DFS) pada Pencarian Solusi Permainan “Pairs”",
             "category": "Google Scholar",
             "year": ""
           },
@@ -3361,11 +3399,6 @@
           },
           {
             "title": "PENGGUNAAN MOODLE UNTUK KNOWLEDGE MANAGEMENT SYSTEM",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Determination of Discounts Using K-Means Clustering with RFM Models in Retail Business",
             "category": "Google Scholar",
             "year": ""
           }
@@ -3472,14 +3505,14 @@
         "totalFunding": 48135000,
         "researchCount": 3,
         "serviceCount": 1
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=hoRXNb0AAAAJ&citpid=1"
+      }
     },
     {
       "name": "Vika Fitratunnany Insanittaqwa",
       "sintaId": "6784235",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:15:28.195584",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=KSbR3ScAAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:38:44.157740",
       "stats": {
         "articles": 14,
         "citations": 54,
@@ -3792,14 +3825,14 @@
         "totalFunding": 117120000,
         "researchCount": 5,
         "serviceCount": 3
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=KSbR3ScAAAAJ&citpid=1"
+      }
     },
     {
       "name": "Hendy Indrawan Sunardi",
       "sintaId": "6784468",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:15:37.000750",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=GX3ZBk4AAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:38:47.904480",
       "stats": {
         "articles": 9,
         "citations": 11,
@@ -3849,11 +3882,11 @@
           "total": 9,
           "list": [
             {
-              "title": "Optimization of Electrical Energy Data Monitoring System Management in Smart Home System for Electrical Switches Using Extreme Programming Method",
+              "title": "Rancangan Smart Home System untuk Pengendalian Saklar Listrik",
               "category": "googlescholar"
             },
             {
-              "title": "Rancangan Smart Home System untuk Pengendalian Saklar Listrik",
+              "title": "Optimization of Electrical Energy Data Monitoring System Management in Smart Home System for Electrical Switches Using Extreme Programming Method",
               "category": "googlescholar"
             },
             {
@@ -3873,11 +3906,11 @@
               "category": "googlescholar"
             },
             {
-              "title": "Strategi Promosi Pariwisata Pada Kawasan Wisata Mangrove Pendopo Teritip, Kelurahan Teritip, Kecamatan Balikpapan Utara",
+              "title": "RANCANG BANGUN SISTEM INFORMASI PELAPORAN KEJADIAN DAN PERLENGKAPAN HARIAN DENGAN METODE PERSONAL EXTREME PROGRAMMING PADA PT. JASA MARGA TOLLROAD OPERATOR BALIKPAPAN-SAMARINDA",
               "category": "googlescholar"
             },
             {
-              "title": "RANCANG BANGUN SISTEM INFORMASI PELAPORAN KEJADIAN DAN PERLENGKAPAN HARIAN DENGAN METODE PERSONAL EXTREME PROGRAMMING PADA PT. JASA MARGA TOLLROAD OPERATOR BALIKPAPAN-SAMARINDA",
+              "title": "Strategi Promosi Pariwisata Pada Kawasan Wisata Mangrove Pendopo Teritip, Kelurahan Teritip, Kecamatan Balikpapan Utara",
               "category": "googlescholar"
             },
             {
@@ -3891,12 +3924,12 @@
         },
         "list": [
           {
-            "title": "Optimization of Electrical Energy Data Monitoring System Management in Smart Home System for Electrical Switches Using Extreme Programming Method",
+            "title": "Rancangan Smart Home System untuk Pengendalian Saklar Listrik",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Rancangan Smart Home System untuk Pengendalian Saklar Listrik",
+            "title": "Optimization of Electrical Energy Data Monitoring System Management in Smart Home System for Electrical Switches Using Extreme Programming Method",
             "category": "Google Scholar",
             "year": ""
           },
@@ -3921,12 +3954,12 @@
             "year": ""
           },
           {
-            "title": "Strategi Promosi Pariwisata Pada Kawasan Wisata Mangrove Pendopo Teritip, Kelurahan Teritip, Kecamatan Balikpapan Utara",
+            "title": "RANCANG BANGUN SISTEM INFORMASI PELAPORAN KEJADIAN DAN PERLENGKAPAN HARIAN DENGAN METODE PERSONAL EXTREME PROGRAMMING PADA PT. JASA MARGA TOLLROAD OPERATOR BALIKPAPAN-SAMARINDA",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "RANCANG BANGUN SISTEM INFORMASI PELAPORAN KEJADIAN DAN PERLENGKAPAN HARIAN DENGAN METODE PERSONAL EXTREME PROGRAMMING PADA PT. JASA MARGA TOLLROAD OPERATOR BALIKPAPAN-SAMARINDA",
+            "title": "Strategi Promosi Pariwisata Pada Kawasan Wisata Mangrove Pendopo Teritip, Kelurahan Teritip, Kecamatan Balikpapan Utara",
             "category": "Google Scholar",
             "year": ""
           },
@@ -4054,14 +4087,14 @@
         "totalFunding": 86940000,
         "researchCount": 2,
         "serviceCount": 5
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=GX3ZBk4AAAAJ&citpid=1"
+      }
     },
     {
       "name": "Dwi Nur Amalia",
       "sintaId": "6761367",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:15:43.885413",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=eJ1lzuIAAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:38:53.220483",
       "stats": {
         "articles": 14,
         "citations": 24,
@@ -4145,7 +4178,7 @@
           ]
         },
         "googlescholar": {
-          "total": 16,
+          "total": 15,
           "list": [
             {
               "title": "Design and Build a Legal Service Information System Using the Personal Extreme Programming Method at the Legal Service Center of the Kalimantan Institute of Technology",
@@ -4192,15 +4225,11 @@
               "category": "googlescholar"
             },
             {
-              "title": "PENYUSUNAN PERENCANAAN KEBERLANGSUNGAN BISNIS PADA PT XYZ",
+              "title": "Implementation of Business Continuity Planning Methodology in Making Business Continuity Planning Documents at PT. XYZ",
               "category": "googlescholar"
             },
             {
               "title": "Penyusunan Perencanaan Keberlangsungan Bisnis Pada Pt Promedika Mitra Utama Kota Samarinda",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Implementation of Business Continuity Planning Methodology in Making Business Continuity Planning Documents at PT. XYZ",
               "category": "googlescholar"
             },
             {
@@ -4308,17 +4337,12 @@
             "year": ""
           },
           {
-            "title": "PENYUSUNAN PERENCANAAN KEBERLANGSUNGAN BISNIS PADA PT XYZ",
+            "title": "Implementation of Business Continuity Planning Methodology in Making Business Continuity Planning Documents at PT. XYZ",
             "category": "Google Scholar",
             "year": ""
           },
           {
             "title": "Penyusunan Perencanaan Keberlangsungan Bisnis Pada Pt Promedika Mitra Utama Kota Samarinda",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Implementation of Business Continuity Planning Methodology in Making Business Continuity Planning Documents at PT. XYZ",
             "category": "Google Scholar",
             "year": ""
           },
@@ -4336,21 +4360,6 @@
       },
       "research": [
         {
-          "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
-          "leader": "Vika Fitratunnany Insanittaqwa",
-          "members": [
-            "Yuyun Tri Wiranti",
-            "Dwi Nur Amalia"
-          ],
-          "grantType": "Penelitian Internal ( RKDN )",
-          "grantCategory": "RKDN",
-          "year": "2025",
-          "fundingAmount": 10000000,
-          "fundingFormatted": "Rp. 10.000.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
-        {
           "title": "PENGEMBANGAN SISTEM INFORMASI PUSAT LAYANAN HUKUM SEBAGAI JARINGAN DOKUMENTASI DAN INFORMASI HUKUM ITK",
           "leader": "PENILAIAN INTERNAL ( RKS )",
           "members": [
@@ -4362,6 +4371,21 @@
           "year": "2025",
           "fundingAmount": 17000000,
           "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
+          "leader": "Vika Fitratunnany Insanittaqwa",
+          "members": [
+            "Yuyun Tri Wiranti",
+            "Dwi Nur Amalia"
+          ],
+          "grantType": "Penelitian Internal ( RKDN )",
+          "grantCategory": "RKDN",
+          "year": "2025",
+          "fundingAmount": 10000000,
+          "fundingFormatted": "Rp. 10.000.000",
           "status": "Approved",
           "source": "INTERNAL SOURCE"
         },
@@ -4450,14 +4474,14 @@
         "totalFunding": 82750000,
         "researchCount": 3,
         "serviceCount": 4
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=eJ1lzuIAAAAJ&citpid=1"
+      }
     },
     {
       "name": "Dwi Arief Prambudi",
       "sintaId": "6784358",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:16:03.252471",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=nLJNVHEAAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:39:01.693214",
       "stats": {
         "articles": 32,
         "citations": 131,
@@ -4504,10 +4528,22 @@
           "total": 0
         },
         "googlescholar": {
-          "total": 31,
+          "total": 30,
           "list": [
             {
               "title": "Penilaian Keamanan Informasi Pada Pengadilan Agama XYZ Menggunakan Indeks KAMI 4.2 Berdasarkan ISO/IEC 27001: 2022",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Use of the Information Security Index (KAMI) 4.2 as an Evaluation Method at the Paser Regency Communication, Informatics, Statistics and Coding Service",
+              "category": "googlescholar"
+            },
+            {
+              "title": "EVALUASI USABILITY WEBSITE DENGAN METODE WEBUSE: STUDI KASUS DINAS KOPERASI KOTA XYZ",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Visualization of Balikpapan City Air Quality Clustering and Forecasting Using The Backpropagation Object Clustering Method And Artificial Neural Network Forecasting",
               "category": "googlescholar"
             },
             {
@@ -4519,15 +4555,7 @@
               "category": "googlescholar"
             },
             {
-              "title": "Use of the Information Security Index (KAMI) 4.2 as an Evaluation Method at the Paser Regency Communication, Informatics, Statistics and Coding Service",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Visualization of Balikpapan City Air Quality Clustering and Forecasting Using The Backpropagation Object Clustering Method And Artificial Neural Network Forecasting",
-              "category": "googlescholar"
-            },
-            {
-              "title": "EVALUASI USABILITY WEBSITE DENGAN METODE WEBUSE: STUDI KASUS DINAS KOPERASI KOTA XYZ",
+              "title": "Analisis Emisi Gas Rumah Kaca (GRK) pada Pengelolaan Sampah Organik (Studi Kasus: ITF Kota Hijau Balikpapan)",
               "category": "googlescholar"
             },
             {
@@ -4540,10 +4568,6 @@
             },
             {
               "title": "Use of EPANET Software in Network Planning for Drinking Water Supply Systems in Balikpapan Tengah District and Balikpapan City District",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Analisis Emisi Gas Rumah Kaca (GRK) pada Pengelolaan Sampah Organik (Studi Kasus: ITF Kota Hijau Balikpapan)",
               "category": "googlescholar"
             },
             {
@@ -4587,10 +4611,6 @@
               "category": "googlescholar"
             },
             {
-              "title": "Sistem Pakar Diagnosis Penyakit Pada Tanaman Pepaya Menggunakan Metode Backward Chaining Berbasis Web",
-              "category": "googlescholar"
-            },
-            {
               "title": "PEMANFAATAN TEKNOLOGI INFORMASI DALAM MENUNJANG PROFESIONALITAS GURU SDN 013 SAMARINDA UTARA",
               "category": "googlescholar"
             },
@@ -4619,15 +4639,15 @@
               "category": "googlescholar"
             },
             {
+              "title": "PREDIKSI PENGGUAAN BEBAN LISTRIK SISTEM MAHAKAM MENGGUNAKAN JARINGAN SYARAF TIRUAN DENGAN MENGGUNAKAN ALGORITMA BACKPOROPAGATION",
+              "category": "googlescholar"
+            },
+            {
               "title": "Decision Support System for Alternative Selection of Family Medicinal Plants Using the WEB-Based TOPSIS Method",
               "category": "googlescholar"
             },
             {
               "title": "Game Edukasi Pengenalan Objek untuk Anak Usia 6-8 Tahun",
-              "category": "googlescholar"
-            },
-            {
-              "title": "PREDIKSI PENGGUAAN BEBAN LISTRIK SISTEM MAHAKAM MENGGUNAKAN JARINGAN SYARAF TIRUAN DENGAN MENGGUNAKAN ALGORITMA BACKPOROPAGATION",
               "category": "googlescholar"
             }
           ]
@@ -4642,6 +4662,21 @@
             "year": ""
           },
           {
+            "title": "Use of the Information Security Index (KAMI) 4.2 as an Evaluation Method at the Paser Regency Communication, Informatics, Statistics and Coding Service",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "EVALUASI USABILITY WEBSITE DENGAN METODE WEBUSE: STUDI KASUS DINAS KOPERASI KOTA XYZ",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Visualization of Balikpapan City Air Quality Clustering and Forecasting Using The Backpropagation Object Clustering Method And Artificial Neural Network Forecasting",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Evaluasi Keamanan Informasi di Universitas XYZ Dengan Menggunakan Indeks KAMI 4.2",
             "category": "Google Scholar",
             "year": ""
@@ -4652,17 +4687,7 @@
             "year": ""
           },
           {
-            "title": "Use of the Information Security Index (KAMI) 4.2 as an Evaluation Method at the Paser Regency Communication, Informatics, Statistics and Coding Service",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Visualization of Balikpapan City Air Quality Clustering and Forecasting Using The Backpropagation Object Clustering Method And Artificial Neural Network Forecasting",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "EVALUASI USABILITY WEBSITE DENGAN METODE WEBUSE: STUDI KASUS DINAS KOPERASI KOTA XYZ",
+            "title": "Analisis Emisi Gas Rumah Kaca (GRK) pada Pengelolaan Sampah Organik (Studi Kasus: ITF Kota Hijau Balikpapan)",
             "category": "Google Scholar",
             "year": ""
           },
@@ -4678,11 +4703,6 @@
           },
           {
             "title": "Use of EPANET Software in Network Planning for Drinking Water Supply Systems in Balikpapan Tengah District and Balikpapan City District",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Analisis Emisi Gas Rumah Kaca (GRK) pada Pengelolaan Sampah Organik (Studi Kasus: ITF Kota Hijau Balikpapan)",
             "category": "Google Scholar",
             "year": ""
           },
@@ -4737,11 +4757,6 @@
             "year": ""
           },
           {
-            "title": "Sistem Pakar Diagnosis Penyakit Pada Tanaman Pepaya Menggunakan Metode Backward Chaining Berbasis Web",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
             "title": "PEMANFAATAN TEKNOLOGI INFORMASI DALAM MENUNJANG PROFESIONALITAS GURU SDN 013 SAMARINDA UTARA",
             "category": "Google Scholar",
             "year": ""
@@ -4777,6 +4792,11 @@
             "year": ""
           },
           {
+            "title": "PREDIKSI PENGGUAAN BEBAN LISTRIK SISTEM MAHAKAM MENGGUNAKAN JARINGAN SYARAF TIRUAN DENGAN MENGGUNAKAN ALGORITMA BACKPOROPAGATION",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Decision Support System for Alternative Selection of Family Medicinal Plants Using the WEB-Based TOPSIS Method",
             "category": "Google Scholar",
             "year": ""
@@ -4785,15 +4805,25 @@
             "title": "Game Edukasi Pengenalan Objek untuk Anak Usia 6-8 Tahun",
             "category": "Google Scholar",
             "year": ""
-          },
-          {
-            "title": "PREDIKSI PENGGUAAN BEBAN LISTRIK SISTEM MAHAKAM MENGGUNAKAN JARINGAN SYARAF TIRUAN DENGAN MENGGUNAKAN ALGORITMA BACKPOROPAGATION",
-            "category": "Google Scholar",
-            "year": ""
           }
         ]
       },
       "research": [
+        {
+          "title": "PENYUSUNAN JUSTIFIKASI TEKNIS DAN DISASTER RECOVERY PLAN UNTUK PENGEMBANGAN DATA CENTER UPA TIK ITK",
+          "leader": "PENELITIAN INTERNAL ( RKS )",
+          "members": [
+            "Riska K Abdullah",
+            "Dwi Arief Prambudi"
+          ],
+          "grantType": "PENELITIAN INTERNAL ( RKS )",
+          "grantCategory": "RKS",
+          "year": "2025",
+          "fundingAmount": 17000000,
+          "fundingFormatted": "Rp. 17.000.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
         {
           "title": "INOVASI PENGOLAHAN LIMBAH BAGLOG JAMUR TIRAM MENJADI KOMPOS DENGAN MOL NASI BASI SEBAGAI BIOAKTIVATOR",
           "leader": "Nia Febrianti",
@@ -4821,21 +4851,6 @@
           "year": "2025",
           "fundingAmount": 23000000,
           "fundingFormatted": "Rp. 23.000.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
-        {
-          "title": "PENYUSUNAN JUSTIFIKASI TEKNIS DAN DISASTER RECOVERY PLAN UNTUK PENGEMBANGAN DATA CENTER UPA TIK ITK",
-          "leader": "PENELITIAN INTERNAL ( RKS )",
-          "members": [
-            "Riska K Abdullah",
-            "Dwi Arief Prambudi"
-          ],
-          "grantType": "PENELITIAN INTERNAL ( RKS )",
-          "grantCategory": "RKS",
-          "year": "2025",
-          "fundingAmount": 17000000,
-          "fundingFormatted": "Rp. 17.000.000",
           "status": "Approved",
           "source": "INTERNAL SOURCE"
         },
@@ -4897,12 +4912,12 @@
       "researchTotal": 7,
       "services": [
         {
-          "title": "PEMBERDAYAAN KELOMPOK TANI SWATANI KM 17 MELALUI PEMANFAATAN LIMBAH PERTANIAN DAN BIOGAS SEBAGAI PUPUK ORGANIK CAIR",
-          "leader": "Nia Febrianti",
+          "title": "DIGITALISASI LAYANAN BERBASIS WEBSITE UNTUK MENINGKATKAN KUALITAS PELAYANAN DI RT 02 KELURAHAN GRAHA INDAH BALIKPAPAN",
+          "leader": "INSTITUSI INTERNAL ( PMMD )",
           "members": [
-            "Dwi Arief Prambudi"
+            "Nia Febrianti"
           ],
-          "grantType": "HIBAH INTERNAL ( PMMD )",
+          "grantType": "INSTITUSI INTERNAL ( PMMD )",
           "grantCategory": "PMMD",
           "year": "2025",
           "fundingAmount": 10000000,
@@ -4911,12 +4926,12 @@
           "source": "INTERNAL SOURCE"
         },
         {
-          "title": "DIGITALISASI LAYANAN BERBASIS WEBSITE UNTUK MENINGKATKAN KUALITAS PELAYANAN DI RT 02 KELURAHAN GRAHA INDAH BALIKPAPAN",
-          "leader": "INSTITUSI INTERNAL ( PMMD )",
+          "title": "PEMBERDAYAAN KELOMPOK TANI SWATANI KM 17 MELALUI PEMANFAATAN LIMBAH PERTANIAN DAN BIOGAS SEBAGAI PUPUK ORGANIK CAIR",
+          "leader": "Nia Febrianti",
           "members": [
-            "Nia Febrianti"
+            "Dwi Arief Prambudi"
           ],
-          "grantType": "INSTITUSI INTERNAL ( PMMD )",
+          "grantType": "HIBAH INTERNAL ( PMMD )",
           "grantCategory": "PMMD",
           "year": "2025",
           "fundingAmount": 10000000,
@@ -5010,14 +5025,14 @@
         "totalFunding": 212810000,
         "researchCount": 7,
         "serviceCount": 7
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=nLJNVHEAAAAJ&citpid=1"
+      }
     },
     {
       "name": "I Putu Deny Arthawan Sugih Prabowo",
       "sintaId": "6701825",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:16:37.905437",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=asIeRU8AAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:39:12.063158",
       "stats": {
         "articles": 42,
         "citations": 103,
@@ -5086,24 +5101,8 @@
           "total": 0
         },
         "googlescholar": {
-          "total": 41,
+          "total": 40,
           "list": [
-            {
-              "title": "IMPLEMENTASI MANAJEMEN RISIKO PERUSAHAAN STUDI KASUS START UP CIRO WASTE",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Pemberdayaan UMKM Berbasis Teknologi Informasi: Produksi Video Tutorial Ekonomi Untuk UMKM Geblek Maknyuss, Kulon Progo, DIY",
-              "category": "googlescholar"
-            },
-            {
-              "title": "DOKUMEN JUSTIFIKASI TEKNIS - SISTEM ELEKTRONIKA (TELEKOMUNIKASI DAN DATA/IT), PENGEMBANGAN DATA CENTER BPD PROVINSI XYZ (PROYEK GEDUNG BARU/TOWER BPD PROVINSI XYZ)",
-              "category": "googlescholar"
-            },
-            {
-              "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KELANDASAN ILIR DAN PENGEMBANGAAAN DESAIN PRODUK YANG BERKUALITAS",
-              "category": "googlescholar"
-            },
             {
               "title": "Analisis Manajemen Risiko Berbasis ISO 31000 pada Studi Kasus Hotel Jakarta di Balikpapan",
               "category": "googlescholar"
@@ -5121,11 +5120,27 @@
               "category": "googlescholar"
             },
             {
-              "title": "Prototyping on A MSME's Website to Increase Its Products Sales and Promotion (Case: A local MSME in Penajam Paser Utara Regency)",
+              "title": "IMPLEMENTASI MANAJEMEN RISIKO PERUSAHAAN STUDI KASUS START UP CIRO WASTE",
               "category": "googlescholar"
             },
             {
-              "title": "PELATIHAN VIDEO DAN PENGEMBANGAN WEBSITE PROFIL BANK SAMPAH KOTA HIJAU BALIKPAPAN",
+              "title": "Pemberdayaan UMKM Berbasis Teknologi Informasi: Produksi Video Tutorial Ekonomi Untuk UMKM Geblek Maknyuss, Kulon Progo, DIY",
+              "category": "googlescholar"
+            },
+            {
+              "title": "DOKUMEN JUSTIFIKASI TEKNIS - SISTEM ELEKTRONIKA (TELEKOMUNIKASI DAN DATA/IT), PENGEMBANGAN DATA CENTER BPD PROVINSI XYZ (PROYEK GEDUNG BARU/TOWER BPD PROVINSI XYZ)",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KELANDASAN ILIR DAN PENGEMBANGAAAN DESAIN PRODUK YANG BERKUALITAS",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pelatihan Digital Marketing RT. 06 Kelurahan Graha Indah, Kecamatan Balikpapan Utara",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Prototyping on a MSME’s website to increase its products sales and promotion (Case: A local MSME in Penajam Paser Utara Regency)",
               "category": "googlescholar"
             },
             {
@@ -5141,6 +5156,14 @@
               "category": "googlescholar"
             },
             {
+              "title": "Prototyping on A MSME's Website to Increase Its Products Sales and Promotion (Case: A local MSME in Penajam Paser Utara Regency)",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PELATIHAN VIDEO DAN PENGEMBANGAN WEBSITE PROFIL BANK SAMPAH KOTA HIJAU BALIKPAPAN",
+              "category": "googlescholar"
+            },
+            {
               "title": "Rancang Bangun Sistem Informasi Pendaftaran Santri Baru Berbasis Web Menggunakan Metode Rapid Application Development (RAD)",
               "category": "googlescholar"
             },
@@ -5153,11 +5176,15 @@
               "category": "googlescholar"
             },
             {
+              "title": "Recommendations of e-commerce website design for MSME local products in Balikpapan based on competitive research",
+              "category": "googlescholar"
+            },
+            {
               "title": "Pengembangan Sistem Inventaris Crude Oil Dengan Scrum Pada Pasir Petroleum Resources Limited",
               "category": "googlescholar"
             },
             {
-              "title": "Recommendations of e-commerce website design for MSME local products in Balikpapan based on competitive research",
+              "title": "Manajemen Sumber Daya Manusia",
               "category": "googlescholar"
             },
             {
@@ -5165,39 +5192,15 @@
               "category": "googlescholar"
             },
             {
-              "title": "PERILAKU ORGANISASI",
+              "title": "ABSEN KUY",
               "category": "googlescholar"
             },
             {
-              "title": "Pelatihan Canva untuk Mendukung Presentasi Karyawan Institut Teknologi Kalimantan",
+              "title": "Pengembangan Sistem Informasi Buku Tamu Dinas Ketenagakerjaan Kota Balikpapan",
               "category": "googlescholar"
             },
             {
-              "title": "Manajemen sumber daya manusia",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Analisis Kuantitas Tipe Material Organik Batuan Induk Pada Formasi Kampung Baru dan Formasi Pulaubalang Cekungan Kutai Bawah",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Pengembangan Sistem Informasi Manajemen pada Usaha Mikro, Kecil, dan Menengah (Kasus: Plantshopedia)",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Peningkatan Kreativitas Remaja Gen-Z dalam Bidang Desain Visual pada Era Industri 4.0",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Evaluasi Sistem Informasi Rental Mobil ASPERDA (SIDA) pada CV. MULYO JOYO D&A RENTCAR dengan Metode Unified Theory of Accptence Use of  Technology (UTAUT)",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Analisis Penggantian Mesin Hot Press dengan Menggunakan Metode Equivalent Uniform Annual Cost (EUAC) di PT Xyz",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Evaluation of Bunga Bali Florist Website Usability Using The Website Usability Evaluation (Webuse) Method",
+              "title": "Sistem Informasi Pengelolaan Arsip Surat Desa Bangun Mulya Menggunakan Metode Waterfall",
               "category": "googlescholar"
             },
             {
@@ -5206,6 +5209,18 @@
             },
             {
               "title": "Laporan Evaluasi Manajemen Keamanan Informasi Menggunakan Indeks Keamanan Informasi (KAMI) 4.0 Berdasarkan ISO/IEC 27001:2013 Pada PT. Abadi Raya Commerce Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pengembangan Sistem Informasi Manajemen pada Usaha Mikro, Kecil, dan Menengah (Kasus: Plantshopedia)",
+              "category": "googlescholar"
+            },
+            {
+              "title": "SOP Bidang Pengendalian Pencemaran Dan Kerusakan Lingkungan Hidup Serta Bidang Penataan Hukum Dan Peningkatan Kapasitas Lingkungan Hidup, Dinas Lingkungan Hidup Kota Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Business Process Reengineering in Business Process of Hajj and Umrah Registration Services (Case Study: Ministry of Religion in Balikpapan City)",
               "category": "googlescholar"
             },
             {
@@ -5218,10 +5233,6 @@
             },
             {
               "title": "Pembangunan Sistem Informasi Manajemen UMKM pada Plantshopedia",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Business Process Reengineering in Business Process of Hajj and Umrah Registration Services (Case Study: Ministry of Religion in Balikpapan City)",
               "category": "googlescholar"
             },
             {
@@ -5279,26 +5290,6 @@
             "year": "2017"
           },
           {
-            "title": "IMPLEMENTASI MANAJEMEN RISIKO PERUSAHAAN STUDI KASUS START UP CIRO WASTE",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Pemberdayaan UMKM Berbasis Teknologi Informasi: Produksi Video Tutorial Ekonomi Untuk UMKM Geblek Maknyuss, Kulon Progo, DIY",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "DOKUMEN JUSTIFIKASI TEKNIS - SISTEM ELEKTRONIKA (TELEKOMUNIKASI DAN DATA/IT), PENGEMBANGAN DATA CENTER BPD PROVINSI XYZ (PROYEK GEDUNG BARU/TOWER BPD PROVINSI XYZ)",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KELANDASAN ILIR DAN PENGEMBANGAAAN DESAIN PRODUK YANG BERKUALITAS",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
             "title": "Analisis Manajemen Risiko Berbasis ISO 31000 pada Studi Kasus Hotel Jakarta di Balikpapan",
             "category": "Google Scholar",
             "year": ""
@@ -5319,12 +5310,32 @@
             "year": ""
           },
           {
-            "title": "Prototyping on A MSME's Website to Increase Its Products Sales and Promotion (Case: A local MSME in Penajam Paser Utara Regency)",
+            "title": "IMPLEMENTASI MANAJEMEN RISIKO PERUSAHAAN STUDI KASUS START UP CIRO WASTE",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "PELATIHAN VIDEO DAN PENGEMBANGAN WEBSITE PROFIL BANK SAMPAH KOTA HIJAU BALIKPAPAN",
+            "title": "Pemberdayaan UMKM Berbasis Teknologi Informasi: Produksi Video Tutorial Ekonomi Untuk UMKM Geblek Maknyuss, Kulon Progo, DIY",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "DOKUMEN JUSTIFIKASI TEKNIS - SISTEM ELEKTRONIKA (TELEKOMUNIKASI DAN DATA/IT), PENGEMBANGAN DATA CENTER BPD PROVINSI XYZ (PROYEK GEDUNG BARU/TOWER BPD PROVINSI XYZ)",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KELANDASAN ILIR DAN PENGEMBANGAAAN DESAIN PRODUK YANG BERKUALITAS",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pelatihan Digital Marketing RT. 06 Kelurahan Graha Indah, Kecamatan Balikpapan Utara",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Prototyping on a MSME’s website to increase its products sales and promotion (Case: A local MSME in Penajam Paser Utara Regency)",
             "category": "Google Scholar",
             "year": ""
           },
@@ -5344,6 +5355,16 @@
             "year": ""
           },
           {
+            "title": "Prototyping on A MSME's Website to Increase Its Products Sales and Promotion (Case: A local MSME in Penajam Paser Utara Regency)",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PELATIHAN VIDEO DAN PENGEMBANGAN WEBSITE PROFIL BANK SAMPAH KOTA HIJAU BALIKPAPAN",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Rancang Bangun Sistem Informasi Pendaftaran Santri Baru Berbasis Web Menggunakan Metode Rapid Application Development (RAD)",
             "category": "Google Scholar",
             "year": ""
@@ -5359,12 +5380,17 @@
             "year": ""
           },
           {
+            "title": "Recommendations of e-commerce website design for MSME local products in Balikpapan based on competitive research",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Pengembangan Sistem Inventaris Crude Oil Dengan Scrum Pada Pasir Petroleum Resources Limited",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Recommendations of e-commerce website design for MSME local products in Balikpapan based on competitive research",
+            "title": "Manajemen Sumber Daya Manusia",
             "category": "Google Scholar",
             "year": ""
           },
@@ -5374,47 +5400,17 @@
             "year": ""
           },
           {
-            "title": "PERILAKU ORGANISASI",
+            "title": "ABSEN KUY",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Pelatihan Canva untuk Mendukung Presentasi Karyawan Institut Teknologi Kalimantan",
+            "title": "Pengembangan Sistem Informasi Buku Tamu Dinas Ketenagakerjaan Kota Balikpapan",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Manajemen sumber daya manusia",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Analisis Kuantitas Tipe Material Organik Batuan Induk Pada Formasi Kampung Baru dan Formasi Pulaubalang Cekungan Kutai Bawah",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Pengembangan Sistem Informasi Manajemen pada Usaha Mikro, Kecil, dan Menengah (Kasus: Plantshopedia)",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Peningkatan Kreativitas Remaja Gen-Z dalam Bidang Desain Visual pada Era Industri 4.0",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Evaluasi Sistem Informasi Rental Mobil ASPERDA (SIDA) pada CV. MULYO JOYO D&A RENTCAR dengan Metode Unified Theory of Accptence Use of  Technology (UTAUT)",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Analisis Penggantian Mesin Hot Press dengan Menggunakan Metode Equivalent Uniform Annual Cost (EUAC) di PT Xyz",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Evaluation of Bunga Bali Florist Website Usability Using The Website Usability Evaluation (Webuse) Method",
+            "title": "Sistem Informasi Pengelolaan Arsip Surat Desa Bangun Mulya Menggunakan Metode Waterfall",
             "category": "Google Scholar",
             "year": ""
           },
@@ -5425,6 +5421,21 @@
           },
           {
             "title": "Laporan Evaluasi Manajemen Keamanan Informasi Menggunakan Indeks Keamanan Informasi (KAMI) 4.0 Berdasarkan ISO/IEC 27001:2013 Pada PT. Abadi Raya Commerce Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pengembangan Sistem Informasi Manajemen pada Usaha Mikro, Kecil, dan Menengah (Kasus: Plantshopedia)",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "SOP Bidang Pengendalian Pencemaran Dan Kerusakan Lingkungan Hidup Serta Bidang Penataan Hukum Dan Peningkatan Kapasitas Lingkungan Hidup, Dinas Lingkungan Hidup Kota Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Business Process Reengineering in Business Process of Hajj and Umrah Registration Services (Case Study: Ministry of Religion in Balikpapan City)",
             "category": "Google Scholar",
             "year": ""
           },
@@ -5440,11 +5451,6 @@
           },
           {
             "title": "Pembangunan Sistem Informasi Manajemen UMKM pada Plantshopedia",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Business Process Reengineering in Business Process of Hajj and Umrah Registration Services (Case Study: Ministry of Religion in Balikpapan City)",
             "category": "Google Scholar",
             "year": ""
           },
@@ -5697,11 +5703,15 @@
             "category": "hakCipta"
           },
           {
+            "title": "Website Kelurahan Margo Mulyo (Tim KKN A8 ITK 2024)",
+            "category": "hakCipta"
+          },
+          {
             "title": "Buku PERILAKU ORGANISASI",
             "category": "hakCipta"
           },
           {
-            "title": "Website Kelurahan Margo Mulyo (Tim KKN A8 ITK 2024)",
+            "title": "Website Profil Bank Sampah Induk (BSI) Kota Hijau Balikpapan (bsikotahijau.com)",
             "category": "hakCipta"
           },
           {
@@ -5713,19 +5723,15 @@
             "category": "hakCipta"
           },
           {
-            "title": "Website Profil Bank Sampah Induk (BSI) Kota Hijau Balikpapan (bsikotahijau.com)",
-            "category": "hakCipta"
-          },
-          {
-            "title": "SOP Bidang Pengendalian Pencemaran Dan Kerusakan Lingkungan Hidup Serta Bidang Penataan Hukum Dan Peningkatan Kapasitas Lingkungan Hidup, Dinas Lingkungan Hidup Kota Balikpapan",
-            "category": "hakCipta"
-          },
-          {
             "title": "Laporan Evaluasi Manajemen Keamanan Informasi Menggunakan Indeks Keamanan Informasi (KAMI) 4.0 Berdasarkan ISO/IEC 27001:2013 Pada PT. Abadi Raya Commerce Balikpapan",
             "category": "hakCipta"
           },
           {
             "title": "ABSEN KUY",
+            "category": "hakCipta"
+          },
+          {
+            "title": "SOP Bidang Pengendalian Pencemaran Dan Kerusakan Lingkungan Hidup Serta Bidang Penataan Hukum Dan Peningkatan Kapasitas Lingkungan Hidup, Dinas Lingkungan Hidup Kota Balikpapan",
             "category": "hakCipta"
           }
         ]
@@ -5736,14 +5742,14 @@
         "totalFunding": 166341400,
         "researchCount": 8,
         "serviceCount": 5
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=asIeRU8AAAAJ&citpid=1"
+      }
     },
     {
       "name": "M. Ihsan Alfani Putera",
       "sintaId": "6681873",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:17:17.979784",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=UtyPlF4AAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:39:28.570939",
       "stats": {
         "articles": 40,
         "citations": 271,
@@ -5909,7 +5915,7 @@
           ]
         },
         "googlescholar": {
-          "total": 59,
+          "total": 55,
           "list": [
             {
               "title": "PENINGKATAN KETERAMPILAN REMAJA DALAM BIDANG VIDEOGRAFI DAN PEMAKSIMALAN EKSISTENSI KAMPUNG E-SPORT BALIKPAPAN",
@@ -5952,6 +5958,10 @@
               "category": "googlescholar"
             },
             {
+              "title": "Rancang Bangun Research Profile Company Pada Universitas XYZ Menggunakan Metode Personal Extreme Programming",
+              "category": "googlescholar"
+            },
+            {
               "title": "Analysis of the influence student in higher education using gamification-based e-learning (case study: Institut Teknologi Kalimantan)",
               "category": "googlescholar"
             },
@@ -5972,26 +5982,6 @@
               "category": "googlescholar"
             },
             {
-              "title": "Peningkatan Kreativitas Remaja Gen-Z dalam Bidang Desain Visual pada Era Industri 4.0",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Monograf Penerapan Metode Waterfall pada Pembangunan Sistem Gaji Berbasis Website",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Perancangan Sistem Pemerintahan Berbasis Elektronik",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Pengembangan Sistem Informasi Laporan Penerimaan dan Pengeluaran Kas Pada PT ABC Menggunakan Metode Scrum",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Pengembangan Sistem Informasi Laporan Penerimaan dan Pengeluaran Kas Pada Pasir Petroleum Resources Limited Menggunakan Metode Scrum",
-              "category": "googlescholar"
-            },
-            {
               "title": "Rancang Bangun Sistem Informasi Pengelolaan Surat Menggunakan Metode Personal Extreme Programming (Studi Kasus: Kelurahan Sepinggan)",
               "category": "googlescholar"
             },
@@ -6008,43 +5998,35 @@
               "category": "googlescholar"
             },
             {
+              "title": "Pengembangan Sistem Informasi Laporan Penerimaan dan Pengeluaran Kas Pada Pasir Petroleum Resources Limited Menggunakan Metode Scrum",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Peningkatan Kreativitas Remaja Gen-Z dalam Bidang Desain Visual pada Era Industri 4.0",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Monograf Penerapan Metode Waterfall pada Pembangunan Sistem Gaji Berbasis Website",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Perancangan Sistem Pemerintahan Berbasis Elektronik",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pengembangan Sistem Informasi Laporan Penerimaan dan Pengeluaran Kas Pada PT ABC Menggunakan Metode Scrum",
+              "category": "googlescholar"
+            },
+            {
               "title": "Pembuatan Aplikasi Sinkronisasi Data Akademik dengan Feeder PDDIKTI Berbasis Web Service",
               "category": "googlescholar"
             },
             {
-              "title": "PENGEMBANGAN DESA MELALUI OPTIMALISASI PARIWISATA DI KELURAHAN LAMARU",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Sistem Presensi Online Menggunakan Arsitektur Pengembangan Perangkat Lunak Model-View-Viewmodel",
-              "category": "googlescholar"
-            },
-            {
-              "title": "SISTEM INFORMASI MANAJEMEN PRODUK STOK JOANNEFLOWERY. IN UNTUK MENINGKATKAN OPTIMALITAS PENGGUNAAN BIAYA KEBUTUHAN BISNIS",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Pembangunan Sistem Informasi Manajemen Laboratorium Terpadu Universitas ABC",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Analysis of factors on continuance intention in mobile payment DANA using structural equation modeling",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Analysis Effect of User Experience on Understanding Rate of Student Using Academic Information System in Higher Education with Honeycomb Method",
+              "title": "PENDAMPINGAN PENDIDIKAN TIK PADA MASYARAKAT DESA PADANG PANGRAPAT SEBAGAI DESA BINAAN UNTUK MENINGKATKAN DAYA SAING DI ERA SOCIETY 5.0",
               "category": "googlescholar"
             },
             {
               "title": "Prediction of Bontang City COVID-19 Data Time Series Using the Facebook Prophet Method",
-              "category": "googlescholar"
-            },
-            {
-              "title": "RANCANG BANGUN SISTEM INFORMASI PENCUCIAN A&R (SIPAR) BERBASIS WEB",
-              "category": "googlescholar"
-            },
-            {
-              "title": "PENDAMPINGAN PENDIDIKAN TIK PADA MASYARAKAT DESA PADANG PANGRAPAT SEBAGAI DESA BINAAN UNTUK MENINGKATKAN DAYA SAING DI ERA SOCIETY 5.0",
               "category": "googlescholar"
             },
             {
@@ -6072,11 +6054,31 @@
               "category": "googlescholar"
             },
             {
-              "title": "Seleksi Beasiswa Bidik Misi Uniska Mab Banjarmasin Hibah Lldikti Xi Kalimantan Menggunakan Metode Svm Dan Topsis",
+              "title": "PENGEMBANGAN DESA MELALUI OPTIMALISASI PARIWISATA DI KELURAHAN LAMARU",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analysis Effect of User Experience on Understanding Rate of Student Using Academic Information System in Higher Education with Honeycomb Method",
+              "category": "googlescholar"
+            },
+            {
+              "title": "RANCANG BANGUN SISTEM INFORMASI PENCUCIAN A&R (SIPAR) BERBASIS WEB",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Web-based Application for Classification Using Naïve Bayes and K-means Clustering (Case Study: Tic-tac-toe Game)",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pembuatan Sistem Informasi Surat Keterangan Pendamping Ijazah (SI-SEPI) Berbasis Website",
               "category": "googlescholar"
             },
             {
               "title": "PELATIHAN UNTUK MELATIH LOGIKA BERPIKIR YANG SISTEMATIS KEPADA GURU SDN 012 BALIKPAPAN UTARA",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Seleksi Beasiswa Bidik Misi Uniska Mab Banjarmasin Hibah Lldikti Xi Kalimantan Menggunakan Metode Svm Dan Topsis",
               "category": "googlescholar"
             },
             {
@@ -6092,15 +6094,11 @@
               "category": "googlescholar"
             },
             {
-              "title": "RANCANG BANGUN SISTEM PENDUKUNG KEPUTUSAN PENENRUAN CALON PENERIMA BEASISWA MENGGUNAKAN METODE SIMPLE ADDITIVE WEIGHTING PADA KPw BANK INDONESIA BALIKPAPAN",
+              "title": "LAPORAN KERJA PRAKTEK SISTEM PERBANKAN APOLO dan ANTASENA",
               "category": "googlescholar"
             },
             {
-              "title": "Web-based Application for Classification Using Naïve Bayes and K-means Clustering (Case Study: Tic-tac-toe Game)",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Pembuatan Sistem Informasi Surat Keterangan Pendamping Ijazah (SI-SEPI) Berbasis Website",
+              "title": "Analisis Perbandingan metode SOAP dan REST yang digunakan pada Framework Flask untuk membangun Web Service",
               "category": "googlescholar"
             },
             {
@@ -6120,15 +6118,7 @@
               "category": "googlescholar"
             },
             {
-              "title": "Analisis Perbandingan metode SOAP dan REST yang digunakan pada Framework Flask untuk membangun Web Service",
-              "category": "googlescholar"
-            },
-            {
-              "title": "LAPORAN KERJA PRAKTEK SISTEM PERBANKAN APOLO dan ANTASENA",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Meningkatkan Kecerdasan Adaptif Computer Player Pada Game Pertarungan Berbasis K-Nearest Neighbor Berbobot",
+              "title": "sistem informasi reservasi villa berbasis web di kota batu malang",
               "category": "googlescholar"
             },
             {
@@ -6319,6 +6309,11 @@
             "year": ""
           },
           {
+            "title": "Rancang Bangun Research Profile Company Pada Universitas XYZ Menggunakan Metode Personal Extreme Programming",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Analysis of the influence student in higher education using gamification-based e-learning (case study: Institut Teknologi Kalimantan)",
             "category": "Google Scholar",
             "year": ""
@@ -6344,31 +6339,6 @@
             "year": ""
           },
           {
-            "title": "Peningkatan Kreativitas Remaja Gen-Z dalam Bidang Desain Visual pada Era Industri 4.0",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Monograf Penerapan Metode Waterfall pada Pembangunan Sistem Gaji Berbasis Website",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Perancangan Sistem Pemerintahan Berbasis Elektronik",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Pengembangan Sistem Informasi Laporan Penerimaan dan Pengeluaran Kas Pada PT ABC Menggunakan Metode Scrum",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Pengembangan Sistem Informasi Laporan Penerimaan dan Pengeluaran Kas Pada Pasir Petroleum Resources Limited Menggunakan Metode Scrum",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
             "title": "Rancang Bangun Sistem Informasi Pengelolaan Surat Menggunakan Metode Personal Extreme Programming (Studi Kasus: Kelurahan Sepinggan)",
             "category": "Google Scholar",
             "year": ""
@@ -6389,52 +6359,42 @@
             "year": ""
           },
           {
+            "title": "Pengembangan Sistem Informasi Laporan Penerimaan dan Pengeluaran Kas Pada Pasir Petroleum Resources Limited Menggunakan Metode Scrum",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Peningkatan Kreativitas Remaja Gen-Z dalam Bidang Desain Visual pada Era Industri 4.0",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Monograf Penerapan Metode Waterfall pada Pembangunan Sistem Gaji Berbasis Website",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Perancangan Sistem Pemerintahan Berbasis Elektronik",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pengembangan Sistem Informasi Laporan Penerimaan dan Pengeluaran Kas Pada PT ABC Menggunakan Metode Scrum",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Pembuatan Aplikasi Sinkronisasi Data Akademik dengan Feeder PDDIKTI Berbasis Web Service",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "PENGEMBANGAN DESA MELALUI OPTIMALISASI PARIWISATA DI KELURAHAN LAMARU",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Sistem Presensi Online Menggunakan Arsitektur Pengembangan Perangkat Lunak Model-View-Viewmodel",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "SISTEM INFORMASI MANAJEMEN PRODUK STOK JOANNEFLOWERY. IN UNTUK MENINGKATKAN OPTIMALITAS PENGGUNAAN BIAYA KEBUTUHAN BISNIS",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Pembangunan Sistem Informasi Manajemen Laboratorium Terpadu Universitas ABC",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Analysis of factors on continuance intention in mobile payment DANA using structural equation modeling",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Analysis Effect of User Experience on Understanding Rate of Student Using Academic Information System in Higher Education with Honeycomb Method",
+            "title": "PENDAMPINGAN PENDIDIKAN TIK PADA MASYARAKAT DESA PADANG PANGRAPAT SEBAGAI DESA BINAAN UNTUK MENINGKATKAN DAYA SAING DI ERA SOCIETY 5.0",
             "category": "Google Scholar",
             "year": ""
           },
           {
             "title": "Prediction of Bontang City COVID-19 Data Time Series Using the Facebook Prophet Method",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "RANCANG BANGUN SISTEM INFORMASI PENCUCIAN A&R (SIPAR) BERBASIS WEB",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "PENDAMPINGAN PENDIDIKAN TIK PADA MASYARAKAT DESA PADANG PANGRAPAT SEBAGAI DESA BINAAN UNTUK MENINGKATKAN DAYA SAING DI ERA SOCIETY 5.0",
             "category": "Google Scholar",
             "year": ""
           },
@@ -6469,12 +6429,37 @@
             "year": ""
           },
           {
-            "title": "Seleksi Beasiswa Bidik Misi Uniska Mab Banjarmasin Hibah Lldikti Xi Kalimantan Menggunakan Metode Svm Dan Topsis",
+            "title": "PENGEMBANGAN DESA MELALUI OPTIMALISASI PARIWISATA DI KELURAHAN LAMARU",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analysis Effect of User Experience on Understanding Rate of Student Using Academic Information System in Higher Education with Honeycomb Method",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "RANCANG BANGUN SISTEM INFORMASI PENCUCIAN A&R (SIPAR) BERBASIS WEB",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Web-based Application for Classification Using Naïve Bayes and K-means Clustering (Case Study: Tic-tac-toe Game)",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pembuatan Sistem Informasi Surat Keterangan Pendamping Ijazah (SI-SEPI) Berbasis Website",
             "category": "Google Scholar",
             "year": ""
           },
           {
             "title": "PELATIHAN UNTUK MELATIH LOGIKA BERPIKIR YANG SISTEMATIS KEPADA GURU SDN 012 BALIKPAPAN UTARA",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Seleksi Beasiswa Bidik Misi Uniska Mab Banjarmasin Hibah Lldikti Xi Kalimantan Menggunakan Metode Svm Dan Topsis",
             "category": "Google Scholar",
             "year": ""
           },
@@ -6494,17 +6479,12 @@
             "year": ""
           },
           {
-            "title": "RANCANG BANGUN SISTEM PENDUKUNG KEPUTUSAN PENENRUAN CALON PENERIMA BEASISWA MENGGUNAKAN METODE SIMPLE ADDITIVE WEIGHTING PADA KPw BANK INDONESIA BALIKPAPAN",
+            "title": "LAPORAN KERJA PRAKTEK SISTEM PERBANKAN APOLO dan ANTASENA",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Web-based Application for Classification Using Naïve Bayes and K-means Clustering (Case Study: Tic-tac-toe Game)",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Pembuatan Sistem Informasi Surat Keterangan Pendamping Ijazah (SI-SEPI) Berbasis Website",
+            "title": "Analisis Perbandingan metode SOAP dan REST yang digunakan pada Framework Flask untuk membangun Web Service",
             "category": "Google Scholar",
             "year": ""
           },
@@ -6529,17 +6509,7 @@
             "year": ""
           },
           {
-            "title": "Analisis Perbandingan metode SOAP dan REST yang digunakan pada Framework Flask untuk membangun Web Service",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "LAPORAN KERJA PRAKTEK SISTEM PERBANKAN APOLO dan ANTASENA",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Meningkatkan Kecerdasan Adaptif Computer Player Pada Game Pertarungan Berbasis K-Nearest Neighbor Berbobot",
+            "title": "sistem informasi reservasi villa berbasis web di kota batu malang",
             "category": "Google Scholar",
             "year": ""
           },
@@ -6751,15 +6721,15 @@
         "total": 9,
         "list": [
           {
-            "title": "My Presence",
-            "category": "hakCipta"
-          },
-          {
             "title": "Kopi LOKATARA",
             "category": "hakCipta"
           },
           {
             "title": "Buku Panduan SISTEM INFORMASI NILAI PAJAK AIR TANAH DLH KOTA BALIKPAPAN",
+            "category": "hakCipta"
+          },
+          {
+            "title": "My Presence",
             "category": "hakCipta"
           },
           {
@@ -6779,11 +6749,11 @@
             "category": "hakCipta"
           },
           {
-            "title": "SIBOK",
+            "title": "Buku Deskripsi Perancangan Perangkat Lunak SICOMPAS",
             "category": "hakCipta"
           },
           {
-            "title": "Buku Deskripsi Perancangan Perangkat Lunak SICOMPAS",
+            "title": "Ngabsen",
             "category": "hakCipta"
           }
         ]
@@ -6794,14 +6764,14 @@
         "totalFunding": 220518000,
         "researchCount": 7,
         "serviceCount": 5
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=UtyPlF4AAAAJ&citpid=1"
+      }
     },
     {
       "name": "Sri Rahayu Natasia",
       "sintaId": "5983406",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:18:03.178026",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=wCiwTCQAAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:39:48.130469",
       "stats": {
         "articles": 56,
         "citations": 466,
@@ -7007,7 +6977,7 @@
           ]
         },
         "googlescholar": {
-          "total": 50,
+          "total": 48,
           "list": [
             {
               "title": "Design and Build a Legal Service Information System Using the Personal Extreme Programming Method at the Legal Service Center of the Kalimantan Institute of Technology",
@@ -7054,11 +7024,11 @@
               "category": "googlescholar"
             },
             {
-              "title": "Analysis of the influence student in higher education using gamification-based e-learning (case study: Institut Teknologi Kalimantan)",
+              "title": "Pengembangan Sistem Informasi Manajemen pada Usaha Mikro, Kecil, dan Menengah (Kasus: Plantshopedia)",
               "category": "googlescholar"
             },
             {
-              "title": "EVALUASI USABILITY WEBSITE PADA DINAS PERUMAHAN DAN PERMUKIMAN KOTA XYZ MENGGUNAKAN METODE WEBUSE",
+              "title": "SISTEM INFORMASI MONITORING AKADEMIK SISWA PADA SMAN 9 BALIKPAPAN DENGAN EXTREME PROGRAMMING",
               "category": "googlescholar"
             },
             {
@@ -7070,11 +7040,11 @@
               "category": "googlescholar"
             },
             {
-              "title": "Sistem Informasi Pengelolaan Arsip Surat Desa Bangun Mulya Menggunakan Metode Waterfall",
+              "title": "Pengolahan Produk Makanan Ringan Yang Modern Melalui Pelatihan UMKM Pada Masyarakat Kelurahan Karang Jati",
               "category": "googlescholar"
             },
             {
-              "title": "Pengolahan Produk Makanan Ringan Yang Modern Melalui Pelatihan UMKM Pada Masyarakat Kelurahan Karang Jati",
+              "title": "Sistem Informasi Pengelolaan Arsip Surat Desa Bangun Mulya Menggunakan Metode Waterfall",
               "category": "googlescholar"
             },
             {
@@ -7083,14 +7053,6 @@
             },
             {
               "title": "Pengembangan sistem informasi nilai pajak air tanah dengan menggunakan model SCRUM",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Pengembangan Sistem Informasi Manajemen pada Usaha Mikro, Kecil, dan Menengah (Kasus: Plantshopedia)",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Sistem Informasi Rusunawa Kota Balikpapan",
               "category": "googlescholar"
             },
             {
@@ -7106,6 +7068,14 @@
               "category": "googlescholar"
             },
             {
+              "title": "Sistem Informasi Rusunawa Kota Balikpapan",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pembuatan Proses Bisnis dan Standar Operasional Prosedur pada Dinas Pemuda, Olahraga dan Pariwisata Kota Balikpapan",
+              "category": "googlescholar"
+            },
+            {
               "title": "Penerapan Metode Think Aloud untuk Evaluasi Usability pada Website Dinas Pendidikan dan Kebudayaan Kota MNO",
               "category": "googlescholar"
             },
@@ -7114,15 +7084,7 @@
               "category": "googlescholar"
             },
             {
-              "title": "Pembuatan Proses Bisnis dan Standar Operasional Prosedur pada Dinas Pemuda, Olahraga dan Pariwisata Kota Balikpapan",
-              "category": "googlescholar"
-            },
-            {
               "title": "Sistem Informasi Pariwisata DISPOPAR Kota Bontang",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Buku Panduan Sistem Informasi Rusunawa Kota Balikpapan",
               "category": "googlescholar"
             },
             {
@@ -7134,7 +7096,7 @@
               "category": "googlescholar"
             },
             {
-              "title": "Pengembangan Sistem Informasi Manajemen Nilai Pohon (SIMELON) Berbasis Website pada Dinas Lingkungan Hidup Kota Balikpapan",
+              "title": "Buku Panduan Sistem Informasi Rusunawa Kota Balikpapan",
               "category": "googlescholar"
             },
             {
@@ -7146,7 +7108,7 @@
               "category": "googlescholar"
             },
             {
-              "title": "Evaluasi Website Badan Perencanaan Pembangunan Daerah, Penelitian Pengembangan Kota ABC Dengan Metode Heuristics Evaluation",
+              "title": "Pengembangan Sistem Informasi Manajemen Nilai Pohon (SIMELON) Berbasis Website pada Dinas Lingkungan Hidup Kota Balikpapan",
               "category": "googlescholar"
             },
             {
@@ -7154,11 +7116,7 @@
               "category": "googlescholar"
             },
             {
-              "title": "Analisis User Interface Terhadap Website Badan Pusat Statistik Kota XYZ Dengan Menggunakan Metode Heuristic Evaluation",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Funlearning Berbasis Gamification",
+              "title": "Evaluasi Website Badan Perencanaan Pembangunan Daerah, Penelitian Pengembangan Kota ABC Dengan Metode Heuristics Evaluation",
               "category": "googlescholar"
             },
             {
@@ -7202,11 +7160,15 @@
               "category": "googlescholar"
             },
             {
-              "title": "Klasifikasi Debitur Kartu Kredit dengan Pemilihan Fitur Menggunakan Voting Feature Intervals 5",
+              "title": "The Development of Qr Code Based Mobile Attendance Information System Using Scrum Framework",
               "category": "googlescholar"
             },
             {
-              "title": "The Development of Qr Code Based Mobile Attendance Information System Using Scrum Framework",
+              "title": "Analisis User Interface Terhadap Website Badan Pusat Statistik Kota XYZ Dengan Menggunakan Metode Heuristic Evaluation",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Klasifikasi Debitur Kartu Kredit dengan Pemilihan Fitur Menggunakan Voting Feature Intervals 5",
               "category": "googlescholar"
             }
           ]
@@ -7426,12 +7388,12 @@
             "year": ""
           },
           {
-            "title": "Analysis of the influence student in higher education using gamification-based e-learning (case study: Institut Teknologi Kalimantan)",
+            "title": "Pengembangan Sistem Informasi Manajemen pada Usaha Mikro, Kecil, dan Menengah (Kasus: Plantshopedia)",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "EVALUASI USABILITY WEBSITE PADA DINAS PERUMAHAN DAN PERMUKIMAN KOTA XYZ MENGGUNAKAN METODE WEBUSE",
+            "title": "SISTEM INFORMASI MONITORING AKADEMIK SISWA PADA SMAN 9 BALIKPAPAN DENGAN EXTREME PROGRAMMING",
             "category": "Google Scholar",
             "year": ""
           },
@@ -7446,12 +7408,12 @@
             "year": ""
           },
           {
-            "title": "Sistem Informasi Pengelolaan Arsip Surat Desa Bangun Mulya Menggunakan Metode Waterfall",
+            "title": "Pengolahan Produk Makanan Ringan Yang Modern Melalui Pelatihan UMKM Pada Masyarakat Kelurahan Karang Jati",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Pengolahan Produk Makanan Ringan Yang Modern Melalui Pelatihan UMKM Pada Masyarakat Kelurahan Karang Jati",
+            "title": "Sistem Informasi Pengelolaan Arsip Surat Desa Bangun Mulya Menggunakan Metode Waterfall",
             "category": "Google Scholar",
             "year": ""
           },
@@ -7462,16 +7424,6 @@
           },
           {
             "title": "Pengembangan sistem informasi nilai pajak air tanah dengan menggunakan model SCRUM",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Pengembangan Sistem Informasi Manajemen pada Usaha Mikro, Kecil, dan Menengah (Kasus: Plantshopedia)",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Sistem Informasi Rusunawa Kota Balikpapan",
             "category": "Google Scholar",
             "year": ""
           },
@@ -7491,6 +7443,16 @@
             "year": ""
           },
           {
+            "title": "Sistem Informasi Rusunawa Kota Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pembuatan Proses Bisnis dan Standar Operasional Prosedur pada Dinas Pemuda, Olahraga dan Pariwisata Kota Balikpapan",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Penerapan Metode Think Aloud untuk Evaluasi Usability pada Website Dinas Pendidikan dan Kebudayaan Kota MNO",
             "category": "Google Scholar",
             "year": ""
@@ -7501,17 +7463,7 @@
             "year": ""
           },
           {
-            "title": "Pembuatan Proses Bisnis dan Standar Operasional Prosedur pada Dinas Pemuda, Olahraga dan Pariwisata Kota Balikpapan",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
             "title": "Sistem Informasi Pariwisata DISPOPAR Kota Bontang",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Buku Panduan Sistem Informasi Rusunawa Kota Balikpapan",
             "category": "Google Scholar",
             "year": ""
           },
@@ -7526,7 +7478,7 @@
             "year": ""
           },
           {
-            "title": "Pengembangan Sistem Informasi Manajemen Nilai Pohon (SIMELON) Berbasis Website pada Dinas Lingkungan Hidup Kota Balikpapan",
+            "title": "Buku Panduan Sistem Informasi Rusunawa Kota Balikpapan",
             "category": "Google Scholar",
             "year": ""
           },
@@ -7541,7 +7493,7 @@
             "year": ""
           },
           {
-            "title": "Evaluasi Website Badan Perencanaan Pembangunan Daerah, Penelitian Pengembangan Kota ABC Dengan Metode Heuristics Evaluation",
+            "title": "Pengembangan Sistem Informasi Manajemen Nilai Pohon (SIMELON) Berbasis Website pada Dinas Lingkungan Hidup Kota Balikpapan",
             "category": "Google Scholar",
             "year": ""
           },
@@ -7551,12 +7503,7 @@
             "year": ""
           },
           {
-            "title": "Analisis User Interface Terhadap Website Badan Pusat Statistik Kota XYZ Dengan Menggunakan Metode Heuristic Evaluation",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Funlearning Berbasis Gamification",
+            "title": "Evaluasi Website Badan Perencanaan Pembangunan Daerah, Penelitian Pengembangan Kota ABC Dengan Metode Heuristics Evaluation",
             "category": "Google Scholar",
             "year": ""
           },
@@ -7611,12 +7558,17 @@
             "year": ""
           },
           {
-            "title": "Klasifikasi Debitur Kartu Kredit dengan Pemilihan Fitur Menggunakan Voting Feature Intervals 5",
+            "title": "The Development of Qr Code Based Mobile Attendance Information System Using Scrum Framework",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "The Development of Qr Code Based Mobile Attendance Information System Using Scrum Framework",
+            "title": "Analisis User Interface Terhadap Website Badan Pusat Statistik Kota XYZ Dengan Menggunakan Metode Heuristic Evaluation",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Klasifikasi Debitur Kartu Kredit dengan Pemilihan Fitur Menggunakan Voting Feature Intervals 5",
             "category": "Google Scholar",
             "year": ""
           }
@@ -7863,14 +7815,14 @@
         "totalFunding": 218235000,
         "researchCount": 10,
         "serviceCount": 5
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=wCiwTCQAAAAJ&citpid=1"
+      }
     },
     {
       "name": "Nursanti Novi Arisa",
       "sintaId": "6757976",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:18:32.599329",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=8qByKOIAAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:39:54.947189",
       "stats": {
         "articles": 18,
         "citations": 161,
@@ -7956,19 +7908,19 @@
               "category": "googlescholar"
             },
             {
-              "title": "Pengembangan sistem informasi nilai pajak air tanah dengan menggunakan model SCRUM",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Pengembangan Sistem Informasi Berbasis Website (Studi Kasus: Toko Sepatu Citra Abadi)",
-              "category": "googlescholar"
-            },
-            {
               "title": "Perancangan Sistem Informasi Manajemen Badan Amal Menggunakan Metode Waterfall",
               "category": "googlescholar"
             },
             {
               "title": "Development of SIAKAD Applications in Balikpapan Schools using APXP: Advanced Personal Extreme Programming",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pengembangan sistem informasi nilai pajak air tanah dengan menggunakan model SCRUM",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pengembangan Sistem Informasi Berbasis Website (Studi Kasus: Toko Sepatu Citra Abadi)",
               "category": "googlescholar"
             },
             {
@@ -8055,22 +8007,22 @@
             "year": ""
           },
           {
-            "title": "Pengembangan sistem informasi nilai pajak air tanah dengan menggunakan model SCRUM",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Pengembangan Sistem Informasi Berbasis Website (Studi Kasus: Toko Sepatu Citra Abadi)",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
             "title": "Perancangan Sistem Informasi Manajemen Badan Amal Menggunakan Metode Waterfall",
             "category": "Google Scholar",
             "year": ""
           },
           {
             "title": "Development of SIAKAD Applications in Balikpapan Schools using APXP: Advanced Personal Extreme Programming",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pengembangan sistem informasi nilai pajak air tanah dengan menggunakan model SCRUM",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pengembangan Sistem Informasi Berbasis Website (Studi Kasus: Toko Sepatu Citra Abadi)",
             "category": "Google Scholar",
             "year": ""
           },
@@ -8162,20 +8114,6 @@
           "source": "INTERNAL SOURCE"
         },
         {
-          "title": "ANALISIS ADOPSI PENGGUNAAN E-COMMERCE BERDASARKAN TECHNOLOGY, ORGANIZATION, DAN ENVIRONTMENT (TOE) PADA UMKM DI BALIKPAPAN",
-          "leader": "",
-          "members": [
-            "Nursanti Novi  Arisa"
-          ],
-          "grantType": "HIBAH ITK ( PKLK )",
-          "grantCategory": "PKLK",
-          "year": "2023",
-          "fundingAmount": 14650000,
-          "fundingFormatted": "Rp. 14.650.000",
-          "status": "Approved",
-          "source": "INTERNAL SOURCE"
-        },
-        {
           "title": "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL",
           "leader": "Nursanti Novi  Arisa",
           "members": [
@@ -8187,6 +8125,20 @@
           "year": "2023",
           "fundingAmount": 19520000,
           "fundingFormatted": "Rp. 19.520.000",
+          "status": "Approved",
+          "source": "INTERNAL SOURCE"
+        },
+        {
+          "title": "ANALISIS ADOPSI PENGGUNAAN E-COMMERCE BERDASARKAN TECHNOLOGY, ORGANIZATION, DAN ENVIRONTMENT (TOE) PADA UMKM DI BALIKPAPAN",
+          "leader": "",
+          "members": [
+            "Nursanti Novi  Arisa"
+          ],
+          "grantType": "HIBAH ITK ( PKLK )",
+          "grantCategory": "PKLK",
+          "year": "2023",
+          "fundingAmount": 14650000,
+          "fundingFormatted": "Rp. 14.650.000",
           "status": "Approved",
           "source": "INTERNAL SOURCE"
         },
@@ -8301,6 +8253,10 @@
         "total": 9,
         "list": [
           {
+            "title": "Sistem Informasi Manajemen Gula",
+            "category": "hakCipta"
+          },
+          {
             "title": "PROTOTYPE WEBSITE CROWDE",
             "category": "hakCipta"
           },
@@ -8309,15 +8265,11 @@
             "category": "hakCipta"
           },
           {
-            "title": "Sistem Informasi Manajemen Gula",
+            "title": "DOKUMEN PERANCANGAN PERANGKAT LUNAK SIDAT",
             "category": "hakCipta"
           },
           {
             "title": "CHITEA.ID",
-            "category": "hakCipta"
-          },
-          {
-            "title": "DOKUMEN PERANCANGAN PERANGKAT LUNAK SIDAT",
             "category": "hakCipta"
           },
           {
@@ -8329,11 +8281,11 @@
             "category": "hakCipta"
           },
           {
-            "title": "BUKU PANDUAN TOOLS SNA",
+            "title": "Aplikasi Mobile Shoestation",
             "category": "hakCipta"
           },
           {
-            "title": "MERAKI COFFEE & FOOD",
+            "title": "BUKU PANDUAN TOOLS SNA",
             "category": "hakCipta"
           }
         ]
@@ -8344,14 +8296,14 @@
         "totalFunding": 184120000,
         "researchCount": 6,
         "serviceCount": 6
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=8qByKOIAAAAJ&citpid=1"
+      }
     },
     {
       "name": "Rosa Eliviani",
       "sintaId": "6876629",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:18:39.692701",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=Mf5WlWgAAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:40:00.131616",
       "stats": {
         "articles": 13,
         "citations": 30,
@@ -8409,11 +8361,15 @@
               "category": "googlescholar"
             },
             {
+              "title": "Teknologi big data: Pengantar dan penerapan teknologi big data di berbagai bidang",
+              "category": "googlescholar"
+            },
+            {
               "title": "Exploring sentiment trends: Deep learning analysis of social media reviews on Google Play Store by netizens",
               "category": "googlescholar"
             },
             {
-              "title": "Teknologi big data: Pengantar dan penerapan teknologi big data di berbagai bidang",
+              "title": "PENGEMBANGAN SISTEM INFORMASI TOKO ALAT TULIS DI KOTA BALIKPAPAN",
               "category": "googlescholar"
             },
             {
@@ -8422,10 +8378,6 @@
             },
             {
               "title": "WSN-IoT Forecast: Wireless Sensor Network Throughput Prediction Framework in Multimedia Internet of Things.",
-              "category": "googlescholar"
-            },
-            {
-              "title": "PENGEMBANGAN SISTEM INFORMASI TOKO ALAT TULIS DI KOTA BALIKPAPAN",
               "category": "googlescholar"
             },
             {
@@ -8469,12 +8421,17 @@
             "year": ""
           },
           {
+            "title": "Teknologi big data: Pengantar dan penerapan teknologi big data di berbagai bidang",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Exploring sentiment trends: Deep learning analysis of social media reviews on Google Play Store by netizens",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Teknologi big data: Pengantar dan penerapan teknologi big data di berbagai bidang",
+            "title": "PENGEMBANGAN SISTEM INFORMASI TOKO ALAT TULIS DI KOTA BALIKPAPAN",
             "category": "Google Scholar",
             "year": ""
           },
@@ -8485,11 +8442,6 @@
           },
           {
             "title": "WSN-IoT Forecast: Wireless Sensor Network Throughput Prediction Framework in Multimedia Internet of Things.",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "PENGEMBANGAN SISTEM INFORMASI TOKO ALAT TULIS DI KOTA BALIKPAPAN",
             "category": "Google Scholar",
             "year": ""
           },
@@ -8590,14 +8542,14 @@
         "totalFunding": 7726345,
         "researchCount": 1,
         "serviceCount": 1
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=Mf5WlWgAAAAJ&citpid=1"
+      }
     },
     {
       "name": "M. Gilvy Langgawan Putra",
       "sintaId": "6201079",
       "prodi": "Sistem Informasi",
-      "scrapedAt": "2026-02-06T22:18:58.755341",
+      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=6khCqswAAAAJ&citpid=1",
+      "scrapedAt": "2026-04-16T19:40:16.713971",
       "stats": {
         "articles": 70,
         "citations": 429,
@@ -8651,22 +8603,10 @@
           "total": 0
         },
         "googlescholar": {
-          "total": 67,
+          "total": 65,
           "list": [
             {
               "title": "Evaluasi Sistem Informasi Manajemen Rumah Sakit pada Instalasi Rekam Medis di Rumah Sakit Restu Ibu Balikpapan Menggunakan Metode HOT-Fit",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Analysis of factors that affect continuance intention on the use of ShopeePay mobile payment using structural equation modeling",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Analysis of the influence student in higher education using gamification-based e-learning (case study: Institut Teknologi Kalimantan)",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Perancangan Prototipe UI/UX Website CROWDE Menggunakan Metode Design Thinking",
               "category": "googlescholar"
             },
             {
@@ -8690,7 +8630,19 @@
               "category": "googlescholar"
             },
             {
-              "title": "Environmental noise reduction based on deep denoising autoencoder",
+              "title": "Analysis of factors that affect continuance intention on the use of ShopeePay mobile payment using structural equation modeling",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analysis of the influence student in higher education using gamification-based e-learning (case study: Institut Teknologi Kalimantan)",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Perancangan Prototipe UI/UX Website CROWDE Menggunakan Metode Design Thinking",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Pengembangan Sistem Informasi Laporan Penerimaan dan Pengeluaran Kas Pada PT ABC Menggunakan Metode Scrum",
               "category": "googlescholar"
             },
             {
@@ -8722,6 +8674,10 @@
               "category": "googlescholar"
             },
             {
+              "title": "Environmental noise reduction based on deep denoising autoencoder",
+              "category": "googlescholar"
+            },
+            {
               "title": "Standard Operating Procedure for Meteorology Early Warning System at BMKG Balikpapan",
               "category": "googlescholar"
             },
@@ -8730,35 +8686,7 @@
               "category": "googlescholar"
             },
             {
-              "title": "Penerapan business intelligence pada data cuaca Badan Meteorologi, Klimatologi, dan Geofisika (BMKG)",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Perbandingan Fitur Pada Platform Kuis Terpopuler. Inspiration: Jurnal Teknologi Informasi Dan Komunikasi, 11 (1), 38",
-              "category": "googlescholar"
-            },
-            {
-              "title": "RANCANG BANGUN SISTEM INFORMASI ORDER RUMAH MAKAN ANDHARA (SIDERMAN)",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Sistem Informasi Penjualan Kedai Almarsa Dengan menggunakan Metode Waterfall",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Implementation of Business Continuity Planning Methodology in Making Business Continuity Planning Documents at PT. XYZ",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Evaluasi dan Redesign Website Pendidikan Tinggi dengan Menerapkan User Experience Lifecycle",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Penyusunan Perencanaan Keberlangsungan Bisnis Pada Pt Promedika Mitra Utama Kota Samarinda",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Pengembangan Sistem Informasi Rental Mobil (Sirem) Berbasis Website Menggunakan Framework Codeigniter",
+              "title": "Pembuatan Sistem Informasi Pemilihan Staff Terbaik HMSI ITK Menggunakan Metode Multi Attribute Utility Theory (MAUT)",
               "category": "googlescholar"
             },
             {
@@ -8774,15 +8702,15 @@
               "category": "googlescholar"
             },
             {
+              "title": "Pengembangan Sistem Informasi Rental Mobil (Sirem) Berbasis Website Menggunakan Framework Codeigniter",
+              "category": "googlescholar"
+            },
+            {
               "title": "Analysis Effect of User Experience on Understanding Rate of Student Using Academic Information System in Higher Education with Honeycomb Method",
               "category": "googlescholar"
             },
             {
               "title": "Pembuatan Aplikasi Sinkronisasi Data Akademik dengan Feeder PDDIKTI Berbasis Web Service",
-              "category": "googlescholar"
-            },
-            {
-              "title": "RANCANG BANGUN SISTEM INFORMASI PENCUCIAN A&R (SIPAR) BERBASIS WEB",
               "category": "googlescholar"
             },
             {
@@ -8794,47 +8722,39 @@
               "category": "googlescholar"
             },
             {
-              "title": "Analisis dan Perencangan Aplikasi E-Learning Berbasis Gamification (Studi Kasus Program Studi Sistem Informasi Institut Teknologi Kalimantan)",
+              "title": "SISTEM INFORMASI PENGGAJIAN PADA PT. INDO GLOBAL INTERNASIONAL",
+              "category": "googlescholar"
+            },
+            {
+              "title": "RANCANG BANGUN SISTEM INFORMASI PENCUCIAN A&R (SIPAR) BERBASIS WEB",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PERANCANGAN SISTEM INFORMASI PERKOPIAN (SIKOP) BERBASIS WEBSITE PADA TAKI COFFEE MENGGUNAKAN METODE WATERFALL",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Penerapan business intelligence pada data cuaca Badan Meteorologi, Klimatologi, dan Geofisika (BMKG)",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Sistem Informasi Penjualan Kedai Almarsa Dengan menggunakan Metode Waterfall",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Implementation of Business Continuity Planning Methodology in Making Business Continuity Planning Documents at PT. XYZ",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Perbandingan Fitur Pada Platform Kuis Terpopuler. Inspiration: Jurnal Teknologi Informasi Dan Komunikasi, 11 (1), 38",
+              "category": "googlescholar"
+            },
+            {
+              "title": "RANCANG BANGUN SISTEM INFORMASI ORDER RUMAH MAKAN ANDHARA (SIDERMAN)",
               "category": "googlescholar"
             },
             {
               "title": "Penyusunan Standar Operasional Prosedur Gudang pada PT. XYZ",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Penyusunan SOP AP di Bagian Sekretariat pada Dispustakar Kota Balikpapan dengan Menggunakan BPMN",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Analisis Dan Perancangan Aplikasi E-Learning Berbasis Gamification (Studi Kasus Program Studi Sistem Informasi Institut Teknologi Kalimantan)",
-              "category": "googlescholar"
-            },
-            {
-              "title": "PERANCANGAN WEBSITE SIKANGBEJO (SISTEM INFORMASI KAMPUNG KANGKUNG SUMBER REJO) PADA KAMPUNG KANGKUNG SUMBER REJO",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Perancangan dan Evaluasi UI/UX Aplikasi E-Learning Berbasis Gamification Menggunakan Metode Cognitive Walktrough",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Bantuan Kuota Internet Untuk Pendidikan Dari Pemerintah Indonesia: Sejauh Apa Manfaatnya?",
-              "category": "googlescholar"
-            },
-            {
-              "title": "RANCANG BANGUN SISTEM PENDUKUNG KEPUTUSAN PENENRUAN CALON PENERIMA BEASISWA MENGGUNAKAN METODE SIMPLE ADDITIVE WEIGHTING PADA KPw BANK INDONESIA BALIKPAPAN",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Seleksi Beasiswa Bidik Misi Uniska Mab Banjarmasin Hibah Lldikti Xi Kalimantan Menggunakan Metode Svm Dan Topsis",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Evaluasi Usability Website Berita Online Prokal. Co Menggunakan Evaluasi Heuristic dan Webuse",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Hubungan Sikap Terhadap Berita Hoax Dengan KPU Trust Pada Pemilu 2019",
               "category": "googlescholar"
             },
             {
@@ -8847,6 +8767,42 @@
             },
             {
               "title": "Evaluasi Usability Website Berita Online Prokal. Co Menggunakan Metode Evaluasi Heuristic Dan Webuse",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Perancangan dan Evaluasi UI/UX Aplikasi E-Learning Berbasis Gamification Menggunakan Metode Cognitive Walktrough",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Hubungan Sikap Terhadap Berita Hoax Dengan KPU Trust Pada Pemilu 2019",
+              "category": "googlescholar"
+            },
+            {
+              "title": "RANCANG BANGUN SISTEM PENDUKUNG KEPUTUSAN PENENRUAN CALON PENERIMA BEASISWA MENGGUNAKAN METODE SIMPLE ADDITIVE WEIGHTING PADA KPw BANK INDONESIA BALIKPAPAN",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PELATIHAN UNTUK MELATIH LOGIKA BERPIKIR YANG SISTEMATIS KEPADA GURU SDN 012 BALIKPAPAN UTARA",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Media Pembelajaran Dengan Metode Gamification: Untuk Meningkatkan Motivasi Pembelajaran Pada Perguruan Tinggi Di Masa Covid-19",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Evaluasi Usability Website Berita Online Prokal. Co Usability Evaluation of Online News Website Prokal. Co Using Heuristic and Webuse Evaluation Methods",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Peran Paguyuban Sadariyah Jaya Terhadap Peningkatan Kesejahteraan Masyarakat Di Desa Puhjajar Kecamatan Papar Kabupaten Kediri",
+              "category": "googlescholar"
+            },
+            {
+              "title": "Analisis Perbandingan metode SOAP dan REST yang digunakan pada Framework Flask untuk membangun Web Service",
+              "category": "googlescholar"
+            },
+            {
+              "title": "PENERAPAN METODE WEIGHTED MOVING AVERAGE (WMA) UNTUK FORECASTING PERSEDIAAN BARANG PADA PT DIANIKA SISTERA NATURA BERBASIS WEB",
               "category": "googlescholar"
             },
             {
@@ -8867,18 +8823,6 @@
             },
             {
               "title": "Pelatihan Scratch Coding For Kids Dengan Pendekatan Permainan Digital Dan Storytelling Di Sdn 017 Balikpapan",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Peran Paguyuban Sadariyah Jaya Terhadap Peningkatan Kesejahteraan Masyarakat Di Desa Puhjajar Kecamatan Papar Kabupaten Kediri",
-              "category": "googlescholar"
-            },
-            {
-              "title": "Analisis Perbandingan metode SOAP dan REST yang digunakan pada Framework Flask untuk membangun Web Service",
-              "category": "googlescholar"
-            },
-            {
-              "title": "PENERAPAN METODE WEIGHTED MOVING AVERAGE (WMA) UNTUK FORECASTING PERSEDIAAN BARANG PADA PT DIANIKA SISTERA NATURA BERBASIS WEB",
               "category": "googlescholar"
             },
             {
@@ -8914,11 +8858,11 @@
               "category": "googlescholar"
             },
             {
-              "title": "Sadriansyah.(2020)",
+              "title": "JBTI: Jurnal Bisnis: Teori dan Implementasi",
               "category": "googlescholar"
             },
             {
-              "title": "Analisis strategi pengembangan usaha pembenihan Lele Sangkuriang pada Jujur Maju Lancar QQ Bogor, Jawa Barat",
+              "title": "Sadriansyah.(2020)",
               "category": "googlescholar"
             }
           ]
@@ -8934,21 +8878,6 @@
           },
           {
             "title": "Evaluasi Sistem Informasi Manajemen Rumah Sakit pada Instalasi Rekam Medis di Rumah Sakit Restu Ibu Balikpapan Menggunakan Metode HOT-Fit",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Analysis of factors that affect continuance intention on the use of ShopeePay mobile payment using structural equation modeling",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Analysis of the influence student in higher education using gamification-based e-learning (case study: Institut Teknologi Kalimantan)",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Perancangan Prototipe UI/UX Website CROWDE Menggunakan Metode Design Thinking",
             "category": "Google Scholar",
             "year": ""
           },
@@ -8978,7 +8907,22 @@
             "year": ""
           },
           {
-            "title": "Environmental noise reduction based on deep denoising autoencoder",
+            "title": "Analysis of factors that affect continuance intention on the use of ShopeePay mobile payment using structural equation modeling",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analysis of the influence student in higher education using gamification-based e-learning (case study: Institut Teknologi Kalimantan)",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Perancangan Prototipe UI/UX Website CROWDE Menggunakan Metode Design Thinking",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Pengembangan Sistem Informasi Laporan Penerimaan dan Pengeluaran Kas Pada PT ABC Menggunakan Metode Scrum",
             "category": "Google Scholar",
             "year": ""
           },
@@ -9018,6 +8962,11 @@
             "year": ""
           },
           {
+            "title": "Environmental noise reduction based on deep denoising autoencoder",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Standard Operating Procedure for Meteorology Early Warning System at BMKG Balikpapan",
             "category": "Google Scholar",
             "year": ""
@@ -9028,42 +8977,7 @@
             "year": ""
           },
           {
-            "title": "Penerapan business intelligence pada data cuaca Badan Meteorologi, Klimatologi, dan Geofisika (BMKG)",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Perbandingan Fitur Pada Platform Kuis Terpopuler. Inspiration: Jurnal Teknologi Informasi Dan Komunikasi, 11 (1), 38",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "RANCANG BANGUN SISTEM INFORMASI ORDER RUMAH MAKAN ANDHARA (SIDERMAN)",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Sistem Informasi Penjualan Kedai Almarsa Dengan menggunakan Metode Waterfall",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Implementation of Business Continuity Planning Methodology in Making Business Continuity Planning Documents at PT. XYZ",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Evaluasi dan Redesign Website Pendidikan Tinggi dengan Menerapkan User Experience Lifecycle",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Penyusunan Perencanaan Keberlangsungan Bisnis Pada Pt Promedika Mitra Utama Kota Samarinda",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Pengembangan Sistem Informasi Rental Mobil (Sirem) Berbasis Website Menggunakan Framework Codeigniter",
+            "title": "Pembuatan Sistem Informasi Pemilihan Staff Terbaik HMSI ITK Menggunakan Metode Multi Attribute Utility Theory (MAUT)",
             "category": "Google Scholar",
             "year": ""
           },
@@ -9083,17 +8997,17 @@
             "year": ""
           },
           {
+            "title": "Pengembangan Sistem Informasi Rental Mobil (Sirem) Berbasis Website Menggunakan Framework Codeigniter",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
             "title": "Analysis Effect of User Experience on Understanding Rate of Student Using Academic Information System in Higher Education with Honeycomb Method",
             "category": "Google Scholar",
             "year": ""
           },
           {
             "title": "Pembuatan Aplikasi Sinkronisasi Data Akademik dengan Feeder PDDIKTI Berbasis Web Service",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "RANCANG BANGUN SISTEM INFORMASI PENCUCIAN A&R (SIPAR) BERBASIS WEB",
             "category": "Google Scholar",
             "year": ""
           },
@@ -9108,57 +9022,47 @@
             "year": ""
           },
           {
-            "title": "Analisis dan Perencangan Aplikasi E-Learning Berbasis Gamification (Studi Kasus Program Studi Sistem Informasi Institut Teknologi Kalimantan)",
+            "title": "SISTEM INFORMASI PENGGAJIAN PADA PT. INDO GLOBAL INTERNASIONAL",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "RANCANG BANGUN SISTEM INFORMASI PENCUCIAN A&R (SIPAR) BERBASIS WEB",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PERANCANGAN SISTEM INFORMASI PERKOPIAN (SIKOP) BERBASIS WEBSITE PADA TAKI COFFEE MENGGUNAKAN METODE WATERFALL",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Penerapan business intelligence pada data cuaca Badan Meteorologi, Klimatologi, dan Geofisika (BMKG)",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Sistem Informasi Penjualan Kedai Almarsa Dengan menggunakan Metode Waterfall",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Implementation of Business Continuity Planning Methodology in Making Business Continuity Planning Documents at PT. XYZ",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Perbandingan Fitur Pada Platform Kuis Terpopuler. Inspiration: Jurnal Teknologi Informasi Dan Komunikasi, 11 (1), 38",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "RANCANG BANGUN SISTEM INFORMASI ORDER RUMAH MAKAN ANDHARA (SIDERMAN)",
             "category": "Google Scholar",
             "year": ""
           },
           {
             "title": "Penyusunan Standar Operasional Prosedur Gudang pada PT. XYZ",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Penyusunan SOP AP di Bagian Sekretariat pada Dispustakar Kota Balikpapan dengan Menggunakan BPMN",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Analisis Dan Perancangan Aplikasi E-Learning Berbasis Gamification (Studi Kasus Program Studi Sistem Informasi Institut Teknologi Kalimantan)",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "PERANCANGAN WEBSITE SIKANGBEJO (SISTEM INFORMASI KAMPUNG KANGKUNG SUMBER REJO) PADA KAMPUNG KANGKUNG SUMBER REJO",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Perancangan dan Evaluasi UI/UX Aplikasi E-Learning Berbasis Gamification Menggunakan Metode Cognitive Walktrough",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Bantuan Kuota Internet Untuk Pendidikan Dari Pemerintah Indonesia: Sejauh Apa Manfaatnya?",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "RANCANG BANGUN SISTEM PENDUKUNG KEPUTUSAN PENENRUAN CALON PENERIMA BEASISWA MENGGUNAKAN METODE SIMPLE ADDITIVE WEIGHTING PADA KPw BANK INDONESIA BALIKPAPAN",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Seleksi Beasiswa Bidik Misi Uniska Mab Banjarmasin Hibah Lldikti Xi Kalimantan Menggunakan Metode Svm Dan Topsis",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Evaluasi Usability Website Berita Online Prokal. Co Menggunakan Evaluasi Heuristic dan Webuse",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Hubungan Sikap Terhadap Berita Hoax Dengan KPU Trust Pada Pemilu 2019",
             "category": "Google Scholar",
             "year": ""
           },
@@ -9174,6 +9078,51 @@
           },
           {
             "title": "Evaluasi Usability Website Berita Online Prokal. Co Menggunakan Metode Evaluasi Heuristic Dan Webuse",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Perancangan dan Evaluasi UI/UX Aplikasi E-Learning Berbasis Gamification Menggunakan Metode Cognitive Walktrough",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Hubungan Sikap Terhadap Berita Hoax Dengan KPU Trust Pada Pemilu 2019",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "RANCANG BANGUN SISTEM PENDUKUNG KEPUTUSAN PENENRUAN CALON PENERIMA BEASISWA MENGGUNAKAN METODE SIMPLE ADDITIVE WEIGHTING PADA KPw BANK INDONESIA BALIKPAPAN",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PELATIHAN UNTUK MELATIH LOGIKA BERPIKIR YANG SISTEMATIS KEPADA GURU SDN 012 BALIKPAPAN UTARA",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Media Pembelajaran Dengan Metode Gamification: Untuk Meningkatkan Motivasi Pembelajaran Pada Perguruan Tinggi Di Masa Covid-19",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Evaluasi Usability Website Berita Online Prokal. Co Usability Evaluation of Online News Website Prokal. Co Using Heuristic and Webuse Evaluation Methods",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Peran Paguyuban Sadariyah Jaya Terhadap Peningkatan Kesejahteraan Masyarakat Di Desa Puhjajar Kecamatan Papar Kabupaten Kediri",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "Analisis Perbandingan metode SOAP dan REST yang digunakan pada Framework Flask untuk membangun Web Service",
+            "category": "Google Scholar",
+            "year": ""
+          },
+          {
+            "title": "PENERAPAN METODE WEIGHTED MOVING AVERAGE (WMA) UNTUK FORECASTING PERSEDIAAN BARANG PADA PT DIANIKA SISTERA NATURA BERBASIS WEB",
             "category": "Google Scholar",
             "year": ""
           },
@@ -9199,21 +9148,6 @@
           },
           {
             "title": "Pelatihan Scratch Coding For Kids Dengan Pendekatan Permainan Digital Dan Storytelling Di Sdn 017 Balikpapan",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Peran Paguyuban Sadariyah Jaya Terhadap Peningkatan Kesejahteraan Masyarakat Di Desa Puhjajar Kecamatan Papar Kabupaten Kediri",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "Analisis Perbandingan metode SOAP dan REST yang digunakan pada Framework Flask untuk membangun Web Service",
-            "category": "Google Scholar",
-            "year": ""
-          },
-          {
-            "title": "PENERAPAN METODE WEIGHTED MOVING AVERAGE (WMA) UNTUK FORECASTING PERSEDIAAN BARANG PADA PT DIANIKA SISTERA NATURA BERBASIS WEB",
             "category": "Google Scholar",
             "year": ""
           },
@@ -9258,12 +9192,12 @@
             "year": ""
           },
           {
-            "title": "Sadriansyah.(2020)",
+            "title": "JBTI: Jurnal Bisnis: Teori dan Implementasi",
             "category": "Google Scholar",
             "year": ""
           },
           {
-            "title": "Analisis strategi pengembangan usaha pembenihan Lele Sangkuriang pada Jujur Maju Lancar QQ Bogor, Jawa Barat",
+            "title": "Sadriansyah.(2020)",
             "category": "Google Scholar",
             "year": ""
           }
@@ -9313,11 +9247,11 @@
       "servicesTotal": 2,
       "books": [
         {
-          "title": "Media pembelajaran dengan metode gamification untuk meningkatkan motivasi pembelajaran pada perguruan tinggi di masa Covid-19",
+          "title": "Pemasaran digital : facebook ads, twitter ads, google ads, and youtube ads",
           "year": "2020"
         },
         {
-          "title": "Pemasaran digital : facebook ads, twitter ads, google ads, and youtube ads",
+          "title": "Media pembelajaran dengan metode gamification untuk meningkatkan motivasi pembelajaran pada perguruan tinggi di masa Covid-19",
           "year": "2020"
         }
       ],
@@ -9329,23 +9263,11 @@
         "total": 10,
         "list": [
           {
-            "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK SIMKEKO",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Buku DOKUMEN UJI PERANGKAT LUNAK (OO) SIMENTOS",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK SIDERMAN",
+            "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK SISALWA",
             "category": "hakCipta"
           },
           {
             "title": "Buku DOKUMEN LAPORAN PENGEMBANGAN APLIKASI SIDERMAN",
-            "category": "hakCipta"
-          },
-          {
-            "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK SISALWA",
             "category": "hakCipta"
           },
           {
@@ -9357,15 +9279,27 @@
             "category": "hakCipta"
           },
           {
-            "title": "Buku DOKUMEN UJI PERANGKAT LUNAK SIMKEKO",
-            "category": "hakCipta"
-          },
-          {
             "title": "Buku DOKUMEN LAPORAN PENGEMBANGAN APLIKASI SISTEM INFORMASI MANAJEMEN TOKO SEPATU",
             "category": "hakCipta"
           },
           {
+            "title": "Buku DOKUMEN UJI PERANGKAT LUNAK SIMKEKO",
+            "category": "hakCipta"
+          },
+          {
             "title": "Buku SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK SIDERMAN",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Buku DESKRIPSI PERANCANGAN PERANGKAT LUNAK (OO) [SISTEM INFORMASI MANAJEMEN TOKO SEPATU]",
+            "category": "hakCipta"
+          },
+          {
+            "title": "DOKUMEN LAPORAN PENGEMBANGAN APLIKASI SISTEM INFORMASI WARUNG MAKAN SALWA",
+            "category": "hakCipta"
+          },
+          {
+            "title": "Buku SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK SISTEM INFORMASI WARUNG MAKAN SALWA",
             "category": "hakCipta"
           }
         ]
@@ -9376,8 +9310,7 @@
         "totalFunding": 40722000,
         "researchCount": 1,
         "serviceCount": 2
-      },
-      "photo": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=6khCqswAAAAJ&citpid=1"
+      }
     }
   ],
   "prodiSummary": {
