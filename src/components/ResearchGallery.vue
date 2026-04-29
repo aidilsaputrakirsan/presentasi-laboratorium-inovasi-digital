@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-6">
+  <div class="space-y-6" ref="exportArea">
     <!-- Header -->
     <div class="card bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-slate-700">
       <div class="flex items-center justify-between mb-6">
@@ -20,6 +20,20 @@
             <p class="text-sm text-slate-400 mt-0.5">Kumpulan Penelitian, Pengabdian, Publikasi & HKI Dosen</p>
           </div>
         </div>
+        <button
+          @click="handleExportPDF"
+          :disabled="isExporting"
+          class="flex items-center gap-2 px-3 py-2 bg-rose-500 hover:bg-rose-400 disabled:bg-slate-600 disabled:cursor-not-allowed text-white text-xs font-bold rounded-lg transition-all"
+        >
+          <svg v-if="!isExporting" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <svg v-else class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"/>
+          </svg>
+          {{ isExporting ? 'Exporting...' : 'Export PDF' }}
+        </button>
       </div>
 
       <!-- Filters Row -->
@@ -355,6 +369,7 @@
 </template>
 
 <script>
+import { exportToPDF } from '../utils/pdfExport.js'
 import { Line } from 'vue-chartjs';
 import {
   Chart as ChartJS,
@@ -398,6 +413,7 @@ export default {
       selectedYear: 'all',
       searchQuery: '',
       selectedItem: null,
+      isExporting: false,
       tabs: [
         { key: 'research', label: 'Penelitian', icon: '🔬' },
         { key: 'services', label: 'Pengabdian', icon: '🤝' },
@@ -819,6 +835,22 @@ export default {
 
     handleKeydown(e) {
       if (e.key === 'Escape') this.closeModal();
+    },
+
+    async handleExportPDF() {
+      this.isExporting = true
+      try {
+        const el = this.$refs.exportArea
+        const prodiLabel = this.selectedProdi === 'all' ? 'Semua Prodi' : this.selectedProdi
+        const yearLabel = this.selectedYear === 'all' ? 'Semua Tahun' : this.selectedYear
+        await exportToPDF(el, `laporan-koleksi-karya-${Date.now()}`, {
+          orientation: 'landscape',
+          title: `Laporan Koleksi Karya — ${prodiLabel}`,
+          subtitle: `Tahun: ${yearLabel} | Total: ${this.totalItems} items`
+        })
+      } finally {
+        this.isExporting = false
+      }
     }
   }
 };

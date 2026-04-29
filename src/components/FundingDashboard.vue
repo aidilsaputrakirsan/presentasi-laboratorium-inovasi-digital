@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-6">
+  <div class="space-y-6" ref="exportArea">
     <!-- 1. HEADER + OVERVIEW -->
     <div class="card bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-slate-700">
       <div class="flex items-center justify-between mb-4">
@@ -25,6 +25,20 @@
             <span class="text-xs uppercase tracking-wider text-slate-500 font-bold">Total Dana</span>
             <span class="text-sm font-semibold text-slate-300">{{ formatCurrency(totalFunding) }}</span>
           </div>
+          <button
+            @click="handleExportPDF"
+            :disabled="isExporting"
+            class="flex items-center gap-2 px-3 py-2 bg-amber-500 hover:bg-amber-400 disabled:bg-slate-600 disabled:cursor-not-allowed text-white text-xs font-bold rounded-lg transition-all"
+          >
+            <svg v-if="!isExporting" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            <svg v-else class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"/>
+            </svg>
+            {{ isExporting ? 'Exporting...' : 'Export PDF' }}
+          </button>
         </div>
       </div>
 
@@ -562,6 +576,7 @@
 </template>
 
 <script>
+import { exportToPDF } from '../utils/pdfExport.js'
 import { Bar, Doughnut } from 'vue-chartjs'
 import {
   Chart as ChartJS,
@@ -586,7 +601,8 @@ export default {
       selectedYear: 'all',
       itemType: 'all',
       currentPage: 1,
-      itemsPerPage: 20
+      itemsPerPage: 20,
+      isExporting: false
     }
   },
   computed: {
@@ -1192,6 +1208,21 @@ export default {
     }
   },
   methods: {
+    async handleExportPDF() {
+      this.isExporting = true
+      try {
+        const el = this.$refs.exportArea
+        const prodiLabel = this.selectedProdi === 'all' ? 'Semua Prodi' : this.selectedProdi
+        await exportToPDF(el, `laporan-dana-hibah-${Date.now()}`, {
+          orientation: 'landscape',
+          title: `Laporan Dana & Hibah — ${prodiLabel}`,
+          subtitle: `Total Dana: ${this.formatCurrency(this.totalFunding)} | Penelitian: ${this.totalResearchCount} | Pengabdian: ${this.totalServiceCount}`
+        })
+      } finally {
+        this.isExporting = false
+      }
+    },
+
     // Normalize nama dosen - hapus gelar untuk matching
     normalizeName(name) {
       if (!name) return ''

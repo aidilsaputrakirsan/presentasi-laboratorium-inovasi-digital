@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-6">
+  <div class="space-y-6" ref="exportArea">
 
     <!-- ==================== TV DISPLAY MODE ==================== -->
     <div v-if="tvMode" class="tv-display fixed inset-0 z-50 bg-slate-950 overflow-hidden" @mouseenter="pauseTv" @mouseleave="resumeTv">
@@ -242,6 +242,21 @@
             <span class="text-[10px] uppercase tracking-wider text-slate-400 font-bold">Total Dosen</span>
             <span class="text-2xl font-bold text-slate-800 leading-none">{{ sintaLecturers.length }}</span>
           </div>
+          <!-- Export PDF -->
+          <button
+            @click="handleExportPDF"
+            :disabled="isExporting"
+            class="flex items-center gap-2 px-4 py-2.5 bg-blue-600 hover:bg-blue-500 disabled:bg-slate-300 disabled:cursor-not-allowed text-white text-sm font-bold rounded-xl transition-all shadow-md"
+          >
+            <svg v-if="!isExporting" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            <svg v-else class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"/>
+            </svg>
+            {{ isExporting ? 'Exporting...' : 'Export PDF' }}
+          </button>
           <!-- TV Display Toggle -->
           <button
             @click="toggleTvMode"
@@ -749,6 +764,7 @@
 </template>
 
 <script>
+import { exportToPDF } from '../utils/pdfExport.js'
 import { Bar, Doughnut } from 'vue-chartjs';
 import {
   Chart as ChartJS,
@@ -801,7 +817,8 @@ export default {
       tvCurrentIndex: 0,
       tvTimer: null,
       tvInterval: 8000,
-      tvPaused: false
+      tvPaused: false,
+      isExporting: false
     };
   },
   beforeUnmount() {
@@ -1176,8 +1193,22 @@ export default {
       // So others = 0 for filtered view to be safe/accurate to what represents "filtered".
       // OR we could estimate, but better to be strict: "Shown filtered items".
       
-      counts.total = listTotal; 
+      counts.total = listTotal;
       return counts;
+    },
+
+    async handleExportPDF() {
+      this.isExporting = true
+      try {
+        const el = this.$refs.exportArea
+        await exportToPDF(el, `laporan-sinta-statistik-${Date.now()}`, {
+          orientation: 'landscape',
+          title: 'Laporan Statistik SINTA — Galeri Inovasi',
+          subtitle: `Total Dosen: ${this.sintaLecturers.length}`
+        })
+      } finally {
+        this.isExporting = false
+      }
     }
   }
 }
