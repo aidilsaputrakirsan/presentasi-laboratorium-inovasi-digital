@@ -9,7 +9,7 @@
       <div class="h-24 flex items-center px-6 border-b border-slate-100/80 bg-slate-50/50 backdrop-blur-sm">
         <div class="flex items-center gap-3 group cursor-pointer w-full">
           <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm border border-slate-100 p-1.5 shrink-0 group-hover:shadow-md transition-shadow">
-            <img :src="`${baseUrl}images/logo-fsti.png`" alt="FSTI" class="w-full h-full object-contain" />
+            <img :src="`${baseUrl}images/logoSITRIA.png`" alt="SITRIA" class="w-full h-full object-contain" />
           </div>
           <div class="flex-1 min-w-0">
             <h1 class="font-black text-lg text-slate-800 tracking-tight group-hover:text-blue-600 transition-colors leading-tight">
@@ -116,7 +116,7 @@
       <div class="md:hidden h-16 bg-white/80 backdrop-blur-md border-b border-slate-200 flex items-center justify-between px-4 sticky top-0 z-30">
          <div class="flex items-center gap-2.5">
             <div class="w-9 h-9 bg-white rounded-lg flex items-center justify-center border border-slate-100 p-1">
-              <img :src="`${baseUrl}images/logo-fsti.png`" alt="FSTI" class="w-full h-full object-contain" />
+              <img :src="`${baseUrl}images/logoSITRIA.png`" alt="SITRIA" class="w-full h-full object-contain" />
             </div>
             <div class="flex flex-col leading-tight">
               <span class="font-bold text-slate-800 text-sm">SITRIA <span class="text-slate-400">·</span> FSTI</span>
