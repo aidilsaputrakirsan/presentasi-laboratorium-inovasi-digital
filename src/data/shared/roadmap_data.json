@@ -1,8 +1,187 @@
 {
   "metadata": {
-    "generatedAt": "2026-02-06T17:16:02.977354",
-    "yearRange": "2018-2025"
+    "generatedAt": "2026-05-08T16:09:04.019203",
+    "yearRange": "2018-2026",
+    "curatedBy": {
+      "name": "Claude Opus 4.7",
+      "provider": "Anthropic",
+      "role": "High-level reasoning agent",
+      "task": "Topic evolution synthesis and strategic narrative"
+    },
+    "method": "Manual topic evolution synthesis by AI agent — no algorithmic keyword extraction"
   },
+  "phases": [
+    {
+      "years": [
+        2018,
+        2019
+      ],
+      "name": "Fondasi",
+      "narrative": "Periode awal lab — riset eksploratif data analytics, rekayasa SI dasar untuk perguruan tinggi & pemerintah daerah, dan pengabdian masyarakat berbasis komunitas."
+    },
+    {
+      "years": [
+        2020,
+        2021
+      ],
+      "name": "Pembangunan Institusional",
+      "narrative": "Konsolidasi tata kelola TI ITK (TOGAF, COBIT, SIMPAS LPPM). AI/ML mulai muncul sebagai topik fondasional. Pengabdian fokus ke edukasi anak dan adaptasi pembelajaran daring saat pandemi."
+    },
+    {
+      "years": [
+        2022,
+        2023
+      ],
+      "name": "Era Smart",
+      "narrative": "Eksplosi topik \"smart\" — Smart Home/IoT, Smart City, Smart School. UMKM digital, klasterisasi wilayah, dan pengabdian terstruktur ke RT/kawasan wisata mulai menjadi pola tetap."
+    },
+    {
+      "years": [
+        2024,
+        2025,
+        2026
+      ],
+      "name": "Maturity & IKN-Driven",
+      "narrative": "Kapasitas riset matang dengan fokus strategis Pembangunan IKN — riset terapan, kolaborasi lintas prodi yang stabil, dan ekosistem pengabdian yang siap di-replikasi."
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "Tata Kelola SI Kampus",
+      "color": "#3b82f6",
+      "narrative": "Backbone riset lab — sistem informasi internal ITK (akademik, tata kelola TI, dukungan LPPM). Bertumbuh konsisten dengan kebutuhan kampus.",
+      "recommendation": "Konsolidasi sebagai produk \"Ekosistem Digital ITK\" yang dapat di-scale ke kampus lain di Kalimantan.",
+      "active_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "peak_year": 2025,
+      "total_count": 18
+    },
+    {
+      "id": 2,
+      "name": "Smart City & IKN",
+      "color": "#8b5cf6",
+      "narrative": "Topik strategis lintas prodi — kombinasi infrastruktur teknis (kualitas lingkungan, klasterisasi wilayah) dan analisis kebijakan/preferensi masyarakat. Tumbuh dramatis sejak 2023 sejalan pembangunan IKN.",
+      "recommendation": "Bentuk konsorsium SI+BD untuk pengusulan hibah riset terapan IKN — momentum tertinggi saat ini.",
+      "active_years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "peak_year": 2025,
+      "total_count": 22
+    },
+    {
+      "id": 3,
+      "name": "Smart Home & IoT Energi",
+      "color": "#10b981",
+      "narrative": "Konsentrasi pada IoT untuk monitoring energi listrik, deteksi kebakaran, dan otomasi domestik. Tim kecil tapi konsisten dengan publikasi kualitas.",
+      "recommendation": "Angkat ke produk komersial — kerjasama dengan PLN atau startup energi untuk pilot project di hunian IKN.",
+      "active_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "peak_year": 2025,
+      "total_count": 6
+    },
+    {
+      "id": 4,
+      "name": "AI/ML untuk Sains",
+      "color": "#f59e0b",
+      "narrative": "Riset fondasional algoritma — deep learning, fuzzy logic, metaheuristik untuk masalah sains terapan (kelautan, kesehatan, optimasi).",
+      "recommendation": "Daya saing internasional tinggi — dorong publikasi Q1/Q2 dan kolaborasi dengan AI ethics di BD.",
+      "active_years": [
+        2019,
+        2021,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "peak_year": 2023,
+      "total_count": 10
+    },
+    {
+      "id": 5,
+      "name": "Pembelajaran Adaptif & Edukasi Digital",
+      "color": "#ec4899",
+      "narrative": "Penelitian + pengabdian edukasi — adaptive learning, gamification, smart school IKN, lab metaverse, hingga pelatihan koding anak SD/SMP. Pola kerja yang sangat konsisten.",
+      "recommendation": "Sinergi antara riset (smart classroom IKN) dan pengabdian (sekolah binaan) untuk dampak yang reinforcing.",
+      "active_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "peak_year": 2020,
+      "total_count": 16
+    },
+    {
+      "id": 6,
+      "name": "UMKM, E-Commerce & Digital Marketing",
+      "color": "#ef4444",
+      "narrative": "Tema ekonomi digital — riset adopsi e-commerce/fintech UMKM (SI), manajemen UMKM dengan predictive analytics (BD), plus pengabdian pemasaran digital UMKM lintas tahun.",
+      "recommendation": "Bentuk Pusat UMKM Digital ITK formal yang menggabungkan output 3 cluster ini — duplikasi tinggi tapi dampak gabungan luar biasa.",
+      "active_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "peak_year": 2025,
+      "total_count": 35
+    },
+    {
+      "id": 7,
+      "name": "Lingkungan & Pertanian Berkelanjutan",
+      "color": "#14b8a6",
+      "narrative": "Pengabdian terapan — bank sampah, akuaponik, urban farming, pengolahan limbah pertanian. Output praktis yang menyentuh kebutuhan lingkungan urban Balikpapan.",
+      "recommendation": "Konversi best practice ini menjadi paket replikasi standar untuk kota lain Kaltim — pendanaan KLHK potensial.",
+      "active_years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "peak_year": 2023,
+      "total_count": 21
+    },
+    {
+      "id": 8,
+      "name": "Wisata Digital & Smart RT",
+      "color": "#0ea5e9",
+      "narrative": "Pengabdian branding kawasan + digitalisasi RT/kelurahan — ekosistem mitra binaan yang sudah stabil dan berkembang.",
+      "recommendation": "Buat platform wisata Balikpapan terpadu + paket Smart RT ITK yang siap deploy ke RT mana pun.",
+      "active_years": [
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "peak_year": 2024,
+      "total_count": 29
+    }
+  ],
   "timeline": [
     {
       "year": 2018,
@@ -10,7 +189,7 @@
     },
     {
       "year": 2019,
-      "count": 10
+      "count": 9
     },
     {
       "year": 2020,
@@ -26,338 +205,940 @@
     },
     {
       "year": 2023,
-      "count": 44
+      "count": 27
     },
     {
       "year": 2024,
-      "count": 55
+      "count": 35
     },
     {
       "year": 2025,
-      "count": 78
+      "count": 47
+    },
+    {
+      "year": 2026,
+      "count": 1
     }
   ],
   "sankey": {
     "nodes": [
       {
-        "name": "Analytics (2018)",
-        "value": 5,
-        "real_count": 1,
-        "depth": 0,
-        "titles": [
-          "IMPLEMENTASI SISTEM BIMBINGAN PENJUALAN  BERBASIS PREDICTIVE ANALYTICS UNTUK USAHA MIKRO DAN KECIL \r\n(Studi Kasus: Pasar Tradisional Klandasan Balikpapan)"
-        ]
-      },
-      {
-        "name": "Analytics Usaha (2018)",
-        "value": 5,
-        "real_count": 1,
-        "depth": 0,
-        "titles": [
-          "IMPLEMENTASI SISTEM BIMBINGAN PENJUALAN  BERBASIS PREDICTIVE ANALYTICS UNTUK USAHA MIKRO DAN KECIL \r\n(Studi Kasus: Pasar Tradisional Klandasan Balikpapan)"
-        ]
-      },
-      {
-        "name": "Game (2019)",
-        "value": 10,
-        "real_count": 2,
+        "name": "Tata Kelola SI Kampus (2019)",
+        "topic_id": 1,
+        "topic_name": "Tata Kelola SI Kampus",
+        "color": "#3b82f6",
+        "year": 2019,
         "depth": 1,
-        "titles": [
-          "MODEL HEAVY EQUIPMENT LEASING DENGAN MEMPERTIMBANGKAN BIAYA PENALTI SAAT TERJADI FAILURE YANG MELEBIHI TOLERANSI MENGGUNAKAN GAME THEORY",
-          "PENGEMBANGAN ROLE-PLAYING GAME (RPG) BERBASIS ANDROID SEBAGAI ALAT BANTU AJAR PELAJARAN SEJARAH KELAS XI SMA SEDERAJAT"
-        ]
-      },
-      {
-        "name": "Masyarakat (2019)",
-        "value": 10,
-        "real_count": 2,
-        "depth": 1,
-        "titles": [
-          "Pemberdayaan Masyarakat Rumah Warna-warni melalui Peningkatan Budaya Gotong Royong dan Pemanfaatan Teknologi Informasi",
-          "PEMBANGUNAN SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (STUDI KASUS: INSTITUT TEKNOLOGI KALIMANTAN)"
-        ]
-      },
-      {
-        "name": "Institut (2020)",
-        "value": 15,
+        "value": 3,
         "real_count": 3,
-        "depth": 2,
         "titles": [
+          "PEMBANGUNAN SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (STUDI KASUS: INSTITUT TEKNOLOGI KALIMANTAN)",
+          "Perancangan Arsitektur Sistem dan Teknologi Informasi Perguruan Tinggi di Balikpapan menggunakan TOGAF (The Open Group Architecture Framework)",
+          "Perancangan Arsitektur Sistem dan Teknologi Informasi untuk Organisasi Perangkat Daerah (OPD) Pemerintah Kota Balikpapan menggunakan TOGAF (The Open Group Architecture Framework)"
+        ]
+      },
+      {
+        "name": "Tata Kelola SI Kampus (2020)",
+        "topic_id": 1,
+        "topic_name": "Tata Kelola SI Kampus",
+        "color": "#3b82f6",
+        "year": 2020,
+        "depth": 2,
+        "value": 3,
+        "real_count": 3,
+        "titles": [
+          "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) INSTITUT TEKNOLOGI KALIMANTAN",
           "PERANCANGAN ARSITEKTUR SISTEM INFORMASI UNTUK INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN TOGAF (THE OPEN GROUP ARCHITECTURE FRAMEWORK)",
-          "PERANCANGAN TATA KELOLA TEKNOLOGI INFORMASI INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN COBIT (CONTROL OBJECTIVE INFORMATION TECHNOLOGY)",
-          "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) INSTITUT TEKNOLOGI KALIMANTAN"
+          "PERANCANGAN TATA KELOLA TEKNOLOGI INFORMASI INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN COBIT (CONTROL OBJECTIVE INFORMATION TECHNOLOGY)"
         ]
       },
       {
-        "name": "Pelatihan (2020)",
-        "value": 10,
-        "real_count": 2,
-        "depth": 2,
-        "titles": [
-          "PELATIHAN MEMODELKAN PROSES BISNIS MENGGUNAKAN BIZAGI BAGI ORGANISASI PERANGKAT DAERAH KOTA BALIKPAPAN",
-          "PELATIHAN PEMROGRAMAN UNTUK MELATIH LOGIKA BERPIKIR YANG SISTEMATIS KEPADA SISWA SDN 012 BALIKPAPAN UTARA"
-        ]
-      },
-      {
-        "name": "Faktor (2021)",
-        "value": 10,
-        "real_count": 2,
+        "name": "Tata Kelola SI Kampus (2021)",
+        "topic_id": 1,
+        "topic_name": "Tata Kelola SI Kampus",
+        "color": "#3b82f6",
+        "year": 2021,
         "depth": 3,
+        "value": 1,
+        "real_count": 1,
         "titles": [
-          "Fuzzy Logic Fog Clod Computing untuk Menganalisis Faktor Penyebab Kematian Ibu Meninggal Masa Postpartum",
-          "ANALISIS FAKTOR YANG MEMENGARUHI CONTINUANCE INTENTION PADA PENGGUNAAN MOBILE PAYMENT DENGAN MENGGUNAKAN STRUCTURAL EQUATION MODELING"
+          "IMPLEMENTASI SIAKAD BERBASIS WEBSITE DAN ANDROID MENGGUNAKAN FRAMEWORK CODEIGNITER DAN RESTFUL API UNTUK MENDUKUNG EKOSISTEM PENDIDIKAN DI SEKOLAH ISLAM BALIKPAPAN"
         ]
       },
       {
-        "name": "Pendidikan (2021)",
-        "value": 15,
+        "name": "Tata Kelola SI Kampus (2022)",
+        "topic_id": 1,
+        "topic_name": "Tata Kelola SI Kampus",
+        "color": "#3b82f6",
+        "year": 2022,
+        "depth": 4,
+        "value": 1,
+        "real_count": 1,
+        "titles": [
+          "PERBANDINGAN WATERFALL, EXTREME PROGRAMMING DAN ICONIX DALAM PENGEMBANGAN SISTEM INFORMASI COMPANY PROFILE PEMERINTAHAN PADA WILAYAH IBU KOTA NEGARA BARU"
+        ]
+      },
+      {
+        "name": "Tata Kelola SI Kampus (2023)",
+        "topic_id": 1,
+        "topic_name": "Tata Kelola SI Kampus",
+        "color": "#3b82f6",
+        "year": 2023,
+        "depth": 5,
+        "value": 1,
+        "real_count": 1,
+        "titles": [
+          "RANCANG BANGUN SISTEM INFORMASI PENJADWALAN SEBAGAI UPAYA OPTIMALISASI PENJADWALAN PEMBELAJARAN"
+        ]
+      },
+      {
+        "name": "Tata Kelola SI Kampus (2024)",
+        "topic_id": 1,
+        "topic_name": "Tata Kelola SI Kampus",
+        "color": "#3b82f6",
+        "year": 2024,
+        "depth": 6,
+        "value": 3,
         "real_count": 3,
+        "titles": [
+          "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) UNTUK MENINGKATKAN PELAYANAN KEPADA SETIAP UNIT DI INSTITUT TEKNOLOGI KALIMANTAN",
+          "PENGEMBANGAN SISTEM INFORMASI PELAYANAN ADMINISTRASI PADA UNIT LAYANAN TERPADU INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE WATERFALL",
+          "REKAYASA KESELAMATAN DALAM PENYUSUNAN DOKUMEN JUSTIFIKASI TEKNIS UNTUK PENGEMBANGAN DATA CENTER DI BANK PEMBANGUNAN DAERAH PROVINSI XYZ"
+        ]
+      },
+      {
+        "name": "Tata Kelola SI Kampus (2025)",
+        "topic_id": 1,
+        "topic_name": "Tata Kelola SI Kampus",
+        "color": "#3b82f6",
+        "year": 2025,
+        "depth": 7,
+        "value": 6,
+        "real_count": 6,
+        "titles": [
+          "IMPLEMENTASI METODE SCRUMBAN UNTUK PERANCANGAN ULANG SISTEM INFORMASI DAN MANAJEMEN LABORATORIUM (SIMLAB) INSTITUT TEKNOLOGI KALIMANTAN",
+          "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
+          "PENGEMBANGAN SISTEM INFORMASI MANAJEMEN TUGAS AKHIR PADA JURUSAN TEKNIK ELEKTRO, INFORMATIKA, DAN BISNIS INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING (PXP)",
+          "PENGEMBANGAN SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) INSTITUT TEKNOLOGI KALIMANTAN",
+          "PENGEMBANGAN SISTEM INFORMASI PUSAT LAYANAN HUKUM SEBAGAI JARINGAN DOKUMENTASI DAN INFORMASI HUKUM ITK",
+          "PENYUSUNAN JUSTIFIKASI TEKNIS DAN DISASTER RECOVERY PLAN UNTUK PENGEMBANGAN DATA CENTER UPA TIK ITK"
+        ]
+      },
+      {
+        "name": "Smart City & IKN (2021)",
+        "topic_id": 2,
+        "topic_name": "Smart City & IKN",
+        "color": "#8b5cf6",
+        "year": 2021,
         "depth": 3,
-        "titles": [
-          "IMPLEMENTASI SIAKAD BERBASIS WEBSITE DAN ANDROID MENGGUNAKAN FRAMEWORK CODEIGNITER DAN RESTFUL API UNTUK MENDUKUNG EKOSISTEM PENDIDIKAN DI SEKOLAH ISLAM BALIKPAPAN",
-          "PENGEMBANGAN SIMSIS SEBAGAI SISTEM SMART CITY RANAH PENDIDIKAN UNTUK MENUNJANG PROSES PEMBELAJARAN",
-          "MEDIA PEMBELAJARAN DENGAN METODE GAMIFICATION UNTUK PENDIDIKAN FORMAL DAN NON FORMAL DI KALIMANTAN ERA COVID-19"
-        ]
-      },
-      {
-        "name": "Kelurahan (2022)",
-        "value": 20,
-        "real_count": 4,
-        "depth": 4,
-        "titles": [
-          "PEMBERDAYAAN URBAN FARMING DAN PENGELOLAAN SAMPAH MENJADI KOMPOSDI KELURAHAN GUNUNG SAMARINDA BARU, RT 9 PERUMAHAN TAMAN SARI BUKIT",
-          "PENGEMBANGAN KAWASAN WISATA KULINER KELURAHAN DAMAI BALIKPAPAN",
-          "PEMBERDAYAAN MASYARAKAT KELURAHAN TELAGA SARI MENGGUNAKAN PEMANFAATAN TEKNOLOGI",
-          "SOSIALISASI PEMANFAATAN DIGITAL MARKETING SEBAGAI SOLUSI MENINGKATKAN PENJUALAN UMKM DI KELURAHAN KARANG JATI RT 7"
-        ]
-      },
-      {
-        "name": "Pariwisata (2022)",
-        "value": 10,
+        "value": 2,
         "real_count": 2,
-        "depth": 4,
         "titles": [
-          "PENINGKATAN EKSISTENSI PROMOSI PARIWISATA KAMPUNG E-SPORT KOTA BALIKPAPAN",
+          "PENERAPAN ARTIFICIAL NEURAL NETWORK PADA PROTOTYPING SISTEM MONITORING KUALITAS AIR DI KOTA BALIKPAPAN UNTUK MENDUKUNG BALIKPAPAN SEBAGAI SMART CITY",
+          "PENGEMBANGAN SIMSIS SEBAGAI SISTEM SMART CITY RANAH PENDIDIKAN UNTUK MENUNJANG PROSES PEMBELAJARAN"
+        ]
+      },
+      {
+        "name": "Smart City & IKN (2022)",
+        "topic_id": 2,
+        "topic_name": "Smart City & IKN",
+        "color": "#8b5cf6",
+        "year": 2022,
+        "depth": 4,
+        "value": 2,
+        "real_count": 2,
+        "titles": [
+          "ANALISIS PENGUKURAN E-READINESS TEKNOLOGI INFORMASI PADA KOTA PENYANGGA IBU KOTA NEGARA BARU INDONESIA",
           "PENGEMBANGAN SISTEM INFORMASI PARIWISATA BERBASIS WEBSITE PADA DINAS PEMUDA, OLAHRAGA, DAN PARIWISATA KOTA BONTANG MENGGUNAKAN METODE SCRUM"
         ]
       },
       {
-        "name": "Peningkatan (2023)",
-        "value": 35,
-        "real_count": 7,
+        "name": "Smart City & IKN (2023)",
+        "topic_id": 2,
+        "topic_name": "Smart City & IKN",
+        "color": "#8b5cf6",
+        "year": 2023,
         "depth": 5,
-        "titles": [
-          "PENINGKATAN EFISIENSI DAN EFEKTIVITAS PROSES BELAJAR MENGAJAR DENGAN PEMANFAATAN TEKNOLOGI IOT PADA SISTEM BEL SEKOLAH PINTAR",
-          "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL",
-          "STRATEGI PENINGKATAN PRODUKSI DENGAN PENAMBAHAN MEDIA TANAM HIDROPONIK DAN PERANCANGAN WEBSITE COMPANY PROFILE KELOMPOK WANITA TANI RT 28 SEPINGGAN RAYA BALIKPAPAN",
-          "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL",
-          "PENGEMBANGAN SUMBER DAYA MANUSIA DAN PROSES PEMBENAHAN LINGKUNGAN DALAM UPAYA PENINGKATAN EKSISTENSI KAMPUNG E-SPORTS KOTA BALIKPAPAN",
-          "PENINGKATAN EFISIENSI DAN EFEKTIVITAS PROSES BELAJAR MENGAJAR DENGAN PEMANFAATAN TEKNOLOGI IOT PADA SISTEM BEL SEKOLAH PINTAR",
-          "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL"
-        ]
-      },
-      {
-        "name": "Smart (2023)",
-        "value": 40,
-        "real_count": 8,
-        "depth": 5,
-        "titles": [
-          "ANALISIS PREFERENSI MASYARAKAT PADA KOTA BERKONSEP SMART CITY",
-          "ANALISIS PREFERENSI MASYARAKAT PADA KOTA BERKONSEP SMART CITY",
-          "ANALISIS PREFERENSI MASYARAKAT PADA KOTA BERKONSEP SMART CITY",
-          "RANCANG BANGUN SISTEM DETEKSI DINI KEBAKARAN DI RUMAH MENGGUNAKAN SMART HOME BERBASIS IOT",
-          "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL",
-          "RANCANG BANGUN SISTEM DETEKSI DINI KEBAKARAN DI RUMAH MENGGUNAKAN SMART HOME BERBASIS IOT",
-          "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL",
-          "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL"
-        ]
-      },
-      {
-        "name": "Masyarakat (2023)",
-        "value": 25,
+        "value": 5,
         "real_count": 5,
-        "depth": 5,
         "titles": [
           "ANALISIS PREFERENSI MASYARAKAT PADA KOTA BERKONSEP SMART CITY",
-          "ANALISIS PREFERENSI MASYARAKAT PADA KOTA BERKONSEP SMART CITY",
-          "ANALISIS PREFERENSI MASYARAKAT PADA KOTA BERKONSEP SMART CITY",
-          "PEMBERDAYAAN MASYARAKAT PERUM KARANG JOANG LESTARI RT.50 DALAM BIDANG IPTEK DENGAN MENGGUNAKAN APLIKASI SCRATCH",
-          "IMPLEMENTASI LIVABLE HOME APPLICATION SEBAGAI SISTEM LAYANAN MASYARAKAT MENGGUNAKAN METODE WATERFALL"
-        ]
-      },
-      {
-        "name": "Ikn (2023)",
-        "value": 50,
-        "real_count": 10,
-        "depth": 5,
-        "titles": [
-          "PEMENUHAN KETERSEDIAAN DAGING SAPI DI KOTA BALIKPAPAN UNTUK MENDUKUNG PEMENUHAN KEBUTUHAN IKN DENGAN PENDEKATAN COOPERATIVE GAME THEORY",
-          "PERANCANGAN BASIS DATA WISATA KULINER SEBAGAI SARANA PROMOSI DAN PEMASARAN DESTINASI KULINER BERBASIS DIGITAL DI KOTA PENYANGGA IBU KOTA NEGARA (IKN)",
           "PENGARUH LITERASI DIGITAL DAN PENGALAMAN DIGITAL TERHADAP PERILAKU DIGITAL UMKM DI KOTA PENYANGGA IKN",
+          "PERANCANGAN BASIS DATA WISATA KULINER SEBAGAI SARANA PROMOSI DAN PEMASARAN DESTINASI KULINER BERBASIS DIGITAL DI KOTA PENYANGGA IBU KOTA NEGARA (IKN)",
           "Perancangan Desain UI/UX Prototype Aplikasi Wisata Kuliner sebagai Media Promosi dan Pemasaran Digital UMKM di Kota Penyangga IKN dengan menggunakan Pendekatan User Centered Design",
-          "PERANCANGAN BASIS DATA WISATA KULINER SEBAGAI SARANA PROMOSI DAN PEMASARAN DESTINASI KULINER BERBASIS DIGITAL DI KOTA PENYANGGA IBU KOTA NEGARA (IKN)",
-          "PENGARUH LITERASI DIGITAL DAN PENGALAMAN DIGITAL TERHADAP PERILAKU DIGITAL UMKM DI KOTA PENYANGGA IKN",
-          "Perancangan Desain UI/UX Prototype Aplikasi Wisata Kuliner sebagai Media Promosi dan Pemasaran Digital UMKM di Kota Penyangga IKN dengan menggunakan Pendekatan User Centered Design",
-          "PERANCANGAN BASIS DATA WISATA KULINER SEBAGAI SARANA PROMOSI DAN PEMASARAN DESTINASI KULINER BERBASIS DIGITAL DI KOTA PENYANGGA IBU KOTA NEGARA (IKN)",
-          "PENGARUH LITERASI DIGITAL DAN PENGALAMAN DIGITAL TERHADAP PERILAKU DIGITAL UMKM DI KOTA PENYANGGA IKN",
-          "Perancangan Desain UI/UX Prototype Aplikasi Wisata Kuliner sebagai Media Promosi dan Pemasaran Digital UMKM di Kota Penyangga IKN dengan menggunakan Pendekatan User Centered Design"
+          "VISUALISASI DARI KLASTERISASI DAN PERAMALAN KUALITAS UDARA KOTA BALIKPAPAN MENGGUNAKAN METODE KLASTERISASI OBJEK BACKPROPAGATION DAN PERAMALAN ARTIFICIAL NEURAL NETWORK"
         ]
       },
       {
-        "name": "Pemanfaatan (2024)",
-        "value": 35,
-        "real_count": 7,
+        "name": "Smart City & IKN (2024)",
+        "topic_id": 2,
+        "topic_name": "Smart City & IKN",
+        "color": "#8b5cf6",
+        "year": 2024,
         "depth": 6,
+        "value": 6,
+        "real_count": 6,
         "titles": [
-          "PENERAPAN DAN PEMANFAATAN TEKNOLOGI AQUAPONIK BERBASIS INTERNET OF THINGS (IOT) DI MASJID BERKAH BOX",
-          "PEMBERDAYAAN MASYARAKAT MELALUI PROGRAM EDUKASI DAN PEMANFAATAN TEKNOLOGI DI YAYASAN BERKAH BOX BALIKPAPAN",
-          "PEMBERDAYAAN MASYARAKAT MELALUI PROGRAM EDUKASI DAN PEMANFAATAN TEKNOLOGI DI YAYASAN BERKAH BOX BALIKPAPAN",
-          "PENERAPAN DAN PEMANFAATAN TEKNOLOGI AQUAPONIK BERBASIS INTERNET OF THINGS (IOT) DI MASJID BERKAH BOX",
-          "MANAJEMEN KELOMPOK WANITA TANI RT 21 SEPINGGAN MELALUI PEMANFAATAN TEKNOLOGI INFORMASI",
-          "PEMBUATAN AKUAPONIK SEBAGAI PEMANFAATAN LAHAN TERBATAS DAN PEMANFAATAN LIMBAH KOTORAN IKAN LELE MENJADI PUPUK DI WILAYAN PERUMAHAN BANGUN REKSA RT 21 KELURAHAN GRAHA INDAH, KECAMATAN BALIKPAPAN UTARA",
-          "KEGIATAN PENGAJARAN ANAK-ANAK SERTA SOSIALISASI PEMANFAATAN WEBSITE DAN SOSIAL MEDIA DI KELURAHAN MARGO MULYO"
-        ]
-      },
-      {
-        "name": "Masyarakat (2024)",
-        "value": 55,
-        "real_count": 11,
-        "depth": 6,
-        "titles": [
-          "PEMBERDAYAAN MASYARAKAT MELALUI PROGRAM EDUKASI DAN PEMANFAATAN TEKNOLOGI DI YAYASAN BERKAH BOX BALIKPAPAN",
-          "PEMBERDAYAAN MASYARAKAT MELALUI PROGRAM EDUKASI DAN PEMANFAATAN TEKNOLOGI DI YAYASAN BERKAH BOX BALIKPAPAN",
-          "PERKUAT INDUSTRI MIKRO KECIL MELALUI PENDAMPINGAN PROSES BISNIS: KOLABORASI PENGABDIAN MASYARAKAT DENGAN KOPERASI SEBAGAI MITRA UTAMA",
-          "PERKUAT INDUSTRI MIKRO KECIL MELALUI PENDAMPINGAN PROSES BISNIS: KOLABORASI PENGABDIAN MASYARAKAT DENGAN KOPERASI SEBAGAI MITRA UTAMA",
-          "PERKUAT INDUSTRI MIKRO KECIL MELALUI PENDAMPINGAN PROSES BISNIS: KOLABORASI PENGABDIAN MASYARAKAT DENGAN KOPERASI SEBAGAI MITRA UTAMA",
-          "DIGITALISASI PEMBANGUNAN WEBSITE DASHBOARD SEBAGAI SARANA INFORMASI DAN PENGELOLAAN DATA MASYARAKAT",
-          "DIGITALISASI PEMBANGUNAN WEBSITE DASHBOARD SEBAGAI SARANA INFORMASI DAN PENGELOLAAN DATA MASYARAKAT",
-          "PENERAPAN TRIPLE HELIX DALAM MEWUJUDKAN DESA DIGITAL PEDULI SAMPAH SEBAGAI UPAYA PENINGKATAN KESEJAHTERAAN MASYARAKAT",
-          "PENGEMBANGAN SISTEM PELAYANAN SATU PINTU SEBAGAI SISTEM LAYANAN MASYARAKAT MENGGUNAKAN METODE ICONIX PROCESS",
-          "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) UNTUK MENINGKATKAN PELAYANAN KEPADA SETIAP UNIT DI INSTITUT TEKNOLOGI KALIMANTAN",
-          "PENERAPAN TRIPLE HELIX DALAM MEWUJUDKAN DESA DIGITAL PEDULI SAMPAH SEBAGAI UPAYA PENINGKATAN KESEJAHTERAAN MASYARAKAT"
-        ]
-      },
-      {
-        "name": "Ikn (2024)",
-        "value": 45,
-        "real_count": 9,
-        "depth": 6,
-        "titles": [
-          "STRATEGI OPTIMISASI LOKASI STASIUN PENUKARAN BATERAI SEPEDA MOTOR LISTRIK DI DAERAH PENYANGGA IKN BERDASARKAN PENDEKATAN PEMROGRAMAN MATEMATIS",
-          "PROTOTYPE SISTEM INFORMASI MANAJEMEN STOK GUDANG PADA INDUSTRI MIKRO KECIL DI KOTA PENYANGGA IKN",
-          "PROTOTYPE SISTEM INFORMASI MANAJEMEN STOK GUDANG PADA INDUSTRI MIKRO KECIL DI KOTA PENYANGGA IKN",
+          "ANALISIS PREFERENSI PENDUDUK DALAM MEMILIH HUNIAN DI WILAYAH KECAMATAN BALIKPAPAN UTARA",
           "KAJIAN GARIS PANTAI SECARA TEMPORAR DI WILAYAH PESISIR IKN SEBAGAI PERSIAPAN PEMBAGUNAN INFRASTRUKTUR",
-          "PROTOTYPE SISTEM INFORMASI MANAJEMEN STOK GUDANG PADA INDUSTRI MIKRO KECIL DI KOTA PENYANGGA IKN",
-          "PEMBANGUNAN SMART-SCHOOL SYSTEM PADA LINGKUNGAN PEDESAAN DI WILAYAH IKN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
-          "VISUALISASI DARI KLASTERISASI DAN ESTIMASI KETERSEDIAAN LAHAN PEMBUANGAN SAMPAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER DAN UJI REGRESI LANJUTAN",
           "Monitoring Dan Forecasting Ketercukupan Tempat Pembuangan Akhir Di Kota Balikpapan Sebagai Penyangga IKN Dengan Metode Regresi Lanjutan Berbasis Website",
-          "PEMBANGUNAN SMART-SCHOOL SYSTEM PADA LINGKUNGAN PEDESAAN DI WILAYAH IKN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING"
+          "PROTOTYPE SISTEM INFORMASI MANAJEMEN STOK GUDANG PADA INDUSTRI MIKRO KECIL DI KOTA PENYANGGA IKN",
+          "STRATEGI OPTIMISASI LOKASI STASIUN PENUKARAN BATERAI SEPEDA MOTOR LISTRIK DI DAERAH PENYANGGA IKN BERDASARKAN PENDEKATAN PEMROGRAMAN MATEMATIS",
+          "VISUALISASI DARI KLASTERISASI DAN ESTIMASI KETERSEDIAAN LAHAN PEMBUANGAN SAMPAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER DAN UJI REGRESI LANJUTAN"
         ]
       },
       {
-        "name": "Peningkatan (2024)",
-        "value": 35,
-        "real_count": 7,
-        "depth": 6,
-        "titles": [
-          "TOURISM IN TERITIP \u2013 SEBAGAI BENTUK PENINGKATAN BRANDING POTENSI DAERAH KELURAHAN TERITIP KOTA BALIKPAPAN",
-          "PENGEMBANGAN WEBSITE DAN PENINGKATAN KENYAMANAN PENGUNJUNG DI WISATA MERANTI BALIKPAPAN",
-          "PENGEMBANGAN WEBSITE DAN PENINGKATAN KENYAMANAN PENGUNJUNG DI WISATA MERANTI BALIKPAPAN",
-          "PENERAPAN TRIPLE HELIX DALAM MEWUJUDKAN DESA DIGITAL PEDULI SAMPAH SEBAGAI UPAYA PENINGKATAN KESEJAHTERAAN MASYARAKAT",
-          "PENINGKATAN INFRASTRUKTUR PADA JALAN DI KAMPUNG E-SPORT BALIKPAPAN :\nIMPLEMENTASI GOOGLE MAPS, PEMBANGUNAN DIREKSI GANG, CONVEX MIRROR,\nDAN RAMBU KEBISINGAN",
-          "PENINGKATAN INFRASTRUKTUR PADA JALAN DI KAMPUNG E-SPORT BALIKPAPAN :\nIMPLEMENTASI GOOGLE MAPS, PEMBANGUNAN DIREKSI GANG, CONVEX MIRROR,\nDAN RAMBU KEBISINGAN",
-          "PENERAPAN TRIPLE HELIX DALAM MEWUJUDKAN DESA DIGITAL PEDULI SAMPAH SEBAGAI UPAYA PENINGKATAN KESEJAHTERAAN MASYARAKAT"
-        ]
-      },
-      {
-        "name": "Ikn (2025)",
-        "value": 50,
-        "real_count": 10,
+        "name": "Smart City & IKN (2025)",
+        "topic_id": 2,
+        "topic_name": "Smart City & IKN",
+        "color": "#8b5cf6",
+        "year": 2025,
         "depth": 7,
+        "value": 7,
+        "real_count": 7,
         "titles": [
+          "ANALISIS PEMENUHAN KETERSEDIAAN AIR BERSIH DENGAN PEMANFAATAN GREY WATER DAN PENGATURAN PIPA DI BALIKPAPAN SEBAGAI KOTA PENYANGGA IBU KOTA NEGARA NUSANTARA",
+          "DAMPAK KEMAMPUAN MANAJEMEN PROSES BISNIS DAN ADOPSI KECERDASAN BUATAN  TERHADAP KINERJA PROSES: STUDI KASUS UKM DI KAWASAN IKN",
+          "KEBIJAKAN MANAJEMEN TATA KELOLA LIMBAH DOMESTIK DI KOTA BALIKPAPAN DENGAN METODE SISTEM DINAMIS",
           "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
           "RANCANG BANGUN SISTEM STOK GUDANG BERBASIS WEB UNTUK INDUSTRI MIKRO DAN KECIL DI KOTA PENYANGGA IKN",
-          "DAMPAK KEMAMPUAN MANAJEMEN PROSES BISNIS DAN ADOPSI KECERDASAN BUATAN  TERHADAP KINERJA PROSES: STUDI KASUS UKM DI KAWASAN IKN",
-          "DAMPAK KEMAMPUAN MANAJEMEN PROSES BISNIS DAN ADOPSI KECERDASAN BUATAN  TERHADAP KINERJA PROSES: STUDI KASUS UKM DI KAWASAN IKN",
-          "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
-          "MENELAAH FAKTOR-FAKTOR CYBERLOAFING MELALUI STRATEGI GAMIFIKASI SEBAGAI PENDEKATAN INOVATIF DALAM MENINGKATKAN PRODUKTIVITAS DAN EFISIENSI KERJA DI KOTA PENYANGGA IKN",
-          "RANCANG BANGUN SISTEM STOK GUDANG BERBASIS WEB UNTUK INDUSTRI MIKRO DAN KECIL DI KOTA PENYANGGA IKN",
-          "DAMPAK KEMAMPUAN MANAJEMEN PROSES BISNIS DAN ADOPSI KECERDASAN BUATAN  TERHADAP KINERJA PROSES: STUDI KASUS UKM DI KAWASAN IKN",
-          "VISUALISASI DARI KLASTERISASI PENGELOMPOKAN DAERAH BERDASARKAN TINGKAT PENDAPATAN PAJAK DAERAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER LANJUTAN",
+          "RANCANG BANGUN TRANSPARANSI PENGGUNAAN DANA TJSLP (TANGGUNG JAWAB SOSIAL DAN LINGKUNGAN PERUSAHAAN) DALAM MENDUKUNG SMART CITY MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
           "VISUALISASI DARI KLASTERISASI PENGELOMPOKAN DAERAH BERDASARKAN TINGKAT PENDAPATAN PAJAK DAERAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER LANJUTAN"
         ]
       },
       {
-        "name": "Digital (2025)",
-        "value": 100,
-        "real_count": 20,
-        "depth": 7,
+        "name": "Smart Home & IoT Energi (2023)",
+        "topic_id": 3,
+        "topic_name": "Smart Home & IoT Energi",
+        "color": "#10b981",
+        "year": 2023,
+        "depth": 5,
+        "value": 2,
+        "real_count": 2,
         "titles": [
-          "DIGITALISASI LAYANAN ADMINISTRASI RT MELALUI PENGEMBANGAN WEBSITE UNTUK PENGELOLAAN DATA WARGA",
-          "DIGITALISASI PROMOSI CELOSIA GARDEN PARK BALIKPAPAN  MELALUI PENGEMBANGAN WEBSITE SEBAGAI PLATFORM INFORMASI UTAMA",
-          "DIGITALISASI LAYANAN ADMINISTRASI RT MELALUI PENGEMBANGAN WEBSITE UNTUK PENGELOLAAN DATA WARGA",
-          "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS",
-          "PELATIHAN OPTIMALISASI PEMASARAN DIGITAL PADA BATIK SHAHO DAN KOMUNITAS BATIK TIGA ZAMAN BALIKPAPAN",
-          "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
-          "PENINGKATAN KEMANDIRIAN EKONOMI PERKUMPULAN PENYANDANG DISABILITAS INDONESIA (PPDI) BALIKPAPAN MELALUI PENGUATAN PEMASARAN DIGITAL DAN PEMBERDAYAAN LEGALITAS PRODUK",
-          "Peningkatan Kapasitas Produksi dan Daya Saing Kelompok Usaha Bersama melalui Pelatihan Teknologi Sablon dan Pemasaran Digital di Karang Joang Balikpapan Utara",
-          "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
-          "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
-          "PENGEMBANGAN WISATA TANJUNG GADING MELALUI DIGITALISASI DI RT 17 KELURAHAN KARANG JOANG",
-          "PENGEMBANGAN DIGITAL BRANDING BERSAMA TANAMIN BUMI NUSANTARA MELALUI PEMANFAATAN TEKNOLOGI INFORMASI UNTUK KAMPANYE LINGKUNGAN",
-          "PENINGKATAN KEMANDIRIAN EKONOMI PERKUMPULAN PENYANDANG DISABILITAS INDONESIA (PPDI) BALIKPAPAN MELALUI PENGUATAN PEMASARAN DIGITAL DAN PEMBERDAYAAN LEGALITAS PRODUK",
-          "PENGEMBANGAN DIGITAL BRANDING BERSAMA TANAMIN BUMI NUSANTARA MELALUI PEMANFAATAN TEKNOLOGI INFORMASI UNTUK KAMPANYE LINGKUNGAN",
-          "PENGEMBANGAN FASILITAS DAN PROMOSI HUTAN KOTA MANGROVE MARGOMULYO MELALUI TEKNOLOGI DIGITAL",
-          "PENGEMBANGAN WISATA TANJUNG GADING MELALUI DIGITALISASI DI RT 17 KELURAHAN KARANG JOANG",
-          "PENGEMBANGAN FASILITAS DAN PROMOSI HUTAN KOTA MANGROVE MARGOMULYO MELALUI TEKNOLOGI DIGITAL",
-          "DIGITALISASI LAYANAN BERBASIS WEBSITE UNTUK MENINGKATKAN KUALITAS PELAYANAN DI RT 02 KELURAHAN GRAHA INDAH BALIKPAPAN",
-          "PELATIHAN OPTIMALISASI PEMASARAN DIGITAL PADA BATIK SHAHO DAN KOMUNITAS BATIK TIGA ZAMAN BALIKPAPAN",
-          "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS"
+          "PENINGKATAN EFISIENSI DAN EFEKTIVITAS PROSES BELAJAR MENGAJAR DENGAN PEMANFAATAN TEKNOLOGI IOT PADA SISTEM BEL SEKOLAH PINTAR",
+          "RANCANG BANGUN SISTEM DETEKSI DINI KEBAKARAN DI RUMAH MENGGUNAKAN SMART HOME BERBASIS IOT"
         ]
       },
       {
-        "name": "Pemanfaatan (2025)",
-        "value": 45,
-        "real_count": 9,
-        "depth": 7,
+        "name": "Smart Home & IoT Energi (2024)",
+        "topic_id": 3,
+        "topic_name": "Smart Home & IoT Energi",
+        "color": "#10b981",
+        "year": 2024,
+        "depth": 6,
+        "value": 1,
+        "real_count": 1,
         "titles": [
-          "ANALISIS PEMENUHAN KETERSEDIAAN AIR BERSIH DENGAN PEMANFAATAN GREY WATER DAN PENGATURAN PIPA DI BALIKPAPAN SEBAGAI KOTA PENYANGGA IBU KOTA NEGARA NUSANTARA",
-          "PENINGKATAN FASILITAS WISATA DENGAN PEMANFAATAN PANEL SURYA DALAM PENERANGAN AREA FOTO DI TANJUNG GADING KM.12 BALIKPAPAN",
+          "RANCANGAN DAN IMPLEMENTASI SMART HOME SYSTEM UNTUK PENGENDALIAN SAKELAR LISTRIK BERBASIS IOT"
+        ]
+      },
+      {
+        "name": "Smart Home & IoT Energi (2025)",
+        "topic_id": 3,
+        "topic_name": "Smart Home & IoT Energi",
+        "color": "#10b981",
+        "year": 2025,
+        "depth": 7,
+        "value": 3,
+        "real_count": 3,
+        "titles": [
+          "DESAIN DAN IMPLEMENTASI SMART AUTO FEEDER FISH  BERDASARKAN UMUR DAN UKURAN IKAN DENGAN METODE  FUZZY LOGIC",
+          "OPTIMALISASI PENGELOLAAN SISTEM MONITORING DATA ENERGI LISTRIK PADA SMART HOME SYSTEM UNTUK SAKLAR LISTRIK MENGGUNAKAN METODE EXTREME PROGRAMMING",
+          "SUSTAINABLE ELECTRICITY MONITORING VIA MOBILE APPLICATION IN DORMITORY AREAS"
+        ]
+      },
+      {
+        "name": "AI/ML untuk Sains (2019)",
+        "topic_id": 4,
+        "topic_name": "AI/ML untuk Sains",
+        "color": "#f59e0b",
+        "year": 2019,
+        "depth": 1,
+        "value": 2,
+        "real_count": 2,
+        "titles": [
+          "Analisis Keterhubungan Prestasi Akademik dan Kesehatan Mental Mahasiswa Menggunakan Metode Data Mining Sebagai Upaya Peningkatan Kualitas Peserta Didik di Perguruan Tinggi Negeri di Kalimantan",
+          "IMPLEMENTASI DAN EVALUASI ALGORITMA C5.0 PADA KLASIFIKASI EMOSI TEKS BERITA BERBAHASA INDONESIA."
+        ]
+      },
+      {
+        "name": "AI/ML untuk Sains (2021)",
+        "topic_id": 4,
+        "topic_name": "AI/ML untuk Sains",
+        "color": "#f59e0b",
+        "year": 2021,
+        "depth": 3,
+        "value": 2,
+        "real_count": 2,
+        "titles": [
+          "FUZZY RULE BASED-SYSTEM REKAM MEDIS TERKAIT STATUS GIZI BAYI INDEKS ANTROPOMETRI SELAMA POSTPARTUM",
+          "Fuzzy Logic Fog Clod Computing untuk Menganalisis Faktor Penyebab Kematian Ibu Meninggal Masa Postpartum"
+        ]
+      },
+      {
+        "name": "AI/ML untuk Sains (2023)",
+        "topic_id": 4,
+        "topic_name": "AI/ML untuk Sains",
+        "color": "#f59e0b",
+        "year": 2023,
+        "depth": 5,
+        "value": 3,
+        "real_count": 3,
+        "titles": [
+          "PENGEMBANGAN INVERSI BATIMETRI UNTUK ESTIMASI KEDALAMAN LAUT PERAIRAN MENGGUNAKAN ALGORITMA INTERPRETABLE DEEP LEARNING",
+          "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
+          "SVM (SUPPORT VECTOR MACHINE) UNTUK KLASIFIKASI STATUS GIZI BALITA BERDASARKAN INDEKS ANTROPOMETRI"
+        ]
+      },
+      {
+        "name": "AI/ML untuk Sains (2024)",
+        "topic_id": 4,
+        "topic_name": "AI/ML untuk Sains",
+        "color": "#f59e0b",
+        "year": 2024,
+        "depth": 6,
+        "value": 1,
+        "real_count": 1,
+        "titles": [
+          "Pengembangan Algoritma Metaheuristik Untuk Menyelesaikan Permasalahan Optimasi Kombinatorial"
+        ]
+      },
+      {
+        "name": "AI/ML untuk Sains (2025)",
+        "topic_id": 4,
+        "topic_name": "AI/ML untuk Sains",
+        "color": "#f59e0b",
+        "year": 2025,
+        "depth": 7,
+        "value": 1,
+        "real_count": 1,
+        "titles": [
+          "PENERAPAN LOGIKA FUZZY UNTUK MENENTUKAN DURASI ISTIRAHAT OPTIMAL BERBASIS TINGKAT KEBISINGAN DAN LAMA PAPARAN DI INDUSTRI"
+        ]
+      },
+      {
+        "name": "AI/ML untuk Sains (2026)",
+        "topic_id": 4,
+        "topic_name": "AI/ML untuk Sains",
+        "color": "#f59e0b",
+        "year": 2026,
+        "depth": 8,
+        "value": 1,
+        "real_count": 1,
+        "titles": [
+          "Peran isu privasi terhadap efektivitas pemanfaatan Artificial Intelligence di Social Commerce: Perspektif Fungsional dan Sosial Emosional"
+        ]
+      },
+      {
+        "name": "Pembelajaran Adaptif & Edukasi Digital (2019)",
+        "topic_id": 5,
+        "topic_name": "Pembelajaran Adaptif & Edukasi Digital",
+        "color": "#ec4899",
+        "year": 2019,
+        "depth": 1,
+        "value": 1,
+        "real_count": 1,
+        "titles": [
+          "EDUKASI PENGGUNAAN INTERNET SEHAT UNTUK MEDIA PEMBELAJARAN DI SMP NEGERI BALIKPAPAN"
+        ]
+      },
+      {
+        "name": "Pembelajaran Adaptif & Edukasi Digital (2020)",
+        "topic_id": 5,
+        "topic_name": "Pembelajaran Adaptif & Edukasi Digital",
+        "color": "#ec4899",
+        "year": 2020,
+        "depth": 2,
+        "value": 4,
+        "real_count": 4,
+        "titles": [
+          "PELATIHAN PEMROGRAMAN UNTUK MELATIH LOGIKA BERPIKIR YANG SISTEMATIS KEPADA SISWA SDN 012 BALIKPAPAN UTARA",
+          "PEMANFAATAN SISTEM INFORMASI KELAS DIGITAL UNTUK MENDUKUNG PELAKSANAAN TRY OUT DI SMP 22 BALIKPAPAN",
+          "PEMBANGUNAN SISTEM INFORMASI PERPUSTAKAAN BERBASIS WEB PADA SMAN 9 BALIKPAPAN",
+          "SOSIALISASI PEMANFAATAN TEKNOLOGI ICT DALAM PEMBELAJARAN DARING DI SEKOLAH DASAR AL AZHAR 58 BALIKPAPAN"
+        ]
+      },
+      {
+        "name": "Pembelajaran Adaptif & Edukasi Digital (2021)",
+        "topic_id": 5,
+        "topic_name": "Pembelajaran Adaptif & Edukasi Digital",
+        "color": "#ec4899",
+        "year": 2021,
+        "depth": 3,
+        "value": 2,
+        "real_count": 2,
+        "titles": [
+          "ANALISIS PENERIMAAN LEARNING MANAGEMENT SYSTEM PADA KULIAH.ITK.AC.ID MENGGUNAKAN PENDEKATAN TECHNOLOGY ACCEPTANCE MODEL (TAM)",
+          "MEDIA PEMBELAJARAN DENGAN METODE GAMIFICATION UNTUK PENDIDIKAN FORMAL DAN NON FORMAL DI KALIMANTAN ERA COVID-19"
+        ]
+      },
+      {
+        "name": "Pembelajaran Adaptif & Edukasi Digital (2022)",
+        "topic_id": 5,
+        "topic_name": "Pembelajaran Adaptif & Edukasi Digital",
+        "color": "#ec4899",
+        "year": 2022,
+        "depth": 4,
+        "value": 1,
+        "real_count": 1,
+        "titles": [
+          "ANALISIS PENGARUH PENGALAMAN MENGGUNAKAN E-LEARNING SEBELUM COVID-19 DAN KARAKTERISTIK INSTRUKTUR KELAS TERHADAP NIAT PERILAKU MAHASISWA DALAM PEMBELAJARAN MELALUI E-LEARNING BERDASARKAN TECHNOLOGY ACCEPTANCE MODEL"
+        ]
+      },
+      {
+        "name": "Pembelajaran Adaptif & Edukasi Digital (2023)",
+        "topic_id": 5,
+        "topic_name": "Pembelajaran Adaptif & Edukasi Digital",
+        "color": "#ec4899",
+        "year": 2023,
+        "depth": 5,
+        "value": 2,
+        "real_count": 2,
+        "titles": [
+          "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL",
+          "PEMBERDAYAAN MASYARAKAT PERUM KARANG JOANG LESTARI RT.50 DALAM BIDANG IPTEK DENGAN MENGGUNAKAN APLIKASI SCRATCH"
+        ]
+      },
+      {
+        "name": "Pembelajaran Adaptif & Edukasi Digital (2024)",
+        "topic_id": 5,
+        "topic_name": "Pembelajaran Adaptif & Edukasi Digital",
+        "color": "#ec4899",
+        "year": 2024,
+        "depth": 6,
+        "value": 3,
+        "real_count": 3,
+        "titles": [
+          "IMPLEMENTASI METAVERSE PADA PENGENALAN LAB TERPADU KAMPUS INSTITUT TEKNOLOGI KALIMANTAN (ITK)",
+          "KEGIATAN PENGAJARAN ANAK-ANAK SERTA SOSIALISASI PEMANFAATAN WEBSITE DAN SOSIAL MEDIA DI KELURAHAN MARGO MULYO",
+          "PEMBANGUNAN SMART-SCHOOL SYSTEM PADA LINGKUNGAN PEDESAAN DI WILAYAH IKN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING"
+        ]
+      },
+      {
+        "name": "Pembelajaran Adaptif & Edukasi Digital (2025)",
+        "topic_id": 5,
+        "topic_name": "Pembelajaran Adaptif & Edukasi Digital",
+        "color": "#ec4899",
+        "year": 2025,
+        "depth": 7,
+        "value": 3,
+        "real_count": 3,
+        "titles": [
+          "OPTIMALISASI TEKNOLOGI DAN KREATIVITAS UNTUK MENDUKUNG PEMBELAJARAN DAN ADMINISTRASI DI SEKOLAH ISLAM AL AZHAR 58 BALIKPAPAN",
+          "PERANCANGAN SISTEM MEDIA PEMBELAJARAN BERBASIS AI DAN ADAPTIVE LEARNING DENGAN KONSEP HEALING TECHNOLOGY PADA PESERTA DIDIK DISABILITAS",
+          "PESANTREN KODING: EDUKASI PEMROGRAMAN DASAR BAGI SISWA SEKOLAH DASAR MELALUI MIT APP INVENTOR"
+        ]
+      },
+      {
+        "name": "UMKM, E-Commerce & Digital Marketing (2018)",
+        "topic_id": 6,
+        "topic_name": "UMKM, E-Commerce & Digital Marketing",
+        "color": "#ef4444",
+        "year": 2018,
+        "depth": 0,
+        "value": 1,
+        "real_count": 1,
+        "titles": [
+          "IMPLEMENTASI SISTEM BIMBINGAN PENJUALAN  BERBASIS PREDICTIVE ANALYTICS UNTUK USAHA MIKRO DAN KECIL \r\n(Studi Kasus: Pasar Tradisional Klandasan Balikpapan)"
+        ]
+      },
+      {
+        "name": "UMKM, E-Commerce & Digital Marketing (2019)",
+        "topic_id": 6,
+        "topic_name": "UMKM, E-Commerce & Digital Marketing",
+        "color": "#ef4444",
+        "year": 2019,
+        "depth": 1,
+        "value": 1,
+        "real_count": 1,
+        "titles": [
+          "MODEL HEAVY EQUIPMENT LEASING DENGAN MEMPERTIMBANGKAN BIAYA PENALTI SAAT TERJADI FAILURE YANG MELEBIHI TOLERANSI MENGGUNAKAN GAME THEORY"
+        ]
+      },
+      {
+        "name": "UMKM, E-Commerce & Digital Marketing (2020)",
+        "topic_id": 6,
+        "topic_name": "UMKM, E-Commerce & Digital Marketing",
+        "color": "#ef4444",
+        "year": 2020,
+        "depth": 2,
+        "value": 3,
+        "real_count": 3,
+        "titles": [
+          "Inkubasi Global Technopreneurship Berbasis Teknologi Menuju Revolusi Society 5.0 Universitas Mulia",
+          "LEAN SIX SIGMA JOURNEY PADA INDUSTRI OLEH-OLEH MAKANAN KHAS DAERAH",
+          "MODEL OPTIMASI DISTRIBUSI MULTI-PRODUK MULTI-ESELON MENGGUNAKAN SISTEM DEDICATED WAREHOUSE"
+        ]
+      },
+      {
+        "name": "UMKM, E-Commerce & Digital Marketing (2021)",
+        "topic_id": 6,
+        "topic_name": "UMKM, E-Commerce & Digital Marketing",
+        "color": "#ef4444",
+        "year": 2021,
+        "depth": 3,
+        "value": 3,
+        "real_count": 3,
+        "titles": [
+          "ANALISIS FAKTOR YANG MEMENGARUHI CONTINUANCE INTENTION PADA PENGGUNAAN MOBILE PAYMENT DENGAN MENGGUNAKAN STRUCTURAL EQUATION MODELING",
+          "COMPETITIVE RESEARCH TERHADAP E-COMMERCE EKSISTING UNTUK REKOMENDASI DESAIN APLIKASI E-COMMERCE UMKM BALIKPAPAN",
+          "PENGOLAHAN BUAH PEPAYA SEBAGAI PRODUK JUAL YANG MURAH DAN MODERN MELALUI MEDIA PELATIHAN UMKM SEBAGAI UPAYA PENINGKATAN EKONOMI MASYARAKAT DI KELURAHAN KARANG JATI"
+        ]
+      },
+      {
+        "name": "UMKM, E-Commerce & Digital Marketing (2022)",
+        "topic_id": 6,
+        "topic_name": "UMKM, E-Commerce & Digital Marketing",
+        "color": "#ef4444",
+        "year": 2022,
+        "depth": 4,
+        "value": 7,
+        "real_count": 7,
+        "titles": [
+          "PEMASARAN DAN PENGEMBANGAN OLAHAN JAMBU KRISTAL UNTUK MASYARAKAT PERKEBUNAN JAMBU KRISTAL KM 24 GANG PERJUANGAN II BALIKPAPAN UTARA",
+          "PEMASARAN HASIL URBAN FARMING PADA KWT SUMBER SARI RT 21 MELALUI STRATEGI PEMANFAATAN MEDIA SOSIAL",
+          "PEMBERDAYAAN URBAN FARMING DAN PENGELOLAAN SAMPAH MENJADI KOMPOSDI KELURAHAN GUNUNG SAMARINDA BARU, RT 9 PERUMAHAN TAMAN SARI BUKIT",
+          "PENGEMBANGAN KAWASAN WISATA KULINER KELURAHAN DAMAI BALIKPAPAN",
+          "PERANCANGAN DESIGN UI/UX PADA BIDANG FINANCIAL TECHNOLOGY DALAM PENGEMBANGAN SMART ECONOMY MENGGUNAKAN METODE DESIGN THINKING",
+          "SKEMA PEMBIAYAAN UMKM BIDANG PANGAN/ PERTANIAN DI KALIMANTAN TIMUR BERBASIS LINGKUNGAN (ECO-FRIENDLY)",
+          "SOSIALISASI PEMANFAATAN DIGITAL MARKETING SEBAGAI SOLUSI MENINGKATKAN PENJUALAN UMKM DI KELURAHAN KARANG JATI RT 7"
+        ]
+      },
+      {
+        "name": "UMKM, E-Commerce & Digital Marketing (2023)",
+        "topic_id": 6,
+        "topic_name": "UMKM, E-Commerce & Digital Marketing",
+        "color": "#ef4444",
+        "year": 2023,
+        "depth": 5,
+        "value": 5,
+        "real_count": 5,
+        "titles": [
+          "ANALISIS ADOPSI PENGGUNAAN E-COMMERCE BERDASARKAN TECHNOLOGY, ORGANIZATION, DAN ENVIRONTMENT (TOE) PADA UMKM DI BALIKPAPAN",
+          "BRANDING BANK SAMPAH KOTA HIJAU BALIKPAPAN BERBASIS DIGITAL MARKETING",
+          "IMPLEMENTASI KURIKULUM PROGRAM PEMBINAAN STARTUP DENGAN METODE 4 FASE UNTUK PEMBERDAYAAN KEWIRAUSAHAAN DI KAMPUNG TIMUR KOTA BALIKPAPAN",
+          "PEMENUHAN KETERSEDIAAN DAGING SAPI DI KOTA BALIKPAPAN UNTUK MENDUKUNG PEMENUHAN KEBUTUHAN IKN DENGAN PENDEKATAN COOPERATIVE GAME THEORY",
+          "SKEMA PEMBIAYAAN UMKM PERTANIAN DI KALIMANTAN TIMUR BERBASIS  LINGKUNGAN (ECO-FRIENDLY) (TAHUN KE-2)"
+        ]
+      },
+      {
+        "name": "UMKM, E-Commerce & Digital Marketing (2024)",
+        "topic_id": 6,
+        "topic_name": "UMKM, E-Commerce & Digital Marketing",
+        "color": "#ef4444",
+        "year": 2024,
+        "depth": 6,
+        "value": 5,
+        "real_count": 5,
+        "titles": [
+          "PELATIHAN DIGITAL MARKETING RT.06 KELURAHAN GRAHA INDAH, KECAMATAN BALIKPAPAN UTARA, KOTA BALIKPAPAN, KALIMANTAN TIMUR",
+          "PERAN MALL SEBAGAI AGEN KEMAJUAN PRODUK HALAL: STUDI KASUS DI MALL PLAZA BALIKPAPAN",
+          "PERKUAT INDUSTRI MIKRO KECIL MELALUI PENDAMPINGAN PROSES BISNIS: KOLABORASI PENGABDIAN MASYARAKAT DENGAN KOPERASI SEBAGAI MITRA UTAMA",
+          "REDESIGN PACKAGING PRODUK DAN PELATIHAN DESIGN SEBAGAI UPAYA MENINGKATKAN PROMOSI KAMPUNG WISATA KANG BEJO",
+          "SKEMA PEMBIAYAAN UMKM PERTANIAN DI KALIMANTANTIMUR BERBASIS LINGKUNGAN (TAHUN KE-3)"
+        ]
+      },
+      {
+        "name": "UMKM, E-Commerce & Digital Marketing (2025)",
+        "topic_id": 6,
+        "topic_name": "UMKM, E-Commerce & Digital Marketing",
+        "color": "#ef4444",
+        "year": 2025,
+        "depth": 7,
+        "value": 10,
+        "real_count": 10,
+        "titles": [
+          "EVALUASI TINGKAT PENERIMAAN DAN PENGALAMAN PENGGUNA SISTEM CORETAX PADA PERUSAHAAN WAJIB PAJAK DI INDONESIA",
+          "OPTIMALISASI KEWIRAUSAHAAN BERBASIS MIKRO PADA KELURAHAN KARANG JOANG KOTA BALIKPAPAN",
+          "PELATIHAN OPTIMALISASI PEMASARAN DIGITAL PADA BATIK SHAHO DAN KOMUNITAS BATIK TIGA ZAMAN BALIKPAPAN",
           "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS",
-          "Peran isu privasi terhadap efektivitas pemanfaatan Artificial Intelligence di Social Commerce: Perspektif Fungsional dan Sosial Emosional",
-          "PENGEMBANGAN DIGITAL BRANDING BERSAMA TANAMIN BUMI NUSANTARA MELALUI PEMANFAATAN TEKNOLOGI INFORMASI UNTUK KAMPANYE LINGKUNGAN",
+          "PEMBERDAYAAN EKONOMI MASYARAKAT MELALUI PENINGKATAN KUALITAS, AKSES, DAN KEBERSIHAN DI PASAR BANGUN REKSA",
+          "PENGEMBANGAN SISTEM PROYEKSI KEBIJAKAN PENGELOLAAN KEUANGAN BADAN LAYANAN UMUM INSTITUT TEKNOLOGI KALIMANTAN",
+          "PENINGKATAN KEMANDIRIAN EKONOMI PERKUMPULAN PENYANDANG DISABILITAS INDONESIA (PPDI) BALIKPAPAN MELALUI PENGUATAN PEMASARAN DIGITAL DAN PEMBERDAYAAN LEGALITAS PRODUK",
+          "PERANCANGAN DECISION SUPPORT SYSTEM BERBASIS WEB UNTUK PEMILIHAN PRODUK UMKM LAYAK EKSPORT KERJASAMA INKUBATOR BISNIS DAN TEKNOLOGI ITK DAN KOMUNITAS PENGUSAHA MUSLIM INDONESIA (KPMI)",
+          "Pemberdayaan Pencinta Anggrek di Kota Balikpapan melalui Inovasi Produk, Pemasaran Digital dan Adopsi Sistem Informasi",
+          "Peningkatan Kapasitas Produksi dan Daya Saing Kelompok Usaha Bersama melalui Pelatihan Teknologi Sablon dan Pemasaran Digital di Karang Joang Balikpapan Utara"
+        ]
+      },
+      {
+        "name": "Lingkungan & Pertanian Berkelanjutan (2021)",
+        "topic_id": 7,
+        "topic_name": "Lingkungan & Pertanian Berkelanjutan",
+        "color": "#14b8a6",
+        "year": 2021,
+        "depth": 3,
+        "value": 2,
+        "real_count": 2,
+        "titles": [
+          "PEMBERDAYAAN MASYARAKAT BARU TENGAH MELALUI BUDIDAYA IKAN LELE DENGAN MENGUNAKAN TEKNIK BUDIKDAMBER",
+          "PEMBERDAYAAN MASYARAKAT PESISIR MELALUI PRODUK INOVATIF OLAHAN BUAH BROWNIES MANGROVE BERBASIS EKOWISATA NEW NORMAL DI KELURAHAN MARGOMULYO KOTA BALIKPAPAN"
+        ]
+      },
+      {
+        "name": "Lingkungan & Pertanian Berkelanjutan (2022)",
+        "topic_id": 7,
+        "topic_name": "Lingkungan & Pertanian Berkelanjutan",
+        "color": "#14b8a6",
+        "year": 2022,
+        "depth": 4,
+        "value": 2,
+        "real_count": 2,
+        "titles": [
+          "PEMBUATAN SISTEM INFORMASI PENGOLAHAN SAMPAH BERBASIS WEB PADA BANK SAMPAH DARMA BAKTI",
+          "PERANCANGAN SISTEM INFORMASI BERBASIS WEBSITE SEBAGAI MEDIA INFORMASI SEKALIGUS ETALASE PRODUK OLAHAN KANGKUNG PADA KAMPUNG KANG BEJO BALIKPAPAN."
+        ]
+      },
+      {
+        "name": "Lingkungan & Pertanian Berkelanjutan (2023)",
+        "topic_id": 7,
+        "topic_name": "Lingkungan & Pertanian Berkelanjutan",
+        "color": "#14b8a6",
+        "year": 2023,
+        "depth": 5,
+        "value": 6,
+        "real_count": 6,
+        "titles": [
+          "DIGITALISASI PENGELOLAAN BANK SAMPAH BORNEO 38 DAN PENGEMBANGAN RUMAH KREATIF RT. 38 KELURAHAN BARU TENGAH BALIKPAPAN BARAT",
+          "DIGITALISASI SISTEM PENGELOLAAN BANK SAMPAH DHARMA BAKTI RT. 055, KELURAHAN MUARA RAPAK, KECAMATAN BALIKPAPAN UTARA, KOTA BALIKPAPAN, KALIMANTAN TIMUR",
+          "OPTIMALISASI PENGELOLAAN SAMPAH PADA BANK SAMPAH 123 RT. 001 KELURAHAN MARGO MULYO BALIKPAPAN BARAT",
+          "OPTIMASI KELOMPOK TANI DAN WISATA EDUKATIF BAMBOE WANADESA",
+          "PENGEMBANGAN SISTEM “GANTION” (GARDEN INFORMATION ) DAN PENGAPLIKASIAN TEKNOLOGI MESIN \"ALKON\" PADA KEBUN MELON SUMBER BERKAH",
+          "STRATEGI PENINGKATAN PRODUKSI DENGAN PENAMBAHAN MEDIA TANAM HIDROPONIK DAN PERANCANGAN WEBSITE COMPANY PROFILE KELOMPOK WANITA TANI RT 28 SEPINGGAN RAYA BALIKPAPAN"
+        ]
+      },
+      {
+        "name": "Lingkungan & Pertanian Berkelanjutan (2024)",
+        "topic_id": 7,
+        "topic_name": "Lingkungan & Pertanian Berkelanjutan",
+        "color": "#14b8a6",
+        "year": 2024,
+        "depth": 6,
+        "value": 5,
+        "real_count": 5,
+        "titles": [
+          "MANAJEMEN KELOMPOK WANITA TANI RT 21 SEPINGGAN MELALUI PEMANFAATAN TEKNOLOGI INFORMASI",
+          "PEMBUATAN AKUAPONIK SEBAGAI PEMANFAATAN LAHAN TERBATAS DAN PEMANFAATAN LIMBAH KOTORAN IKAN LELE MENJADI PUPUK DI WILAYAN PERUMAHAN BANGUN REKSA RT 21 KELURAHAN GRAHA INDAH, KECAMATAN BALIKPAPAN UTARA",
+          "PENERAPAN DAN PEMANFAATAN TEKNOLOGI AQUAPONIK BERBASIS INTERNET OF THINGS (IOT) DI MASJID BERKAH BOX",
+          "PENERAPAN TRIPLE HELIX DALAM MEWUJUDKAN DESA DIGITAL PEDULI SAMPAH SEBAGAI UPAYA PENINGKATAN KESEJAHTERAAN MASYARAKAT",
+          "PENGEMBANGAN SUMBER DAYA SINGKONG DI KAMPUNG BANYUMAS RT 32 KARANG JOANG KECAMATAN BALIKPAPAN UTARA"
+        ]
+      },
+      {
+        "name": "Lingkungan & Pertanian Berkelanjutan (2025)",
+        "topic_id": 7,
+        "topic_name": "Lingkungan & Pertanian Berkelanjutan",
+        "color": "#14b8a6",
+        "year": 2025,
+        "depth": 7,
+        "value": 6,
+        "real_count": 6,
+        "titles": [
+          "INOVASI PEMBUATAN PROTOTIPE TURBIN ANGIN SAVONIUS BERBAHAN PLA BERSTRUKTUR SANDWICH DENGAN METODE ADITIF MANUFAKTURING SEBAGAI SUMBER ENERGI HIJAU",
+          "INOVASI PENGOLAHAN LIMBAH BAGLOG JAMUR TIRAM MENJADI KOMPOS DENGAN MOL NASI BASI SEBAGAI BIOAKTIVATOR",
+          "OPTIMALISASI PENGELOLAAN SAMPAH BERBASIS MASYARAKAT MELALUI PEMBANGUNAN BANK SAMPAH UNIT  DI KELURAHAN KLANDASAN ILIR",
+          "OPTIMALISASI PENGELOLAAN SAMPAH MELALUI BIOPORI DAN BANK SAMPAH DI MENTARI VILLAGE",
           "Optimalisasi Sistem Irigasi Berbasis Rainwater Harvesting (RWH) dan Pemanfaatan Limbah Pertanian sebagai Pupuk Organik Cair (POC) untuk Meningkatkan Produktivitas Perkebunan Berkelanjutan di Kelompok Tani Harapan Sejahtera",
-          "PENGEMBANGAN DIGITAL BRANDING BERSAMA TANAMIN BUMI NUSANTARA MELALUI PEMANFAATAN TEKNOLOGI INFORMASI UNTUK KAMPANYE LINGKUNGAN",
-          "PEMBERDAYAAN KELOMPOK TANI SWATANI KM 17 MELALUI PEMANFAATAN LIMBAH PERTANIAN DAN BIOGAS SEBAGAI PUPUK ORGANIK CAIR",
-          "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS"
+          "PEMBERDAYAAN KELOMPOK TANI SWATANI KM 17 MELALUI PEMANFAATAN LIMBAH PERTANIAN DAN BIOGAS SEBAGAI PUPUK ORGANIK CAIR"
+        ]
+      },
+      {
+        "name": "Wisata Digital & Smart RT (2019)",
+        "topic_id": 8,
+        "topic_name": "Wisata Digital & Smart RT",
+        "color": "#0ea5e9",
+        "year": 2019,
+        "depth": 1,
+        "value": 1,
+        "real_count": 1,
+        "titles": [
+          "Pemberdayaan Masyarakat Rumah Warna-warni melalui Peningkatan Budaya Gotong Royong dan Pemanfaatan Teknologi Informasi"
+        ]
+      },
+      {
+        "name": "Wisata Digital & Smart RT (2020)",
+        "topic_id": 8,
+        "topic_name": "Wisata Digital & Smart RT",
+        "color": "#0ea5e9",
+        "year": 2020,
+        "depth": 2,
+        "value": 1,
+        "real_count": 1,
+        "titles": [
+          "PELATIHAN MEMODELKAN PROSES BISNIS MENGGUNAKAN BIZAGI BAGI ORGANISASI PERANGKAT DAERAH KOTA BALIKPAPAN"
+        ]
+      },
+      {
+        "name": "Wisata Digital & Smart RT (2022)",
+        "topic_id": 8,
+        "topic_name": "Wisata Digital & Smart RT",
+        "color": "#0ea5e9",
+        "year": 2022,
+        "depth": 4,
+        "value": 3,
+        "real_count": 3,
+        "titles": [
+          "PEMBERDAYAAN MASYARAKAT KELURAHAN TELAGA SARI MENGGUNAKAN PEMANFAATAN TEKNOLOGI",
+          "PEMETAAN DAN VISUALISASI PERMODELAN 3D LINGKUNGAN KAWASAN WISATA BARU HUTAN MERANTI KM.15 SEBAGAI UPAYA PENGEMBANGAN WISATA HUTAN LINDUNG BERBASIS ALAM",
+          "PENINGKATAN EKSISTENSI PROMOSI PARIWISATA KAMPUNG E-SPORT KOTA BALIKPAPAN"
+        ]
+      },
+      {
+        "name": "Wisata Digital & Smart RT (2023)",
+        "topic_id": 8,
+        "topic_name": "Wisata Digital & Smart RT",
+        "color": "#0ea5e9",
+        "year": 2023,
+        "depth": 5,
+        "value": 3,
+        "real_count": 3,
+        "titles": [
+          "IMPLEMENTASI LIVABLE HOME APPLICATION SEBAGAI SISTEM LAYANAN MASYARAKAT MENGGUNAKAN METODE WATERFALL",
+          "PENATAAN KAWASAN PEMUKIMAN PADAT PENDUDUK DENGAN STRATEGI ON-SITE UPGRADING DI KELURAHAN KLANDASAN",
+          "PENGEMBANGAN SUMBER DAYA MANUSIA DAN PROSES PEMBENAHAN LINGKUNGAN DALAM UPAYA PENINGKATAN EKSISTENSI KAMPUNG E-SPORTS KOTA BALIKPAPAN"
+        ]
+      },
+      {
+        "name": "Wisata Digital & Smart RT (2024)",
+        "topic_id": 8,
+        "topic_name": "Wisata Digital & Smart RT",
+        "color": "#0ea5e9",
+        "year": 2024,
+        "depth": 6,
+        "value": 11,
+        "real_count": 11,
+        "titles": [
+          "DIGITALISASI PEMBANGUNAN WEBSITE DASHBOARD SEBAGAI SARANA INFORMASI DAN PENGELOLAAN DATA MASYARAKAT",
+          "MEWUJUDKAN SMART RT DENGAN PERKEMBANGAN TEKNOLOGI RT 31 WADUK WONOREJO KOTA BALIKPAPAN KALIMANTAN TIMUR",
+          "OPTIMASI KAWASAN WISATA MELALUI PENGEMBANGAN PRODUK DAN BRANDING DENGAN MEMANFAATKAN TEKNOLOGI DI HUTAN LINDUNG SUNGAI WAIN",
+          "PEMBERDAYAAN MASYARAKAT MELALUI PROGRAM EDUKASI DAN PEMANFAATAN TEKNOLOGI DI YAYASAN BERKAH BOX BALIKPAPAN",
+          "PENGEMBANGAN SILURAH: SISTEM INFORMASI KELURAHAN MENGGUNAKAN METODE AGILE",
+          "PENGEMBANGAN SISTEM PELAYANAN SATU PINTU SEBAGAI SISTEM LAYANAN MASYARAKAT MENGGUNAKAN METODE ICONIX PROCESS",
+          "PENGEMBANGAN WEBSITE DAN PENINGKATAN KENYAMANAN PENGUNJUNG DI WISATA MERANTI BALIKPAPAN",
+          "PENINGKATAN INFRASTRUKTUR PADA JALAN DI KAMPUNG E-SPORT BALIKPAPAN :\nIMPLEMENTASI GOOGLE MAPS, PEMBANGUNAN DIREKSI GANG, CONVEX MIRROR,\nDAN RAMBU KEBISINGAN",
+          "RANCANG BANGUN SISTEM INFORMASI PENDAFTARAN SANTRI BARU BERBASIS WEB MENGGUNAKAN METODE RAPID APPLICATION DEVELOPMENT (RAD)",
+          "RANCANGAN DAN PENGEMBANGAN WEBSITE SERTA PROGRAM EDUKASI RT 34 KELURAHAN KARANG JOANG",
+          "TOURISM IN TERITIP – SEBAGAI BENTUK PENINGKATAN BRANDING POTENSI DAERAH KELURAHAN TERITIP KOTA BALIKPAPAN"
+        ]
+      },
+      {
+        "name": "Wisata Digital & Smart RT (2025)",
+        "topic_id": 8,
+        "topic_name": "Wisata Digital & Smart RT",
+        "color": "#0ea5e9",
+        "year": 2025,
+        "depth": 7,
+        "value": 10,
+        "real_count": 10,
+        "titles": [
+          "DIGITALISASI LAYANAN ADMINISTRASI RT MELALUI PENGEMBANGAN WEBSITE UNTUK PENGELOLAAN DATA WARGA",
+          "DIGITALISASI LAYANAN BERBASIS WEBSITE UNTUK MENINGKATKAN KUALITAS PELAYANAN DI RT 02 KELURAHAN GRAHA INDAH BALIKPAPAN",
+          "DIGITALISASI PROMOSI CELOSIA GARDEN PARK BALIKPAPAN  MELALUI PENGEMBANGAN WEBSITE SEBAGAI PLATFORM INFORMASI UTAMA",
+          "EDUKASI PPKS DAN PENGEMBANGAN SISTEM INFORMASI PENDATAAN WARGA DI GRAHA POLTEKBA",
+          "IMPLEMENTASI DAN PELATIHAN SISTEM INFORMASI PENGAJIAN DAN MEDIA SOSIAL",
+          "OPTIMALISASI TATA KELOLA DAN FASILITAS WISATA BAMBOE WANADESA KOTA BALIKPAPAN",
+          "PENGEMBANGAN DAN PELATIHAN SISTEM PENDATAAN DONASI BERBASIS WEB PADA MASJID BERKAH BOX BALIKPAPAN",
+          "PENGEMBANGAN FASILITAS DAN PROMOSI HUTAN KOTA MANGROVE MARGOMULYO MELALUI TEKNOLOGI DIGITAL",
+          "PENGEMBANGAN WISATA TANJUNG GADING MELALUI DIGITALISASI DI RT 17 KELURAHAN KARANG JOANG",
+          "PENINGKATAN FASILITAS WISATA DENGAN PEMANFAATAN PANEL SURYA DALAM PENERANGAN AREA FOTO DI TANJUNG GADING KM.12 BALIKPAPAN"
         ]
       }
     ],
     "links": [
       {
-        "source": "Peningkatan (2023)",
-        "target": "Peningkatan (2024)",
-        "value": 35
+        "source": "Tata Kelola SI Kampus (2019)",
+        "target": "Tata Kelola SI Kampus (2020)",
+        "value": 3
       },
       {
-        "source": "Masyarakat (2023)",
-        "target": "Masyarakat (2024)",
-        "value": 25
+        "source": "Tata Kelola SI Kampus (2020)",
+        "target": "Tata Kelola SI Kampus (2021)",
+        "value": 1
       },
       {
-        "source": "Ikn (2023)",
-        "target": "Ikn (2024)",
-        "value": 45
+        "source": "Tata Kelola SI Kampus (2021)",
+        "target": "Tata Kelola SI Kampus (2022)",
+        "value": 1
       },
       {
-        "source": "Pemanfaatan (2024)",
-        "target": "Pemanfaatan (2025)",
-        "value": 35
+        "source": "Tata Kelola SI Kampus (2022)",
+        "target": "Tata Kelola SI Kampus (2023)",
+        "value": 1
       },
       {
-        "source": "Ikn (2024)",
-        "target": "Ikn (2025)",
-        "value": 45
+        "source": "Tata Kelola SI Kampus (2023)",
+        "target": "Tata Kelola SI Kampus (2024)",
+        "value": 1
+      },
+      {
+        "source": "Tata Kelola SI Kampus (2024)",
+        "target": "Tata Kelola SI Kampus (2025)",
+        "value": 3
+      },
+      {
+        "source": "Smart City & IKN (2021)",
+        "target": "Smart City & IKN (2022)",
+        "value": 2
+      },
+      {
+        "source": "Smart City & IKN (2022)",
+        "target": "Smart City & IKN (2023)",
+        "value": 2
+      },
+      {
+        "source": "Smart City & IKN (2023)",
+        "target": "Smart City & IKN (2024)",
+        "value": 5
+      },
+      {
+        "source": "Smart City & IKN (2024)",
+        "target": "Smart City & IKN (2025)",
+        "value": 6
+      },
+      {
+        "source": "Smart Home & IoT Energi (2023)",
+        "target": "Smart Home & IoT Energi (2024)",
+        "value": 1
+      },
+      {
+        "source": "Smart Home & IoT Energi (2024)",
+        "target": "Smart Home & IoT Energi (2025)",
+        "value": 1
+      },
+      {
+        "source": "AI/ML untuk Sains (2019)",
+        "target": "AI/ML untuk Sains (2021)",
+        "value": 2
+      },
+      {
+        "source": "AI/ML untuk Sains (2021)",
+        "target": "AI/ML untuk Sains (2023)",
+        "value": 2
+      },
+      {
+        "source": "AI/ML untuk Sains (2023)",
+        "target": "AI/ML untuk Sains (2024)",
+        "value": 1
+      },
+      {
+        "source": "AI/ML untuk Sains (2024)",
+        "target": "AI/ML untuk Sains (2025)",
+        "value": 1
+      },
+      {
+        "source": "AI/ML untuk Sains (2025)",
+        "target": "AI/ML untuk Sains (2026)",
+        "value": 1
+      },
+      {
+        "source": "Pembelajaran Adaptif & Edukasi Digital (2019)",
+        "target": "Pembelajaran Adaptif & Edukasi Digital (2020)",
+        "value": 1
+      },
+      {
+        "source": "Pembelajaran Adaptif & Edukasi Digital (2020)",
+        "target": "Pembelajaran Adaptif & Edukasi Digital (2021)",
+        "value": 2
+      },
+      {
+        "source": "Pembelajaran Adaptif & Edukasi Digital (2021)",
+        "target": "Pembelajaran Adaptif & Edukasi Digital (2022)",
+        "value": 1
+      },
+      {
+        "source": "Pembelajaran Adaptif & Edukasi Digital (2022)",
+        "target": "Pembelajaran Adaptif & Edukasi Digital (2023)",
+        "value": 1
+      },
+      {
+        "source": "Pembelajaran Adaptif & Edukasi Digital (2023)",
+        "target": "Pembelajaran Adaptif & Edukasi Digital (2024)",
+        "value": 2
+      },
+      {
+        "source": "Pembelajaran Adaptif & Edukasi Digital (2024)",
+        "target": "Pembelajaran Adaptif & Edukasi Digital (2025)",
+        "value": 3
+      },
+      {
+        "source": "UMKM, E-Commerce & Digital Marketing (2018)",
+        "target": "UMKM, E-Commerce & Digital Marketing (2019)",
+        "value": 1
+      },
+      {
+        "source": "UMKM, E-Commerce & Digital Marketing (2019)",
+        "target": "UMKM, E-Commerce & Digital Marketing (2020)",
+        "value": 1
+      },
+      {
+        "source": "UMKM, E-Commerce & Digital Marketing (2020)",
+        "target": "UMKM, E-Commerce & Digital Marketing (2021)",
+        "value": 3
+      },
+      {
+        "source": "UMKM, E-Commerce & Digital Marketing (2021)",
+        "target": "UMKM, E-Commerce & Digital Marketing (2022)",
+        "value": 3
+      },
+      {
+        "source": "UMKM, E-Commerce & Digital Marketing (2022)",
+        "target": "UMKM, E-Commerce & Digital Marketing (2023)",
+        "value": 5
+      },
+      {
+        "source": "UMKM, E-Commerce & Digital Marketing (2023)",
+        "target": "UMKM, E-Commerce & Digital Marketing (2024)",
+        "value": 5
+      },
+      {
+        "source": "UMKM, E-Commerce & Digital Marketing (2024)",
+        "target": "UMKM, E-Commerce & Digital Marketing (2025)",
+        "value": 5
+      },
+      {
+        "source": "Lingkungan & Pertanian Berkelanjutan (2021)",
+        "target": "Lingkungan & Pertanian Berkelanjutan (2022)",
+        "value": 2
+      },
+      {
+        "source": "Lingkungan & Pertanian Berkelanjutan (2022)",
+        "target": "Lingkungan & Pertanian Berkelanjutan (2023)",
+        "value": 2
+      },
+      {
+        "source": "Lingkungan & Pertanian Berkelanjutan (2023)",
+        "target": "Lingkungan & Pertanian Berkelanjutan (2024)",
+        "value": 5
+      },
+      {
+        "source": "Lingkungan & Pertanian Berkelanjutan (2024)",
+        "target": "Lingkungan & Pertanian Berkelanjutan (2025)",
+        "value": 5
+      },
+      {
+        "source": "Wisata Digital & Smart RT (2019)",
+        "target": "Wisata Digital & Smart RT (2020)",
+        "value": 1
+      },
+      {
+        "source": "Wisata Digital & Smart RT (2020)",
+        "target": "Wisata Digital & Smart RT (2022)",
+        "value": 1
+      },
+      {
+        "source": "Wisata Digital & Smart RT (2022)",
+        "target": "Wisata Digital & Smart RT (2023)",
+        "value": 3
+      },
+      {
+        "source": "Wisata Digital & Smart RT (2023)",
+        "target": "Wisata Digital & Smart RT (2024)",
+        "value": 3
+      },
+      {
+        "source": "Wisata Digital & Smart RT (2024)",
+        "target": "Wisata Digital & Smart RT (2025)",
+        "value": 10
       }
     ]
   }

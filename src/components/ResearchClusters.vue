@@ -13,11 +13,8 @@
             <div class="absolute inset-0 rounded-2xl bg-violet-500/30 animate-ping"></div>
           </div>
           <div>
-            <div class="flex items-center gap-3">
-              <h1 class="text-2xl font-black text-white tracking-tight">Kolaborasi Riset</h1>
-              <span class="px-2 py-0.5 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white text-[10px] font-bold rounded-full uppercase tracking-wider">AI-Powered</span>
-            </div>
-            <p class="text-sm text-slate-400 mt-0.5">Pengelompokan topik dengan TF-IDF + K-Means Clustering</p>
+            <h1 class="text-2xl font-black text-white tracking-tight">Kolaborasi Riset</h1>
+            <p class="text-sm text-slate-400 mt-0.5">Pengelompokan tematik penelitian dan pengabdian dosen</p>
           </div>
         </div>
         <div v-if="metadata" class="hidden md:block text-right">
@@ -93,6 +90,26 @@
       </span>
     </div>
 
+    <!-- AI Attribution Banner -->
+    <div v-if="hasData" class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl p-4 flex items-start gap-4">
+      <div class="w-10 h-10 rounded-xl bg-white border border-blue-100 flex items-center justify-center text-blue-600 shrink-0 shadow-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        </svg>
+      </div>
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-2 mb-1">
+          <p class="text-sm font-bold text-slate-800">Dianalisis oleh Agen AI</p>
+          <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-[10px] font-bold rounded-full uppercase tracking-wider">Claude Opus</span>
+        </div>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Pengelompokan tematik, narasi observasi, dan rekomendasi kolaborasi disusun oleh
+          <strong class="text-slate-800">Claude Opus</strong> — model AI penalaran tingkat tinggi (high-level reasoning) dari Anthropic
+          yang membaca seluruh judul karya dan menyimpulkan klaster berdasarkan pemahaman semantik konten.
+        </p>
+      </div>
+    </div>
+
     <!-- No Data -->
     <div v-if="!hasData" class="card text-center py-16">
       <svg class="w-20 h-20 mx-auto text-slate-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -101,7 +118,7 @@
       <h3 class="text-xl font-bold text-slate-600 mb-2">Belum Ada Data Cluster</h3>
       <p class="text-slate-500 mb-4">Jalankan script clustering terlebih dahulu:</p>
       <code class="bg-slate-100 px-4 py-2 rounded-lg text-sm text-slate-700 font-mono">
-        python scripts/research_clustering.py
+        python scripts/build_clusters.py
       </code>
     </div>
 
@@ -166,6 +183,23 @@
           </div>
         </div>
 
+        <!-- AI Analysis: Narrative + Recommendation -->
+        <div
+          v-if="cluster.narrative || cluster.recommendation"
+          class="px-5 py-4 border-b border-slate-100 bg-slate-50/40 space-y-3"
+        >
+          <!-- Narrative -->
+          <div v-if="cluster.narrative" class="flex items-start gap-2.5">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mt-1 shrink-0 w-16">Observasi</span>
+            <p class="text-xs text-slate-700 leading-relaxed flex-1">{{ cluster.narrative }}</p>
+          </div>
+          <!-- Recommendation -->
+          <div v-if="cluster.recommendation" class="flex items-start gap-2.5">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-500 mt-1 shrink-0 w-16">Saran AI</span>
+            <p class="text-xs text-slate-800 leading-relaxed flex-1 font-medium">{{ cluster.recommendation }}</p>
+          </div>
+        </div>
+
         <!-- Items List -->
         <div class="px-5 py-3 space-y-2">
           <div
@@ -199,10 +233,6 @@
       </div>
     </div>
 
-    <!-- Footer info -->
-    <p class="text-center text-xs text-slate-400 pt-2">
-      Clustering menggunakan <strong>TF-IDF + K-Means</strong> · Keyword dipilih dari centroid TF-IDF tiap klaster
-    </p>
   </div>
 </template>
 
