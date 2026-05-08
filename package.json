@@ -22,6 +22,9 @@
         "vue-echarts": "^8.0.1",
         "vue-router": "^4.6.4"
     },
+    "overrides": {
+        "picomatch": "^4.0.4"
+    },
     "devDependencies": {
         "@vitejs/plugin-vue": "^5.2.4",
         "autoprefixer": "^10.4.17",
