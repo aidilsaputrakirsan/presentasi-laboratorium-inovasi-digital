@@ -80,8 +80,8 @@
       </div>
 
       <div class="mb-2 flex items-center justify-between">
-        <p class="text-xs font-bold uppercase tracking-widest text-slate-500">Aliran Topik per Tahun</p>
-        <p class="text-[10px] text-slate-400">Klik node untuk lihat judul</p>
+        <p class="text-xs font-bold uppercase tracking-widest text-slate-500">Tren Topik per Tahun</p>
+        <p class="text-[10px] text-slate-400">Klik titik pada garis untuk lihat judul</p>
       </div>
       <v-chart class="chart" :option="chartOption" autoresize @click="handleChartClick" />
     </div>
@@ -199,56 +199,102 @@ export default {
     topics() {
       return roadmapData?.topics || [];
     },
+    yearAxis() {
+      // All years across timeline (continuous range, no gaps)
+      const years = (roadmapData?.timeline || []).map(t => t.year);
+      if (!years.length) return [];
+      const min = Math.min(...years);
+      const max = Math.max(...years);
+      const out = [];
+      for (let y = min; y <= max; y++) out.push(y);
+      return out;
+    },
+    nodeMap() {
+      // Quick lookup: `${topic_id}|${year}` -> node (with titles)
+      const m = {};
+      (roadmapData?.sankey?.nodes || []).forEach(n => {
+        m[`${n.topic_id}|${n.year}`] = n;
+      });
+      return m;
+    },
     chartOption() {
       if (!this.hasData) return {};
 
-      // Apply per-node color from topic palette
-      const nodes = roadmapData.sankey.nodes.map(n => ({
-        ...n,
-        itemStyle: {
-          color: n.color || '#64748b',
-          borderColor: n.color || '#64748b',
-          opacity: 0.85,
-        },
-      }));
+      const years = this.yearAxis;
+      const map = this.nodeMap;
+
+      const series = this.topics.map(topic => {
+        const data = years.map(y => {
+          const n = map[`${topic.id}|${y}`];
+          return n ? n.value : null;
+        });
+        return {
+          name: topic.name,
+          type: 'line',
+          smooth: true,
+          symbol: 'circle',
+          symbolSize: 8,
+          showSymbol: true,
+          connectNulls: false,
+          data,
+          itemStyle: { color: topic.color },
+          lineStyle: { width: 2.5, color: topic.color },
+          areaStyle: { opacity: 0.06, color: topic.color },
+          emphasis: { focus: 'series', lineStyle: { width: 4 } },
+        };
+      });
 
       return {
+        color: this.topics.map(t => t.color),
         tooltip: {
-          trigger: 'item',
-          triggerOn: 'mousemove',
+          trigger: 'axis',
+          axisPointer: { type: 'line', lineStyle: { color: '#94a3b8', type: 'dashed' } },
+          backgroundColor: '#0f172a',
+          borderWidth: 0,
+          textStyle: { color: '#fff', fontSize: 12 },
           formatter: function(params) {
-            if (params.dataType === 'node') {
-              const count = params.data.real_count || params.value;
-              return `${params.data.name}<br/>Jumlah karya: <b>${count}</b>`;
-            } else {
-              return `${params.data.source} → ${params.data.target}<br/>Volume: ${params.value}`;
-            }
-          }
+            if (!params || !params.length) return '';
+            const year = params[0].axisValue;
+            const rows = params
+              .filter(p => p.value !== null && p.value !== undefined)
+              .sort((a, b) => b.value - a.value)
+              .map(p => `
+                <div style="display:flex;align-items:center;gap:8px;margin:3px 0">
+                  <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${p.color}"></span>
+                  <span style="flex:1">${p.seriesName}</span>
+                  <strong style="margin-left:12px">${p.value}</strong>
+                </div>`).join('');
+            return `<div style="font-weight:700;margin-bottom:6px">${year}</div>${rows || '<em style="color:#94a3b8">tidak ada karya</em>'}`;
+          },
         },
-        series: [
-          {
-            type: 'sankey',
-            layoutIterations: 32,
-            nodeAlign: 'left',
-            nodeWidth: 18,
-            nodeGap: 12,
-            emphasis: { focus: 'adjacency' },
-            data: nodes,
-            links: roadmapData.sankey.links,
-            sort: 'descending',
-            lineStyle: {
-              color: 'source',
-              curveness: 0.5,
-              opacity: 0.3
-            },
-            label: {
-              color: '#374151',
-              fontFamily: 'Inter',
-              fontWeight: 600,
-              fontSize: 10
-            }
-          }
-        ]
+        legend: {
+          type: 'scroll',
+          top: 0,
+          left: 'center',
+          itemWidth: 12,
+          itemHeight: 12,
+          textStyle: { fontSize: 11, color: '#475569', fontWeight: 600 },
+          icon: 'roundRect',
+        },
+        grid: { top: 70, left: 50, right: 30, bottom: 40, containLabel: true },
+        xAxis: {
+          type: 'category',
+          data: years,
+          boundaryGap: false,
+          axisLine: { lineStyle: { color: '#cbd5e1' } },
+          axisTick: { show: false },
+          axisLabel: { color: '#64748b', fontWeight: 600, fontSize: 11 },
+        },
+        yAxis: {
+          type: 'value',
+          name: 'Jumlah karya',
+          nameTextStyle: { color: '#94a3b8', fontSize: 10, padding: [0, 0, 0, 30] },
+          axisLine: { show: false },
+          axisTick: { show: false },
+          splitLine: { lineStyle: { color: '#f1f5f9', type: 'dashed' } },
+          axisLabel: { color: '#94a3b8', fontSize: 11 },
+        },
+        series,
       };
     }
   },
@@ -260,12 +306,15 @@ export default {
       return min === max ? `${min}` : `${min}–${max}`;
     },
     handleChartClick(params) {
-      if (params.dataType === 'node') {
-        const nodeData = params.data;
-        if (nodeData && nodeData.titles) {
+      if (params.componentType === 'series' && params.value !== null && params.value !== undefined) {
+        const topic = this.topics.find(t => t.name === params.seriesName);
+        const year = this.yearAxis[params.dataIndex];
+        if (!topic || !year) return;
+        const node = this.nodeMap[`${topic.id}|${year}`];
+        if (node && node.titles) {
           this.selectedNode = {
-            name: nodeData.name,
-            titles: nodeData.titles
+            name: `${topic.name} (${year})`,
+            titles: node.titles,
           };
         }
       }
