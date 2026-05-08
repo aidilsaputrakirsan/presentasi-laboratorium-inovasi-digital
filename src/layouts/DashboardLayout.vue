@@ -6,38 +6,35 @@
       :class="mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'"
     >
       <!-- Sidebar Header -->
-      <div class="h-24 flex items-center px-8 border-b border-slate-100/80 bg-slate-50/50 backdrop-blur-sm">
-        <div class="flex items-center gap-4 group cursor-pointer w-full">
-          <div class="relative">
-            <div class="w-10 h-10 bg-gradient-to-tr from-blue-600 via-indigo-600 to-violet-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:shadow-blue-500/40 transition-all duration-300 group-hover:scale-105 group-hover:rotate-3">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-              </svg>
-            </div>
-            <div class="absolute -inset-1 bg-blue-500/30 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <div class="h-24 flex items-center px-6 border-b border-slate-100/80 bg-slate-50/50 backdrop-blur-sm">
+        <div class="flex items-center gap-3 group cursor-pointer w-full">
+          <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm border border-slate-100 p-1.5 shrink-0 group-hover:shadow-md transition-shadow">
+            <img :src="`${baseUrl}images/logo-fsti.png`" alt="FSTI" class="w-full h-full object-contain" />
           </div>
-          <div class="flex-1">
-            <h1 class="font-black text-lg text-slate-800 tracking-tight group-hover:text-blue-600 transition-colors leading-tight">Galeri Inovasi</h1>
-            <p class="text-[9px] uppercase tracking-widest text-slate-400 font-bold group-hover:text-slate-500 transition-colors">Digital Laboratory</p>
+          <div class="flex-1 min-w-0">
+            <h1 class="font-black text-lg text-slate-800 tracking-tight group-hover:text-blue-600 transition-colors leading-tight">
+              SITRIA <span class="text-slate-400 font-bold">·</span> FSTI
+            </h1>
+            <p class="text-[9px] uppercase tracking-widest text-slate-400 font-bold group-hover:text-slate-500 transition-colors leading-tight mt-0.5">Sistem Informasi Tridarma Akademik</p>
           </div>
         </div>
       </div>
 
       <!-- Navigation -->
       <nav class="flex-1 overflow-y-auto py-8 px-4 space-y-2 custom-scrollbar">
-        <template v-for="(item, index) in menuItems" :key="item.path">
+        <template v-for="(item, index) in menuItems" :key="item.isHeader ? `h-${item.label}` : item.path">
           <!-- Section Label -->
-          <div 
-            v-if="item.isHeader" 
+          <div
+            v-if="item.isHeader"
             class="px-4 mt-6 mb-2 flex items-center gap-3 animate-fade-in-up"
             :style="{ animationDelay: `${index * 50}ms` }"
           >
-             <span class="text-[10px] font-black text-slate-400/80 uppercase tracking-widest">{{ item.label }}</span>
-             <div class="h-px bg-gradient-to-r from-slate-200 to-transparent flex-1"></div>
+            <span class="text-[10px] font-black text-slate-400/80 uppercase tracking-widest">{{ item.label }}</span>
+            <div class="h-px bg-gradient-to-r from-slate-200 to-transparent flex-1"></div>
           </div>
-          
+
           <!-- Menu Link -->
-          <router-link 
+          <router-link
             v-else
             :to="item.path"
             class="group flex items-center gap-3 px-4 py-3 rounded-2xl text-sm font-medium transition-all duration-300 relative overflow-hidden animate-fade-in-left"
@@ -64,38 +61,45 @@
         </template>
       </nav>
 
-      <!-- User Profile / Footer -->
-      <div class="p-4 border-t border-slate-100 bg-slate-50/50">
-        <div class="flex items-center gap-3 px-2 py-2 rounded-xl hover:bg-white transition-colors cursor-pointer group border border-transparent hover:border-slate-200 hover:shadow-sm">
-          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-slate-100 to-slate-200 border border-slate-200 flex items-center justify-center shrink-0">
-            <span class="font-bold text-xs text-slate-600">AD</span>
+      <!-- Data Source Info -->
+      <div class="px-4 pt-3">
+        <div class="p-4 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 text-white shadow-lg shadow-slate-900/10 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-16 h-16 bg-blue-500/20 rounded-full blur-xl -translate-y-1/2 translate-x-1/2"></div>
+          <div class="relative z-10">
+            <div class="flex items-center gap-2 mb-2">
+              <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Sumber Data</p>
+            </div>
+            <p class="text-xs text-slate-200 leading-relaxed mb-2">
+              Data diambil otomatis dari:
+            </p>
+            <div class="space-y-1.5">
+              <a href="https://sinta.kemdiktisaintek.go.id" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-xs font-semibold text-white hover:text-blue-300 transition-colors group">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+                <span>SINTA Kemendiktisaintek</span>
+                <svg class="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+              </a>
+              <a href="https://scholar.google.com" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-xs font-semibold text-white hover:text-blue-300 transition-colors group">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>Google Scholar</span>
+                <svg class="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+              </a>
+            </div>
           </div>
-          <div class="overflow-hidden">
-             <p class="text-sm font-bold text-slate-700 truncate group-hover:text-rose-600 transition-colors">Admin Lab</p>
-             <p class="text-xs text-slate-400 truncate">admin@itk.ac.id</p>
-          </div>
-          <button class="ml-auto text-slate-400 hover:text-slate-600 transition-colors">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-            </svg>
-          </button>
         </div>
       </div>
 
-      <!-- V2 Promo Link (New) -->
-      <div class="px-4 pb-4">
-        <router-link to="/v2" class="block p-4 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 text-white shadow-lg shadow-slate-900/10 group relative overflow-hidden">
-           <div class="absolute top-0 right-0 w-16 h-16 bg-white/10 rounded-full blur-xl -translate-y-1/2 translate-x-1/2 group-hover:bg-white/20 transition-colors"></div>
-           <div class="relative z-10 flex items-center justify-between">
-             <div>
-               <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">New Version</p>
-               <p class="font-bold text-sm">SITRIA 2.0</p>
-             </div>
-             <svg class="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-             </svg>
-           </div>
-        </router-link>
+      <!-- Credit -->
+      <div class="px-4 pt-3 pb-4">
+        <div class="flex items-center gap-3 px-2 py-1">
+          <img :src="`${baseUrl}images/profil.jpg`" alt="ADL" class="w-9 h-9 rounded-full object-cover border-2 border-white shadow-sm shrink-0" />
+          <div class="overflow-hidden">
+            <p class="text-[9px] uppercase tracking-widest text-slate-400 font-bold leading-none">Dibuat oleh</p>
+            <p class="text-sm font-black text-slate-700 tracking-tight mt-1">ADL</p>
+          </div>
+        </div>
       </div>
     </aside>
 
@@ -110,13 +114,14 @@
     <main class="flex-1 flex flex-col min-w-0 overflow-hidden bg-slate-50 relative">
       <!-- Top Bar Mobile -->
       <div class="md:hidden h-16 bg-white/80 backdrop-blur-md border-b border-slate-200 flex items-center justify-between px-4 sticky top-0 z-30">
-         <div class="flex items-center gap-3">
-            <div class="w-8 h-8 bg-gradient-to-tr from-rose-500 to-orange-500 rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
+         <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 bg-white rounded-lg flex items-center justify-center border border-slate-100 p-1">
+              <img :src="`${baseUrl}images/logo-fsti.png`" alt="FSTI" class="w-full h-full object-contain" />
             </div>
-            <span class="font-bold text-slate-800">SITRIA</span>
+            <div class="flex flex-col leading-tight">
+              <span class="font-bold text-slate-800 text-sm">SITRIA <span class="text-slate-400">·</span> FSTI</span>
+              <span class="text-[8px] uppercase tracking-widest text-slate-400 font-bold">Tridarma Akademik</span>
+            </div>
          </div>
          <button @click="mobileMenuOpen = true" class="p-2 text-slate-500 hover:text-slate-900 rounded-lg hover:bg-slate-100 transition-colors">
            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -152,31 +157,27 @@
 import { ref } from 'vue'
 
 const mobileMenuOpen = ref(false)
+const baseUrl = import.meta.env.BASE_URL
 
 // Modern Minimalist Icons
 const DashboardIcon = { template: '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>' }
-const GalleryIcon = { template: '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>' }
-const ClusterIcon = { template: '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>' }
-const RoadmapIcon = { template: '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>' }
+const TeachingIcon = { template: '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>' }
+const ResearchIcon = { template: '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>' }
+const ServiceIcon = { template: '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>' }
 const ExpertiseIcon = { template: '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>' }
 const FundingIcon = { template: '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>' }
-const DTPSIcon = { template: '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>' }
 
 const menuItems = [
-  { isHeader: true, label: 'Main Menu' },
-  { path: '/dashboard', label: 'Dashboard', icon: DashboardIcon },
-  
-  { isHeader: true, label: 'Portofolio Riset' },
-  { path: '/gallery', label: 'Koleksi Karya', icon: GalleryIcon },
-  { path: '/collaboration', label: 'Kolaborasi & Lab', icon: ClusterIcon },
-  { path: '/roadmap', label: 'Roadmap & Topik', icon: RoadmapIcon },
-  
-  { isHeader: true, label: 'Sumber Daya' },
-  { path: '/accreditation', label: 'DTPS Akreditasi', icon: DTPSIcon },
-  { path: '/expertise', label: 'Cari Pakar', icon: ExpertiseIcon },
-  
-  { isHeader: true, label: 'Finansial' },
-  { path: '/funding', label: 'Dana & Hibah', icon: FundingIcon },
+  { path: '/dashboard', label: 'Ringkasan', icon: DashboardIcon },
+
+  { isHeader: true, label: 'Tridarma' },
+  { path: '/pengajaran', label: 'Pengajaran', icon: TeachingIcon },
+  { path: '/penelitian', label: 'Penelitian', icon: ResearchIcon },
+  { path: '/pengabdian', label: 'Pengabdian', icon: ServiceIcon },
+
+  { isHeader: true, label: 'Pendukung' },
+  { path: '/sdm-pakar', label: 'SDM & Pakar', icon: ExpertiseIcon },
+  { path: '/funding', label: 'Pendanaan', icon: FundingIcon },
 ]
 </script>
 

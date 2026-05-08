@@ -211,9 +211,16 @@ import { prodiRegistry, prodiList } from '../data/prodi/index.js';
 
 export default {
   name: 'ResearchClusters',
+  props: {
+    initialType: {
+      type: String,
+      default: 'penelitian',
+      validator: (v) => ['penelitian', 'pengabdian'].includes(v)
+    }
+  },
   data() {
     return {
-      activeType: 'penelitian',
+      activeType: this.initialType,
       activeFilter: 'all',
       expandedClusters: [],
       filters: [
