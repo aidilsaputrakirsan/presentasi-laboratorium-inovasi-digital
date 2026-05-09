@@ -3,6 +3,7 @@ import siLecturers from './sistem-informasi/lecturers.json'
 import siSintaData from './sistem-informasi/sinta_data.json'
 import siExpertiseData from './sistem-informasi/expertise_data.json'
 import siClustersData from './sistem-informasi/clusters_data.json'
+import siPddiktiData from './sistem-informasi/pddikti_data.json'
 
 import bdLecturers from './bisnis-digital/lecturers.json'
 import bdSintaData from './bisnis-digital/sinta_data.json'
@@ -15,12 +16,14 @@ export const prodiRegistry = {
     sintaData: siSintaData,
     expertiseData: siExpertiseData,
     clustersData: siClustersData,
+    pddiktiData: siPddiktiData,
   },
   'bisnis-digital': {
     config: bdLecturers,
     sintaData: bdSintaData,
     expertiseData: bdExpertiseData,
     clustersData: bdClustersData,
+    pddiktiData: null,
   },
   // Placeholder entries for prodi without data yet
   'teknik-elektro': { config: null },
