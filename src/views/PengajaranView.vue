@@ -11,7 +11,7 @@
         <div class="flex-1 min-w-0">
           <h1 class="text-2xl font-black text-slate-900 mb-1">Pengajaran</h1>
           <p class="text-sm text-slate-500">
-            Mata kuliah diampu, riwayat pendidikan, dan HKI per dosen — sumber: PDDikti.
+            Mata kuliah diampu, riwayat pendidikan, HKI, dan bimbingan TA per dosen — sumber: PDDikti &amp; Repository ITK.
           </p>
         </div>
         <div class="flex items-center gap-2">
