@@ -7,6 +7,7 @@ const RisetKaryaView = () => import('../views/RisetKaryaView.vue')
 const PengabdianView = () => import('../views/PengabdianView.vue')
 const SdmPakarView = () => import('../views/SdmPakarView.vue')
 const FundingView = () => import('../views/FundingView.vue')
+const NotFoundView = () => import('../views/NotFoundView.vue')
 
 const routes = [
   {
@@ -48,6 +49,12 @@ const routes = [
     name: 'Funding',
     component: FundingView,
     meta: { title: 'Pendanaan' }
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: NotFoundView,
+    meta: { title: '404' }
   }
 ]
 
