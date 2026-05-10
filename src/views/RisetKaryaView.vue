@@ -1,19 +1,21 @@
 <template>
   <div class="space-y-6">
     <!-- Tab Navigation -->
-    <div class="bg-white rounded-2xl border border-slate-200 p-1.5 shadow-sm inline-flex gap-1 overflow-x-auto">
-      <button
-        v-for="tab in tabs"
-        :key="tab.key"
-        @click="activeTab = tab.key"
-        class="relative px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 flex items-center gap-2 whitespace-nowrap"
-        :class="activeTab === tab.key
-          ? 'bg-blue-50 text-blue-700 shadow-sm'
-          : 'text-slate-500 hover:text-slate-800 hover:bg-slate-50'"
-      >
-        <component :is="tab.icon" class="w-4 h-4" />
-        <span>{{ tab.label }}</span>
-      </button>
+    <div class="overflow-x-auto -mx-1 px-1 pb-1 tab-scroll">
+      <div class="bg-white rounded-2xl border border-slate-200 p-1.5 shadow-sm inline-flex gap-1">
+        <button
+          v-for="tab in tabs"
+          :key="tab.key"
+          @click="activeTab = tab.key"
+          class="relative px-4 sm:px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 flex items-center gap-2 whitespace-nowrap shrink-0"
+          :class="activeTab === tab.key
+            ? 'bg-blue-50 text-blue-700 shadow-sm'
+            : 'text-slate-500 hover:text-slate-800 hover:bg-slate-50'"
+        >
+          <component :is="tab.icon" class="w-4 h-4" />
+          <span>{{ tab.label }}</span>
+        </button>
+      </div>
     </div>
 
     <!-- Tab Content -->
@@ -64,5 +66,13 @@ const defaultProdi = computed(() => prodiList.find(p => p.hasData)?.slug || null
 .tab-leave-to {
   opacity: 0;
   transform: translateY(-8px);
+}
+/* Hide scrollbar visual but keep scrollability for mobile tabs */
+.tab-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.tab-scroll::-webkit-scrollbar {
+  display: none;
 }
 </style>

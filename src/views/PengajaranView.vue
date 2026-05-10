@@ -2,21 +2,23 @@
   <div class="space-y-6">
     <!-- Header -->
     <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
-      <div class="flex items-start gap-4 flex-wrap">
-        <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-          </svg>
+      <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+        <div class="flex items-start gap-4 flex-1 min-w-0">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <div class="min-w-0 flex-1">
+            <h1 class="text-2xl font-black text-slate-900 mb-1">Pengajaran</h1>
+            <p class="text-sm text-slate-500 leading-relaxed">
+              Mata kuliah diampu, riwayat pendidikan, HKI, dan bimbingan TA per dosen — sumber: PDDikti &amp; Repository ITK.
+            </p>
+          </div>
         </div>
-        <div class="flex-1 min-w-0">
-          <h1 class="text-2xl font-black text-slate-900 mb-1">Pengajaran</h1>
-          <p class="text-sm text-slate-500">
-            Mata kuliah diampu, riwayat pendidikan, HKI, dan bimbingan TA per dosen — sumber: PDDikti &amp; Repository ITK.
-          </p>
-        </div>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 sm:shrink-0">
           <label class="text-xs font-semibold text-slate-500">Prodi:</label>
-          <select v-model="selectedProdi" class="text-sm font-semibold text-slate-700 bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-200">
+          <select v-model="selectedProdi" class="flex-1 sm:flex-none text-sm font-semibold text-slate-700 bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-200">
             <option v-for="p in prodiWithData" :key="p.slug" :value="p.slug">{{ p.name }}</option>
           </select>
         </div>
