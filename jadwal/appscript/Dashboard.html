@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#fff; --line:#e3e6ea; --ink:#1f2328; --muted:#6b7280;
+    --blue:#2563eb; --green:#16a34a; --amber:#d97706; --red:#dc2626; --violet:#7c3aed;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:13px/1.5 -apple-system,Segoe UI,Roboto,Arial,sans-serif;
+       background:var(--bg);color:var(--ink)}
+  .wrap{padding:16px}
+  header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  h1{font-size:17px;margin:0;font-weight:650}
+  .sub{color:var(--muted);font-size:12px}
+  button{font:inherit;border:1px solid var(--line);background:#fff;color:var(--ink);
+         padding:7px 13px;border-radius:7px;cursor:pointer}
+  button:hover{background:#f0f2f5}
+  button.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+  button.primary:hover{filter:brightness(1.08)}
+  .spacer{flex:1}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .card .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  .card .val{font-size:26px;font-weight:680;margin-top:2px;line-height:1.1}
+  .c-blue .val{color:var(--blue)} .c-green .val{color:var(--green)}
+  .c-amber .val{color:var(--amber)} .c-red .val{color:var(--red)}
+  .c-violet .val{color:var(--violet)}
+
+  .tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:12px;flex-wrap:wrap}
+  .tab{padding:8px 14px;border:none;background:none;border-bottom:2px solid transparent;
+       border-radius:0;color:var(--muted);font-weight:550}
+  .tab:hover{background:#eef1f5}
+  .tab.on{color:var(--blue);border-bottom-color:var(--blue)}
+  .pane{display:none} .pane.on{display:block}
+
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin-bottom:12px}
+  .panel h2{font-size:13px;margin:0 0 10px;font-weight:650}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:900px){.grid2{grid-template-columns:1fr}}
+
+  table{width:100%;border-collapse:collapse;font-size:12px}
+  th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f2f4f7;font-weight:600;position:sticky;top:0;z-index:1}
+  tbody tr:hover{background:#f8fafc}
+  .scroll{max-height:440px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+
+  .bar{height:9px;background:#e8ebef;border-radius:5px;overflow:hidden;min-width:70px}
+  .bar>i{display:block;height:100%;background:var(--blue)}
+
+  .tag{display:inline-block;padding:1px 7px;border-radius:20px;font-size:11px;font-weight:600}
+  .t-ok{background:#dcfce7;color:#15803d}
+  .t-no{background:#fee2e2;color:#b91c1c}
+  .t-new{background:#dbeafe;color:#1d4ed8}
+  .t-x{background:#fef3c7;color:#b45309}
+  .mini{color:var(--muted);font-size:11px}
+  .slot{font-size:11px;color:#374151;padding:1px 0}
+  input[type=search]{font:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:7px;width:260px}
+
+  /* ikon garis, tanpa library eksternal */
+  .ic{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.9;
+      stroke-linecap:round;stroke-linejoin:round;flex:none}
+  .ic-lg{width:18px;height:18px}
+  button{display:inline-flex;align-items:center;gap:7px}
+  .tab{display:inline-flex;align-items:center;gap:6px}
+  .card{display:flex;align-items:flex-start;gap:11px}
+  .card .ic-box{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;
+                justify-content:center;background:#eef2f7;color:var(--muted);flex:none;margin-top:1px}
+  .c-blue .ic-box{background:#e0e9fd;color:var(--blue)}
+  .c-green .ic-box{background:#dcfce7;color:var(--green)}
+  .c-amber .ic-box{background:#fef3c7;color:var(--amber)}
+  .c-red .ic-box{background:#fee2e2;color:var(--red)}
+  .c-violet .ic-box{background:#ede9fe;color:var(--violet)}
+  .panel h2{display:flex;align-items:center;gap:7px;color:var(--ink)}
+  .panel h2 .ic{color:var(--muted)}
+  .empty .ic{width:22px;height:22px;display:block;margin:0 auto 8px;opacity:.55}
+  .empty{color:var(--muted);padding:22px;text-align:center}
+  #loading{padding:60px;text-align:center;color:var(--muted)}
+  .toast{position:fixed;right:16px;bottom:16px;background:#111827;color:#fff;padding:10px 16px;
+         border-radius:8px;font-size:12px;opacity:0;transition:.25s;pointer-events:none}
+  .toast.on{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Kumpulan ikon garis (subset gaya Feather, MIT). Dipakai ulang lewat <use>. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <g id="i-refresh"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/>
+    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></g>
+  <g id="i-sync"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/>
+    <path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></g>
+  <g id="i-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></g>
+  <g id="i-check"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></g>
+  <g id="i-alert"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/>
+    <line x1="12" y1="16" x2="12.01" y2="16"/></g>
+  <g id="i-plus"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/>
+    <line x1="8" y1="12" x2="16" y2="12"/></g>
+  <g id="i-external"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+    <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></g>
+  <g id="i-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></g>
+  <g id="i-server"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/>
+    <line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></g>
+  <g id="i-pie"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></g>
+  <g id="i-calendar"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/>
+    <line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></g>
+  <g id="i-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></g>
+  <g id="i-trend"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></g>
+  <g id="i-list"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/>
+    <line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/>
+    <line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></g>
+  <g id="i-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+    <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></g>
+  <g id="i-inbox"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/>
+    <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></g>
+</defs></svg>
+
+<div id="loading">Memuat data dari seluruh sheet lab…</div>
+
+<div class="wrap" id="app" style="display:none">
+  <header>
+    <div>
+      <h1>Dashboard Jadwal Praktikum</h1>
+      <div class="sub" id="sub"></div>
+    </div>
+    <div class="spacer"></div>
+    <button onclick="muat()">
+      <svg class="ic" viewBox="0 0 24 24"><use href="#i-refresh"/></svg>Muat Ulang</button>
+    <button class="primary" onclick="sinkron()">
+      <svg class="ic" viewBox="0 0 24 24"><use href="#i-sync"/></svg>Sinkronkan ke Sheet FSTI</button>
+  </header>
+
+  <div class="cards" id="cards"></div>
+
+  <div class="tabs" id="tabs"></div>
+
+  <div class="pane on" id="p-ringkas">
+    <div class="grid2">
+      <div class="panel"><h2><svg class="ic" viewBox="0 0 24 24"><use href="#i-server"/></svg>
+        Pemakaian per Lab</h2><div id="chLab"></div></div>
+      <div class="panel"><h2><svg class="ic" viewBox="0 0 24 24"><use href="#i-users"/></svg>
+        Kelengkapan per Prodi</h2><div id="chProdi"></div></div>
+      <div class="panel"><h2><svg class="ic" viewBox="0 0 24 24"><use href="#i-calendar"/></svg>
+        Sebaran per Hari</h2><div id="chHari"></div></div>
+      <div class="panel"><h2><svg class="ic" viewBox="0 0 24 24"><use href="#i-clock"/></svg>
+        Sebaran per Sesi</h2><div id="chSesi"></div></div>
+    </div>
+    <div class="panel"><h2><svg class="ic" viewBox="0 0 24 24"><use href="#i-trend"/></svg>
+      Beban per Minggu</h2><div id="chMinggu"></div></div>
+  </div>
+
+  <div class="pane" id="p-detail">
+    <div class="panel">
+      <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px">
+        <input type="search" id="q" placeholder="Cari prodi / mata kuliah…" oninput="renderDetail()">
+        <select id="f" onchange="renderDetail()" style="padding:6px;border:1px solid var(--line);border-radius:7px">
+          <option value="">Semua status</option>
+          <option value="ok">Sudah terjadwal</option>
+          <option value="no">Belum terjadwal</option>
+        </select>
+        <span class="mini" id="cnt"></span>
+      </div>
+      <div class="scroll"><table id="tDetail"></table></div>
+    </div>
+  </div>
+
+  <div class="pane" id="p-baru">
+    <div class="panel">
+      <h2><svg class="ic" viewBox="0 0 24 24"><use href="#i-plus"/></svg>
+        MK baru di sheet Lab yang belum ada di FSTI</h2>
+      <p class="mini">Baris ini akan otomatis ditambahkan ke sheet FSTI saat tombol Sinkronkan ditekan
+        (ditandai warna hijau). Kolom Modul dan MK Wajib tetap perlu diisi manual.</p>
+      <div class="scroll"><table id="tBaru"></table></div>
+    </div>
+  </div>
+
+  <div class="pane" id="p-luar">
+    <div class="panel">
+      <h2><svg class="ic" viewBox="0 0 24 24"><use href="#i-external"/></svg>
+        Entri prodi di luar FSTI</h2>
+      <p class="mini">Terdeteksi di sheet Lab tapi bukan prodi FSTI, jadi tidak ditambahkan ke sheet FSTI.
+        Kalau ada prodi di sini yang seharusnya milik FSTI, tambahkan ke daftar <code>PRODI_FSTI</code> di Code.gs.</p>
+      <div class="scroll"><table id="tLuar"></table></div>
+    </div>
+  </div>
+
+  <div class="pane" id="p-bentrok">
+    <div class="panel">
+      <h2><svg class="ic" viewBox="0 0 24 24"><use href="#i-zap"/></svg>Bentrok jadwal</h2>
+      <p class="mini">Satu lab dipakai dua mata kuliah berbeda pada minggu, hari, dan sesi yang sama.</p>
+      <div class="scroll"><table id="tBentrok"></table></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+var D = null;
+
+var TABS = [
+  ['p-ringkas','Ringkasan',      'i-pie'],
+  ['p-detail', 'Detail per MK',  'i-list'],
+  ['p-baru',   'MK Baru',        'i-plus'],
+  ['p-luar',   'Prodi Non-FSTI', 'i-external'],
+  ['p-bentrok','Bentrok',        'i-zap']
+];
+
+function ikon(n,cls){
+  return '<svg class="ic'+(cls?' '+cls:'')+'" viewBox="0 0 24 24"><use href="#'+n+'"/></svg>';
+}
+
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+
+function toast(m){var t=document.getElementById('toast');t.textContent=m;t.className='toast on';
+  setTimeout(function(){t.className='toast';},2600);}
+
+function muat(){
+  document.getElementById('loading').style.display='block';
+  document.getElementById('app').style.display='none';
+  google.script.run.withSuccessHandler(render)
+    .withFailureHandler(function(e){
+      document.getElementById('loading').textContent='Gagal memuat: '+e.message;})
+    .getDashboardData();
+}
+
+function sinkron(){
+  toast('Menyinkronkan…');
+  google.script.run.withSuccessHandler(function(r){
+    toast('Selesai — '+r.cocok+' MK tersinkron, '+r.baru+' baris baru ditambahkan.');
+    muat();
+  }).withFailureHandler(function(e){toast('Gagal: '+e.message);}).syncDariDashboard();
+}
+
+function render(d){
+  D = d;
+  document.getElementById('loading').style.display='none';
+  document.getElementById('app').style.display='block';
+
+  var r = d.ringkas;
+  document.getElementById('sub').textContent =
+    r.jumlahLab + ' sheet lab • ' + r.totalSel + ' sel jadwal terbaca • diperbarui ' +
+    new Date().toLocaleString('id-ID');
+
+  document.getElementById('cards').innerHTML = [
+    kartu('MK di FSTI',        r.totalMk, 'c-blue',   'i-book'),
+    kartu('Sudah terjadwal',   r.cocok,   'c-green',  'i-check'),
+    kartu('Belum terjadwal',   r.kosong,  'c-red',    'i-alert'),
+    kartu('MK baru terdeteksi',r.baru,    'c-violet', 'i-plus'),
+    kartu('Entri non-FSTI',    r.luar,    'c-amber',  'i-external'),
+    kartu('Bentrok', d.bentrok.length, d.bentrok.length ? 'c-red' : 'c-green', 'i-zap')
+  ].join('');
+
+  document.getElementById('tabs').innerHTML = TABS.map(function(t,i){
+    return '<button class="tab'+(i===0?' on':'')+'" onclick="pindah(\''+t[0]+'\',this)">'+
+           ikon(t[2])+t[1]+'</button>';
+  }).join('');
+
+  barChart('chLab',    d.perLab,  'pertemuan');
+  barChart('chHari',   d.perHari, 'pertemuan');
+  barChart('chSesi',   d.perSesi, 'pertemuan');
+  barChart('chMinggu', d.perMinggu, 'kegiatan', true);
+  prodiChart();
+
+  renderDetail(); renderBaru(); renderLuar(); renderBentrok();
+}
+
+function kartu(l,v,c,ic){
+  return '<div class="card '+c+'"><div class="ic-box">'+ikon(ic,'ic-lg')+'</div>'+
+         '<div><div class="lbl">'+l+'</div><div class="val">'+v+'</div></div></div>';
+}
+
+function pindah(id,el){
+  TABS.forEach(function(t){document.getElementById(t[0]).className='pane';});
+  document.getElementById(id).className='pane on';
+  var bs=document.querySelectorAll('.tab');
+  for(var i=0;i<bs.length;i++) bs[i].className='tab';
+  el.className='tab on';
+}
+
+function barChart(id,obj,satuan,numerik){
+  var keys=Object.keys(obj);
+  if(!keys.length){document.getElementById(id).innerHTML='<div class="empty">Tidak ada data</div>';return;}
+  keys.sort(numerik ? function(a,b){return a-b;} : function(a,b){return obj[b]-obj[a];});
+  var max=Math.max.apply(null,keys.map(function(k){return obj[k];}));
+  document.getElementById(id).innerHTML='<table>'+keys.map(function(k){
+    var pct=Math.round(obj[k]/max*100);
+    return '<tr><td style="width:44%">'+esc(numerik?('Minggu '+k):k)+'</td>'+
+      '<td><div class="bar"><i style="width:'+pct+'%"></i></div></td>'+
+      '<td class="num" style="width:74px">'+obj[k]+' <span class="mini">'+satuan+'</span></td></tr>';
+  }).join('')+'</table>';
+}
+
+function prodiChart(){
+  var p=D.perProdi, keys=Object.keys(p).sort();
+  if(!keys.length){document.getElementById('chProdi').innerHTML='<div class="empty">Tidak ada data</div>';return;}
+  document.getElementById('chProdi').innerHTML=
+    '<table><thead><tr><th>Prodi</th><th>Kelengkapan</th><th class="num">Terjadwal</th>'+
+    '<th class="num">Pertemuan</th></tr></thead><tbody>'+
+    keys.map(function(k){
+      var x=p[k], pct=x.total?Math.round(x.cocok/x.total*100):0;
+      var warna = pct===100 ? 'var(--green)' : (pct>=50 ? 'var(--amber)' : 'var(--red)');
+      return '<tr><td>'+esc(k)+'</td>'+
+        '<td><div class="bar"><i style="width:'+pct+'%;background:'+warna+'"></i></div></td>'+
+        '<td class="num">'+x.cocok+'/'+x.total+'</td><td class="num">'+x.pertemuan+'</td></tr>';
+    }).join('')+'</tbody></table>';
+}
+
+function renderDetail(){
+  var q=(document.getElementById('q').value||'').toLowerCase();
+  var f=document.getElementById('f').value;
+  var rows=D.hasil.filter(function(h){
+    if(f==='ok'&&!h.ada) return false;
+    if(f==='no'&&h.ada)  return false;
+    if(!q) return true;
+    return (h.prodi+' '+h.mk).toLowerCase().indexOf(q)>=0;
+  });
+  document.getElementById('cnt').textContent=rows.length+' dari '+D.hasil.length+' MK';
+  document.getElementById('tDetail').innerHTML=
+    '<thead><tr><th style="width:38px">#</th><th style="width:120px">Prodi</th>'+
+    '<th style="width:190px">Mata Kuliah</th><th>Jadwal Fix</th>'+
+    '<th style="width:120px">Minggu</th><th class="num" style="width:50px">Tot</th>'+
+    '<th style="width:100px">Status</th></tr></thead><tbody>'+
+    (rows.length?rows.map(function(h){
+      var jadwal = h.ada
+        ? h.slot.map(function(s){
+            return '<div class="slot"><b>'+esc(s.lab)+'</b> · '+esc(s.hari)+
+                   ' · Sesi '+esc(s.sesi)+' · minggu '+esc(s.minggu)+'</div>';}).join('')
+        : '<span class="mini">—</span>';
+      return '<tr><td class="mini">'+h.row+'</td><td>'+esc(h.prodi)+'</td><td>'+esc(h.mk)+'</td>'+
+        '<td>'+jadwal+'</td><td>'+esc(h.minggu||'—')+'</td><td class="num">'+(h.total||'')+'</td>'+
+        '<td><span class="tag '+(h.ada?'t-ok">Terjadwal':'t-no">Belum')+'</span></td></tr>';
+    }).join('') : '<tr><td colspan="7" class="empty">Tidak ada yang cocok</td></tr>')+'</tbody>';
+}
+
+function renderBaru(){
+  document.getElementById('tBaru').innerHTML=
+    '<thead><tr><th style="width:150px">Prodi</th><th style="width:250px">Mata Kuliah</th>'+
+    '<th class="num" style="width:90px">Pertemuan</th><th>Teks asli di sheet lab</th></tr></thead><tbody>'+
+    (D.baru.length?D.baru.map(function(x){
+      return '<tr><td>'+esc(x.prodi)+' <span class="tag t-new">baru</span></td><td>'+esc(x.mk)+
+        '</td><td class="num">'+x.jml+'</td><td class="mini">'+esc(x.raw)+'</td></tr>';
+    }).join('') : '<tr><td colspan="4" class="empty">'+ikon('i-inbox')+
+      'Tidak ada MK baru — sheet FSTI sudah lengkap</td></tr>')+'</tbody>';
+}
+
+function renderLuar(){
+  document.getElementById('tLuar').innerHTML=
+    '<thead><tr><th style="width:150px">Prodi</th><th style="width:250px">Mata Kuliah</th>'+
+    '<th class="num" style="width:90px">Pertemuan</th><th>Teks asli di sheet lab</th></tr></thead><tbody>'+
+    (D.luar.length?D.luar.map(function(x){
+      return '<tr><td>'+esc(x.prodi)+' <span class="tag t-x">non-FSTI</span></td><td>'+esc(x.mk)+
+        '</td><td class="num">'+x.jml+'</td><td class="mini">'+esc(x.raw)+'</td></tr>';
+    }).join('') : '<tr><td colspan="4" class="empty">Tidak ada</td></tr>')+'</tbody>';
+}
+
+function renderBentrok(){
+  document.getElementById('tBentrok').innerHTML=
+    '<thead><tr><th style="width:80px">Minggu</th><th style="width:90px">Hari</th>'+
+    '<th style="width:150px">Sesi</th><th style="width:230px">Lab</th>'+
+    '<th>Mata kuliah yang bentrok</th></tr></thead><tbody>'+
+    (D.bentrok.length?D.bentrok.map(function(b){
+      return '<tr><td>'+b.minggu+'</td><td>'+esc(b.hari)+'</td><td>'+esc(b.sesi)+'</td>'+
+        '<td>'+esc(b.lab)+'</td><td>'+b.mk.map(function(m){
+          return '<div class="slot">• '+esc(m)+'</div>';}).join('')+'</td></tr>';
+    }).join('') : '<tr><td colspan="5" class="empty">'+ikon('i-check')+
+      'Tidak ada bentrok. Semua slot aman.</td></tr>')+'</tbody>';
+}
+
+muat();
+</script>
+</body>
+</html>
