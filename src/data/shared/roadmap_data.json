@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-08T16:09:04.019203",
+    "generatedAt": "2026-08-29T16:47:53.768902",
     "yearRange": "2018-2026",
     "curatedBy": {
       "name": "Claude Opus 4.7",
@@ -59,10 +59,11 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "peak_year": 2025,
-      "total_count": 18
+      "total_count": 19
     },
     {
       "id": 2,
@@ -75,10 +76,11 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "peak_year": 2025,
-      "total_count": 22
+      "total_count": 23
     },
     {
       "id": 3,
@@ -109,7 +111,7 @@
         2026
       ],
       "peak_year": 2023,
-      "total_count": 10
+      "total_count": 11
     },
     {
       "id": 5,
@@ -124,10 +126,11 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "peak_year": 2020,
-      "total_count": 16
+      "total_count": 18
     },
     {
       "id": 6,
@@ -143,10 +146,11 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "peak_year": 2025,
-      "total_count": 35
+      "total_count": 36
     },
     {
       "id": 7,
@@ -159,10 +163,11 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "peak_year": 2023,
-      "total_count": 21
+      "total_count": 26
     },
     {
       "id": 8,
@@ -176,10 +181,11 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
       "peak_year": 2024,
-      "total_count": 29
+      "total_count": 33
     }
   ],
   "timeline": [
@@ -217,7 +223,7 @@
     },
     {
       "year": 2026,
-      "count": 1
+      "count": 28
     }
   ],
   "sankey": {
@@ -325,6 +331,19 @@
         ]
       },
       {
+        "name": "Tata Kelola SI Kampus (2026)",
+        "topic_id": 1,
+        "topic_name": "Tata Kelola SI Kampus",
+        "color": "#3b82f6",
+        "year": 2026,
+        "depth": 8,
+        "value": 1,
+        "real_count": 1,
+        "titles": [
+          "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS) MELALUI IMPLEMENTASI OTOMASI APPROVAL WORKFLOW"
+        ]
+      },
+      {
         "name": "Smart City & IKN (2021)",
         "topic_id": 2,
         "topic_name": "Smart City & IKN",
@@ -404,6 +423,19 @@
           "RANCANG BANGUN SISTEM STOK GUDANG BERBASIS WEB UNTUK INDUSTRI MIKRO DAN KECIL DI KOTA PENYANGGA IKN",
           "RANCANG BANGUN TRANSPARANSI PENGGUNAAN DANA TJSLP (TANGGUNG JAWAB SOSIAL DAN LINGKUNGAN PERUSAHAAN) DALAM MENDUKUNG SMART CITY MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
           "VISUALISASI DARI KLASTERISASI PENGELOMPOKAN DAERAH BERDASARKAN TINGKAT PENDAPATAN PAJAK DAERAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER LANJUTAN"
+        ]
+      },
+      {
+        "name": "Smart City & IKN (2026)",
+        "topic_id": 2,
+        "topic_name": "Smart City & IKN",
+        "color": "#8b5cf6",
+        "year": 2026,
+        "depth": 8,
+        "value": 1,
+        "real_count": 1,
+        "titles": [
+          "VISUALISASI DARI KLASTERISASI DAN PERAMALAN KUALITAS UDARA KOTA SAMARINDA MENGGUNAKAN METODE KLASTERISASI OBJEK BACKPROPAGATION DAN PERAMALAN ARTIFICIAL NEURAL NETWORK"
         ]
       },
       {
@@ -524,9 +556,10 @@
         "color": "#f59e0b",
         "year": 2026,
         "depth": 8,
-        "value": 1,
-        "real_count": 1,
+        "value": 2,
+        "real_count": 2,
         "titles": [
+          "IMPLEMENTASI PEMBELAJARAN TEKNOLOGI INFORMASI DASAR BERBASIS KODING DAN ARTIFICIAL INTELLIGENCE BAGI SISWA SERTA PENGUATAN KOMPETENSI GURU DI SDN 011 KOTA BALIKPAPAN",
           "Peran isu privasi terhadap efektivitas pemanfaatan Artificial Intelligence di Social Commerce: Perspektif Fungsional dan Sosial Emosional"
         ]
       },
@@ -628,6 +661,20 @@
           "OPTIMALISASI TEKNOLOGI DAN KREATIVITAS UNTUK MENDUKUNG PEMBELAJARAN DAN ADMINISTRASI DI SEKOLAH ISLAM AL AZHAR 58 BALIKPAPAN",
           "PERANCANGAN SISTEM MEDIA PEMBELAJARAN BERBASIS AI DAN ADAPTIVE LEARNING DENGAN KONSEP HEALING TECHNOLOGY PADA PESERTA DIDIK DISABILITAS",
           "PESANTREN KODING: EDUKASI PEMROGRAMAN DASAR BAGI SISWA SEKOLAH DASAR MELALUI MIT APP INVENTOR"
+        ]
+      },
+      {
+        "name": "Pembelajaran Adaptif & Edukasi Digital (2026)",
+        "topic_id": 5,
+        "topic_name": "Pembelajaran Adaptif & Edukasi Digital",
+        "color": "#ec4899",
+        "year": 2026,
+        "depth": 8,
+        "value": 2,
+        "real_count": 2,
+        "titles": [
+          "IMPLEMENTASI KNOWLEDGE MANAGEMENT SYSTEM (KMS) BERBASIS AI UNTUK PELAYANAN PERIZINAN PADA DPMPTSP KOTA BALIKPAPAN DENGAN METODE PERSONAL EXTREME PROGRAMMING",
+          "KEBUN RAYA BALIKPAPAN DIGITAL LAB: PERANCANGAN DIGITAL TWIN HERBARIUM BUAH ENDEMIK KALIMANTAN TIMUR BERBASIS PHOTOGRAMMETRY 360 DERAJAT SEBAGAI ASET MEDIA PEMBELAJARAN"
         ]
       },
       {
@@ -762,6 +809,19 @@
         ]
       },
       {
+        "name": "UMKM, E-Commerce & Digital Marketing (2026)",
+        "topic_id": 6,
+        "topic_name": "UMKM, E-Commerce & Digital Marketing",
+        "color": "#ef4444",
+        "year": 2026,
+        "depth": 8,
+        "value": 1,
+        "real_count": 1,
+        "titles": [
+          "UPAYA PENINGKATAN KUALITAS UMKM IDIL FITFA MELALUI PENGUATAN BRANDING DAN INOVASI PRODUK"
+        ]
+      },
+      {
         "name": "Lingkungan & Pertanian Berkelanjutan (2021)",
         "topic_id": 7,
         "topic_name": "Lingkungan & Pertanian Berkelanjutan",
@@ -840,6 +900,23 @@
           "OPTIMALISASI PENGELOLAAN SAMPAH MELALUI BIOPORI DAN BANK SAMPAH DI MENTARI VILLAGE",
           "Optimalisasi Sistem Irigasi Berbasis Rainwater Harvesting (RWH) dan Pemanfaatan Limbah Pertanian sebagai Pupuk Organik Cair (POC) untuk Meningkatkan Produktivitas Perkebunan Berkelanjutan di Kelompok Tani Harapan Sejahtera",
           "PEMBERDAYAAN KELOMPOK TANI SWATANI KM 17 MELALUI PEMANFAATAN LIMBAH PERTANIAN DAN BIOGAS SEBAGAI PUPUK ORGANIK CAIR"
+        ]
+      },
+      {
+        "name": "Lingkungan & Pertanian Berkelanjutan (2026)",
+        "topic_id": 7,
+        "topic_name": "Lingkungan & Pertanian Berkelanjutan",
+        "color": "#14b8a6",
+        "year": 2026,
+        "depth": 8,
+        "value": 5,
+        "real_count": 5,
+        "titles": [
+          "INOVASI SISTEM PENGELOLAAN SAMPAH MELALUI OPTIMALISASI TEKNIS OPERASIONAL DAN PERANCANGAN TPS 3R DI RUMAH SAKIT RESTU IBU BALIKPAPAN",
+          "OPTIMALISASI KAWASAN KELOMPOK TANI HARAPAN SEJAHTERA MELALUI SISTEM INFORMASI TERPADU BERBASIS WEBSITE DAN LABEL TANAMAN BERBASIS QR CODE",
+          "OPTIMALISASI PENGOLAHAN PRODUK KERIPIK BUAH MELALUI EVALUASI PRODUKSI DAN STRATEGI PEMASARAN BERBASIS DIGITAL PADA KELOMPOK TANI KM 24 BALIKPAPAN UTARA",
+          "PENGEMBANGAN BANK SAMPAH UNTUK MENDUKUNG PENGELOLAAN SAMPAH BERKELANJUTAN DI RT 44 SEPINGGAN PRATAMA",
+          "PENINGKATAN PRODUKTIVITAS KELOMPOK WANITA TANI KM 21 BALIKPAPAN MELALUI INOVASI PRODUK DAN PENGUAT BRANDING BERBASIS DESAIN KEMASAN"
         ]
       },
       {
@@ -942,6 +1019,22 @@
           "PENGEMBANGAN WISATA TANJUNG GADING MELALUI DIGITALISASI DI RT 17 KELURAHAN KARANG JOANG",
           "PENINGKATAN FASILITAS WISATA DENGAN PEMANFAATAN PANEL SURYA DALAM PENERANGAN AREA FOTO DI TANJUNG GADING KM.12 BALIKPAPAN"
         ]
+      },
+      {
+        "name": "Wisata Digital & Smart RT (2026)",
+        "topic_id": 8,
+        "topic_name": "Wisata Digital & Smart RT",
+        "color": "#0ea5e9",
+        "year": 2026,
+        "depth": 8,
+        "value": 4,
+        "real_count": 4,
+        "titles": [
+          "MEWUJUDKAN SMART RT MELALUI DIGITALISASI LAYANAN DI RT 02 KELURAHAN GRAHA INDAH BALIKPAPAN BERBASIS WEBSITE",
+          "OPTIMALISASI PROMOSI PRODUK ECOPRINT HUTAN LINDUNG SUNGAI WAIN DENGAN PENGELOLAAN MEDIA SOSIAL DAN PELATIHAN KONTEN KREATIF DIGITAL",
+          "PENGEMBANGAN WISATA EDUKASI KANG BEJO BALIKPAPAN BERBASIS EDUKASI PANGAN, KEAMANAN LINGKUNGAN DAN DIGITALISASI INFORMASI",
+          "STRATEGI INTEGRASI BRANDING DIGITAL DAN INOVASI PANGAN LOKAL DALAM OPTIMALISASI POTENSI AGROWISATA KANG BEJO"
+        ]
       }
     ],
     "links": [
@@ -976,6 +1069,11 @@
         "value": 3
       },
       {
+        "source": "Tata Kelola SI Kampus (2025)",
+        "target": "Tata Kelola SI Kampus (2026)",
+        "value": 1
+      },
+      {
         "source": "Smart City & IKN (2021)",
         "target": "Smart City & IKN (2022)",
         "value": 2
@@ -994,6 +1092,11 @@
         "source": "Smart City & IKN (2024)",
         "target": "Smart City & IKN (2025)",
         "value": 6
+      },
+      {
+        "source": "Smart City & IKN (2025)",
+        "target": "Smart City & IKN (2026)",
+        "value": 1
       },
       {
         "source": "Smart Home & IoT Energi (2023)",
@@ -1061,6 +1164,11 @@
         "value": 3
       },
       {
+        "source": "Pembelajaran Adaptif & Edukasi Digital (2025)",
+        "target": "Pembelajaran Adaptif & Edukasi Digital (2026)",
+        "value": 2
+      },
+      {
         "source": "UMKM, E-Commerce & Digital Marketing (2018)",
         "target": "UMKM, E-Commerce & Digital Marketing (2019)",
         "value": 1
@@ -1096,6 +1204,11 @@
         "value": 5
       },
       {
+        "source": "UMKM, E-Commerce & Digital Marketing (2025)",
+        "target": "UMKM, E-Commerce & Digital Marketing (2026)",
+        "value": 1
+      },
+      {
         "source": "Lingkungan & Pertanian Berkelanjutan (2021)",
         "target": "Lingkungan & Pertanian Berkelanjutan (2022)",
         "value": 2
@@ -1113,6 +1226,11 @@
       {
         "source": "Lingkungan & Pertanian Berkelanjutan (2024)",
         "target": "Lingkungan & Pertanian Berkelanjutan (2025)",
+        "value": 5
+      },
+      {
+        "source": "Lingkungan & Pertanian Berkelanjutan (2025)",
+        "target": "Lingkungan & Pertanian Berkelanjutan (2026)",
         "value": 5
       },
       {
@@ -1139,6 +1257,11 @@
         "source": "Wisata Digital & Smart RT (2024)",
         "target": "Wisata Digital & Smart RT (2025)",
         "value": 10
+      },
+      {
+        "source": "Wisata Digital & Smart RT (2025)",
+        "target": "Wisata Digital & Smart RT (2026)",
+        "value": 4
       }
     ]
   }

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-08T15:59:27.201577",
+    "generatedAt": "2026-08-29T16:47:53.684453",
     "curatedBy": {
       "name": "Claude Opus 4.7",
       "provider": "Anthropic",
@@ -8,9 +8,9 @@
       "task": "Semantic clustering, narrative synthesis, collaboration recommendations"
     },
     "method": "Manual semantic clustering by AI agent — no algorithmic clustering",
-    "totalPenelitian": 86,
-    "totalPengabdian": 62,
-    "totalItems": 148,
+    "totalPenelitian": 110,
+    "totalPengabdian": 82,
+    "totalItems": 192,
     "totalClusters": 18
   },
   "clusters": {
@@ -29,14 +29,14 @@
         "recommendation": "Konsolidasi sebagai \"ekosistem digital ITK\" terpadu yang dapat di-scale ke kampus lain di Kalimantan; potensi produk kompetitif untuk lisensi.",
         "items": [
           {
-            "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
+            "title": "PENGEMBANGAN SISTEM INFORMASI MANAJEMEN TUGAS AKHIR PADA JURUSAN TEKNIK ELEKTRO, INFORMATIKA, DAN BISNIS INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING (PXP)",
             "author": "Yuyun Tri Wiranti",
             "prodi": "Sistem Informasi",
             "type": "Penelitian",
             "year": "2025"
           },
           {
-            "title": "PENGEMBANGAN SISTEM INFORMASI MANAJEMEN TUGAS AKHIR PADA JURUSAN TEKNIK ELEKTRO, INFORMATIKA, DAN BISNIS INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING (PXP)",
+            "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
             "author": "Yuyun Tri Wiranti",
             "prodi": "Sistem Informasi",
             "type": "Penelitian",
@@ -169,6 +169,13 @@
             "year": "2024"
           },
           {
+            "title": "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS) MELALUI IMPLEMENTASI OTOMASI APPROVAL WORKFLOW",
+            "author": "M. Ihsan Alfani Putera",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
             "title": "PENGEMBANGAN SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) INSTITUT TEKNOLOGI KALIMANTAN",
             "author": "M. Ihsan Alfani Putera",
             "prodi": "Sistem Informasi",
@@ -211,7 +218,7 @@
             "year": "2019"
           }
         ],
-        "count": 26,
+        "count": 27,
         "prodis": [
           "Sistem Informasi"
         ],
@@ -350,6 +357,13 @@
             "year": "2021"
           },
           {
+            "title": "VISUALISASI DARI KLASTERISASI DAN PERAMALAN KUALITAS UDARA KOTA SAMARINDA MENGGUNAKAN METODE KLASTERISASI OBJEK BACKPROPAGATION DAN PERAMALAN ARTIFICIAL NEURAL NETWORK",
+            "author": "Dwi Arief Prambudi",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
             "title": "VISUALISASI DARI KLASTERISASI PENGELOMPOKAN DAERAH BERDASARKAN TINGKAT PENDAPATAN PAJAK DAERAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER LANJUTAN",
             "author": "Dwi Arief Prambudi",
             "prodi": "Sistem Informasi",
@@ -385,6 +399,13 @@
             "year": "2021"
           },
           {
+            "title": "VISUALISASI DARI KLASTERISASI DAN PERAMALAN KUALITAS UDARA KOTA SAMARINDA MENGGUNAKAN METODE KLASTERISASI OBJEK BACKPROPAGATION DAN PERAMALAN ARTIFICIAL NEURAL NETWORK",
+            "author": "I Putu Deny Arthawan Sugih Prabowo",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
             "title": "VISUALISASI DARI KLASTERISASI PENGELOMPOKAN DAERAH BERDASARKAN TINGKAT PENDAPATAN PAJAK DAERAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER LANJUTAN",
             "author": "I Putu Deny Arthawan Sugih Prabowo",
             "prodi": "Sistem Informasi",
@@ -413,7 +434,7 @@
             "year": "2022"
           }
         ],
-        "count": 12,
+        "count": 14,
         "prodis": [
           "Sistem Informasi"
         ],
@@ -485,6 +506,13 @@
             "year": "2022"
           },
           {
+            "title": "IMPLEMENTASI KNOWLEDGE MANAGEMENT SYSTEM (KMS) BERBASIS AI UNTUK PELAYANAN PERIZINAN PADA DPMPTSP KOTA BALIKPAPAN DENGAN METODE PERSONAL EXTREME PROGRAMMING",
+            "author": "M. Ihsan Alfani Putera",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
             "title": "PERANCANGAN SISTEM MEDIA PEMBELAJARAN BERBASIS AI DAN ADAPTIVE LEARNING DENGAN KONSEP HEALING TECHNOLOGY PADA PESERTA DIDIK DISABILITAS",
             "author": "M. Ihsan Alfani Putera",
             "prodi": "Sistem Informasi",
@@ -527,6 +555,13 @@
             "year": "2023"
           },
           {
+            "title": "KEBUN RAYA BALIKPAPAN DIGITAL LAB: PERANCANGAN DIGITAL TWIN HERBARIUM BUAH ENDEMIK KALIMANTAN TIMUR BERBASIS PHOTOGRAMMETRY 360 DERAJAT SEBAGAI ASET MEDIA PEMBELAJARAN",
+            "author": "Rosa Eliviani",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
             "title": "MEDIA PEMBELAJARAN DENGAN METODE GAMIFICATION UNTUK PENDIDIKAN FORMAL DAN NON FORMAL DI KALIMANTAN ERA COVID-19",
             "author": "M. Gilvy Langgawan Putra",
             "prodi": "Sistem Informasi",
@@ -534,7 +569,7 @@
             "year": "2021"
           }
         ],
-        "count": 13,
+        "count": 15,
         "prodis": [
           "Sistem Informasi"
         ],
@@ -545,6 +580,7 @@
           "M. Gilvy Langgawan Putra",
           "M. Ihsan Alfani Putera",
           "Nursanti Novi Arisa",
+          "Rosa Eliviani",
           "Sri Rahayu Natasia",
           "Vika Fitratunnany Insanittaqwa",
           "Yuyun Tri Wiranti"
@@ -693,13 +729,6 @@
             "year": "2024"
           },
           {
-            "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
-            "author": "Henokh Lugo Hariyanto",
-            "prodi": "Sistem Informasi",
-            "type": "Penelitian",
-            "year": "2023"
-          },
-          {
             "title": "PENGEMBANGAN INVERSI BATIMETRI UNTUK ESTIMASI KEDALAMAN LAUT PERAIRAN MENGGUNAKAN ALGORITMA INTERPRETABLE DEEP LEARNING",
             "author": "Henokh Lugo Hariyanto",
             "prodi": "Sistem Informasi",
@@ -708,6 +737,13 @@
           },
           {
             "title": "SVM (SUPPORT VECTOR MACHINE) UNTUK KLASIFIKASI STATUS GIZI BALITA BERDASARKAN INDEKS ANTROPOMETRI",
+            "author": "Henokh Lugo Hariyanto",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2023"
+          },
+          {
+            "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
             "author": "Henokh Lugo Hariyanto",
             "prodi": "Sistem Informasi",
             "type": "Penelitian",
@@ -856,19 +892,163 @@
         "recommendation": "Tinjau ulang setelah jumlah karya meningkat — bisa jadi cluster baru muncul dari sini.",
         "items": [
           {
+            "title": "RANCANG BANGUN SISTEM INFORMASI PROFIL FAKULTAS SAINS DAN TEKNOLOGI INFORMASI INSTITUT TEKNOLOGI KALIMANTAN BERBASIS WEBSITE MENGGUNAKAN METODE PROTOTYPING",
+            "author": "Yuyun Tri Wiranti",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "PENGEMBANGAN SISTEM INFORMASI COURSE UNTUK PENINGKATAN KAPASITAS DAN KETERAMPILAN MASYARAKAT BALIKPAPAN MENGGUNAKAN METODE WATERFALL",
+            "author": "Yuyun Tri Wiranti",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "PENGEMBANGAN SISTEM INFORMASI KLINIK KAMPUS BERBASIS WEB UNTUK MENINGKATKAN EFEKTIVITAS PELAYANAN KESEHATAN DI INSTITUT TEKNOLOGI KALIMANTAN",
+            "author": "Aidil Saputra Kirsan",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "PENGEMBANGAN SISTEM SMART LIBRARY BERBASIS RFID TERINTEGRASI CLOUD SEBAGAI PLATFORM MANAJEMEN DIGITAL PERPUSTAKAAN ITK",
+            "author": "Aidil Saputra Kirsan",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "RANCANG BANGUN SISTEM INFORMASI PROFIL FAKULTAS SAINS DAN TEKNOLOGI INFORMASI INSTITUT TEKNOLOGI KALIMANTAN BERBASIS WEBSITE MENGGUNAKAN METODE PROTOTYPING",
+            "author": "Aidil Saputra Kirsan",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
             "title": "LEAN VS AGILE: EFISIENSI METODE UNTUK SISTEM INFORMASI SEKOLAH CERDAS DI BALIKPAPAN",
             "author": "Aidil Saputra Kirsan",
             "prodi": "Sistem Informasi",
             "type": "Penelitian",
             "year": "2022"
+          },
+          {
+            "title": "PENGEMBANGAN SISTEM INFORMASI COURSE UNTUK PENINGKATAN KAPASITAS DAN KETERAMPILAN MASYARAKAT BALIKPAPAN MENGGUNAKAN METODE WATERFALL",
+            "author": "Arif Wicaksono Septyanto",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "PENGEMBANGAN SISTEM INFORMASI COURSE UNTUK PENINGKATAN KAPASITAS DAN KETERAMPILAN MASYARAKAT BALIKPAPAN MENGGUNAKAN METODE WATERFALL",
+            "author": "Henokh Lugo Hariyanto",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "PERANCANGAN UI/UX MEDIA VISUAL BERBASIS DIGITAL DENGAN PENDEKATAN DISCRETE TRIAL TRAINING UNTUK ANAK DENGAN GANGGUAN BAHASA",
+            "author": "Vika Fitratunnany Insanittaqwa",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "PENYUSUNAN MANAJEMEN RISIKO TEKNOLOGI INFORMASI PADA SEKOLAH ISLAM TERPADU ISTIQAMAH YPAIT BALIKPAPAN BERDASARKAN ISO 31000:2018",
+            "author": "Hendy Indrawan Sunardi",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "PENGEMBANGAN SISTEM INFORMASI KLINIK KAMPUS BERBASIS WEB UNTUK MENINGKATKAN EFEKTIVITAS PELAYANAN KESEHATAN DI INSTITUT TEKNOLOGI KALIMANTAN",
+            "author": "Hendy Indrawan Sunardi",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "IMPLEMENTASI BUSINESS PROCESS IMPROVEMENT UNTUK REDESAIN PROSES BISNIS DALAM TRANSFORMASI WEB KE MOBILE EMPLOYEE INFORMATION SYSTEM",
+            "author": "Dwi Nur Amalia",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "INOVASI SISTEM PENGELOLAAN SAMPAH MELALUI OPTIMALISASI TEKNIS OPERASIONAL DAN PERANCANGAN TPS 3R DI RUMAH SAKIT RESTU IBU BALIKPAPAN",
+            "author": "Dwi Arief Prambudi",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "KRIPTOSISTEM CITRA GRAYSCALE HIBRIDA BERBASIS PERMUTASI CHAOS DAN DIFUSI MATRIKS PADA GELANGGANG Z/256Z UNTUK KEAMANAN DATA VISUAL",
+            "author": "I Putu Deny Arthawan Sugih Prabowo",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "IMPLEMENTASI BUSINESS PROCESS IMPROVEMENT UNTUK REDESAIN PROSES BISNIS DALAM TRANSFORMASI WEB KE MOBILE EMPLOYEE INFORMATION SYSTEM",
+            "author": "Sri Rahayu Natasia",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "MODEL AI-BASED SMART CULTURAL FESTIVAL DASHBOARD DALAM MENDUKUNG SMART CULTURAL TOURISM PADA FESTIVAL ERAU TENGGARONG",
+            "author": "Nursanti Novi Arisa",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "PERANCANGAN UI/UX MEDIA VISUAL BERBASIS DIGITAL DENGAN PENDEKATAN DISCRETE TRIAL TRAINING UNTUK ANAK DENGAN GANGGUAN BAHASA",
+            "author": "Nursanti Novi Arisa",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "PENYUSUNAN MANAJEMEN RISIKO TEKNOLOGI INFORMASI PADA SEKOLAH ISLAM TERPADU ISTIQAMAH YPAIT BALIKPAPAN BERDASARKAN ISO 31000:2018",
+            "author": "Rosa Eliviani",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "RANCANG BANGUN SISTEM INFORMASI PROFIL FAKULTAS SAINS DAN TEKNOLOGI INFORMASI INSTITUT TEKNOLOGI KALIMANTAN BERBASIS WEBSITE MENGGUNAKAN METODE PROTOTYPING",
+            "author": "Rosa Eliviani",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
+            "title": "SMART SHE CAMPUS: SISTEM PEMANTAUAN KESELAMATAN BERKENDARA CIVITAS AKADEMIKA BERBASIS IOT",
+            "author": "Rosa Eliviani",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
           }
         ],
-        "count": 1,
+        "count": 20,
         "prodis": [
           "Sistem Informasi"
         ],
         "authors": [
-          "Aidil Saputra Kirsan"
+          "Aidil Saputra Kirsan",
+          "Arif Wicaksono Septyanto",
+          "Dwi Arief Prambudi",
+          "Dwi Nur Amalia",
+          "Hendy Indrawan Sunardi",
+          "Henokh Lugo Hariyanto",
+          "I Putu Deny Arthawan Sugih Prabowo",
+          "Nursanti Novi Arisa",
+          "Rosa Eliviani",
+          "Sri Rahayu Natasia",
+          "Vika Fitratunnany Insanittaqwa",
+          "Yuyun Tri Wiranti"
         ],
         "isCrossProdi": false,
         "collaborationPotential": "low",
@@ -910,6 +1090,20 @@
             "year": "2023"
           },
           {
+            "title": "IMPLEMENTASI PEMBELAJARAN TEKNOLOGI INFORMASI DASAR BERBASIS KODING DAN ARTIFICIAL INTELLIGENCE BAGI SISWA SERTA PENGUATAN KOMPETENSI GURU DI SDN 011 KOTA BALIKPAPAN",
+            "author": "Hendy Indrawan Sunardi",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
+          {
+            "title": "MEWUJUDKAN SMART RT MELALUI DIGITALISASI LAYANAN DI RT 02 KELURAHAN GRAHA INDAH BALIKPAPAN BERBASIS WEBSITE",
+            "author": "Dwi Arief Prambudi",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
+          {
             "title": "MEWUJUDKAN SMART RT DENGAN PERKEMBANGAN TEKNOLOGI RT 31 WADUK WONOREJO KOTA BALIKPAPAN KALIMANTAN TIMUR",
             "author": "Dwi Arief Prambudi",
             "prodi": "Sistem Informasi",
@@ -922,6 +1116,13 @@
             "prodi": "Sistem Informasi",
             "type": "Pengabdian",
             "year": "2020"
+          },
+          {
+            "title": "MEWUJUDKAN SMART RT MELALUI DIGITALISASI LAYANAN DI RT 02 KELURAHAN GRAHA INDAH BALIKPAPAN BERBASIS WEBSITE",
+            "author": "I Putu Deny Arthawan Sugih Prabowo",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
           },
           {
             "title": "EDUKASI PENGGUNAAN INTERNET SEHAT UNTUK MEDIA PEMBELAJARAN DI SMP NEGERI BALIKPAPAN",
@@ -952,13 +1153,15 @@
             "year": "2025"
           }
         ],
-        "count": 9,
+        "count": 12,
         "prodis": [
           "Sistem Informasi"
         ],
         "authors": [
           "Aidil Saputra Kirsan",
           "Dwi Arief Prambudi",
+          "Hendy Indrawan Sunardi",
+          "I Putu Deny Arthawan Sugih Prabowo",
           "M. Ihsan Alfani Putera",
           "Rosa Eliviani",
           "Sri Rahayu Natasia",
@@ -981,6 +1184,13 @@
         "narrative": "Digitalisasi bank sampah lokal Balikpapan — pola kerja sudah matang dengan beberapa RT mitra rutin (Margo Mulyo, Borneo 38, Klandasan Ilir).",
         "recommendation": "Konversi best practice ini menjadi paket replikasi standar untuk bank sampah di kota lain Kaltim — potensi pendanaan KLHK / Adipura.",
         "items": [
+          {
+            "title": "PENGEMBANGAN BANK SAMPAH UNTUK MENDUKUNG PENGELOLAAN SAMPAH BERKELANJUTAN DI RT 44 SEPINGGAN PRATAMA",
+            "author": "Yuyun Tri Wiranti",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
           {
             "title": "OPTIMALISASI PENGELOLAAN SAMPAH PADA BANK SAMPAH 123 RT. 001 KELURAHAN MARGO MULYO BALIKPAPAN BARAT",
             "author": "Yuyun Tri Wiranti",
@@ -1043,9 +1253,16 @@
             "prodi": "Sistem Informasi",
             "type": "Pengabdian",
             "year": "2024"
+          },
+          {
+            "title": "PENGEMBANGAN BANK SAMPAH UNTUK MENDUKUNG PENGELOLAAN SAMPAH BERKELANJUTAN DI RT 44 SEPINGGAN PRATAMA",
+            "author": "Rosa Eliviani",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
           }
         ],
-        "count": 9,
+        "count": 11,
         "prodis": [
           "Sistem Informasi"
         ],
@@ -1055,6 +1272,7 @@
           "Dwi Nur Amalia",
           "I Putu Deny Arthawan Sugih Prabowo",
           "Nursanti Novi Arisa",
+          "Rosa Eliviani",
           "Vika Fitratunnany Insanittaqwa",
           "Yuyun Tri Wiranti"
         ],
@@ -1075,6 +1293,13 @@
         "narrative": "Cluster terbesar pengabdian SI (16 karya, 9 dosen) — branding digital kawasan wisata, hutan kota, dan kampung tematik. Ekosistem mitra stabil dan beragam.",
         "recommendation": "Buat \"Platform Wisata Balikpapan\" terpadu yang memayungi seluruh kawasan binaan — produk turunan dari pengabdian bisa menjadi aset jangka panjang.",
         "items": [
+          {
+            "title": "STRATEGI INTEGRASI BRANDING DIGITAL DAN INOVASI PANGAN LOKAL DALAM OPTIMALISASI POTENSI AGROWISATA KANG BEJO",
+            "author": "Yuyun Tri Wiranti",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
           {
             "title": "PENGEMBANGAN WISATA TANJUNG GADING MELALUI DIGITALISASI DI RT 17 KELURAHAN KARANG JOANG",
             "author": "Aidil Saputra Kirsan",
@@ -1097,6 +1322,13 @@
             "year": "2022"
           },
           {
+            "title": "STRATEGI INTEGRASI BRANDING DIGITAL DAN INOVASI PANGAN LOKAL DALAM OPTIMALISASI POTENSI AGROWISATA KANG BEJO",
+            "author": "Arif Wicaksono Septyanto",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
+          {
             "title": "OPTIMASI KAWASAN WISATA MELALUI PENGEMBANGAN PRODUK DAN BRANDING DENGAN MEMANFAATKAN TEKNOLOGI DI HUTAN LINDUNG SUNGAI WAIN",
             "author": "Arif Wicaksono Septyanto",
             "prodi": "Sistem Informasi",
@@ -1111,11 +1343,25 @@
             "year": "2023"
           },
           {
+            "title": "OPTIMALISASI PROMOSI PRODUK ECOPRINT HUTAN LINDUNG SUNGAI WAIN DENGAN PENGELOLAAN MEDIA SOSIAL DAN PELATIHAN KONTEN KREATIF DIGITAL",
+            "author": "Henokh Lugo Hariyanto",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
+          {
             "title": "OPTIMASI KAWASAN WISATA MELALUI PENGEMBANGAN PRODUK DAN BRANDING DENGAN MEMANFAATKAN TEKNOLOGI DI HUTAN LINDUNG SUNGAI WAIN",
             "author": "Henokh Lugo Hariyanto",
             "prodi": "Sistem Informasi",
             "type": "Pengabdian",
             "year": "2024"
+          },
+          {
+            "title": "PENGEMBANGAN WISATA EDUKASI KANG BEJO BALIKPAPAN BERBASIS EDUKASI PANGAN, KEAMANAN LINGKUNGAN DAN DIGITALISASI INFORMASI",
+            "author": "Vika Fitratunnany Insanittaqwa",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
           },
           {
             "title": "PENGEMBANGAN FASILITAS DAN PROMOSI HUTAN KOTA MANGROVE MARGOMULYO MELALUI TEKNOLOGI DIGITAL",
@@ -1153,6 +1399,13 @@
             "year": "2025"
           },
           {
+            "title": "OPTIMALISASI PROMOSI PRODUK ECOPRINT HUTAN LINDUNG SUNGAI WAIN DENGAN PENGELOLAAN MEDIA SOSIAL DAN PELATIHAN KONTEN KREATIF DIGITAL",
+            "author": "I Putu Deny Arthawan Sugih Prabowo",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
+          {
             "title": "PENINGKATAN INFRASTRUKTUR PADA JALAN DI KAMPUNG E-SPORT BALIKPAPAN :\nIMPLEMENTASI GOOGLE MAPS, PEMBANGUNAN DIREKSI GANG, CONVEX MIRROR,\nDAN RAMBU KEBISINGAN",
             "author": "M. Ihsan Alfani Putera",
             "prodi": "Sistem Informasi",
@@ -1181,6 +1434,13 @@
             "year": "2024"
           },
           {
+            "title": "PENGEMBANGAN WISATA EDUKASI KANG BEJO BALIKPAPAN BERBASIS EDUKASI PANGAN, KEAMANAN LINGKUNGAN DAN DIGITALISASI INFORMASI",
+            "author": "Rosa Eliviani",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
+          {
             "title": "PEMETAAN DAN VISUALISASI PERMODELAN 3D LINGKUNGAN KAWASAN WISATA BARU HUTAN MERANTI KM.15 SEBAGAI UPAYA PENGEMBANGAN WISATA HUTAN LINDUNG BERBASIS ALAM",
             "author": "M. Gilvy Langgawan Putra",
             "prodi": "Sistem Informasi",
@@ -1188,7 +1448,7 @@
             "year": "2022"
           }
         ],
-        "count": 16,
+        "count": 22,
         "prodis": [
           "Sistem Informasi"
         ],
@@ -1198,10 +1458,13 @@
           "Dwi Nur Amalia",
           "Hendy Indrawan Sunardi",
           "Henokh Lugo Hariyanto",
+          "I Putu Deny Arthawan Sugih Prabowo",
           "M. Gilvy Langgawan Putra",
           "M. Ihsan Alfani Putera",
           "Nursanti Novi Arisa",
-          "Vika Fitratunnany Insanittaqwa"
+          "Rosa Eliviani",
+          "Vika Fitratunnany Insanittaqwa",
+          "Yuyun Tri Wiranti"
         ],
         "isCrossProdi": true,
         "collaborationPotential": "high",
@@ -1227,6 +1490,13 @@
             "year": "2025"
           },
           {
+            "title": "UPAYA PENINGKATAN KUALITAS UMKM IDIL FITFA MELALUI PENGUATAN BRANDING DAN INOVASI PRODUK",
+            "author": "Vika Fitratunnany Insanittaqwa",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
+          {
             "title": "PEMASARAN DAN PENGEMBANGAN OLAHAN JAMBU KRISTAL UNTUK MASYARAKAT PERKEBUNAN JAMBU KRISTAL KM 24 GANG PERJUANGAN II BALIKPAPAN UTARA",
             "author": "Dwi Nur Amalia",
             "prodi": "Sistem Informasi",
@@ -1234,14 +1504,14 @@
             "year": "2022"
           },
           {
-            "title": "PELATIHAN OPTIMALISASI PEMASARAN DIGITAL PADA BATIK SHAHO DAN KOMUNITAS BATIK TIGA ZAMAN BALIKPAPAN",
+            "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS",
             "author": "I Putu Deny Arthawan Sugih Prabowo",
             "prodi": "Sistem Informasi",
             "type": "Pengabdian",
             "year": "2025"
           },
           {
-            "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS",
+            "title": "PELATIHAN OPTIMALISASI PEMASARAN DIGITAL PADA BATIK SHAHO DAN KOMUNITAS BATIK TIGA ZAMAN BALIKPAPAN",
             "author": "I Putu Deny Arthawan Sugih Prabowo",
             "prodi": "Sistem Informasi",
             "type": "Pengabdian",
@@ -1283,7 +1553,7 @@
             "year": "2022"
           }
         ],
-        "count": 9,
+        "count": 10,
         "prodis": [
           "Sistem Informasi"
         ],
@@ -1293,7 +1563,8 @@
           "I Putu Deny Arthawan Sugih Prabowo",
           "M. Ihsan Alfani Putera",
           "Nursanti Novi Arisa",
-          "Sri Rahayu Natasia"
+          "Sri Rahayu Natasia",
+          "Vika Fitratunnany Insanittaqwa"
         ],
         "isCrossProdi": true,
         "collaborationPotential": "high",
@@ -1404,11 +1675,25 @@
             "year": "2024"
           },
           {
+            "title": "OPTIMALISASI KAWASAN KELOMPOK TANI HARAPAN SEJAHTERA MELALUI SISTEM INFORMASI TERPADU BERBASIS WEBSITE DAN LABEL TANAMAN BERBASIS QR CODE",
+            "author": "Arif Wicaksono Septyanto",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
+          {
             "title": "Optimalisasi Sistem Irigasi Berbasis Rainwater Harvesting (RWH) dan Pemanfaatan Limbah Pertanian sebagai Pupuk Organik Cair (POC) untuk Meningkatkan Produktivitas Perkebunan Berkelanjutan di Kelompok Tani Harapan Sejahtera",
             "author": "Arif Wicaksono Septyanto",
             "prodi": "Sistem Informasi",
             "type": "Pengabdian",
             "year": "2025"
+          },
+          {
+            "title": "PENINGKATAN PRODUKTIVITAS KELOMPOK WANITA TANI KM 21 BALIKPAPAN MELALUI INOVASI PRODUK DAN PENGUAT BRANDING BERBASIS DESAIN KEMASAN",
+            "author": "Dwi Nur Amalia",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
           },
           {
             "title": "STRATEGI PENINGKATAN PRODUKSI DENGAN PENAMBAHAN MEDIA TANAM HIDROPONIK DAN PERANCANGAN WEBSITE COMPANY PROFILE KELOMPOK WANITA TANI RT 28 SEPINGGAN RAYA BALIKPAPAN",
@@ -1425,6 +1710,20 @@
             "year": "2025"
           },
           {
+            "title": "OPTIMALISASI PENGOLAHAN PRODUK KERIPIK BUAH MELALUI EVALUASI PRODUKSI DAN STRATEGI PEMASARAN BERBASIS DIGITAL PADA KELOMPOK TANI KM 24 BALIKPAPAN UTARA",
+            "author": "M. Ihsan Alfani Putera",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
+          {
+            "title": "OPTIMALISASI PENGOLAHAN PRODUK KERIPIK BUAH MELALUI EVALUASI PRODUKSI DAN STRATEGI PEMASARAN BERBASIS DIGITAL PADA KELOMPOK TANI KM 24 BALIKPAPAN UTARA",
+            "author": "Nursanti Novi Arisa",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
+          {
             "title": "PEMBERDAYAAN MASYARAKAT BARU TENGAH MELALUI BUDIDAYA IKAN LELE DENGAN MENGUNAKAN TEKNIK BUDIKDAMBER",
             "author": "M. Gilvy Langgawan Putra",
             "prodi": "Sistem Informasi",
@@ -1432,7 +1731,7 @@
             "year": "2021"
           }
         ],
-        "count": 5,
+        "count": 9,
         "prodis": [
           "Sistem Informasi"
         ],
@@ -1441,6 +1740,8 @@
           "Dwi Arief Prambudi",
           "Dwi Nur Amalia",
           "M. Gilvy Langgawan Putra",
+          "M. Ihsan Alfani Putera",
+          "Nursanti Novi Arisa",
           "Yuyun Tri Wiranti"
         ],
         "isCrossProdi": false,
@@ -1535,6 +1836,13 @@
         "recommendation": "Tinjau ulang setelah jumlah karya meningkat — bisa jadi cluster baru muncul dari sini.",
         "items": [
           {
+            "title": "DIGITALISASI SISTEM PENDATAAN PEMBAYARAN GEDUNG SELURUH TENANT PLAZA KEBUN SAYUR BALIKPAPAN",
+            "author": "Aidil Saputra Kirsan",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
+          {
             "title": "PENGEMBANGAN DIGITAL BRANDING BERSAMA TANAMIN BUMI NUSANTARA MELALUI PEMANFAATAN TEKNOLOGI INFORMASI UNTUK KAMPANYE LINGKUNGAN",
             "author": "Arif Wicaksono Septyanto",
             "prodi": "Sistem Informasi",
@@ -1547,14 +1855,39 @@
             "prodi": "Sistem Informasi",
             "type": "Pengabdian",
             "year": "2025"
+          },
+          {
+            "title": "DIGITALISASI SISTEM PENDATAAN PEMBAYARAN GEDUNG SELURUH TENANT PLAZA KEBUN SAYUR BALIKPAPAN",
+            "author": "Hendy Indrawan Sunardi",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
+          {
+            "title": "PENGEMBANGAN WEBSITE DAN STRATEGI PROMOSI MEDIA SOSIAL UNTUK MENINGKATKAN VISIBILITAS DAN BRANDING PUPUK SEMOK",
+            "author": "Dwi Nur Amalia",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
+          },
+          {
+            "title": "DIGITALISASI SISTEM PENDATAAN PEMBAYARAN GEDUNG SELURUH TENANT PLAZA KEBUN SAYUR BALIKPAPAN",
+            "author": "Dwi Arief Prambudi",
+            "prodi": "Sistem Informasi",
+            "type": "Pengabdian",
+            "year": "2026"
           }
         ],
-        "count": 2,
+        "count": 6,
         "prodis": [
           "Sistem Informasi"
         ],
         "authors": [
+          "Aidil Saputra Kirsan",
           "Arif Wicaksono Septyanto",
+          "Dwi Arief Prambudi",
+          "Dwi Nur Amalia",
+          "Hendy Indrawan Sunardi",
           "Henokh Lugo Hariyanto"
         ],
         "isCrossProdi": false,
@@ -1568,32 +1901,32 @@
       "crossProdiCount": 1,
       "highPotentialCount": 1,
       "totalClusters": 9,
-      "totalItems": 86,
+      "totalItems": 110,
       "topClusters": [
         {
           "id": 0,
           "name": "Sistem Informasi Tata Kelola Kampus",
-          "count": 26
+          "count": 27
+        },
+        {
+          "id": 8,
+          "name": "Topik Beragam Lainnya",
+          "count": 20
         },
         {
           "id": 3,
           "name": "Pembelajaran Adaptif & AI Edukasi",
-          "count": 13
+          "count": 15
         },
         {
           "id": 2,
           "name": "Smart City & Pembangunan IKN",
-          "count": 12
+          "count": 14
         },
         {
           "id": 5,
           "name": "Algoritma AI/ML untuk Sains",
           "count": 12
-        },
-        {
-          "id": 1,
-          "name": "Smart Home & IoT Energi",
-          "count": 8
         }
       ]
     },
@@ -1601,32 +1934,32 @@
       "crossProdiCount": 3,
       "highPotentialCount": 3,
       "totalClusters": 9,
-      "totalItems": 62,
+      "totalItems": 82,
       "topClusters": [
         {
           "id": 2,
           "name": "Wisata Lokal & Branding Digital",
-          "count": 16
+          "count": 22
         },
         {
           "id": 0,
           "name": "Sekolah Cerdas & Edukasi Digital Anak",
-          "count": 9
+          "count": 12
         },
         {
           "id": 1,
           "name": "Bank Sampah & Pengelolaan Lingkungan Digital",
-          "count": 9
+          "count": 11
         },
         {
           "id": 3,
           "name": "UMKM & Pemasaran Digital",
-          "count": 9
+          "count": 10
         },
         {
-          "id": 4,
-          "name": "Smart RT & Layanan Pemukiman Digital",
-          "count": 8
+          "id": 5,
+          "name": "Pemberdayaan Pertanian & Akuaponik",
+          "count": 9
         }
       ]
     }
