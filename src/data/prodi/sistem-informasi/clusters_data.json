@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-29T16:47:53.684453",
+    "generatedAt": "2026-08-29T17:07:06.431235",
     "curatedBy": {
       "name": "Claude Opus 4.7",
       "provider": "Anthropic",
@@ -687,13 +687,6 @@
             "year": "2024"
           },
           {
-            "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
-            "author": "Arif Wicaksono Septyanto",
-            "prodi": "Sistem Informasi",
-            "type": "Penelitian",
-            "year": "2023"
-          },
-          {
             "title": "PENGEMBANGAN INVERSI BATIMETRI UNTUK ESTIMASI KEDALAMAN LAUT PERAIRAN MENGGUNAKAN ALGORITMA INTERPRETABLE DEEP LEARNING",
             "author": "Arif Wicaksono Septyanto",
             "prodi": "Sistem Informasi",
@@ -702,6 +695,13 @@
           },
           {
             "title": "SVM (SUPPORT VECTOR MACHINE) UNTUK KLASIFIKASI STATUS GIZI BALITA BERDASARKAN INDEKS ANTROPOMETRI",
+            "author": "Arif Wicaksono Septyanto",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2023"
+          },
+          {
+            "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
             "author": "Arif Wicaksono Septyanto",
             "prodi": "Sistem Informasi",
             "type": "Penelitian",
@@ -1011,6 +1011,13 @@
             "year": "2026"
           },
           {
+            "title": "SMART SHE CAMPUS: SISTEM PEMANTAUAN KESELAMATAN BERKENDARA CIVITAS AKADEMIKA BERBASIS IOT",
+            "author": "Rosa Eliviani",
+            "prodi": "Sistem Informasi",
+            "type": "Penelitian",
+            "year": "2026"
+          },
+          {
             "title": "PENYUSUNAN MANAJEMEN RISIKO TEKNOLOGI INFORMASI PADA SEKOLAH ISLAM TERPADU ISTIQAMAH YPAIT BALIKPAPAN BERDASARKAN ISO 31000:2018",
             "author": "Rosa Eliviani",
             "prodi": "Sistem Informasi",
@@ -1019,13 +1026,6 @@
           },
           {
             "title": "RANCANG BANGUN SISTEM INFORMASI PROFIL FAKULTAS SAINS DAN TEKNOLOGI INFORMASI INSTITUT TEKNOLOGI KALIMANTAN BERBASIS WEBSITE MENGGUNAKAN METODE PROTOTYPING",
-            "author": "Rosa Eliviani",
-            "prodi": "Sistem Informasi",
-            "type": "Penelitian",
-            "year": "2026"
-          },
-          {
-            "title": "SMART SHE CAMPUS: SISTEM PEMANTAUAN KESELAMATAN BERKENDARA CIVITAS AKADEMIKA BERBASIS IOT",
             "author": "Rosa Eliviani",
             "prodi": "Sistem Informasi",
             "type": "Penelitian",

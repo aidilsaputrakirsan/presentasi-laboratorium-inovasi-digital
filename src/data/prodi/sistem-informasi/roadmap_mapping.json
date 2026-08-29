@@ -1,0 +1,1287 @@
+{
+  "metadata": {
+    "generatedAt": "2026-08-29T17:07:07.892677",
+    "prodi": "Sistem Informasi",
+    "source": "sinta_data.json",
+    "sourceGeneratedAt": "2026-08-29T17:04:12.248916",
+    "reference": "Roadmap Penelitian, PkM, dan Renstra FSTI ITK 2025-2029",
+    "description": "Pemetaan judul penelitian prodi terhadap 4 Pilar Strategis Roadmap FSTI"
+  },
+  "pillars": {
+    "P1": {
+      "name": "Smart Governance dan Transformasi Digital Perkotaan",
+      "flagship": "GovTech Nusantara",
+      "siRole": "Merancang enterprise architecture dan memodelkan integrasi layanan e-Government agar ramah pengguna (user-centric)"
+    },
+    "P2": {
+      "name": "Smart Education (Edukasi Cerdas dan Inklusif)",
+      "flagship": "AI-based Learning Management System",
+      "siRole": "Rekayasa perangkat lunak sistem informasi akademik dan media pembelajaran adaptif/inklusif"
+    },
+    "P3": {
+      "name": "Smart Living dan Lingkungan Kesehatan Cerdas",
+      "flagship": "Bio-Smart Living System",
+      "siRole": "Platform informasi layanan kesehatan, analitik data lingkungan, dan sistem pemantauan berbasis IoT"
+    },
+    "P4": {
+      "name": "Smart Grid, Energi Cerdas, dan Mobilitas Berkelanjutan",
+      "flagship": "Microgrid & EV Charging",
+      "siRole": "Sistem monitoring dan visualisasi data energi serta antarmuka pengguna aplikasi energi"
+    }
+  },
+  "summary": {
+    "totalUniqueResearch": 73,
+    "mapped": 71,
+    "unmapped": 2,
+    "perPillar": {
+      "P1": 34,
+      "P2": 18,
+      "P3": 15,
+      "P4": 4
+    },
+    "coveragePercent": 97.3
+  },
+  "items": [
+    {
+      "title": "RANCANG BANGUN SISTEM INFORMASI PROFIL FAKULTAS SAINS DAN TEKNOLOGI INFORMASI INSTITUT TEKNOLOGI KALIMANTAN BERBASIS WEBSITE MENGGUNAKAN METODE PROTOTYPING",
+      "year": "2026",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "HIBAH INTERNAL ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 20000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Aidil Saputra Kirsan",
+        "Rosa Eliviani"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 3
+      }
+    },
+    {
+      "title": "PENYUSUNAN MANAJEMEN RISIKO TEKNOLOGI INFORMASI PADA SEKOLAH ISLAM TERPADU ISTIQAMAH YPAIT BALIKPAPAN BERDASARKAN ISO 31000:2018",
+      "year": "2026",
+      "leader": "Rosa Eliviani",
+      "grantType": "HIBAH INTERNAL ( RDP )",
+      "grantCategory": "RDP",
+      "fundingAmount": 20000000,
+      "lecturers": [
+        "Hendy Indrawan Sunardi",
+        "Rosa Eliviani"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [
+        "P2"
+      ],
+      "matchScore": {
+        "P1": 6,
+        "P2": 3
+      }
+    },
+    {
+      "title": "IMPLEMENTASI BUSINESS PROCESS IMPROVEMENT UNTUK REDESAIN PROSES BISNIS DALAM TRANSFORMASI WEB KE MOBILE EMPLOYEE INFORMATION SYSTEM",
+      "year": "2026",
+      "leader": "Dwi Nur Amalia",
+      "grantType": "HIBAH INTERNAL ( RKDN )",
+      "grantCategory": "RKDN",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Dwi Nur Amalia",
+        "Sri Rahayu Natasia"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 8
+      }
+    },
+    {
+      "title": "KRIPTOSISTEM CITRA GRAYSCALE HIBRIDA BERBASIS PERMUTASI CHAOS DAN DIFUSI MATRIKS PADA GELANGGANG Z/256Z UNTUK KEAMANAN DATA VISUAL",
+      "year": "2026",
+      "leader": "Yanuar Bhakti Wira Tama",
+      "grantType": "HIBAH INTERNAL ( RKDN )",
+      "grantCategory": "RKDN",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 6
+      }
+    },
+    {
+      "title": "IMPLEMENTASI KNOWLEDGE MANAGEMENT SYSTEM (KMS) BERBASIS AI UNTUK PELAYANAN PERIZINAN PADA DPMPTSP KOTA BALIKPAPAN DENGAN METODE PERSONAL EXTREME PROGRAMMING",
+      "year": "2026",
+      "leader": "M. Ihsan Alfani Putera",
+      "grantType": "HIBAH INTERNAL ( RH )",
+      "grantCategory": "RH",
+      "fundingAmount": 30000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 7
+      }
+    },
+    {
+      "title": "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS) MELALUI IMPLEMENTASI OTOMASI APPROVAL WORKFLOW",
+      "year": "2026",
+      "leader": "Nur Fajri Azhar",
+      "grantType": "HIBAH INTERNAL ( RI )",
+      "grantCategory": "RI",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 6
+      }
+    },
+    {
+      "title": "MODEL AI-BASED SMART CULTURAL FESTIVAL DASHBOARD DALAM MENDUKUNG SMART CULTURAL TOURISM PADA FESTIVAL ERAU TENGGARONG",
+      "year": "2026",
+      "leader": "Olivia Febrianty Ngabito",
+      "grantType": "HIBAH INTERNAL ( RI )",
+      "grantCategory": "RI",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Nursanti Novi Arisa"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 2
+      }
+    },
+    {
+      "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
+      "year": "2025",
+      "leader": "Vika Fitratunnany Insanittaqwa",
+      "grantType": "Penelitian Internal ( RKDN )",
+      "grantCategory": "RKDN",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Vika Fitratunnany Insanittaqwa",
+        "Dwi Nur Amalia"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 3
+      }
+    },
+    {
+      "title": "IMPLEMENTASI METODE SCRUMBAN UNTUK PERANCANGAN ULANG SISTEM INFORMASI DAN MANAJEMEN LABORATORIUM (SIMLAB) INSTITUT TEKNOLOGI KALIMANTAN",
+      "year": "2025",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "Penelitian Internal ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 17000000,
+      "lecturers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 3
+      }
+    },
+    {
+      "title": "RANCANG BANGUN TRANSPARANSI PENGGUNAAN DANA TJSLP (TANGGUNG JAWAB SOSIAL DAN LINGKUNGAN PERUSAHAAN) DALAM MENDUKUNG SMART CITY MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
+      "year": "2025",
+      "leader": "Henokh Lugo Hariyanto",
+      "grantType": "Penelitian Internal ( RH )",
+      "grantCategory": "RH",
+      "fundingAmount": 27000000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto",
+        "Sri Rahayu Natasia"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 8
+      }
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM INFORMASI PUSAT LAYANAN HUKUM SEBAGAI JARINGAN DOKUMENTASI DAN INFORMASI HUKUM ITK",
+      "year": "2025",
+      "leader": "Dwi Nur Amalia PENILAIAN INTERNAL ( RKS )",
+      "grantType": "PENILAIAN INTERNAL ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 17000000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa",
+        "Dwi Nur Amalia"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 3
+      }
+    },
+    {
+      "title": "VISUALISASI DARI KLASTERISASI PENGELOMPOKAN DAERAH BERDASARKAN TINGKAT PENDAPATAN PAJAK DAERAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER LANJUTAN",
+      "year": "2025",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "Penelitian Internal ( RPI )",
+      "grantCategory": "RPI",
+      "fundingAmount": 23000000,
+      "lecturers": [
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 4
+      }
+    },
+    {
+      "title": "PENYUSUNAN JUSTIFIKASI TEKNIS DAN DISASTER RECOVERY PLAN UNTUK PENGEMBANGAN DATA CENTER UPA TIK ITK",
+      "year": "2025",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo PENELITIAN INTERNAL ( RKS )",
+      "grantType": "PENELITIAN INTERNAL ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 17000000,
+      "lecturers": [
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 9
+      }
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) INSTITUT TEKNOLOGI KALIMANTAN",
+      "year": "2025",
+      "leader": "Nur Fajri Azhar PENELITIAN INTERNAL ( RKS )",
+      "grantType": "PENELITIAN INTERNAL ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 17000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 4
+      }
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM INFORMASI PELAYANAN ADMINISTRASI PADA UNIT LAYANAN TERPADU INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE WATERFALL",
+      "year": "2024",
+      "leader": "Sri Rahayu Natasia",
+      "grantType": "HIBAH INTERNAL ( RKST )",
+      "grantCategory": "RKST",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Arif Wicaksono Septyanto",
+        "Sri Rahayu Natasia"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 6
+      }
+    },
+    {
+      "title": "PENGEMBANGAN SILURAH: SISTEM INFORMASI KELURAHAN MENGGUNAKAN METODE AGILE",
+      "year": "2024",
+      "leader": "Yuyun Tri Wiranti",
+      "grantType": "HIBAH INTERNAL ( RKDN )",
+      "grantCategory": "RKDN",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Henokh Lugo Hariyanto"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 4
+      }
+    },
+    {
+      "title": "REKAYASA KESELAMATAN DALAM PENYUSUNAN DOKUMEN JUSTIFIKASI TEKNIS UNTUK PENGEMBANGAN DATA CENTER DI BANK PEMBANGUNAN DAERAH PROVINSI XYZ",
+      "year": "2024",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo",
+      "grantType": "HIBAH INTERNAL ( RKDN )",
+      "grantCategory": "RKDN",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [
+        "P3"
+      ],
+      "matchScore": {
+        "P1": 6,
+        "P3": 3
+      }
+    },
+    {
+      "title": "RANCANG BANGUN SISTEM INFORMASI PENDAFTARAN SANTRI BARU BERBASIS WEB MENGGUNAKAN METODE RAPID APPLICATION DEVELOPMENT (RAD)",
+      "year": "2024",
+      "leader": "Mohammad Reza Fahlevi PROGRAM PENELITIAN MANDIRI ( PENELITIAN MANDIRI )",
+      "grantType": "PROGRAM PENELITIAN MANDIRI ( PENELITIAN MANDIRI )",
+      "grantCategory": "PENELITIAN MANDIRI",
+      "fundingAmount": 1000000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 3
+      }
+    },
+    {
+      "title": "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) UNTUK MENINGKATKAN PELAYANAN KEPADA SETIAP UNIT DI INSTITUT TEKNOLOGI KALIMANTAN",
+      "year": "2024",
+      "leader": "Nur Fajri Azhar",
+      "grantType": "HIBAH INTERNAL ( RKST )",
+      "grantCategory": "RKST",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 4
+      }
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM PELAYANAN SATU PINTU SEBAGAI SISTEM LAYANAN MASYARAKAT MENGGUNAKAN METODE ICONIX PROCESS",
+      "year": "2024",
+      "leader": "M. Ihsan Alfani Putera",
+      "grantType": "HIBAH INTERNAL ( RHI )",
+      "grantCategory": "RHI",
+      "fundingAmount": 30000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 7
+      }
+    },
+    {
+      "title": "ANALISIS ADOPSI PENGGUNAAN E-COMMERCE BERDASARKAN TECHNOLOGY, ORGANIZATION, DAN ENVIRONTMENT (TOE) PADA UMKM DI BALIKPAPAN",
+      "year": "2023",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo",
+      "grantType": "HIBAH ITK ( PKLK )",
+      "grantCategory": "PKLK",
+      "fundingAmount": 14650000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo",
+        "Nursanti Novi Arisa"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 4
+      }
+    },
+    {
+      "title": "IMPLEMENTASI LIVABLE HOME APPLICATION SEBAGAI SISTEM LAYANAN MASYARAKAT MENGGUNAKAN METODE WATERFALL",
+      "year": "2023",
+      "leader": "M. Ihsan Alfani Putera",
+      "grantType": "HIBAH ITK ( PAI )",
+      "grantCategory": "PAI",
+      "fundingAmount": 30000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [
+        "P3"
+      ],
+      "matchScore": {
+        "P1": 4,
+        "P3": 3
+      }
+    },
+    {
+      "title": "PERBANDINGAN WATERFALL, EXTREME PROGRAMMING DAN ICONIX DALAM PENGEMBANGAN SISTEM INFORMASI COMPANY PROFILE PEMERINTAHAN PADA WILAYAH IBU KOTA NEGARA BARU",
+      "year": "2022",
+      "leader": "M. Ihsan Alfani Putera",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PUFR )",
+      "grantCategory": "PUFR",
+      "fundingAmount": 40000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 10
+      }
+    },
+    {
+      "title": "ANALISIS PENGUKURAN E-READINESS TEKNOLOGI INFORMASI PADA KOTA PENYANGGA IBU KOTA NEGARA BARU INDONESIA",
+      "year": "2022",
+      "leader": "Sri Rahayu Natasia",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PSDK )",
+      "grantCategory": "PSDK",
+      "fundingAmount": 24550000,
+      "lecturers": [
+        "Sri Rahayu Natasia"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 4
+      }
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM INFORMASI PARIWISATA BERBASIS WEBSITE PADA DINAS PEMUDA, OLAHRAGA, DAN PARIWISATA KOTA BONTANG MENGGUNAKAN METODE SCRUM",
+      "year": "2022",
+      "leader": "Sri Rahayu Natasia MANDIRI ( PMK )",
+      "grantType": "MANDIRI ( PMK )",
+      "grantCategory": "PMK",
+      "fundingAmount": 2750000,
+      "lecturers": [
+        "Sri Rahayu Natasia"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 3
+      }
+    },
+    {
+      "title": "PERANCANGAN DESIGN UI/UX PADA BIDANG FINANCIAL TECHNOLOGY DALAM PENGEMBANGAN SMART ECONOMY MENGGUNAKAN METODE DESIGN THINKING",
+      "year": "2022",
+      "leader": "Nursanti Novi  Arisa",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PDB )",
+      "grantCategory": "PDB",
+      "fundingAmount": 15000000,
+      "lecturers": [
+        "Nursanti Novi Arisa"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 5
+      }
+    },
+    {
+      "title": "COMPETITIVE RESEARCH TERHADAP E-COMMERCE EKSISTING UNTUK REKOMENDASI DESAIN APLIKASI E-COMMERCE UMKM BALIKPAPAN",
+      "year": "2021",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN SUMBER DAYA KALIMANTAN (PSDK) )",
+      "grantCategory": "PENELITIAN SUMBER DAYA KALIMANTAN (PSDK",
+      "fundingAmount": 9170000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 4
+      }
+    },
+    {
+      "title": "ANALISIS FAKTOR YANG MEMENGARUHI CONTINUANCE INTENTION PADA PENGGUNAAN MOBILE PAYMENT DENGAN MENGGUNAKAN STRUCTURAL EQUATION MODELING",
+      "year": "2021",
+      "leader": "Sri Rahayu Natasia",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN SUMBER DAYA KALIMANTAN (PSDK) )",
+      "grantCategory": "PENELITIAN SUMBER DAYA KALIMANTAN (PSDK",
+      "fundingAmount": 19250000,
+      "lecturers": [
+        "Sri Rahayu Natasia"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 2
+      }
+    },
+    {
+      "title": "PERANCANGAN ARSITEKTUR SISTEM INFORMASI UNTUK INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN TOGAF (THE OPEN GROUP ARCHITECTURE FRAMEWORK)",
+      "year": "2020",
+      "leader": "Yuyun Tri Wiranti",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( KEBIJAKAN STRATEGIS )",
+      "grantCategory": "KEBIJAKAN STRATEGIS",
+      "fundingAmount": 8000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 6
+      }
+    },
+    {
+      "title": "PERANCANGAN TATA KELOLA TEKNOLOGI INFORMASI INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN COBIT (CONTROL OBJECTIVE INFORMATION TECHNOLOGY)",
+      "year": "2020",
+      "leader": "Lovinta Happy Atrinawati",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( KEBIJAKAN STRATEGIS )",
+      "grantCategory": "KEBIJAKAN STRATEGIS",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Lovinta Happy Atrinawati"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 6
+      }
+    },
+    {
+      "title": "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) INSTITUT TEKNOLOGI KALIMANTAN",
+      "year": "2020",
+      "leader": "Sri Rahayu Natasia",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( KEBIJAKAN STRATEGIS )",
+      "grantCategory": "KEBIJAKAN STRATEGIS",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Sri Rahayu Natasia"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 4
+      }
+    },
+    {
+      "title": "Perancangan Arsitektur Sistem dan Teknologi Informasi Perguruan Tinggi di Balikpapan menggunakan TOGAF (The Open Group Architecture Framework)",
+      "year": "2019",
+      "leader": "Yuyun Tri Wiranti",
+      "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+      "grantCategory": "PDP/Dosen Pemula",
+      "fundingAmount": 16950000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Lovinta Happy Atrinawati"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 6
+      }
+    },
+    {
+      "title": "Perancangan Arsitektur Sistem dan Teknologi Informasi untuk Organisasi Perangkat Daerah (OPD) Pemerintah Kota Balikpapan menggunakan TOGAF (The Open Group Architecture Framework)",
+      "year": "2019",
+      "leader": "Lovinta Happy Atrinawati",
+      "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+      "grantCategory": "PDP/Dosen Pemula",
+      "fundingAmount": 16185000,
+      "lecturers": [
+        "Lovinta Happy Atrinawati"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 9
+      }
+    },
+    {
+      "title": "PEMBANGUNAN SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (STUDI KASUS: INSTITUT TEKNOLOGI KALIMANTAN)",
+      "year": "2019",
+      "leader": "Sri Rahayu Natasia",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PSU )",
+      "grantCategory": "PSU",
+      "fundingAmount": 20070000,
+      "lecturers": [
+        "Sri Rahayu Natasia"
+      ],
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 2
+      }
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM INFORMASI COURSE UNTUK PENINGKATAN KAPASITAS DAN KETERAMPILAN MASYARAKAT BALIKPAPAN MENGGUNAKAN METODE WATERFALL",
+      "year": "2026",
+      "leader": "Henokh Lugo Hariyanto",
+      "grantType": "HIBAH INTERNAL ( RH )",
+      "grantCategory": "RH",
+      "fundingAmount": 30000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 3,
+        "P1": 1
+      }
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM SMART LIBRARY BERBASIS RFID TERINTEGRASI CLOUD SEBAGAI PLATFORM MANAJEMEN DIGITAL PERPUSTAKAAN ITK",
+      "year": "2026",
+      "leader": "Adi Mahmud Jaya Marindra",
+      "grantType": "HIBAH INTERNAL ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 20000000,
+      "lecturers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 6
+      }
+    },
+    {
+      "title": "PERANCANGAN UI/UX MEDIA VISUAL BERBASIS DIGITAL DENGAN PENDEKATAN DISCRETE TRIAL TRAINING UNTUK ANAK DENGAN GANGGUAN BAHASA",
+      "year": "2026",
+      "leader": "Nursanti Novi  Arisa",
+      "grantType": "HIBAH INTERNAL ( RI )",
+      "grantCategory": "RI",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa",
+        "Nursanti Novi Arisa"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 3,
+        "P1": 1
+      }
+    },
+    {
+      "title": "KEBUN RAYA BALIKPAPAN DIGITAL LAB: PERANCANGAN DIGITAL TWIN HERBARIUM BUAH ENDEMIK KALIMANTAN TIMUR BERBASIS PHOTOGRAMMETRY 360 DERAJAT SEBAGAI ASET MEDIA PEMBELAJARAN",
+      "year": "2026",
+      "leader": "Fulkha Tajri M",
+      "grantType": "HIBAH INTERNAL ( RI )",
+      "grantCategory": "RI",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Rosa Eliviani"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 9
+      }
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM INFORMASI MANAJEMEN TUGAS AKHIR PADA JURUSAN TEKNIK ELEKTRO, INFORMATIKA, DAN BISNIS INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING (PXP)",
+      "year": "2025",
+      "leader": "Sri Rahayu Natasia",
+      "grantType": "Penelitian Internal ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 17000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Aidil Saputra Kirsan",
+        "Sri Rahayu Natasia"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 3,
+        "P1": 1
+      }
+    },
+    {
+      "title": "PERANCANGAN SISTEM MEDIA PEMBELAJARAN BERBASIS AI DAN ADAPTIVE LEARNING DENGAN KONSEP HEALING TECHNOLOGY PADA PESERTA DIDIK DISABILITAS",
+      "year": "2025",
+      "leader": "M. Ihsan Alfani Putera PENELITIAN INTERNAL ( RDP )",
+      "grantType": "PENELITIAN INTERNAL ( RDP )",
+      "grantCategory": "RDP",
+      "fundingAmount": 17000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera",
+        "Nursanti Novi Arisa"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 15
+      }
+    },
+    {
+      "title": "IMPLEMENTASI METAVERSE PADA PENGENALAN LAB TERPADU KAMPUS INSTITUT TEKNOLOGI KALIMANTAN (ITK)",
+      "year": "2024",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "HIBAH INTERNAL ( RKST )",
+      "grantCategory": "RKST",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Aidil Saputra Kirsan",
+        "Sri Rahayu Natasia"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 3
+      }
+    },
+    {
+      "title": "PEMBANGUNAN SMART-SCHOOL SYSTEM PADA LINGKUNGAN PEDESAAN DI WILAYAH IKN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
+      "year": "2024",
+      "leader": "Nursanti Novi  Arisa",
+      "grantType": "HIBAH INTERNAL ( RHI )",
+      "grantCategory": "RHI",
+      "fundingAmount": 30000000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa",
+        "Nursanti Novi Arisa"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [
+        "P1"
+      ],
+      "matchScore": {
+        "P2": 3,
+        "P1": 2
+      }
+    },
+    {
+      "title": "RANCANG BANGUN SISTEM INFORMASI PENJADWALAN SEBAGAI UPAYA OPTIMALISASI PENJADWALAN PEMBELAJARAN",
+      "year": "2023",
+      "leader": "Yuyun Tri Wiranti",
+      "grantType": "HIBAH ITK ( PPI )",
+      "grantCategory": "PPI",
+      "fundingAmount": 16000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 6
+      }
+    },
+    {
+      "title": "PENINGKATAN EFISIENSI DAN EFEKTIVITAS PROSES BELAJAR MENGAJAR DENGAN PEMANFAATAN TEKNOLOGI IOT PADA SISTEM BEL SEKOLAH PINTAR",
+      "year": "2023",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "HIBAH ITK ( PAI )",
+      "grantCategory": "PAI",
+      "fundingAmount": 29280000,
+      "lecturers": [
+        "Aidil Saputra Kirsan",
+        "Sri Rahayu Natasia"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 9,
+        "P3": 1
+      }
+    },
+    {
+      "title": "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL",
+      "year": "2023",
+      "leader": "Nursanti Novi  Arisa",
+      "grantType": "HIBAH ITK ( PPI )",
+      "grantCategory": "PPI",
+      "fundingAmount": 19520000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa",
+        "M. Ihsan Alfani Putera",
+        "Nursanti Novi Arisa"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [
+        "P1"
+      ],
+      "matchScore": {
+        "P2": 6,
+        "P1": 2
+      }
+    },
+    {
+      "title": "LEAN VS AGILE: EFISIENSI METODE UNTUK SISTEM INFORMASI SEKOLAH CERDAS DI BALIKPAPAN",
+      "year": "2022",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PDB )",
+      "grantCategory": "PDB",
+      "fundingAmount": 14200000,
+      "lecturers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 3,
+        "P1": 1
+      }
+    },
+    {
+      "title": "ANALISIS PENGARUH PENGALAMAN MENGGUNAKAN E-LEARNING SEBELUM COVID-19 DAN KARAKTERISTIK INSTRUKTUR KELAS TERHADAP NIAT PERILAKU MAHASISWA DALAM PEMBELAJARAN MELALUI E-LEARNING BERDASARKAN TECHNOLOGY ACCEPTANCE MODEL",
+      "year": "2022",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo MANDIRI ( PMK )",
+      "grantType": "MANDIRI ( PMK )",
+      "grantCategory": "PMK",
+      "fundingAmount": 3521400,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 6
+      }
+    },
+    {
+      "title": "IMPLEMENTASI SIAKAD BERBASIS WEBSITE DAN ANDROID MENGGUNAKAN FRAMEWORK CODEIGNITER DAN RESTFUL API UNTUK MENDUKUNG EKOSISTEM PENDIDIKAN DI SEKOLAH ISLAM BALIKPAPAN",
+      "year": "2021",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN DOSEN BSARU (PDB) )",
+      "grantCategory": "PENELITIAN DOSEN BSARU (PDB",
+      "fundingAmount": 14450000,
+      "lecturers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 6
+      }
+    },
+    {
+      "title": "PENGEMBANGAN SIMSIS SEBAGAI SISTEM SMART CITY RANAH PENDIDIKAN UNTUK MENUNJANG PROSES PEMBELAJARAN",
+      "year": "2021",
+      "leader": "Vika Fitratunnany Insanittaqwa",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN DOSEN BSARU (PDB) )",
+      "grantCategory": "PENELITIAN DOSEN BSARU (PDB",
+      "fundingAmount": 14600000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 6,
+        "P1": 1
+      }
+    },
+    {
+      "title": "ANALISIS PENERIMAAN LEARNING MANAGEMENT SYSTEM PADA KULIAH.ITK.AC.ID MENGGUNAKAN PENDEKATAN TECHNOLOGY ACCEPTANCE MODEL (TAM)",
+      "year": "2021",
+      "leader": "Dwi Nur Amalia",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN DOSEN BSARU (PDB) )",
+      "grantCategory": "PENELITIAN DOSEN BSARU (PDB",
+      "fundingAmount": 14750000,
+      "lecturers": [
+        "Dwi Nur Amalia"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 3
+      }
+    },
+    {
+      "title": "MEDIA PEMBELAJARAN DENGAN METODE GAMIFICATION UNTUK PENDIDIKAN FORMAL DAN NON FORMAL DI KALIMANTAN ERA COVID-19",
+      "year": "2021",
+      "leader": "M. Gilvy Langgawan Putra",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN SUMBER DAYA KALIMANTAN (PSDK) )",
+      "grantCategory": "PENELITIAN SUMBER DAYA KALIMANTAN (PSDK",
+      "fundingAmount": 19900000,
+      "lecturers": [
+        "M. Gilvy Langgawan Putra"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 9
+      }
+    },
+    {
+      "title": "Analisis Keterhubungan Prestasi Akademik dan Kesehatan Mental Mahasiswa Menggunakan Metode Data Mining Sebagai Upaya Peningkatan Kualitas Peserta Didik di Perguruan Tinggi Negeri di Kalimantan",
+      "year": "2019",
+      "leader": "Soleh Ardiansyah",
+      "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+      "grantCategory": "PDP/Dosen Pemula",
+      "fundingAmount": 19995000,
+      "lecturers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "pillar": "P2",
+      "supportingPillars": [
+        "P3"
+      ],
+      "matchScore": {
+        "P2": 6,
+        "P3": 6
+      }
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM INFORMASI KLINIK KAMPUS BERBASIS WEB UNTUK MENINGKATKAN EFEKTIVITAS PELAYANAN KESEHATAN DI INSTITUT TEKNOLOGI KALIMANTAN",
+      "year": "2026",
+      "leader": "Hendy Indrawan Sunardi",
+      "grantType": "HIBAH INTERNAL ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 20000000,
+      "lecturers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 6
+      }
+    },
+    {
+      "title": "VISUALISASI DARI KLASTERISASI DAN PERAMALAN KUALITAS UDARA KOTA SAMARINDA MENGGUNAKAN METODE KLASTERISASI OBJEK BACKPROPAGATION DAN PERAMALAN ARTIFICIAL NEURAL NETWORK",
+      "year": "2026",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "HIBAH INTERNAL ( RPI )",
+      "grantCategory": "RPI",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 3
+      }
+    },
+    {
+      "title": "INOVASI SISTEM PENGELOLAAN SAMPAH MELALUI OPTIMALISASI TEKNIS OPERASIONAL DAN PERANCANGAN TPS 3R DI RUMAH SAKIT RESTU IBU BALIKPAPAN",
+      "year": "2026",
+      "leader": "Nia Febrianti",
+      "grantType": "HIBAH INTERNAL ( RI )",
+      "grantCategory": "RI",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 6
+      }
+    },
+    {
+      "title": "SMART SHE CAMPUS: SISTEM PEMANTAUAN KESELAMATAN BERKENDARA CIVITAS AKADEMIKA BERBASIS IOT",
+      "year": "2026",
+      "leader": "Anisa Novi Andriani",
+      "grantType": "HIBAH INTERNAL ( RDP )",
+      "grantCategory": "RDP",
+      "fundingAmount": 20000000,
+      "lecturers": [
+        "Rosa Eliviani"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [
+        "P2"
+      ],
+      "matchScore": {
+        "P2": 3,
+        "P3": 4
+      }
+    },
+    {
+      "title": "INOVASI PENGOLAHAN LIMBAH BAGLOG JAMUR TIRAM MENJADI KOMPOS DENGAN MOL NASI BASI SEBAGAI BIOAKTIVATOR",
+      "year": "2025",
+      "leader": "Nia Febrianti",
+      "grantType": "Penelitian Internal ( RI )",
+      "grantCategory": "RI",
+      "fundingAmount": 23000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 6
+      }
+    },
+    {
+      "title": "PENERAPAN LOGIKA FUZZY UNTUK MENENTUKAN DURASI ISTIRAHAT OPTIMAL BERBASIS TINGKAT KEBISINGAN DAN LAMA PAPARAN DI INDUSTRI",
+      "year": "2025",
+      "leader": "Muchammad Chandra Cahyo Utomo",
+      "grantType": "Penelitian Internal ( RKDN )",
+      "grantCategory": "RKDN",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 3
+      }
+    },
+    {
+      "title": "VISUALISASI DARI KLASTERISASI DAN ESTIMASI KETERSEDIAAN LAHAN PEMBUANGAN SAMPAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER DAN UJI REGRESI LANJUTAN",
+      "year": "2024",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "HIBAH INTERNAL ( RPIKN )",
+      "grantCategory": "RPIKN",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 3,
+        "P1": 1
+      }
+    },
+    {
+      "title": "Monitoring Dan Forecasting Ketercukupan Tempat Pembuangan Akhir Di Kota Balikpapan Sebagai Penyangga IKN Dengan Metode Regresi Lanjutan Berbasis Website",
+      "year": "2024",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+      "grantCategory": "PDP/Dosen Pemula",
+      "fundingAmount": 28700000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 4,
+        "P1": 1
+      }
+    },
+    {
+      "title": "RANCANG BANGUN SISTEM DETEKSI DINI KEBAKARAN DI RUMAH MENGGUNAKAN SMART HOME BERBASIS IOT",
+      "year": "2023",
+      "leader": "Hendy Indrawan Sunardi",
+      "grantType": "HIBAH ITK ( PPI )",
+      "grantCategory": "PPI",
+      "fundingAmount": 18500000,
+      "lecturers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 5
+      }
+    },
+    {
+      "title": "PENGEMBANGAN INVERSI BATIMETRI UNTUK ESTIMASI KEDALAMAN LAUT PERAIRAN MENGGUNAKAN ALGORITMA INTERPRETABLE DEEP LEARNING",
+      "year": "2023",
+      "leader": "Henokh Lugo Hariyanto",
+      "grantType": "HIBAH ITK ( PDM )",
+      "grantCategory": "PDM",
+      "fundingAmount": 14963000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 3
+      }
+    },
+    {
+      "title": "SVM (SUPPORT VECTOR MACHINE) UNTUK KLASIFIKASI STATUS GIZI BALITA BERDASARKAN INDEKS ANTROPOMETRI",
+      "year": "2023",
+      "leader": "Arif Wicaksono Septyanto",
+      "grantType": "HIBAH ITK ( PDM )",
+      "grantCategory": "PDM",
+      "fundingAmount": 14950000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 6
+      }
+    },
+    {
+      "title": "VISUALISASI DARI KLASTERISASI DAN PERAMALAN KUALITAS UDARA KOTA BALIKPAPAN MENGGUNAKAN METODE KLASTERISASI OBJEK BACKPROPAGATION DAN PERAMALAN ARTIFICIAL NEURAL NETWORK",
+      "year": "2023",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "HIBAH ITK ( PPI )",
+      "grantCategory": "PPI",
+      "fundingAmount": 20000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 3
+      }
+    },
+    {
+      "title": "Fuzzy Logic Fog Clod Computing untuk Menganalisis Faktor Penyebab Kematian Ibu Meninggal Masa Postpartum",
+      "year": "2021",
+      "leader": "Arif Wicaksono Septyanto",
+      "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+      "grantCategory": "PDP/Dosen Pemula",
+      "fundingAmount": 19970000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 6
+      }
+    },
+    {
+      "title": "FUZZY RULE BASED-SYSTEM REKAM MEDIS TERKAIT STATUS GIZI BAYI INDEKS ANTROPOMETRI SELAMA POSTPARTUM",
+      "year": "2021",
+      "leader": "Arif Wicaksono Septyanto",
+      "grantType": "HIBAH PENDANAAN INTERNAL ( TERAPAN )",
+      "grantCategory": "TERAPAN",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 9
+      }
+    },
+    {
+      "title": "PENERAPAN ARTIFICIAL NEURAL NETWORK PADA PROTOTYPING SISTEM MONITORING KUALITAS AIR DI KOTA BALIKPAPAN UNTUK MENDUKUNG BALIKPAPAN SEBAGAI SMART CITY",
+      "year": "2021",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN DOSEN BSARU (PDB) )",
+      "grantCategory": "PENELITIAN DOSEN BSARU (PDB",
+      "fundingAmount": 15000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "pillar": "P3",
+      "supportingPillars": [
+        "P1"
+      ],
+      "matchScore": {
+        "P3": 4,
+        "P1": 2
+      }
+    },
+    {
+      "title": "OPTIMALISASI PENGELOLAAN SISTEM MONITORING DATA ENERGI LISTRIK PADA SMART HOME SYSTEM UNTUK SAKLAR LISTRIK MENGGUNAKAN METODE EXTREME PROGRAMMING",
+      "year": "2025",
+      "leader": "Hendy Indrawan Sunardi",
+      "grantType": "Penelitian Internal ( RPI )",
+      "grantCategory": "RPI",
+      "fundingAmount": 23000000,
+      "lecturers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "pillar": "P4",
+      "supportingPillars": [
+        "P3"
+      ],
+      "matchScore": {
+        "P4": 9,
+        "P3": 2,
+        "P1": 1
+      }
+    },
+    {
+      "title": "INOVASI PEMBUATAN PROTOTIPE TURBIN ANGIN SAVONIUS BERBAHAN PLA BERSTRUKTUR SANDWICH DENGAN METODE ADITIF MANUFAKTURING SEBAGAI SUMBER ENERGI HIJAU",
+      "year": "2025",
+      "leader": "Fikan Mubarok Rohimsyah PENELITIAN INTERNAL ( RH )",
+      "grantType": "PENELITIAN INTERNAL ( RH )",
+      "grantCategory": "RH",
+      "fundingAmount": 27000000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto",
+        "Nursanti Novi Arisa"
+      ],
+      "pillar": "P4",
+      "supportingPillars": [],
+      "matchScore": {
+        "P4": 6
+      }
+    },
+    {
+      "title": "SUSTAINABLE ELECTRICITY MONITORING VIA MOBILE APPLICATION IN DORMITORY AREAS",
+      "year": "2025",
+      "leader": "Arie Kusumawati",
+      "grantType": "HIBAH INTERNAL ( HIBAH INTERNAL PDP )",
+      "grantCategory": "HIBAH INTERNAL PDP",
+      "fundingAmount": 6632000,
+      "lecturers": [
+        "Rosa Eliviani"
+      ],
+      "pillar": "P4",
+      "supportingPillars": [],
+      "matchScore": {
+        "P4": 3,
+        "P3": 1
+      }
+    },
+    {
+      "title": "RANCANGAN DAN IMPLEMENTASI SMART HOME SYSTEM UNTUK PENGENDALIAN SAKELAR LISTRIK BERBASIS IOT",
+      "year": "2024",
+      "leader": "Hendy Maulana Jaya Saputra",
+      "grantType": "HIBAH INTERNAL ( RPIKN )",
+      "grantCategory": "RPIKN",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "pillar": "P4",
+      "supportingPillars": [
+        "P3"
+      ],
+      "matchScore": {
+        "P4": 3,
+        "P3": 2
+      }
+    },
+    {
+      "title": "Pengembangan Algoritma Metaheuristik Untuk Menyelesaikan Permasalahan Optimasi Kombinatorial",
+      "year": "2024",
+      "leader": "Arif Wicaksono Septyanto",
+      "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+      "grantCategory": "PDP/Dosen Pemula",
+      "fundingAmount": 34740000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "pillar": null,
+      "supportingPillars": [],
+      "matchScore": {}
+    },
+    {
+      "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
+      "year": "2023",
+      "leader": "Henokh Lugo Hariyanto",
+      "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+      "grantCategory": "PDP/Dosen Pemula",
+      "fundingAmount": 17900000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "pillar": null,
+      "supportingPillars": [],
+      "matchScore": {}
+    }
+  ]
+}

@@ -655,7 +655,7 @@ def parse_research_item(item):
 
         # Leader - contains "Leader :"
         if 'Leader :' in text or 'Leader:' in text:
-            leader_match = re.search(r'Leader\s*:\s*([^P]+?)(?:Penelitian|HIBAH|$)', text)
+            leader_match = re.search(r'Leader\s*:\s*(.+?)\s*(?:Penelitian|HIBAH|PKM|Personils|$)', text)
             if leader_match:
                 research['leader'] = leader_match.group(1).strip()
             else:
@@ -772,7 +772,7 @@ def parse_service_item(item):
 
         # Leader - contains "Leader :"
         if 'Leader :' in text or 'Leader:' in text:
-            leader_match = re.search(r'Leader\s*:\s*([^P]+?)(?:Pengabdian|HIBAH|PKM|$)', text)
+            leader_match = re.search(r'Leader\s*:\s*(.+?)\s*(?:Pengabdian|HIBAH|PKM|Personils|$)', text)
             if leader_match:
                 service['leader'] = leader_match.group(1).strip()
             else:
