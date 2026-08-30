@@ -194,6 +194,20 @@ def build(slug, ref, kind='research'):
 
     items.sort(key=lambda x: (x['pillar'] or 'ZZ', -int(x['year'] or 0)))
 
+    # Rekap per tahun - audit AMI berjalan per tahun, sehingga capaian tiap
+    # tahun harus dapat dibaca sendiri-sendiri, bukan hanya angka kumulatif.
+    per_year = {}
+    for it in items:
+        y = it.get('year') or 'tidak diketahui'
+        bucket = per_year.setdefault(y, {'total': 0, 'mapped': 0, 'perPillar': {}})
+        bucket['total'] += 1
+        if it['pillar']:
+            bucket['mapped'] += 1
+            bucket['perPillar'][it['pillar']] = bucket['perPillar'].get(it['pillar'], 0) + 1
+    for y, b in per_year.items():
+        b['coveragePercent'] = round(b['mapped'] / b['total'] * 100, 1) if b['total'] else 0
+    per_year = dict(sorted(per_year.items(), key=lambda kv: kv[0], reverse=True))
+
     # Rekap per level di atas kategori (tema / pusat penelitian), bila ada
     per_theme, per_center = {}, {}
     for code, cat in categories.items():
@@ -236,6 +250,7 @@ def build(slug, ref, kind='research'):
             'mapped': len(items) - len(unmapped),
             'unmapped': len(unmapped),
             'perPillar': counts,
+            'perYear': per_year,
             'perTheme': per_theme,
             'perCenter': per_center,
             'coveragePercent': round((len(items) - len(unmapped)) / len(items) * 100, 1) if items else 0,

@@ -39,21 +39,53 @@
         >{{ r.label }}</button>
       </div>
 
+      <!-- Pemilih tahun: audit AMI berjalan per tahun -->
+      <div v-if="hasData" class="mb-4">
+        <p class="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-2">
+          Tahun kegiatan &mdash; pilih satu tahun untuk melihat capaian tahun tersebut saja
+        </p>
+        <div class="flex gap-2 flex-wrap">
+          <button
+            @click="activeYear = 'all'; activePillar = 'all'"
+            :class="[
+              'px-3 py-1.5 rounded-lg text-xs font-bold border transition-all',
+              activeYear === 'all'
+                ? 'bg-white text-slate-900 border-white'
+                : 'bg-white/5 text-slate-400 border-white/10 hover:text-slate-200'
+            ]"
+          >Semua Tahun</button>
+          <button
+            v-for="y in yearRecap"
+            :key="y.year"
+            @click="activeYear = y.year; activePillar = 'all'"
+            :class="[
+              'px-3 py-1.5 rounded-lg text-xs font-bold border transition-all flex items-center gap-1.5',
+              activeYear === y.year
+                ? 'bg-white text-slate-900 border-white'
+                : 'bg-white/5 text-slate-400 border-white/10 hover:text-slate-200'
+            ]"
+          >
+            {{ y.year }}
+            <span :class="activeYear === y.year ? 'text-slate-500' : 'text-slate-500'">({{ y.count }})</span>
+          </button>
+        </div>
+      </div>
+
       <div v-if="hasData" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
         <div class="bg-white/5 rounded-xl p-4 text-center border border-white/10">
-          <div class="text-2xl font-black text-cyan-300">{{ summary.totalUniqueResearch }}</div>
+          <div class="text-2xl font-black text-cyan-300">{{ scopedSummary.totalUniqueResearch }}</div>
           <div class="text-xs uppercase tracking-wider text-slate-400 mt-1 font-bold">Judul Unik</div>
         </div>
         <div class="bg-white/5 rounded-xl p-4 text-center border border-white/10">
-          <div class="text-2xl font-black text-emerald-300">{{ summary.mapped }}</div>
+          <div class="text-2xl font-black text-emerald-300">{{ scopedSummary.mapped }}</div>
           <div class="text-xs uppercase tracking-wider text-slate-400 mt-1 font-bold">Terpetakan</div>
         </div>
         <div class="bg-white/5 rounded-xl p-4 text-center border border-white/10">
-          <div class="text-2xl font-black text-amber-300">{{ summary.coveragePercent }}%</div>
+          <div class="text-2xl font-black text-amber-300">{{ scopedSummary.coveragePercent }}%</div>
           <div class="text-xs uppercase tracking-wider text-slate-400 mt-1 font-bold">Cakupan Roadmap</div>
         </div>
         <div class="bg-white/5 rounded-xl p-4 text-center border border-white/10">
-          <div class="text-2xl font-black text-slate-300">{{ summary.unmapped }}</div>
+          <div class="text-2xl font-black text-slate-300">{{ scopedSummary.unmapped }}</div>
           <div class="text-xs uppercase tracking-wider text-slate-400 mt-1 font-bold">Di Luar Acuan</div>
         </div>
         <div class="bg-white/5 rounded-xl p-4 text-center border border-white/10">
@@ -119,9 +151,15 @@
 
       <!-- Kartu pilar -->
       <div>
-        <h2 class="text-lg font-black text-slate-900 mb-4">
-          Distribusi terhadap {{ metadata.categoryLabel }}
-        </h2>
+        <div class="flex items-baseline justify-between flex-wrap gap-2 mb-4">
+          <h2 class="text-lg font-black text-slate-900">
+            Distribusi terhadap {{ metadata.categoryLabel }}
+          </h2>
+          <span class="text-xs font-bold px-2.5 py-1 rounded-lg"
+                :class="activeYear === 'all' ? 'bg-slate-100 text-slate-600' : 'bg-blue-50 text-blue-700 border border-blue-100'">
+            {{ activeYear === 'all' ? 'Seluruh tahun (' + yearOptions[yearOptions.length - 1] + '–' + yearOptions[0] + ')' : 'Tahun ' + activeYear }}
+          </span>
+        </div>
 
         <!-- Rekap per Pusat Penelitian (khusus acuan ITK) -->
         <div v-if="centerRecap.length" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
@@ -178,7 +216,7 @@
           <div>
             <h2 class="text-lg font-black text-slate-900">Rincian Pemetaan Judul</h2>
             <p class="text-xs text-slate-500 mt-0.5">
-              Menampilkan {{ filteredItems.length }} dari {{ items.length }} judul &mdash; setiap baris disertai alasan pemetaannya
+              Menampilkan {{ filteredItems.length }} dari {{ scopedItems.length }} judul &mdash; setiap baris disertai alasan pemetaannya
             </p>
           </div>
           <div class="flex gap-2 flex-wrap">
@@ -282,7 +320,7 @@ export default {
     dataset: { type: String, default: 'research' }
   },
   data() {
-    return { activePillar: 'all', activeRef: 'FSTI' }
+    return { activePillar: 'all', activeRef: 'FSTI', activeYear: 'all' }
   },
   computed: {
     refOptions() {
@@ -306,10 +344,52 @@ export default {
     pillars() { return (this.mapping && this.mapping.pillars) || {} },
     items() { return (this.mapping && this.mapping.items) || [] },
 
+    // --- Penyaringan per tahun -------------------------------------------
+    // Audit AMI berjalan per tahun, sehingga tahun diperlakukan sebagai
+    // penyaring utama: seluruh metrik, kartu kategori, dan daftar judul
+    // dihitung ulang mengikuti tahun yang dipilih.
+    yearOptions() {
+      const years = [...new Set(this.items.map(i => i.year).filter(Boolean))]
+      return years.sort((a, b) => Number(b) - Number(a))
+    },
+    yearRecap() {
+      return this.yearOptions.map(y => {
+        const rows = this.items.filter(i => i.year === y)
+        return {
+          year: y,
+          count: rows.length,
+          mapped: rows.filter(i => i.pillar).length
+        }
+      })
+    },
+    scopedItems() {
+      if (this.activeYear === 'all') return this.items
+      return this.items.filter(i => i.year === this.activeYear)
+    },
+
+    // Rekap dihitung dari judul pada tahun terpilih, bukan dari angka
+    // bawaan berkas, agar metrik selalu konsisten dengan yang tampil.
+    scopedCounts() {
+      const per = {}
+      Object.keys(this.pillars).forEach(k => { per[k] = 0 })
+      this.scopedItems.forEach(i => { if (i.pillar) per[i.pillar] += 1 })
+      return per
+    },
+    scopedSummary() {
+      const total = this.scopedItems.length
+      const mapped = this.scopedItems.filter(i => i.pillar).length
+      return {
+        totalUniqueResearch: total,
+        mapped,
+        unmapped: total - mapped,
+        coveragePercent: total ? Math.round((mapped / total) * 1000) / 10 : 0
+      }
+    },
+
     pillarCards() {
-      const total = this.summary.totalUniqueResearch || 1
+      const total = this.scopedSummary.totalUniqueResearch || 1
       return Object.entries(this.pillars).map(([key, p]) => {
-        const count = (this.summary.perPillar && this.summary.perPillar[key]) || 0
+        const count = this.scopedCounts[key] || 0
         return {
           key,
           ...p,
@@ -322,13 +402,16 @@ export default {
 
     totalCategories() { return Object.keys(this.pillars).length },
     filledCategories() {
-      const per = this.summary.perPillar || {}
-      return Object.values(per).filter(v => v > 0).length
+      return Object.values(this.scopedCounts).filter(v => v > 0).length
     },
 
     // Rekap per Pusat Penelitian - hanya terisi pada acuan yang berjenjang (ITK)
     centerRecap() {
-      const per = this.summary.perCenter || {}
+      const per = {}
+      Object.entries(this.pillars).forEach(([code, cat]) => {
+        if (!cat.center) return
+        per[cat.center] = (per[cat.center] || 0) + (this.scopedCounts[code] || 0)
+      })
       return Object.entries(per)
         .filter(([, v]) => v > 0)
         .sort((a, b) => b[1] - a[1])
@@ -338,17 +421,18 @@ export default {
     pillarFilters() {
       const f = [{ key: 'all', label: 'Semua' }]
       Object.keys(this.pillars).forEach(k => f.push({ key: k, label: k }))
-      if (this.summary.unmapped) f.push({ key: 'NA', label: 'Di luar pilar' })
+      if (this.scopedSummary.unmapped) f.push({ key: 'NA', label: 'Di luar acuan' })
       return f
     },
 
     prodiCode() { return (this.items[0] && this.items[0].prodiCode) || '' },
-    externalLeaderCount() { return this.items.filter(i => !i.leaderIsInternal).length },
+    externalLeaderCount() { return this.scopedItems.filter(i => !i.leaderIsInternal).length },
 
     filteredItems() {
-      if (this.activePillar === 'all') return this.items
-      if (this.activePillar === 'NA') return this.items.filter(i => !i.pillar)
-      return this.items.filter(i => i.pillar === this.activePillar)
+      const rows = this.scopedItems
+      if (this.activePillar === 'all') return rows
+      if (this.activePillar === 'NA') return rows.filter(i => !i.pillar)
+      return rows.filter(i => i.pillar === this.activePillar)
     }
   },
   methods: {

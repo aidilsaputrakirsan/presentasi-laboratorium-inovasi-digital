@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-30T13:30:11.710238",
+    "generatedAt": "2026-08-30T13:45:50.933278",
     "prodi": "Sistem Informasi",
     "source": "sinta_data.json",
     "sourceGeneratedAt": "2026-08-29T17:04:12.248916",
@@ -52,6 +52,86 @@
       "P2": 18,
       "P3": 15,
       "P4": 4
+    },
+    "perYear": {
+      "2026": {
+        "total": 15,
+        "mapped": 15,
+        "perPillar": {
+          "P1": 7,
+          "P2": 4,
+          "P3": 4
+        },
+        "coveragePercent": 100.0
+      },
+      "2025": {
+        "total": 14,
+        "mapped": 14,
+        "perPillar": {
+          "P1": 7,
+          "P2": 2,
+          "P3": 2,
+          "P4": 3
+        },
+        "coveragePercent": 100.0
+      },
+      "2024": {
+        "total": 12,
+        "mapped": 11,
+        "perPillar": {
+          "P1": 6,
+          "P2": 2,
+          "P3": 2,
+          "P4": 1
+        },
+        "coveragePercent": 91.7
+      },
+      "2023": {
+        "total": 10,
+        "mapped": 9,
+        "perPillar": {
+          "P1": 2,
+          "P2": 3,
+          "P3": 4
+        },
+        "coveragePercent": 90.0
+      },
+      "2022": {
+        "total": 6,
+        "mapped": 6,
+        "perPillar": {
+          "P1": 4,
+          "P2": 2
+        },
+        "coveragePercent": 100.0
+      },
+      "2021": {
+        "total": 9,
+        "mapped": 9,
+        "perPillar": {
+          "P1": 2,
+          "P2": 4,
+          "P3": 3
+        },
+        "coveragePercent": 100.0
+      },
+      "2020": {
+        "total": 3,
+        "mapped": 3,
+        "perPillar": {
+          "P1": 3
+        },
+        "coveragePercent": 100.0
+      },
+      "2019": {
+        "total": 4,
+        "mapped": 4,
+        "perPillar": {
+          "P1": 3,
+          "P2": 1
+        },
+        "coveragePercent": 100.0
+      }
     },
     "perTheme": {},
     "perCenter": {},

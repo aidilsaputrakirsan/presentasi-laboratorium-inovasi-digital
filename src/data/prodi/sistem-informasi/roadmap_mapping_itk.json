@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-30T13:30:11.724126",
+    "generatedAt": "2026-08-30T13:45:50.951865",
     "prodi": "Sistem Informasi",
     "source": "sinta_data.json",
     "sourceGeneratedAt": "2026-08-29T17:04:12.248916",
@@ -184,6 +184,107 @@
       "PP1-EM": 4,
       "PP4-MA": 1,
       "PP5-K3": 1
+    },
+    "perYear": {
+      "2026": {
+        "total": 15,
+        "mapped": 15,
+        "perPillar": {
+          "SB-TO": 2,
+          "SG-BR": 3,
+          "SG-PS": 3,
+          "SL-HE": 1,
+          "SS-LE": 3,
+          "SS-SE": 1,
+          "SV-PR": 1,
+          "SV-WA": 1
+        },
+        "coveragePercent": 100.0
+      },
+      "2025": {
+        "total": 14,
+        "mapped": 14,
+        "perPillar": {
+          "PP1-EM": 3,
+          "PP5-K3": 1,
+          "SG-BR": 2,
+          "SG-PP": 2,
+          "SG-PS": 3,
+          "SS-LE": 2,
+          "SV-WA": 1
+        },
+        "coveragePercent": 100.0
+      },
+      "2024": {
+        "total": 12,
+        "mapped": 11,
+        "perPillar": {
+          "PP1-EM": 1,
+          "SB-TO": 1,
+          "SG-BR": 1,
+          "SG-PS": 5,
+          "SS-LE": 1,
+          "SV-WA": 2
+        },
+        "coveragePercent": 91.7
+      },
+      "2023": {
+        "total": 10,
+        "mapped": 9,
+        "perPillar": {
+          "PP4-MA": 1,
+          "SB-BB": 1,
+          "SG-PS": 1,
+          "SL-HE": 1,
+          "SS-LE": 3,
+          "SS-SE": 1,
+          "SV-PR": 1
+        },
+        "coveragePercent": 90.0
+      },
+      "2022": {
+        "total": 6,
+        "mapped": 6,
+        "perPillar": {
+          "SB-TO": 1,
+          "SE-TR": 1,
+          "SG-BR": 1,
+          "SG-PS": 1,
+          "SS-LE": 2
+        },
+        "coveragePercent": 100.0
+      },
+      "2021": {
+        "total": 9,
+        "mapped": 9,
+        "perPillar": {
+          "SB-BB": 1,
+          "SE-TR": 1,
+          "SL-HE": 2,
+          "SS-LE": 4,
+          "SV-PR": 1
+        },
+        "coveragePercent": 100.0
+      },
+      "2020": {
+        "total": 3,
+        "mapped": 3,
+        "perPillar": {
+          "SG-BR": 2,
+          "SG-PS": 1
+        },
+        "coveragePercent": 100.0
+      },
+      "2019": {
+        "total": 4,
+        "mapped": 4,
+        "perPillar": {
+          "SG-BR": 2,
+          "SG-PS": 1,
+          "SL-HE": 1
+        },
+        "coveragePercent": 100.0
+      }
     },
     "perTheme": {
       "Smart Governance": 28,
