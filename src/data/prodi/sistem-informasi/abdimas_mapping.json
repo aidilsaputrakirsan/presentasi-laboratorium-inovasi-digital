@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-30T13:45:50.961629",
+    "generatedAt": "2026-08-30T13:52:40.895935",
     "prodi": "Sistem Informasi",
     "source": "sinta_data.json",
     "sourceGeneratedAt": "2026-08-29T17:04:12.248916",
@@ -9,6 +9,9 @@
     "reference": "Roadmap Penelitian, PkM, dan Renstra FSTI ITK 2025-2029",
     "referenceDoc": "Roadmap_FSTI.pdf, Bab 4 (hal. 9-11)",
     "referenceScope": "Acuan tingkat FAKULTAS. Pembagian pilarnya berbeda dengan roadmap tingkat institut, sehingga angka pada acuan ini tidak dapat dibandingkan langsung dengan angka pada acuan ITK.",
+    "validFrom": 2025,
+    "validTo": 2029,
+    "validityNote": "Dokumen roadmap fakultas menyatakan PERIODE 2025-2029, dan fakultas sendiri baru terbentuk pada 2025. Kegiatan sebelum 2025 karenanya TIDAK dapat dinilai sebagai kepatuhan terhadap roadmap ini; pemetaannya bersifat retrospektif, yaitu untuk menunjukkan bahwa arah riset yang sudah berjalan sejalan dengan pilar yang kemudian ditetapkan.",
     "categoryLabel": "Pilar Strategis",
     "keywordBasis": "Bab 4 dokumen roadmap fakultas berjudul \"Pilar Strategis Integratif Riset & Abdimas\", sehingga empat pilar yang sama berlaku untuk penelitian maupun pengabdian. Daftar kata kunci disusun terpisah karena kosakata judul pengabdian berbeda. Perlu dicatat: roadmap fakultas tidak memiliki pilar ekonomi maupun pariwisata, sehingga kegiatan penguatan UMKM, pemasaran digital, dan wisata dipetakan ke Pilar 1 sebagai transformasi digital - sesuai uraian pilar tersebut yang mencakup manajemen proses bisnis bagi institusi pemerintah maupun korporasi.",
     "kind": "services",
@@ -62,7 +65,8 @@
           "P2": 1,
           "P3": 6
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": true
       },
       "2025": {
         "total": 15,
@@ -72,7 +76,8 @@
           "P2": 2,
           "P3": 6
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": true
       },
       "2024": {
         "total": 10,
@@ -82,7 +87,8 @@
           "P2": 1,
           "P3": 3
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": false
       },
       "2023": {
         "total": 10,
@@ -92,7 +98,8 @@
           "P2": 2,
           "P3": 7
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": false
       },
       "2022": {
         "total": 9,
@@ -101,7 +108,8 @@
           "P1": 3,
           "P3": 5
         },
-        "coveragePercent": 88.9
+        "coveragePercent": 88.9,
+        "inPeriod": false
       },
       "2021": {
         "total": 2,
@@ -110,7 +118,8 @@
           "P1": 1,
           "P3": 1
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": false
       },
       "2020": {
         "total": 5,
@@ -119,7 +128,8 @@
           "P1": 1,
           "P2": 4
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": false
       },
       "2019": {
         "total": 2,
@@ -127,7 +137,8 @@
         "perPillar": {
           "P2": 1
         },
-        "coveragePercent": 50.0
+        "coveragePercent": 50.0,
+        "inPeriod": false
       }
     },
     "perTheme": {},

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-30T13:45:50.933278",
+    "generatedAt": "2026-08-30T13:52:40.866885",
     "prodi": "Sistem Informasi",
     "source": "sinta_data.json",
     "sourceGeneratedAt": "2026-08-29T17:04:12.248916",
@@ -9,6 +9,9 @@
     "reference": "Roadmap Penelitian, PkM, dan Renstra FSTI ITK 2025-2029",
     "referenceDoc": "Roadmap_FSTI.pdf, Bab 4 (hal. 9-11)",
     "referenceScope": "Acuan tingkat FAKULTAS. Pembagian pilarnya berbeda dengan roadmap tingkat institut, sehingga angka pada acuan ini tidak dapat dibandingkan langsung dengan angka pada acuan ITK.",
+    "validFrom": 2025,
+    "validTo": 2029,
+    "validityNote": "Dokumen roadmap fakultas menyatakan PERIODE 2025-2029, dan fakultas sendiri baru terbentuk pada 2025. Kegiatan sebelum 2025 karenanya TIDAK dapat dinilai sebagai kepatuhan terhadap roadmap ini; pemetaannya bersifat retrospektif, yaitu untuk menunjukkan bahwa arah riset yang sudah berjalan sejalan dengan pilar yang kemudian ditetapkan.",
     "categoryLabel": "Pilar Strategis",
     "keywordBasis": "Dokumen roadmap fakultas hanya memuat uraian tiap pilar dan peran masing-masing program studi; dokumen ini TIDAK memuat daftar topik penelitian. Karena itu kata kunci yang dipakai untuk memetakan disusun sendiri oleh program studi dengan menurunkan uraian tersebut, jadi bukan kutipan dari dokumen.",
     "kind": "research",
@@ -62,7 +65,8 @@
           "P2": 4,
           "P3": 4
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": true
       },
       "2025": {
         "total": 14,
@@ -73,7 +77,8 @@
           "P3": 2,
           "P4": 3
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": true
       },
       "2024": {
         "total": 12,
@@ -84,7 +89,8 @@
           "P3": 2,
           "P4": 1
         },
-        "coveragePercent": 91.7
+        "coveragePercent": 91.7,
+        "inPeriod": false
       },
       "2023": {
         "total": 10,
@@ -94,7 +100,8 @@
           "P2": 3,
           "P3": 4
         },
-        "coveragePercent": 90.0
+        "coveragePercent": 90.0,
+        "inPeriod": false
       },
       "2022": {
         "total": 6,
@@ -103,7 +110,8 @@
           "P1": 4,
           "P2": 2
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": false
       },
       "2021": {
         "total": 9,
@@ -113,7 +121,8 @@
           "P2": 4,
           "P3": 3
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": false
       },
       "2020": {
         "total": 3,
@@ -121,7 +130,8 @@
         "perPillar": {
           "P1": 3
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": false
       },
       "2019": {
         "total": 4,
@@ -130,7 +140,8 @@
           "P1": 3,
           "P2": 1
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": false
       }
     },
     "perTheme": {},

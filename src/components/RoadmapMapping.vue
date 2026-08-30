@@ -44,6 +44,10 @@
         <p class="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-2">
           Tahun kegiatan &mdash; pilih satu tahun untuk melihat capaian tahun tersebut saja
         </p>
+        <p class="text-[11px] text-slate-500 mb-2">
+          Tanda <span class="text-amber-400 font-black">*</span> = tahun di luar masa berlaku dokumen acuan
+          ({{ metadata.validFrom }}&ndash;{{ metadata.validTo }}); pemetaannya bersifat retrospektif.
+        </p>
         <div class="flex gap-2 flex-wrap">
           <button
             @click="activeYear = 'all'; activePillar = 'all'"
@@ -66,7 +70,8 @@
             ]"
           >
             {{ y.year }}
-            <span :class="activeYear === y.year ? 'text-slate-500' : 'text-slate-500'">({{ y.count }})</span>
+            <span class="text-slate-500">({{ y.count }})</span>
+            <span v-if="!y.inPeriod" class="text-amber-400 font-black" title="Di luar masa berlaku dokumen acuan">*</span>
           </button>
         </div>
       </div>
@@ -147,6 +152,20 @@
           Dari {{ items.length }} judul, {{ externalLeaderCount }} di antaranya diketuai dosen luar prodi
           dengan dosen {{ prodiCode }} sebagai anggota.
         </p>
+      </div>
+
+      <!-- Peringatan masa berlaku dokumen acuan -->
+      <div v-if="periodWarning"
+           class="bg-amber-50 border border-amber-200 rounded-2xl p-4 flex items-start gap-3">
+        <div class="w-8 h-8 rounded-lg bg-white border border-amber-200 flex items-center justify-center text-amber-600 shrink-0">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M5 19h14a2 2 0 001.84-2.75L13.74 4a2 2 0 00-3.48 0l-7.1 12.25A2 2 0 004.99 19z"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <p class="text-sm font-bold text-amber-900 mb-1">{{ periodWarning.title }}</p>
+          <p class="text-xs text-amber-900 leading-relaxed">{{ metadata.validityNote }}</p>
+        </div>
       </div>
 
       <!-- Kartu pilar -->
@@ -353,14 +372,38 @@ export default {
       return years.sort((a, b) => Number(b) - Number(a))
     },
     yearRecap() {
+      const per = (this.summary && this.summary.perYear) || {}
       return this.yearOptions.map(y => {
         const rows = this.items.filter(i => i.year === y)
         return {
           year: y,
           count: rows.length,
-          mapped: rows.filter(i => i.pillar).length
+          mapped: rows.filter(i => i.pillar).length,
+          inPeriod: per[y] ? per[y].inPeriod : true
         }
       })
+    },
+
+    // Dokumen acuan punya masa berlaku. Tahun di luar masa itu tetap
+    // ditampilkan karena berguna untuk melihat kesinambungan arah riset,
+    // tetapi tidak boleh dibaca sebagai kepatuhan terhadap dokumen.
+    periodWarning() {
+      if (!this.hasData || !this.metadata.validFrom) return null
+      if (this.activeYear !== 'all') {
+        const y = Number(this.activeYear)
+        if (y >= this.metadata.validFrom && y <= this.metadata.validTo) return null
+        return {
+          title: 'Tahun ' + this.activeYear + ' berada di luar masa berlaku dokumen acuan ('
+            + this.metadata.validFrom + '–' + this.metadata.validTo + ')'
+        }
+      }
+      const outside = this.yearRecap.filter(y => !y.inPeriod)
+      if (!outside.length) return null
+      return {
+        title: 'Tampilan "Semua Tahun" mencakup ' + outside.length
+          + ' tahun di luar masa berlaku dokumen acuan ('
+          + this.metadata.validFrom + '–' + this.metadata.validTo + ')'
+      }
     },
     scopedItems() {
       if (this.activeYear === 'all') return this.items

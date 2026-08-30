@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-30T13:45:50.951865",
+    "generatedAt": "2026-08-30T13:52:40.873818",
     "prodi": "Sistem Informasi",
     "source": "sinta_data.json",
     "sourceGeneratedAt": "2026-08-29T17:04:12.248916",
@@ -9,6 +9,9 @@
     "reference": "Panduan Penelitian dan Pengabdian kepada Masyarakat ITK Edisi X 2026",
     "referenceDoc": "Panduan P2M ITK Edisi X 2026, Bab 1.1 Fokus Riset Penelitian Institut - Tabel 1 (hal. 5-11) dan Tabel 3 Roadmap Pusat Penelitian TIK Smart City (hal. 20-25)",
     "referenceScope": "Acuan tingkat INSTITUT. Judul dipetakan sampai tingkat Sub Tema di bawah masing-masing Pusat Penelitian, sehingga lebih rinci daripada acuan fakultas.",
+    "validFrom": 2024,
+    "validTo": 2028,
+    "validityNote": "Tabel 3 Panduan ITK memuat kolom tahun 2024 sampai 2028, sehingga acuan ini sudah berlaku sejak 2024 - satu tahun lebih awal daripada roadmap fakultas. Kegiatan sebelum 2024 dipetakan secara retrospektif, bukan sebagai kepatuhan.",
     "categoryLabel": "Sub Tema Fokus Riset",
     "keywordBasis": "Panduan ITK mencantumkan daftar topik penelitian untuk setiap sub tema. Kata kunci yang dipakai untuk memetakan diambil langsung dari daftar topik tersebut, dan setiap kategori mencantumkan nomor tabel serta halaman panduannya sehingga dapat dicek langsung ke dokumen aslinya.",
     "kind": "research",
@@ -199,7 +202,8 @@
           "SV-PR": 1,
           "SV-WA": 1
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": true
       },
       "2025": {
         "total": 14,
@@ -213,7 +217,8 @@
           "SS-LE": 2,
           "SV-WA": 1
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": true
       },
       "2024": {
         "total": 12,
@@ -226,7 +231,8 @@
           "SS-LE": 1,
           "SV-WA": 2
         },
-        "coveragePercent": 91.7
+        "coveragePercent": 91.7,
+        "inPeriod": true
       },
       "2023": {
         "total": 10,
@@ -240,7 +246,8 @@
           "SS-SE": 1,
           "SV-PR": 1
         },
-        "coveragePercent": 90.0
+        "coveragePercent": 90.0,
+        "inPeriod": false
       },
       "2022": {
         "total": 6,
@@ -252,7 +259,8 @@
           "SG-PS": 1,
           "SS-LE": 2
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": false
       },
       "2021": {
         "total": 9,
@@ -264,7 +272,8 @@
           "SS-LE": 4,
           "SV-PR": 1
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": false
       },
       "2020": {
         "total": 3,
@@ -273,7 +282,8 @@
           "SG-BR": 2,
           "SG-PS": 1
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": false
       },
       "2019": {
         "total": 4,
@@ -283,7 +293,8 @@
           "SG-PS": 1,
           "SL-HE": 1
         },
-        "coveragePercent": 100.0
+        "coveragePercent": 100.0,
+        "inPeriod": false
       }
     },
     "perTheme": {

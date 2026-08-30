@@ -206,6 +206,10 @@ def build(slug, ref, kind='research'):
             bucket['perPillar'][it['pillar']] = bucket['perPillar'].get(it['pillar'], 0) + 1
     for y, b in per_year.items():
         b['coveragePercent'] = round(b['mapped'] / b['total'] * 100, 1) if b['total'] else 0
+        try:
+            b['inPeriod'] = ref['validFrom'] <= int(y) <= ref['validTo']
+        except (TypeError, ValueError):
+            b['inPeriod'] = False
     per_year = dict(sorted(per_year.items(), key=lambda kv: kv[0], reverse=True))
 
     # Rekap per level di atas kategori (tema / pusat penelitian), bila ada
@@ -227,6 +231,9 @@ def build(slug, ref, kind='research'):
             'reference': ref['reference'],
             'referenceDoc': ref['referenceDoc'],
             'referenceScope': ref['scope'],
+            'validFrom': ref['validFrom'],
+            'validTo': ref['validTo'],
+            'validityNote': ref['validityNote'],
             'categoryLabel': ref['categoryLabel'],
             'keywordBasis': keyword_basis,
             'kind': kind,

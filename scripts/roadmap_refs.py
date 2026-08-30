@@ -385,6 +385,14 @@ REFERENCES = {
         'categoryLabel': 'Pilar Strategis',
         'reference': 'Roadmap Penelitian, PkM, dan Renstra FSTI ITK 2025-2029',
         'referenceDoc': 'Roadmap_FSTI.pdf, Bab 4 (hal. 9-11)',
+        'validFrom': 2025,
+        'validTo': 2029,
+        'validityNote': ('Dokumen roadmap fakultas menyatakan PERIODE 2025-2029, dan '
+                         'fakultas sendiri baru terbentuk pada 2025. Kegiatan sebelum '
+                         '2025 karenanya TIDAK dapat dinilai sebagai kepatuhan terhadap '
+                         'roadmap ini; pemetaannya bersifat retrospektif, yaitu untuk '
+                         'menunjukkan bahwa arah riset yang sudah berjalan sejalan dengan '
+                         'pilar yang kemudian ditetapkan.'),
         'scope': ('Acuan tingkat FAKULTAS. Pembagian pilarnya berbeda dengan roadmap '
                   'tingkat institut, sehingga angka pada acuan ini tidak dapat '
                   'dibandingkan langsung dengan angka pada acuan ITK.'),
@@ -418,6 +426,12 @@ REFERENCES = {
         'referenceDoc': ('Panduan P2M ITK Edisi X 2026, Bab 1.1 Fokus Riset Penelitian '
                          'Institut - Tabel 1 (hal. 5-11) dan Tabel 3 Roadmap Pusat '
                          'Penelitian TIK Smart City (hal. 20-25)'),
+        'validFrom': 2024,
+        'validTo': 2028,
+        'validityNote': ('Tabel 3 Panduan ITK memuat kolom tahun 2024 sampai 2028, '
+                         'sehingga acuan ini sudah berlaku sejak 2024 - satu tahun lebih '
+                         'awal daripada roadmap fakultas. Kegiatan sebelum 2024 dipetakan '
+                         'secara retrospektif, bukan sebagai kepatuhan.'),
         'scope': ('Acuan tingkat INSTITUT. Judul dipetakan sampai tingkat Sub Tema di '
                   'bawah masing-masing Pusat Penelitian, sehingga lebih rinci '
                   'daripada acuan fakultas.'),
