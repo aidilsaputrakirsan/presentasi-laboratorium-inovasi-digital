@@ -92,6 +92,49 @@ FSTI_RULES = [
                'ICONIX', 'PROTOTYPING', 'RAPID APPLICATION DEVELOPMENT', 'UI/UX']),
 ]
 
+
+# =============================================================================
+# ATURAN ABDIMAS - acuan FSTI
+# -----------------------------------------------------------------------------
+# Bab 4 Roadmap FSTI berjudul "Pilar Strategis Integratif Riset & Abdimas",
+# sehingga 4 pilar yang sama berlaku untuk penelitian DAN pengabdian.
+#
+# Kosakata judul Abdimas sangat berbeda dari penelitian (pelatihan, pendampingan,
+# bank sampah, kelompok tani, UMKM), karena itu daftar kata kuncinya disusun
+# terpisah. Kata lokasi (kelurahan, RT, Balikpapan) sengaja TIDAK dipakai sebagai
+# penanda karena muncul di hampir semua judul dan akan menyesatkan pemetaan.
+#
+# CATATAN PENTING: Roadmap FSTI tidak memiliki pilar ekonomi/pariwisata. Kegiatan
+# penguatan UMKM, pemasaran digital, dan wisata karenanya dipetakan ke Pilar 1
+# sebagai "transformasi digital" - dokumen FSTI hal. 9 menyebut pilar ini
+# mencakup manajemen proses bisnis "untuk institusi pemerintah maupun korporasi".
+# Keterbatasan ini disampaikan terbuka pada halaman web.
+# =============================================================================
+FSTI_ABDIMAS_RULES = [
+    ('P1', 3, ['SMART RT', 'DIGITALISASI LAYANAN', 'LAYANAN DI RT',
+               'PERANGKAT DAERAH', 'BIZAGI', 'PROSES BISNIS', 'DASHBOARD',
+               'PENGELOLAAN DATA MASYARAKAT', 'PENATAAN KAWASAN',
+               'PEMUKIMAN', 'SISTEM PENDATAAN']),
+    ('P1', 2, ['DIGITAL MARKETING', 'PEMASARAN DIGITAL', 'BRANDING', 'UMKM',
+               'PROMOSI', 'KEWIRAUSAHAAN', 'MEDIA SOSIAL', 'WISATA',
+               'PARIWISATA', 'AGROWISATA', 'EKONOMI', 'ETALASE PRODUK',
+               'COMPANY PROFILE', 'E-SPORT', 'INFRASTRUKTUR']),
+    ('P2', 3, ['PEMBELAJARAN', 'PEMROGRAMAN', 'KODING', 'SCRATCH',
+               'MIT APP INVENTOR', 'SISWA', 'SEKOLAH', 'SDN ', 'SMP ',
+               'SMAN ', 'SMP NEGERI', 'PERPUSTAKAAN', 'INTERNET SEHAT',
+               'KELAS DIGITAL', 'TRY OUT', 'GURU', 'DARING', 'PENGAJARAN',
+               'LOGIKA BERPIKIR', 'EDUKASI PEMROGRAMAN', 'SEKOLAH DASAR',
+               'KOMPETENSI GURU', 'WISATA EDUKATIF', 'WISATA EDUKASI']),
+    ('P3', 3, ['BANK SAMPAH', 'SAMPAH', 'BIOPORI', 'LIMBAH', 'PUPUK', 'KOMPOS',
+               'AKUAPONIK', 'BUDIDAYA', 'BUDIKDAMBER', 'HIDROPONIK',
+               'URBAN FARMING', 'KELOMPOK TANI', 'WANITA TANI', 'KEBUN',
+               'PERKEBUNAN', 'IRIGASI', 'RAINWATER', 'MANGROVE',
+               'HUTAN LINDUNG', 'HUTAN KOTA', 'HUTAN MERANTI', 'LINGKUNGAN',
+               'PANGAN', 'KERIPIK', 'JAMBU', 'PEPAYA', 'MELON', 'KANGKUNG',
+               'ECOPRINT', 'MEDIA TANAM', 'GARDEN INFORMATION']),
+    ('P4', 3, ['BIOGAS', 'ENERGI TERBARUKAN', 'PANEL SURYA']),
+]
+
 # =============================================================================
 # ACUAN 2: Panduan Penelitian & PkM ITK Edisi X 2026 - Fokus Riset Institut
 # -----------------------------------------------------------------------------
@@ -352,6 +395,19 @@ REFERENCES = {
                          'menurunkan uraian tersebut, jadi bukan kutipan dari dokumen.'),
         'categories': FSTI_CATEGORIES,
         'rules': FSTI_RULES,
+        'abdimas': {
+            'rules': FSTI_ABDIMAS_RULES,
+            'outputFile': 'abdimas_mapping.json',
+            'keywordBasis': ('Bab 4 dokumen roadmap fakultas berjudul "Pilar Strategis '
+                             'Integratif Riset & Abdimas", sehingga empat pilar yang sama '
+                             'berlaku untuk penelitian maupun pengabdian. Daftar kata kunci '
+                             'disusun terpisah karena kosakata judul pengabdian berbeda. '
+                             'Perlu dicatat: roadmap fakultas tidak memiliki pilar ekonomi '
+                             'maupun pariwisata, sehingga kegiatan penguatan UMKM, pemasaran '
+                             'digital, dan wisata dipetakan ke Pilar 1 sebagai transformasi '
+                             'digital - sesuai uraian pilar tersebut yang mencakup manajemen '
+                             'proses bisnis bagi institusi pemerintah maupun korporasi.'),
+        },
     },
     'ITK': {
         'key': 'ITK',
@@ -372,5 +428,11 @@ REFERENCES = {
                          'dapat dicek langsung ke dokumen aslinya.'),
         'categories': ITK_CATEGORIES,
         'rules': ITK_RULES,
+        # Panduan ITK memiliki roadmap Abdimas TERSENDIRI (Gambar 8 hal. 59 dan
+        # Tabel 9 hal. 60), terpisah dari Bidang Fokus Riset. Berkas PDF yang
+        # tersedia saat ini hanya memuat sampai halaman 51, sehingga tabel
+        # tersebut belum dapat dibaca. Pemetaan Abdimas acuan ITK sengaja TIDAK
+        # dibuat: memakai tabel fokus riset sebagai gantinya akan salah acuan.
+        'abdimas': None,
     },
 }

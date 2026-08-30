@@ -57,9 +57,16 @@ def classify(title, rules):
     return primary, supporting, scores, evidence
 
 
-def reason_text(primary, evidence, categories):
+def reason_text(primary, evidence, categories, kind='research'):
     """Kalimat alasan siap tampil di web / lembar AMI."""
     if not primary:
+        if kind == 'services':
+            # Pada Abdimas, judul tanpa kata kunci umumnya bukan karena di luar
+            # roadmap, melainkan karena judulnya dirumuskan terlalu umum.
+            return ('Judul tidak memuat satu pun kata kunci bidang. Rumusan judul '
+                    'masih terlalu umum sehingga fokus kegiatannya tidak dapat '
+                    'ditentukan dari judul saja - perlu dilihat laporan kegiatannya '
+                    'untuk dipetakan secara manual.')
         return ('Judul tidak memuat satu pun kata kunci dari kategori manapun. '
                 'Penelitian ini tergolong riset dasar (keilmuan murni) yang berada '
                 'di luar bidang fokus roadmap yang bersifat terapan.')
@@ -78,17 +85,27 @@ def load_roster(slug):
     return set(l['name'] for l in cfg.get('lecturers', [])), cfg.get('code', '')
 
 
-def collect_unique_research(data, roster, prodi_code):
-    """Dedup judul: satu penelitian bisa muncul di beberapa dosen (ketua+anggota)."""
+def clean_leader(name):
+    """Judul pengabdian menyimpan ketua sebagai 'Nama INTERNAL ( SKEMA )'."""
+    if not name:
+        return name
+    for marker in (' INTERNAL ', ' EKSTERNAL '):
+        if marker in name:
+            return name.split(marker)[0].strip()
+    return name.strip()
+
+
+def collect_unique_items(data, roster, prodi_code, field, kind='research'):
+    """Dedup judul: satu kegiatan bisa muncul di beberapa dosen (ketua+anggota)."""
     unique = {}
     for lec in data['lecturers']:
-        for r in lec.get('research', []):
+        for r in lec.get(field, []):
             key = r['title'].strip().upper()
             if key not in unique:
                 unique[key] = {
                     'title': r['title'].strip(),
                     'year': r.get('year'),
-                    'leader': r.get('leader'),
+                    'leader': clean_leader(r.get('leader')),
                     'grantType': r.get('grantType'),
                     'grantCategory': r.get('grantCategory'),
                     'fundingAmount': r.get('fundingAmount', 0),
@@ -102,42 +119,73 @@ def collect_unique_research(data, roster, prodi_code):
         # Judul dijaring dari profil SINTA dosen prodi, sehingga judul yang
         # ketuanya dosen prodi lain tetap sah dihitung selama ada dosen prodi
         # sebagai anggota - dan itu wajib terlihat agar tidak dianggap klaim.
+        role = 'Ketua pelaksana' if kind == 'services' else 'Ketua peneliti'
         members = sorted(set(rec['lecturers']))
         rec['siMembers'] = members
         rec['leaderIsInternal'] = rec['leader'] in roster
         rec['prodiCode'] = prodi_code
         if rec['leaderIsInternal']:
             rec['affiliationBasis'] = (
-                'Ketua peneliti adalah dosen program studi %s.' % prodi_code)
+                '%s adalah dosen program studi %s.' % (role, prodi_code))
         else:
             rec['affiliationBasis'] = (
-                'Ketua peneliti berasal dari program studi lain. Program studi %s '
-                'terlibat melalui anggota peneliti berikut: %s.'
-                % (prodi_code, ', '.join(members)))
+                '%s berasal dari program studi lain. Program studi %s '
+                'terlibat melalui anggota berikut: %s.'
+                % (role, prodi_code, ', '.join(members)))
     return unique
 
 
-def build(slug, ref):
+KINDS = {
+    'research': {
+        'field': 'research',
+        'label': 'penelitian',
+        'outputKey': 'outputFile',
+    },
+    'services': {
+        'field': 'services',
+        'label': 'pengabdian kepada masyarakat',
+        'outputKey': 'outputFile',
+    },
+}
+
+
+def build(slug, ref, kind='research'):
     path = os.path.join(PRODI_DIR, slug, 'sinta_data.json')
     if not os.path.exists(path):
         print('  [skip] %s: sinta_data.json tidak ada' % slug)
         return
+    spec = KINDS[kind]
+
+    if kind == 'services':
+        cfg = ref.get('abdimas')
+        if not cfg:
+            print('  [skip] %s/%s: acuan ini belum memiliki roadmap Abdimas yang dapat dibaca'
+                  % (ref['key'], slug))
+            return
+        rules = cfg['rules']
+        output_file = cfg['outputFile']
+        keyword_basis = cfg['keywordBasis']
+    else:
+        rules = ref['rules']
+        output_file = ref['outputFile']
+        keyword_basis = ref['keywordBasis']
+
     data = json.load(io.open(path, encoding='utf-8'))
     roster, prodi_code = load_roster(slug)
     categories = ref['categories']
 
-    unique = collect_unique_research(data, roster, prodi_code)
+    unique = collect_unique_items(data, roster, prodi_code, spec['field'], kind)
 
     items, unmapped = [], []
     counts = dict((c, 0) for c in categories)
     for rec in unique.values():
         rec = dict(rec)
-        primary, supporting, scores, evidence = classify(rec['title'], ref['rules'])
+        primary, supporting, scores, evidence = classify(rec['title'], rules)
         rec['pillar'] = primary
         rec['supportingPillars'] = supporting
         rec['matchScore'] = scores
         rec['evidence'] = evidence
-        rec['reason'] = reason_text(primary, evidence, categories)
+        rec['reason'] = reason_text(primary, evidence, categories, kind)
         if primary:
             counts[primary] += 1
         else:
@@ -166,11 +214,13 @@ def build(slug, ref):
             'referenceDoc': ref['referenceDoc'],
             'referenceScope': ref['scope'],
             'categoryLabel': ref['categoryLabel'],
-            'keywordBasis': ref['keywordBasis'],
+            'keywordBasis': keyword_basis,
+            'kind': kind,
+            'kindLabel': spec['label'],
             'ownershipRule': ('Judul penelitian diambil dari profil SINTA seluruh dosen yang '
                               'tercatat pada daftar dosen resmi program studi. Sebuah judul '
                               'dihitung sebagai luaran program studi apabila ketua ATAU minimal '
-                              'satu anggota peneliti adalah dosen program studi; peran tersebut '
+                              'satu anggota pelaksana adalah dosen program studi; peran tersebut '
                               'dicantumkan pada setiap judul.'),
             'method': ('Setiap judul dicocokkan dengan daftar kata kunci penanda milik tiap '
                        'kategori roadmap. Kata kunci yang lebih khas diberi bobot lebih tinggi '
@@ -178,7 +228,7 @@ def build(slug, ref):
                        'kategori utama, sedangkan kategori lain yang nilainya minimal 2 dicatat '
                        'sebagai kategori pendukung. Kata kunci yang menjadi pemicu ditampilkan '
                        'pada setiap judul sehingga hasilnya dapat diperiksa ulang dan dikoreksi.'),
-            'description': 'Pemetaan judul penelitian prodi terhadap %s' % ref['reference'],
+            'description': 'Pemetaan judul %s prodi terhadap %s' % (spec['label'], ref['reference']),
         },
         'pillars': categories,
         'summary': {
@@ -193,12 +243,12 @@ def build(slug, ref):
         'items': items,
     }
 
-    dest = os.path.join(PRODI_DIR, slug, ref['outputFile'])
+    dest = os.path.join(PRODI_DIR, slug, output_file)
     with io.open(dest, 'w', encoding='utf-8') as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
 
-    print('  [%s] %s: %d judul unik, %d terpetakan (%s%%)' % (
-        ref['key'], slug, len(items), out['summary']['mapped'],
+    print('  [%s/%s] %s: %d judul unik, %d terpetakan (%s%%)' % (
+        ref['key'], kind, slug, len(items), out['summary']['mapped'],
         out['summary']['coveragePercent']))
     for c in sorted(categories):
         if counts[c]:
@@ -211,18 +261,22 @@ def build(slug, ref):
 
 def main():
     args = sys.argv[1:]
+    kinds = [a for a in args if a in KINDS]
     ref_keys = [a for a in args if a.upper() in REFERENCES]
-    slugs = [a for a in args if a.upper() not in REFERENCES]
+    slugs = [a for a in args if a.upper() not in REFERENCES and a not in KINDS]
 
+    if not kinds:
+        kinds = list(KINDS)
     if not ref_keys:
         ref_keys = list(REFERENCES)
     if not slugs:
         slugs = [d for d in os.listdir(PRODI_DIR)
                  if os.path.isdir(os.path.join(PRODI_DIR, d))]
 
-    for key in ref_keys:
-        for slug in slugs:
-            build(slug, REFERENCES[key.upper()])
+    for kind in kinds:
+        for key in ref_keys:
+            for slug in slugs:
+                build(slug, REFERENCES[key.upper()], kind)
     print('Done.')
 
 

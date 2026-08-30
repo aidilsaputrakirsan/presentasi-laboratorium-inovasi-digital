@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-30T13:06:31.557413",
+    "generatedAt": "2026-08-30T13:30:11.710238",
     "prodi": "Sistem Informasi",
     "source": "sinta_data.json",
     "sourceGeneratedAt": "2026-08-29T17:04:12.248916",
@@ -11,7 +11,9 @@
     "referenceScope": "Acuan tingkat FAKULTAS. Pembagian pilarnya berbeda dengan roadmap tingkat institut, sehingga angka pada acuan ini tidak dapat dibandingkan langsung dengan angka pada acuan ITK.",
     "categoryLabel": "Pilar Strategis",
     "keywordBasis": "Dokumen roadmap fakultas hanya memuat uraian tiap pilar dan peran masing-masing program studi; dokumen ini TIDAK memuat daftar topik penelitian. Karena itu kata kunci yang dipakai untuk memetakan disusun sendiri oleh program studi dengan menurunkan uraian tersebut, jadi bukan kutipan dari dokumen.",
-    "ownershipRule": "Judul penelitian diambil dari profil SINTA seluruh dosen yang tercatat pada daftar dosen resmi program studi. Sebuah judul dihitung sebagai luaran program studi apabila ketua ATAU minimal satu anggota peneliti adalah dosen program studi; peran tersebut dicantumkan pada setiap judul.",
+    "kind": "research",
+    "kindLabel": "penelitian",
+    "ownershipRule": "Judul penelitian diambil dari profil SINTA seluruh dosen yang tercatat pada daftar dosen resmi program studi. Sebuah judul dihitung sebagai luaran program studi apabila ketua ATAU minimal satu anggota pelaksana adalah dosen program studi; peran tersebut dicantumkan pada setiap judul.",
     "method": "Setiap judul dicocokkan dengan daftar kata kunci penanda milik tiap kategori roadmap. Kata kunci yang lebih khas diberi bobot lebih tinggi (skala 1 sampai 3). Kategori dengan nilai tertinggi ditetapkan sebagai kategori utama, sedangkan kategori lain yang nilainya minimal 2 dicatat sebagai kategori pendukung. Kata kunci yang menjadi pemicu ditampilkan pada setiap judul sehingga hasilnya dapat diperiksa ulang dan dikoreksi.",
     "description": "Pemetaan judul penelitian prodi terhadap Roadmap Penelitian, PkM, dan Renstra FSTI ITK 2025-2029"
   },
@@ -197,7 +199,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: I Putu Deny Arthawan Sugih Prabowo.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: I Putu Deny Arthawan Sugih Prabowo.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
@@ -271,7 +273,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: M. Ihsan Alfani Putera.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
@@ -310,7 +312,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Nursanti Novi Arisa.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Nursanti Novi Arisa.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
@@ -450,7 +452,7 @@
     {
       "title": "PENGEMBANGAN SISTEM INFORMASI PUSAT LAYANAN HUKUM SEBAGAI JARINGAN DOKUMENTASI DAN INFORMASI HUKUM ITK",
       "year": "2025",
-      "leader": "Dwi Nur Amalia PENILAIAN INTERNAL ( RKS )",
+      "leader": "Dwi Nur Amalia PENILAIAN",
       "grantType": "PENILAIAN INTERNAL ( RKS )",
       "grantCategory": "RKS",
       "fundingAmount": 17000000,
@@ -464,7 +466,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Dwi Nur Amalia, Vika Fitratunnany Insanittaqwa.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Dwi Nur Amalia, Vika Fitratunnany Insanittaqwa.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
@@ -520,7 +522,7 @@
     {
       "title": "PENYUSUNAN JUSTIFIKASI TEKNIS DAN DISASTER RECOVERY PLAN UNTUK PENGEMBANGAN DATA CENTER UPA TIK ITK",
       "year": "2025",
-      "leader": "I Putu Deny Arthawan Sugih Prabowo PENELITIAN INTERNAL ( RKS )",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo PENELITIAN",
       "grantType": "PENELITIAN INTERNAL ( RKS )",
       "grantCategory": "RKS",
       "fundingAmount": 17000000,
@@ -534,7 +536,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Dwi Arief Prambudi, I Putu Deny Arthawan Sugih Prabowo.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Dwi Arief Prambudi, I Putu Deny Arthawan Sugih Prabowo.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
@@ -561,7 +563,7 @@
     {
       "title": "PENGEMBANGAN SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) INSTITUT TEKNOLOGI KALIMANTAN",
       "year": "2025",
-      "leader": "Nur Fajri Azhar PENELITIAN INTERNAL ( RKS )",
+      "leader": "Nur Fajri Azhar PENELITIAN",
       "grantType": "PENELITIAN INTERNAL ( RKS )",
       "grantCategory": "RKS",
       "fundingAmount": 17000000,
@@ -573,7 +575,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: M. Ihsan Alfani Putera.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
@@ -732,7 +734,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: I Putu Deny Arthawan Sugih Prabowo.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: I Putu Deny Arthawan Sugih Prabowo.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
@@ -767,7 +769,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: M. Ihsan Alfani Putera.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
@@ -1008,7 +1010,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Sri Rahayu Natasia.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Sri Rahayu Natasia.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
@@ -1043,7 +1045,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Nursanti Novi Arisa.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Nursanti Novi Arisa.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
@@ -1402,7 +1404,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Aidil Saputra Kirsan.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Aidil Saputra Kirsan.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
@@ -1439,7 +1441,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Nursanti Novi Arisa, Vika Fitratunnany Insanittaqwa.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Nursanti Novi Arisa, Vika Fitratunnany Insanittaqwa.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
@@ -1477,7 +1479,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Rosa Eliviani.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Rosa Eliviani.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
@@ -1546,7 +1548,7 @@
     {
       "title": "PERANCANGAN SISTEM MEDIA PEMBELAJARAN BERBASIS AI DAN ADAPTIVE LEARNING DENGAN KONSEP HEALING TECHNOLOGY PADA PESERTA DIDIK DISABILITAS",
       "year": "2025",
-      "leader": "M. Ihsan Alfani Putera PENELITIAN INTERNAL ( RDP )",
+      "leader": "M. Ihsan Alfani Putera PENELITIAN",
       "grantType": "PENELITIAN INTERNAL ( RDP )",
       "grantCategory": "RDP",
       "fundingAmount": 17000000,
@@ -1560,7 +1562,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera, Nursanti Novi Arisa.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: M. Ihsan Alfani Putera, Nursanti Novi Arisa.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
@@ -1644,7 +1646,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Nursanti Novi Arisa, Vika Fitratunnany Insanittaqwa.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Nursanti Novi Arisa, Vika Fitratunnany Insanittaqwa.",
       "pillar": "P2",
       "supportingPillars": [
         "P1"
@@ -1775,7 +1777,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera, Nursanti Novi Arisa, Vika Fitratunnany Insanittaqwa.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: M. Ihsan Alfani Putera, Nursanti Novi Arisa, Vika Fitratunnany Insanittaqwa.",
       "pillar": "P2",
       "supportingPillars": [
         "P1"
@@ -1861,7 +1863,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: I Putu Deny Arthawan Sugih Prabowo.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: I Putu Deny Arthawan Sugih Prabowo.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
@@ -2043,7 +2045,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Yuyun Tri Wiranti.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Yuyun Tri Wiranti.",
       "pillar": "P2",
       "supportingPillars": [
         "P3"
@@ -2161,7 +2163,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Dwi Arief Prambudi.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Dwi Arief Prambudi.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
@@ -2196,7 +2198,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Rosa Eliviani.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Rosa Eliviani.",
       "pillar": "P3",
       "supportingPillars": [
         "P2"
@@ -2248,7 +2250,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Dwi Arief Prambudi.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Dwi Arief Prambudi.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
@@ -2283,7 +2285,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: I Putu Deny Arthawan Sugih Prabowo.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: I Putu Deny Arthawan Sugih Prabowo.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
@@ -2707,7 +2709,7 @@
     {
       "title": "INOVASI PEMBUATAN PROTOTIPE TURBIN ANGIN SAVONIUS BERBAHAN PLA BERSTRUKTUR SANDWICH DENGAN METODE ADITIF MANUFAKTURING SEBAGAI SUMBER ENERGI HIJAU",
       "year": "2025",
-      "leader": "Fikan Mubarok Rohimsyah PENELITIAN INTERNAL ( RH )",
+      "leader": "Fikan Mubarok Rohimsyah PENELITIAN",
       "grantType": "PENELITIAN INTERNAL ( RH )",
       "grantCategory": "RH",
       "fundingAmount": 27000000,
@@ -2721,7 +2723,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Arif Wicaksono Septyanto, Nursanti Novi Arisa.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Arif Wicaksono Septyanto, Nursanti Novi Arisa.",
       "pillar": "P4",
       "supportingPillars": [],
       "matchScore": {
@@ -2756,7 +2758,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Rosa Eliviani.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Rosa Eliviani.",
       "pillar": "P4",
       "supportingPillars": [],
       "matchScore": {
@@ -2794,7 +2796,7 @@
       ],
       "leaderIsInternal": false,
       "prodiCode": "SI",
-      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Aidil Saputra Kirsan.",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Aidil Saputra Kirsan.",
       "pillar": "P4",
       "supportingPillars": [
         "P3"

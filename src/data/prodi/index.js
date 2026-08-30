@@ -7,6 +7,7 @@ import siPddiktiData from './sistem-informasi/pddikti_data.json'
 import siSupervisionData from './sistem-informasi/supervision_data.json'
 import siRoadmapMapping from './sistem-informasi/roadmap_mapping.json'
 import siRoadmapMappingItk from './sistem-informasi/roadmap_mapping_itk.json'
+import siAbdimasMapping from './sistem-informasi/abdimas_mapping.json'
 
 import bdLecturers from './bisnis-digital/lecturers.json'
 import bdSintaData from './bisnis-digital/sinta_data.json'
@@ -23,6 +24,9 @@ export const prodiRegistry = {
     supervisionData: siSupervisionData,
     roadmapMapping: siRoadmapMapping,
     roadmapMappingItk: siRoadmapMappingItk,
+    abdimasMapping: siAbdimasMapping,
+    // Roadmap Abdimas ITK belum tersedia - lihat catatan di scripts/roadmap_refs.py
+    abdimasMappingItk: null,
   },
   'bisnis-digital': {
     config: bdLecturers,
@@ -33,6 +37,8 @@ export const prodiRegistry = {
     supervisionData: null,
     roadmapMapping: null,
     roadmapMappingItk: null,
+    abdimasMapping: null,
+    abdimasMappingItk: null,
   },
   // Placeholder entries for prodi without data yet
   'teknik-elektro': { config: null },

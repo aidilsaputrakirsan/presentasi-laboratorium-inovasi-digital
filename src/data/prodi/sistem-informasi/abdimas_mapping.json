@@ -1,0 +1,2583 @@
+{
+  "metadata": {
+    "generatedAt": "2026-08-30T13:30:11.745725",
+    "prodi": "Sistem Informasi",
+    "source": "sinta_data.json",
+    "sourceGeneratedAt": "2026-08-29T17:04:12.248916",
+    "referenceKey": "FSTI",
+    "referenceLabel": "Roadmap Fakultas (FSTI)",
+    "reference": "Roadmap Penelitian, PkM, dan Renstra FSTI ITK 2025-2029",
+    "referenceDoc": "Roadmap_FSTI.pdf, Bab 4 (hal. 9-11)",
+    "referenceScope": "Acuan tingkat FAKULTAS. Pembagian pilarnya berbeda dengan roadmap tingkat institut, sehingga angka pada acuan ini tidak dapat dibandingkan langsung dengan angka pada acuan ITK.",
+    "categoryLabel": "Pilar Strategis",
+    "keywordBasis": "Bab 4 dokumen roadmap fakultas berjudul \"Pilar Strategis Integratif Riset & Abdimas\", sehingga empat pilar yang sama berlaku untuk penelitian maupun pengabdian. Daftar kata kunci disusun terpisah karena kosakata judul pengabdian berbeda. Perlu dicatat: roadmap fakultas tidak memiliki pilar ekonomi maupun pariwisata, sehingga kegiatan penguatan UMKM, pemasaran digital, dan wisata dipetakan ke Pilar 1 sebagai transformasi digital - sesuai uraian pilar tersebut yang mencakup manajemen proses bisnis bagi institusi pemerintah maupun korporasi.",
+    "kind": "services",
+    "kindLabel": "pengabdian kepada masyarakat",
+    "ownershipRule": "Judul penelitian diambil dari profil SINTA seluruh dosen yang tercatat pada daftar dosen resmi program studi. Sebuah judul dihitung sebagai luaran program studi apabila ketua ATAU minimal satu anggota pelaksana adalah dosen program studi; peran tersebut dicantumkan pada setiap judul.",
+    "method": "Setiap judul dicocokkan dengan daftar kata kunci penanda milik tiap kategori roadmap. Kata kunci yang lebih khas diberi bobot lebih tinggi (skala 1 sampai 3). Kategori dengan nilai tertinggi ditetapkan sebagai kategori utama, sedangkan kategori lain yang nilainya minimal 2 dicatat sebagai kategori pendukung. Kata kunci yang menjadi pemicu ditampilkan pada setiap judul sehingga hasilnya dapat diperiksa ulang dan dikoreksi.",
+    "description": "Pemetaan judul pengabdian kepada masyarakat prodi terhadap Roadmap Penelitian, PkM, dan Renstra FSTI ITK 2025-2029"
+  },
+  "pillars": {
+    "P1": {
+      "name": "Smart Governance dan Transformasi Digital Perkotaan",
+      "flagship": "GovTech Nusantara",
+      "siRole": "Merancang enterprise architecture dan memodelkan integrasi layanan e-Government agar ramah pengguna (user-centric)",
+      "source": "Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)"
+    },
+    "P2": {
+      "name": "Smart Education (Edukasi Cerdas dan Inklusif)",
+      "flagship": "AI-based Learning Management System",
+      "siRole": "Rekayasa perangkat lunak sistem informasi akademik dan media pembelajaran adaptif/inklusif",
+      "source": "Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)"
+    },
+    "P3": {
+      "name": "Smart Living dan Lingkungan Kesehatan Cerdas",
+      "flagship": "Bio-Smart Living System",
+      "siRole": "Platform informasi layanan kesehatan, analitik data lingkungan, dan sistem pemantauan berbasis IoT",
+      "source": "Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)"
+    },
+    "P4": {
+      "name": "Smart Grid, Energi Cerdas, dan Mobilitas Berkelanjutan",
+      "flagship": "Microgrid & EV Charging",
+      "siRole": "Sistem monitoring dan visualisasi data energi serta antarmuka pengguna aplikasi energi",
+      "source": "Roadmap FSTI 2025-2029, Bab 4.4 (hal. 10-11)"
+    }
+  },
+  "summary": {
+    "totalUniqueResearch": 65,
+    "mapped": 63,
+    "unmapped": 2,
+    "perPillar": {
+      "P1": 24,
+      "P2": 11,
+      "P3": 28,
+      "P4": 0
+    },
+    "perTheme": {},
+    "perCenter": {},
+    "coveragePercent": 96.9
+  },
+  "items": [
+    {
+      "title": "STRATEGI INTEGRASI BRANDING DIGITAL DAN INOVASI PANGAN LOKAL DALAM OPTIMALISASI POTENSI AGROWISATA KANG BEJO",
+      "year": "2026",
+      "leader": "Yuyun Tri Wiranti",
+      "grantType": "INTERNAL ( PROGRAM MAHASISWA MENGABDI DESA (PMMD) )",
+      "grantCategory": "PROGRAM MAHASISWA MENGABDI DESA (PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Arif Wicaksono Septyanto"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [
+        "P3"
+      ],
+      "matchScore": {
+        "P1": 6,
+        "P3": 3
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "BRANDING",
+            "weight": 2
+          },
+          {
+            "keyword": "WISATA",
+            "weight": 2
+          },
+          {
+            "keyword": "AGROWISATA",
+            "weight": 2
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "PANGAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BRANDING\", \"WISATA\", \"AGROWISATA\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "DIGITALISASI SISTEM PENDATAAN PEMBAYARAN GEDUNG SELURUH TENANT PLAZA KEBUN SAYUR BALIKPAPAN",
+      "year": "2026",
+      "leader": "Hendy Indrawan Sunardi",
+      "grantType": "INTERNAL ( PROGRAM MAHASISWA MENGABDI DESA (PMMD) )",
+      "grantCategory": "PROGRAM MAHASISWA MENGABDI DESA (PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi",
+        "Dwi Arief Prambudi"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Dwi Arief Prambudi",
+        "Hendy Indrawan Sunardi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [
+        "P3"
+      ],
+      "matchScore": {
+        "P1": 3,
+        "P3": 3
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "SISTEM PENDATAAN",
+            "weight": 3
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "KEBUN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SISTEM PENDATAAN\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "UPAYA PENINGKATAN KUALITAS UMKM IDIL FITFA MELALUI PENGUATAN BRANDING DAN INOVASI PRODUK",
+      "year": "2026",
+      "leader": "Amalia Nur Kumalaningrum",
+      "grantType": "INTERNAL ( PROGRAM MAHASISWA MENGABDI DESA (PMMD) )",
+      "grantCategory": "PROGRAM MAHASISWA MENGABDI DESA (PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "siMembers": [
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Vika Fitratunnany Insanittaqwa.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 4
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "BRANDING",
+            "weight": 2
+          },
+          {
+            "keyword": "UMKM",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BRANDING\", \"UMKM\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "PENGEMBANGAN WEBSITE DAN STRATEGI PROMOSI MEDIA SOSIAL UNTUK MENINGKATKAN VISIBILITAS DAN BRANDING PUPUK SEMOK",
+      "year": "2026",
+      "leader": "Dwi Nur Amalia",
+      "grantType": "INTERNAL ( PROGRAM MAHASISWA MENGABDI DESA (PMMD) )",
+      "grantCategory": "PROGRAM MAHASISWA MENGABDI DESA (PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Dwi Nur Amalia"
+      ],
+      "siMembers": [
+        "Dwi Nur Amalia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [
+        "P3"
+      ],
+      "matchScore": {
+        "P1": 6,
+        "P3": 3
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "BRANDING",
+            "weight": 2
+          },
+          {
+            "keyword": "PROMOSI",
+            "weight": 2
+          },
+          {
+            "keyword": "MEDIA SOSIAL",
+            "weight": 2
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "PUPUK",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BRANDING\", \"PROMOSI\", \"MEDIA SOSIAL\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "MEWUJUDKAN SMART RT MELALUI DIGITALISASI LAYANAN DI RT 02 KELURAHAN GRAHA INDAH BALIKPAPAN BERBASIS WEBSITE",
+      "year": "2026",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "INTERNAL ( PROGRAM PENGEMBANGAN DESA (PPD) )",
+      "grantCategory": "PROGRAM PENGEMBANGAN DESA (PPD",
+      "fundingAmount": 20000000,
+      "lecturers": [
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 9
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "SMART RT",
+            "weight": 3
+          },
+          {
+            "keyword": "DIGITALISASI LAYANAN",
+            "weight": 3
+          },
+          {
+            "keyword": "LAYANAN DI RT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SMART RT\", \"DIGITALISASI LAYANAN\", \"LAYANAN DI RT\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "IMPLEMENTASI DAN PELATIHAN SISTEM INFORMASI PENGAJIAN DAN MEDIA SOSIAL",
+      "year": "2025",
+      "leader": "Yuyun Tri Wiranti",
+      "grantType": "HIBAH INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Sri Rahayu Natasia",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 2
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "MEDIA SOSIAL",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"MEDIA SOSIAL\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "PENGEMBANGAN WISATA TANJUNG GADING MELALUI DIGITALISASI DI RT 17 KELURAHAN KARANG JOANG",
+      "year": "2025",
+      "leader": "Hendy Indrawan Sunardi",
+      "grantType": "HIBAH INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 2
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "WISATA",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"WISATA\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "PENINGKATAN KEMANDIRIAN EKONOMI PERKUMPULAN PENYANDANG DISABILITAS INDONESIA (PPDI) BALIKPAPAN MELALUI PENGUATAN PEMASARAN DIGITAL DAN PEMBERDAYAAN LEGALITAS PRODUK",
+      "year": "2025",
+      "leader": "Muh. Ikhsan Alif S",
+      "grantType": "HIBAH INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Arif Wicaksono Septyanto.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 4
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PEMASARAN DIGITAL",
+            "weight": 2
+          },
+          {
+            "keyword": "EKONOMI",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMASARAN DIGITAL\", \"EKONOMI\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "DIGITALISASI LAYANAN BERBASIS WEBSITE UNTUK MENINGKATKAN KUALITAS PELAYANAN DI RT 02 KELURAHAN GRAHA INDAH BALIKPAPAN",
+      "year": "2025",
+      "leader": "Dwi Arief Prambudi INSTITUSI",
+      "grantType": "INSTITUSI INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Dwi Arief Prambudi.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 6
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "DIGITALISASI LAYANAN",
+            "weight": 3
+          },
+          {
+            "keyword": "LAYANAN DI RT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"DIGITALISASI LAYANAN\", \"LAYANAN DI RT\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "PEMANFAATAN PLATFORM DIGITAL DALAM PEMASARAN PRODUK UMKM KELURAHAN KLANDASAN ILIR DAN PENGEMBANGAN DESAIN PRODUK YANG BERKUALITAS",
+      "year": "2025",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo INSTITUSI",
+      "grantType": "INSTITUSI INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: I Putu Deny Arthawan Sugih Prabowo.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 2
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "UMKM",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"UMKM\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "PELATIHAN OPTIMALISASI PEMASARAN DIGITAL PADA BATIK SHAHO DAN KOMUNITAS BATIK TIGA ZAMAN BALIKPAPAN",
+      "year": "2025",
+      "leader": "Luh Made Wisnu Satyaninggrat",
+      "grantType": "HIBAH INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: I Putu Deny Arthawan Sugih Prabowo.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 2
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PEMASARAN DIGITAL",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMASARAN DIGITAL\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "OPTIMALISASI KEWIRAUSAHAAN BERBASIS MIKRO PADA KELURAHAN KARANG JOANG KOTA BALIKPAPAN",
+      "year": "2025",
+      "leader": "M. Ihsan Alfani Putera",
+      "grantType": "HIBAH INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 2
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "KEWIRAUSAHAAN",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KEWIRAUSAHAAN\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "PENGEMBANGAN WEBSITE DAN PENINGKATAN KENYAMANAN PENGUNJUNG DI WISATA MERANTI BALIKPAPAN",
+      "year": "2024",
+      "leader": "Hendy Indrawan Sunardi",
+      "grantType": "HIBAH INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 2
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "WISATA",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"WISATA\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "DIGITALISASI PEMBANGUNAN WEBSITE DASHBOARD SEBAGAI SARANA INFORMASI DAN PENGELOLAAN DATA MASYARAKAT",
+      "year": "2024",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "HIBAH INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 6
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "DASHBOARD",
+            "weight": 3
+          },
+          {
+            "keyword": "PENGELOLAAN DATA MASYARAKAT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"DASHBOARD\", \"PENGELOLAAN DATA MASYARAKAT\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "OPTIMASI KAWASAN WISATA MELALUI PENGEMBANGAN PRODUK DAN BRANDING DENGAN MEMANFAATKAN TEKNOLOGI DI HUTAN LINDUNG SUNGAI WAIN",
+      "year": "2024",
+      "leader": "Arif Wicaksono Septyanto",
+      "grantType": "HIBAH INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [
+        "P3"
+      ],
+      "matchScore": {
+        "P1": 4,
+        "P3": 3
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "BRANDING",
+            "weight": 2
+          },
+          {
+            "keyword": "WISATA",
+            "weight": 2
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "HUTAN LINDUNG",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BRANDING\", \"WISATA\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "MEWUJUDKAN SMART RT DENGAN PERKEMBANGAN TEKNOLOGI RT 31 WADUK WONOREJO KOTA BALIKPAPAN KALIMANTAN TIMUR",
+      "year": "2024",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 3
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "SMART RT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SMART RT\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "PELATIHAN DIGITAL MARKETING RT.06 KELURAHAN GRAHA INDAH, KECAMATAN BALIKPAPAN UTARA, KOTA BALIKPAPAN, KALIMANTAN TIMUR",
+      "year": "2024",
+      "leader": "Widya Sartika",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: I Putu Deny Arthawan Sugih Prabowo.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 2
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "DIGITAL MARKETING",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"DIGITAL MARKETING\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "PENINGKATAN INFRASTRUKTUR PADA JALAN DI KAMPUNG E-SPORT BALIKPAPAN :\nIMPLEMENTASI GOOGLE MAPS, PEMBANGUNAN DIREKSI GANG, CONVEX MIRROR,\nDAN RAMBU KEBISINGAN",
+      "year": "2024",
+      "leader": "M. Ihsan Alfani Putera",
+      "grantType": "HIBAH INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera",
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera",
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 4
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "E-SPORT",
+            "weight": 2
+          },
+          {
+            "keyword": "INFRASTRUKTUR",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"E-SPORT\", \"INFRASTRUKTUR\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "PENATAAN KAWASAN PEMUKIMAN PADAT PENDUDUK DENGAN STRATEGI ON-SITE UPGRADING DI KELURAHAN KLANDASAN",
+      "year": "2023",
+      "leader": "Nursanti Novi  Arisa",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 8000000,
+      "lecturers": [
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Nursanti Novi Arisa.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 6
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PENATAAN KAWASAN",
+            "weight": 3
+          },
+          {
+            "keyword": "PEMUKIMAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PENATAAN KAWASAN\", \"PEMUKIMAN\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "PENGEMBANGAN KAWASAN WISATA KULINER KELURAHAN DAMAI BALIKPAPAN",
+      "year": "2022",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 7109000,
+      "lecturers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 2
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "WISATA",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"WISATA\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "PENINGKATAN EKSISTENSI PROMOSI PARIWISATA KAMPUNG E-SPORT KOTA BALIKPAPAN",
+      "year": "2022",
+      "leader": "M. Ihsan Alfani Putera",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 7998000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 8
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PROMOSI",
+            "weight": 2
+          },
+          {
+            "keyword": "WISATA",
+            "weight": 2
+          },
+          {
+            "keyword": "PARIWISATA",
+            "weight": 2
+          },
+          {
+            "keyword": "E-SPORT",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PROMOSI\", \"WISATA\", \"PARIWISATA\", \"E-SPORT\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "SOSIALISASI PEMANFAATAN DIGITAL MARKETING SEBAGAI SOLUSI MENINGKATKAN PENJUALAN UMKM DI KELURAHAN KARANG JATI RT 7",
+      "year": "2022",
+      "leader": "Sri Rahayu Natasia",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 6035000,
+      "lecturers": [
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 4
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "DIGITAL MARKETING",
+            "weight": 2
+          },
+          {
+            "keyword": "UMKM",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"DIGITAL MARKETING\", \"UMKM\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "PENGOLAHAN BUAH PEPAYA SEBAGAI PRODUK JUAL YANG MURAH DAN MODERN MELALUI MEDIA PELATIHAN UMKM SEBAGAI UPAYA PENINGKATAN EKONOMI MASYARAKAT DI KELURAHAN KARANG JATI",
+      "year": "2021",
+      "leader": "Sri Rahayu Natasia",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 2100000,
+      "lecturers": [
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [
+        "P3"
+      ],
+      "matchScore": {
+        "P1": 4,
+        "P3": 3
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "UMKM",
+            "weight": 2
+          },
+          {
+            "keyword": "EKONOMI",
+            "weight": 2
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "PEPAYA",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"UMKM\", \"EKONOMI\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "PELATIHAN MEMODELKAN PROSES BISNIS MENGGUNAKAN BIZAGI BAGI ORGANISASI PERANGKAT DAERAH KOTA BALIKPAPAN",
+      "year": "2020",
+      "leader": "Lovinta Happy Atrinawati",
+      "grantType": "HIBAH ITK ( PKM )",
+      "grantCategory": "PKM",
+      "fundingAmount": 5000000,
+      "lecturers": [
+        "Lovinta Happy Atrinawati"
+      ],
+      "siMembers": [
+        "Lovinta Happy Atrinawati"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P1",
+      "supportingPillars": [],
+      "matchScore": {
+        "P1": 9
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PERANGKAT DAERAH",
+            "weight": 3
+          },
+          {
+            "keyword": "BIZAGI",
+            "weight": 3
+          },
+          {
+            "keyword": "PROSES BISNIS",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PERANGKAT DAERAH\", \"BIZAGI\", \"PROSES BISNIS\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
+    },
+    {
+      "title": "IMPLEMENTASI PEMBELAJARAN TEKNOLOGI INFORMASI DASAR BERBASIS KODING DAN ARTIFICIAL INTELLIGENCE BAGI SISWA SERTA PENGUATAN KOMPETENSI GURU DI SDN 011 KOTA BALIKPAPAN",
+      "year": "2026",
+      "leader": "Khairunnisa Rahmah",
+      "grantType": "INTERNAL ( PROGRAM MAHASISWA MENGABDI DESA (PMMD) )",
+      "grantCategory": "PROGRAM MAHASISWA MENGABDI DESA (PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Hendy Indrawan Sunardi"
+      ],
+      "siMembers": [
+        "Hendy Indrawan Sunardi"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Hendy Indrawan Sunardi.",
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 18
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "KODING",
+            "weight": 3
+          },
+          {
+            "keyword": "SISWA",
+            "weight": 3
+          },
+          {
+            "keyword": "SDN ",
+            "weight": 3
+          },
+          {
+            "keyword": "GURU",
+            "weight": 3
+          },
+          {
+            "keyword": "KOMPETENSI GURU",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"KODING\", \"SISWA\", \"SDN \", \"GURU\", \"KOMPETENSI GURU\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
+    },
+    {
+      "title": "OPTIMALISASI TEKNOLOGI DAN KREATIVITAS UNTUK MENDUKUNG PEMBELAJARAN DAN ADMINISTRASI DI SEKOLAH ISLAM AL AZHAR 58 BALIKPAPAN",
+      "year": "2025",
+      "leader": "Nisa Rizqiya Fadhliana",
+      "grantType": "HIBAH INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "siMembers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Yuyun Tri Wiranti.",
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 6
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "SEKOLAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"SEKOLAH\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
+    },
+    {
+      "title": "PESANTREN KODING: EDUKASI PEMROGRAMAN DASAR BAGI SISWA SEKOLAH DASAR MELALUI MIT APP INVENTOR",
+      "year": "2025",
+      "leader": "Rosa Eliviani",
+      "grantType": "HIBAH INTERNAL ( HIBAH INTERNAL )",
+      "grantCategory": "HIBAH INTERNAL",
+      "fundingAmount": 1094345,
+      "lecturers": [
+        "Rosa Eliviani"
+      ],
+      "siMembers": [
+        "Rosa Eliviani"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 21
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "PEMROGRAMAN",
+            "weight": 3
+          },
+          {
+            "keyword": "KODING",
+            "weight": 3
+          },
+          {
+            "keyword": "MIT APP INVENTOR",
+            "weight": 3
+          },
+          {
+            "keyword": "SISWA",
+            "weight": 3
+          },
+          {
+            "keyword": "SEKOLAH",
+            "weight": 3
+          },
+          {
+            "keyword": "EDUKASI PEMROGRAMAN",
+            "weight": 3
+          },
+          {
+            "keyword": "SEKOLAH DASAR",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMROGRAMAN\", \"KODING\", \"MIT APP INVENTOR\", \"SISWA\", \"SEKOLAH\", \"EDUKASI PEMROGRAMAN\", \"SEKOLAH DASAR\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
+    },
+    {
+      "title": "KEGIATAN PENGAJARAN ANAK-ANAK SERTA SOSIALISASI PEMANFAATAN WEBSITE DAN SOSIAL MEDIA DI KELURAHAN MARGO MULYO",
+      "year": "2024",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 3
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "PENGAJARAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PENGAJARAN\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
+    },
+    {
+      "title": "OPTIMASI KELOMPOK TANI DAN WISATA EDUKATIF BAMBOE WANADESA",
+      "year": "2023",
+      "leader": "Arif Wicaksono Septyanto",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 8000000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P2",
+      "supportingPillars": [
+        "P3",
+        "P1"
+      ],
+      "matchScore": {
+        "P1": 2,
+        "P2": 3,
+        "P3": 3
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "WISATA",
+            "weight": 2
+          }
+        ],
+        "P2": [
+          {
+            "keyword": "WISATA EDUKATIF",
+            "weight": 3
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "KELOMPOK TANI",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"WISATA EDUKATIF\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
+    },
+    {
+      "title": "PEMBERDAYAAN MASYARAKAT PERUM KARANG JOANG LESTARI RT.50 DALAM BIDANG IPTEK DENGAN MENGGUNAKAN APLIKASI SCRATCH",
+      "year": "2023",
+      "leader": "Vika Fitratunnany Insanittaqwa",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 8000000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "siMembers": [
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 3
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "SCRATCH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SCRATCH\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
+    },
+    {
+      "title": "SOSIALISASI PEMANFAATAN TEKNOLOGI ICT DALAM PEMBELAJARAN DARING DI SEKOLAH DASAR AL AZHAR 58 BALIKPAPAN",
+      "year": "2020",
+      "leader": "Aidil Saputra Kirsan MANDIRI ( MANDIRI )",
+      "grantType": "MANDIRI ( MANDIRI )",
+      "grantCategory": "MANDIRI",
+      "fundingAmount": 100000,
+      "lecturers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Aidil Saputra Kirsan.",
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 12
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "SEKOLAH",
+            "weight": 3
+          },
+          {
+            "keyword": "DARING",
+            "weight": 3
+          },
+          {
+            "keyword": "SEKOLAH DASAR",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"SEKOLAH\", \"DARING\", \"SEKOLAH DASAR\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
+    },
+    {
+      "title": "PELATIHAN PEMROGRAMAN UNTUK MELATIH LOGIKA BERPIKIR YANG SISTEMATIS KEPADA SISWA SDN 012 BALIKPAPAN UTARA",
+      "year": "2020",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "HIBAH ITK ( PKM )",
+      "grantCategory": "PKM",
+      "fundingAmount": 5810000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 12
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "PEMROGRAMAN",
+            "weight": 3
+          },
+          {
+            "keyword": "SISWA",
+            "weight": 3
+          },
+          {
+            "keyword": "SDN ",
+            "weight": 3
+          },
+          {
+            "keyword": "LOGIKA BERPIKIR",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMROGRAMAN\", \"SISWA\", \"SDN \", \"LOGIKA BERPIKIR\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
+    },
+    {
+      "title": "PEMBANGUNAN SISTEM INFORMASI PERPUSTAKAAN BERBASIS WEB PADA SMAN 9 BALIKPAPAN",
+      "year": "2020",
+      "leader": "Sri Rahayu Natasia MANDIRI ( MANDIRI )",
+      "grantType": "MANDIRI ( MANDIRI )",
+      "grantCategory": "MANDIRI",
+      "fundingAmount": 100000,
+      "lecturers": [
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Sri Rahayu Natasia.",
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 6
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "SMAN ",
+            "weight": 3
+          },
+          {
+            "keyword": "PERPUSTAKAAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SMAN \", \"PERPUSTAKAAN\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
+    },
+    {
+      "title": "PEMANFAATAN SISTEM INFORMASI KELAS DIGITAL UNTUK MENDUKUNG PELAKSANAAN TRY OUT DI SMP 22 BALIKPAPAN",
+      "year": "2020",
+      "leader": "Sri Rahayu Natasia MANDIRI ( MANDIRI )",
+      "grantType": "MANDIRI ( MANDIRI )",
+      "grantCategory": "MANDIRI",
+      "fundingAmount": 100000,
+      "lecturers": [
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Sri Rahayu Natasia.",
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 9
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "SMP ",
+            "weight": 3
+          },
+          {
+            "keyword": "KELAS DIGITAL",
+            "weight": 3
+          },
+          {
+            "keyword": "TRY OUT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SMP \", \"KELAS DIGITAL\", \"TRY OUT\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
+    },
+    {
+      "title": "EDUKASI PENGGUNAAN INTERNET SEHAT UNTUK MEDIA PEMBELAJARAN DI SMP NEGERI BALIKPAPAN",
+      "year": "2019",
+      "leader": "M. Ihsan Alfani Putera",
+      "grantType": "HIBAH ITK ( PKM )",
+      "grantCategory": "PKM",
+      "fundingAmount": 6000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P2",
+      "supportingPillars": [],
+      "matchScore": {
+        "P2": 12
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "SMP ",
+            "weight": 3
+          },
+          {
+            "keyword": "SMP NEGERI",
+            "weight": 3
+          },
+          {
+            "keyword": "INTERNET SEHAT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"SMP \", \"SMP NEGERI\", \"INTERNET SEHAT\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
+    },
+    {
+      "title": "PENGEMBANGAN BANK SAMPAH UNTUK MENDUKUNG PENGELOLAAN SAMPAH BERKELANJUTAN DI RT 44 SEPINGGAN PRATAMA",
+      "year": "2026",
+      "leader": "Rosa Eliviani",
+      "grantType": "INTERNAL ( PROGRAM MAHASISWA MENGABDI DESA (PMMD) )",
+      "grantCategory": "PROGRAM MAHASISWA MENGABDI DESA (PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Rosa Eliviani"
+      ],
+      "siMembers": [
+        "Rosa Eliviani",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 6
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "BANK SAMPAH",
+            "weight": 3
+          },
+          {
+            "keyword": "SAMPAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BANK SAMPAH\", \"SAMPAH\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "OPTIMALISASI KAWASAN KELOMPOK TANI HARAPAN SEJAHTERA MELALUI SISTEM INFORMASI TERPADU BERBASIS WEBSITE DAN LABEL TANAMAN BERBASIS QR CODE",
+      "year": "2026",
+      "leader": "Arif Wicaksono Septyanto",
+      "grantType": "INTERNAL ( PROGRAM MAHASISWA MENGABDI DESA (PMMD) )",
+      "grantCategory": "PROGRAM MAHASISWA MENGABDI DESA (PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 3
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "KELOMPOK TANI",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KELOMPOK TANI\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "OPTIMALISASI PROMOSI PRODUK ECOPRINT HUTAN LINDUNG SUNGAI WAIN DENGAN PENGELOLAAN MEDIA SOSIAL DAN PELATIHAN KONTEN KREATIF DIGITAL",
+      "year": "2026",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo",
+      "grantType": "INTERNAL ( PROGRAM MAHASISWA MENGABDI DESA (PMMD) )",
+      "grantCategory": "PROGRAM MAHASISWA MENGABDI DESA (PMMD",
+      "fundingAmount": 5228000,
+      "lecturers": [
+        "Henokh Lugo Hariyanto",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "Henokh Lugo Hariyanto",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [
+        "P1"
+      ],
+      "matchScore": {
+        "P1": 4,
+        "P3": 6
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PROMOSI",
+            "weight": 2
+          },
+          {
+            "keyword": "MEDIA SOSIAL",
+            "weight": 2
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "HUTAN LINDUNG",
+            "weight": 3
+          },
+          {
+            "keyword": "ECOPRINT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"HUTAN LINDUNG\", \"ECOPRINT\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PENGEMBANGAN WISATA EDUKASI KANG BEJO BALIKPAPAN BERBASIS EDUKASI PANGAN, KEAMANAN LINGKUNGAN DAN DIGITALISASI INFORMASI",
+      "year": "2026",
+      "leader": "Vika Fitratunnany Insanittaqwa",
+      "grantType": "INTERNAL ( PROGRAM MAHASISWA MENGABDI DESA (PMMD) )",
+      "grantCategory": "PROGRAM MAHASISWA MENGABDI DESA (PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa",
+        "Rosa Eliviani"
+      ],
+      "siMembers": [
+        "Rosa Eliviani",
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [
+        "P2",
+        "P1"
+      ],
+      "matchScore": {
+        "P1": 2,
+        "P2": 3,
+        "P3": 6
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "WISATA",
+            "weight": 2
+          }
+        ],
+        "P2": [
+          {
+            "keyword": "WISATA EDUKASI",
+            "weight": 3
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "LINGKUNGAN",
+            "weight": 3
+          },
+          {
+            "keyword": "PANGAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"LINGKUNGAN\", \"PANGAN\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PENINGKATAN PRODUKTIVITAS KELOMPOK WANITA TANI KM 21 BALIKPAPAN MELALUI INOVASI PRODUK DAN PENGUAT BRANDING BERBASIS DESAIN KEMASAN",
+      "year": "2026",
+      "leader": "Anggela",
+      "grantType": "INTERNAL ( PROGRAM MAHASISWA MENGABDI DESA (PMMD) )",
+      "grantCategory": "PROGRAM MAHASISWA MENGABDI DESA (PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Dwi Nur Amalia"
+      ],
+      "siMembers": [
+        "Dwi Nur Amalia"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Dwi Nur Amalia.",
+      "pillar": "P3",
+      "supportingPillars": [
+        "P1"
+      ],
+      "matchScore": {
+        "P1": 2,
+        "P3": 3
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "BRANDING",
+            "weight": 2
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "WANITA TANI",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"WANITA TANI\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "OPTIMALISASI PENGOLAHAN PRODUK KERIPIK BUAH MELALUI EVALUASI PRODUKSI DAN STRATEGI PEMASARAN BERBASIS DIGITAL PADA KELOMPOK TANI KM 24 BALIKPAPAN UTARA",
+      "year": "2026",
+      "leader": "Nursanti Novi Arisa",
+      "grantType": "INTERNAL ( PROGRAM MAHASISWA MENGABDI DESA (PMMD) )",
+      "grantCategory": "PROGRAM MAHASISWA MENGABDI DESA (PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera",
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera",
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 6
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "KELOMPOK TANI",
+            "weight": 3
+          },
+          {
+            "keyword": "KERIPIK",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KELOMPOK TANI\", \"KERIPIK\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PENGEMBANGAN DIGITAL BRANDING BERSAMA TANAMIN BUMI NUSANTARA MELALUI PEMANFAATAN TEKNOLOGI INFORMASI UNTUK KAMPANYE LINGKUNGAN",
+      "year": "2025",
+      "leader": "Arif Wicaksono Septyanto INSTITUSI",
+      "grantType": "INSTITUSI INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Arif Wicaksono Septyanto, Henokh Lugo Hariyanto.",
+      "pillar": "P3",
+      "supportingPillars": [
+        "P1"
+      ],
+      "matchScore": {
+        "P1": 2,
+        "P3": 3
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "BRANDING",
+            "weight": 2
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "LINGKUNGAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"LINGKUNGAN\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "Optimalisasi Sistem Irigasi Berbasis Rainwater Harvesting (RWH) dan Pemanfaatan Limbah Pertanian sebagai Pupuk Organik Cair (POC) untuk Meningkatkan Produktivitas Perkebunan Berkelanjutan di Kelompok Tani Harapan Sejahtera",
+      "year": "2025",
+      "leader": "Arif Wicaksono Septyanto",
+      "grantType": "Pengabdian Kepada Masyarakat Kompetitif Nasional ( PKM )",
+      "grantCategory": "PKM",
+      "fundingAmount": 45000000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 21
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "LIMBAH",
+            "weight": 3
+          },
+          {
+            "keyword": "PUPUK",
+            "weight": 3
+          },
+          {
+            "keyword": "KELOMPOK TANI",
+            "weight": 3
+          },
+          {
+            "keyword": "KEBUN",
+            "weight": 3
+          },
+          {
+            "keyword": "PERKEBUNAN",
+            "weight": 3
+          },
+          {
+            "keyword": "IRIGASI",
+            "weight": 3
+          },
+          {
+            "keyword": "RAINWATER",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"LIMBAH\", \"PUPUK\", \"KELOMPOK TANI\", \"KEBUN\", \"PERKEBUNAN\", \"IRIGASI\", \"RAINWATER\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PENGEMBANGAN FASILITAS DAN PROMOSI HUTAN KOTA MANGROVE MARGOMULYO MELALUI TEKNOLOGI DIGITAL",
+      "year": "2025",
+      "leader": "Vika Fitratunnany Insanittaqwa INSTITUSI",
+      "grantType": "INSTITUSI INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa",
+        "Dwi Nur Amalia"
+      ],
+      "siMembers": [
+        "Dwi Nur Amalia",
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Dwi Nur Amalia, Vika Fitratunnany Insanittaqwa.",
+      "pillar": "P3",
+      "supportingPillars": [
+        "P1"
+      ],
+      "matchScore": {
+        "P1": 2,
+        "P3": 6
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PROMOSI",
+            "weight": 2
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "MANGROVE",
+            "weight": 3
+          },
+          {
+            "keyword": "HUTAN KOTA",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"MANGROVE\", \"HUTAN KOTA\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PEMBERDAYAAN KELOMPOK TANI SWATANI KM 17 MELALUI PEMANFAATAN LIMBAH PERTANIAN DAN BIOGAS SEBAGAI PUPUK ORGANIK CAIR",
+      "year": "2025",
+      "leader": "Nia Febrianti",
+      "grantType": "HIBAH INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Dwi Arief Prambudi.",
+      "pillar": "P3",
+      "supportingPillars": [
+        "P4"
+      ],
+      "matchScore": {
+        "P3": 9,
+        "P4": 3
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "LIMBAH",
+            "weight": 3
+          },
+          {
+            "keyword": "PUPUK",
+            "weight": 3
+          },
+          {
+            "keyword": "KELOMPOK TANI",
+            "weight": 3
+          }
+        ],
+        "P4": [
+          {
+            "keyword": "BIOGAS",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"LIMBAH\", \"PUPUK\", \"KELOMPOK TANI\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "OPTIMALISASI PENGELOLAAN SAMPAH BERBASIS MASYARAKAT MELALUI PEMBANGUNAN BANK SAMPAH UNIT  DI KELURAHAN KLANDASAN ILIR",
+      "year": "2025",
+      "leader": "Nursanti Novi  Arisa",
+      "grantType": "HIBAH INTERNAL ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Nursanti Novi Arisa.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 6
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "BANK SAMPAH",
+            "weight": 3
+          },
+          {
+            "keyword": "SAMPAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BANK SAMPAH\", \"SAMPAH\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "OPTIMALISASI PENGELOLAAN SAMPAH MELALUI BIOPORI DAN BANK SAMPAH DI MENTARI VILLAGE",
+      "year": "2025",
+      "leader": "Risty Jayanti Yuniar",
+      "grantType": "HIBAH INTERNAL ( PPD )",
+      "grantCategory": "PPD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Nursanti Novi Arisa.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 9
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "BANK SAMPAH",
+            "weight": 3
+          },
+          {
+            "keyword": "SAMPAH",
+            "weight": 3
+          },
+          {
+            "keyword": "BIOPORI",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BANK SAMPAH\", \"SAMPAH\", \"BIOPORI\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "MANAJEMEN KELOMPOK WANITA TANI RT 21 SEPINGGAN MELALUI PEMANFAATAN TEKNOLOGI INFORMASI",
+      "year": "2024",
+      "leader": "Yuyun Tri Wiranti",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 9965000,
+      "lecturers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "siMembers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 3
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "WANITA TANI",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"WANITA TANI\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PENERAPAN TRIPLE HELIX DALAM MEWUJUDKAN DESA DIGITAL PEDULI SAMPAH SEBAGAI UPAYA PENINGKATAN KESEJAHTERAAN MASYARAKAT",
+      "year": "2024",
+      "leader": "Nursanti Novi  Arisa",
+      "grantType": "HIBAH INTERNAL ( PPD )",
+      "grantCategory": "PPD",
+      "fundingAmount": 15000000,
+      "lecturers": [
+        "Dwi Nur Amalia",
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "Dwi Nur Amalia",
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Dwi Nur Amalia, Nursanti Novi Arisa.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 3
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "SAMPAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SAMPAH\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PEMBUATAN AKUAPONIK SEBAGAI PEMANFAATAN LAHAN TERBATAS DAN PEMANFAATAN LIMBAH KOTORAN IKAN LELE MENJADI PUPUK DI WILAYAN PERUMAHAN BANGUN REKSA RT 21 KELURAHAN GRAHA INDAH, KECAMATAN BALIKPAPAN UTARA",
+      "year": "2024",
+      "leader": "Nia Febrianti",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Dwi Arief Prambudi.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 9
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "LIMBAH",
+            "weight": 3
+          },
+          {
+            "keyword": "PUPUK",
+            "weight": 3
+          },
+          {
+            "keyword": "AKUAPONIK",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"LIMBAH\", \"PUPUK\", \"AKUAPONIK\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "OPTIMALISASI PENGELOLAAN SAMPAH PADA BANK SAMPAH 123 RT. 001 KELURAHAN MARGO MULYO BALIKPAPAN BARAT",
+      "year": "2023",
+      "leader": "Yuyun Tri Wiranti",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 7999000,
+      "lecturers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "siMembers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 6
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "BANK SAMPAH",
+            "weight": 3
+          },
+          {
+            "keyword": "SAMPAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BANK SAMPAH\", \"SAMPAH\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "DIGITALISASI PENGELOLAAN BANK SAMPAH BORNEO 38 DAN PENGEMBANGAN RUMAH KREATIF RT. 38 KELURAHAN BARU TENGAH BALIKPAPAN BARAT",
+      "year": "2023",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 7995000,
+      "lecturers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 6
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "BANK SAMPAH",
+            "weight": 3
+          },
+          {
+            "keyword": "SAMPAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BANK SAMPAH\", \"SAMPAH\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM “GANTION” (GARDEN INFORMATION ) DAN PENGAPLIKASIAN TEKNOLOGI MESIN \"ALKON\" PADA KEBUN MELON SUMBER BERKAH",
+      "year": "2023",
+      "leader": "Hendy Indrawan Sunardi",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 8000000,
+      "lecturers": [
+        "Hendy Indrawan Sunardi"
+      ],
+      "siMembers": [
+        "Hendy Indrawan Sunardi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 9
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "KEBUN",
+            "weight": 3
+          },
+          {
+            "keyword": "MELON",
+            "weight": 3
+          },
+          {
+            "keyword": "GARDEN INFORMATION",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KEBUN\", \"MELON\", \"GARDEN INFORMATION\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "STRATEGI PENINGKATAN PRODUKSI DENGAN PENAMBAHAN MEDIA TANAM HIDROPONIK DAN PERANCANGAN WEBSITE COMPANY PROFILE KELOMPOK WANITA TANI RT 28 SEPINGGAN RAYA BALIKPAPAN",
+      "year": "2023",
+      "leader": "Dwi Nur Amalia",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 8000000,
+      "lecturers": [
+        "Dwi Nur Amalia"
+      ],
+      "siMembers": [
+        "Dwi Nur Amalia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [
+        "P1"
+      ],
+      "matchScore": {
+        "P1": 2,
+        "P3": 9
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "COMPANY PROFILE",
+            "weight": 2
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "HIDROPONIK",
+            "weight": 3
+          },
+          {
+            "keyword": "WANITA TANI",
+            "weight": 3
+          },
+          {
+            "keyword": "MEDIA TANAM",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"HIDROPONIK\", \"WANITA TANI\", \"MEDIA TANAM\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "DIGITALISASI SISTEM PENGELOLAAN BANK SAMPAH DHARMA BAKTI RT. 055, KELURAHAN MUARA RAPAK, KECAMATAN BALIKPAPAN UTARA, KOTA BALIKPAPAN, KALIMANTAN TIMUR",
+      "year": "2023",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 8000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 6
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "BANK SAMPAH",
+            "weight": 3
+          },
+          {
+            "keyword": "SAMPAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BANK SAMPAH\", \"SAMPAH\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "BRANDING BANK SAMPAH KOTA HIJAU BALIKPAPAN BERBASIS DIGITAL MARKETING",
+      "year": "2023",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 8000000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [
+        "P1"
+      ],
+      "matchScore": {
+        "P1": 4,
+        "P3": 6
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "DIGITAL MARKETING",
+            "weight": 2
+          },
+          {
+            "keyword": "BRANDING",
+            "weight": 2
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "BANK SAMPAH",
+            "weight": 3
+          },
+          {
+            "keyword": "SAMPAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BANK SAMPAH\", \"SAMPAH\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PENGEMBANGAN SUMBER DAYA MANUSIA DAN PROSES PEMBENAHAN LINGKUNGAN DALAM UPAYA PENINGKATAN EKSISTENSI KAMPUNG E-SPORTS KOTA BALIKPAPAN",
+      "year": "2023",
+      "leader": "M. Ihsan Alfani Putera",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 8000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [
+        "P1"
+      ],
+      "matchScore": {
+        "P1": 2,
+        "P3": 3
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "E-SPORT",
+            "weight": 2
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "LINGKUNGAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"LINGKUNGAN\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PEMBUATAN SISTEM INFORMASI PENGOLAHAN SAMPAH BERBASIS WEB PADA BANK SAMPAH DARMA BAKTI",
+      "year": "2022",
+      "leader": "Vika Fitratunnany Insanittaqwa",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 8000000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "siMembers": [
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 6
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "BANK SAMPAH",
+            "weight": 3
+          },
+          {
+            "keyword": "SAMPAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BANK SAMPAH\", \"SAMPAH\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PERANCANGAN SISTEM INFORMASI BERBASIS WEBSITE SEBAGAI MEDIA INFORMASI SEKALIGUS ETALASE PRODUK OLAHAN KANGKUNG PADA KAMPUNG KANG BEJO BALIKPAPAN.",
+      "year": "2022",
+      "leader": "Hendy Indrawan Sunardi",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 7440000,
+      "lecturers": [
+        "Hendy Indrawan Sunardi"
+      ],
+      "siMembers": [
+        "Hendy Indrawan Sunardi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [
+        "P1"
+      ],
+      "matchScore": {
+        "P1": 2,
+        "P3": 3
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "ETALASE PRODUK",
+            "weight": 2
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "KANGKUNG",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KANGKUNG\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PEMASARAN DAN PENGEMBANGAN OLAHAN JAMBU KRISTAL UNTUK MASYARAKAT PERKEBUNAN JAMBU KRISTAL KM 24 GANG PERJUANGAN II BALIKPAPAN UTARA",
+      "year": "2022",
+      "leader": "Dwi Nur Amalia",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 8000000,
+      "lecturers": [
+        "Dwi Nur Amalia"
+      ],
+      "siMembers": [
+        "Dwi Nur Amalia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 9
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "KEBUN",
+            "weight": 3
+          },
+          {
+            "keyword": "PERKEBUNAN",
+            "weight": 3
+          },
+          {
+            "keyword": "JAMBU",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KEBUN\", \"PERKEBUNAN\", \"JAMBU\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PEMASARAN HASIL URBAN FARMING PADA KWT SUMBER SARI RT 21 MELALUI STRATEGI PEMANFAATAN MEDIA SOSIAL",
+      "year": "2022",
+      "leader": "Nursanti Novi  Arisa",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 7950000,
+      "lecturers": [
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana berasal dari program studi lain. Program studi SI terlibat melalui anggota berikut: Nursanti Novi Arisa.",
+      "pillar": "P3",
+      "supportingPillars": [
+        "P1"
+      ],
+      "matchScore": {
+        "P1": 2,
+        "P3": 3
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "MEDIA SOSIAL",
+            "weight": 2
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "URBAN FARMING",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"URBAN FARMING\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PEMETAAN DAN VISUALISASI PERMODELAN 3D LINGKUNGAN KAWASAN WISATA BARU HUTAN MERANTI KM.15 SEBAGAI UPAYA PENGEMBANGAN WISATA HUTAN LINDUNG BERBASIS ALAM",
+      "year": "2022",
+      "leader": "M. Gilvy Langgawan Putra",
+      "grantType": "HIBAH ITK ( PDM )",
+      "grantCategory": "PDM",
+      "fundingAmount": 15000000,
+      "lecturers": [
+        "M. Gilvy Langgawan Putra"
+      ],
+      "siMembers": [
+        "M. Gilvy Langgawan Putra"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [
+        "P1"
+      ],
+      "matchScore": {
+        "P1": 2,
+        "P3": 9
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "WISATA",
+            "weight": 2
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "HUTAN LINDUNG",
+            "weight": 3
+          },
+          {
+            "keyword": "HUTAN MERANTI",
+            "weight": 3
+          },
+          {
+            "keyword": "LINGKUNGAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"HUTAN LINDUNG\", \"HUTAN MERANTI\", \"LINGKUNGAN\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PEMBERDAYAAN MASYARAKAT BARU TENGAH MELALUI BUDIDAYA IKAN LELE DENGAN MENGUNAKAN TEKNIK BUDIKDAMBER",
+      "year": "2021",
+      "leader": "M. Gilvy Langgawan Putra",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 5822000,
+      "lecturers": [
+        "M. Gilvy Langgawan Putra"
+      ],
+      "siMembers": [
+        "M. Gilvy Langgawan Putra"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": "P3",
+      "supportingPillars": [],
+      "matchScore": {
+        "P3": 6
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "BUDIDAYA",
+            "weight": 3
+          },
+          {
+            "keyword": "BUDIKDAMBER",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BUDIDAYA\", \"BUDIKDAMBER\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
+    },
+    {
+      "title": "PEMBERDAYAAN MASYARAKAT KELURAHAN TELAGA SARI MENGGUNAKAN PEMANFAATAN TEKNOLOGI",
+      "year": "2022",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "HIBAH ITK ( PMMD )",
+      "grantCategory": "PMMD",
+      "fundingAmount": 7300000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": null,
+      "supportingPillars": [],
+      "matchScore": {},
+      "evidence": {},
+      "reason": "Judul tidak memuat satu pun kata kunci bidang. Rumusan judul masih terlalu umum sehingga fokus kegiatannya tidak dapat ditentukan dari judul saja - perlu dilihat laporan kegiatannya untuk dipetakan secara manual."
+    },
+    {
+      "title": "Pemberdayaan Masyarakat Rumah Warna-warni melalui Peningkatan Budaya Gotong Royong dan Pemanfaatan Teknologi Informasi",
+      "year": "2019",
+      "leader": "Yuyun Tri Wiranti",
+      "grantType": "Pengabdian Kepada Masyarakat Kompetitif Nasional ( PKM )",
+      "grantCategory": "PKM",
+      "fundingAmount": 43500000,
+      "lecturers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "siMembers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua pelaksana adalah dosen program studi SI.",
+      "pillar": null,
+      "supportingPillars": [],
+      "matchScore": {},
+      "evidence": {},
+      "reason": "Judul tidak memuat satu pun kata kunci bidang. Rumusan judul masih terlalu umum sehingga fokus kegiatannya tidak dapat ditentukan dari judul saja - perlu dilihat laporan kegiatannya untuk dipetakan secara manual."
+    }
+  ]
+}

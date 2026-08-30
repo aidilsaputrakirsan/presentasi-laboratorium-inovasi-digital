@@ -11,10 +11,13 @@
           </div>
           <div>
             <h1 class="text-2xl font-black text-white tracking-tight">
-              Pemetaan {{ activeRef === 'ITK' ? 'Roadmap Institut' : 'Roadmap Fakultas' }}
+              Pemetaan {{ kindLabel }} &mdash; {{ activeRef === 'ITK' ? 'Roadmap Institut' : 'Roadmap Fakultas' }}
             </h1>
-            <p class="text-sm text-slate-400 mt-0.5">
-              Judul penelitian {{ metadata.prodi }} terhadap {{ metadata.categoryLabel }} &mdash; {{ metadata.reference }}
+            <p v-if="hasData" class="text-sm text-slate-400 mt-0.5">
+              Judul {{ metadata.kindLabel }} {{ metadata.prodi }} terhadap {{ metadata.categoryLabel }} &mdash; {{ metadata.reference }}
+            </p>
+            <p v-else class="text-sm text-slate-400 mt-0.5">
+              Acuan ini belum tersedia untuk {{ kindLabel }}
             </p>
           </div>
         </div>
@@ -60,9 +63,31 @@
       </div>
     </div>
 
-    <div v-if="!hasData" class="card text-center py-16 text-slate-400">
-      <p class="font-bold text-slate-500">Belum ada data pemetaan untuk program studi ini</p>
-      <p class="text-sm mt-1">Data pemetaan akan tampil setelah daftar penelitian program studi ini dimuat.</p>
+    <div v-if="!hasData" class="card py-12 px-6">
+      <div v-if="dataset === 'services' && activeRef === 'ITK'" class="max-w-3xl mx-auto text-center">
+        <div class="w-12 h-12 rounded-2xl bg-amber-50 border border-amber-100 flex items-center justify-center text-amber-600 mx-auto mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 9v2m0 4h.01M5 19h14a2 2 0 001.84-2.75L13.74 4a2 2 0 00-3.48 0l-7.1 12.25A2 2 0 004.99 19z"/>
+          </svg>
+        </div>
+        <p class="font-bold text-slate-700 mb-2">Pemetaan Abdimas terhadap Roadmap Institut belum disusun</p>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Panduan Penelitian dan PkM ITK memiliki <strong class="text-slate-800">roadmap Abdimas tersendiri</strong>
+          (Gambar 8 halaman 59 dan Tabel 9 halaman 60), terpisah dari tabel Bidang Fokus Riset yang dipakai
+          pada pemetaan penelitian. Salinan panduan yang tersedia saat ini hanya memuat sampai halaman 51,
+          sehingga tabel tersebut belum dapat dibaca.
+        </p>
+        <p class="text-sm text-slate-600 leading-relaxed mt-3">
+          Pemetaan sengaja tidak dibuat memakai tabel fokus riset sebagai penggantinya, karena hasilnya akan
+          mengacu pada dokumen yang keliru. Silakan gunakan acuan
+          <strong class="text-slate-800">Roadmap Fakultas</strong> di atas, yang pilarnya memang berlaku untuk
+          penelitian sekaligus pengabdian.
+        </p>
+      </div>
+      <div v-else class="text-center text-slate-400">
+        <p class="font-bold text-slate-500">Belum ada data pemetaan untuk program studi ini</p>
+        <p class="text-sm mt-1">Data pemetaan akan tampil setelah daftar kegiatan program studi ini dimuat.</p>
+      </div>
     </div>
 
     <template v-else>
@@ -252,7 +277,9 @@ const PILLAR_COLOR = {
 export default {
   name: 'RoadmapMapping',
   props: {
-    prodiSlug: { type: String, default: 'sistem-informasi' }
+    prodiSlug: { type: String, default: 'sistem-informasi' },
+    // 'research' = judul penelitian, 'services' = judul pengabdian (Abdimas)
+    dataset: { type: String, default: 'research' }
   },
   data() {
     return { activePillar: 'all', activeRef: 'FSTI' }
@@ -267,8 +294,12 @@ export default {
     mapping() {
       const entry = prodiRegistry[this.prodiSlug]
       if (!entry) return null
-      return (this.activeRef === 'ITK' ? entry.roadmapMappingItk : entry.roadmapMapping) || null
+      const key = this.dataset === 'services'
+        ? (this.activeRef === 'ITK' ? 'abdimasMappingItk' : 'abdimasMapping')
+        : (this.activeRef === 'ITK' ? 'roadmapMappingItk' : 'roadmapMapping')
+      return entry[key] || null
     },
+    kindLabel() { return this.dataset === 'services' ? 'Abdimas' : 'Penelitian' },
     hasData() { return !!(this.mapping && this.mapping.items && this.mapping.items.length) },
     metadata() { return (this.mapping && this.mapping.metadata) || {} },
     summary() { return (this.mapping && this.mapping.summary) || {} },
