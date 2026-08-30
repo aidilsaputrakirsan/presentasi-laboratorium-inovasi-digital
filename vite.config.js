@@ -11,7 +11,7 @@ export default defineConfig({
       vue: 'vue/dist/vue.esm-bundler.js'
     }
   },
-  base: process.env.NODE_ENV === 'production' ? '/presentasi-laboratorium-inovasi-digital/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/sitria/' : '/',
   server: {
     port: 5173,
     open: true

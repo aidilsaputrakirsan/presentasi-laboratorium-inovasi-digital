@@ -1,0 +1,2875 @@
+{
+  "metadata": {
+    "generatedAt": "2026-08-30T13:06:31.571518",
+    "prodi": "Sistem Informasi",
+    "source": "sinta_data.json",
+    "sourceGeneratedAt": "2026-08-29T17:04:12.248916",
+    "referenceKey": "ITK",
+    "referenceLabel": "Roadmap Institut (ITK)",
+    "reference": "Panduan Penelitian dan Pengabdian kepada Masyarakat ITK Edisi X 2026",
+    "referenceDoc": "Panduan P2M ITK Edisi X 2026, Bab 1.1 Fokus Riset Penelitian Institut - Tabel 1 (hal. 5-11) dan Tabel 3 Roadmap Pusat Penelitian TIK Smart City (hal. 20-25)",
+    "referenceScope": "Acuan tingkat INSTITUT. Judul dipetakan sampai tingkat Sub Tema di bawah masing-masing Pusat Penelitian, sehingga lebih rinci daripada acuan fakultas.",
+    "categoryLabel": "Sub Tema Fokus Riset",
+    "keywordBasis": "Panduan ITK mencantumkan daftar topik penelitian untuk setiap sub tema. Kata kunci yang dipakai untuk memetakan diambil langsung dari daftar topik tersebut, dan setiap kategori mencantumkan nomor tabel serta halaman panduannya sehingga dapat dicek langsung ke dokumen aslinya.",
+    "ownershipRule": "Judul penelitian diambil dari profil SINTA seluruh dosen yang tercatat pada daftar dosen resmi program studi. Sebuah judul dihitung sebagai luaran program studi apabila ketua ATAU minimal satu anggota peneliti adalah dosen program studi; peran tersebut dicantumkan pada setiap judul.",
+    "method": "Setiap judul dicocokkan dengan daftar kata kunci penanda milik tiap kategori roadmap. Kata kunci yang lebih khas diberi bobot lebih tinggi (skala 1 sampai 3). Kategori dengan nilai tertinggi ditetapkan sebagai kategori utama, sedangkan kategori lain yang nilainya minimal 2 dicatat sebagai kategori pendukung. Kata kunci yang menjadi pemicu ditampilkan pada setiap judul sehingga hasilnya dapat diperiksa ulang dan dikoreksi.",
+    "description": "Pemetaan judul penelitian prodi terhadap Panduan Penelitian dan Pengabdian kepada Masyarakat ITK Edisi X 2026"
+  },
+  "pillars": {
+    "SG-PS": {
+      "name": "Smart Governance / Public Service (Layanan Publik)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Governance",
+      "topik": "Pelayanan Administrasi; Sarana prasarana & Monitoring bahan pokok dan jasa pokok untuk masyarakat",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 20)"
+    },
+    "SG-BR": {
+      "name": "Smart Governance / Bureaucracy (Birokrasi)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Governance",
+      "topik": "Pembangunan birokrasi; Inisiasi SIM SPBE (kepegawaian, keamanan, perijinan, dsb); aset TIK, data, dan manajemen layanan",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 20)"
+    },
+    "SG-PP": {
+      "name": "Smart Governance / Public Policy (Kebijakan Publik)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Governance",
+      "topik": "Pembangunan budaya dan praktik citizen-centered policy; pengembangan strategi reformasi kebijakan publik, khususnya data dan sistem data terbuka",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 20)"
+    },
+    "SB-TO": {
+      "name": "Smart Branding / Tourism (Pariwisata Daerah)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Branding",
+      "topik": "Pengembangan destinasi wisata daerah; pembangunan infrastruktur kenyamanan wisatawan (amenities); budaya ramah (hospitality); inisiasi virtual tour",
+      "source": "Panduan P2M ITK 2026, Tabel 1 (hal. 7) & Tabel 3 (hal. 21)"
+    },
+    "SB-BB": {
+      "name": "Smart Branding / Business Branding (Bisnis Daerah)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Branding",
+      "topik": "Pembangunan dan pasar perdagangan (market place); ekosistem investasi daerah; produk dan jasa industri khas daerah",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 21)"
+    },
+    "SB-CA": {
+      "name": "Smart Branding / City Appearance (Wajah Kota)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Branding",
+      "topik": "Perwujudan penataan kembali wajah kota; pembangunan batas wilayah (edge), landmark, signage, path, node; SIG kota",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 21-22)"
+    },
+    "SE-IN": {
+      "name": "Smart Economy / Industry (Ekosistem Industri)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Economy",
+      "topik": "Pembangunan daya saing industri daerah; sentra produksi dan inovasi",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 22)"
+    },
+    "SE-WE": {
+      "name": "Smart Economy / Welfare (Kesejahteraan Rakyat)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Economy",
+      "topik": "Peningkatan pendapatan rumah tangga (income); penyerapan angkatan kerja (employment); pemberdayaan ekonomi masyarakat (empowerment); UMKM dan inkubator bisnis",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 22-23)"
+    },
+    "SE-TR": {
+      "name": "Smart Economy / Transaction (Transaksi Keuangan)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Economy",
+      "topik": "Pembangunan ekosistem transaksi keuangan digital; masyarakat bankable dan akses permodalan; perwujudan ekonomi digital (e-commerce & market place); QRIS dan e-money",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 23)"
+    },
+    "SL-HA": {
+      "name": "Smart Living / Harmony (Harmonisasi Tata Ruang Wilayah)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Living",
+      "topik": "Perwujudan tata ruang wilayah yang nyaman dan harmonis; pemetaan infrastruktur (perumahan, kesehatan, RTH, utilitas); image processing dalam pemetaan",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 23)"
+    },
+    "SL-HE": {
+      "name": "Smart Living / Health (Sarana Prasarana Kesehatan)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Living",
+      "topik": "Penyediaan akses ketersediaan makan minum sehat (food), pelayanan kesehatan (healthcare) dan prasarana olahraga (sport); inisiasi SIM kesehatan (rekomendasi pola, pemetaan)",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 24)"
+    },
+    "SL-BU": {
+      "name": "Smart Living / Building (Sarana Prasarana Bangunan)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Living",
+      "topik": "Perwujudan bangunan yang efisien dan nyaman; pengembangan konsep infrastruktur dan sensor; inisiasi sensor terkait bangunan",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 24)"
+    },
+    "SS-CO": {
+      "name": "Smart Society / Community (Interaksi Masyarakat)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Society",
+      "topik": "Perwujudan kemudahan interaksi sosial secara paralel; pemetaan keahlian dan keterampilan masyarakat; pengembangan platform digital dan creative hub",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 24)"
+    },
+    "SS-LE": {
+      "name": "Smart Society / Learning (Ekosistem Belajar)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Society",
+      "topik": "Perwujudan ekosistem pendidikan formal dan non-formal; pengembangan kurikulum; pembentukan e-learning; integrasi program merdeka belajar",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 25)"
+    },
+    "SS-SE": {
+      "name": "Smart Society / Security (Keamanan Masyarakat)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Society",
+      "topik": "Perwujudan sistem atau manajemen keamanan dan keselamatan masyarakat; e-parking, CCTV, pemetaan risiko bencana; integrasi sistem keamanan kota",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 25)"
+    },
+    "SV-PR": {
+      "name": "Smart Environment / Protection (Proteksi Lingkungan)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Environment",
+      "topik": "Pengembangan sistem tata kelola perlindungan air, udara dan mengintegrasi dengan teknologi; basis data dan sistem kontrol; smart water operation management; identifikasi RTH",
+      "source": "Panduan P2M ITK 2026, Tabel 3 (hal. 25)"
+    },
+    "SV-WA": {
+      "name": "Smart Environment / Waste (Pengelolaan Sampah dan Limbah)",
+      "center": "Pusat Penelitian TIK Smart City",
+      "theme": "Smart Environment",
+      "topik": "Pengembangan sistem tata kelola limbah industri dan domestik berbasis TI untuk monitoring, pemilahan, daur ulang, komposting, serta evaluasi kebijakan dalam kerangka circular economy",
+      "source": "Panduan P2M ITK 2026, Tabel 1 (hal. 8) & Tabel 3 (hal. 25)"
+    },
+    "PP1-EM": {
+      "name": "Energi Terbarukan / Energy Management and Policy",
+      "center": "Pusat Penelitian Energi Terbarukan",
+      "theme": "Energy management and policy",
+      "topik": "Energy forecasting, energy auditing, optimization for smart grid, environmental management; smart monitoring and flow control; wind turbine system",
+      "source": "Panduan P2M ITK 2026, Tabel 1 (hal. 5-6)"
+    },
+    "PP4-MA": {
+      "name": "Infrastruktur Berkelanjutan / Teknologi Maritim",
+      "center": "Pusat Penelitian Infrastruktur Berkelanjutan dan Teknologi Maritim",
+      "theme": "Teknologi Perlindungan dan Pemanfaatan Sumber Daya Maritim",
+      "topik": "Teknologi pengawasan laut; teknologi pemanfaatan sumber daya laut; pengembangan teknologi dan manajemen pulau-pulau kecil dan pesisir",
+      "source": "Panduan P2M ITK 2026, Tabel 1 (hal. 6)"
+    },
+    "PP5-K3": {
+      "name": "Manufaktur dan Industri Ramah Lingkungan / Tata Kelola Industri dan K3L",
+      "center": "Pusat Penelitian Manufaktur dan Industri Ramah Lingkungan",
+      "theme": "Tata Kelola Industri dan K3L",
+      "topik": "Analisis kebijakan K3L; analisis risiko kecelakaan industri; sistem monitoring K3 berbasis sensor; evaluasi K3L pada industri",
+      "source": "Panduan P2M ITK 2026, Tabel 1 (hal. 10)"
+    }
+  },
+  "summary": {
+    "totalUniqueResearch": 73,
+    "mapped": 71,
+    "unmapped": 2,
+    "perPillar": {
+      "SG-PS": 15,
+      "SG-BR": 11,
+      "SG-PP": 2,
+      "SB-TO": 4,
+      "SB-BB": 2,
+      "SB-CA": 0,
+      "SE-IN": 0,
+      "SE-WE": 0,
+      "SE-TR": 2,
+      "SL-HA": 0,
+      "SL-HE": 5,
+      "SL-BU": 0,
+      "SS-CO": 0,
+      "SS-LE": 15,
+      "SS-SE": 2,
+      "SV-PR": 3,
+      "SV-WA": 4,
+      "PP1-EM": 4,
+      "PP4-MA": 1,
+      "PP5-K3": 1
+    },
+    "perTheme": {
+      "Smart Governance": 28,
+      "Smart Branding": 6,
+      "Smart Economy": 2,
+      "Smart Living": 5,
+      "Smart Society": 17,
+      "Smart Environment": 7,
+      "Energy management and policy": 4,
+      "Teknologi Perlindungan dan Pemanfaatan Sumber Daya Maritim": 1,
+      "Tata Kelola Industri dan K3L": 1
+    },
+    "perCenter": {
+      "Pusat Penelitian TIK Smart City": 65,
+      "Pusat Penelitian Energi Terbarukan": 4,
+      "Pusat Penelitian Infrastruktur Berkelanjutan dan Teknologi Maritim": 1,
+      "Pusat Penelitian Manufaktur dan Industri Ramah Lingkungan": 1
+    },
+    "coveragePercent": 97.3
+  },
+  "items": [
+    {
+      "title": "OPTIMALISASI PENGELOLAAN SISTEM MONITORING DATA ENERGI LISTRIK PADA SMART HOME SYSTEM UNTUK SAKLAR LISTRIK MENGGUNAKAN METODE EXTREME PROGRAMMING",
+      "year": "2025",
+      "leader": "Hendy Indrawan Sunardi",
+      "grantType": "Penelitian Internal ( RPI )",
+      "grantCategory": "RPI",
+      "fundingAmount": 23000000,
+      "lecturers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "PP1-EM",
+      "supportingPillars": [
+        "SL-BU"
+      ],
+      "matchScore": {
+        "SL-BU": 2,
+        "PP1-EM": 9
+      },
+      "evidence": {
+        "SL-BU": [
+          {
+            "keyword": "SMART HOME",
+            "weight": 2
+          }
+        ],
+        "PP1-EM": [
+          {
+            "keyword": "ENERGI LISTRIK",
+            "weight": 3
+          },
+          {
+            "keyword": "SAKLAR LISTRIK",
+            "weight": 3
+          },
+          {
+            "keyword": "MONITORING DATA ENERGI",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"ENERGI LISTRIK\", \"SAKLAR LISTRIK\", \"MONITORING DATA ENERGI\" yang merupakan penanda kategori PP1-EM (Energi Terbarukan / Energy Management and Policy). Acuan: Panduan P2M ITK 2026, Tabel 1 (hal. 5-6)."
+    },
+    {
+      "title": "INOVASI PEMBUATAN PROTOTIPE TURBIN ANGIN SAVONIUS BERBAHAN PLA BERSTRUKTUR SANDWICH DENGAN METODE ADITIF MANUFAKTURING SEBAGAI SUMBER ENERGI HIJAU",
+      "year": "2025",
+      "leader": "Fikan Mubarok Rohimsyah PENELITIAN INTERNAL ( RH )",
+      "grantType": "PENELITIAN INTERNAL ( RH )",
+      "grantCategory": "RH",
+      "fundingAmount": 27000000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto",
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Arif Wicaksono Septyanto, Nursanti Novi Arisa.",
+      "pillar": "PP1-EM",
+      "supportingPillars": [],
+      "matchScore": {
+        "PP1-EM": 6
+      },
+      "evidence": {
+        "PP1-EM": [
+          {
+            "keyword": "ENERGI HIJAU",
+            "weight": 3
+          },
+          {
+            "keyword": "TURBIN ANGIN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"ENERGI HIJAU\", \"TURBIN ANGIN\" yang merupakan penanda kategori PP1-EM (Energi Terbarukan / Energy Management and Policy). Acuan: Panduan P2M ITK 2026, Tabel 1 (hal. 5-6)."
+    },
+    {
+      "title": "SUSTAINABLE ELECTRICITY MONITORING VIA MOBILE APPLICATION IN DORMITORY AREAS",
+      "year": "2025",
+      "leader": "Arie Kusumawati",
+      "grantType": "HIBAH INTERNAL ( HIBAH INTERNAL PDP )",
+      "grantCategory": "HIBAH INTERNAL PDP",
+      "fundingAmount": 6632000,
+      "lecturers": [
+        "Rosa Eliviani"
+      ],
+      "siMembers": [
+        "Rosa Eliviani"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Rosa Eliviani.",
+      "pillar": "PP1-EM",
+      "supportingPillars": [],
+      "matchScore": {
+        "PP1-EM": 3
+      },
+      "evidence": {
+        "PP1-EM": [
+          {
+            "keyword": "ELECTRICITY",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"ELECTRICITY\" yang merupakan penanda kategori PP1-EM (Energi Terbarukan / Energy Management and Policy). Acuan: Panduan P2M ITK 2026, Tabel 1 (hal. 5-6)."
+    },
+    {
+      "title": "RANCANGAN DAN IMPLEMENTASI SMART HOME SYSTEM UNTUK PENGENDALIAN SAKELAR LISTRIK BERBASIS IOT",
+      "year": "2024",
+      "leader": "Hendy Maulana Jaya Saputra",
+      "grantType": "HIBAH INTERNAL ( RPIKN )",
+      "grantCategory": "RPIKN",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Aidil Saputra Kirsan.",
+      "pillar": "PP1-EM",
+      "supportingPillars": [
+        "SL-BU"
+      ],
+      "matchScore": {
+        "SL-BU": 2,
+        "PP1-EM": 3
+      },
+      "evidence": {
+        "SL-BU": [
+          {
+            "keyword": "SMART HOME",
+            "weight": 2
+          }
+        ],
+        "PP1-EM": [
+          {
+            "keyword": "SAKELAR LISTRIK",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SAKELAR LISTRIK\" yang merupakan penanda kategori PP1-EM (Energi Terbarukan / Energy Management and Policy). Acuan: Panduan P2M ITK 2026, Tabel 1 (hal. 5-6)."
+    },
+    {
+      "title": "PENGEMBANGAN INVERSI BATIMETRI UNTUK ESTIMASI KEDALAMAN LAUT PERAIRAN MENGGUNAKAN ALGORITMA INTERPRETABLE DEEP LEARNING",
+      "year": "2023",
+      "leader": "Henokh Lugo Hariyanto",
+      "grantType": "HIBAH ITK ( PDM )",
+      "grantCategory": "PDM",
+      "fundingAmount": 14963000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "PP4-MA",
+      "supportingPillars": [],
+      "matchScore": {
+        "PP4-MA": 6
+      },
+      "evidence": {
+        "PP4-MA": [
+          {
+            "keyword": "BATIMETRI",
+            "weight": 3
+          },
+          {
+            "keyword": "KEDALAMAN LAUT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BATIMETRI\", \"KEDALAMAN LAUT\" yang merupakan penanda kategori PP4-MA (Infrastruktur Berkelanjutan / Teknologi Maritim). Acuan: Panduan P2M ITK 2026, Tabel 1 (hal. 6)."
+    },
+    {
+      "title": "PENERAPAN LOGIKA FUZZY UNTUK MENENTUKAN DURASI ISTIRAHAT OPTIMAL BERBASIS TINGKAT KEBISINGAN DAN LAMA PAPARAN DI INDUSTRI",
+      "year": "2025",
+      "leader": "Muchammad Chandra Cahyo Utomo",
+      "grantType": "Penelitian Internal ( RKDN )",
+      "grantCategory": "RKDN",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: I Putu Deny Arthawan Sugih Prabowo.",
+      "pillar": "PP5-K3",
+      "supportingPillars": [],
+      "matchScore": {
+        "PP5-K3": 6
+      },
+      "evidence": {
+        "PP5-K3": [
+          {
+            "keyword": "KEBISINGAN",
+            "weight": 3
+          },
+          {
+            "keyword": "LAMA PAPARAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KEBISINGAN\", \"LAMA PAPARAN\" yang merupakan penanda kategori PP5-K3 (Manufaktur dan Industri Ramah Lingkungan / Tata Kelola Industri dan K3L). Acuan: Panduan P2M ITK 2026, Tabel 1 (hal. 10)."
+    },
+    {
+      "title": "ANALISIS ADOPSI PENGGUNAAN E-COMMERCE BERDASARKAN TECHNOLOGY, ORGANIZATION, DAN ENVIRONTMENT (TOE) PADA UMKM DI BALIKPAPAN",
+      "year": "2023",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo",
+      "grantType": "HIBAH ITK ( PKLK )",
+      "grantCategory": "PKLK",
+      "fundingAmount": 14650000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo",
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo",
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SB-BB",
+      "supportingPillars": [
+        "SE-WE"
+      ],
+      "matchScore": {
+        "SB-BB": 3,
+        "SE-WE": 3
+      },
+      "evidence": {
+        "SB-BB": [
+          {
+            "keyword": "E-COMMERCE",
+            "weight": 3
+          }
+        ],
+        "SE-WE": [
+          {
+            "keyword": "UMKM",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"E-COMMERCE\" yang merupakan penanda kategori SB-BB (Smart Branding / Business Branding (Bisnis Daerah)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 21)."
+    },
+    {
+      "title": "COMPETITIVE RESEARCH TERHADAP E-COMMERCE EKSISTING UNTUK REKOMENDASI DESAIN APLIKASI E-COMMERCE UMKM BALIKPAPAN",
+      "year": "2021",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN SUMBER DAYA KALIMANTAN (PSDK) )",
+      "grantCategory": "PENELITIAN SUMBER DAYA KALIMANTAN (PSDK",
+      "fundingAmount": 9170000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SB-BB",
+      "supportingPillars": [
+        "SE-WE"
+      ],
+      "matchScore": {
+        "SB-BB": 3,
+        "SE-WE": 3
+      },
+      "evidence": {
+        "SB-BB": [
+          {
+            "keyword": "E-COMMERCE",
+            "weight": 3
+          }
+        ],
+        "SE-WE": [
+          {
+            "keyword": "UMKM",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"E-COMMERCE\" yang merupakan penanda kategori SB-BB (Smart Branding / Business Branding (Bisnis Daerah)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 21)."
+    },
+    {
+      "title": "MODEL AI-BASED SMART CULTURAL FESTIVAL DASHBOARD DALAM MENDUKUNG SMART CULTURAL TOURISM PADA FESTIVAL ERAU TENGGARONG",
+      "year": "2026",
+      "leader": "Olivia Febrianty Ngabito",
+      "grantType": "HIBAH INTERNAL ( RI )",
+      "grantCategory": "RI",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Nursanti Novi Arisa.",
+      "pillar": "SB-TO",
+      "supportingPillars": [],
+      "matchScore": {
+        "SB-TO": 6
+      },
+      "evidence": {
+        "SB-TO": [
+          {
+            "keyword": "FESTIVAL",
+            "weight": 3
+          },
+          {
+            "keyword": "CULTURAL TOURISM",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"FESTIVAL\", \"CULTURAL TOURISM\" yang merupakan penanda kategori SB-TO (Smart Branding / Tourism (Pariwisata Daerah)). Acuan: Panduan P2M ITK 2026, Tabel 1 (hal. 7) & Tabel 3 (hal. 21)."
+    },
+    {
+      "title": "KEBUN RAYA BALIKPAPAN DIGITAL LAB: PERANCANGAN DIGITAL TWIN HERBARIUM BUAH ENDEMIK KALIMANTAN TIMUR BERBASIS PHOTOGRAMMETRY 360 DERAJAT SEBAGAI ASET MEDIA PEMBELAJARAN",
+      "year": "2026",
+      "leader": "Fulkha Tajri M",
+      "grantType": "HIBAH INTERNAL ( RI )",
+      "grantCategory": "RI",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Rosa Eliviani"
+      ],
+      "siMembers": [
+        "Rosa Eliviani"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Rosa Eliviani.",
+      "pillar": "SB-TO",
+      "supportingPillars": [
+        "SS-LE"
+      ],
+      "matchScore": {
+        "SB-TO": 8,
+        "SS-LE": 6
+      },
+      "evidence": {
+        "SB-TO": [
+          {
+            "keyword": "KEBUN RAYA",
+            "weight": 3
+          },
+          {
+            "keyword": "HERBARIUM",
+            "weight": 3
+          },
+          {
+            "keyword": "DIGITAL TWIN",
+            "weight": 2
+          }
+        ],
+        "SS-LE": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "MEDIA PEMBELAJARAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KEBUN RAYA\", \"HERBARIUM\", \"DIGITAL TWIN\" yang merupakan penanda kategori SB-TO (Smart Branding / Tourism (Pariwisata Daerah)). Acuan: Panduan P2M ITK 2026, Tabel 1 (hal. 7) & Tabel 3 (hal. 21)."
+    },
+    {
+      "title": "IMPLEMENTASI METAVERSE PADA PENGENALAN LAB TERPADU KAMPUS INSTITUT TEKNOLOGI KALIMANTAN (ITK)",
+      "year": "2024",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "HIBAH INTERNAL ( RKST )",
+      "grantCategory": "RKST",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Aidil Saputra Kirsan",
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Sri Rahayu Natasia",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SB-TO",
+      "supportingPillars": [],
+      "matchScore": {
+        "SB-TO": 2
+      },
+      "evidence": {
+        "SB-TO": [
+          {
+            "keyword": "METAVERSE",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"METAVERSE\" yang merupakan penanda kategori SB-TO (Smart Branding / Tourism (Pariwisata Daerah)). Acuan: Panduan P2M ITK 2026, Tabel 1 (hal. 7) & Tabel 3 (hal. 21)."
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM INFORMASI PARIWISATA BERBASIS WEBSITE PADA DINAS PEMUDA, OLAHRAGA, DAN PARIWISATA KOTA BONTANG MENGGUNAKAN METODE SCRUM",
+      "year": "2022",
+      "leader": "Sri Rahayu Natasia MANDIRI ( PMK )",
+      "grantType": "MANDIRI ( PMK )",
+      "grantCategory": "PMK",
+      "fundingAmount": 2750000,
+      "lecturers": [
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Sri Rahayu Natasia.",
+      "pillar": "SB-TO",
+      "supportingPillars": [],
+      "matchScore": {
+        "SB-TO": 3
+      },
+      "evidence": {
+        "SB-TO": [
+          {
+            "keyword": "PARIWISATA",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PARIWISATA\" yang merupakan penanda kategori SB-TO (Smart Branding / Tourism (Pariwisata Daerah)). Acuan: Panduan P2M ITK 2026, Tabel 1 (hal. 7) & Tabel 3 (hal. 21)."
+    },
+    {
+      "title": "PERANCANGAN DESIGN UI/UX PADA BIDANG FINANCIAL TECHNOLOGY DALAM PENGEMBANGAN SMART ECONOMY MENGGUNAKAN METODE DESIGN THINKING",
+      "year": "2022",
+      "leader": "Nursanti Novi  Arisa",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PDB )",
+      "grantCategory": "PDB",
+      "fundingAmount": 15000000,
+      "lecturers": [
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Nursanti Novi Arisa.",
+      "pillar": "SE-TR",
+      "supportingPillars": [],
+      "matchScore": {
+        "SE-TR": 3
+      },
+      "evidence": {
+        "SE-TR": [
+          {
+            "keyword": "FINANCIAL TECHNOLOGY",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"FINANCIAL TECHNOLOGY\" yang merupakan penanda kategori SE-TR (Smart Economy / Transaction (Transaksi Keuangan)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 23)."
+    },
+    {
+      "title": "ANALISIS FAKTOR YANG MEMENGARUHI CONTINUANCE INTENTION PADA PENGGUNAAN MOBILE PAYMENT DENGAN MENGGUNAKAN STRUCTURAL EQUATION MODELING",
+      "year": "2021",
+      "leader": "Sri Rahayu Natasia",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN SUMBER DAYA KALIMANTAN (PSDK) )",
+      "grantCategory": "PENELITIAN SUMBER DAYA KALIMANTAN (PSDK",
+      "fundingAmount": 19250000,
+      "lecturers": [
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SE-TR",
+      "supportingPillars": [],
+      "matchScore": {
+        "SE-TR": 3
+      },
+      "evidence": {
+        "SE-TR": [
+          {
+            "keyword": "MOBILE PAYMENT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"MOBILE PAYMENT\" yang merupakan penanda kategori SE-TR (Smart Economy / Transaction (Transaksi Keuangan)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 23)."
+    },
+    {
+      "title": "PENYUSUNAN MANAJEMEN RISIKO TEKNOLOGI INFORMASI PADA SEKOLAH ISLAM TERPADU ISTIQAMAH YPAIT BALIKPAPAN BERDASARKAN ISO 31000:2018",
+      "year": "2026",
+      "leader": "Rosa Eliviani",
+      "grantType": "HIBAH INTERNAL ( RDP )",
+      "grantCategory": "RDP",
+      "fundingAmount": 20000000,
+      "lecturers": [
+        "Hendy Indrawan Sunardi",
+        "Rosa Eliviani"
+      ],
+      "siMembers": [
+        "Hendy Indrawan Sunardi",
+        "Rosa Eliviani"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-BR",
+      "supportingPillars": [
+        "SS-LE"
+      ],
+      "matchScore": {
+        "SG-BR": 6,
+        "SS-LE": 3
+      },
+      "evidence": {
+        "SG-BR": [
+          {
+            "keyword": "MANAJEMEN RISIKO",
+            "weight": 3
+          },
+          {
+            "keyword": "ISO 31000",
+            "weight": 3
+          }
+        ],
+        "SS-LE": [
+          {
+            "keyword": "SEKOLAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"MANAJEMEN RISIKO\", \"ISO 31000\" yang merupakan penanda kategori SG-BR (Smart Governance / Bureaucracy (Birokrasi)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "IMPLEMENTASI BUSINESS PROCESS IMPROVEMENT UNTUK REDESAIN PROSES BISNIS DALAM TRANSFORMASI WEB KE MOBILE EMPLOYEE INFORMATION SYSTEM",
+      "year": "2026",
+      "leader": "Dwi Nur Amalia",
+      "grantType": "HIBAH INTERNAL ( RKDN )",
+      "grantCategory": "RKDN",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Dwi Nur Amalia",
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Dwi Nur Amalia",
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-BR",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-BR": 9
+      },
+      "evidence": {
+        "SG-BR": [
+          {
+            "keyword": "EMPLOYEE INFORMATION SYSTEM",
+            "weight": 3
+          },
+          {
+            "keyword": "PROSES BISNIS",
+            "weight": 3
+          },
+          {
+            "keyword": "BUSINESS PROCESS",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"EMPLOYEE INFORMATION SYSTEM\", \"PROSES BISNIS\", \"BUSINESS PROCESS\" yang merupakan penanda kategori SG-BR (Smart Governance / Bureaucracy (Birokrasi)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "KRIPTOSISTEM CITRA GRAYSCALE HIBRIDA BERBASIS PERMUTASI CHAOS DAN DIFUSI MATRIKS PADA GELANGGANG Z/256Z UNTUK KEAMANAN DATA VISUAL",
+      "year": "2026",
+      "leader": "Yanuar Bhakti Wira Tama",
+      "grantType": "HIBAH INTERNAL ( RKDN )",
+      "grantCategory": "RKDN",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: I Putu Deny Arthawan Sugih Prabowo.",
+      "pillar": "SG-BR",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-BR": 6
+      },
+      "evidence": {
+        "SG-BR": [
+          {
+            "keyword": "KRIPTOSISTEM",
+            "weight": 3
+          },
+          {
+            "keyword": "KEAMANAN DATA",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KRIPTOSISTEM\", \"KEAMANAN DATA\" yang merupakan penanda kategori SG-BR (Smart Governance / Bureaucracy (Birokrasi)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
+      "year": "2025",
+      "leader": "Vika Fitratunnany Insanittaqwa",
+      "grantType": "Penelitian Internal ( RKDN )",
+      "grantCategory": "RKDN",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Vika Fitratunnany Insanittaqwa",
+        "Dwi Nur Amalia"
+      ],
+      "siMembers": [
+        "Dwi Nur Amalia",
+        "Vika Fitratunnany Insanittaqwa",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-BR",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-BR": 3
+      },
+      "evidence": {
+        "SG-BR": [
+          {
+            "keyword": "CUTI PEGAWAI",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"CUTI PEGAWAI\" yang merupakan penanda kategori SG-BR (Smart Governance / Bureaucracy (Birokrasi)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "PENYUSUNAN JUSTIFIKASI TEKNIS DAN DISASTER RECOVERY PLAN UNTUK PENGEMBANGAN DATA CENTER UPA TIK ITK",
+      "year": "2025",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo PENELITIAN INTERNAL ( RKS )",
+      "grantType": "PENELITIAN INTERNAL ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 17000000,
+      "lecturers": [
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Dwi Arief Prambudi, I Putu Deny Arthawan Sugih Prabowo.",
+      "pillar": "SG-BR",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-BR": 9
+      },
+      "evidence": {
+        "SG-BR": [
+          {
+            "keyword": "DATA CENTER",
+            "weight": 3
+          },
+          {
+            "keyword": "DISASTER RECOVERY",
+            "weight": 3
+          },
+          {
+            "keyword": "JUSTIFIKASI TEKNIS",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"DATA CENTER\", \"DISASTER RECOVERY\", \"JUSTIFIKASI TEKNIS\" yang merupakan penanda kategori SG-BR (Smart Governance / Bureaucracy (Birokrasi)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "REKAYASA KESELAMATAN DALAM PENYUSUNAN DOKUMEN JUSTIFIKASI TEKNIS UNTUK PENGEMBANGAN DATA CENTER DI BANK PEMBANGUNAN DAERAH PROVINSI XYZ",
+      "year": "2024",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo",
+      "grantType": "HIBAH INTERNAL ( RKDN )",
+      "grantCategory": "RKDN",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-BR",
+      "supportingPillars": [
+        "SS-SE"
+      ],
+      "matchScore": {
+        "SG-BR": 6,
+        "SS-SE": 3
+      },
+      "evidence": {
+        "SG-BR": [
+          {
+            "keyword": "DATA CENTER",
+            "weight": 3
+          },
+          {
+            "keyword": "JUSTIFIKASI TEKNIS",
+            "weight": 3
+          }
+        ],
+        "SS-SE": [
+          {
+            "keyword": "KESELAMATAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"DATA CENTER\", \"JUSTIFIKASI TEKNIS\" yang merupakan penanda kategori SG-BR (Smart Governance / Bureaucracy (Birokrasi)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "ANALISIS PENGUKURAN E-READINESS TEKNOLOGI INFORMASI PADA KOTA PENYANGGA IBU KOTA NEGARA BARU INDONESIA",
+      "year": "2022",
+      "leader": "Sri Rahayu Natasia",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PSDK )",
+      "grantCategory": "PSDK",
+      "fundingAmount": 24550000,
+      "lecturers": [
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-BR",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-BR": 3
+      },
+      "evidence": {
+        "SG-BR": [
+          {
+            "keyword": "E-READINESS",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"E-READINESS\" yang merupakan penanda kategori SG-BR (Smart Governance / Bureaucracy (Birokrasi)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "PERANCANGAN ARSITEKTUR SISTEM INFORMASI UNTUK INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN TOGAF (THE OPEN GROUP ARCHITECTURE FRAMEWORK)",
+      "year": "2020",
+      "leader": "Yuyun Tri Wiranti",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( KEBIJAKAN STRATEGIS )",
+      "grantCategory": "KEBIJAKAN STRATEGIS",
+      "fundingAmount": 8000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "siMembers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-BR",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-BR": 6
+      },
+      "evidence": {
+        "SG-BR": [
+          {
+            "keyword": "TOGAF",
+            "weight": 3
+          },
+          {
+            "keyword": "ARSITEKTUR SISTEM",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"TOGAF\", \"ARSITEKTUR SISTEM\" yang merupakan penanda kategori SG-BR (Smart Governance / Bureaucracy (Birokrasi)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "PERANCANGAN TATA KELOLA TEKNOLOGI INFORMASI INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN COBIT (CONTROL OBJECTIVE INFORMATION TECHNOLOGY)",
+      "year": "2020",
+      "leader": "Lovinta Happy Atrinawati",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( KEBIJAKAN STRATEGIS )",
+      "grantCategory": "KEBIJAKAN STRATEGIS",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Lovinta Happy Atrinawati"
+      ],
+      "siMembers": [
+        "Lovinta Happy Atrinawati"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-BR",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-BR": 6
+      },
+      "evidence": {
+        "SG-BR": [
+          {
+            "keyword": "TATA KELOLA TEKNOLOGI INFORMASI",
+            "weight": 3
+          },
+          {
+            "keyword": "COBIT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"TATA KELOLA TEKNOLOGI INFORMASI\", \"COBIT\" yang merupakan penanda kategori SG-BR (Smart Governance / Bureaucracy (Birokrasi)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "Perancangan Arsitektur Sistem dan Teknologi Informasi Perguruan Tinggi di Balikpapan menggunakan TOGAF (The Open Group Architecture Framework)",
+      "year": "2019",
+      "leader": "Yuyun Tri Wiranti",
+      "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+      "grantCategory": "PDP/Dosen Pemula",
+      "fundingAmount": 16950000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Lovinta Happy Atrinawati"
+      ],
+      "siMembers": [
+        "Lovinta Happy Atrinawati",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-BR",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-BR": 6
+      },
+      "evidence": {
+        "SG-BR": [
+          {
+            "keyword": "TOGAF",
+            "weight": 3
+          },
+          {
+            "keyword": "ARSITEKTUR SISTEM",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"TOGAF\", \"ARSITEKTUR SISTEM\" yang merupakan penanda kategori SG-BR (Smart Governance / Bureaucracy (Birokrasi)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "Perancangan Arsitektur Sistem dan Teknologi Informasi untuk Organisasi Perangkat Daerah (OPD) Pemerintah Kota Balikpapan menggunakan TOGAF (The Open Group Architecture Framework)",
+      "year": "2019",
+      "leader": "Lovinta Happy Atrinawati",
+      "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+      "grantCategory": "PDP/Dosen Pemula",
+      "fundingAmount": 16185000,
+      "lecturers": [
+        "Lovinta Happy Atrinawati"
+      ],
+      "siMembers": [
+        "Lovinta Happy Atrinawati"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-BR",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-BR": 6
+      },
+      "evidence": {
+        "SG-BR": [
+          {
+            "keyword": "TOGAF",
+            "weight": 3
+          },
+          {
+            "keyword": "ARSITEKTUR SISTEM",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"TOGAF\", \"ARSITEKTUR SISTEM\" yang merupakan penanda kategori SG-BR (Smart Governance / Bureaucracy (Birokrasi)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "RANCANG BANGUN TRANSPARANSI PENGGUNAAN DANA TJSLP (TANGGUNG JAWAB SOSIAL DAN LINGKUNGAN PERUSAHAAN) DALAM MENDUKUNG SMART CITY MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
+      "year": "2025",
+      "leader": "Henokh Lugo Hariyanto",
+      "grantType": "Penelitian Internal ( RH )",
+      "grantCategory": "RH",
+      "fundingAmount": 27000000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto",
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto",
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-PP",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PP": 6
+      },
+      "evidence": {
+        "SG-PP": [
+          {
+            "keyword": "TRANSPARANSI",
+            "weight": 3
+          },
+          {
+            "keyword": "TJSLP",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"TRANSPARANSI\", \"TJSLP\" yang merupakan penanda kategori SG-PP (Smart Governance / Public Policy (Kebijakan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "VISUALISASI DARI KLASTERISASI PENGELOMPOKAN DAERAH BERDASARKAN TINGKAT PENDAPATAN PAJAK DAERAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER LANJUTAN",
+      "year": "2025",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "Penelitian Internal ( RPI )",
+      "grantCategory": "RPI",
+      "fundingAmount": 23000000,
+      "lecturers": [
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-PP",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PP": 3
+      },
+      "evidence": {
+        "SG-PP": [
+          {
+            "keyword": "PAJAK DAERAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PAJAK DAERAH\" yang merupakan penanda kategori SG-PP (Smart Governance / Public Policy (Kebijakan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "RANCANG BANGUN SISTEM INFORMASI PROFIL FAKULTAS SAINS DAN TEKNOLOGI INFORMASI INSTITUT TEKNOLOGI KALIMANTAN BERBASIS WEBSITE MENGGUNAKAN METODE PROTOTYPING",
+      "year": "2026",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "HIBAH INTERNAL ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 20000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Aidil Saputra Kirsan",
+        "Rosa Eliviani"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Rosa Eliviani",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-PS",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PS": 3
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "SISTEM INFORMASI PROFIL",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SISTEM INFORMASI PROFIL\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "IMPLEMENTASI KNOWLEDGE MANAGEMENT SYSTEM (KMS) BERBASIS AI UNTUK PELAYANAN PERIZINAN PADA DPMPTSP KOTA BALIKPAPAN DENGAN METODE PERSONAL EXTREME PROGRAMMING",
+      "year": "2026",
+      "leader": "M. Ihsan Alfani Putera",
+      "grantType": "HIBAH INTERNAL ( RH )",
+      "grantCategory": "RH",
+      "fundingAmount": 30000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-PS",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PS": 6
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "PERIZINAN",
+            "weight": 3
+          },
+          {
+            "keyword": "DPMPTSP",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PERIZINAN\", \"DPMPTSP\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS) MELALUI IMPLEMENTASI OTOMASI APPROVAL WORKFLOW",
+      "year": "2026",
+      "leader": "Nur Fajri Azhar",
+      "grantType": "HIBAH INTERNAL ( RI )",
+      "grantCategory": "RI",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera.",
+      "pillar": "SG-PS",
+      "supportingPillars": [
+        "SG-BR"
+      ],
+      "matchScore": {
+        "SG-PS": 6,
+        "SG-BR": 3
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "SIMPAS",
+            "weight": 3
+          },
+          {
+            "keyword": "PENELITIAN DAN PENGABDIAN MASYARAKAT",
+            "weight": 3
+          }
+        ],
+        "SG-BR": [
+          {
+            "keyword": "APPROVAL WORKFLOW",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SIMPAS\", \"PENELITIAN DAN PENGABDIAN MASYARAKAT\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "IMPLEMENTASI METODE SCRUMBAN UNTUK PERANCANGAN ULANG SISTEM INFORMASI DAN MANAJEMEN LABORATORIUM (SIMLAB) INSTITUT TEKNOLOGI KALIMANTAN",
+      "year": "2025",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "Penelitian Internal ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 17000000,
+      "lecturers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-PS",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PS": 3
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "SIMLAB",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SIMLAB\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM INFORMASI PUSAT LAYANAN HUKUM SEBAGAI JARINGAN DOKUMENTASI DAN INFORMASI HUKUM ITK",
+      "year": "2025",
+      "leader": "Dwi Nur Amalia PENILAIAN INTERNAL ( RKS )",
+      "grantType": "PENILAIAN INTERNAL ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 17000000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa",
+        "Dwi Nur Amalia"
+      ],
+      "siMembers": [
+        "Dwi Nur Amalia",
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Dwi Nur Amalia, Vika Fitratunnany Insanittaqwa.",
+      "pillar": "SG-PS",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PS": 3
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "PUSAT LAYANAN HUKUM",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PUSAT LAYANAN HUKUM\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) INSTITUT TEKNOLOGI KALIMANTAN",
+      "year": "2025",
+      "leader": "Nur Fajri Azhar PENELITIAN INTERNAL ( RKS )",
+      "grantType": "PENELITIAN INTERNAL ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 17000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera.",
+      "pillar": "SG-PS",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PS": 6
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "SIMPAS",
+            "weight": 3
+          },
+          {
+            "keyword": "PENELITIAN DAN PENGABDIAN MASYARAKAT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SIMPAS\", \"PENELITIAN DAN PENGABDIAN MASYARAKAT\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM INFORMASI PELAYANAN ADMINISTRASI PADA UNIT LAYANAN TERPADU INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE WATERFALL",
+      "year": "2024",
+      "leader": "Sri Rahayu Natasia",
+      "grantType": "HIBAH INTERNAL ( RKST )",
+      "grantCategory": "RKST",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Arif Wicaksono Septyanto",
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Sri Rahayu Natasia",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-PS",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PS": 6
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "PELAYANAN ADMINISTRASI",
+            "weight": 3
+          },
+          {
+            "keyword": "UNIT LAYANAN TERPADU",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PELAYANAN ADMINISTRASI\", \"UNIT LAYANAN TERPADU\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "PENGEMBANGAN SILURAH: SISTEM INFORMASI KELURAHAN MENGGUNAKAN METODE AGILE",
+      "year": "2024",
+      "leader": "Yuyun Tri Wiranti",
+      "grantType": "HIBAH INTERNAL ( RKDN )",
+      "grantCategory": "RKDN",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Henokh Lugo Hariyanto"
+      ],
+      "siMembers": [
+        "Henokh Lugo Hariyanto",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-PS",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PS": 6
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "KELURAHAN",
+            "weight": 3
+          },
+          {
+            "keyword": "SILURAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KELURAHAN\", \"SILURAH\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "RANCANG BANGUN SISTEM INFORMASI PENDAFTARAN SANTRI BARU BERBASIS WEB MENGGUNAKAN METODE RAPID APPLICATION DEVELOPMENT (RAD)",
+      "year": "2024",
+      "leader": "Mohammad Reza Fahlevi PROGRAM PENELITIAN MANDIRI ( PENELITIAN MANDIRI )",
+      "grantType": "PROGRAM PENELITIAN MANDIRI ( PENELITIAN MANDIRI )",
+      "grantCategory": "PENELITIAN MANDIRI",
+      "fundingAmount": 1000000,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: I Putu Deny Arthawan Sugih Prabowo.",
+      "pillar": "SG-PS",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PS": 3
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "PENDAFTARAN SANTRI",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PENDAFTARAN SANTRI\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) UNTUK MENINGKATKAN PELAYANAN KEPADA SETIAP UNIT DI INSTITUT TEKNOLOGI KALIMANTAN",
+      "year": "2024",
+      "leader": "Nur Fajri Azhar",
+      "grantType": "HIBAH INTERNAL ( RKST )",
+      "grantCategory": "RKST",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera.",
+      "pillar": "SG-PS",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PS": 6
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "SIMPAS",
+            "weight": 3
+          },
+          {
+            "keyword": "PENELITIAN DAN PENGABDIAN MASYARAKAT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SIMPAS\", \"PENELITIAN DAN PENGABDIAN MASYARAKAT\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM PELAYANAN SATU PINTU SEBAGAI SISTEM LAYANAN MASYARAKAT MENGGUNAKAN METODE ICONIX PROCESS",
+      "year": "2024",
+      "leader": "M. Ihsan Alfani Putera",
+      "grantType": "HIBAH INTERNAL ( RHI )",
+      "grantCategory": "RHI",
+      "fundingAmount": 30000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-PS",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PS": 6
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "PELAYANAN SATU PINTU",
+            "weight": 3
+          },
+          {
+            "keyword": "LAYANAN MASYARAKAT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PELAYANAN SATU PINTU\", \"LAYANAN MASYARAKAT\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "IMPLEMENTASI LIVABLE HOME APPLICATION SEBAGAI SISTEM LAYANAN MASYARAKAT MENGGUNAKAN METODE WATERFALL",
+      "year": "2023",
+      "leader": "M. Ihsan Alfani Putera",
+      "grantType": "HIBAH ITK ( PAI )",
+      "grantCategory": "PAI",
+      "fundingAmount": 30000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-PS",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PS": 6
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "LAYANAN MASYARAKAT",
+            "weight": 3
+          },
+          {
+            "keyword": "LIVABLE HOME",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"LAYANAN MASYARAKAT\", \"LIVABLE HOME\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "PERBANDINGAN WATERFALL, EXTREME PROGRAMMING DAN ICONIX DALAM PENGEMBANGAN SISTEM INFORMASI COMPANY PROFILE PEMERINTAHAN PADA WILAYAH IBU KOTA NEGARA BARU",
+      "year": "2022",
+      "leader": "M. Ihsan Alfani Putera",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PUFR )",
+      "grantCategory": "PUFR",
+      "fundingAmount": 40000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-PS",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PS": 3
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "COMPANY PROFILE PEMERINTAHAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"COMPANY PROFILE PEMERINTAHAN\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) INSTITUT TEKNOLOGI KALIMANTAN",
+      "year": "2020",
+      "leader": "Sri Rahayu Natasia",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( KEBIJAKAN STRATEGIS )",
+      "grantCategory": "KEBIJAKAN STRATEGIS",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-PS",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PS": 6
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "SIMPAS",
+            "weight": 3
+          },
+          {
+            "keyword": "PENELITIAN DAN PENGABDIAN MASYARAKAT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SIMPAS\", \"PENELITIAN DAN PENGABDIAN MASYARAKAT\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "PEMBANGUNAN SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (STUDI KASUS: INSTITUT TEKNOLOGI KALIMANTAN)",
+      "year": "2019",
+      "leader": "Sri Rahayu Natasia",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PSU )",
+      "grantCategory": "PSU",
+      "fundingAmount": 20070000,
+      "lecturers": [
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SG-PS",
+      "supportingPillars": [],
+      "matchScore": {
+        "SG-PS": 3
+      },
+      "evidence": {
+        "SG-PS": [
+          {
+            "keyword": "PENELITIAN DAN PENGABDIAN MASYARAKAT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PENELITIAN DAN PENGABDIAN MASYARAKAT\" yang merupakan penanda kategori SG-PS (Smart Governance / Public Service (Layanan Publik)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 20)."
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM INFORMASI KLINIK KAMPUS BERBASIS WEB UNTUK MENINGKATKAN EFEKTIVITAS PELAYANAN KESEHATAN DI INSTITUT TEKNOLOGI KALIMANTAN",
+      "year": "2026",
+      "leader": "Hendy Indrawan Sunardi",
+      "grantType": "HIBAH INTERNAL ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 20000000,
+      "lecturers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SL-HE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SL-HE": 6
+      },
+      "evidence": {
+        "SL-HE": [
+          {
+            "keyword": "KESEHATAN",
+            "weight": 3
+          },
+          {
+            "keyword": "KLINIK",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KESEHATAN\", \"KLINIK\" yang merupakan penanda kategori SL-HE (Smart Living / Health (Sarana Prasarana Kesehatan)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 24)."
+    },
+    {
+      "title": "SVM (SUPPORT VECTOR MACHINE) UNTUK KLASIFIKASI STATUS GIZI BALITA BERDASARKAN INDEKS ANTROPOMETRI",
+      "year": "2023",
+      "leader": "Arif Wicaksono Septyanto",
+      "grantType": "HIBAH ITK ( PDM )",
+      "grantCategory": "PDM",
+      "fundingAmount": 14950000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SL-HE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SL-HE": 6
+      },
+      "evidence": {
+        "SL-HE": [
+          {
+            "keyword": "GIZI",
+            "weight": 3
+          },
+          {
+            "keyword": "BALITA",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"GIZI\", \"BALITA\" yang merupakan penanda kategori SL-HE (Smart Living / Health (Sarana Prasarana Kesehatan)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 24)."
+    },
+    {
+      "title": "Fuzzy Logic Fog Clod Computing untuk Menganalisis Faktor Penyebab Kematian Ibu Meninggal Masa Postpartum",
+      "year": "2021",
+      "leader": "Arif Wicaksono Septyanto",
+      "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+      "grantCategory": "PDP/Dosen Pemula",
+      "fundingAmount": 19970000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SL-HE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SL-HE": 6
+      },
+      "evidence": {
+        "SL-HE": [
+          {
+            "keyword": "POSTPARTUM",
+            "weight": 3
+          },
+          {
+            "keyword": "KEMATIAN IBU",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"POSTPARTUM\", \"KEMATIAN IBU\" yang merupakan penanda kategori SL-HE (Smart Living / Health (Sarana Prasarana Kesehatan)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 24)."
+    },
+    {
+      "title": "FUZZY RULE BASED-SYSTEM REKAM MEDIS TERKAIT STATUS GIZI BAYI INDEKS ANTROPOMETRI SELAMA POSTPARTUM",
+      "year": "2021",
+      "leader": "Arif Wicaksono Septyanto",
+      "grantType": "HIBAH PENDANAAN INTERNAL ( TERAPAN )",
+      "grantCategory": "TERAPAN",
+      "fundingAmount": 10000000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SL-HE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SL-HE": 9
+      },
+      "evidence": {
+        "SL-HE": [
+          {
+            "keyword": "GIZI",
+            "weight": 3
+          },
+          {
+            "keyword": "POSTPARTUM",
+            "weight": 3
+          },
+          {
+            "keyword": "REKAM MEDIS",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"GIZI\", \"POSTPARTUM\", \"REKAM MEDIS\" yang merupakan penanda kategori SL-HE (Smart Living / Health (Sarana Prasarana Kesehatan)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 24)."
+    },
+    {
+      "title": "Analisis Keterhubungan Prestasi Akademik dan Kesehatan Mental Mahasiswa Menggunakan Metode Data Mining Sebagai Upaya Peningkatan Kualitas Peserta Didik di Perguruan Tinggi Negeri di Kalimantan",
+      "year": "2019",
+      "leader": "Soleh Ardiansyah",
+      "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+      "grantCategory": "PDP/Dosen Pemula",
+      "fundingAmount": 19995000,
+      "lecturers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "siMembers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Yuyun Tri Wiranti.",
+      "pillar": "SL-HE",
+      "supportingPillars": [
+        "SS-LE"
+      ],
+      "matchScore": {
+        "SL-HE": 6,
+        "SS-LE": 6
+      },
+      "evidence": {
+        "SL-HE": [
+          {
+            "keyword": "KESEHATAN",
+            "weight": 3
+          },
+          {
+            "keyword": "KESEHATAN MENTAL",
+            "weight": 3
+          }
+        ],
+        "SS-LE": [
+          {
+            "keyword": "AKADEMIK",
+            "weight": 3
+          },
+          {
+            "keyword": "PESERTA DIDIK",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KESEHATAN\", \"KESEHATAN MENTAL\" yang merupakan penanda kategori SL-HE (Smart Living / Health (Sarana Prasarana Kesehatan)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 24)."
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM INFORMASI COURSE UNTUK PENINGKATAN KAPASITAS DAN KETERAMPILAN MASYARAKAT BALIKPAPAN MENGGUNAKAN METODE WATERFALL",
+      "year": "2026",
+      "leader": "Henokh Lugo Hariyanto",
+      "grantType": "HIBAH INTERNAL ( RH )",
+      "grantCategory": "RH",
+      "fundingAmount": 30000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SS-LE",
+      "supportingPillars": [
+        "SS-CO"
+      ],
+      "matchScore": {
+        "SS-LE": 3,
+        "SS-CO": 2
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "SISTEM INFORMASI COURSE",
+            "weight": 3
+          }
+        ],
+        "SS-CO": [
+          {
+            "keyword": "KETERAMPILAN MASYARAKAT",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SISTEM INFORMASI COURSE\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM SMART LIBRARY BERBASIS RFID TERINTEGRASI CLOUD SEBAGAI PLATFORM MANAJEMEN DIGITAL PERPUSTAKAAN ITK",
+      "year": "2026",
+      "leader": "Adi Mahmud Jaya Marindra",
+      "grantType": "HIBAH INTERNAL ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 20000000,
+      "lecturers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Aidil Saputra Kirsan.",
+      "pillar": "SS-LE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SS-LE": 6
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "PERPUSTAKAAN",
+            "weight": 3
+          },
+          {
+            "keyword": "SMART LIBRARY",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PERPUSTAKAAN\", \"SMART LIBRARY\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "PERANCANGAN UI/UX MEDIA VISUAL BERBASIS DIGITAL DENGAN PENDEKATAN DISCRETE TRIAL TRAINING UNTUK ANAK DENGAN GANGGUAN BAHASA",
+      "year": "2026",
+      "leader": "Nursanti Novi  Arisa",
+      "grantType": "HIBAH INTERNAL ( RI )",
+      "grantCategory": "RI",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa",
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "Nursanti Novi Arisa",
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Nursanti Novi Arisa, Vika Fitratunnany Insanittaqwa.",
+      "pillar": "SS-LE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SS-LE": 3
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "DISCRETE TRIAL TRAINING",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"DISCRETE TRIAL TRAINING\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "PENGEMBANGAN SISTEM INFORMASI MANAJEMEN TUGAS AKHIR PADA JURUSAN TEKNIK ELEKTRO, INFORMATIKA, DAN BISNIS INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING (PXP)",
+      "year": "2025",
+      "leader": "Sri Rahayu Natasia",
+      "grantType": "Penelitian Internal ( RKS )",
+      "grantCategory": "RKS",
+      "fundingAmount": 17000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti",
+        "Aidil Saputra Kirsan",
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Sri Rahayu Natasia",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SS-LE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SS-LE": 3
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "TUGAS AKHIR",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"TUGAS AKHIR\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "PERANCANGAN SISTEM MEDIA PEMBELAJARAN BERBASIS AI DAN ADAPTIVE LEARNING DENGAN KONSEP HEALING TECHNOLOGY PADA PESERTA DIDIK DISABILITAS",
+      "year": "2025",
+      "leader": "M. Ihsan Alfani Putera PENELITIAN INTERNAL ( RDP )",
+      "grantType": "PENELITIAN INTERNAL ( RDP )",
+      "grantCategory": "RDP",
+      "fundingAmount": 17000000,
+      "lecturers": [
+        "M. Ihsan Alfani Putera",
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera",
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera, Nursanti Novi Arisa.",
+      "pillar": "SS-LE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SS-LE": 15
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "MEDIA PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "ADAPTIVE LEARNING",
+            "weight": 3
+          },
+          {
+            "keyword": "PESERTA DIDIK",
+            "weight": 3
+          },
+          {
+            "keyword": "DISABILITAS",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"MEDIA PEMBELAJARAN\", \"ADAPTIVE LEARNING\", \"PESERTA DIDIK\", \"DISABILITAS\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "PEMBANGUNAN SMART-SCHOOL SYSTEM PADA LINGKUNGAN PEDESAAN DI WILAYAH IKN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
+      "year": "2024",
+      "leader": "Nursanti Novi  Arisa",
+      "grantType": "HIBAH INTERNAL ( RHI )",
+      "grantCategory": "RHI",
+      "fundingAmount": 30000000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa",
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "Nursanti Novi Arisa",
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Nursanti Novi Arisa, Vika Fitratunnany Insanittaqwa.",
+      "pillar": "SS-LE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SS-LE": 3
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "SMART-SCHOOL",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SMART-SCHOOL\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "RANCANG BANGUN SISTEM INFORMASI PENJADWALAN SEBAGAI UPAYA OPTIMALISASI PENJADWALAN PEMBELAJARAN",
+      "year": "2023",
+      "leader": "Yuyun Tri Wiranti",
+      "grantType": "HIBAH ITK ( PPI )",
+      "grantCategory": "PPI",
+      "fundingAmount": 16000000,
+      "lecturers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "siMembers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SS-LE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SS-LE": 6
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "PENJADWALAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"PENJADWALAN\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "PENINGKATAN EFISIENSI DAN EFEKTIVITAS PROSES BELAJAR MENGAJAR DENGAN PEMANFAATAN TEKNOLOGI IOT PADA SISTEM BEL SEKOLAH PINTAR",
+      "year": "2023",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "HIBAH ITK ( PAI )",
+      "grantCategory": "PAI",
+      "fundingAmount": 29280000,
+      "lecturers": [
+        "Aidil Saputra Kirsan",
+        "Sri Rahayu Natasia"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SS-LE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SS-LE": 9
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "BELAJAR MENGAJAR",
+            "weight": 3
+          },
+          {
+            "keyword": "SEKOLAH",
+            "weight": 3
+          },
+          {
+            "keyword": "BEL SEKOLAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BELAJAR MENGAJAR\", \"SEKOLAH\", \"BEL SEKOLAH\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL",
+      "year": "2023",
+      "leader": "Nursanti Novi  Arisa",
+      "grantType": "HIBAH ITK ( PPI )",
+      "grantCategory": "PPI",
+      "fundingAmount": 19520000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa",
+        "M. Ihsan Alfani Putera",
+        "Nursanti Novi Arisa"
+      ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera",
+        "Nursanti Novi Arisa",
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera, Nursanti Novi Arisa, Vika Fitratunnany Insanittaqwa.",
+      "pillar": "SS-LE",
+      "supportingPillars": [
+        "SS-CO"
+      ],
+      "matchScore": {
+        "SS-LE": 6,
+        "SS-CO": 2
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "LITERASI",
+            "weight": 3
+          },
+          {
+            "keyword": "PUBLISHING APPS",
+            "weight": 3
+          }
+        ],
+        "SS-CO": [
+          {
+            "keyword": "SMART SOCIETY",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"LITERASI\", \"PUBLISHING APPS\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "LEAN VS AGILE: EFISIENSI METODE UNTUK SISTEM INFORMASI SEKOLAH CERDAS DI BALIKPAPAN",
+      "year": "2022",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PDB )",
+      "grantCategory": "PDB",
+      "fundingAmount": 14200000,
+      "lecturers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SS-LE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SS-LE": 3
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "SEKOLAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SEKOLAH\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "ANALISIS PENGARUH PENGALAMAN MENGGUNAKAN E-LEARNING SEBELUM COVID-19 DAN KARAKTERISTIK INSTRUKTUR KELAS TERHADAP NIAT PERILAKU MAHASISWA DALAM PEMBELAJARAN MELALUI E-LEARNING BERDASARKAN TECHNOLOGY ACCEPTANCE MODEL",
+      "year": "2022",
+      "leader": "I Putu Deny Arthawan Sugih Prabowo MANDIRI ( PMK )",
+      "grantType": "MANDIRI ( PMK )",
+      "grantCategory": "PMK",
+      "fundingAmount": 3521400,
+      "lecturers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: I Putu Deny Arthawan Sugih Prabowo.",
+      "pillar": "SS-LE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SS-LE": 6
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "E-LEARNING",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"E-LEARNING\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "IMPLEMENTASI SIAKAD BERBASIS WEBSITE DAN ANDROID MENGGUNAKAN FRAMEWORK CODEIGNITER DAN RESTFUL API UNTUK MENDUKUNG EKOSISTEM PENDIDIKAN DI SEKOLAH ISLAM BALIKPAPAN",
+      "year": "2021",
+      "leader": "Aidil Saputra Kirsan",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN DOSEN BSARU (PDB) )",
+      "grantCategory": "PENELITIAN DOSEN BSARU (PDB",
+      "fundingAmount": 14450000,
+      "lecturers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SS-LE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SS-LE": 9
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "SEKOLAH",
+            "weight": 3
+          },
+          {
+            "keyword": "SIAKAD",
+            "weight": 3
+          },
+          {
+            "keyword": "PENDIDIKAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SEKOLAH\", \"SIAKAD\", \"PENDIDIKAN\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "PENGEMBANGAN SIMSIS SEBAGAI SISTEM SMART CITY RANAH PENDIDIKAN UNTUK MENUNJANG PROSES PEMBELAJARAN",
+      "year": "2021",
+      "leader": "Vika Fitratunnany Insanittaqwa",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN DOSEN BSARU (PDB) )",
+      "grantCategory": "PENELITIAN DOSEN BSARU (PDB",
+      "fundingAmount": 14600000,
+      "lecturers": [
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "siMembers": [
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SS-LE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SS-LE": 9
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "SIMSIS",
+            "weight": 3
+          },
+          {
+            "keyword": "PENDIDIKAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"SIMSIS\", \"PENDIDIKAN\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "ANALISIS PENERIMAAN LEARNING MANAGEMENT SYSTEM PADA KULIAH.ITK.AC.ID MENGGUNAKAN PENDEKATAN TECHNOLOGY ACCEPTANCE MODEL (TAM)",
+      "year": "2021",
+      "leader": "Dwi Nur Amalia",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN DOSEN BSARU (PDB) )",
+      "grantCategory": "PENELITIAN DOSEN BSARU (PDB",
+      "fundingAmount": 14750000,
+      "lecturers": [
+        "Dwi Nur Amalia"
+      ],
+      "siMembers": [
+        "Dwi Nur Amalia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SS-LE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SS-LE": 3
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "LEARNING MANAGEMENT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"LEARNING MANAGEMENT\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "MEDIA PEMBELAJARAN DENGAN METODE GAMIFICATION UNTUK PENDIDIKAN FORMAL DAN NON FORMAL DI KALIMANTAN ERA COVID-19",
+      "year": "2021",
+      "leader": "M. Gilvy Langgawan Putra",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN SUMBER DAYA KALIMANTAN (PSDK) )",
+      "grantCategory": "PENELITIAN SUMBER DAYA KALIMANTAN (PSDK",
+      "fundingAmount": 19900000,
+      "lecturers": [
+        "M. Gilvy Langgawan Putra"
+      ],
+      "siMembers": [
+        "M. Gilvy Langgawan Putra"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SS-LE",
+      "supportingPillars": [],
+      "matchScore": {
+        "SS-LE": 12
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "GAMIFICATION",
+            "weight": 3
+          },
+          {
+            "keyword": "MEDIA PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "PENDIDIKAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"GAMIFICATION\", \"MEDIA PEMBELAJARAN\", \"PENDIDIKAN\" yang merupakan penanda kategori SS-LE (Smart Society / Learning (Ekosistem Belajar)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "SMART SHE CAMPUS: SISTEM PEMANTAUAN KESELAMATAN BERKENDARA CIVITAS AKADEMIKA BERBASIS IOT",
+      "year": "2026",
+      "leader": "Anisa Novi Andriani",
+      "grantType": "HIBAH INTERNAL ( RDP )",
+      "grantCategory": "RDP",
+      "fundingAmount": 20000000,
+      "lecturers": [
+        "Rosa Eliviani"
+      ],
+      "siMembers": [
+        "Rosa Eliviani"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Rosa Eliviani.",
+      "pillar": "SS-SE",
+      "supportingPillars": [
+        "SS-LE"
+      ],
+      "matchScore": {
+        "SS-LE": 3,
+        "SS-SE": 9
+      },
+      "evidence": {
+        "SS-LE": [
+          {
+            "keyword": "AKADEMIK",
+            "weight": 3
+          }
+        ],
+        "SS-SE": [
+          {
+            "keyword": "KESELAMATAN",
+            "weight": 3
+          },
+          {
+            "keyword": "KESELAMATAN BERKENDARA",
+            "weight": 3
+          },
+          {
+            "keyword": "PEMANTAUAN KESELAMATAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KESELAMATAN\", \"KESELAMATAN BERKENDARA\", \"PEMANTAUAN KESELAMATAN\" yang merupakan penanda kategori SS-SE (Smart Society / Security (Keamanan Masyarakat)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "RANCANG BANGUN SISTEM DETEKSI DINI KEBAKARAN DI RUMAH MENGGUNAKAN SMART HOME BERBASIS IOT",
+      "year": "2023",
+      "leader": "Hendy Indrawan Sunardi",
+      "grantType": "HIBAH ITK ( PPI )",
+      "grantCategory": "PPI",
+      "fundingAmount": 18500000,
+      "lecturers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SS-SE",
+      "supportingPillars": [
+        "SL-BU"
+      ],
+      "matchScore": {
+        "SL-BU": 2,
+        "SS-SE": 3
+      },
+      "evidence": {
+        "SL-BU": [
+          {
+            "keyword": "SMART HOME",
+            "weight": 2
+          }
+        ],
+        "SS-SE": [
+          {
+            "keyword": "KEBAKARAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KEBAKARAN\" yang merupakan penanda kategori SS-SE (Smart Society / Security (Keamanan Masyarakat)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "VISUALISASI DARI KLASTERISASI DAN PERAMALAN KUALITAS UDARA KOTA SAMARINDA MENGGUNAKAN METODE KLASTERISASI OBJEK BACKPROPAGATION DAN PERAMALAN ARTIFICIAL NEURAL NETWORK",
+      "year": "2026",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "HIBAH INTERNAL ( RPI )",
+      "grantCategory": "RPI",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SV-PR",
+      "supportingPillars": [],
+      "matchScore": {
+        "SV-PR": 3
+      },
+      "evidence": {
+        "SV-PR": [
+          {
+            "keyword": "KUALITAS UDARA",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KUALITAS UDARA\" yang merupakan penanda kategori SV-PR (Smart Environment / Protection (Proteksi Lingkungan)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "VISUALISASI DARI KLASTERISASI DAN PERAMALAN KUALITAS UDARA KOTA BALIKPAPAN MENGGUNAKAN METODE KLASTERISASI OBJEK BACKPROPAGATION DAN PERAMALAN ARTIFICIAL NEURAL NETWORK",
+      "year": "2023",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "HIBAH ITK ( PPI )",
+      "grantCategory": "PPI",
+      "fundingAmount": 20000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SV-PR",
+      "supportingPillars": [],
+      "matchScore": {
+        "SV-PR": 3
+      },
+      "evidence": {
+        "SV-PR": [
+          {
+            "keyword": "KUALITAS UDARA",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KUALITAS UDARA\" yang merupakan penanda kategori SV-PR (Smart Environment / Protection (Proteksi Lingkungan)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "PENERAPAN ARTIFICIAL NEURAL NETWORK PADA PROTOTYPING SISTEM MONITORING KUALITAS AIR DI KOTA BALIKPAPAN UNTUK MENDUKUNG BALIKPAPAN SEBAGAI SMART CITY",
+      "year": "2021",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "HIBAH INSTITUT TEKNOLOGI KALIMANTAN ( PENELITIAN DOSEN BSARU (PDB) )",
+      "grantCategory": "PENELITIAN DOSEN BSARU (PDB",
+      "fundingAmount": 15000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SV-PR",
+      "supportingPillars": [],
+      "matchScore": {
+        "SV-PR": 3
+      },
+      "evidence": {
+        "SV-PR": [
+          {
+            "keyword": "KUALITAS AIR",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KUALITAS AIR\" yang merupakan penanda kategori SV-PR (Smart Environment / Protection (Proteksi Lingkungan)). Acuan: Panduan P2M ITK 2026, Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "INOVASI SISTEM PENGELOLAAN SAMPAH MELALUI OPTIMALISASI TEKNIS OPERASIONAL DAN PERANCANGAN TPS 3R DI RUMAH SAKIT RESTU IBU BALIKPAPAN",
+      "year": "2026",
+      "leader": "Nia Febrianti",
+      "grantType": "HIBAH INTERNAL ( RI )",
+      "grantCategory": "RI",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Dwi Arief Prambudi.",
+      "pillar": "SV-WA",
+      "supportingPillars": [],
+      "matchScore": {
+        "SV-WA": 6
+      },
+      "evidence": {
+        "SV-WA": [
+          {
+            "keyword": "SAMPAH",
+            "weight": 3
+          },
+          {
+            "keyword": "TPS 3R",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SAMPAH\", \"TPS 3R\" yang merupakan penanda kategori SV-WA (Smart Environment / Waste (Pengelolaan Sampah dan Limbah)). Acuan: Panduan P2M ITK 2026, Tabel 1 (hal. 8) & Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "INOVASI PENGOLAHAN LIMBAH BAGLOG JAMUR TIRAM MENJADI KOMPOS DENGAN MOL NASI BASI SEBAGAI BIOAKTIVATOR",
+      "year": "2025",
+      "leader": "Nia Febrianti",
+      "grantType": "Penelitian Internal ( RI )",
+      "grantCategory": "RI",
+      "fundingAmount": 23000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Dwi Arief Prambudi.",
+      "pillar": "SV-WA",
+      "supportingPillars": [],
+      "matchScore": {
+        "SV-WA": 6
+      },
+      "evidence": {
+        "SV-WA": [
+          {
+            "keyword": "LIMBAH",
+            "weight": 3
+          },
+          {
+            "keyword": "KOMPOS",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"LIMBAH\", \"KOMPOS\" yang merupakan penanda kategori SV-WA (Smart Environment / Waste (Pengelolaan Sampah dan Limbah)). Acuan: Panduan P2M ITK 2026, Tabel 1 (hal. 8) & Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "VISUALISASI DARI KLASTERISASI DAN ESTIMASI KETERSEDIAAN LAHAN PEMBUANGAN SAMPAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER DAN UJI REGRESI LANJUTAN",
+      "year": "2024",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "HIBAH INTERNAL ( RPIKN )",
+      "grantCategory": "RPIKN",
+      "fundingAmount": 25000000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SV-WA",
+      "supportingPillars": [],
+      "matchScore": {
+        "SV-WA": 3
+      },
+      "evidence": {
+        "SV-WA": [
+          {
+            "keyword": "SAMPAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SAMPAH\" yang merupakan penanda kategori SV-WA (Smart Environment / Waste (Pengelolaan Sampah dan Limbah)). Acuan: Panduan P2M ITK 2026, Tabel 1 (hal. 8) & Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "Monitoring Dan Forecasting Ketercukupan Tempat Pembuangan Akhir Di Kota Balikpapan Sebagai Penyangga IKN Dengan Metode Regresi Lanjutan Berbasis Website",
+      "year": "2024",
+      "leader": "Dwi Arief Prambudi",
+      "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+      "grantCategory": "PDP/Dosen Pemula",
+      "fundingAmount": 28700000,
+      "lecturers": [
+        "Dwi Arief Prambudi"
+      ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": "SV-WA",
+      "supportingPillars": [],
+      "matchScore": {
+        "SV-WA": 3
+      },
+      "evidence": {
+        "SV-WA": [
+          {
+            "keyword": "TEMPAT PEMBUANGAN AKHIR",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"TEMPAT PEMBUANGAN AKHIR\" yang merupakan penanda kategori SV-WA (Smart Environment / Waste (Pengelolaan Sampah dan Limbah)). Acuan: Panduan P2M ITK 2026, Tabel 1 (hal. 8) & Tabel 3 (hal. 25)."
+    },
+    {
+      "title": "Pengembangan Algoritma Metaheuristik Untuk Menyelesaikan Permasalahan Optimasi Kombinatorial",
+      "year": "2024",
+      "leader": "Arif Wicaksono Septyanto",
+      "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+      "grantCategory": "PDP/Dosen Pemula",
+      "fundingAmount": 34740000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": null,
+      "supportingPillars": [],
+      "matchScore": {},
+      "evidence": {},
+      "reason": "Judul tidak memuat satu pun kata kunci dari kategori manapun. Penelitian ini tergolong riset dasar (keilmuan murni) yang berada di luar bidang fokus roadmap yang bersifat terapan."
+    },
+    {
+      "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
+      "year": "2023",
+      "leader": "Henokh Lugo Hariyanto",
+      "grantType": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+      "grantCategory": "PDP/Dosen Pemula",
+      "fundingAmount": 17900000,
+      "lecturers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
+      "pillar": null,
+      "supportingPillars": [],
+      "matchScore": {},
+      "evidence": {},
+      "reason": "Judul tidak memuat satu pun kata kunci dari kategori manapun. Penelitian ini tergolong riset dasar (keilmuan murni) yang berada di luar bidang fokus roadmap yang bersifat terapan."
+    }
+  ]
+}

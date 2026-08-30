@@ -1,32 +1,44 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-29T17:07:07.892677",
+    "generatedAt": "2026-08-30T13:06:31.557413",
     "prodi": "Sistem Informasi",
     "source": "sinta_data.json",
     "sourceGeneratedAt": "2026-08-29T17:04:12.248916",
+    "referenceKey": "FSTI",
+    "referenceLabel": "Roadmap Fakultas (FSTI)",
     "reference": "Roadmap Penelitian, PkM, dan Renstra FSTI ITK 2025-2029",
-    "description": "Pemetaan judul penelitian prodi terhadap 4 Pilar Strategis Roadmap FSTI"
+    "referenceDoc": "Roadmap_FSTI.pdf, Bab 4 (hal. 9-11)",
+    "referenceScope": "Acuan tingkat FAKULTAS. Pembagian pilarnya berbeda dengan roadmap tingkat institut, sehingga angka pada acuan ini tidak dapat dibandingkan langsung dengan angka pada acuan ITK.",
+    "categoryLabel": "Pilar Strategis",
+    "keywordBasis": "Dokumen roadmap fakultas hanya memuat uraian tiap pilar dan peran masing-masing program studi; dokumen ini TIDAK memuat daftar topik penelitian. Karena itu kata kunci yang dipakai untuk memetakan disusun sendiri oleh program studi dengan menurunkan uraian tersebut, jadi bukan kutipan dari dokumen.",
+    "ownershipRule": "Judul penelitian diambil dari profil SINTA seluruh dosen yang tercatat pada daftar dosen resmi program studi. Sebuah judul dihitung sebagai luaran program studi apabila ketua ATAU minimal satu anggota peneliti adalah dosen program studi; peran tersebut dicantumkan pada setiap judul.",
+    "method": "Setiap judul dicocokkan dengan daftar kata kunci penanda milik tiap kategori roadmap. Kata kunci yang lebih khas diberi bobot lebih tinggi (skala 1 sampai 3). Kategori dengan nilai tertinggi ditetapkan sebagai kategori utama, sedangkan kategori lain yang nilainya minimal 2 dicatat sebagai kategori pendukung. Kata kunci yang menjadi pemicu ditampilkan pada setiap judul sehingga hasilnya dapat diperiksa ulang dan dikoreksi.",
+    "description": "Pemetaan judul penelitian prodi terhadap Roadmap Penelitian, PkM, dan Renstra FSTI ITK 2025-2029"
   },
   "pillars": {
     "P1": {
       "name": "Smart Governance dan Transformasi Digital Perkotaan",
       "flagship": "GovTech Nusantara",
-      "siRole": "Merancang enterprise architecture dan memodelkan integrasi layanan e-Government agar ramah pengguna (user-centric)"
+      "siRole": "Merancang enterprise architecture dan memodelkan integrasi layanan e-Government agar ramah pengguna (user-centric)",
+      "source": "Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)"
     },
     "P2": {
       "name": "Smart Education (Edukasi Cerdas dan Inklusif)",
       "flagship": "AI-based Learning Management System",
-      "siRole": "Rekayasa perangkat lunak sistem informasi akademik dan media pembelajaran adaptif/inklusif"
+      "siRole": "Rekayasa perangkat lunak sistem informasi akademik dan media pembelajaran adaptif/inklusif",
+      "source": "Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)"
     },
     "P3": {
       "name": "Smart Living dan Lingkungan Kesehatan Cerdas",
       "flagship": "Bio-Smart Living System",
-      "siRole": "Platform informasi layanan kesehatan, analitik data lingkungan, dan sistem pemantauan berbasis IoT"
+      "siRole": "Platform informasi layanan kesehatan, analitik data lingkungan, dan sistem pemantauan berbasis IoT",
+      "source": "Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)"
     },
     "P4": {
       "name": "Smart Grid, Energi Cerdas, dan Mobilitas Berkelanjutan",
       "flagship": "Microgrid & EV Charging",
-      "siRole": "Sistem monitoring dan visualisasi data energi serta antarmuka pengguna aplikasi energi"
+      "siRole": "Sistem monitoring dan visualisasi data energi serta antarmuka pengguna aplikasi energi",
+      "source": "Roadmap FSTI 2025-2029, Bab 4.4 (hal. 10-11)"
     }
   },
   "summary": {
@@ -39,6 +51,8 @@
       "P3": 15,
       "P4": 4
     },
+    "perTheme": {},
+    "perCenter": {},
     "coveragePercent": 97.3
   },
   "items": [
@@ -54,11 +68,32 @@
         "Aidil Saputra Kirsan",
         "Rosa Eliviani"
       ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Rosa Eliviani",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 3
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "SISTEM INFORMASI PROFIL",
+            "weight": 2
+          },
+          {
+            "keyword": "PROTOTYPING",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SISTEM INFORMASI PROFIL\", \"PROTOTYPING\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PENYUSUNAN MANAJEMEN RISIKO TEKNOLOGI INFORMASI PADA SEKOLAH ISLAM TERPADU ISTIQAMAH YPAIT BALIKPAPAN BERDASARKAN ISO 31000:2018",
@@ -71,6 +106,13 @@
         "Hendy Indrawan Sunardi",
         "Rosa Eliviani"
       ],
+      "siMembers": [
+        "Hendy Indrawan Sunardi",
+        "Rosa Eliviani"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [
         "P2"
@@ -78,7 +120,26 @@
       "matchScore": {
         "P1": 6,
         "P2": 3
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "MANAJEMEN RISIKO",
+            "weight": 3
+          },
+          {
+            "keyword": "ISO 31000",
+            "weight": 3
+          }
+        ],
+        "P2": [
+          {
+            "keyword": "SEKOLAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"MANAJEMEN RISIKO\", \"ISO 31000\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "IMPLEMENTASI BUSINESS PROCESS IMPROVEMENT UNTUK REDESAIN PROSES BISNIS DALAM TRANSFORMASI WEB KE MOBILE EMPLOYEE INFORMATION SYSTEM",
@@ -91,11 +152,35 @@
         "Dwi Nur Amalia",
         "Sri Rahayu Natasia"
       ],
+      "siMembers": [
+        "Dwi Nur Amalia",
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 8
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PROSES BISNIS",
+            "weight": 3
+          },
+          {
+            "keyword": "BUSINESS PROCESS",
+            "weight": 3
+          },
+          {
+            "keyword": "EMPLOYEE INFORMATION SYSTEM",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PROSES BISNIS\", \"BUSINESS PROCESS\", \"EMPLOYEE INFORMATION SYSTEM\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "KRIPTOSISTEM CITRA GRAYSCALE HIBRIDA BERBASIS PERMUTASI CHAOS DAN DIFUSI MATRIKS PADA GELANGGANG Z/256Z UNTUK KEAMANAN DATA VISUAL",
@@ -107,11 +192,30 @@
       "lecturers": [
         "I Putu Deny Arthawan Sugih Prabowo"
       ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: I Putu Deny Arthawan Sugih Prabowo.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 6
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "KRIPTOSISTEM",
+            "weight": 3
+          },
+          {
+            "keyword": "KEAMANAN DATA",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KRIPTOSISTEM\", \"KEAMANAN DATA\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "IMPLEMENTASI KNOWLEDGE MANAGEMENT SYSTEM (KMS) BERBASIS AI UNTUK PELAYANAN PERIZINAN PADA DPMPTSP KOTA BALIKPAPAN DENGAN METODE PERSONAL EXTREME PROGRAMMING",
@@ -123,11 +227,34 @@
       "lecturers": [
         "M. Ihsan Alfani Putera"
       ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 7
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PERIZINAN",
+            "weight": 3
+          },
+          {
+            "keyword": "DPMPTSP",
+            "weight": 3
+          },
+          {
+            "keyword": "EXTREME PROGRAMMING",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PERIZINAN\", \"DPMPTSP\", \"EXTREME PROGRAMMING\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS) MELALUI IMPLEMENTASI OTOMASI APPROVAL WORKFLOW",
@@ -139,11 +266,34 @@
       "lecturers": [
         "M. Ihsan Alfani Putera"
       ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 6
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "SIMPAS",
+            "weight": 2
+          },
+          {
+            "keyword": "APPROVAL WORKFLOW",
+            "weight": 2
+          },
+          {
+            "keyword": "PENELITIAN DAN PENGABDIAN MASYARAKAT",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SIMPAS\", \"APPROVAL WORKFLOW\", \"PENELITIAN DAN PENGABDIAN MASYARAKAT\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "MODEL AI-BASED SMART CULTURAL FESTIVAL DASHBOARD DALAM MENDUKUNG SMART CULTURAL TOURISM PADA FESTIVAL ERAU TENGGARONG",
@@ -155,11 +305,26 @@
       "lecturers": [
         "Nursanti Novi Arisa"
       ],
+      "siMembers": [
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Nursanti Novi Arisa.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 2
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "FESTIVAL",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"FESTIVAL\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PEMBANGUNAN SISTEM INFORMASI PENGAJUAN CUTI PEGAWAI PADA BALAI BESAR KARANTINA HEWAN, IKAN DAN TUMBUHAN KALIMANTAN TIMUR MENGGUNAKAN METODE WATERFALL",
@@ -173,11 +338,32 @@
         "Vika Fitratunnany Insanittaqwa",
         "Dwi Nur Amalia"
       ],
+      "siMembers": [
+        "Dwi Nur Amalia",
+        "Vika Fitratunnany Insanittaqwa",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 3
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "CUTI PEGAWAI",
+            "weight": 2
+          },
+          {
+            "keyword": "WATERFALL",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"CUTI PEGAWAI\", \"WATERFALL\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "IMPLEMENTASI METODE SCRUMBAN UNTUK PERANCANGAN ULANG SISTEM INFORMASI DAN MANAJEMEN LABORATORIUM (SIMLAB) INSTITUT TEKNOLOGI KALIMANTAN",
@@ -189,11 +375,30 @@
       "lecturers": [
         "Aidil Saputra Kirsan"
       ],
+      "siMembers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 3
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "SIMLAB",
+            "weight": 2
+          },
+          {
+            "keyword": "SCRUM",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SIMLAB\", \"SCRUM\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "RANCANG BANGUN TRANSPARANSI PENGGUNAAN DANA TJSLP (TANGGUNG JAWAB SOSIAL DAN LINGKUNGAN PERUSAHAAN) DALAM MENDUKUNG SMART CITY MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
@@ -207,11 +412,40 @@
         "Henokh Lugo Hariyanto",
         "Sri Rahayu Natasia"
       ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto",
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 8
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "TRANSPARANSI",
+            "weight": 3
+          },
+          {
+            "keyword": "TJSLP",
+            "weight": 3
+          },
+          {
+            "keyword": "SMART CITY",
+            "weight": 1
+          },
+          {
+            "keyword": "EXTREME PROGRAMMING",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"TRANSPARANSI\", \"TJSLP\", \"SMART CITY\", \"EXTREME PROGRAMMING\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PENGEMBANGAN SISTEM INFORMASI PUSAT LAYANAN HUKUM SEBAGAI JARINGAN DOKUMENTASI DAN INFORMASI HUKUM ITK",
@@ -224,11 +458,27 @@
         "Vika Fitratunnany Insanittaqwa",
         "Dwi Nur Amalia"
       ],
+      "siMembers": [
+        "Dwi Nur Amalia",
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Dwi Nur Amalia, Vika Fitratunnany Insanittaqwa.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 3
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "HUKUM",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"HUKUM\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "VISUALISASI DARI KLASTERISASI PENGELOMPOKAN DAERAH BERDASARKAN TINGKAT PENDAPATAN PAJAK DAERAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER LANJUTAN",
@@ -241,11 +491,31 @@
         "Dwi Arief Prambudi",
         "I Putu Deny Arthawan Sugih Prabowo"
       ],
+      "siMembers": [
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 4
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PAJAK DAERAH",
+            "weight": 3
+          },
+          {
+            "keyword": "IKN",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PAJAK DAERAH\", \"IKN\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PENYUSUNAN JUSTIFIKASI TEKNIS DAN DISASTER RECOVERY PLAN UNTUK PENGEMBANGAN DATA CENTER UPA TIK ITK",
@@ -258,11 +528,35 @@
         "Dwi Arief Prambudi",
         "I Putu Deny Arthawan Sugih Prabowo"
       ],
+      "siMembers": [
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Dwi Arief Prambudi, I Putu Deny Arthawan Sugih Prabowo.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 9
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "JUSTIFIKASI TEKNIS",
+            "weight": 3
+          },
+          {
+            "keyword": "DATA CENTER",
+            "weight": 3
+          },
+          {
+            "keyword": "DISASTER RECOVERY",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"JUSTIFIKASI TEKNIS\", \"DATA CENTER\", \"DISASTER RECOVERY\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PENGEMBANGAN SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) INSTITUT TEKNOLOGI KALIMANTAN",
@@ -274,11 +568,30 @@
       "lecturers": [
         "M. Ihsan Alfani Putera"
       ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 4
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "SIMPAS",
+            "weight": 2
+          },
+          {
+            "keyword": "PENELITIAN DAN PENGABDIAN MASYARAKAT",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SIMPAS\", \"PENELITIAN DAN PENGABDIAN MASYARAKAT\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PENGEMBANGAN SISTEM INFORMASI PELAYANAN ADMINISTRASI PADA UNIT LAYANAN TERPADU INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE WATERFALL",
@@ -292,11 +605,36 @@
         "Arif Wicaksono Septyanto",
         "Sri Rahayu Natasia"
       ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Sri Rahayu Natasia",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 6
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "UNIT LAYANAN TERPADU",
+            "weight": 3
+          },
+          {
+            "keyword": "ADMINISTRASI",
+            "weight": 2
+          },
+          {
+            "keyword": "WATERFALL",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"UNIT LAYANAN TERPADU\", \"ADMINISTRASI\", \"WATERFALL\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PENGEMBANGAN SILURAH: SISTEM INFORMASI KELURAHAN MENGGUNAKAN METODE AGILE",
@@ -309,11 +647,31 @@
         "Yuyun Tri Wiranti",
         "Henokh Lugo Hariyanto"
       ],
+      "siMembers": [
+        "Henokh Lugo Hariyanto",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 4
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "KELURAHAN",
+            "weight": 3
+          },
+          {
+            "keyword": "AGILE",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KELURAHAN\", \"AGILE\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "REKAYASA KESELAMATAN DALAM PENYUSUNAN DOKUMEN JUSTIFIKASI TEKNIS UNTUK PENGEMBANGAN DATA CENTER DI BANK PEMBANGUNAN DAERAH PROVINSI XYZ",
@@ -325,6 +683,12 @@
       "lecturers": [
         "I Putu Deny Arthawan Sugih Prabowo"
       ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [
         "P3"
@@ -332,7 +696,26 @@
       "matchScore": {
         "P1": 6,
         "P3": 3
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "JUSTIFIKASI TEKNIS",
+            "weight": 3
+          },
+          {
+            "keyword": "DATA CENTER",
+            "weight": 3
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "KESELAMATAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"JUSTIFIKASI TEKNIS\", \"DATA CENTER\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "RANCANG BANGUN SISTEM INFORMASI PENDAFTARAN SANTRI BARU BERBASIS WEB MENGGUNAKAN METODE RAPID APPLICATION DEVELOPMENT (RAD)",
@@ -344,11 +727,30 @@
       "lecturers": [
         "I Putu Deny Arthawan Sugih Prabowo"
       ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: I Putu Deny Arthawan Sugih Prabowo.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 3
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PENDAFTARAN SANTRI",
+            "weight": 2
+          },
+          {
+            "keyword": "RAPID APPLICATION DEVELOPMENT",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PENDAFTARAN SANTRI\", \"RAPID APPLICATION DEVELOPMENT\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) UNTUK MENINGKATKAN PELAYANAN KEPADA SETIAP UNIT DI INSTITUT TEKNOLOGI KALIMANTAN",
@@ -360,11 +762,30 @@
       "lecturers": [
         "M. Ihsan Alfani Putera"
       ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 4
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "SIMPAS",
+            "weight": 2
+          },
+          {
+            "keyword": "PENELITIAN DAN PENGABDIAN MASYARAKAT",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SIMPAS\", \"PENELITIAN DAN PENGABDIAN MASYARAKAT\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PENGEMBANGAN SISTEM PELAYANAN SATU PINTU SEBAGAI SISTEM LAYANAN MASYARAKAT MENGGUNAKAN METODE ICONIX PROCESS",
@@ -376,11 +797,34 @@
       "lecturers": [
         "M. Ihsan Alfani Putera"
       ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 7
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PELAYANAN SATU PINTU",
+            "weight": 3
+          },
+          {
+            "keyword": "LAYANAN MASYARAKAT",
+            "weight": 3
+          },
+          {
+            "keyword": "ICONIX",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PELAYANAN SATU PINTU\", \"LAYANAN MASYARAKAT\", \"ICONIX\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "ANALISIS ADOPSI PENGGUNAAN E-COMMERCE BERDASARKAN TECHNOLOGY, ORGANIZATION, DAN ENVIRONTMENT (TOE) PADA UMKM DI BALIKPAPAN",
@@ -393,11 +837,31 @@
         "I Putu Deny Arthawan Sugih Prabowo",
         "Nursanti Novi Arisa"
       ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo",
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 4
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "E-COMMERCE",
+            "weight": 2
+          },
+          {
+            "keyword": "UMKM",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"E-COMMERCE\", \"UMKM\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "IMPLEMENTASI LIVABLE HOME APPLICATION SEBAGAI SISTEM LAYANAN MASYARAKAT MENGGUNAKAN METODE WATERFALL",
@@ -409,6 +873,12 @@
       "lecturers": [
         "M. Ihsan Alfani Putera"
       ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [
         "P3"
@@ -416,7 +886,26 @@
       "matchScore": {
         "P1": 4,
         "P3": 3
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "LAYANAN MASYARAKAT",
+            "weight": 3
+          },
+          {
+            "keyword": "WATERFALL",
+            "weight": 1
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "LIVABLE HOME",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"LAYANAN MASYARAKAT\", \"WATERFALL\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PERBANDINGAN WATERFALL, EXTREME PROGRAMMING DAN ICONIX DALAM PENGEMBANGAN SISTEM INFORMASI COMPANY PROFILE PEMERINTAHAN PADA WILAYAH IBU KOTA NEGARA BARU",
@@ -428,11 +917,46 @@
       "lecturers": [
         "M. Ihsan Alfani Putera"
       ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 10
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PEMERINTAH",
+            "weight": 3
+          },
+          {
+            "keyword": "COMPANY PROFILE PEMERINTAHAN",
+            "weight": 3
+          },
+          {
+            "keyword": "IBU KOTA NEGARA",
+            "weight": 1
+          },
+          {
+            "keyword": "WATERFALL",
+            "weight": 1
+          },
+          {
+            "keyword": "EXTREME PROGRAMMING",
+            "weight": 1
+          },
+          {
+            "keyword": "ICONIX",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMERINTAH\", \"COMPANY PROFILE PEMERINTAHAN\", \"IBU KOTA NEGARA\", \"WATERFALL\", \"EXTREME PROGRAMMING\", \"ICONIX\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "ANALISIS PENGUKURAN E-READINESS TEKNOLOGI INFORMASI PADA KOTA PENYANGGA IBU KOTA NEGARA BARU INDONESIA",
@@ -444,11 +968,30 @@
       "lecturers": [
         "Sri Rahayu Natasia"
       ],
+      "siMembers": [
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 4
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "E-READINESS",
+            "weight": 3
+          },
+          {
+            "keyword": "IBU KOTA NEGARA",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"E-READINESS\", \"IBU KOTA NEGARA\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PENGEMBANGAN SISTEM INFORMASI PARIWISATA BERBASIS WEBSITE PADA DINAS PEMUDA, OLAHRAGA, DAN PARIWISATA KOTA BONTANG MENGGUNAKAN METODE SCRUM",
@@ -460,11 +1003,30 @@
       "lecturers": [
         "Sri Rahayu Natasia"
       ],
+      "siMembers": [
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Sri Rahayu Natasia.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 3
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PARIWISATA",
+            "weight": 2
+          },
+          {
+            "keyword": "SCRUM",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PARIWISATA\", \"SCRUM\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PERANCANGAN DESIGN UI/UX PADA BIDANG FINANCIAL TECHNOLOGY DALAM PENGEMBANGAN SMART ECONOMY MENGGUNAKAN METODE DESIGN THINKING",
@@ -476,11 +1038,34 @@
       "lecturers": [
         "Nursanti Novi Arisa"
       ],
+      "siMembers": [
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Nursanti Novi Arisa.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 5
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "FINANCIAL TECHNOLOGY",
+            "weight": 2
+          },
+          {
+            "keyword": "SMART ECONOMY",
+            "weight": 2
+          },
+          {
+            "keyword": "UI/UX",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"FINANCIAL TECHNOLOGY\", \"SMART ECONOMY\", \"UI/UX\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "COMPETITIVE RESEARCH TERHADAP E-COMMERCE EKSISTING UNTUK REKOMENDASI DESAIN APLIKASI E-COMMERCE UMKM BALIKPAPAN",
@@ -492,11 +1077,30 @@
       "lecturers": [
         "I Putu Deny Arthawan Sugih Prabowo"
       ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 4
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "E-COMMERCE",
+            "weight": 2
+          },
+          {
+            "keyword": "UMKM",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"E-COMMERCE\", \"UMKM\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "ANALISIS FAKTOR YANG MEMENGARUHI CONTINUANCE INTENTION PADA PENGGUNAAN MOBILE PAYMENT DENGAN MENGGUNAKAN STRUCTURAL EQUATION MODELING",
@@ -508,11 +1112,26 @@
       "lecturers": [
         "Sri Rahayu Natasia"
       ],
+      "siMembers": [
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 2
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "MOBILE PAYMENT",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"MOBILE PAYMENT\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PERANCANGAN ARSITEKTUR SISTEM INFORMASI UNTUK INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN TOGAF (THE OPEN GROUP ARCHITECTURE FRAMEWORK)",
@@ -524,11 +1143,30 @@
       "lecturers": [
         "Yuyun Tri Wiranti"
       ],
+      "siMembers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 6
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "TOGAF",
+            "weight": 3
+          },
+          {
+            "keyword": "ARSITEKTUR SISTEM",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"TOGAF\", \"ARSITEKTUR SISTEM\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PERANCANGAN TATA KELOLA TEKNOLOGI INFORMASI INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN COBIT (CONTROL OBJECTIVE INFORMATION TECHNOLOGY)",
@@ -540,11 +1178,30 @@
       "lecturers": [
         "Lovinta Happy Atrinawati"
       ],
+      "siMembers": [
+        "Lovinta Happy Atrinawati"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 6
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "TATA KELOLA",
+            "weight": 3
+          },
+          {
+            "keyword": "COBIT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"TATA KELOLA\", \"COBIT\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "EVOLUSI SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (SIMPAS LPPM) INSTITUT TEKNOLOGI KALIMANTAN",
@@ -556,11 +1213,30 @@
       "lecturers": [
         "Sri Rahayu Natasia"
       ],
+      "siMembers": [
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 4
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "SIMPAS",
+            "weight": 2
+          },
+          {
+            "keyword": "PENELITIAN DAN PENGABDIAN MASYARAKAT",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SIMPAS\", \"PENELITIAN DAN PENGABDIAN MASYARAKAT\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "Perancangan Arsitektur Sistem dan Teknologi Informasi Perguruan Tinggi di Balikpapan menggunakan TOGAF (The Open Group Architecture Framework)",
@@ -573,11 +1249,31 @@
         "Yuyun Tri Wiranti",
         "Lovinta Happy Atrinawati"
       ],
+      "siMembers": [
+        "Lovinta Happy Atrinawati",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 6
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "TOGAF",
+            "weight": 3
+          },
+          {
+            "keyword": "ARSITEKTUR SISTEM",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"TOGAF\", \"ARSITEKTUR SISTEM\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "Perancangan Arsitektur Sistem dan Teknologi Informasi untuk Organisasi Perangkat Daerah (OPD) Pemerintah Kota Balikpapan menggunakan TOGAF (The Open Group Architecture Framework)",
@@ -589,11 +1285,34 @@
       "lecturers": [
         "Lovinta Happy Atrinawati"
       ],
+      "siMembers": [
+        "Lovinta Happy Atrinawati"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 9
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PEMERINTAH",
+            "weight": 3
+          },
+          {
+            "keyword": "TOGAF",
+            "weight": 3
+          },
+          {
+            "keyword": "ARSITEKTUR SISTEM",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMERINTAH\", \"TOGAF\", \"ARSITEKTUR SISTEM\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PEMBANGUNAN SISTEM INFORMASI PENELITIAN DAN PENGABDIAN MASYARAKAT (STUDI KASUS: INSTITUT TEKNOLOGI KALIMANTAN)",
@@ -605,11 +1324,26 @@
       "lecturers": [
         "Sri Rahayu Natasia"
       ],
+      "siMembers": [
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P1",
       "supportingPillars": [],
       "matchScore": {
         "P1": 2
-      }
+      },
+      "evidence": {
+        "P1": [
+          {
+            "keyword": "PENELITIAN DAN PENGABDIAN MASYARAKAT",
+            "weight": 2
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PENELITIAN DAN PENGABDIAN MASYARAKAT\" yang merupakan penanda kategori P1 (Smart Governance dan Transformasi Digital Perkotaan). Acuan: Roadmap FSTI 2025-2029, Bab 4.1 (hal. 9)."
     },
     {
       "title": "PENGEMBANGAN SISTEM INFORMASI COURSE UNTUK PENINGKATAN KAPASITAS DAN KETERAMPILAN MASYARAKAT BALIKPAPAN MENGGUNAKAN METODE WATERFALL",
@@ -623,12 +1357,35 @@
         "Arif Wicaksono Septyanto",
         "Henokh Lugo Hariyanto"
       ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 3,
         "P1": 1
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "SISTEM INFORMASI COURSE",
+            "weight": 3
+          }
+        ],
+        "P1": [
+          {
+            "keyword": "WATERFALL",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SISTEM INFORMASI COURSE\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "PENGEMBANGAN SISTEM SMART LIBRARY BERBASIS RFID TERINTEGRASI CLOUD SEBAGAI PLATFORM MANAJEMEN DIGITAL PERPUSTAKAAN ITK",
@@ -640,11 +1397,30 @@
       "lecturers": [
         "Aidil Saputra Kirsan"
       ],
+      "siMembers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Aidil Saputra Kirsan.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 6
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "PERPUSTAKAAN",
+            "weight": 3
+          },
+          {
+            "keyword": "SMART LIBRARY",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PERPUSTAKAAN\", \"SMART LIBRARY\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "PERANCANGAN UI/UX MEDIA VISUAL BERBASIS DIGITAL DENGAN PENDEKATAN DISCRETE TRIAL TRAINING UNTUK ANAK DENGAN GANGGUAN BAHASA",
@@ -657,12 +1433,34 @@
         "Vika Fitratunnany Insanittaqwa",
         "Nursanti Novi Arisa"
       ],
+      "siMembers": [
+        "Nursanti Novi Arisa",
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Nursanti Novi Arisa, Vika Fitratunnany Insanittaqwa.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 3,
         "P1": 1
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "DISCRETE TRIAL TRAINING",
+            "weight": 3
+          }
+        ],
+        "P1": [
+          {
+            "keyword": "UI/UX",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"DISCRETE TRIAL TRAINING\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "KEBUN RAYA BALIKPAPAN DIGITAL LAB: PERANCANGAN DIGITAL TWIN HERBARIUM BUAH ENDEMIK KALIMANTAN TIMUR BERBASIS PHOTOGRAMMETRY 360 DERAJAT SEBAGAI ASET MEDIA PEMBELAJARAN",
@@ -674,11 +1472,34 @@
       "lecturers": [
         "Rosa Eliviani"
       ],
+      "siMembers": [
+        "Rosa Eliviani"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Rosa Eliviani.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 9
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "MEDIA PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "HERBARIUM",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"MEDIA PEMBELAJARAN\", \"HERBARIUM\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "PENGEMBANGAN SISTEM INFORMASI MANAJEMEN TUGAS AKHIR PADA JURUSAN TEKNIK ELEKTRO, INFORMATIKA, DAN BISNIS INSTITUT TEKNOLOGI KALIMANTAN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING (PXP)",
@@ -692,12 +1513,35 @@
         "Aidil Saputra Kirsan",
         "Sri Rahayu Natasia"
       ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Sri Rahayu Natasia",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 3,
         "P1": 1
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "TUGAS AKHIR",
+            "weight": 3
+          }
+        ],
+        "P1": [
+          {
+            "keyword": "EXTREME PROGRAMMING",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"TUGAS AKHIR\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "PERANCANGAN SISTEM MEDIA PEMBELAJARAN BERBASIS AI DAN ADAPTIVE LEARNING DENGAN KONSEP HEALING TECHNOLOGY PADA PESERTA DIDIK DISABILITAS",
@@ -710,11 +1554,43 @@
         "M. Ihsan Alfani Putera",
         "Nursanti Novi Arisa"
       ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera",
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera, Nursanti Novi Arisa.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 15
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "MEDIA PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "ADAPTIVE LEARNING",
+            "weight": 3
+          },
+          {
+            "keyword": "DISABILITAS",
+            "weight": 3
+          },
+          {
+            "keyword": "PESERTA DIDIK",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"MEDIA PEMBELAJARAN\", \"ADAPTIVE LEARNING\", \"DISABILITAS\", \"PESERTA DIDIK\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "IMPLEMENTASI METAVERSE PADA PENGENALAN LAB TERPADU KAMPUS INSTITUT TEKNOLOGI KALIMANTAN (ITK)",
@@ -728,11 +1604,28 @@
         "Aidil Saputra Kirsan",
         "Sri Rahayu Natasia"
       ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Sri Rahayu Natasia",
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 3
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "METAVERSE",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"METAVERSE\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "PEMBANGUNAN SMART-SCHOOL SYSTEM PADA LINGKUNGAN PEDESAAN DI WILAYAH IKN MENGGUNAKAN METODE PERSONAL EXTREME PROGRAMMING",
@@ -745,6 +1638,13 @@
         "Vika Fitratunnany Insanittaqwa",
         "Nursanti Novi Arisa"
       ],
+      "siMembers": [
+        "Nursanti Novi Arisa",
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Nursanti Novi Arisa, Vika Fitratunnany Insanittaqwa.",
       "pillar": "P2",
       "supportingPillars": [
         "P1"
@@ -752,7 +1652,26 @@
       "matchScore": {
         "P2": 3,
         "P1": 2
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "SMART-SCHOOL",
+            "weight": 3
+          }
+        ],
+        "P1": [
+          {
+            "keyword": "IKN",
+            "weight": 1
+          },
+          {
+            "keyword": "EXTREME PROGRAMMING",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SMART-SCHOOL\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "RANCANG BANGUN SISTEM INFORMASI PENJADWALAN SEBAGAI UPAYA OPTIMALISASI PENJADWALAN PEMBELAJARAN",
@@ -764,11 +1683,30 @@
       "lecturers": [
         "Yuyun Tri Wiranti"
       ],
+      "siMembers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 6
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "PENJADWALAN PEMBELAJARAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"PENJADWALAN PEMBELAJARAN\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "PENINGKATAN EFISIENSI DAN EFEKTIVITAS PROSES BELAJAR MENGAJAR DENGAN PEMANFAATAN TEKNOLOGI IOT PADA SISTEM BEL SEKOLAH PINTAR",
@@ -781,12 +1719,42 @@
         "Aidil Saputra Kirsan",
         "Sri Rahayu Natasia"
       ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Sri Rahayu Natasia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 9,
         "P3": 1
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "BELAJAR MENGAJAR",
+            "weight": 3
+          },
+          {
+            "keyword": "SEKOLAH",
+            "weight": 3
+          },
+          {
+            "keyword": "BEL SEKOLAH",
+            "weight": 3
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "IOT",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BELAJAR MENGAJAR\", \"SEKOLAH\", \"BEL SEKOLAH\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "IMPLEMENTASI PUBLISHING APPS UNTUK MENCIPTAKAN SMART SOCIETY DENGAN PENINGKATAN LITERASI MENGGUNAKAN MODIFIED WATERFALL MODEL",
@@ -800,6 +1768,14 @@
         "M. Ihsan Alfani Putera",
         "Nursanti Novi Arisa"
       ],
+      "siMembers": [
+        "M. Ihsan Alfani Putera",
+        "Nursanti Novi Arisa",
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: M. Ihsan Alfani Putera, Nursanti Novi Arisa, Vika Fitratunnany Insanittaqwa.",
       "pillar": "P2",
       "supportingPillars": [
         "P1"
@@ -807,7 +1783,30 @@
       "matchScore": {
         "P2": 6,
         "P1": 2
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "LITERASI",
+            "weight": 3
+          },
+          {
+            "keyword": "PUBLISHING APPS",
+            "weight": 3
+          }
+        ],
+        "P1": [
+          {
+            "keyword": "SMART SOCIETY",
+            "weight": 1
+          },
+          {
+            "keyword": "WATERFALL",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"LITERASI\", \"PUBLISHING APPS\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "LEAN VS AGILE: EFISIENSI METODE UNTUK SISTEM INFORMASI SEKOLAH CERDAS DI BALIKPAPAN",
@@ -819,12 +1818,33 @@
       "lecturers": [
         "Aidil Saputra Kirsan"
       ],
+      "siMembers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 3,
         "P1": 1
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "SEKOLAH",
+            "weight": 3
+          }
+        ],
+        "P1": [
+          {
+            "keyword": "AGILE",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SEKOLAH\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "ANALISIS PENGARUH PENGALAMAN MENGGUNAKAN E-LEARNING SEBELUM COVID-19 DAN KARAKTERISTIK INSTRUKTUR KELAS TERHADAP NIAT PERILAKU MAHASISWA DALAM PEMBELAJARAN MELALUI E-LEARNING BERDASARKAN TECHNOLOGY ACCEPTANCE MODEL",
@@ -836,11 +1856,30 @@
       "lecturers": [
         "I Putu Deny Arthawan Sugih Prabowo"
       ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: I Putu Deny Arthawan Sugih Prabowo.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 6
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "E-LEARNING",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"E-LEARNING\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "IMPLEMENTASI SIAKAD BERBASIS WEBSITE DAN ANDROID MENGGUNAKAN FRAMEWORK CODEIGNITER DAN RESTFUL API UNTUK MENDUKUNG EKOSISTEM PENDIDIKAN DI SEKOLAH ISLAM BALIKPAPAN",
@@ -852,11 +1891,30 @@
       "lecturers": [
         "Aidil Saputra Kirsan"
       ],
+      "siMembers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 6
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "SEKOLAH",
+            "weight": 3
+          },
+          {
+            "keyword": "SIAKAD",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SEKOLAH\", \"SIAKAD\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "PENGEMBANGAN SIMSIS SEBAGAI SISTEM SMART CITY RANAH PENDIDIKAN UNTUK MENUNJANG PROSES PEMBELAJARAN",
@@ -868,12 +1926,37 @@
       "lecturers": [
         "Vika Fitratunnany Insanittaqwa"
       ],
+      "siMembers": [
+        "Vika Fitratunnany Insanittaqwa"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 6,
         "P1": 1
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "SIMSIS",
+            "weight": 3
+          }
+        ],
+        "P1": [
+          {
+            "keyword": "SMART CITY",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"SIMSIS\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "ANALISIS PENERIMAAN LEARNING MANAGEMENT SYSTEM PADA KULIAH.ITK.AC.ID MENGGUNAKAN PENDEKATAN TECHNOLOGY ACCEPTANCE MODEL (TAM)",
@@ -885,11 +1968,26 @@
       "lecturers": [
         "Dwi Nur Amalia"
       ],
+      "siMembers": [
+        "Dwi Nur Amalia"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 3
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "LEARNING MANAGEMENT",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"LEARNING MANAGEMENT\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "MEDIA PEMBELAJARAN DENGAN METODE GAMIFICATION UNTUK PENDIDIKAN FORMAL DAN NON FORMAL DI KALIMANTAN ERA COVID-19",
@@ -901,11 +1999,34 @@
       "lecturers": [
         "M. Gilvy Langgawan Putra"
       ],
+      "siMembers": [
+        "M. Gilvy Langgawan Putra"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P2",
       "supportingPillars": [],
       "matchScore": {
         "P2": 9
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "PEMBELAJARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "GAMIFICATION",
+            "weight": 3
+          },
+          {
+            "keyword": "MEDIA PEMBELAJARAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"PEMBELAJARAN\", \"GAMIFICATION\", \"MEDIA PEMBELAJARAN\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "Analisis Keterhubungan Prestasi Akademik dan Kesehatan Mental Mahasiswa Menggunakan Metode Data Mining Sebagai Upaya Peningkatan Kualitas Peserta Didik di Perguruan Tinggi Negeri di Kalimantan",
@@ -917,6 +2038,12 @@
       "lecturers": [
         "Yuyun Tri Wiranti"
       ],
+      "siMembers": [
+        "Yuyun Tri Wiranti"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Yuyun Tri Wiranti.",
       "pillar": "P2",
       "supportingPillars": [
         "P3"
@@ -924,7 +2051,30 @@
       "matchScore": {
         "P2": 6,
         "P3": 6
-      }
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "AKADEMIK",
+            "weight": 3
+          },
+          {
+            "keyword": "PESERTA DIDIK",
+            "weight": 3
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "KESEHATAN",
+            "weight": 3
+          },
+          {
+            "keyword": "KESEHATAN MENTAL",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"AKADEMIK\", \"PESERTA DIDIK\" yang merupakan penanda kategori P2 (Smart Education (Edukasi Cerdas dan Inklusif)). Acuan: Roadmap FSTI 2025-2029, Bab 4.2 (hal. 9-10)."
     },
     {
       "title": "PENGEMBANGAN SISTEM INFORMASI KLINIK KAMPUS BERBASIS WEB UNTUK MENINGKATKAN EFEKTIVITAS PELAYANAN KESEHATAN DI INSTITUT TEKNOLOGI KALIMANTAN",
@@ -937,11 +2087,31 @@
         "Aidil Saputra Kirsan",
         "Hendy Indrawan Sunardi"
       ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
         "P3": 6
-      }
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "KESEHATAN",
+            "weight": 3
+          },
+          {
+            "keyword": "KLINIK",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KESEHATAN\", \"KLINIK\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "VISUALISASI DARI KLASTERISASI DAN PERAMALAN KUALITAS UDARA KOTA SAMARINDA MENGGUNAKAN METODE KLASTERISASI OBJEK BACKPROPAGATION DAN PERAMALAN ARTIFICIAL NEURAL NETWORK",
@@ -954,11 +2124,27 @@
         "Dwi Arief Prambudi",
         "I Putu Deny Arthawan Sugih Prabowo"
       ],
+      "siMembers": [
+        "Dwi Arief Prambudi",
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
         "P3": 3
-      }
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "KUALITAS UDARA",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KUALITAS UDARA\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "INOVASI SISTEM PENGELOLAAN SAMPAH MELALUI OPTIMALISASI TEKNIS OPERASIONAL DAN PERANCANGAN TPS 3R DI RUMAH SAKIT RESTU IBU BALIKPAPAN",
@@ -970,11 +2156,30 @@
       "lecturers": [
         "Dwi Arief Prambudi"
       ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Dwi Arief Prambudi.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
         "P3": 6
-      }
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "SAMPAH",
+            "weight": 3
+          },
+          {
+            "keyword": "TPS 3R",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SAMPAH\", \"TPS 3R\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "SMART SHE CAMPUS: SISTEM PEMANTAUAN KESELAMATAN BERKENDARA CIVITAS AKADEMIKA BERBASIS IOT",
@@ -986,14 +2191,47 @@
       "lecturers": [
         "Rosa Eliviani"
       ],
+      "siMembers": [
+        "Rosa Eliviani"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Rosa Eliviani.",
       "pillar": "P3",
       "supportingPillars": [
         "P2"
       ],
       "matchScore": {
         "P2": 3,
-        "P3": 4
-      }
+        "P3": 10
+      },
+      "evidence": {
+        "P2": [
+          {
+            "keyword": "AKADEMIK",
+            "weight": 3
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "KESELAMATAN",
+            "weight": 3
+          },
+          {
+            "keyword": "KESELAMATAN BERKENDARA",
+            "weight": 3
+          },
+          {
+            "keyword": "PEMANTAUAN KESELAMATAN",
+            "weight": 3
+          },
+          {
+            "keyword": "IOT",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KESELAMATAN\", \"KESELAMATAN BERKENDARA\", \"PEMANTAUAN KESELAMATAN\", \"IOT\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "INOVASI PENGOLAHAN LIMBAH BAGLOG JAMUR TIRAM MENJADI KOMPOS DENGAN MOL NASI BASI SEBAGAI BIOAKTIVATOR",
@@ -1005,11 +2243,30 @@
       "lecturers": [
         "Dwi Arief Prambudi"
       ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Dwi Arief Prambudi.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
         "P3": 6
-      }
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "KOMPOS",
+            "weight": 3
+          },
+          {
+            "keyword": "LIMBAH",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KOMPOS\", \"LIMBAH\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "PENERAPAN LOGIKA FUZZY UNTUK MENENTUKAN DURASI ISTIRAHAT OPTIMAL BERBASIS TINGKAT KEBISINGAN DAN LAMA PAPARAN DI INDUSTRI",
@@ -1021,11 +2278,26 @@
       "lecturers": [
         "I Putu Deny Arthawan Sugih Prabowo"
       ],
+      "siMembers": [
+        "I Putu Deny Arthawan Sugih Prabowo"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: I Putu Deny Arthawan Sugih Prabowo.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
         "P3": 3
-      }
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "KEBISINGAN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KEBISINGAN\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "VISUALISASI DARI KLASTERISASI DAN ESTIMASI KETERSEDIAAN LAHAN PEMBUANGAN SAMPAH DI KOTA PENAJAM PASER UTARA DAN SEKTOR IKN MENGGUNAKAN METODE ANALISIS KLASTER DAN UJI REGRESI LANJUTAN",
@@ -1037,12 +2309,33 @@
       "lecturers": [
         "Dwi Arief Prambudi"
       ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
         "P3": 3,
         "P1": 1
-      }
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "SAMPAH",
+            "weight": 3
+          }
+        ],
+        "P1": [
+          {
+            "keyword": "IKN",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SAMPAH\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "Monitoring Dan Forecasting Ketercukupan Tempat Pembuangan Akhir Di Kota Balikpapan Sebagai Penyangga IKN Dengan Metode Regresi Lanjutan Berbasis Website",
@@ -1054,12 +2347,37 @@
       "lecturers": [
         "Dwi Arief Prambudi"
       ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
         "P3": 4,
         "P1": 1
-      }
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "TEMPAT PEMBUANGAN AKHIR",
+            "weight": 3
+          },
+          {
+            "keyword": "MONITORING",
+            "weight": 1
+          }
+        ],
+        "P1": [
+          {
+            "keyword": "IKN",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"TEMPAT PEMBUANGAN AKHIR\", \"MONITORING\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "RANCANG BANGUN SISTEM DETEKSI DINI KEBAKARAN DI RUMAH MENGGUNAKAN SMART HOME BERBASIS IOT",
@@ -1072,11 +2390,35 @@
         "Aidil Saputra Kirsan",
         "Hendy Indrawan Sunardi"
       ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
         "P3": 5
-      }
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "KEBAKARAN",
+            "weight": 3
+          },
+          {
+            "keyword": "IOT",
+            "weight": 1
+          },
+          {
+            "keyword": "SMART HOME",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KEBAKARAN\", \"IOT\", \"SMART HOME\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "PENGEMBANGAN INVERSI BATIMETRI UNTUK ESTIMASI KEDALAMAN LAUT PERAIRAN MENGGUNAKAN ALGORITMA INTERPRETABLE DEEP LEARNING",
@@ -1089,11 +2431,27 @@
         "Arif Wicaksono Septyanto",
         "Henokh Lugo Hariyanto"
       ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
         "P3": 3
-      }
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "BATIMETRI",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"BATIMETRI\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "SVM (SUPPORT VECTOR MACHINE) UNTUK KLASIFIKASI STATUS GIZI BALITA BERDASARKAN INDEKS ANTROPOMETRI",
@@ -1106,11 +2464,31 @@
         "Arif Wicaksono Septyanto",
         "Henokh Lugo Hariyanto"
       ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
         "P3": 6
-      }
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "GIZI",
+            "weight": 3
+          },
+          {
+            "keyword": "BALITA",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"GIZI\", \"BALITA\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "VISUALISASI DARI KLASTERISASI DAN PERAMALAN KUALITAS UDARA KOTA BALIKPAPAN MENGGUNAKAN METODE KLASTERISASI OBJEK BACKPROPAGATION DAN PERAMALAN ARTIFICIAL NEURAL NETWORK",
@@ -1122,11 +2500,26 @@
       "lecturers": [
         "Dwi Arief Prambudi"
       ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
         "P3": 3
-      }
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "KUALITAS UDARA",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KUALITAS UDARA\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "Fuzzy Logic Fog Clod Computing untuk Menganalisis Faktor Penyebab Kematian Ibu Meninggal Masa Postpartum",
@@ -1138,11 +2531,30 @@
       "lecturers": [
         "Arif Wicaksono Septyanto"
       ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
         "P3": 6
-      }
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "POSTPARTUM",
+            "weight": 3
+          },
+          {
+            "keyword": "KEMATIAN IBU",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"POSTPARTUM\", \"KEMATIAN IBU\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "FUZZY RULE BASED-SYSTEM REKAM MEDIS TERKAIT STATUS GIZI BAYI INDEKS ANTROPOMETRI SELAMA POSTPARTUM",
@@ -1154,11 +2566,34 @@
       "lecturers": [
         "Arif Wicaksono Septyanto"
       ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P3",
       "supportingPillars": [],
       "matchScore": {
         "P3": 9
-      }
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "GIZI",
+            "weight": 3
+          },
+          {
+            "keyword": "POSTPARTUM",
+            "weight": 3
+          },
+          {
+            "keyword": "REKAM MEDIS",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"GIZI\", \"POSTPARTUM\", \"REKAM MEDIS\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "PENERAPAN ARTIFICIAL NEURAL NETWORK PADA PROTOTYPING SISTEM MONITORING KUALITAS AIR DI KOTA BALIKPAPAN UNTUK MENDUKUNG BALIKPAPAN SEBAGAI SMART CITY",
@@ -1170,6 +2605,12 @@
       "lecturers": [
         "Dwi Arief Prambudi"
       ],
+      "siMembers": [
+        "Dwi Arief Prambudi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P3",
       "supportingPillars": [
         "P1"
@@ -1177,7 +2618,30 @@
       "matchScore": {
         "P3": 4,
         "P1": 2
-      }
+      },
+      "evidence": {
+        "P3": [
+          {
+            "keyword": "KUALITAS AIR",
+            "weight": 3
+          },
+          {
+            "keyword": "MONITORING",
+            "weight": 1
+          }
+        ],
+        "P1": [
+          {
+            "keyword": "SMART CITY",
+            "weight": 1
+          },
+          {
+            "keyword": "PROTOTYPING",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"KUALITAS AIR\", \"MONITORING\" yang merupakan penanda kategori P3 (Smart Living dan Lingkungan Kesehatan Cerdas). Acuan: Roadmap FSTI 2025-2029, Bab 4.3 (hal. 10)."
     },
     {
       "title": "OPTIMALISASI PENGELOLAAN SISTEM MONITORING DATA ENERGI LISTRIK PADA SMART HOME SYSTEM UNTUK SAKLAR LISTRIK MENGGUNAKAN METODE EXTREME PROGRAMMING",
@@ -1190,6 +2654,13 @@
         "Aidil Saputra Kirsan",
         "Hendy Indrawan Sunardi"
       ],
+      "siMembers": [
+        "Aidil Saputra Kirsan",
+        "Hendy Indrawan Sunardi"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": "P4",
       "supportingPillars": [
         "P3"
@@ -1198,7 +2669,40 @@
         "P4": 9,
         "P3": 2,
         "P1": 1
-      }
+      },
+      "evidence": {
+        "P4": [
+          {
+            "keyword": "ENERGI LISTRIK",
+            "weight": 3
+          },
+          {
+            "keyword": "SAKLAR LISTRIK",
+            "weight": 3
+          },
+          {
+            "keyword": "MONITORING DATA ENERGI",
+            "weight": 3
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "SMART HOME",
+            "weight": 1
+          },
+          {
+            "keyword": "MONITORING",
+            "weight": 1
+          }
+        ],
+        "P1": [
+          {
+            "keyword": "EXTREME PROGRAMMING",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"ENERGI LISTRIK\", \"SAKLAR LISTRIK\", \"MONITORING DATA ENERGI\" yang merupakan penanda kategori P4 (Smart Grid, Energi Cerdas, dan Mobilitas Berkelanjutan). Acuan: Roadmap FSTI 2025-2029, Bab 4.4 (hal. 10-11)."
     },
     {
       "title": "INOVASI PEMBUATAN PROTOTIPE TURBIN ANGIN SAVONIUS BERBAHAN PLA BERSTRUKTUR SANDWICH DENGAN METODE ADITIF MANUFAKTURING SEBAGAI SUMBER ENERGI HIJAU",
@@ -1211,11 +2715,31 @@
         "Arif Wicaksono Septyanto",
         "Nursanti Novi Arisa"
       ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Nursanti Novi Arisa"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Arif Wicaksono Septyanto, Nursanti Novi Arisa.",
       "pillar": "P4",
       "supportingPillars": [],
       "matchScore": {
         "P4": 6
-      }
+      },
+      "evidence": {
+        "P4": [
+          {
+            "keyword": "ENERGI HIJAU",
+            "weight": 3
+          },
+          {
+            "keyword": "TURBIN ANGIN",
+            "weight": 3
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"ENERGI HIJAU\", \"TURBIN ANGIN\" yang merupakan penanda kategori P4 (Smart Grid, Energi Cerdas, dan Mobilitas Berkelanjutan). Acuan: Roadmap FSTI 2025-2029, Bab 4.4 (hal. 10-11)."
     },
     {
       "title": "SUSTAINABLE ELECTRICITY MONITORING VIA MOBILE APPLICATION IN DORMITORY AREAS",
@@ -1227,12 +2751,33 @@
       "lecturers": [
         "Rosa Eliviani"
       ],
+      "siMembers": [
+        "Rosa Eliviani"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Rosa Eliviani.",
       "pillar": "P4",
       "supportingPillars": [],
       "matchScore": {
         "P4": 3,
         "P3": 1
-      }
+      },
+      "evidence": {
+        "P4": [
+          {
+            "keyword": "ELECTRICITY",
+            "weight": 3
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "MONITORING",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"ELECTRICITY\" yang merupakan penanda kategori P4 (Smart Grid, Energi Cerdas, dan Mobilitas Berkelanjutan). Acuan: Roadmap FSTI 2025-2029, Bab 4.4 (hal. 10-11)."
     },
     {
       "title": "RANCANGAN DAN IMPLEMENTASI SMART HOME SYSTEM UNTUK PENGENDALIAN SAKELAR LISTRIK BERBASIS IOT",
@@ -1244,6 +2789,12 @@
       "lecturers": [
         "Aidil Saputra Kirsan"
       ],
+      "siMembers": [
+        "Aidil Saputra Kirsan"
+      ],
+      "leaderIsInternal": false,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti berasal dari program studi lain. Program studi SI terlibat melalui anggota peneliti berikut: Aidil Saputra Kirsan.",
       "pillar": "P4",
       "supportingPillars": [
         "P3"
@@ -1251,7 +2802,26 @@
       "matchScore": {
         "P4": 3,
         "P3": 2
-      }
+      },
+      "evidence": {
+        "P4": [
+          {
+            "keyword": "SAKELAR LISTRIK",
+            "weight": 3
+          }
+        ],
+        "P3": [
+          {
+            "keyword": "IOT",
+            "weight": 1
+          },
+          {
+            "keyword": "SMART HOME",
+            "weight": 1
+          }
+        ]
+      },
+      "reason": "Judul memuat kata kunci \"SAKELAR LISTRIK\" yang merupakan penanda kategori P4 (Smart Grid, Energi Cerdas, dan Mobilitas Berkelanjutan). Acuan: Roadmap FSTI 2025-2029, Bab 4.4 (hal. 10-11)."
     },
     {
       "title": "Pengembangan Algoritma Metaheuristik Untuk Menyelesaikan Permasalahan Optimasi Kombinatorial",
@@ -1264,9 +2834,18 @@
         "Arif Wicaksono Septyanto",
         "Henokh Lugo Hariyanto"
       ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": null,
       "supportingPillars": [],
-      "matchScore": {}
+      "matchScore": {},
+      "evidence": {},
+      "reason": "Judul tidak memuat satu pun kata kunci dari kategori manapun. Penelitian ini tergolong riset dasar (keilmuan murni) yang berada di luar bidang fokus roadmap yang bersifat terapan."
     },
     {
       "title": "Pengembangan algoritma adaptive mesh untuk permasalahan dinamika vorteks gelombang nonlinear",
@@ -1279,9 +2858,18 @@
         "Arif Wicaksono Septyanto",
         "Henokh Lugo Hariyanto"
       ],
+      "siMembers": [
+        "Arif Wicaksono Septyanto",
+        "Henokh Lugo Hariyanto"
+      ],
+      "leaderIsInternal": true,
+      "prodiCode": "SI",
+      "affiliationBasis": "Ketua peneliti adalah dosen program studi SI.",
       "pillar": null,
       "supportingPillars": [],
-      "matchScore": {}
+      "matchScore": {},
+      "evidence": {},
+      "reason": "Judul tidak memuat satu pun kata kunci dari kategori manapun. Penelitian ini tergolong riset dasar (keilmuan murni) yang berada di luar bidang fokus roadmap yang bersifat terapan."
     }
   ]
 }

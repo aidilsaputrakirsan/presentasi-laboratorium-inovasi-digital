@@ -66,7 +66,7 @@ flowchart TD
 ## 📁 Struktur File dan Hubungannya
 
 ```
-📁 presentasi-laboratorium-inovasi-digital/
+📁 sitria/
 ├── 📁 scripts/
 │   └── 📄 sinta_scraper.py          ← Script untuk scraping
 │

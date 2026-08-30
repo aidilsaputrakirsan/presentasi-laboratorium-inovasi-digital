@@ -69,7 +69,7 @@ Data di-generate secara asinkronus menggunakan Pipeline Python:
 ```bash
 # 1. Clone repository & navigasi masuk
 git clone <repository-url>
-cd presentasi-laboratorium-inovasi-digital
+cd sitria
 
 # 2. Package Frontend Setup
 npm install

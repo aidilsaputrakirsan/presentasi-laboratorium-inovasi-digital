@@ -5,6 +5,8 @@ import siExpertiseData from './sistem-informasi/expertise_data.json'
 import siClustersData from './sistem-informasi/clusters_data.json'
 import siPddiktiData from './sistem-informasi/pddikti_data.json'
 import siSupervisionData from './sistem-informasi/supervision_data.json'
+import siRoadmapMapping from './sistem-informasi/roadmap_mapping.json'
+import siRoadmapMappingItk from './sistem-informasi/roadmap_mapping_itk.json'
 
 import bdLecturers from './bisnis-digital/lecturers.json'
 import bdSintaData from './bisnis-digital/sinta_data.json'
@@ -19,6 +21,8 @@ export const prodiRegistry = {
     clustersData: siClustersData,
     pddiktiData: siPddiktiData,
     supervisionData: siSupervisionData,
+    roadmapMapping: siRoadmapMapping,
+    roadmapMappingItk: siRoadmapMappingItk,
   },
   'bisnis-digital': {
     config: bdLecturers,
@@ -27,6 +31,8 @@ export const prodiRegistry = {
     clustersData: bdClustersData,
     pddiktiData: null,
     supervisionData: null,
+    roadmapMapping: null,
+    roadmapMappingItk: null,
   },
   // Placeholder entries for prodi without data yet
   'teknik-elektro': { config: null },

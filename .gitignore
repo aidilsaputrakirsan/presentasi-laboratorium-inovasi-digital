@@ -31,3 +31,7 @@ cache/*.json
 *.njsproj
 *.sln
 *.sw?
+
+# Python
+__pycache__/
+*.pyc
